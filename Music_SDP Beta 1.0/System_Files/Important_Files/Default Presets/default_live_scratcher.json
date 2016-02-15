@@ -1,0 +1,99 @@
+{
+	"pattrstorage" : 	{
+		"name" : "presets718861",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"volume" : [ 1.0 ],
+					"duration" : [ 100 ],
+					"repeats" : [ 4 ],
+					"p_speed" : [ 1.64 ],
+					"w_form" : [ 3 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"volume" : [ 1.0 ],
+					"duration" : [ 200 ],
+					"repeats" : [ 193 ],
+					"p_speed" : [ 0.95 ],
+					"w_form" : [ 1 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"volume" : [ 1.0 ],
+					"duration" : [ 100 ],
+					"repeats" : [ 20 ],
+					"p_speed" : [ 1.081 ],
+					"w_form" : [ 1 ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"volume" : [ 1.0 ],
+					"duration" : [ 603 ],
+					"repeats" : [ 20 ],
+					"p_speed" : [ 1.0 ],
+					"w_form" : [ 1 ]
+				}
+
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"volume" : [ 1.0 ],
+					"duration" : [ 200 ],
+					"repeats" : [ 2 ],
+					"p_speed" : [ 1.44 ],
+					"w_form" : [ 3 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

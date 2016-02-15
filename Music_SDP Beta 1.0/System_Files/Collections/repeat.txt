@@ -1,0 +1,5 @@
+0;
+m_repeat reprand ran1 20 80 0.01, reprand ran2 40 100 0.5;
+m_repeat pebbles p2 ran1 p3 ran2 p4 farts;
+test_sound bang;
+1;

@@ -1,0 +1,185 @@
+{
+	"pattrstorage" : 	{
+		"name" : "presets277295",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"delay" : [ 0.0 ],
+					"amt" : [ 0.0 ],
+					"volume" : [ 1.07874 ],
+					"quality" : [ 3.0 ],
+					"shifting" : [ 7.0 ],
+					"lfo_toggle" : [ 0 ],
+					"lfo_rate" : [ 0.0 ],
+					"lfo_low" : [ 0.0 ],
+					"lfo_high" : [ 0.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"delay" : [ 0.0 ],
+					"amt" : [ 0.0 ],
+					"volume" : [ 1.07874 ],
+					"quality" : [ 3.0 ],
+					"shifting" : [ 4.0 ],
+					"lfo_toggle" : [ 0 ],
+					"lfo_rate" : [ 0.0 ],
+					"lfo_low" : [ 0.0 ],
+					"lfo_high" : [ 0.0 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"delay" : [ 0.0 ],
+					"amt" : [ 0.0 ],
+					"volume" : [ 1.07874 ],
+					"quality" : [ 3.0 ],
+					"shifting" : [ -5.0 ],
+					"lfo_toggle" : [ 0 ],
+					"lfo_rate" : [ 0.0 ],
+					"lfo_low" : [ 0.0 ],
+					"lfo_high" : [ 0.0 ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"delay" : [ 0.0 ],
+					"amt" : [ 0.0 ],
+					"volume" : [ 1.07874 ],
+					"quality" : [ 3.0 ],
+					"shifting" : [ -12.0 ],
+					"lfo_toggle" : [ 0 ],
+					"lfo_rate" : [ 0.0 ],
+					"lfo_low" : [ 0.0 ],
+					"lfo_high" : [ 0.0 ]
+				}
+
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"delay" : [ 2.362205 ],
+					"amt" : [ 0.0 ],
+					"volume" : [ 0.992126 ],
+					"quality" : [ 3.0 ],
+					"shifting" : [ 0.0 ],
+					"lfo_toggle" : [ 1 ],
+					"lfo_rate" : [ 0.595449 ],
+					"lfo_low" : [ 21.0 ],
+					"lfo_high" : [ 347.0 ]
+				}
+
+			}
+,
+			"6" : 			{
+				"id" : 6,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"delay" : [ 85.039368 ],
+					"amt" : [ 0.216535 ],
+					"volume" : [ 0.976378 ],
+					"quality" : [ 3.0 ],
+					"shifting" : [ 0.755906 ],
+					"lfo_toggle" : [ 1 ],
+					"lfo_rate" : [ 0.984314 ],
+					"lfo_low" : [ 12.2 ],
+					"lfo_high" : [ 13.0 ]
+				}
+
+			}
+,
+			"7" : 			{
+				"id" : 7,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"delay" : [ 33.858269 ],
+					"amt" : [ 0.24252 ],
+					"volume" : [ 1.023622 ],
+					"quality" : [ 3.0 ],
+					"shifting" : [ 0.377953 ],
+					"lfo_toggle" : [ 1 ],
+					"lfo_rate" : [ 3.752 ],
+					"lfo_low" : [ 11.8 ],
+					"lfo_high" : [ 353.0 ]
+				}
+
+			}
+,
+			"8" : 			{
+				"id" : 8,
+				"data" : 				{
+					"ina" : [ 1 ],
+					"inb" : [ 16 ],
+					"out1a" : [ 0 ],
+					"out1b" : [ 0 ],
+					"out2a" : [ 0 ],
+					"out2b" : [ 17 ],
+					"delay" : [ 33.070866 ],
+					"amt" : [ 0.216535 ],
+					"volume" : [ 1.401575 ],
+					"quality" : [ 3.0 ],
+					"shifting" : [ -1.689764 ],
+					"lfo_toggle" : [ 1 ],
+					"lfo_rate" : [ 1.18073 ],
+					"lfo_low" : [ 0.01 ],
+					"lfo_high" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
