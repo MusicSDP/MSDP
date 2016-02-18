@@ -5,7 +5,7 @@ Section 1: Follow these Instructions before running Music_SDP’s source code.
 In order to run Music_SDP you must first take care of three things:
 
 1. Make sure that Max 7.1 or later is installed. (MSDP has some issues in 7.0)
-2. Make sure that you installed the appropriate version of Java and JVM. (Max will provide a link upon launching Music_SDP if you don’t have the appropriate files installed.
+2. Make sure that you have installed the appropriate version of Java and JVM. (Max will provide a link upon launching Music_SDP if you don’t have the appropriate files installed.)
 3. Install all of the fonts included in the “fonts” folder.
 
 These steps should only be necessary once. After this is complete, Music_SDP should be opened from the “_Music_SDP.maxpat” file, located in the root folder. Opening this file loads all of the appropriate folders into the search path. 
