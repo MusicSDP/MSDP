@@ -1,5 +1,3 @@
-# source-code
-
 Section 1: Follow these Instructions before running Music_SDP’s source code.
 
 In order to run Music_SDP you must first take care of three things:
@@ -10,7 +8,7 @@ In order to run Music_SDP you must first take care of three things:
 
 These steps should only be necessary once. After this is complete, Music_SDP should be opened from the “_Music_SDP.maxpat” file, located in the root folder. Opening this file loads all of the appropriate folders into the search path. 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Section 2: Instructions for using and editing Music_SDP’s source code
 
@@ -23,9 +21,9 @@ Note about “unsticking” patches:
 Certain patches, like the System Board, the Pedal Board, and the Project Loader are locked down so that they can not be resized, closed, or minimized by the user. Unlocking the patch will reveal a secondary button that allows the user to “unstick” the sizing of the patch. Clicking this button will return the use of zoom, resize, close and minimize.
 
 Note about making changes to the Pedal Board:
-The Pedal Board automatically generates sub-patches for the first module and a jit.matrix when opened. These must all be deleted before saving the Pedal Board, or the board will be broken when re-opened. If you find that the Pedal Boards aren’t working properly, check the code to see if you have duplicate jit.matrices or duplicate module windows. If so, delete all matrices and module windows, save, and re-open the Pedal Board.
+The Pedal Board automatically generates sub-patches for the first module. These must all be deleted before saving the Pedal Board, or the board will be broken when re-opened. If you find that the Pedal Boards aren’t working properly, check the code to see if you have duplicate module windows. If so, delete all matrices and module windows, save, and re-open the Pedal Board.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Section 3: Contributions and Attributions
 
@@ -47,7 +45,7 @@ tyPoland Lukasz Dziedzic: the Lato font type
 Google Inc:: The Roboto Mono font type
 Jenna Palenksy: Designed the MSDP logo
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Section 4: License and Copyright notice
 
