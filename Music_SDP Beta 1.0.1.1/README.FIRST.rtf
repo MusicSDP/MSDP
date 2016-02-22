@@ -1,0 +1,64 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Section 1: Follow these Instructions before running Music_SDP\'92s source code.\
+\
+In order to run Music_SDP you must first take care of three things:\
+\
+1. Make sure that Max 7.1 or later is installed. (MSDP has some issues in 7.0)\
+2. Make sure that you have installed the appropriate version of Java and JVM. (Max will provide a link upon launching Music_SDP if you don\'92t have the appropriate files installed.)\
+3. Install all of the fonts included in the \'93fonts\'94 folder.\
+\
+These steps should only be necessary once. After this is complete, Music_SDP should be opened from the \'93_Music_SDP.maxpat\'94 file, located in the root folder. Opening this file loads all of the appropriate folders into the search path. \
+\
+~~~\
+\
+Section 2: Instructions for using and editing Music_SDP\'92s source code\
+\
+The \'93_Music_SDP.maxpat\'94 file should be opened first, 
+\i regardless
+\i0  of what other patches you want to explore in the system. Forgetting to do this can cause any number of errors, as necessary sub-patches will fail to load.\
+\
+Note about editing Music_SDP:\
+In order to unlock and edit patches, you must first go to the Menu Bar and select \'93Max Menus\'94 from the file menu. This will return the original set of menus and will allow the user to use all of the default shortcuts.\
+\
+Note about \'93unsticking\'94 patches:\
+Certain patches, like the System Board, the Pedal Board, and the Project Loader are locked down so that they can not be resized, closed, or minimized by the user. Unlocking the patch will reveal a secondary button that allows the user to \'93unstick\'94 the sizing of the patch. Clicking this button will return the use of zoom, resize, close and minimize.\
+\
+Note about making changes to the Pedal Board:\
+The Pedal Board automatically generates sub-patches for the first module. These must all be deleted 
+\i before
+\i0  saving the Pedal Board, or the board will be broken when re-opened. If you find that the Pedal Boards aren\'92t working properly, check the code to see if you have duplicate module windows. If so, delete all matrices and module windows, save, and re-open the Pedal Board.\
+\
+~~~\
+\
+Section 3: Contributions and Attributions\
+\
+Contributors:\
+\
+Hugh Lobel: Creator, Lead Programmer\
+Michael Mann: Module Design, System Design, QA Testing\
+Chandler Spoon: Graphic Design\
+\
+Attributions:\
+\
+Cycling 74: Developing and maintaining Max, and many patches used in the system\
+Miller S. Puckette: Creating Max, + the external Fiddle~\
+Kristoffer Ekstrand: the waveforms used in the synthesizers\
+Russell Pinkston: providing code using in Chorus, Flanger, Pitch Shifter, and buffer recording\
+The Centre Henri Pousseur: the filesys.class java class\
+Open Iconic: open source icons used in Music_SDP\
+tyPoland Lukasz Dziedzic: the Lato font type\
+Google Inc:: The Roboto Mono font type\
+Jenna Palenksy: Designed the MSDP logo\
+\
+~~~\
+\
+Section 4: License and Copyright notice\
+\
+The Music and Sound Design Platform utilizes the GNU General Public License, v3. Any distribution that utilizes the source code in part or in full is required to use this license as well.\
+ \
+\'91The Music and Sound Design Platform\'92, \'91Music_SDP\'92, and \'91www.musicsdp.com\'92 are copyright 2015-2016 Hugh Lobel.}
