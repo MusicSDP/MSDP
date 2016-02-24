@@ -1,0 +1,92 @@
+[General]
+Program name = Music_SDP
+Program version = Beta 1.0
+Windows 2000 = 0
+Windows XP = 0
+Windows Server 2003 = 0
+Windows Vista = 1
+Windows Server 2008 = 0
+Windows 7 = 1
+Windows 8 = 1
+Company name = Music_SDP
+Website = http://musicsdp.com
+SFA = 0
+DFA = 0
+Comp = 1
+[Graphics]
+Wizard image = <main>
+Header image = <main>
+Install-icon image = <main>
+Show Label = 1
+Windows style = 1
+XpStyle = 1
+[Files]
+Include Zipfile = 0
+Zipfile = 
+Installation path = <programfiles>\<company>\<appname>\
+Autcip = 1
+[Uninstall]
+Vwau = 0
+Website = 
+Include uninstaller = 1
+Uninstaller filename = Uninstall
+[Licence]
+Licence dialog = 0
+[Finish]
+Sart program = 0
+Reboot computer = 0
+Execute DLL: = 0
+Program = <installpath>\
+Dll = 
+[Shortcuts]
+Allowtc = 0
+Shortcut path = <company>\<appname>\Music_SDP_Beta_1.exe
+[Serialoptions]
+Allows = 0
+Number = 20
+[SplashScreen]
+Image = 
+Sound = 
+Time = 2
+PlaySound = 0
+Allow = 0
+[Build]
+File = 
+[Updater]
+Allow = 0
+1 = <appname>
+2 = <appversion>
+3 = http://
+4 = http://
+5 = http://
+6 = Update
+Language = 0
+RunProg = 
+RunProgs = 0
+Execdlls = 0
+[Languages]
+[Files/Dirs]
+C:\Users\Hugh\Desktop\Music_SDP_Beta_0\LICENSE.docx
+169.9 KB
+docx
+C:\Users\Hugh\Desktop\Music_SDP_Beta_0\Music_SDP_Beta_1.exe
+12.6 MB
+exe
+C:\Users\Hugh\Desktop\Music_SDP_Beta_0\Music_SDP_Beta_1.mxf
+7.3 MB
+mxf
+C:\Users\Hugh\Desktop\Music_SDP_Beta_0\resources\
+n/a
+[Folder]
+C:\Users\Hugh\Desktop\Music_SDP_Beta_0\System_Files\
+n/a
+[Folder]
+[Licence_Begin]
+[Licence_End]
+[Registry]
+[Variables]
+[SCs]
+[IFP_End]
+[Serials]
+[Serials_End]
+[Commands]
