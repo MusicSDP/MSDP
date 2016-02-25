@@ -20,8 +20,8 @@ In order to unlock and edit patches, you must first go to the Menu Bar and selec
 Note about “unsticking” patches:
 Certain patches, like the System Board, the Pedal Board, and the Project Loader are locked down so that they can not be resized, closed, or minimized by the user. Unlocking the patch will reveal a secondary button that allows the user to “unstick” the sizing of the patch. Clicking this button will return the use of zoom, resize, close and minimize.
 
-Note about making changes to the Pedal Board:
-The Pedal Board automatically generates sub-patches for the first module. These must all be deleted before saving the Pedal Board, or the board will be broken when re-opened. If you find that the Pedal Boards aren’t working properly, check the code to see if you have duplicate module windows. If so, delete all matrices and module windows, save, and re-open the Pedal Board.
+Note about making changes to the Pedal Board code:
+In previous versons of the code, the user had to delete the jit.matrix and all bpatchers before saving. You do not have to delete the jit.matrix anymore (doing so will now break the code!) and any bpatchers the user forgets to delete before saving will be removed upon re-opening the code.
 
 ~~~
 
