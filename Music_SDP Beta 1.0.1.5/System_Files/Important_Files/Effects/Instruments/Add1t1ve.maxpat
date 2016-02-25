@@ -837,7 +837,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 388.0, 97.0, 1028.0, 683.0 ],
+						"rect" : [ 378.0, 97.0, 1028.0, 683.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2244,7 +2244,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 6.0, 79.0, 816.0, 480.0 ],
+										"rect" : [ 34.0, 79.0, 816.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2272,6 +2272,19 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-1",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 307.0, 37.0, 81.0, 22.0 ],
+													"style" : "",
+													"text" : "loadmess set"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-39",
 													"maxclass" : "newobj",
@@ -2589,8 +2602,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 225.0, 78.0, 37.0, 22.0 ],
-													"style" : "",
-													"text" : "83"
+													"style" : ""
 												}
 
 											}
@@ -2645,6 +2657,15 @@
 											}
  ],
 										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-9", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
 												"patchline" : 												{
 													"destination" : [ "obj-33", 0 ],
 													"disabled" : 0,
@@ -4034,8 +4055,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -5078,8 +5099,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6340,7 +6361,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 375.0, 22.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/Demo Projects 2/Saved Presets\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Fieldwork/Saved Presets\""
 								}
 
 							}
@@ -6938,7 +6959,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage fullpatch @savemode 0",
-					"varname" : "presets250211"
+					"varname" : "presets803435"
 				}
 
 			}
@@ -6970,7 +6991,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 1486.701782, 525.215454, 104.0, 24.0 ],
-					"pattrstorage" : "presets250211",
+					"pattrstorage" : "presets803435",
 					"presentation" : 1,
 					"presentation_rect" : [ 4.5, 60.0, 104.0, 24.0 ],
 					"style" : ""
@@ -7360,6 +7381,19 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 723.0, 186.0, 60.0, 22.0 ],
+									"style" : "",
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
@@ -8430,6 +8464,24 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-31", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -8839,8 +8891,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -11403,7 +11455,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 215.0, 99.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "127"
+									"text" : "110"
 								}
 
 							}
@@ -12706,7 +12758,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 215.0, 99.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "127"
+									"text" : "110"
 								}
 
 							}
@@ -20714,7 +20766,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 393.5, 190.5, 128.5, 22.0 ],
 									"style" : "",
-									"text" : "buffer add86744C"
+									"text" : "buffer add506721C"
 								}
 
 							}
@@ -20729,7 +20781,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 253.5, 190.5, 128.5, 22.0 ],
 									"style" : "",
-									"text" : "buffer add86744B"
+									"text" : "buffer add506721B"
 								}
 
 							}
@@ -20744,7 +20796,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 109.0, 190.5, 128.5, 22.0 ],
 									"style" : "",
-									"text" : "buffer add86744A"
+									"text" : "buffer add506721A"
 								}
 
 							}
@@ -24874,7 +24926,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 19.0, 351.0, 112.0, 35.0 ],
 									"style" : "",
-									"text" : "tabname Additive805"
+									"text" : "tabname Additive398"
 								}
 
 							}
@@ -29308,51 +29360,51 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-100" : [ "umenu[2]", "umenu[2]", 0 ],
-			"obj-78" : [ "Volume[3]", " ", 0 ],
 			"obj-64" : [ "umenu[5]", "umenu[2]", 0 ],
-			"obj-80" : [ "Volume[1]", "Vol", 0 ],
-			"obj-65" : [ "toggle", "toggle", 0 ],
-			"obj-63" : [ "umenu[4]", "umenu[3]", 0 ],
+			"obj-78" : [ "Volume[3]", " ", 0 ],
 			"obj-321::obj-21" : [ "live.dial", "live.dial", 0 ],
 			"obj-79" : [ "Volume[2]", " ", 0 ],
+			"obj-80" : [ "Volume[1]", "Vol", 0 ],
 			"obj-34" : [ "flonum[3]", "flonum[3]", 0 ],
-			"obj-99" : [ "umenu[3]", "umenu[3]", 0 ]
+			"obj-99" : [ "umenu[3]", "umenu[3]", 0 ],
+			"obj-100" : [ "umenu[2]", "umenu[2]", 0 ],
+			"obj-65" : [ "toggle", "toggle", 0 ],
+			"obj-63" : [ "umenu[4]", "umenu[3]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "additive_wrap.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.4/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "additive_base.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.4/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "default_additive.json",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Default Presets",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.4/System_Files/Important_Files/Default Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_dial_1.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.4/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.4/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_vol_fix.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.4/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}

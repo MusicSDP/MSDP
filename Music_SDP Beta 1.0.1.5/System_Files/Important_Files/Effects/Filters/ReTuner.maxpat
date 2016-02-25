@@ -53,7 +53,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "4. Amnt", 0.0, 100.0 ],
+					"args" : [ "4. Amnt", 0.0, 100.0, "i" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -66,7 +66,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 1.0, 3.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "float", "" ],
 					"patching_rect" : [ 395.0, 131.167206, 57.0, 88.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 259.0, 70.0, 55.0, 88.0 ],
@@ -104,7 +104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 1.0, 3.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "float", "" ],
 					"patching_rect" : [ 176.299988, 426.5, 57.0, 88.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 49.0, 70.0, 55.0, 88.0 ],
@@ -120,7 +120,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"patching_rect" : [ 276.0, 491.5, 79.0, 23.0 ],
-					"presentation_rect" : [ 497.0, 459.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "msdp_vol_fix"
 				}
@@ -2063,7 +2062,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 244.0, 362.986053, 57.0, 23.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -2101,7 +2100,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 480.716675, 72.262848, 91.0, 23.0 ],
-					"restore" : [ 36.220474 ],
+					"restore" : [ 100.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -2747,7 +2746,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 375.0, 35.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/Demo Projects 2/Saved Presets\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Fieldwork/Saved Presets\""
 								}
 
 							}
@@ -3344,7 +3343,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage fullpatch @savemode 0",
-					"varname" : "presets389107"
+					"varname" : "presets654237"
 				}
 
 			}
@@ -3373,7 +3372,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 739.874939, 710.396606, 104.0, 24.0 ],
-					"pattrstorage" : "presets389107",
+					"pattrstorage" : "presets654237",
 					"presentation" : 1,
 					"presentation_rect" : [ 150.25, 28.0, 126.25, 24.0 ],
 					"style" : ""
@@ -8769,7 +8768,6 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 395.0, 366.0, 80.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"correction_amount" : [ 36.220474 ],
 						"enablednotes" : [ 0, 4, 7 ],
 						"notebase" : 0,
 						"notelist" : [ 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100 ],
@@ -10656,7 +10654,6 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 14.0, 366.0, 80.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"correction_amount" : [ 36.220474 ],
 						"enablednotes" : [ 0, 4, 7 ],
 						"notebase" : 0,
 						"notelist" : [ 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100 ],
@@ -10883,14 +10880,14 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-9",
-									"linecount" : 8,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 308.25, 132.0, 20.5, 49.0 ],
 									"style" : "",
-									"text" : "36.220474"
+									"text" : "100."
 								}
 
 							}
@@ -11591,7 +11588,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 19.0, 351.0, 112.0, 35.0 ],
 									"style" : "",
-									"text" : "tabname Retuner36"
+									"text" : "tabname Retuner470"
 								}
 
 							}
@@ -13655,33 +13652,33 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-106" : [ "umenu[2]", "umenu[2]", 0 ],
-			"obj-76" : [ "toggle", "toggle", 0 ],
-			"obj-63" : [ "umenu[4]", "umenu[3]", 0 ],
-			"obj-25::obj-21" : [ "live.dial", "live.dial", 0 ],
-			"obj-134" : [ "umenu[1]", "umenu[1]", 0 ],
-			"obj-64" : [ "umenu[8]", "umenu[3]", 0 ],
 			"obj-135" : [ "umenu", "umenu", 0 ],
-			"obj-69" : [ "quality", "Quality", 0 ],
+			"obj-63" : [ "umenu[4]", "umenu[3]", 0 ],
 			"obj-36::obj-21" : [ "live.dial[1]", "live.dial", 0 ],
-			"obj-102" : [ "umenu[3]", "umenu[3]", 0 ]
+			"obj-64" : [ "umenu[8]", "umenu[3]", 0 ],
+			"obj-134" : [ "umenu[1]", "umenu[1]", 0 ],
+			"obj-25::obj-21" : [ "live.dial", "live.dial", 0 ],
+			"obj-76" : [ "toggle", "toggle", 0 ],
+			"obj-69" : [ "quality", "Quality", 0 ],
+			"obj-102" : [ "umenu[3]", "umenu[3]", 0 ],
+			"obj-106" : [ "umenu[2]", "umenu[2]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "msdp_vol_fix.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.5/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_dial_1.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.5/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.5/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
@@ -13708,8 +13705,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
