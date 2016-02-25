@@ -37,8 +37,21 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"title" : "#1",
+		"title" : "test2",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-188",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -893.708374, 103.0, 127.916687, 22.0 ],
+					"style" : "",
+					"text" : "cell 1 1 val 72008"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-156",
 					"maxclass" : "newobj",
@@ -280,14 +293,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-26",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 107.0, 266.0, 92.0, 22.0 ],
 									"style" : "",
-									"text" : "993296 118736 416080"
+									"text" : "72008"
 								}
 
 							}
@@ -363,7 +375,8 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 138.0, 208.0, 92.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "72008"
 								}
 
 							}
@@ -788,7 +801,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 140.0, 188.0, 69.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "nogrow", "close", "nozoom", "nofloat", "nomenu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 10, 50, 440, 360, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 10, 50, 440, 360, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
 				}
@@ -1819,7 +1832,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -216.0, 590.0, 96.0, 22.0 ],
 					"style" : "",
-					"text" : "\"Part 1\""
+					"text" : "test2"
 				}
 
 			}
@@ -1832,7 +1845,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -263.0, 752.0, 96.0, 22.0 ],
 					"style" : "",
-					"text" : "\"Part 1\""
+					"text" : "test2"
 				}
 
 			}
@@ -3240,9 +3253,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -539.0, 731.5, 41.0, 49.0 ],
+					"patching_rect" : [ -539.0, 731.5, 41.0, 35.0 ],
 					"style" : "",
-					"text" : "p1 C 2 D 2"
+					"text" : "p1 A 1"
 				}
 
 			}
@@ -3425,7 +3438,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -147.5, 468.0, 111.0, 22.0 ],
 					"style" : "",
-					"text" : "EZFile499",
+					"text" : "Delay851",
 					"varname" : "e_IDer"
 				}
 
@@ -3522,7 +3535,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 55.0, 300.0, 235.0, 22.0 ],
 									"style" : "",
-									"text" : "script disconnect e_IDer 0 Rmod416080 5"
+									"text" : "script disconnect e_IDer 0 Rmod72008 5"
 								}
 
 							}
@@ -3548,7 +3561,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 655.0, 230.0, 271.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect e_IDer 0 Rmod416080 5"
+									"text" : "script hidden connect e_IDer 0 Rmod72008 5"
 								}
 
 							}
@@ -3612,7 +3625,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 534.0, 111.0, 83.0, 22.0 ],
 									"style" : "",
-									"text" : "Rmod416080"
+									"text" : "Rmod72008"
 								}
 
 							}
@@ -4201,7 +4214,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -190.5, 205.0, 95.0, 22.0 ],
 					"style" : "",
-					"text" : "\"EZ FilePlay\"",
+					"text" : "Delay",
 					"varname" : "e_namer"
 				}
 
@@ -4299,7 +4312,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 55.0, 300.0, 204.0, 35.0 ],
 									"style" : "",
-									"text" : "script disconnect e_namer 0 Rmod416080 4"
+									"text" : "script disconnect e_namer 0 Rmod72008 4"
 								}
 
 							}
@@ -4325,7 +4338,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 655.0, 230.0, 271.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect e_namer 0 Rmod416080 4"
+									"text" : "script hidden connect e_namer 0 Rmod72008 4"
 								}
 
 							}
@@ -4389,7 +4402,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 534.0, 111.0, 83.0, 22.0 ],
 									"style" : "",
-									"text" : "Rmod416080"
+									"text" : "Rmod72008"
 								}
 
 							}
@@ -7806,7 +7819,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage",
-					"varname" : "u965015379"
+					"varname" : "u888016057"
 				}
 
 			}
@@ -9670,14 +9683,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-41",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 539.5, 808.0, 286.0, 35.0 ],
 									"style" : "",
-									"text" : "script hidden disconnect generator 5 Rmod993296 2"
+									"text" : "script hidden disconnect generator 5 Rmod72008 2"
 								}
 
 							}
@@ -9731,7 +9743,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1139.5, 738.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "2 1"
+									"text" : "1 1"
 								}
 
 							}
@@ -9746,7 +9758,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 510.5, 772.0, 286.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect generator 5 Rmod993296 2"
+									"text" : "script hidden connect generator 5 Rmod72008 2"
 								}
 
 							}
@@ -9777,7 +9789,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 481.0, 744.0, 286.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect saver 0 Rmod993296 3"
+									"text" : "script hidden connect saver 0 Rmod72008 3"
 								}
 
 							}
@@ -9808,7 +9820,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 448.0, 716.0, 286.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect Rmod993296 4 collector 0"
+									"text" : "script hidden connect Rmod72008 4 collector 0"
 								}
 
 							}
@@ -9902,7 +9914,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1063.5, 667.0, 143.5, 22.0 ],
 									"style" : "",
-									"text" : "setcell 2 1 val 993296"
+									"text" : "setcell 1 1 val 72008"
 								}
 
 							}
@@ -9969,7 +9981,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 949.5, 296.0, 113.5, 22.0 ],
 									"style" : "",
-									"text" : "mod993296"
+									"text" : "mod72008"
 								}
 
 							}
@@ -10047,7 +10059,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 783.0, 306.5, 113.5, 22.0 ],
 									"style" : "",
-									"text" : "Rmod993296"
+									"text" : "Rmod72008"
 								}
 
 							}
@@ -10258,7 +10270,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 168.0, 543.0, 298.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect generator 7 Rmod993296 2"
+									"text" : "script hidden connect generator 7 Rmod72008 2"
 								}
 
 							}
@@ -10289,7 +10301,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 483.5, 288.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect generator 3 Rmod993296 2"
+									"text" : "script hidden connect generator 3 Rmod72008 2"
 								}
 
 							}
@@ -10319,7 +10331,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 192.0, 571.0, 284.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect $1 1 Rmod993296 1"
+									"text" : "script hidden connect $1 1 Rmod72008 1"
 								}
 
 							}
@@ -10349,7 +10361,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 276.5, 626.0, 284.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect $1 0 Rmod993296 0"
+									"text" : "script hidden connect $1 0 Rmod72008 0"
 								}
 
 							}
@@ -10469,7 +10481,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 49.0, 433.0, 99.0, 22.0 ],
 									"style" : "",
-									"text" : "Rmod993296"
+									"text" : "Rmod72008"
 								}
 
 							}
@@ -10484,7 +10496,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 84.0, 456.5, 99.0, 22.0 ],
 									"style" : "",
-									"text" : "Rmod993296"
+									"text" : "Rmod72008"
 								}
 
 							}
@@ -10548,7 +10560,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 129.0, 517.5, 283.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect Rmod993296 1 $1 1"
+									"text" : "script hidden connect Rmod72008 1 $1 1"
 								}
 
 							}
@@ -10578,7 +10590,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 228.5, 597.0, 284.0, 22.0 ],
 									"style" : "",
-									"text" : "script hidden connect Rmod993296 0 $1 0"
+									"text" : "script hidden connect Rmod72008 0 $1 0"
 								}
 
 							}
@@ -10623,7 +10635,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 415.0, 685.0, 250.0, 22.0 ],
 									"style" : "",
-									"text" : "script offsetfrom $1 Rmod993296 0 0 30"
+									"text" : "script offsetfrom $1 Rmod72008 0 0 30"
 								}
 
 							}
@@ -13121,6 +13133,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-188", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -13615,7 +13636,13 @@
 
 		}
 ,
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "test2",
+				"bootpath" : "~/Desktop/Fieldwork/Saved Boards",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",

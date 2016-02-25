@@ -1,8 +1,13 @@
 Music_SDP changelog:
 
+[Beta 1.0.1.4] 2016-02-24
+Fixed:
+	•	Saved and Loaded Boards now wait until all of the modules have been loaded before setting the routing name to the modules, ensuring that ALL parameters get sent out properly.
+
 [Beta 1.0.1.3] 2016-02-24
 Fixed:
 	•	Pedal Board and Saved Board now deletes any bpatchers that have been accidentally saved last time the board was edited. This makes it harder to “break” the boards by mistake.
+
 
 [Beta 1.0.1.1] 2016-02-22
 Changed: 
@@ -14,6 +19,7 @@ Fixed:
 
 
 [Beta 1.0.1] – 2016-02-21
+
 Added:
 	•	New Contribution/Atribution screen accessible from the About Music_SDP window.
 	•	New custom dials, MSDP_Dial_1, 2, 3 and MSDP_Dial_S1,2,3
@@ -27,4 +33,5 @@ Fixed:
 	•	Audio glitch fixed where clicks could be heard when changing volume via dials. New patch created called “MSDP_vol_fix”, used to scale signal heading out of modules.
  
 [Beta 1.0.0] – 2016-02-15
+
 -Initial Release
