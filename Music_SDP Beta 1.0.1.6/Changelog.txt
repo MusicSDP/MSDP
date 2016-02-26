@@ -1,9 +1,10 @@
 Music_SDP changelog:
-
-[Beta 1.0.1.5] 2016-02-24
+[Beta 1.0.1.6] 2016-02-26
+Added:
+	•	The Virtual Pads have been built and have been added to the Controller Setup and the Menu Bar.
+[Beta 1.0.1.5] 2016-02-25
 Fixed:
 	•	The Additive Synthesizer no longer plays stuck notes upon reloading with the arpeggiator turned on. 
-
 Changed:
 	•	The MSDP_Dial now displays the number you enter as you manually type it. Numbers that are too long get truncated, instead of pouring over onto the next screen.
 	•	The MSDP_Dial can now have either float or int selected as the fourth argument in the bpatcher.

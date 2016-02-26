@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 275.0, 98.0, 905.0, 497.0 ],
+		"rect" : [ 0.0, 47.0, 1440.0, 806.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,70 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1053",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 401.5, 449.0, 152.0, 22.0 ],
+					"style" : "",
+					"text" : "r msdp_open_virtual_pads"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1058",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 217.0, 128.0, 119.0, 22.0 ],
+					"style" : "",
+					"text" : "r msdp_virtual_pads"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1057",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 374.5, 577.0, 75.0, 22.0 ],
+					"style" : "",
+					"text" : "virtual_pads"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1055",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 374.5, 518.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1056",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 374.5, 545.0, 53.0, 22.0 ],
+					"style" : "",
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1051",
 					"maxclass" : "newobj",
@@ -431,14 +495,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-40",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 375.0, 35.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/MSDP Projects/Jims Project 1/After_windows/Saved Presets\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Fieldwork/Saved Presets\""
 								}
 
 							}
@@ -48566,7 +48629,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-10",
@@ -56593,6 +56655,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1055", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1049", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-116", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -56606,6 +56677,42 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1052", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1055", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1053", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1056", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1055", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1057", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1056", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1058", 0 ]
 				}
 
 			}
@@ -62271,6 +62378,32 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "virtual_sliders.maxpat",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "virtual_keys.maxpat",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "virtual_pads.maxpat",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "drum_pad.png",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Images",
+				"type" : "PNG ",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

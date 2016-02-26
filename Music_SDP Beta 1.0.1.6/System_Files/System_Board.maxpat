@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 0.0, 0.0, 50.0, 0.0 ],
+		"rect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"bgcolor" : [ 0.454959, 0.684788, 0.824976, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -3346,7 +3346,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-169",
-					"items" : [ "1 Voice", ",", "1 Voice1", ",", "2 arp_synth", ",", "3 Hub 1", ",", "4 Master Mix", ",", "5 destroyer", ",", "add_test", ",", "app_test", ",", "Part 1", ",", "Part 1 copy", ",", "Part 2", ",", "Part 2a", ",", "Part 3", ",", "Part 4", ",", "Part 5", ",", "t1", ",", "t2" ],
+					"items" : [ "1 Voice", ",", "1 Voice1", ",", "2 arp_synth", ",", "3 Hub 1", ",", "4 Master Mix", ",", "5 destroyer", ",", "add_test", ",", "app_test", ",", "Part 1", ",", "Part 1 copy", ",", "Part 2", ",", "Part 2a", ",", "Part 3", ",", "Part 4", ",", "Part 5", ",", "t1", ",", "t2", ",", "test1", ",", "test10", ",", "test11", ",", "test12", ",", "test2", ",", "test3", ",", "test4", ",", "test5", ",", "test6", ",", "test7" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3406,7 +3406,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 761.125, 720.5, 368.0, 22.0 ],
 					"style" : "",
-					"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.2\""
+					"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.6\""
 				}
 
 			}
@@ -3769,7 +3769,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 557.0, 292.0, 371.0, 22.0 ],
 																	"style" : "",
-																	"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.2\""
+																	"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.6\""
 																}
 
 															}
@@ -10637,7 +10637,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1178.0, 297.0, 297.0, 37.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Saved Projects"
+									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Saved Projects"
 								}
 
 							}
@@ -10788,7 +10788,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 404.0, 244.0, 203.0, 62.0 ],
 													"style" : "",
-													"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Saved Projects/Fieldwork\""
+													"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Saved Projects/Fieldwork\""
 												}
 
 											}
@@ -12167,7 +12167,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 463.0, 108.742432, 309.0, 37.0 ],
 													"style" : "",
-													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Saved Projects"
+													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Saved Projects"
 												}
 
 											}
@@ -13117,7 +13117,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 463.0, 108.742432, 311.0, 36.0 ],
 													"style" : "",
-													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Saved Projects"
+													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Saved Projects"
 												}
 
 											}
@@ -13419,7 +13419,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 316.5, 201.0, 309.0, 35.0 ],
 													"style" : "",
-													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Saved Projects"
+													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Saved Projects"
 												}
 
 											}
@@ -16781,7 +16781,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -454.0, 83.0, 1808.0, 440.0 ],
+						"rect" : [ -247.0, 127.0, 1808.0, 440.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -16809,6 +16809,30 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-65",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1568.0, 131.0, 154.0, 22.0 ],
+									"style" : "",
+									"text" : "s msdp_open_virtual_pads"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-63",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 1568.0, 93.5, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-68",
 									"maxclass" : "button",
@@ -16838,7 +16862,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1532.5, 131.0, 153.0, 22.0 ],
+									"patching_rect" : [ 1532.5, 159.0, 153.0, 22.0 ],
 									"style" : "",
 									"text" : "s msdp_open_virtual_keys"
 								}
@@ -16850,7 +16874,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1497.0, 169.0, 157.0, 22.0 ],
+									"patching_rect" : [ 1497.0, 197.0, 157.0, 22.0 ],
 									"style" : "",
 									"text" : "s msdp_open_virtual_slider"
 								}
@@ -16860,12 +16884,12 @@
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "bang", "bang", "" ],
-									"patching_rect" : [ 1497.0, 58.0, 90.0, 22.0 ],
+									"numinlets" : 4,
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "bang", "" ],
+									"patching_rect" : [ 1497.0, 58.0, 125.5, 22.0 ],
 									"style" : "",
-									"text" : "sel 1 2"
+									"text" : "sel 1 2 3"
 								}
 
 							}
@@ -18413,6 +18437,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-63", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-67", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -18507,6 +18540,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-61", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-65", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-63", 0 ]
 								}
 
 							}
@@ -18616,7 +18658,7 @@
 					"numoutlets" : 10,
 					"outlettype" : [ "int", "int", "int", "int", "int", "int", "int", "int", "int", "int" ],
 					"patching_rect" : [ -6.75, 310.0, 244.0, 22.0 ],
-					"save" : [ "#N", "menubar", 10, 0, ";", "#X", "about", "About", "Max", ";", "#X", "closeitem", ";", "#X", "file", 1, "Project", "Window", ";", "#X", "file", 2, "New", "Project...", ";", "#X", "file", 3, "Load", "Project", ";", "#X", "file", 4, "About", "Music_SDP", ";", "#X", "menutitle", 5, "Boards", ";", "#X", "item", 5, 1, "Add", "New", "Board", ";", "#X", "item", 5, 2, "Load", "Board", ";", "#X", "item", 5, 3, "Add", "Automator", ";", "#X", "menutitle", 6, "MSDP", "Windows", ";", "#X", "item", 6, 1, "View", "Audio", "Status", "Window", ";", "#X", "item", 6, 2, "View", "Audio", "File", "Manager", ";", "#X", "item", 6, 3, "View", "Score", "Player", ";", "#X", "item", 6, 4, "Pitch", "Tracker", ";", "#X", "item", 6, 5, "View", "Delay", "Machine", ";", "#X", "item", 6, 6, "View", "Repeat", "Machine", ";", "#X", "item", 6, 7, "View", "Random", "Machine", ";", "#X", "item", 6, 8, "View", "Performer", "View", ";", "#X", "item", 6, 9, "View", "Master", "Mixer", ";", "#X", "item", 6, 10, "View", "Project", "Settings", ";", "#X", "item", 6, 11, "View", "Metronome", ";", "#X", "item", 6, 12, "View", "Controller", "Setup", ";", "#X", "item", 6, 13, "Hide", "/Show", "System", "Board", ";", "#X", "item", 6, 14, "Reset", "System", "Board", ";", "#X", "menutitle", 7, "Record", "Audio", ";", "#X", "item", 7, 1, "Start/Stop", "Recording", ";", "#X", "menutitle", 8, "Audio", "Engine", ";", "#X", "item", 8, 1, "Start/Stop", "Audio", "Engine", ";", "#X", "menutitle", 9, "System", "Score", ";", "#X", "item", 9, 1, "View", "Score", ";", "#X", "item", 9, 2, "View", "Score", "Player", ";", "#X", "item", 9, 3, "Load", "Score", ";", "#X", "item", 9, 4, "Save", "Score", ";", "#X", "item", 9, 5, "View", "Pitch", "List", ";", "#X", "item", 9, 6, "View", "Repeat", "List", ";", "#X", "item", 9, 7, "View", "Delay", "List", ";", "#X", "menutitle", 10, "Virtual", "Controllers", ";", "#X", "item", 10, 1, "View", "Virtual", "Sliders", ";", "#X", "item", 10, 2, "View", "Virtual", "Keyboard", ";", "#X", "end", ";" ],
+					"save" : [ "#N", "menubar", 10, 0, ";", "#X", "about", "About", "Max", ";", "#X", "closeitem", ";", "#X", "file", 1, "Project", "Window", ";", "#X", "file", 2, "New", "Project...", ";", "#X", "file", 3, "Load", "Project", ";", "#X", "file", 4, "About", "Music_SDP", ";", "#X", "menutitle", 5, "Boards", ";", "#X", "item", 5, 1, "Add", "New", "Board", ";", "#X", "item", 5, 2, "Load", "Board", ";", "#X", "item", 5, 3, "Add", "Automator", ";", "#X", "menutitle", 6, "MSDP", "Windows", ";", "#X", "item", 6, 1, "View", "Audio", "Status", "Window", ";", "#X", "item", 6, 2, "View", "Audio", "File", "Manager", ";", "#X", "item", 6, 3, "View", "Score", "Player", ";", "#X", "item", 6, 4, "Pitch", "Tracker", ";", "#X", "item", 6, 5, "View", "Delay", "Machine", ";", "#X", "item", 6, 6, "View", "Repeat", "Machine", ";", "#X", "item", 6, 7, "View", "Random", "Machine", ";", "#X", "item", 6, 8, "View", "Performer", "View", ";", "#X", "item", 6, 9, "View", "Master", "Mixer", ";", "#X", "item", 6, 10, "View", "Project", "Settings", ";", "#X", "item", 6, 11, "View", "Metronome", ";", "#X", "item", 6, 12, "View", "Controller", "Setup", ";", "#X", "item", 6, 13, "Hide", "/Show", "System", "Board", ";", "#X", "item", 6, 14, "Reset", "System", "Board", ";", "#X", "menutitle", 7, "Record", "Audio", ";", "#X", "item", 7, 1, "Start/Stop", "Recording", ";", "#X", "menutitle", 8, "Audio", "Engine", ";", "#X", "item", 8, 1, "Start/Stop", "Audio", "Engine", ";", "#X", "menutitle", 9, "System", "Score", ";", "#X", "item", 9, 1, "View", "Score", ";", "#X", "item", 9, 2, "View", "Score", "Player", ";", "#X", "item", 9, 3, "Load", "Score", ";", "#X", "item", 9, 4, "Save", "Score", ";", "#X", "item", 9, 5, "View", "Pitch", "List", ";", "#X", "item", 9, 6, "View", "Repeat", "List", ";", "#X", "item", 9, 7, "View", "Delay", "List", ";", "#X", "menutitle", 10, "Virtual", "Controllers", ";", "#X", "item", 10, 1, "View", "Virtual", "Sliders", ";", "#X", "item", 10, 2, "View", "Virtual", "Keyboard", ";", "#X", "item", 10, 3, "View", "Virtual", "Pads", ";", "#X", "end", ";" ],
 					"style" : "",
 					"text" : "menubar 10"
 				}
@@ -19792,7 +19834,6 @@
 					"presentation_rect" : [ 66.25, 259.0, 519.0, 35.0 ],
 					"style" : "",
 					"text" : "Add New Board",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "add_text"
 				}
 
@@ -29595,7 +29636,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1061.0, 545.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -33325,115 +33366,127 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "pitch_tracker.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tracker_core.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Resizer.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Slave_Temp.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Fieldwork",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Saved Projects",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Saved Projects",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSDP Icon6a.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Performer_View.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "iyo.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Project_Settings.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "input_proto.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Master_Mixer.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Master_Temp.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Custom_Patches.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Controller_Setup.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_sliders.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_keys.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "virtual_pads.maxpat",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "drum_pad.png",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Images",
+				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "power_button_symbol_2b.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio_file_manager.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "single_file_player 1.1 .maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.2/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.6/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
