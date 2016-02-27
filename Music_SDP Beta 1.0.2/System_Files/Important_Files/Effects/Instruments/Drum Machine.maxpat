@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 0.0, 45.0, 1406.0, 771.0 ],
+		"rect" : [ 0.0, 45.0, 1246.0, 653.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1379.0, 461.0, 43.0, 23.0 ],
+					"style" : "",
+					"text" : "pipe 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 1397.0, 399.0, 29.5, 23.0 ],
+					"style" : "",
+					"text" : "t i i"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-97",
 					"maxclass" : "newobj",
@@ -931,7 +957,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1706.0, 370.0, 69.0, 23.0 ],
+					"patching_rect" : [ 1476.0, 310.0, 69.0, 23.0 ],
 					"style" : "",
 					"text" : "loadmess 1"
 				}
@@ -1821,7 +1847,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 1565.0, 457.300049, 45.0, 23.0 ],
+					"patching_rect" : [ 1611.983521, 380.5, 165.5, 23.0 ],
 					"style" : "",
 					"text" : "sel 0 1"
 				}
@@ -1918,7 +1944,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 1693.599976, 628.799988, 46.0, 23.0 ],
+					"patching_rect" : [ 1776.399902, 575.100037, 46.0, 23.0 ],
 					"style" : "",
 					"text" : "sel 0 1"
 				}
@@ -1963,7 +1989,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1425.0, 834.318848, 103.0, 21.0 ],
+					"patching_rect" : [ 1433.983521, 836.318848, 103.0, 21.0 ],
 					"style" : "",
 					"text" : "script show voc18"
 				}
@@ -1978,7 +2004,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1345.400024, 860.818848, 98.0, 21.0 ],
+					"patching_rect" : [ 1392.400024, 868.818848, 98.0, 21.0 ],
 					"style" : "",
 					"text" : "script hide voc18"
 				}
@@ -2004,7 +2030,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 1345.400024, 710.318848, 46.0, 23.0 ],
+					"patching_rect" : [ 2030.0, 669.5, 46.0, 23.0 ],
 					"style" : "",
 					"text" : "sel 0 1"
 				}
@@ -2110,7 +2136,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1436.883667, 615.100037, 39.0, 32.0 ],
+					"patching_rect" : [ 1909.683472, 575.100037, 39.0, 32.0 ],
 					"style" : ""
 				}
 
@@ -2123,7 +2149,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1383.883667, 615.100037, 39.0, 32.0 ],
+					"patching_rect" : [ 2017.483521, 630.318848, 39.0, 32.0 ],
 					"style" : ""
 				}
 
@@ -2156,7 +2182,7 @@
 					"numoutlets" : 45,
 					"offset" : [ -15.0, -17.0 ],
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "signal", "signal", "", "", "", "", "", "", "int", "", "", "" ],
-					"patching_rect" : [ 2050.00708, 245.399963, 1678.475098, 111.600037 ],
+					"patching_rect" : [ 2050.00708, 239.399963, 1678.475098, 111.600037 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 46.770828, 6.968826, 148.475098, 22.5 ],
 					"varname" : "DRUM_MACHINE_for_MSDP",
@@ -2199,7 +2225,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1517.0, 408.200012, 200.0, 24.0 ],
+					"patching_rect" : [ 1480.0, 341.200012, 200.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 41.770828, 35.718826, 303.312469, 22.018826 ],
 					"rounded" : 0.0,
@@ -4035,7 +4061,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 215.0, 99.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "32"
+									"text" : "110"
 								}
 
 							}
@@ -5338,7 +5364,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 215.0, 99.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "32"
+									"text" : "110"
 								}
 
 							}
@@ -7405,14 +7431,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-16",
-									"linecount" : 10,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 794.75, 107.0, 32.5, 357.0 ],
 									"style" : "",
-									"text" : "12 5 13 5 14 5 15 5 16 5 17 6 18 6 19 6 20 6 21 6"
+									"text" : "0"
 								}
 
 							}
@@ -8575,7 +8600,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 25.0, 326.0, 206.0, 22.0 ],
 									"style" : "",
-									"text" : "tabname Drum_Machine822"
+									"text" : "tabname Drum_Machine979"
 								}
 
 							}
@@ -10167,7 +10192,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
+					"destination" : [ "obj-35", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-187", 0 ]
@@ -11787,10 +11812,37 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-35", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -12643,191 +12695,339 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-22::obj-121::obj-123" : [ "dial[9]", "dial", 0 ],
-			"obj-22::obj-15::obj-245" : [ "umenu[9]", "umenu[2]", 0 ],
-			"obj-22::obj-42::obj-244" : [ "umenu[80]", "umenu[3]", 0 ],
-			"obj-22::obj-119::obj-242" : [ "umenu[31]", "umenu[2]", 0 ],
-			"obj-22::obj-120::obj-245" : [ "umenu[37]", "umenu[2]", 0 ],
-			"obj-22::obj-61::obj-245" : [ "umenu[77]", "umenu[2]", 0 ],
-			"obj-22::obj-4::obj-245" : [ "umenu[17]", "umenu[2]", 0 ],
-			"obj-22::obj-63::obj-241" : [ "umenu[70]", "umenu[3]", 0 ],
-			"obj-22::obj-64::obj-245" : [ "umenu[53]", "umenu[2]", 0 ],
-			"obj-22::obj-64::obj-123" : [ "dial[12]", "dial", 0 ],
-			"obj-22::obj-118::obj-241" : [ "umenu[26]", "umenu[3]", 0 ],
-			"obj-22::obj-41::obj-245" : [ "umenu[2]", "umenu[2]", 0 ],
-			"obj-22::obj-65::obj-242" : [ "umenu[47]", "umenu[2]", 0 ],
-			"obj-125" : [ "umenu[66]", "umenu[3]", 0 ],
-			"obj-22::obj-87::obj-245" : [ "umenu[45]", "umenu[2]", 0 ],
-			"obj-22::obj-113::obj-241" : [ "umenu[18]", "umenu[3]", 0 ],
-			"obj-22::obj-41::obj-242" : [ "umenu[5]", "umenu[2]", 0 ],
-			"obj-22::obj-121::obj-245" : [ "umenu[41]", "umenu[2]", 0 ],
-			"obj-22::obj-117::obj-241" : [ "umenu[22]", "umenu[3]", 0 ],
-			"obj-22::obj-42::obj-24" : [ "live.gain~[15]", "Volume Out", 0 ],
-			"obj-22::obj-11::obj-244" : [ "umenu[12]", "umenu[3]", 0 ],
-			"obj-22::obj-120::obj-244" : [ "umenu[36]", "umenu[3]", 0 ],
-			"obj-22::obj-61::obj-242" : [ "umenu[75]", "umenu[2]", 0 ],
-			"obj-22::obj-119::obj-244" : [ "umenu[32]", "umenu[3]", 0 ],
-			"obj-22::obj-113::obj-244" : [ "umenu[20]", "umenu[3]", 0 ],
-			"obj-22::obj-41::obj-241" : [ "umenu[4]", "umenu[3]", 0 ],
-			"obj-22::obj-158::obj-46" : [ "live.button", "live.button", 0 ],
-			"obj-22::obj-63::obj-123" : [ "dial[13]", "dial", 0 ],
-			"obj-22::obj-15::obj-242" : [ "umenu[7]", "umenu[2]", 0 ],
-			"obj-22::obj-63::obj-244" : [ "umenu[72]", "umenu[3]", 0 ],
-			"obj-22::obj-64::obj-24" : [ "live.gain~[12]", "Volume Out", 0 ],
-			"obj-22::obj-11::obj-242" : [ "umenu[11]", "umenu[2]", 0 ],
-			"obj-22::obj-65::obj-24" : [ "live.gain~[11]", "Volume Out", 0 ],
-			"obj-92::obj-21" : [ "live.dial", "live.dial", 0 ],
-			"obj-22::obj-118::obj-245" : [ "umenu[29]", "umenu[2]", 0 ],
-			"obj-22::obj-4::obj-242" : [ "umenu[15]", "umenu[2]", 0 ],
-			"obj-22::obj-87::obj-242" : [ "umenu[43]", "umenu[2]", 0 ],
-			"obj-22::obj-11::obj-123" : [ "dial[2]", "dial", 0 ],
-			"obj-22::obj-41::obj-123" : [ "dial", "dial", 0 ],
-			"obj-22::obj-15::obj-123" : [ "dial[1]", "dial", 0 ],
-			"obj-22::obj-42::obj-123" : [ "dial[15]", "dial", 0 ],
-			"obj-22::obj-121::obj-242" : [ "umenu[39]", "umenu[2]", 0 ],
-			"obj-22::obj-158::obj-62" : [ "live.button[4]", "live.button", 0 ],
-			"obj-22::obj-42::obj-241" : [ "umenu[78]", "umenu[3]", 0 ],
-			"obj-22::obj-120::obj-242" : [ "umenu[35]", "umenu[2]", 0 ],
-			"obj-22::obj-11::obj-245" : [ "umenu[13]", "umenu[2]", 0 ],
-			"obj-22::obj-61::obj-123" : [ "dial[14]", "dial", 0 ],
-			"obj-22::obj-120::obj-241" : [ "umenu[34]", "umenu[3]", 0 ],
-			"obj-22::obj-15::obj-241" : [ "umenu[6]", "umenu[3]", 0 ],
-			"obj-22::obj-61::obj-24" : [ "live.gain~[14]", "Volume Out", 0 ],
-			"obj-22::obj-119::obj-245" : [ "umenu[33]", "umenu[2]", 0 ],
-			"obj-22::obj-63::obj-245" : [ "umenu[73]", "umenu[2]", 0 ],
-			"obj-22::obj-64::obj-244" : [ "umenu[52]", "umenu[3]", 0 ],
-			"obj-22::obj-65::obj-241" : [ "umenu[46]", "umenu[3]", 0 ],
-			"obj-22::obj-87::obj-123" : [ "dial[10]", "dial", 0 ],
-			"obj-22::obj-11::obj-24" : [ "live.gain~[2]", "Volume Out", 0 ],
-			"obj-34" : [ "flonum[3]", "flonum[3]", 0 ],
-			"obj-22::obj-121::obj-241" : [ "umenu[38]", "umenu[3]", 0 ],
-			"obj-22::obj-117::obj-245" : [ "umenu[25]", "umenu[2]", 0 ],
-			"obj-22::obj-15::obj-24" : [ "live.gain~[1]", "Volume Out", 0 ],
-			"obj-65" : [ "flonum[2]", "flonum[1]", 0 ],
-			"obj-135" : [ "umenu[69]", "umenu[2]", 0 ],
-			"obj-22::obj-121::obj-244" : [ "umenu[40]", "umenu[3]", 0 ],
-			"obj-215::obj-2" : [ "live.grid[2]", "live.grid", 0 ],
-			"obj-22::obj-42::obj-245" : [ "umenu[81]", "umenu[2]", 0 ],
-			"obj-22::obj-120::obj-123" : [ "dial[8]", "dial", 0 ],
-			"obj-22::obj-61::obj-241" : [ "umenu[74]", "umenu[3]", 0 ],
-			"obj-22::obj-119::obj-123" : [ "dial[7]", "dial", 0 ],
-			"obj-22::obj-15::obj-244" : [ "umenu[8]", "umenu[3]", 0 ],
-			"obj-22::obj-63::obj-24" : [ "live.gain~[13]", "Volume Out", 0 ],
-			"obj-22::obj-118::obj-123" : [ "dial[6]", "dial", 0 ],
-			"obj-22::obj-118::obj-244" : [ "umenu[28]", "umenu[3]", 0 ],
-			"obj-22::obj-117::obj-24" : [ "live.gain~[5]", "Volume Out", 0 ],
-			"obj-22::obj-4::obj-241" : [ "umenu[14]", "umenu[3]", 0 ],
-			"obj-22::obj-64::obj-241" : [ "umenu[50]", "umenu[3]", 0 ],
-			"obj-22::obj-113::obj-24" : [ "live.gain~[4]", "Volume Out", 0 ],
-			"obj-22::obj-113::obj-245" : [ "umenu[21]", "umenu[2]", 0 ],
-			"obj-22::obj-4::obj-24" : [ "live.gain~[3]", "Volume Out", 0 ],
-			"obj-22::obj-158::obj-25" : [ "live.grid[1]", "live.grid", 0 ],
-			"obj-22::obj-65::obj-245" : [ "umenu[49]", "umenu[2]", 0 ],
-			"obj-22::obj-87::obj-244" : [ "umenu[44]", "umenu[3]", 0 ],
-			"obj-22::obj-119::obj-241" : [ "umenu[30]", "umenu[3]", 0 ],
-			"obj-22::obj-87::obj-24" : [ "live.gain~[10]", "Volume Out", 0 ],
+			"obj-22::obj-42::obj-242" : [ "umenu[104]", "umenu[2]", 0 ],
+			"obj-22::obj-65::obj-24" : [ "live.gain~[30]", "Volume Out", 0 ],
+			"obj-22::obj-118::obj-123" : [ "dial[25]", "dial", 0 ],
+			"obj-22::obj-113::obj-123" : [ "dial[23]", "dial", 0 ],
+			"obj-22::obj-244.9::obj-24" : [ "live.gain~[11]", "Volume Out", 0 ],
+			"obj-22::obj-244.9::obj-244" : [ "umenu[39]", "umenu[3]", 0 ],
+			"obj-22::obj-64::obj-24" : [ "live.gain~[31]", "Volume Out", 0 ],
+			"obj-22::obj-244.2::obj-241" : [ "umenu[1]", "umenu[3]", 0 ],
+			"obj-22::obj-244.12::obj-244" : [ "umenu[51]", "umenu[3]", 0 ],
+			"obj-22::obj-244.1::obj-241" : [ "umenu[17]", "umenu[3]", 0 ],
+			"obj-22::obj-244.1::obj-24" : [ "live.gain~[3]", "Volume Out", 0 ],
+			"obj-22::obj-244.10::obj-241" : [ "umenu[41]", "umenu[3]", 0 ],
+			"obj-22::obj-244.12::obj-24" : [ "live.gain~[14]", "Volume Out", 0 ],
+			"obj-22::obj-121::obj-123" : [ "dial[28]", "dial", 0 ],
+			"obj-22::obj-244.13::obj-241" : [ "umenu[53]", "umenu[3]", 0 ],
+			"obj-22::obj-120::obj-123" : [ "dial[27]", "dial", 0 ],
+			"obj-22::obj-244.10::obj-245" : [ "umenu[44]", "umenu[2]", 0 ],
+			"obj-22::obj-244.13::obj-244" : [ "umenu[55]", "umenu[3]", 0 ],
+			"obj-22::obj-244.15::obj-24" : [ "live.gain~[17]", "Volume Out", 0 ],
+			"obj-22::obj-61::obj-24" : [ "live.gain~[33]", "Volume Out", 0 ],
+			"obj-22::obj-41::obj-24" : [ "live.gain~[19]", "Volume Out", 0 ],
+			"obj-22::obj-244.11::obj-242" : [ "umenu[46]", "umenu[2]", 0 ],
+			"obj-22::obj-244.14::obj-241" : [ "umenu[70]", "umenu[3]", 0 ],
+			"obj-22::obj-63::obj-242" : [ "umenu[100]", "umenu[2]", 0 ],
+			"obj-22::obj-64::obj-242" : [ "umenu[98]", "umenu[2]", 0 ],
+			"obj-22::obj-244.8::obj-24" : [ "live.gain~[10]", "Volume Out", 0 ],
+			"obj-22::obj-244.12::obj-245" : [ "umenu[52]", "umenu[2]", 0 ],
+			"obj-22::obj-42::obj-24" : [ "live.gain~[34]", "Volume Out", 0 ],
+			"obj-22::obj-113::obj-242" : [ "umenu[84]", "umenu[2]", 0 ],
+			"obj-22::obj-244.3::obj-242" : [ "umenu[6]", "umenu[2]", 0 ],
+			"obj-22::obj-244.7::obj-242" : [ "umenu[30]", "umenu[2]", 0 ],
 			"obj-128" : [ "umenu[67]", "umenu[3]", 0 ],
-			"obj-22::obj-121::obj-24" : [ "live.gain~[9]", "Volume Out", 0 ],
-			"obj-22::obj-4::obj-244" : [ "umenu[16]", "umenu[3]", 0 ],
-			"obj-22::obj-158::obj-60" : [ "live.button[3]", "live.button", 0 ],
-			"obj-22::obj-42::obj-242" : [ "umenu[79]", "umenu[2]", 0 ],
-			"obj-22::obj-158::obj-56" : [ "live.button[2]", "live.button", 0 ],
-			"obj-22::obj-120::obj-24" : [ "live.gain~[8]", "Volume Out", 0 ],
-			"obj-22::obj-113::obj-242" : [ "umenu[19]", "umenu[2]", 0 ],
-			"obj-22::obj-61::obj-244" : [ "umenu[76]", "umenu[3]", 0 ],
-			"obj-22::obj-119::obj-24" : [ "live.gain~[7]", "Volume Out", 0 ],
-			"obj-22::obj-117::obj-242" : [ "umenu[23]", "umenu[2]", 0 ],
-			"obj-22::obj-63::obj-242" : [ "umenu[71]", "umenu[2]", 0 ],
-			"obj-22::obj-118::obj-24" : [ "live.gain~[6]", "Volume Out", 0 ],
-			"obj-22::obj-11::obj-241" : [ "umenu[10]", "umenu[3]", 0 ],
-			"obj-22::obj-41::obj-24" : [ "live.gain~", "Volume Out", 0 ],
-			"obj-22::obj-117::obj-123" : [ "dial[5]", "dial", 0 ],
-			"obj-22::obj-64::obj-242" : [ "umenu[51]", "umenu[2]", 0 ],
-			"obj-22::obj-117::obj-244" : [ "umenu[24]", "umenu[3]", 0 ],
-			"obj-22::obj-113::obj-123" : [ "dial[4]", "dial", 0 ],
-			"obj-22::obj-65::obj-244" : [ "umenu[48]", "umenu[3]", 0 ],
-			"obj-22::obj-4::obj-123" : [ "dial[3]", "dial", 0 ],
-			"obj-22::obj-65::obj-123" : [ "dial[11]", "dial", 0 ],
-			"obj-22::obj-41::obj-244" : [ "umenu[3]", "umenu[3]", 0 ],
-			"obj-22::obj-87::obj-241" : [ "umenu[42]", "umenu[3]", 0 ],
+			"obj-22::obj-118::obj-242" : [ "umenu[86]", "umenu[2]", 0 ],
+			"obj-22::obj-11::obj-24" : [ "live.gain~[21]", "Volume Out", 0 ],
+			"obj-22::obj-244.7::obj-123" : [ "dial[9]", "dial", 0 ],
+			"obj-22::obj-120::obj-241" : [ "umenu[89]", "umenu[3]", 0 ],
+			"obj-22::obj-244.4::obj-244" : [ "umenu[11]", "umenu[3]", 0 ],
+			"obj-22::obj-63::obj-24" : [ "live.gain~[32]", "Volume Out", 0 ],
+			"obj-22::obj-244.8::obj-123" : [ "dial[10]", "dial", 0 ],
+			"obj-22::obj-244.4::obj-24" : [ "live.gain~[6]", "Volume Out", 0 ],
+			"obj-22::obj-244.12::obj-241" : [ "umenu[49]", "umenu[3]", 0 ],
+			"obj-22::obj-244.16::obj-123" : [ "dial[18]", "dial", 0 ],
+			"obj-22::obj-244.11::obj-244" : [ "umenu[47]", "umenu[3]", 0 ],
+			"obj-22::obj-244.14::obj-242" : [ "umenu[71]", "umenu[2]", 0 ],
+			"obj-22::obj-244.2::obj-245" : [ "umenu[4]", "umenu[2]", 0 ],
+			"obj-22::obj-244.2::obj-242" : [ "umenu[2]", "umenu[2]", 0 ],
+			"obj-22::obj-244.5::obj-24" : [ "live.gain~[7]", "Volume Out", 0 ],
+			"obj-22::obj-244.9::obj-242" : [ "umenu[38]", "umenu[2]", 0 ],
+			"obj-22::obj-65::obj-242" : [ "umenu[96]", "umenu[2]", 0 ],
+			"obj-22::obj-244.12::obj-123" : [ "dial[14]", "dial", 0 ],
+			"obj-22::obj-121::obj-242" : [ "umenu[92]", "umenu[2]", 0 ],
+			"obj-22::obj-11::obj-123" : [ "dial[21]", "dial", 0 ],
+			"obj-22::obj-244.7::obj-24" : [ "live.gain~[9]", "Volume Out", 0 ],
+			"obj-22::obj-244.1::obj-244" : [ "umenu[19]", "umenu[3]", 0 ],
+			"obj-22::obj-244.10::obj-244" : [ "umenu[43]", "umenu[3]", 0 ],
+			"obj-22::obj-244.16::obj-245" : [ "umenu[81]", "umenu[2]", 0 ],
+			"obj-22::obj-244.5::obj-241" : [ "umenu[21]", "umenu[3]", 0 ],
 			"obj-126" : [ "umenu[68]", "umenu[2]", 0 ],
-			"obj-22::obj-118::obj-242" : [ "umenu[27]", "umenu[2]", 0 ]
+			"obj-22::obj-244.8::obj-241" : [ "umenu[33]", "umenu[3]", 0 ],
+			"obj-22::obj-244.13::obj-24" : [ "live.gain~[15]", "Volume Out", 0 ],
+			"obj-22::obj-244.15::obj-245" : [ "umenu[77]", "umenu[2]", 0 ],
+			"obj-22::obj-244.5::obj-123" : [ "dial[7]", "dial", 0 ],
+			"obj-22::obj-119::obj-241" : [ "umenu[87]", "umenu[3]", 0 ],
+			"obj-22::obj-117::obj-242" : [ "umenu[64]", "umenu[2]", 0 ],
+			"obj-22::obj-244.1::obj-245" : [ "umenu[20]", "umenu[2]", 0 ],
+			"obj-22::obj-244.5::obj-244" : [ "umenu[23]", "umenu[3]", 0 ],
+			"obj-22::obj-244.6::obj-24" : [ "live.gain~[8]", "Volume Out", 0 ],
+			"obj-22::obj-244.8::obj-244" : [ "umenu[35]", "umenu[3]", 0 ],
+			"obj-22::obj-65::obj-123" : [ "dial[30]", "dial", 0 ],
+			"obj-22::obj-4::obj-24" : [ "live.gain~[22]", "Volume Out", 0 ],
+			"obj-22::obj-244.3::obj-245" : [ "umenu[8]", "umenu[2]", 0 ],
+			"obj-22::obj-244.9::obj-241" : [ "umenu[37]", "umenu[3]", 0 ],
+			"obj-22::obj-120::obj-242" : [ "umenu[90]", "umenu[2]", 0 ],
+			"obj-22::obj-119::obj-24" : [ "live.gain~[26]", "Volume Out", 0 ],
+			"obj-22::obj-41::obj-242" : [ "umenu[63]", "umenu[2]", 0 ],
+			"obj-22::obj-244.6::obj-123" : [ "dial[8]", "dial", 0 ],
+			"obj-22::obj-244.14::obj-24" : [ "live.gain~[16]", "Volume Out", 0 ],
+			"obj-22::obj-117::obj-123" : [ "dial[24]", "dial", 0 ],
+			"obj-22::obj-244.3::obj-24" : [ "live.gain~[5]", "Volume Out", 0 ],
+			"obj-22::obj-244.3::obj-244" : [ "umenu[7]", "umenu[3]", 0 ],
+			"obj-22::obj-244.9::obj-245" : [ "umenu[40]", "umenu[2]", 0 ],
+			"obj-22::obj-87::obj-241" : [ "umenu[93]", "umenu[3]", 0 ],
+			"obj-22::obj-118::obj-241" : [ "umenu[65]", "umenu[3]", 0 ],
+			"obj-22::obj-244.5::obj-245" : [ "umenu[24]", "umenu[2]", 0 ],
+			"obj-22::obj-63::obj-123" : [ "dial[32]", "dial", 0 ],
+			"obj-22::obj-244.2::obj-244" : [ "umenu[3]", "umenu[3]", 0 ],
+			"obj-22::obj-244.6::obj-241" : [ "umenu[25]", "umenu[3]", 0 ],
+			"obj-22::obj-244.14::obj-245" : [ "umenu[73]", "umenu[2]", 0 ],
+			"obj-22::obj-118::obj-24" : [ "live.gain~[25]", "Volume Out", 0 ],
+			"obj-22::obj-244.13::obj-242" : [ "umenu[54]", "umenu[2]", 0 ],
+			"obj-22::obj-244.14::obj-123" : [ "dial[16]", "dial", 0 ],
+			"obj-22::obj-244.16::obj-244" : [ "umenu[80]", "umenu[3]", 0 ],
+			"obj-22::obj-61::obj-123" : [ "dial[33]", "dial", 0 ],
+			"obj-22::obj-244.11::obj-241" : [ "umenu[45]", "umenu[3]", 0 ],
+			"obj-22::obj-244.15::obj-242" : [ "umenu[75]", "umenu[2]", 0 ],
+			"obj-22::obj-63::obj-241" : [ "umenu[99]", "umenu[3]", 0 ],
+			"obj-22::obj-11::obj-241" : [ "umenu[57]", "umenu[3]", 0 ],
+			"obj-22::obj-41::obj-123" : [ "dial[19]", "dial", 0 ],
+			"obj-125" : [ "umenu[66]", "umenu[3]", 0 ],
+			"obj-22::obj-4::obj-241" : [ "umenu[59]", "umenu[3]", 0 ],
+			"obj-22::obj-244.13::obj-123" : [ "dial[15]", "dial", 0 ],
+			"obj-22::obj-244.16::obj-241" : [ "umenu[78]", "umenu[3]", 0 ],
+			"obj-215::obj-2" : [ "live.grid[2]", "live.grid", 0 ],
+			"obj-22::obj-61::obj-242" : [ "umenu[102]", "umenu[2]", 0 ],
+			"obj-22::obj-15::obj-123" : [ "dial[20]", "dial", 0 ],
+			"obj-22::obj-244.15::obj-241" : [ "umenu[74]", "umenu[3]", 0 ],
+			"obj-22::obj-61::obj-241" : [ "umenu[101]", "umenu[3]", 0 ],
+			"obj-22::obj-87::obj-123" : [ "dial[29]", "dial", 0 ],
+			"obj-22::obj-113::obj-24" : [ "live.gain~[23]", "Volume Out", 0 ],
+			"obj-22::obj-244.2::obj-24" : [ "live.gain~[4]", "Volume Out", 0 ],
+			"obj-22::obj-244.7::obj-244" : [ "umenu[31]", "umenu[3]", 0 ],
+			"obj-22::obj-41::obj-241" : [ "umenu[62]", "umenu[3]", 0 ],
+			"obj-22::obj-244.8::obj-242" : [ "umenu[34]", "umenu[2]", 0 ],
+			"obj-22::obj-244.2::obj-123" : [ "dial[6]", "dial", 0 ],
+			"obj-22::obj-244.11::obj-24" : [ "live.gain~[13]", "Volume Out", 0 ],
+			"obj-22::obj-244.12::obj-242" : [ "umenu[50]", "umenu[2]", 0 ],
+			"obj-22::obj-42::obj-123" : [ "dial[34]", "dial", 0 ],
+			"obj-22::obj-244.11::obj-123" : [ "dial[13]", "dial", 0 ],
+			"obj-92::obj-21" : [ "live.dial", "live.dial", 0 ],
+			"obj-22::obj-244.10::obj-242" : [ "umenu[42]", "umenu[2]", 0 ],
+			"obj-22::obj-244.16::obj-24" : [ "live.gain~[18]", "Volume Out", 0 ],
+			"obj-22::obj-65::obj-241" : [ "umenu[95]", "umenu[3]", 0 ],
+			"obj-22::obj-87::obj-24" : [ "live.gain~[29]", "Volume Out", 0 ],
+			"obj-22::obj-244.6::obj-244" : [ "umenu[27]", "umenu[3]", 0 ],
+			"obj-22::obj-244.3::obj-241" : [ "umenu[5]", "umenu[3]", 0 ],
+			"obj-22::obj-244.7::obj-241" : [ "umenu[29]", "umenu[3]", 0 ],
+			"obj-22::obj-64::obj-123" : [ "dial[31]", "dial", 0 ],
+			"obj-22::obj-119::obj-123" : [ "dial[26]", "dial", 0 ],
+			"obj-22::obj-15::obj-241" : [ "umenu[82]", "umenu[3]", 0 ],
+			"obj-22::obj-15::obj-242" : [ "umenu[83]", "umenu[2]", 0 ],
+			"obj-22::obj-121::obj-24" : [ "live.gain~[28]", "Volume Out", 0 ],
+			"obj-22::obj-4::obj-123" : [ "dial[22]", "dial", 0 ],
+			"obj-22::obj-244.4::obj-242" : [ "umenu[10]", "umenu[2]", 0 ],
+			"obj-22::obj-244.6::obj-245" : [ "umenu[28]", "umenu[2]", 0 ],
+			"obj-22::obj-244.1::obj-123" : [ "dial[5]", "dial", 0 ],
+			"obj-22::obj-244.4::obj-123" : [ "dial[2]", "dial", 0 ],
+			"obj-22::obj-244.5::obj-242" : [ "umenu[22]", "umenu[2]", 0 ],
+			"obj-22::obj-244.10::obj-24" : [ "live.gain~[12]", "Volume Out", 0 ],
+			"obj-22::obj-244.13::obj-245" : [ "umenu[56]", "umenu[2]", 0 ],
+			"obj-22::obj-119::obj-242" : [ "umenu[88]", "umenu[2]", 0 ],
+			"obj-22::obj-244.8::obj-245" : [ "umenu[36]", "umenu[2]", 0 ],
+			"obj-22::obj-113::obj-241" : [ "umenu[61]", "umenu[3]", 0 ],
+			"obj-22::obj-244.10::obj-123" : [ "dial[12]", "dial", 0 ],
+			"obj-22::obj-121::obj-241" : [ "umenu[91]", "umenu[3]", 0 ],
+			"obj-22::obj-244.11::obj-245" : [ "umenu[48]", "umenu[2]", 0 ],
+			"obj-22::obj-117::obj-24" : [ "live.gain~[24]", "Volume Out", 0 ],
+			"obj-22::obj-244.4::obj-241" : [ "umenu[9]", "umenu[3]", 0 ],
+			"obj-22::obj-87::obj-242" : [ "umenu[94]", "umenu[2]", 0 ],
+			"obj-22::obj-244.14::obj-244" : [ "umenu[72]", "umenu[3]", 0 ],
+			"obj-22::obj-244.15::obj-123" : [ "dial[17]", "dial", 0 ],
+			"obj-22::obj-244.1::obj-242" : [ "umenu[18]", "umenu[2]", 0 ],
+			"obj-22::obj-64::obj-241" : [ "umenu[97]", "umenu[3]", 0 ],
+			"obj-22::obj-120::obj-24" : [ "live.gain~[27]", "Volume Out", 0 ],
+			"obj-22::obj-244.6::obj-242" : [ "umenu[26]", "umenu[2]", 0 ],
+			"obj-22::obj-244.15::obj-244" : [ "umenu[76]", "umenu[3]", 0 ],
+			"obj-65" : [ "flonum[2]", "flonum[1]", 0 ],
+			"obj-22::obj-11::obj-242" : [ "umenu[58]", "umenu[2]", 0 ],
+			"obj-22::obj-15::obj-24" : [ "live.gain~[20]", "Volume Out", 0 ],
+			"obj-34" : [ "flonum[3]", "flonum[3]", 0 ],
+			"obj-22::obj-4::obj-242" : [ "umenu[60]", "umenu[2]", 0 ],
+			"obj-22::obj-244.4::obj-245" : [ "umenu[12]", "umenu[2]", 0 ],
+			"obj-22::obj-244.7::obj-245" : [ "umenu[32]", "umenu[2]", 0 ],
+			"obj-22::obj-244.16::obj-242" : [ "umenu[79]", "umenu[2]", 0 ],
+			"obj-22::obj-158::obj-25" : [ "live.grid[1]", "live.grid", 0 ],
+			"obj-22::obj-42::obj-241" : [ "umenu[103]", "umenu[3]", 0 ],
+			"obj-22::obj-117::obj-241" : [ "umenu[85]", "umenu[3]", 0 ],
+			"obj-22::obj-244.9::obj-123" : [ "dial[11]", "dial", 0 ],
+			"obj-135" : [ "umenu[69]", "umenu[2]", 0 ],
+			"obj-22::obj-244.3::obj-123" : [ "dial[1]", "dial", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "dm1.maxpat_20160123.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "dm1.maxpat_20160125.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "dm_machine.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dm_sequencer.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "down_caret_3.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Images",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "dm_singledrum.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
-				"type" : "JSON",
+				"name" : "right_caret_3.png",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Images",
+				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pan2S.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"name" : "up_caret_3.png",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Images",
+				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "left_caret_3.png",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Images",
+				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "dm_guidrum.maxpat",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio_loader.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "dm_polydrum2.maxpat",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pan2S.maxpat",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dm_v1.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dm_v2.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dm_seq2.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_dial_3.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Images",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_vol_fix.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.3a/System_Files/Important_Files/Effects",
+				"bootpath" : "~/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
+		"snapshot" : 		{
+			"filetype" : "C74Snapshot",
+			"version" : 2,
+			"minorversion" : 0,
+			"name" : "snapshotlist",
+			"origin" : "jpatcher",
+			"type" : "list",
+			"subtype" : "Undefined",
+			"embed" : 1,
+			"snapshotlist" : 			{
+				"current_snapshot" : -1,
+				"entries" : [ 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "dm1.maxpat",
+						"origin" : "Drum Machine",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"fileref" : 						{
+							"name" : "dm1.maxpat",
+							"filename" : "dm1.maxpat_20160123.maxsnap",
+							"filepath" : "~/Documents/Max 7/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "6b0e751ef73e303f85fd2c522cd30f71"
+						}
+
+					}
+, 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "dm1.maxpat",
+						"origin" : "Drum Machine",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"fileref" : 						{
+							"name" : "dm1.maxpat",
+							"filename" : "dm1.maxpat_20160125.maxsnap",
+							"filepath" : "~/Documents/Max 7/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "0f76a90c3ee6e4d4a901c5849903d764"
+						}
+
+					}
+ ]
+			}
+
+		}
+,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -12849,8 +13049,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

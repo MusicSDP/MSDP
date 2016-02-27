@@ -1,4 +1,8 @@
 Music_SDP changelog:
+[Beta 1.0.2] 2016-02-26
+Changed:
+	•	The Drum Machine has been optimized quite a bit and is significantly more CPU efficient.
+
 [Beta 1.0.1.6] 2016-02-26
 Added:
 	•	The Virtual Pads have been built and have been added to the Controller Setup and the Menu Bar.
