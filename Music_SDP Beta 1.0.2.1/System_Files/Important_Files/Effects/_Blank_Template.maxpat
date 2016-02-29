@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 27.0, 85.0, 1372.0, 737.0 ],
+		"rect" : [ 34.0, 85.0, 1372.0, 737.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,65 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 744.357544, 655.598511, 84.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 146.0, 99.367554, 75.5, 21.0 ],
+					"style" : "",
+					"text" : "4. My Param"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 598.857544, 632.367554, 58.0, 21.0 ],
+					"style" : "",
+					"text" : "u-param"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-180",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1101.0, 752.0, 118.0, 23.0 ],
+					"restore" : 					{
+						"flonum[3]" : [ 1.0 ],
+						"pvol" : [ 1.0 ],
+						"toggle" : [ 0 ],
+						"u-param" : [ 0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u149005532"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-177",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 86.76062, 520.098511, 150.0, 21.0 ],
+					"style" : "",
+					"text" : "pvol"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-35",
 					"linecount" : 7,
@@ -101,7 +160,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 32.76062, 520.098511, 50.0, 23.0 ],
 					"style" : "",
-					"varname" : "number[1]"
+					"varname" : "pvol"
 				}
 
 			}
@@ -710,19 +769,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-79",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 523.857544, 578.723511, 64.0, 50.0 ],
-					"style" : "",
-					"text" : "Needed\nto save to Presets"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-76",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -794,7 +840,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 543.142273, 645.459717, 96.0, 64.0 ],
+					"patching_rect" : [ 533.142273, 538.967163, 96.0, 64.0 ],
 					"style" : "",
 					"text" : "code flow for parameters that will be user controlled"
 				}
@@ -809,27 +855,10 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 663.857544, 632.367554, 50.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 158.75, 122.367554, 50.0, 23.0 ],
 					"style" : "",
-					"varname" : "number"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-69",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 584.642273, 591.223511, 72.0, 23.0 ],
-					"restore" : [ 0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0
-					}
-,
-					"style" : "",
-					"text" : "pattr param",
-					"varname" : "param"
+					"varname" : "u-param"
 				}
 
 			}
@@ -948,25 +977,6 @@
 					"style" : "",
 					"text" : "pattr ina",
 					"varname" : "ina"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-55",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 97.76062, 485.847412, 53.0, 23.0 ],
-					"restore" : [ 1.0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0
-					}
-,
-					"style" : "",
-					"text" : "pattr vol",
-					"varname" : "vol[1]"
 				}
 
 			}
@@ -2087,14 +2097,14 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1156.186035, 811.640869, 220.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 91, 277, 445, 625 ],
+						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 365, 44, 816, 172 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"style" : "",
 					"text" : "pattrstorage fullpatch @savemode 0",
-					"varname" : "presets504569"
+					"varname" : "presets371708"
 				}
 
 			}
@@ -2123,7 +2133,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 947.686096, 794.537476, 104.0, 24.0 ],
-					"pattrstorage" : "presets504569",
+					"pattrstorage" : "presets371708",
 					"presentation" : 1,
 					"presentation_rect" : [ 179.5, 13.0, 104.0, 24.0 ],
 					"style" : ""
@@ -2187,16 +2197,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"linecount" : 19,
+					"linecount" : 21,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 103.5, 759.0, 280.0 ],
+					"patching_rect" : [ 17.0, 103.5, 829.0, 309.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 27,
-					"presentation_rect" : [ 9.0, 300.0, 401.0, 395.0 ],
+					"presentation_linecount" : 30,
+					"presentation_rect" : [ 9.0, 300.0, 401.0, 438.0 ],
 					"style" : "",
-					"text" : "Instructions:\n\nThis blank template includes all of the structures required to quickly incorporate your custom code into the work flow of Music_SDP.\n\nSignal for the patch will come in from the Stereo Inputs, and out through the Stereo Outputs. The I/O Routing code controls the naming of the signal routing for the modules.\n\nData recall, automation, and score messages come in through the parameter routing. Parameters get saved in the Save Parameters box.\n\nDetermine your patche's default name in the Namer Box. (keep this to the RIGHT of the Save Parameters, to maintain outlet order\n\nObjects in yellow panels should NOT be changed, although the contents can be deleted if it's not needed for your patch.\n\nObjects in blue will REQUIRE your attention to complete the patch. The patch dimensions are not limited in patcher view, but in presentation view, everything should fit within the boundaries determined by the 'stop here' comments.\n\nBecause a module may be loaded multiple times, NEVER use global commands like Send/Send~, Receive/Receive~, Forward, coll, etc. To keep your patches clean, use pvar to send signals cordlessly within the patch. \n\n"
+					"text" : "Instructions:\n\nThis blank template includes all of the structures required to quickly incorporate your custom code into the work flow of Music_SDP.\n\nSignal for the patch will come in from the Stereo Inputs, and out through the Stereo Outputs. The I/O Routing code controls the naming of the signal routing for the modules.\n\nData recall, automation, and score messages come in through the parameter routing. Parameters get saved in the Save Parameters box.\n\nDetermine your patche's default name in the Namer Box. (keep this to the RIGHT of the Save Parameters, to maintain outlet order\n\nObjects in yellow panels should NOT be changed, although the contents can be deleted if it's not needed for your patch.\n\nObjects in blue will REQUIRE your attention to complete the patch. The patch dimensions are not limited in patcher view, but in presentation view, everything should fit within the boundaries determined by the 'stop here' comments.\n\nBecause a module may be loaded multiple times, NEVER use global commands like Send/Send~, Receive/Receive~, Forward, coll, etc. To keep your patches clean, use pvar to send signals cordlessly within the patch. \n\nAny UI object that you want to be saved with presets needs a scripting name in order for the autopattr to find it\n\n"
 				}
 
 			}
@@ -9781,7 +9791,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 25.0, 326.0, 206.0, 22.0 ],
 									"style" : "",
-									"text" : "tabname Module_Name659"
+									"text" : "tabname Module_Name650"
 								}
 
 							}
@@ -11694,15 +11704,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-175", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-55", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-133", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -11831,15 +11832,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-67", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-69", 1 ]
 				}
 
 			}
@@ -11993,38 +11985,38 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-133" : [ "umenu", "umenu", 0 ],
-			"obj-65" : [ "flonum[2]", "flonum[1]", 0 ],
-			"obj-125" : [ "umenu[4]", "umenu[3]", 0 ],
-			"obj-132" : [ "umenu[1]", "umenu[1]", 0 ],
+			"obj-135" : [ "umenu[2]", "umenu[2]", 0 ],
 			"obj-176::obj-21" : [ "live.dial", "live.dial", 0 ],
+			"obj-133" : [ "umenu", "umenu", 0 ],
+			"obj-132" : [ "umenu[1]", "umenu[1]", 0 ],
+			"obj-65" : [ "flonum[2]", "flonum[1]", 0 ],
 			"obj-34" : [ "flonum[3]", "flonum[3]", 0 ],
-			"obj-128" : [ "umenu[3]", "umenu[3]", 0 ],
 			"obj-126" : [ "umenu[5]", "umenu[2]", 0 ],
-			"obj-135" : [ "umenu[2]", "umenu[2]", 0 ]
+			"obj-125" : [ "umenu[4]", "umenu[3]", 0 ],
+			"obj-128" : [ "umenu[3]", "umenu[3]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "audio_loader.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.5/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_dial_1.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.5/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.5/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_vol_fix.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.1.5/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -12051,8 +12043,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

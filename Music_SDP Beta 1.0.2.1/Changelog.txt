@@ -1,4 +1,11 @@
 Music_SDP changelog:
+[Beta 1.0.2.1] 2016-02-29
+Added:
+	•	The Saved and Loaded Boards now have the ability to Save and Save As
+Changed:
+	•	The Blank Template now uses autopattr to determine which ui elements can be stored, instead of having to write out separate pattr objects
+	•	The About Page now says 1.0.3, in advance of the next update.
+
 [Beta 1.0.2] 2016-02-26
 Changed:
 	•	The Drum Machine has been optimized quite a bit and is significantly more CPU efficient.
