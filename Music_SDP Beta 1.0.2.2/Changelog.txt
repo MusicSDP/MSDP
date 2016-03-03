@@ -1,4 +1,13 @@
 Music_SDP changelog:
+[Beta 1.0.2.2] 2016-03-03
+Changed:
+	•	Changes have been made to the Full View toggle and the Add New Button on the System Board to allow for more uniformity between the OSX and Windows versions.
+	•	The Full View Tabs have been tweaked slightly
+	•	The About screen is now a separate patcher, to make it easier to modify without having to re-build the system board
+
+Added:
+	•	The Metronome now displays the current beat in the top row of controls.
+
 [Beta 1.0.2.1] 2016-02-29
 Added:
 	•	The Saved and Loaded Boards now have the ability to Save and Save As
