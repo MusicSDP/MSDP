@@ -40,6 +40,43 @@
 		"title" : "Music_SDP",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"checkedcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
+					"id" : "obj-188",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 570.875, 625.75, 41.5, 41.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 47.9375, 511.0, 33.0, 33.0 ],
+					"style" : "",
+					"thickness" : 25.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"checkedcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
+					"id" : "obj-171",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1032.875, 139.0, 54.0, 54.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 129.5, 382.625, 33.0, 33.0 ],
+					"style" : "",
+					"thickness" : 25.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
 					"checkedcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
 					"id" : "obj-153",
 					"maxclass" : "toggle",
@@ -1851,7 +1888,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 761.125, 720.5, 368.0, 22.0 ],
 					"style" : "",
-					"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.2\""
+					"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3\""
 				}
 
 			}
@@ -2214,7 +2251,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 557.0, 292.0, 371.0, 22.0 ],
 																	"style" : "",
-																	"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.2\""
+																	"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3\""
 																}
 
 															}
@@ -5352,58 +5389,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"bgoncolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"fontname" : "Microsoft Sans Serif",
-					"fontsize" : 20.0,
-					"id" : "obj-127",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1035.5, 147.5, 34.0, 39.5 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 387.0, 29.0, 26.0 ],
-					"style" : "",
-					"text" : "╳",
-					"textcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"texton" : "╳",
-					"textoncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
-					"usebgoncolor" : 1,
-					"usetextovercolor" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"bgoncolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"fontname" : "Microsoft Sans Serif",
-					"id" : "obj-107",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 581.75, 628.0, 26.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 49.0, 522.0, 20.0, 19.0 ],
-					"style" : "",
-					"text" : "╳",
-					"textcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"texton" : "╳",
-					"textoncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-					"usebgoncolor" : 1,
-					"usetextovercolor" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -6576,7 +6561,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1092.0, 115.0, 64.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 159.9375, 387.625, 93.0, 23.0 ],
+					"presentation_rect" : [ 162.9375, 387.625, 93.0, 23.0 ],
 					"style" : "",
 					"text" : "Toggle Limiter"
 				}
@@ -7250,7 +7235,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1178.0, 297.0, 297.0, 37.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Saved Projects"
+									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects"
 								}
 
 							}
@@ -7401,7 +7386,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 404.0, 244.0, 203.0, 62.0 ],
 													"style" : "",
-													"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Saved Projects/Fieldwork\""
+													"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects/Fieldwork\""
 												}
 
 											}
@@ -8779,7 +8764,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 463.0, 108.742432, 309.0, 37.0 ],
 													"style" : "",
-													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Saved Projects"
+													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects"
 												}
 
 											}
@@ -9729,7 +9714,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 463.0, 108.742432, 311.0, 36.0 ],
 													"style" : "",
-													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Saved Projects"
+													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects"
 												}
 
 											}
@@ -10031,7 +10016,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 316.5, 201.0, 309.0, 35.0 ],
 													"style" : "",
-													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Saved Projects"
+													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects"
 												}
 
 											}
@@ -16554,7 +16539,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 445.4375, 523.75, 130.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 69.75, 518.0, 139.0, 26.0 ],
+					"presentation_rect" : [ 84.75, 516.0, 134.0, 26.0 ],
 					"style" : "",
 					"text" : "Include Dry Mics"
 				}
@@ -16798,7 +16783,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "int" ],
 									"patching_rect" : [ 241.0, 18.0, 25.0, 25.0 ],
 									"style" : ""
 								}
@@ -26200,7 +26185,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "int" ],
 									"patching_rect" : [ 1158.0, 10.0, 25.0, 25.0 ],
 									"style" : ""
 								}
@@ -26247,7 +26232,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1061.0, 545.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -28263,16 +28248,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-126", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 591.25, 652.5, 566.0, 652.5, 566.0, 631.5, 555.5, 631.5 ],
-					"source" : [ "obj-107", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-114", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -28405,16 +28380,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-125", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-186", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 1045.0, 194.929688, 954.5, 194.929688 ],
-					"source" : [ "obj-127", 0 ]
 				}
 
 			}
@@ -28714,6 +28679,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-186", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1042.375, 194.929688, 954.5, 194.929688 ],
+					"source" : [ "obj-171", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-126", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -28839,6 +28814,16 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-186", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-126", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 580.375, 652.5, 566.0, 652.5, 566.0, 631.5, 555.5, 631.5 ],
+					"source" : [ "obj-188", 0 ]
 				}
 
 			}
@@ -28990,10 +28975,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-107", 0 ],
+					"destination" : [ "obj-188", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 626.875, 620.75, 591.25, 620.75 ],
+					"midpoints" : [ 626.875, 620.75, 580.375, 620.75 ],
 					"source" : [ "obj-231", 0 ]
 				}
 
@@ -29189,7 +29174,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-127", 0 ],
+					"destination" : [ "obj-171", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-263", 0 ]
@@ -29446,7 +29431,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-107", 0 ],
+					"destination" : [ "obj-188", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-50", 0 ]
@@ -29511,7 +29496,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-127", 0 ],
+					"destination" : [ "obj-171", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-60", 0 ]
@@ -29960,147 +29945,147 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-147::obj-37::obj-5::obj-103" : [ "umenu[1]", "umenu[1]", 0 ],
 			"obj-129::obj-59" : [ "flonum[7]", "flonum[7]", 0 ],
+			"obj-147::obj-37::obj-5::obj-103" : [ "umenu[1]", "umenu[1]", 0 ],
 			"obj-147::obj-37::obj-5::obj-104" : [ "umenu", "umenu", 0 ],
 			"obj-159" : [ "power_switch", "power_switch", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "pitch_tracker.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tracker_core.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Resizer.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Slave_Temp.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Fieldwork",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Saved Projects",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSDP Icon6a.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Performer_View.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "iyo.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Project_Settings.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "input_proto.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Master_Mixer.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Master_Temp.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Custom_Patches.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Controller_Setup.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_sliders.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_keys.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_pads.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "drum_pad.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSDP_Power_Button.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio_file_manager.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "single_file_player 1.1 .maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "About_Music_SDP.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSDP_New_Board.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.2/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}

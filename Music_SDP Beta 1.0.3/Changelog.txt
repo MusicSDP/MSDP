@@ -1,4 +1,12 @@
 Music_SDP changelog:
+
+[Beta 1.0.3] 2016-03-05
+Changed:
+	•	Multiple tweaks to the System Board, Master Mixer, and Performer View to unify the look across OS X and Windows
+
+Added:
+	•	Michael Mann’s implementation of the Moog Ladder Filter has been added to the filter list.
+
 [Beta 1.0.2.2] 2016-03-03
 Changed:
 	•	Changes have been made to the Full View toggle and the Add New Button on the System Board to allow for more uniformity between the OSX and Windows versions.

@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
+			"minor" : 2,
 			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 0.0, 45.0, 1440.0, 806.0 ],
+		"rect" : [ 9.0, 45.0, 928.0, 806.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -713,7 +713,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -803,14 +803,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-40",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 375.0, 22.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/MSDP Projects/MSDP Proj Test/Saved Presets\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Fieldwork/Saved Presets\""
 								}
 
 							}
@@ -1393,7 +1392,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -2547,7 +2546,8 @@
 					"patching_rect" : [ 1786.0, 366.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 826.0, 405.5, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -2663,7 +2663,8 @@
 					"patching_rect" : [ 1671.0, 366.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 747.0, 405.5, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -2778,7 +2779,8 @@
 					"patching_rect" : [ 1552.0, 366.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 669.0, 405.5, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -2893,7 +2895,8 @@
 					"patching_rect" : [ 1436.0, 364.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 589.5, 405.5, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -3008,7 +3011,8 @@
 					"patching_rect" : [ 1315.0, 366.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 511.0, 405.5, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -3123,7 +3127,8 @@
 					"patching_rect" : [ 1200.0, 366.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 430.5, 405.5, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -3238,7 +3243,8 @@
 					"patching_rect" : [ 1081.0, 366.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 351.0, 405.5, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -3352,7 +3358,8 @@
 					"patching_rect" : [ 965.0, 364.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 271.5, 405.5, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -3466,7 +3473,8 @@
 					"patching_rect" : [ 842.0, 364.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 826.0, 344.75, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -3580,7 +3588,8 @@
 					"patching_rect" : [ 727.0, 364.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 747.0, 344.75, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -3694,7 +3703,8 @@
 					"patching_rect" : [ 608.0, 364.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 669.0, 344.75, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -3808,7 +3818,8 @@
 					"patching_rect" : [ 492.0, 362.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 589.5, 344.75, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -3922,7 +3933,8 @@
 					"patching_rect" : [ 371.0, 364.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 511.0, 344.75, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -4036,7 +4048,8 @@
 					"patching_rect" : [ 256.0, 364.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 430.5, 344.75, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -4150,7 +4163,8 @@
 					"patching_rect" : [ 137.0, 364.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 351.0, 344.75, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -4290,6 +4304,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Roboto Mono",
 					"fontsize" : 10.0,
 					"id" : "obj-16",
@@ -4301,7 +4316,8 @@
 					"patching_rect" : [ 21.0, 362.0, 51.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 271.5, 344.75, 51.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -6552,8 +6568,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

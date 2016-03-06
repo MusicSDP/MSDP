@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
+			"minor" : 2,
 			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 111.0, 45.0, 1081.0, 805.0 ],
+		"rect" : [ 265.0, 220.0, 1081.0, 805.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -309,7 +309,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -405,7 +405,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 375.0, 35.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/Demo Projects/Saved Presets\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Fieldwork/Saved Presets\""
 								}
 
 							}
@@ -988,7 +988,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -1461,6 +1461,7 @@
 					"rounded" : 10.0,
 					"style" : "",
 					"text" : "Next Event",
+					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
 					"truncate" : 0,
 					"usetextovercolor" : 1
 				}
@@ -1482,6 +1483,7 @@
 					"rounded" : 10.0,
 					"style" : "",
 					"text" : "Reset Score",
+					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
 					"truncate" : 0,
 					"usetextovercolor" : 1
 				}
@@ -1727,6 +1729,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 267.21875, 101.5, 106.0, 51.0 ],
 					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"triscale" : 0.0
 				}
 
@@ -1775,6 +1778,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 809.5, 90.5, 64.0, 40.0 ],
 					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"triscale" : 0.0
 				}
 
@@ -1918,7 +1922,8 @@
 					"patching_rect" : [ 1503.5, 259.5, 70.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 809.5, 332.25, 64.0, 40.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -2177,7 +2182,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -2491,13 +2496,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 94.0, 578.0, 130.0, 40.0 ],
+						"rect" : [ 927.0, 312.0, 101.0, 40.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -3023,7 +3028,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -3361,6 +3366,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 699.71875, 470.0, 57.0, 24.0 ],
 					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"triangle" : 0
 				}
 
@@ -3446,7 +3452,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -3760,13 +3766,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 287.0, 578.0, 130.0, 40.0 ],
+						"rect" : [ 795.0, 312.0, 104.0, 40.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -4292,7 +4298,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -4589,7 +4595,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -4908,7 +4914,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -5208,7 +5214,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -5580,6 +5586,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 570.71875, 470.0, 57.0, 24.0 ],
 					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"triangle" : 0
 				}
 
@@ -5653,6 +5660,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 73.71875, 470.0, 55.0, 24.0 ],
 					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"triangle" : 0
 				}
 
@@ -5672,6 +5680,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 197.71875, 470.0, 55.0, 24.0 ],
 					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"triangle" : 0
 				}
 
@@ -5691,6 +5700,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 321.21875, 470.0, 55.0, 24.0 ],
 					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"triangle" : 0
 				}
 
@@ -5710,6 +5720,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 446.96875, 471.0, 55.0, 24.0 ],
 					"style" : "",
+					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"triangle" : 0
 				}
 
@@ -7037,7 +7048,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "iyo.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.0.2/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
