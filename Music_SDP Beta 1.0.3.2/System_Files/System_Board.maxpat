@@ -40,61 +40,7 @@
 		"title" : "Music_SDP",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"checkedcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
-					"id" : "obj-188",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 570.875, 625.75, 41.5, 41.5 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 47.9375, 511.0, 33.0, 33.0 ],
-					"style" : "",
-					"thickness" : 25.0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"checkedcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
-					"id" : "obj-171",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1032.875, 139.0, 54.0, 54.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 129.5, 382.625, 33.0, 33.0 ],
-					"style" : "",
-					"thickness" : 25.0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"checkedcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
-					"id" : "obj-153",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1451.0, 246.75, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 24.9375, 182.25, 57.0, 57.0 ],
-					"style" : "",
-					"thickness" : 25.0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-113",
+					"id" : "obj-25",
 					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -144,9 +90,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 266.0, 185.5, 177.0, 22.0 ],
+									"patching_rect" : [ 288.0, 185.5, 143.0, 22.0 ],
 									"style" : "",
-									"text" : "picture MSDP_New_Board.png"
+									"text" : "picture MSDP_Rec2.png"
 								}
 
 							}
@@ -157,9 +103,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 185.5, 213.0, 22.0 ],
+									"patching_rect" : [ 50.0, 185.5, 179.0, 22.0 ],
 									"style" : "",
-									"text" : "picture MSDP_New_Board_hover.png"
+									"text" : "picture MSDP_Rec2_hover.png"
 								}
 
 							}
@@ -170,9 +116,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 266.0, 126.0, 89.0, 22.0 ],
+									"patching_rect" : [ 288.0, 126.0, 86.0, 22.0 ],
 									"style" : "",
-									"text" : "sel new_board"
+									"text" : "sel rec_button"
 								}
 
 							}
@@ -195,9 +141,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 50.0, 126.0, 89.0, 22.0 ],
+									"patching_rect" : [ 50.0, 126.0, 86.0, 22.0 ],
 									"style" : "",
-									"text" : "sel new_board"
+									"text" : "sel rec_button"
 								}
 
 							}
@@ -222,7 +168,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 234.0, 62.0, 30.0, 30.0 ],
+									"patching_rect" : [ 288.0, 44.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -304,7 +250,373 @@
  ]
 					}
 ,
-					"patching_rect" : [ 345.0, 619.5, 69.0, 49.0 ],
+					"patching_rect" : [ 455.0, 502.75, 69.0, 49.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p hover_commands"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 455.0, 475.25, 50.5, 22.0 ],
+					"saved_object_attributes" : 					{
+						"mode" : 0
+					}
+,
+					"style" : "",
+					"text" : "hover"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Lato Regular",
+					"id" : "obj-190",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.0, 366.0, 147.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.46875, 347.59375, 101.0, 21.0 ],
+					"style" : "",
+					"text" : "Select Board File"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Lato Light",
+					"fontsize" : 14.0,
+					"id" : "obj-26",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 192.136353, 694.5, 70.227295, 56.40625 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 11.9375, 311.59375, 110.0, 37.0 ],
+					"style" : "",
+					"text" : "Load Board File...",
+					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
+					"truncate" : 0,
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "pictctrl",
+					"mode" : 1,
+					"name" : "MSDP_Rec2.png",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 494.0, 587.375, 30.5, 31.125 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 100.9375, 484.25, 54.8125, 54.5 ],
+					"varname" : "rec_button"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-107",
+					"maxclass" : "pictctrl",
+					"name" : "MSDP_New_Board_2.png",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 255.0, 579.25, 141.25, 47.125 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 24.9375, 257.75, 203.8125, 40.5 ],
+					"varname" : "new_board"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"checkedcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
+					"id" : "obj-188",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 570.875, 625.75, 41.5, 41.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 221.0, 453.0, 24.0, 24.0 ],
+					"style" : "",
+					"thickness" : 25.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"checkedcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
+					"id" : "obj-171",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1032.875, 139.0, 54.0, 54.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 212.5, 188.625, 33.0, 33.0 ],
+					"style" : "",
+					"thickness" : 25.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"checkedcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
+					"id" : "obj-153",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1451.0, 246.75, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 11.9375, 182.25, 57.0, 57.0 ],
+					"style" : "",
+					"thickness" : 25.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-113",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 0,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 538.0, 122.0, 828.0, 557.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 288.0, 185.5, 191.0, 22.0 ],
+									"style" : "",
+									"text" : "picture MSDP_New_Board_2.png"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 185.5, 227.0, 22.0 ],
+									"style" : "",
+									"text" : "picture MSDP_New_Board_2_hover.png"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 288.0, 126.0, 89.0, 22.0 ],
+									"style" : "",
+									"text" : "sel new_board"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-14",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 307.0, 436.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-80",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 50.0, 126.0, 89.0, 22.0 ],
+									"style" : "",
+									"text" : "sel new_board"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-135",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-136",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 288.0, 44.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-80", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-135", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-136", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-80", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 270.25, 517.5, 69.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -325,7 +637,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 345.0, 592.0, 50.5, 22.0 ],
+					"patching_rect" : [ 270.25, 490.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"mode" : 0
 					}
@@ -337,58 +649,14 @@
 			}
 , 			{
 				"box" : 				{
-					"handoff" : "",
-					"id" : "obj-26",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 125.0, 497.0, 142.0, 49.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 142.25, 251.5, 114.234375, 51.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"id" : "obj-137",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 269.0, 517.0, 142.0, 49.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 4.9375, 251.5, 97.0, 51.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-112",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 268.0, 645.0, 36.0, 22.0 ],
+					"patching_rect" : [ 268.0, 653.25, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "sel 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-105",
-					"maxclass" : "pictctrl",
-					"name" : "MSDP_New_Board.png",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 268.0, 575.5, 60.0, 58.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 103.9375, 257.25, 40.8125, 40.5 ],
-					"varname" : "new_board"
 				}
 
 			}
@@ -1212,6 +1480,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Lato Light",
 					"id" : "obj-173",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -1220,7 +1489,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1446.875, 345.25, 70.227295, 56.40625 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.5, 359.59375, 119.5625, 22.40625 ],
+					"presentation_rect" : [ 128.5, 365.59375, 119.5625, 22.40625 ],
 					"style" : "",
 					"text" : "Audio File Manager",
 					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
@@ -1305,22 +1574,6 @@
 					"patching_rect" : [ 1075.25, 683.5, 86.0, 22.0 ],
 					"style" : "",
 					"text" : "regexp (.+)\\\\b/"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "pictctrl",
-					"name" : "MSDP Icon6a.png",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 224.25, 762.0, 60.0, 60.5 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 12.9375, 312.875, 60.0, 60.5 ],
-					"varname" : "load_new_board"
 				}
 
 			}
@@ -1827,6 +2080,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Lato Light",
 					"id" : "obj-169",
 					"items" : [ "1 Voice", ",", "1 Voice1", ",", "2 arp_synth", ",", "3 Hub 1", ",", "4 Master Mix", ",", "5 destroyer", ",", "add_test", ",", "app_test", ",", "app_test1", ",", "app_test2", ",", "Part 1", ",", "Part 1 copy", ",", "Part 2", ",", "Part 2a", ",", "Part 3", ",", "Part 4", ",", "Part 5", ",", "play_play", ",", "resave2", ",", "t1", ",", "t2", ",", "test1", ",", "test10", ",", "test11", ",", "test12", ",", "test2", ",", "test3", ",", "test4", ",", "test5", ",", "test6", ",", "test7" ],
 					"maxclass" : "umenu",
@@ -1834,9 +2088,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 6.5, 797.5, 136.0, 22.0 ],
+					"patching_rect" : [ 6.5, 797.5, 136.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.9375, 386.0, 110.0, 22.0 ],
+					"presentation_rect" : [ 11.9375, 365.0, 110.0, 23.0 ],
 					"style" : ""
 				}
 
@@ -1888,7 +2142,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 761.125, 720.5, 368.0, 22.0 ],
 					"style" : "",
-					"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3\""
+					"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.3.2\""
 				}
 
 			}
@@ -2251,7 +2505,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 557.0, 292.0, 371.0, 22.0 ],
 																	"style" : "",
-																	"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3\""
+																	"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.3.2\""
 																}
 
 															}
@@ -3761,6 +4015,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Lato Light",
 					"id" : "obj-125",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -3769,7 +4024,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 538.25, 177.5, 70.227295, 56.40625 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.5, 334.1875, 119.5625, 22.40625 ],
+					"presentation_rect" : [ 128.5, 340.1875, 119.5625, 22.40625 ],
 					"style" : "",
 					"text" : "Score Player",
 					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
@@ -3780,6 +4035,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Lato Light",
 					"id" : "obj-76",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -3788,7 +4044,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 149.386353, 613.0, 70.227295, 56.40625 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.5, 306.59375, 119.5625, 24.40625 ],
+					"presentation_rect" : [ 128.5, 311.59375, 119.5625, 24.40625 ],
 					"style" : "",
 					"text" : "New Automator",
 					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
@@ -3982,7 +4238,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "int" ],
 									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -4138,9 +4394,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 494.0, 734.75, 90.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 171.5, 466.25, 90.0, 28.0 ],
+					"presentation_rect" : [ 158.5, 499.75, 90.0, 28.0 ],
 					"style" : "",
-					"text" : "00:00:04",
+					"text" : "00:00:03",
 					"varname" : "rec_in_progress"
 				}
 
@@ -4326,7 +4582,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "int" ],
 									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -4513,34 +4769,6 @@
 ,
 					"style" : "",
 					"text" : "p rec_toggle"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgoncolor" : [ 0.376187, 0.409384, 0.445165, 1.0 ],
-					"fontname" : "Georgia",
-					"fontsize" : 26.0,
-					"id" : "obj-172",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 494.0, 579.25, 38.0, 39.25 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 123.0, 457.25, 50.0, 52.0 ],
-					"rounded" : 10.0,
-					"style" : "",
-					"text" : "◉",
-					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-					"texton" : "█",
-					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
-					"usebgoncolor" : 1,
-					"usetextovercolor" : 1,
-					"varname" : "record_button"
 				}
 
 			}
@@ -4743,7 +4971,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 590.0, 558.5, 112.0, 20.75 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.875, 480.25, 100.0, 23.75 ],
+					"presentation_rect" : [ 12.9375, 453.25, 205.0, 23.75 ],
 					"rounded" : 0.0,
 					"style" : "",
 					"text" : "audio",
@@ -4764,252 +4992,10 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 590.0, 533.5, 93.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.875, 457.25, 106.0, 23.0 ],
+					"presentation_rect" : [ 9.9375, 430.25, 106.0, 23.0 ],
 					"style" : "",
 					"text" : "Type File Name",
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-143",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 7,
-							"minor" : 2,
-							"revision" : 0,
-							"architecture" : "x86",
-							"modernui" : 1
-						}
-,
-						"rect" : [ 538.0, 122.0, 828.0, 557.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
-						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
-						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-19",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 47.5, 185.5, 154.0, 22.0 ],
-									"style" : "",
-									"text" : "picture \"MSDP Icon6b.png\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-18",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 205.0, 185.5, 155.0, 22.0 ],
-									"style" : "",
-									"text" : "picture \"MSDP Icon6a.png\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 234.0, 126.0, 118.0, 22.0 ],
-									"style" : "",
-									"text" : "sel load_new_board"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-14",
-									"maxclass" : "outlet",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 307.0, 436.0, 30.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-80",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 50.0, 126.0, 118.0, 22.0 ],
-									"style" : "",
-									"text" : "sel load_new_board"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-135",
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-136",
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 234.0, 62.0, 30.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-80", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-135", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-136", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-18", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-19", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-19", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-80", 0 ]
-								}
-
-							}
- ],
-						"styles" : [ 							{
-								"name" : "AudioStatus_Menu",
-								"default" : 								{
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
-										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-
-								}
-,
-								"parentstyle" : "",
-								"multi" : 0
-							}
- ]
-					}
-,
-					"patching_rect" : [ 160.75, 729.0, 116.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"style" : "",
-						"tags" : ""
-					}
-,
-					"style" : "",
-					"text" : "p hover_commands"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-152",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 160.75, 699.0, 121.5, 22.0 ],
-					"saved_object_attributes" : 					{
-						"mode" : 0
-					}
-,
-					"style" : "",
-					"text" : "hover"
 				}
 
 			}
@@ -6555,15 +6541,14 @@
 					"fontname" : "Lato Light",
 					"fontsize" : 14.0,
 					"id" : "obj-261",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1092.0, 115.0, 64.0, 40.0 ],
+					"patching_rect" : [ 1092.0, 115.0, 64.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 162.9375, 387.625, 93.0, 23.0 ],
+					"presentation_rect" : [ 206.25, 218.625, 53.0, 23.0 ],
 					"style" : "",
-					"text" : "Toggle Limiter"
+					"text" : "Limiter"
 				}
 
 			}
@@ -7235,7 +7220,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1178.0, 297.0, 297.0, 37.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects"
+									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Saved Projects"
 								}
 
 							}
@@ -7386,7 +7371,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 404.0, 244.0, 203.0, 62.0 ],
 													"style" : "",
-													"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects/Fieldwork\""
+													"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Saved Projects/Fieldwork\""
 												}
 
 											}
@@ -8764,7 +8749,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 463.0, 108.742432, 309.0, 37.0 ],
 													"style" : "",
-													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects"
+													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Saved Projects"
 												}
 
 											}
@@ -9714,7 +9699,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 463.0, 108.742432, 311.0, 36.0 ],
 													"style" : "",
-													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects"
+													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Saved Projects"
 												}
 
 											}
@@ -9912,7 +9897,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 410.5, 379.0, 155.0, 62.0 ],
 													"style" : "",
-													"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2/System_Files/Saved Projects/Fieldwork\""
+													"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.3/System_Files/Saved Projects/Fieldwork\""
 												}
 
 											}
@@ -10016,7 +10001,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 316.5, 201.0, 309.0, 35.0 ],
 													"style" : "",
-													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects"
+													"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Saved Projects"
 												}
 
 											}
@@ -13225,24 +13210,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Lato Light",
-					"fontsize" : 16.0,
-					"id" : "obj-28",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 295.25, 760.25, 68.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 76.75, 312.875, 66.0, 64.0 ],
-					"style" : "",
-					"text" : "Load\nBoard\nFile"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-27",
@@ -16418,24 +16385,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Lato Light",
-					"fontsize" : 24.0,
-					"id" : "obj-259",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 298.25, 678.5, 135.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 32.25, 260.0, 206.0, 35.0 ],
-					"style" : "",
-					"text" : "New            Board",
-					"varname" : "add_text"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-251",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -16532,16 +16481,17 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Lato Light",
-					"fontsize" : 16.0,
+					"fontsize" : 14.0,
 					"id" : "obj-230",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 445.4375, 523.75, 130.0, 26.0 ],
+					"patching_rect" : [ 467.0, 776.625, 115.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 84.75, 516.0, 134.0, 26.0 ],
+					"presentation_rect" : [ 139.75, 430.25, 110.0, 23.0 ],
 					"style" : "",
-					"text" : "Include Dry Mics"
+					"text" : "Include Dry Mics",
+					"textjustification" : 2
 				}
 
 			}
@@ -16553,9 +16503,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 475.0, 475.25, 177.5625, 35.0 ],
+					"patching_rect" : [ 533.4375, 474.25, 177.5625, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.0, 421.25, 171.0, 35.0 ],
+					"presentation_rect" : [ 47.0, 396.25, 171.0, 35.0 ],
 					"style" : "",
 					"text" : "Recording Tools"
 				}
@@ -25633,7 +25583,7 @@
 					"patching_rect" : [ 1555.625, 219.0, 64.0, 57.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 82.75, 182.25, 64.0, 57.0 ],
+					"presentation_rect" : [ 69.75, 182.25, 64.0, 57.0 ],
 					"style" : "",
 					"text" : "Toggle \nFull\nView"
 				}
@@ -25918,10 +25868,10 @@
 					"patching_rect" : [ 614.0, 734.75, 69.0, 57.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 176.0, 454.25, 69.0, 57.0 ],
+					"presentation_rect" : [ 47.0, 483.25, 55.0, 57.0 ],
 					"style" : "",
 					"text" : "Click\nTo\nRecord",
-					"textjustification" : 1,
+					"textjustification" : 2,
 					"varname" : "c_to_record"
 				}
 
@@ -25951,7 +25901,7 @@
 					"patching_rect" : [ 565.625, 379.75, 52.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 227.0625, 185.25, 22.0, 57.0 ],
+					"presentation_rect" : [ 183.0625, 183.25, 22.0, 57.0 ],
 					"style" : "",
 					"text" : "C P U",
 					"textjustification" : 1
@@ -25993,7 +25943,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 489.0, 384.25, 71.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 159.75, 189.25, 66.0, 48.0 ],
+					"presentation_rect" : [ 115.75, 188.25, 66.0, 48.0 ],
 					"style" : "",
 					"textcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"triangle" : 0,
@@ -26232,7 +26182,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1061.0, 545.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "1"
+									"text" : "0"
 								}
 
 							}
@@ -26368,7 +26318,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 412.0, 552.0, 318.0, 49.0 ],
 									"style" : "",
-									"text" : "open \"Dante:/Users/hughlobel/Desktop/Fieldwork/Recorded Audio/audio_0_Mic2.aiff\""
+									"text" : "open \"Dante:/Users/hughlobel/Desktop/Fieldwork/Recorded Audio/audio_1_Mic2.aiff\""
 								}
 
 							}
@@ -26384,7 +26334,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 412.0, 426.0, 318.0, 49.0 ],
 									"style" : "",
-									"text" : "open \"Dante:/Users/hughlobel/Desktop/Fieldwork/Recorded Audio/audio_0_Mic1.aiff\""
+									"text" : "open \"Dante:/Users/hughlobel/Desktop/Fieldwork/Recorded Audio/audio_1_Mic1.aiff\""
 								}
 
 							}
@@ -26608,7 +26558,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 790.0, 144.0, 36.0, 22.0 ],
 									"style" : "",
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -26756,7 +26706,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 412.0, 298.0, 318.0, 35.0 ],
 									"style" : "",
-									"text" : "open \"Dante:/Users/hughlobel/Desktop/Fieldwork/Recorded Audio/audio_0.aiff\""
+									"text" : "open \"Dante:/Users/hughlobel/Desktop/Fieldwork/Recorded Audio/audio_1.aiff\""
 								}
 
 							}
@@ -27938,7 +27888,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 314.0, -2.0, 353.0, 101.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.078125, 419.5, 256.5625, 130.0 ],
+					"presentation_rect" : [ -0.078125, 395.5, 256.5625, 154.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -28127,7 +28077,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ -21.75, 4.5, 329.75, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.078125, 251.5, 256.5625, 51.0 ],
+					"presentation_rect" : [ 1.921875, 252.5, 256.5625, 51.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -28147,8 +28097,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 763.875, 422.0, 81.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1.75, 418.25, 251.75, 4.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -28239,10 +28187,48 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-112", 0 ],
+					"destination" : [ "obj-126", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 503.5, 628.5, 503.5, 628.5 ],
+					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-168", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-185", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-227", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 503.5, 628.5, 491.0, 628.5, 491.0, 661.5, 512.75, 661.5 ],
+					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-112", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-107", 0 ]
 				}
 
 			}
@@ -28276,7 +28262,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
+					"destination" : [ "obj-107", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-113", 0 ]
@@ -28413,15 +28399,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-137", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-170", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -28453,15 +28430,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-141", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-143", 0 ]
 				}
 
 			}
@@ -28516,24 +28484,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-151", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-143", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-152", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-143", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-152", 0 ]
 				}
 
 			}
@@ -28651,7 +28601,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-172", 0 ],
+					"destination" : [ "obj-105", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 618.0, 693.0, 480.0, 693.0, 480.0, 576.0, 503.5, 576.0 ],
@@ -28684,44 +28634,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 1042.375, 194.929688, 954.5, 194.929688 ],
 					"source" : [ "obj-171", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-126", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 503.5, 628.5, 503.5, 628.5 ],
-					"source" : [ "obj-172", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-168", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-172", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-185", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-172", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-227", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 503.5, 628.5, 491.0, 628.5, 491.0, 661.5, 512.75, 661.5 ],
-					"source" : [ "obj-172", 0 ]
 				}
 
 			}
@@ -29111,7 +29023,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-182", 0 ],
+					"destination" : [ "obj-105", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
@@ -29165,7 +29077,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
+					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-26", 0 ]
@@ -29216,6 +29128,24 @@
 					"hidden" : 0,
 					"midpoints" : [ 995.5, 251.25, 864.5, 251.25 ],
 					"source" : [ "obj-271", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-28", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -29561,7 +29491,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-172", 0 ],
+					"destination" : [ "obj-105", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-74", 0 ]
@@ -29946,146 +29876,152 @@
  ],
 		"parameters" : 		{
 			"obj-129::obj-59" : [ "flonum[7]", "flonum[7]", 0 ],
-			"obj-147::obj-37::obj-5::obj-103" : [ "umenu[1]", "umenu[1]", 0 ],
 			"obj-147::obj-37::obj-5::obj-104" : [ "umenu", "umenu", 0 ],
-			"obj-159" : [ "power_switch", "power_switch", 0 ]
+			"obj-159" : [ "power_switch", "power_switch", 0 ],
+			"obj-147::obj-37::obj-5::obj-103" : [ "umenu[1]", "umenu[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "pitch_tracker.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tracker_core.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Resizer.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Slave_Temp.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Fieldwork",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Saved Projects",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Saved Projects",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSDP Icon6a.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Performer_View.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "iyo.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Project_Settings.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "input_proto.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Master_Mixer.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Master_Temp.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Custom_Patches.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Controller_Setup.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_sliders.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_keys.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_pads.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Controllers",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "drum_pad.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSDP_Power_Button.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio_file_manager.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Board_Files",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "single_file_player 1.1 .maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "About_Music_SDP.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Effects/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MSDP_New_Board.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.2.3/System_Files/Important_Files/Images",
+				"name" : "MSDP_New_Board_2.png",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Images",
+				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MSDP_Rec2.png",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.2/System_Files/Important_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}

@@ -1,4 +1,7 @@
 Music_SDP changelog:
+[Beta 1.0.3.2] 2016-03-08
+Changed
+	•	Continuing to tweak the System Board. A New “New Board” button and record button accompany a larger redo of the System Board.
 
 [Beta 1.0.3] 2016-03-05
 Changed:
