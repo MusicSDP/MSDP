@@ -1,4 +1,10 @@
 Music_SDP changelog:
+
+[Beta 1.0.3.7] 2016-03-14
+Changed:
+	•	Continuing to clean up the System Board to make is identical across platforms.
+	•	Fixed a new bug with 7.2.1 that caused the standalone to launch with the max console open!
+
 [Beta 1.0.3.5] 2016-03-10
 Changed:
 	•	Many sends have been renamed with ‘MSDP_’ prepended to them. This is to keep in-line with other system sends.

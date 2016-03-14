@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
+			"minor" : 2,
 			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 15.0, 156.0, 352.0, 259.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 739.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1819.0, 205.0, 50.0, 23.0 ],
+					"style" : "",
+					"text" : "pvar d1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
@@ -97,7 +110,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 256.0, 724.0, 116.0, 23.0 ],
 					"style" : "",
-					"text" : "d0 drumbuff656384"
+					"text" : "d0 drumbuff565600"
 				}
 
 			}
@@ -1728,7 +1741,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -2047,7 +2060,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -2249,7 +2262,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -2293,7 +2306,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 1,
+											"minor" : 2,
 											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -2562,7 +2575,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 1,
+											"minor" : 2,
 											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -3259,7 +3272,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 215.0, 99.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "127"
+									"text" : "109"
 								}
 
 							}
@@ -3570,7 +3583,7 @@
 					"presentation_rect" : [ 284.328125, 230.125, 57.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "umenu[62]",
+							"parameter_longname" : "umenu[103]",
 							"parameter_shortname" : "umenu[3]",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1
@@ -3598,7 +3611,7 @@
 					"presentation_rect" : [ 218.578125, 230.125, 66.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "umenu[63]",
+							"parameter_longname" : "umenu[104]",
 							"parameter_shortname" : "umenu[2]",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1
@@ -3769,7 +3782,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -4269,7 +4282,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -4453,7 +4466,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -4487,6 +4500,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 14,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 456.0, 336.0, 50.0, 196.0 ],
+									"style" : "",
+									"text" : "replace \"Dante:/Users/hughlobel/Desktop/MSDP_Projects/Fieldwork/Audio Files/Ambience.aiff\""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-5",
@@ -4618,6 +4645,15 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-91", 0 ]
+								}
+
+							}
  ],
 						"styles" : [ 							{
 								"name" : "AudioStatus_Menu",
@@ -4640,8 +4676,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4995,7 +5031,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1346.5, 13.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -5221,7 +5257,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1166.25, 8.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -5366,7 +5402,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "drumbuff656384",
+					"buffername" : "drumbuff565600",
 					"id" : "obj-10",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -5494,7 +5530,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 128.643738, 225.0, 100.0, 23.0 ],
 					"style" : "",
-					"text" : "drumbuff656384"
+					"text" : "drumbuff565600"
 				}
 
 			}
@@ -5507,7 +5543,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 104.643738, 285.0, 120.0, 23.0 ],
 					"style" : "",
-					"text" : "set drumbuff656384"
+					"text" : "set drumbuff565600"
 				}
 
 			}
@@ -5626,7 +5662,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
+							"minor" : 2,
 							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -5660,6 +5696,31 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-105",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 2288.0, 462.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-103",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 2429.0, 243.0, 81.0, 22.0 ],
+									"style" : "",
+									"text" : "loadmess set"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-99",
 									"maxclass" : "newobj",
@@ -6095,7 +6156,8 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 935.0, 337.0, 82.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "d15 1182.07"
 								}
 
 							}
@@ -6241,14 +6303,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-66",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1816.0, 306.0, 72.0, 22.0 ],
+									"patching_rect" : [ 1816.0, 306.0, 72.0, 49.0 ],
 									"style" : "",
-									"text" : "d7 22.675737"
+									"text" : "d7 1182069.875"
 								}
 
 							}
@@ -6268,14 +6330,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-62",
-									"linecount" : 9,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 2015.0, 303.0, 20.0, 49.0 ],
 									"style" : "",
-									"text" : "d5 0.420914"
+									"text" : "d5 0."
 								}
 
 							}
@@ -6423,14 +6485,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-47",
-									"linecount" : 6,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 2326.0, 294.0, 246.0, 22.0 ],
-									"style" : "",
-									"text" : "d1 replace \"Macintosh HD:/Users/michaelmann/Downloads/Music_SDP Beta 1.0.1/System_Files/Important_Files/Effects/Includes/pleasedontcrash/Audio Files/room_tom.wav\""
+									"style" : ""
 								}
 
 							}
@@ -6443,21 +6503,20 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 2230.0, 294.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "d2 0 0"
+									"text" : "d2 0 17"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-45",
-									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 2136.0, 294.0, 47.0, 22.0 ],
 									"style" : "",
-									"text" : "d3 -1.134186"
+									"text" : "d3 0."
 								}
 
 							}
@@ -6848,7 +6907,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 954.0, 179.0, 73.5, 22.0 ],
 									"style" : "",
-									"text" : "0.420914"
+									"text" : "0."
 								}
 
 							}
@@ -6904,7 +6963,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 676.0, 222.0, 141.0, 22.0 ],
 									"style" : "",
-									"text" : "0. 22.675737"
+									"text" : "0. 1182069.875"
 								}
 
 							}
@@ -6992,6 +7051,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-100", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-47", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-103", 0 ]
 								}
 
 							}
@@ -7586,6 +7654,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-46", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-105", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-47", 0 ]
 								}
 
 							}
@@ -8499,7 +8576,7 @@
 					"presentation_rect" : [ 197.9375, 168.328125, 47.515625, 47.515625 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "dial[15]",
+							"parameter_longname" : "dial[34]",
 							"parameter_shortname" : "dial",
 							"parameter_type" : 3,
 							"parameter_invisible" : 1
@@ -8531,7 +8608,7 @@
 					"presentation_rect" : [ 247.9375, 151.625, 95.0, 55.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[15]",
+							"parameter_longname" : "live.gain~[34]",
 							"parameter_shortname" : "Volume Out",
 							"parameter_type" : 0,
 							"parameter_mmin" : -10.0,
@@ -9958,6 +10035,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-253", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-270", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -10812,6 +10898,21 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-241" : [ "umenu[103]", "umenu[3]", 0 ],
+			"obj-24" : [ "live.gain~[34]", "Volume Out", 0 ],
+			"obj-242" : [ "umenu[104]", "umenu[2]", 0 ],
+			"obj-123" : [ "dial[34]", "dial", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "audio_loader.maxpat",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.6/System_Files/Includes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

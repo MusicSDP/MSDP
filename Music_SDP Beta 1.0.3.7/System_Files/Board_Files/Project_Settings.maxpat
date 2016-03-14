@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 733.0, 928.0, 710.0, 475.0 ],
+		"rect" : [ 335.0, 57.0, 1105.0, 677.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -964,7 +964,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -1197,7 +1196,7 @@
 				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-169",
-					"items" : "<empty>",
+					"items" : [ "1 Voice", ",", "1 Voice1", ",", "2 arp_synth", ",", "3 Hub 1", ",", "4 Master Mix", ",", "5 destroyer", ",", "add_test", ",", "app_test", ",", "app_test1", ",", "app_test2", ",", "dmTest", ",", "drumtestNew", ",", "drumtestNew2", ",", "mlTest", ",", "newtest", ",", "Part 1", ",", "Part 1 copy", ",", "Part 2", ",", "Part 2a", ",", "Part 3", ",", "Part 4", ",", "Part 5", ",", "play_play", ",", "resave2", ",", "t1", ",", "t2", ",", "test1", ",", "test10", ",", "test11", ",", "test12", ",", "test2", ",", "test3", ",", "test4", ",", "test5", ",", "test6", ",", "test7", ",", "testing3", ",", "testing_new", ",", "testing_new_2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1308,9 +1307,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1247.0, 107.0, 104.0, 22.0 ],
+					"patching_rect" : [ 1247.0, 107.0, 145.0, 22.0 ],
 					"style" : "",
-					"text" : "r load_proj_name"
+					"text" : "r MSDP_load_proj_name"
 				}
 
 			}
@@ -1343,13 +1342,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1410.0, 66.0, 103.0, 22.0 ],
+					"patching_rect" : [ 1410.0, 66.0, 95.0, 49.0 ],
 					"style" : "",
-					"text" : "r make_new_proj"
+					"text" : "r MSDP_make_new_proj"
 				}
 
 			}
@@ -2507,7 +2507,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 371.0, 22.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/NewTest"
+									"text" : "Dante:/Users/hughlobel/Desktop/MSDP_Projects/Fieldwork"
 								}
 
 							}
@@ -6973,6 +6973,14 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "input_proto.maxpat",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.6/System_Files/Includes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

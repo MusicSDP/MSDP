@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -289,7 +289,7 @@
 					"patching_rect" : [ 31.52124, 196.778564, 20.0, 23.0 ],
 					"style" : "",
 					"text" : "t l",
-					"varname" : "p4[1]"
+					"varname" : "p4"
 				}
 
 			}
@@ -307,7 +307,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -523,7 +523,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 113.496216, 281.503174, 68.0, 23.0 ],
-					"sig" : 1000.0,
+					"sig" : 10000.0,
 					"style" : ""
 				}
 
@@ -583,7 +583,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 767.0, 793.0, 118.0, 23.0 ],
 					"restore" : 					{
-						"Cutofffloat" : [ 1000 ],
+						"Cutofffloat" : [ 10000 ],
 						"Resonancefloat" : [ 0.5 ],
 						"flonum[3]" : [ 1.0 ],
 						"pvol" : [ 1.0 ],
@@ -592,7 +592,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u799008280"
+					"varname" : "u468019480"
 				}
 
 			}
@@ -1050,7 +1050,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1405,7 +1405,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1500,7 +1500,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 423.0, 22.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/Fieldwork/Saved Presets\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/MSDP_Projects/Fieldwork/Saved Presets\""
 								}
 
 							}
@@ -2099,7 +2099,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage fullpatch @savemode 0",
-					"varname" : "presets358300"
+					"varname" : "presets10541"
 				}
 
 			}
@@ -2128,7 +2128,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 613.686096, 835.537476, 104.0, 24.0 ],
-					"pattrstorage" : "presets358300",
+					"pattrstorage" : "presets10541",
 					"presentation" : 1,
 					"presentation_rect" : [ 179.5, 16.0, 104.0, 24.0 ],
 					"style" : ""
@@ -2296,7 +2296,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2470,7 +2470,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2685,7 +2685,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2729,7 +2729,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2998,7 +2998,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -3988,7 +3988,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4032,7 +4032,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -4301,7 +4301,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -5351,7 +5351,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -5518,7 +5518,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -5806,7 +5806,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6847,7 +6847,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -6891,7 +6891,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -7160,7 +7160,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 0,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -8179,7 +8179,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -8542,7 +8542,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -8693,14 +8693,14 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-9",
-									"linecount" : 5,
+									"linecount" : 6,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 437.25, 133.0, 18.0, 76.0 ],
 									"style" : "",
-									"text" : "1000."
+									"text" : "10000."
 								}
 
 							}
@@ -9251,7 +9251,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -9375,7 +9375,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 25.0, 326.0, 206.0, 22.0 ],
 									"style" : "",
-									"text" : "tabname Module_Name974"
+									"text" : "tabname Module_Name944"
 								}
 
 							}
@@ -11557,34 +11557,34 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-132" : [ "umenu[1]", "umenu[1]", 0 ],
 			"obj-176::obj-21" : [ "live.dial", "live.dial", 0 ],
 			"obj-69::obj-21" : [ "live.dial[2]", "live.dial", 0 ],
-			"obj-135" : [ "umenu[2]", "umenu[2]", 0 ],
+			"obj-128" : [ "umenu[3]", "umenu[3]", 0 ],
+			"obj-21::obj-21" : [ "live.dial[1]", "live.dial", 0 ],
 			"obj-133" : [ "umenu", "umenu", 0 ],
+			"obj-126" : [ "umenu[5]", "umenu[2]", 0 ],
+			"obj-135" : [ "umenu[2]", "umenu[2]", 0 ],
 			"obj-65" : [ "flonum[2]", "flonum[1]", 0 ],
 			"obj-34" : [ "flonum[3]", "flonum[3]", 0 ],
-			"obj-125" : [ "umenu[4]", "umenu[3]", 0 ],
-			"obj-21::obj-21" : [ "live.dial[1]", "live.dial", 0 ],
-			"obj-128" : [ "umenu[3]", "umenu[3]", 0 ],
-			"obj-126" : [ "umenu[5]", "umenu[2]", 0 ],
-			"obj-132" : [ "umenu[1]", "umenu[1]", 0 ]
+			"obj-125" : [ "umenu[4]", "umenu[3]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "msdp_dial_1.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.4/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.6/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.4/System_Files/Important_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.6/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_vol_fix.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.4/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.6/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -11602,7 +11602,7 @@
 			}
 , 			{
 				"name" : "msdp_dial_3.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.4/System_Files/Important_Files/Effects/Includes",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.0.3.6/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -11629,8 +11629,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

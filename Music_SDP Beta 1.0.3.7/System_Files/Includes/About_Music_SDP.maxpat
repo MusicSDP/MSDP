@@ -1497,7 +1497,7 @@
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 205.5, 223.0, 369.0, 78.0 ],
 					"style" : "",
-					"text" : "The Music and Sound Design Platform \nMusic_SDP\nBeta 1.0.3",
+					"text" : "The Music and Sound Design Platform \nMusic_SDP\nBeta 1.0.3.7",
 					"textjustification" : 1
 				}
 
