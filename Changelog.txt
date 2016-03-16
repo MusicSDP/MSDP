@@ -1,7 +1,7 @@
 Music_SDP changelog:
-[Beta 1.0.3.12] 2016-03-16
+[Beta 1.0.3.14] 2016-03-16
 Changed:
-	•	Huge revision to preset system. Presets now get copied over into new projects so that defaults can be saved over by the user. Real Nice. May update pattrstorage with savemode 3.
+	•	Huge revision to preset system. Presets now get copied over into new projects so that defaults can be saved over by the user. Also presets are saved automatically and are unique to each project.
 	•	Cleaning up System Board and Full Views. Uniformly darker now, with updates to image files and new “Save Settings” image for the System Settings View.
 
 [Beta 1.0.3.7] 2016-03-14

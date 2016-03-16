@@ -1,1 +1,0 @@
-0, SystemName "M U S I C _ S D P";1, SystemScore tutorial.txt;2, DelayScore delay.txt;3, RepeatScore repeat.txt;4, Load_Board;5, Load_Automator;6, PerformerView 1;7, DryMicToggle 0;8, mastertempo bpm 120;9, mastertempo toggle 0;
