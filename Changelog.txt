@@ -1,4 +1,15 @@
 Music_SDP changelog:
+[Beta 1.0.4.2] 2016-03-23
+Added:
+	•	Chaos Synth, created my Michael Mann, edited and revised by Hugh Lobel
+	•	In preparation for MIDI tools, we now have the MIDI File Manager
+Changed:
+	•	New Projects now include a “Saved MIDI” folder
+	•	More Revisions to the System Board GUI, including new MIDI FILE MANAGER button
+Fixed:
+	•	Fixed bugs in the new preset system. Now works as intended with saved preset files loading automatically.
+	•	Fixed bugs in the Drum Machine (more fixes incoming!)
+	•	Fixed bug with the Moog Ladder Filter
 [Beta 1.0.3.14] 2016-03-16
 Changed:
 	•	Huge revision to preset system. Presets now get copied over into new projects so that defaults can be saved over by the user. Also presets are saved automatically and are unique to each project.
