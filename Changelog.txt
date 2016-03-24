@@ -1,4 +1,13 @@
 Music_SDP changelog:
+[Beta 1.0.4.4] 2016-03-24
+Added:
+	•	MIDI Loader window to load MIDI files from project folder into MIDI patch
+	•	EZ MIDI Player work has begun.
+
+Changed:
+	•	Updated Blank Template with starting code for MIDI player or Instrument
+	•	File Players folder is now File Tools
+
 [Beta 1.0.4.2] 2016-03-23
 Added:
 	•	Chaos Synth, created my Michael Mann, edited and revised by Hugh Lobel
