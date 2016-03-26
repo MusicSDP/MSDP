@@ -1,4 +1,7 @@
 Music_SDP changelog:
+[Beta 1.0.4.7] 2016-03-26
+Changed:
+	•	Finished building the EZ MIDI Player!
 [Beta 1.0.4.5] 2016-03-25
 Added
 	•	After hours of struggle, I finally figured out how to generate Detonates without the system crashing, which is a necessity if we are going to use multiple detonates in a project. The beginnings of the EZ MIDI File Player are now much further along.
