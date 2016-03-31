@@ -1,4 +1,16 @@
 Music_SDP changelog:
+[Beta 1.0.4.11] 2016-03-31
+Changed:
+	•	All Instruments except the Drum Machine now work with the MIDI player
+	•	The smoothing algorithm on the File Granulator has been fixed and improved!
+[Beta 1.0.4.9] 2016-03-30
+Changed:
+	•	Tweaked the Chaos Synth keyboard to recognize MIDI in! 
+Added:
+	•	Began building the MIDI Recorder/Editor!
+[Beta 1.0.4.8] 2016-03-27
+Added:
+	•	Began building the MIDI Recorder/Editor!
 [Beta 1.0.4.7] 2016-03-26
 Changed:
 	•	Finished building the EZ MIDI Player!
