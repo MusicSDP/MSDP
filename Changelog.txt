@@ -1,4 +1,20 @@
 Music_SDP changelog:
+
+[Beta 1.0.5a] 2016-04-10
+Fixed:
+	•	Tweaked MIDI recorder to make sure Loop is off by default.
+Added:
+	•	MIDI functionality for the Drum Machine.
+	•	Auto length-detection in the EZ MIDI player
+	•	New Signal-In Control module
+
+[Beta 1.0.5] 2016-04-02
+Changed:
+	•	Finished MIDI recorder. 
+
+[Beta 1.0.4.12] 2016-03-31
+Added:
+	•	Making MIDI recorder. The only thing left to add is the loop options.
 [Beta 1.0.4.11] 2016-03-31
 Changed:
 	•	All Instruments except the Drum Machine now work with the MIDI player
