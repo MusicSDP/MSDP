@@ -1,5 +1,14 @@
 Music_SDP changelog:
 
+[Beta 1.0.6] 2016-04-16
+Fixed:
+	•	Reworked the routing in the EZ File Player to make it possible to control everything from a controller or automator
+Changed:
+	•	The Master Metronome has seen a complete revamp in looks, and the framework has been laid to add metronome syncing in rhythmic modules.
+Added:
+	•	There is a new In-Progress MIDI Manipulator. When ready, this will provide a wealth of ways to tweak and play with MIDI files.
+	•	There is a new In-Progress Metronome Controller. This will allow the user to use the Metronome as an event sequencer!S
+
 [Beta 1.0.5a] 2016-04-10
 Fixed:
 	•	Tweaked MIDI recorder to make sure Loop is off by default.
