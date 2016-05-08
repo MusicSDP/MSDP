@@ -1,6 +1,17 @@
-Music_SDP changelog:
+﻿Music_SDP changelog:
+
+
+[Beta 1.0.7a] 2016-05-08
+Changed:
+	•	MIDI Explorer module has had additional processes added and many bugs have been removed.
+
+[Beta 1.0.7] 2016-05-01
+
+Added:
+	•	MIDI Explorer module that lets you make sweeping changes to MIDI file contents
 
 [Beta 1.0.6a1] 2016-04-25
+
 Changed:
 	•	Master Metronome can now be controlled via automation
 
