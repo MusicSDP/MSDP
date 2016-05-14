@@ -1,4 +1,18 @@
-﻿Music_SDP changelog:
+Music_SDP changelog:
+
+[Beta 1.0.7a5] 2016-05-14
+Changed:
+	•	File Granulator has a new visual design and now allows the user to switch between MONO mode and STEREO mode for different file types.
+Fixed:
+	•	The Reverb module has had an error fixed that caused it to ignore the left channel.
+
+[Beta 1.0.7a3] 2016-05-13
+Added:
+	•	The Master Mixer now has solo and mute buttons for each channel.
+	•	Work on the MIDI Arpeggiator has begun!
+	•	Automator draft 1.3 is a work-in-progress multi-function, scalable automation graph, to be eventually added to each module. Currently a work-in-progress.
+Changed:
+	•	Live Granulator has had a visual redesign to make it easier to read the parameter names
 
 
 [Beta 1.0.7a] 2016-05-08
