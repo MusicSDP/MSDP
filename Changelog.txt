@@ -1,5 +1,14 @@
 Music_SDP changelog:
 
+[Beta 1.0.8a] 2016-06-05
+Changed:
+	•	The Global Metronome has had a redesign completed that makes it more efficient and more precise
+Added:
+	•	The MIDI Arpeggiator - a new module that generates arpeggios from MIDI data.
+	•	The A+2 Synth: A redesign of the Additive synth that improves the interface and adds two LFOs + an LFO envelope.
+Fixed:
+	•	Several bugs in the original Additive Synth have been fixed.
+
 [Beta 1.0.7a5] 2016-05-14
 Changed:
 	•	File Granulator has a new visual design and now allows the user to switch between MONO mode and STEREO mode for different file types.
