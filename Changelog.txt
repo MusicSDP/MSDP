@@ -1,5 +1,14 @@
 Music_SDP changelog:
 
+[Beta 1.0.9] 2016-06-11
+Added:
+	•	New Recording option to automatically add recorded audio to Audio Files folder in project folder. Also updates Audio Manager list so that files can immediately be used in projects.
+	•	20 new system board backgrounds have been added to the project, and can be selected from the Project Settings tab.
+Changed:
+	•	Updated the Project Settings UI to include the newly added options. Also changed the interface to make it easier to use, and made changes save automatically. Removed the “Project Name” option, since it isn’t currently being used for anything. Code still exists in case it ends up being useful in the future.
+Fixed:
+	•	Bugs have been removed from the MIDI Arpeggiator and routing parameters have been added to the A+2 synth.
+
 [Beta 1.0.8a] 2016-06-05
 Changed:
 	•	The Global Metronome has had a redesign completed that makes it more efficient and more precise
