@@ -1,13 +1,205 @@
 Music_SDP changelog:
 
+[Beta 1.0.9.58] 2016-11-14
+Changed:
+	•	Fixes to the Compressor
+	•	Fixes to the Stochastic Granulator
+	•	Fixes to the Vocoder
+
+[Beta 1.0.9.57] 2016-11-14
+Changed:
+	•	Updates to the Chopper
+	•	Updates to the Chaos Synth
+	•	Updates to the Drum Machine
+	•	Fixes to the Crash Override
+	•	Fixes to the Crash & Burn
+	•	Fixes to the Audio File Player
+	•	Fixes to the Flanger
+	•	Many new pre-built boards
+
+[Beta 1.0.9.55] 2016-11-12
+Changed:
+	•	Finished updating the Score Tutorial
+
+	•	Updated the Scores menu to work with the new Score System
+
+	•	Updated the Project Settings screen to work with the new Score System
+
+[Beta 1.0.9.53] 2016-11-10
+Changed:
+	•	About Music_SDP screen has been updated to reflect 1.1.0 changes. Michael Mann’s contribution screen has been added.
+	•	The Score Tutorial has been updated, but still needs more before launch.
+	•	Performer Instructions have been added to the Score View.
+Added:
+	•	Michael Mann’s new Chaos Synth has been included in the package. 
+
+[Beta 1.0.9.50] 2016-11-04
+Changed:
+	•	Now, when 0 is selected for Pitch or Controller control in the Score Player, any value can be used to progress the score. To keep too many accidental score progressions from happening, the default mode is not Controller.
+	•	Added panning to the Chopper
+Added:
+	•	More Templates: File_Effect, MIDI_Effect, and Synthesizer have been created. 
+
+[Beta 1.0.9.49] 2016-11-01
+Changed:
+
+	•	Included newest version of the Chopper code
+Added:
+	•	Filter Template has been created
+
+
+[Beta 1.0.9.48] 2016-10-31
+Changed:
+
+	•	Folder structure was changed in the “modules” folder. “Templates” was added to it, and the “Blank Template” was moved to the template folder.
+	•	“Blank Template” has been renamed “Master Template”
+Added:
+
+	•	A new template has been created called “Synthesizer Template”. It is a fully functioning 32-voice synthesizer that includes instructions and tips related to creating synthesizers within the MSDP system. Can be integrated into projects and works like any official module.
+
+
+[Beta 1.0.9.46] 2016-10-23
+Changed:
+
+	•	3-5 Boards have been built for each browser
+	•	Additional bug fixes to the EZ MIDI Player, Stochastic Grains, Audio File Player and the Vocoder
+
+[Beta 1.0.9.45] 2016-10-21
+Changed:
+
+	•	Bugs removed from the Audio File Player and from the Audio-to-MIDI effects
+	•	Board Browser creation is complete, but needs to be filled with actual boards now!
+
+[Beta 1.0.9.43] 2016-10-20
+Changed:
+	•	Board Browser is well underway. Beginning tools are functional and boards are properly loading from system folder and saving into project folder!
+
+
+[Beta 1.0.9.40] 2016-10-19
+Changed:
+	•	Meta-Board Boxes can now be saved and loaded into boards. Testing shows that this process works very well.
+
+[Beta 1.0.9.39] 2016-10-18
+Changed:
+	•	Meta-Board Box is FULLY functional! Just need to hook it up so that it works with saving and controllers, etc. And need to test how it works on save and on load.
+
+[Beta 1.0.9.37] 2016-10-17
+Changed:
+	•	Finished the revisions to the Score Player.
+		•	Good progress has been made on the MSDP Chopper module by Michael.
+
+[Beta 1.0.9.27] 2016-08-24
+Changed:
+	•	Finished GUI for the new Score Player.
+
+
+
+[Beta 1.0.9.26] 2016-08-22
+Changed:
+	•	Continued building GUI for the new Score Player.
+
+
+
+[Beta 1.0.9.25] 2016-08-21
+Changed:
+	•	Began the rework of the Score Player.
+
+
+
+[Beta 1.0.9.24] 2016-08-20
+Added:
+	•	Live and File Granulator now only generate one grain at a time instead of four, making it less CPU intensive.
+	•	File Granulator now includes a “Random” option that will set grains to random locations from without the selected region.
+ 
+[Beta 1.0.9.23] 2016-08-19
+Added:
+	•	Signal-to-MIDI module uses the MSDP custom pitch-tracking algorithm to convert any part of the signal chain into MIDI data. Needs to be completed by adding routing and saving functionality. Other than that, it seems fully functional!
+
+[Beta 1.0.9.22] 2016-08-17
+Changed:
+	•	File and Live Granulator now include the ability to "play" them with keyboards. The depressed notes will be randomly selected and used for the grains. Both modules can also be controlled now via MIDI modules.
+	•	GigaVerb, which had unknowingly been broken, has been fixed.
+
+[Beta 1.0.9.21] 2016-08-16
+Changed:
+	•	Redesign of the Performer View now complete
+	•	Continued to tweak the Board Browser
+
+[Beta 1.0.9.19] 2016-08-14
+Changed:
+	•	More bug fixes and refinements to the Drum Machine
+	•	Finished visual redesigns of all modules (except Drum Machine and Chaos Synth, which Michael will look at first)
+	•	Minor visual tweaks to the System Board
+	•	Minor visual tweaks to the Project Settings Window
+	•	Visual tweaks and improvements to the Performer View
+	•	Slight compression to background images, all background images now work on Windows
+
+[Beta 1.0.9.16] 2016-08-12
+Changed:
+	•	Finished Signal Recorder
+	•	Finished visual tweaks to Buffer Effects
+
+[Beta 1.0.9.13] 2016-08-08
+Added:
+	•	Began building the Signal Recorder. In utilities.
+Changed:
+	•	Updated the Blank Template with current buttons and color scheme.
+
+[Beta 1.0.9.12] 2016-08-07
+Added:
+
+	•	MSDP_Dial_es1
+Changed:
+	•	Revisions to all MSDP dials to make them more visable/usable on PC. Major revisions to MSDP_Dial_s1,2,3
+	•	Visual redesign to all modules through Filter Effects have been completed.
+
+[Beta 1.0.9.9] 2016-07-28
+
+Changed:
+
+	•	Visual redesign of the SAH module and Stochastic
+
+
+
+[Beta 1.0.9.8] 2016-07-27
+
+Changed:
+	•	Visual redesign of the Compressor module.
+
+
+
+[Beta 1.0.9.7] 2016-07-26
+
+Changelist:
+
+1. many improvements to the drum machine
+
+2. revised design for the Master Mixer
+
+3. Inclusion of new tab for the Board Browser (in-progress)
+
+4. Re-designed file structure for the effects
+
+5. Beginning of the Meta-Board Box (a Utilities module)
+
+6. Visual redesign of the Audio File Player
+
+
+
 [Beta 1.0.9] 2016-06-11
+
 Added:
 	•	New Recording option to automatically add recorded audio to Audio Files folder in project folder. Also updates Audio Manager list so that files can immediately be used in projects.
+
 	•	20 new system board backgrounds have been added to the project, and can be selected from the Project Settings tab.
+
 Changed:
+
 	•	Updated the Project Settings UI to include the newly added options. Also changed the interface to make it easier to use, and made changes save automatically. Removed the “Project Name” option, since it isn’t currently being used for anything. Code still exists in case it ends up being useful in the future.
+
 Fixed:
 	•	Bugs have been removed from the MIDI Arpeggiator and routing parameters have been added to the A+2 synth.
+
 
 [Beta 1.0.8a] 2016-06-05
 Changed:
