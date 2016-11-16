@@ -1,5 +1,10 @@
 Music_SDP changelog:
 
+[Beta 1.1.0.1] 2016-11-16
+Changed:
+	•	Drum Machine 4 has been fixed on the full view
+	•	New Projects now load main_demo.txt into the score player, eliminating the possibility of crashing when used with a hardware controller. 
+
 [Beta 1.0.9.58] 2016-11-14
 Changed:
 	•	Fixes to the Compressor
