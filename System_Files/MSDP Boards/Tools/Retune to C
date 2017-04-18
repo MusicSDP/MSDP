@@ -1,0 +1,13 @@
+1, 0_Build 1 1;
+12, 1_effect 1 1 ReTuner;
+11, 2_ID 1 1 "C maj A min";
+3, 3_message "C maj A min" pfile default_retuner.json;
+4, 3_message "C maj A min" p0 3;
+5, 3_message "C maj A min" p6 0 2 4 5 7 9 11;
+6, 3_message "C maj A min" p5 3;
+7, 3_message "C maj A min" p4 100.;
+8, 3_message "C maj A min" p3 1.;
+9, 3_message "C maj A min" p2 Master Out Master 16;
+10, 3_message "C maj A min" p1 Mic 0;
+2, 4_Name "Retune to C";
+13, 4_Name "Retune to C";

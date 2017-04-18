@@ -1,0 +1,15 @@
+MSDP_MESSAGE Important Performer Messages can be found here.;
+0;
+MSDP_MESSAGE This is a test message. This is only a test message;
+MSDP_COMMENT This is a test comment. This is only a test comment;
+MSDP_DScore p2 1, p5 10, p1 bang;
+MSDP_RScore p6 5, p2 0, p3 1, p1 bang;
+MSDP_Score p4 0, p5 60;
+1;
+Test p4 0, p4 10 10000;
+MSDP_Score p4 0, p5 62;
+MSDP_RScore p3 0;
+2;
+Test p4 10, p4 0 10000;
+MSDP_Score p4 0, p5 64;
+3;

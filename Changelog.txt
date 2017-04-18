@@ -1,9 +1,717 @@
 Music_SDP changelog:
 
+[Beta 1.1.4a.3] 2017-04-06
+Changed
+ 	• Began making automation for the Performer View. Made some adjustments to the iyo maxpat. Need to finish.
+ 	• Includes most recent in-progress for the Chopper-Looper.
+
+[Beta 1.1.4a.1] 2017-04-06
+Changed
+ 	• Finished updating module params across all modules (minus the Drum Machine and the MIDI Explorer).
+
+[Beta 1.1.4.21] 2017-04-03
+Changed
+ 	• Updated Module params for the instruments
+ 	• Automator switches values between int and float for int and float params.
+
+[Beta 1.1.4.20] 2017-04-03
+Changed
+ 	• Created two new automation modes: select and toggle. These both go directly to values without having to set start/stop params.
+ 	• Updating module param lists to reflect new options. Finished Audio Tools, Buffer Effects, and Filters.
+
+[Beta 1.1.4.19] 2017-04-02
+Changed
+ 	• Created System / Module ID toggle in Smart Automation Core.
+ 	• Automation now works with Creator Column!
+
+[Beta 1.1.4.18] 2017-04-02
+Changed
+ 	• Added “Preset” as the first modifiable parameter in each module parameter list.
+
+[Beta 1.1.4.17] 2017-03-30
+Changed
+ 	• Finished making the Big View for the Audio File Player.
+
+[Beta 1.1.4.16] 2017-03-29
+Changed
+ 	• Parameter list now includes “Select Parameter” at the start.
+
+[Beta 1.1.4.15] 2017-03-29
+Changed
+ 	• Added / re-organized available parameters in the Pan Machine to make it more functional.
+ 	• Added Record Toggle and File Name automation parameters to Signal Recorder Module.
+ 	• All Modules now have complete parameter lists EXCEPT Drum Machine and MIDI Explorer (do w/ Michael).
+
+[Beta 1.1.4.14] 2017-03-29
+Changed
+
+ 	• Added parameters for the remaining instruments (minus the drum machine) and all of the Buffer Effects. Worked through Filters Alphabetically all the way through the Morphing Filter.
+
+[Beta 1.1.4.13] 2017-03-27
+Changed
+
+ 	• Added Parameters for the 5 audio tools, the A+2, the Additive, the Chaos Synth, the SAH, and the Stochastic File Player
+
+[Beta 1.1.4.12] 2017-03-25
+Changed
+
+ 	• Now, whenever a board file is saved, a confirmation window pops up for 2 seconds.
+
+[Beta 1.1.4.11] 2017-03-25
+Changed
+
+ 	• Recording tools now always sends the audio to the correct folder!
+
+[Beta 1.1.4.10] 2017-03-24
+Changed
+
+ 	• Echo and Delay modules now have "Clear" commands.
+
+[Beta 1.1.4.9] 2017-03-24
+Changed
+
+ 	• Clickless algorithm applied to the EZ File Player, and new event doesn't begin until mouse up!
+
+[Beta 1.1.4.8] 2017-03-24
+Changed
+
+ 	• All audio clicks have been eliminated in the Audio File Player.
+
+ 	• Audio File Player now includes Big View that gives user much larger display to work in.
+
+[Beta 1.1.4.7] 2017-03-23
+Changed
+
+ 	• Audio File Player no longer clicks on Start, Stop, Pause, or Loop. When a new loop point is chosen, the value only goes out with mouse up, and there is a small click still remaining to fix.
+
+
+
+[Beta 1.1.4.6] 2017-03-21
+Changed
+
+ 	• Board Manager and Automation ID storage system backbone is complete. Now to populate all of the modules with parameter info.
+
+[Beta 1.1.4.5] 2017-03-20
+Changed
+
+ 	• Module Manager is in the works. Can delete and add boards, and can delete modules. Still need to work on the ability to add modules (to the perm. list).
+
+[Beta 1.1.4.3] 2017-03-18
+Changed
+
+ 	• As of now, any boards saved with a project will have their module names saved to the Module_List_Maker.maxpat. Two new coll files are stored with each project. One with the list of module names, one with the module names' parameters.
+
+[Beta 1.1.4.2] 2017-03-18
+Changed
+
+ 	• Panner is now called Pan Machine to keep wrong patch from opening.
+ 	• "Project File Not Found" is now a floating window, at it should have been all along.
+ 	• Have laid groundwork for automation revision. Modules now send IDs out to central location to be gathered into a umenu. Convolve has a parameter list to test parameter retrieval.
+ 
+Added
+
+ 	• Module_List_Maker has been added to the System Board
+
+ 	• The Smart_Automation_Core has been added to the includes list.
+
+ 	• Automator_Board_V2 has been added to the “In-Progress” folder. Check it out.
+
+
+[Beta 1.1.4.1] 2017-03-17
+Changed
+ 	• Project Loader now gets disposed when loading a project to cut down on CPU demands from the jweb app. Re-loads when the user clicks the project loader link from the menubar.
+
+[Beta 1.1.3.21] 2017-03-09
+Changed
+ 	• User Manual linked to from menubar
+ 	
+        • Add ability to receive a link on click on news posts that opens a browser using query
+
+ 	• First score event can load, even if there are no boards to open
+
+ 	• Karma~ is now being used to make the glitch pad click free.
+
+
+[Beta 1.1.3.19] 2017-03-09
+Changed
+ 	• Major tweaks to glitch pad, minimizing clicks. Could improve further.
+
+[Beta 1.1.3.18] 2017-03-09
+Changed
+ 	• Did work to remove as many clicks as possible from the Glitch Pad.
+
+[Beta 1.1.3.17] 2017-03-09
+Changed
+ 	• Created "Glitch Pad Pro" view for the Glitch Pad module. Very fun!
+
+[Beta 1.1.3.16] 2017-03-09
+Changed
+ 	• User Instructions can now be controlled via automation using ID: MSDP_User_Instructions. Options include “open” “close” “title” and “content”
+
+ 	• Sigmund~.mxo (64-bit) is now working on OSX
+
+ 	• Load First Event on Project Launch now works even if there are 0 saved boards.
+
+
+
+[Beta 1.1.3.15] 2017-03-08
+Changed
+ 	• Added menu item to view User Manual online! 
+
+
+[Beta 1.1.3.14] 2017-03-08
+Changed
+ 	• Project Loader's Web Browser can now open the user's web browser if certain buttons in the news articles.
+
+[Beta 1.1.3.13] 2017-03-07
+Changed
+ 	• Glitch Pad is completed.
+
+[Beta 1.1.3.12] 2017-03-07
+Changed
+ 	• Project Loader now includes a button to re-load the news page.
+ 	• Signal-2-MIDI has a new core based on the 64-bit version of Sigmund~. It's more CPU efficient, it's more accurate, and now includes two modes: stream and musical. Stream provides a continuous flow of data, while musical outputs only when a new note begins.
+
+[Beta 1.1.3.11] 2017-03-07
+Changed
+ 	• Project Loader now includes a web browser that displays latest news, an indication of your current version, an indication of the latest version online, and a button link to the website that appears IF there is a newer version available. 
+
+[Beta 1.1.3.9] 2017-03-02
+Changed
+ 	• Fixed the bug where loading MIDI files no longer worked!
+
+[Beta 1.1.3.8] 2017-03-02
+Changed
+ 	• Updated MIDI Loader to open absolute paths. They don’t re-load yet, but I don’t know if the re-loaded before. Modules updated: EZ MIDI Loader, MIDI Editor, MIDI Explorer. 
+
+
+
+[Beta 1.1.3.7] 2017-03-02
+Added
+ 	• Created new Plugin_Loader screen that replaces the vst_load sub patches in VST Instrument and VST Effect. Includes option of searching computer for file.
+
+
+
+[Beta 1.1.3.6] 2017-03-02
+Changed
+ 	• Created option to search computer for audio file to add to audio player modules. New code should be implemented for MIDI and VST plugins also. Updated Module List: Audio File Template, Audio File Player, EZ Audio File Player, Stochastic File, File Granulator, File Scratcher, Glitch Pad.
+
+[Beta 1.1.3.5] 2017-03-02
+Added
+ 	• The first version of the Glitch Pad Buffer Effect is a success, but I need to find a way to make the results more compelling, and I need to see if I can make it more CPU efficient. I’ve also added a non-functional index~ version to see if it’ll be easier on the CPU, but so far it’s not working so well…
+
+
+
+[Beta 1.1.3.4] 2017-03-01
+Changed
+ 	• The “Loading MSDP” message should now be centered on the screen and a little up from vertical center.
+
+ 	• The Project Loader should be completely centered on the screen now.
+
+
+[Beta 1.1.3.3] 2017-02-24
+Added
+ 	• This is an experimental build. The Java 8 update for Filesys has been distributed, and this includes the new version. Requires testing across multiple platforms.
+
+[Beta 1.1.3.2] 2017-02-24
+Added
+ 	• I created an auto-updater patch that informs the user when an update has been released for the program! 
+	This must be maintained from two locations: 
+		1. The Project Settings Window which now says what version number is current. This number MUST STAY UP TO DATE
+		2. A script on the server called "current-version-info.json". This script must also be updated WHEN AN UPDATE GOES LIVE
+
+[Beta 1.1.3.1] 2017-02-24
+Changed
+
+ 	• *FINALLY* updated the Automation Board with the modern preset system structure. 
+
+[Beta 1.1.3] 2017-02-18
+Changed
+
+ 	• Returned old MIDI Recorder from 1.1.2. Have to wait for the next Max update to improve.
+
+[Beta 1.1.2.58] 2017-02-18
+Changed
+
+ 	• Includes the final revision to the New Board Button
+ 	• All popup windows now float, to make sure they are on top regardless of full or windowed mode.
+
+[Beta 1.1.2.57] 2017-02-17
+Changed
+
+ 	• Finished tweaking System Board.
+
+[Beta 1.1.2.56] 2017-02-17
+Changed
+
+ 	• Incorporated updated power button and New Board Button
+ 	• Going even darker w/background. Makes for better contrast. Bottom-right on Backgrounds color pallete.
+
+[Beta 1.1.2.55] 2017-02-16
+Changed
+
+ 	• Found an even better solution to the initialization sys board size on windows!
+
+[Beta 1.1.2.54] 2017-02-16
+Changed
+
+ 	• Added new power button and made new audio section on System Board.
+
+
+[Beta 1.1.2.53] 2017-02-15
+Changed
+
+ 	• Finished fixing system board size issues for windows (again!)
+ 	• Fixed ramp issues in Stoch Files and Stoch Grains
+ 	• Fixed ramp issues with Randomator
+
+[Beta 1.1.2.52] 2017-02-15
+Changed
+
+ 	• Finished optimizing the Morphing Filter.
+
+[Beta 1.1.2.51] 2017-02-14
+Changed
+
+ 	• Fixed a bug with the Audio File Player, where the buffer name wouldn't update.
+ 	• Fixed final bugs in Chaos Synth. Still need to optimize Morphing Filter.
+ 	• Fixed two bugs in the project loader, one that didn't add a found project upon search and one that failed to send the project's system path to the system board one initialization.
+
+[Beta 1.1.2.50] 2017-02-13
+Changed
+
+ 	• Working to finalize the Chaos Synth
+
+
+[Beta 1.1.2.49] 2017-02-13
+Changed
+
+ 	• Added Michael's changes to the Chaos Synth. Need to finish optimizing Morphing Filter and Make listed changed to Chaos.
+
+[Beta 1.1.2.48] 2017-02-12
+Changed
+
+ 	• Fixed a bug that caused system board to go to back on new project load.
+
+[Beta 1.1.2.47] 2017-02-12
+Changed
+
+ 	• Replaced float w/ topmost for fullscreen toggle.
+
+[Beta 1.1.2.45] 2017-02-11
+Changed
+
+ 	• Updated with version 1 of the new NEW BOARD button!
+
+[Beta 1.1.2.44] 2017-02-20
+Changed
+
+ 	• Fixed a load error in the Score Player.
+ 	• Fixed a Windows load error.
+ 	• Added the FS_Toggle to all pop-out windows.
+
+[Beta 1.1.2.43] 2017-02-09
+Changed
+
+ 	• Replaced icons with fixed icons.
+ 	• Added three keyboards shortcuts: Shift+F toggles fullscreen. Shift+S toggles system board. Shift+B toggles saved boards.
+
+
+
+[Beta 1.1.2.42] 2017-02-08
+Changed
+ 	• Fixed the Show/Hide System Board bug.
+
+
+
+[Beta 1.1.2.41] 2017-02-07
+Changed
+ 	• Finished tweaking fullscreen issues on OSX.
+
+
+[Beta 1.1.2.40] 2017-02-06
+Changed
+ 	• Finished tweaking system board screen size issues and fullscreen issues on Windows.
+ 	• Includes newest version of Chaos Synth.
+
+[Beta 1.1.2.39] 2017-02-05
+Changed
+ 	• Slight visual tweaks to the Project Settings Screen.
+ 	• Updated “About MSDP” page to include Dean and add Michael’s recent additions.
+ 	• New record button added to the MIDI Recorder module.
+ 	• Created MIDI Editor
+
+[Beta 1.1.2.38] 2017-02-04
+Changed
+ 	• Transferred the Fullscreen toggle controls to the fullscreen background. 
+
+[Beta 1.1.2.37] 2017-02-04
+Added
+ 	• Can now toggle in and out of fullscreen mode via the Project Settings window and via the main menu. Might consider offsetting the option from Project Settings to the actual background patch, and just keep a switch on the PS screen.
+
+[Beta 1.1.2.36] 2017-02-04
+Changed
+ 	• Finished re-designing the Resizer patch on the System Board. Works much better now.
+
+[Beta 1.1.2.34] 2017-02-04
+Changed
+ 	• Created new MSDP background image. Cleaned up and removed some old images.
+
+[Beta 1.1.2.33] 2017-02-04
+Changed
+ 	• Replaced the old logo with the new.
+ 	• Moved the menu to the fullscreen background.
+
+[Beta 1.1.2.32] 2017-02-03
+Changed
+ 	• Added “Loading” text on launch.
+ 	• Pedal Boards now get deleted if the user returns to the Project Loader screen.
+
+[Beta 1.1.2.30] 2017-02-02
+Changed
+ 	• Experimental fullscreen works now on both Windows and OSX. Holy Shit!
+
+[Beta 1.1.2.29] 2017-02-02
+Changed
+ 	• Experimental build working on developing a full-screen mode for OSX and Windows.
+
+
+[Beta 1.1.2.28] 2017-02-02
+Changed
+ 	• Changes made to Loaded_Board.maxpat and Project_Settings.maxpat. Created new option "Load first event on initialization", and implemented successfully.
+ 	• Created new default score to reflect updated settings.
+
+[Beta 1.1.2.27] 2017-02-01
+Added
+ 	• Created the Automator Module, renamed automator to Automator_Board.
+ 	• Can Show/Hide boards from the menubar.
+ 	• Am playing with the idea of having a full-screen background for MSDP. Trial patch is in the in-progress folder.
+
+Changed
+ 	• Made some fixes to the parameter routing in the Randomator
+
+[Beta 1.1.2.26] 2017-01-30
+Changed
+ 	• FINALLY fixed the issue where projects were not creating project files on build.
+Added
+ 	• Project Settings tab now includes the option of hiding or showing saved boards.
+ 	• Saved, Loaded, and Pedal Boards (if they've been saved) can be shown or hidden from the Project Settings panel.
+
+[Beta 1.1.2.25] 2017-01-30
+Changed
+ 	• Discovered that the Pedal Board has been broken since 1.1.2.16. Replaced it with the version from 1.1.2.15. It works again, but now contains some of the old error messages. Will need to review again soon.
+
+[Beta 1.1.2.24] 2017-01-30
+Changed
+ 	• Randomator now includes Group control.
+
+[Beta 1.1.2.23] 2017-01-29
+Added
+ 	• New streamlined record button completed!
+
+[Beta 1.1.2.22] 2017-01-29
+Added
+ 	• Added newest Chaos Synth code
+
+[Beta 1.1.2.21] 2017-01-29
+Added
+ 	• New record button integrated! Needs new hover images.
+ 	• Randomator completed and integrated!
+
+[Beta 1.1.2.20] 2017-01-28
+Added
+ 	• Randomator and Randomator initial have been added to the in-progress folder.
+
+
+[Beta 1.1.2.19] 2017-01-28
+Changed
+ 	• Brought Buffer Size parameter back to Live Granulator in the advanced tabs, and re-ordered parameters to clarify.
+
+[Beta 1.1.2.18] 2017-01-26
+Changed
+ 	• Fixed the bug that kept the project file from building when creating a new project.
+
+
+
+[Beta 1.1.2.17] 2017-01-26
+Changed
+ 	• Removed errors in the Saved and Loaded boards. They’re now error free!
+
+ 	• There is a new issue to address with new projects, where a project file isn’t immediately saved. Need to fix.
+
+
+
+[Beta 1.1.2.16] 2017-01-25
+Changed
+ 	• Removed the errors that occurred after adding a second module to a pedal board.
+
+
+[Beta 1.1.2.15] 2017-01-25
+Changed
+ 	• Simplified All_Destroyer patch in the Pedal Board removed remaining Pedal Board errors and makes it more efficient!
+
+[Beta 1.1.2.14] 2017-01-25
+Changed
+ 	• Removed all initialization errors on the Pedal Board. Discovered that Prepend, Append, and Sprintf CANNOT have '$1' in thier argument.
+
+[Beta 1.1.2.13] 2017-01-25
+Changed
+ 	• All initialization errors resolved.
+
+[Beta 1.1.2.12] 2017-01-24
+Changed
+ 	• Got rid of all but one initialization error!
+
+[Beta 1.1.2.11] 2017-01-24
+Changed
+ 	• Got rid of a lot of initialization errors.
+
+[Beta 1.1.2.10] 2017-01-22
+Changed
+ 	• Modified Morphing Filter, working on simplifying the poly design with patch generation.
+ 	• Includes updated Chaos Synth code.
+
+[Beta 1.1.2.9] 2017-01-22
+Changed
+ 	• Modified FM freq, FM depth, and detune in Stoch Grains. All done now!
+
+[Beta 1.1.2.8] 2017-01-21
+Changed
+ 	• Modified Speed and Duration in the Stoch Grains. Need to modify FM params also.
+
+[Beta 1.1.2.7] 2017-01-19
+Changed
+ 	• Finished combining both Stochastic File players into a single one with functionality of both.
+ 	• Included pitch modes to create different results from Stoch File playback.
+ 	• It's a blast!
+
+[Beta 1.1.2.6] 2017-01-18
+Changed
+ 	• Working on creating a single Stochastic File Granulator that combines functions of both versions and optional pitch modes. Everything is done except the optional pitch modes… and the decision of how to manage speed v pitch.
+
+
+[Beta 1.1.2.5] 2017-01-17
+Changed
+ 	• Finished the Stochastic File Granulator, made a second version. V1 keeps speed and pitch connected. V2 opens up the possibility to control each seperately at the expense of the CPU.
+
+[Beta 1.1.2.3] 2017-01-17
+Changed
+ 	• Made the Morphing Filter more efficient
+
+Created:
+
+ 	• Began work on the Stochastic File Granulator
+
+
+[Beta 1.1.2] 2017-01-07
+Changed
+ 	• Finished updating the Morphing Filter.
+ 	• Added "Death From Below" and "Momentous" instrument boards to the board browser.
+
+[Beta 1.1.1.20] 2017-01-06
+Changed
+ 	• Completed Morphing Filter has been added.
+
+[Beta 1.1.1.19] 2017-01-05
+Changed
+ 	• SAH has been further cleaned up. Not quite sure how to do poly~ yet, but we're now prepped to start it.
+ 	• SAH buffers and cycle~s now get random names on load, so as to ensure each instance is unique.
+ 	• SAH has had ADSR control added to it, same as Additive synth.
+
+[Beta 1.1.1.18] 2017-01-04
+Changed
+ 	• SAH has been cleaned up, in preparation for the poly sah
+ 	• Templates have been updated. P0 is now right before pFiles. This makes sure that presets don’t override other things in saved settings.
+
+
+[Beta 1.1.1.17] 2017-01-04
+Changed
+ 	• Gater includes instructions on how to add, move, and remove points
+ 	• Echo now includes options to start from left, right, or stereo
+
+[Beta 1.1.1.16] 2017-01-02
+Changed
+ 	• Includes Michael's newest code for the Step Filter.
+
+[Beta 1.1.1.15] 2017-01-01
+Changed
+ 	• Added Clear button as parameter 9 to the Gater
+
+[Beta 1.1.1.14] 2016-12-31
+Changed
+ 	• File Play and EZ File Play now auto detect stereo or mono and update accordingly
+
+	• Template files further improved. MSDP_Sig_In now only required once.
+ 
+	• Audio Effect Template now properly saves file name and auto-detects mono/stereo.
+
+
+
+[Beta 1.1.1.13] 2016-12-31
+Changed
+ 
+	• Template files have been updated again. MSDP_Sig_In object now includes all of the code to send signals out, slightly simplifying the design of the templates.
+
+
+
+
+[Beta 1.1.1.12] 2016-12-27
+Changed
+ 
+	•	All of the template files have been updated to be a little more standardized.
+
+
+
+[Beta 1.1.1.11] 2016-12-21
+Changed
+ 
+	•	The “msdp_vol_fix” objects have been replaced with an identical, but better named object called “msdp_sig_out”.
+
+
+[Beta 1.1.1.10] 2016-12-21
+Changed
+ 
+	•	The "effects" folder has been renamed to "Modules". This only made since, seeing as there are many modules that are not effects. It also clarifies the file structure
+ 
+	•	The _Music_SDP.maxpat launcher has been updated to look for "Modules" and "Choose1.maxpat" has also been updated appropriately.
+
+[Beta 1.1.1.9] 2016-12-20
+Changed
+ 
+	•	DegraderDrive can now route through both effects, and in either order.
+ 
+	•	Added Start/Stop points to EZFile.
+
+[Beta 1.1.1.8] 2016-12-19
+Added
+ 
+	•	Created a MIDI Splitter tool, making it possible to send one MIDI stream out to four locations.
+Changed:
+ 
+	•	Added "1-octave" setting to Signal-to-Midi
+
+[Beta 1.1.1.7] 2016-12-18
+Changed:
+ 
+	•	Signal-in Control now changes color depending on volume of input signal.
+
+[Beta 1.1.1.6] 2016-12-16
+Changed:
+ 
+	•	Updated the Synth Template with the new “midinote” method
+
+	•	Added the ability to flush the template and the stochastic.
+
+	•	Still need to make sure all keyboards can be flushed with flush command.
+
+
+[Beta 1.1.1.5] 2016-12-16
+Changed:
+ 
+	•	Revised and expanded routing list for MIDI Arpeggiator
+
+[Beta 1.1.1.4] 2016-12-14
+Changed:
+ 
+	•	File Player now includes a pause/resume button. Stop now sends the file back to the start of the loop. This means that control is now parity with ez player.
+
+[Beta 1.1.1.3] 2016-12-14
+
+Changed:
+ 
+	•	Added playback locator to EZ Player and Audio Player
+
+	•	Converted EZPlayer to groove~ base and made simplified stop/loop control.
+
+	•	Improved playback method for Audio File Player with more efficient code.
+
+
+
+[Beta 1.1.1.2] 2016-12-13
+Changed:
+ 
+	•	A+2 and Add1t1v3 now use “MIDINOTE” for voice management instead of poly, allowing for more natural note-off decays.
+
+
+
+[Beta 1.1.1.1] 2016-12-12
+
+
+Changed:
+ 
+	•	MIDI ARP now includes ability to add up multiple notes randomly on continuous random.
+
+	•	MIDI ARP also now includes a half-note time value!
+
+
+[Beta 1.1.0.12] 2016-12-02
+
+Added:
+
+	•	New VST Controller Module rounds out the list of new modules for the 1.1.1 update
+	•	Beginning of Morph Filter being created. File has been added to Filters (will need to be moved if not done by 1.1.1.)
+
+Changed:
+	•	Plugin Manager includes code to show vsts on both OSX and Windows. Also added text to explain that OSX users must manually add their vsts.
+
+[Beta 1.1.0.9] 2016-12-02
+
+Changes:
+
+	•	Changed Score System settings so that Control Mode 0 is Controller, and Control Mode 1 is Pitch
+
+[Beta 1.1.0.8] 2016-12-01
+
+Changes:
+
+	•	Tweaked the Sig-to-Mid remove dup code. Not sure about the changes though.
+Fixes:
+
+	•	Finished making changes to the Score Player. All systems function AS INTENDED finally. Thank goodness for that. It’s been fun to mess around with and it’s great to have it all in one location!
+
+[Beta 1.1.0.7] 2016-12-01
+
+
+Fixes:
+
+	•	Updates to the Score Player makes it so that when "skip to..." is set, the event does NOT begin automatically, and fixes a bug with the repeat score. Fixed some issues with the System Crashing sometimes. Still some fuckery going on with the Delay Score. Got message "p3 no such object" when there IS routing in the event...
+
+[Beta 1.1.0.6] 2016-11-24
+
+
+Fixes:
+
+	•	Gater module’s issue with saving and reloading the function has finally been resolved.
+	•	Also fixed the issue where the “Select Board” text was displaying as black on load
+
+	•	Fixed the bug where the Plugin Manager screen would open when the “Open Audio Manager” button was pressed.
+
+
+
+[Beta 1.1.0.5] 2016-11-17
+Changed
+	•	Plugin Manager has been created and added to the System Board’s Creator Column. Works in conjunction with the VST Instrument and VST Effect.
+
+[Beta 1.1.0.4] 2016-11-17
+Changed
+	•	VST Instrument and VST Effect now display the plugin's presets, and presets will save with the patch, making it possible to load them back in upon re-open.
+
+[Beta 1.1.0.3] 2016-11-16
+Added
+	•	VST Effect Plugin created. I need to add the ability to select a preset for each… That may be trickier. 
+
+[Beta 1.1.0.2] 2016-11-16
+Changed
+	•	New solution for routing keyboard pitches and saved note collections seperately. Implimented into Synth Template.
+	•	New VST Instrument Patch, works like a charm! Will need to test with scores to ensure appropriate routing is established.
+
+
 [Beta 1.1.0.1] 2016-11-16
 Changed:
 	•	Drum Machine 4 has been fixed on the full view
+
 	•	New Projects now load main_demo.txt into the score player, eliminating the possibility of crashing when used with a hardware controller. 
+
 
 [Beta 1.0.9.58] 2016-11-14
 Changed:

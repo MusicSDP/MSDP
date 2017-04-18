@@ -1,0 +1,14 @@
+1;
+XXXm_repeat replocation 1, reprateran toggle 1, reprateran 200 800, repend 20 m_repeat reptoggle 0, reptoggle 1;
+2;
+nothing;
+3;
+grain1 p1 6 1, p2 25 2 0 1, p3 1. 5000, p4 10000, p6 100, p7 0, p8 12, p9 200, p10 960, p11 4.8, p12 1, p13 1, p14 25, p15 25, p16 35, p17 1., p18 0.5, p19 1;
+4;
+grain1 p1 5 1;
+5;
+infiniteverb p1 9 1, p2 25 2 0 1, p3 0.2 3000, p4 0.99, p5 0.1, p6 0.99, p7 0., p8 0.5, p9 1., p10 0;
+delay1 p1 5 1, p2 25 2 5 2, p3 1. 1000, p4 2000, p5 1, p6 0., p8 0, p9 0., p10 7;
+6;
+infiniteverb p1 3 1, p2 25 2 0 1, p3 0.5 5000, p4 0.99, p5 0.1, p6 0.99, p7 0., p8 0.5, p9 1., p10 0;
+7;
