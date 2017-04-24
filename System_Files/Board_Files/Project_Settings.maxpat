@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 0.0, 45.0, 1440.0, 851.0 ],
+		"rect" : [ 0.0, 45.0, 1920.0, 969.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1063,7 +1063,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 618.5, 246.204346, 161.0, 57.0 ],
+					"patching_rect" : [ 618.5, 246.204346, 162.0, 57.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 143.273331, 162.000015, 254.613327, 32.0 ],
 					"style" : "",
@@ -2342,7 +2342,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 15.0,
 					"id" : "obj-169",
-					"items" : [ "_Absolute_Path", ",", "_Paths", ",", "_Relative_Path", ",", "Absolute_Path", ",", "Absolute_Test", ",", "Dreamy Patterns", ",", "file_playing", ",", "mt1", ",", "Score_Board", ",", "testest", ",", "testtest", ",", "two fast dance" ],
+					"items" : [ "test1", ",", "test2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2519,14 +2519,27 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 316.0, 815.0, 50.0, 22.0 ],
+									"style" : "",
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-25",
-									"linecount" : 24,
+									"linecount" : 18,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.5, 12.0, 188.0, 338.0 ],
+									"patching_rect" : [ 15.5, 12.0, 188.0, 248.0 ],
 									"style" : "",
-									"text" : "This patch generates a folder structure on your computer that can be used to save a project.\n\nHit the bang, select where you want the folder saved, and then give it a name.\n\nCheck that location on your hard drive to make sure that the folders were saved where you expected them to be.\n\nRequires the \nfilesys.class\nfilesys.java\nfilesys.maxhelp\n\nThese can be anywhere in the search path and they don't have to go into the app directly.\n\nBe sure to credit the creator, Patrick Delges for the java files"
+									"text" : "This patch generates a folder structure on your computer that can be used to save a project.\n\nHit the bang, select where you want the folder saved, and then give it a name.\n\nCheck that location on your hard drive to make sure that the folders were saved where you expected them to be.\n\nRequires the \nmsdpfs external, build by Dirk Leas to replace the filesys javaclass we used prior to MSDP 1.5"
 								}
 
 							}
@@ -2568,7 +2581,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 210.5, 34.0, 150.0, 34.0 ],
+									"patching_rect" : [ 210.5, 34.0, 150.0, 33.0 ],
 									"style" : "",
 									"text" : "click to make the folder system"
 								}
@@ -2595,7 +2608,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.0, 701.0, 114.0, 50.0 ],
+									"patching_rect" : [ 118.0, 701.0, 114.0, 49.0 ],
 									"style" : "",
 									"text" : "\"Dante:/Users/hughlobel/Desktop/Test Falder\""
 								}
@@ -2674,7 +2687,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 254.0, 445.0, 224.0, 36.0 ],
+									"patching_rect" : [ 254.0, 445.0, 224.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Dante:/Users/hughlobel/Desktop/Test Falder/Project Files/Audio Files\""
 								}
@@ -2713,7 +2726,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 146.0, 673.0, 50.0, 22.0 ],
+									"patching_rect" : [ 147.0, 669.0, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "1"
 								}
@@ -2751,10 +2764,10 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 65.0, 634.0, 66.0, 22.0 ],
+									"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+									"patching_rect" : [ 65.0, 634.0, 49.0, 22.0 ],
 									"style" : "",
-									"text" : "mxj filesys"
+									"text" : "msdpfs"
 								}
 
 							}
@@ -2792,7 +2805,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 442.0, 676.0, 224.0, 36.0 ],
+									"patching_rect" : [ 442.0, 676.0, 224.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Dante:/Users/hughlobel/Desktop/Test Falder/Project Files/Saved scores\""
 								}
@@ -2806,7 +2819,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 405.0, 629.0, 224.0, 36.0 ],
+									"patching_rect" : [ 405.0, 629.0, 224.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Dante:/Users/hughlobel/Desktop/Test Falder/Project Files/Saved Projects\""
 								}
@@ -2820,7 +2833,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 363.0, 583.0, 224.0, 36.0 ],
+									"patching_rect" : [ 363.0, 583.0, 224.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Dante:/Users/hughlobel/Desktop/Test Falder/Project Files/Saved Presets\""
 								}
@@ -2834,7 +2847,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 326.0, 532.0, 224.0, 36.0 ],
+									"patching_rect" : [ 326.0, 532.0, 224.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Dante:/Users/hughlobel/Desktop/Test Falder/Project Files/Saved Boards\""
 								}
@@ -2848,7 +2861,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 292.0, 487.0, 224.0, 36.0 ],
+									"patching_rect" : [ 292.0, 487.0, 224.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Dante:/Users/hughlobel/Desktop/Test Falder/Project Files/Recorded Audio\""
 								}
@@ -2940,7 +2953,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 224.0, 408.0, 224.0, 36.0 ],
+									"patching_rect" : [ 224.0, 408.0, 224.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Dante:/Users/hughlobel/Desktop/Test Falder/Project Files\""
 								}
@@ -2956,19 +2969,6 @@
 									"patching_rect" : [ 429.0, 66.0, 141.0, 22.0 ],
 									"style" : "",
 									"text" : "sprintf \"%s/Project Files\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-7",
-									"maxclass" : "number",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 254.0, 823.0, 50.0, 22.0 ],
-									"style" : ""
 								}
 
 							}
@@ -2991,10 +2991,10 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 254.0, 783.0, 66.0, 22.0 ],
+									"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+									"patching_rect" : [ 254.0, 783.0, 49.0, 22.0 ],
 									"style" : "",
-									"text" : "mxj filesys"
+									"text" : "msdpfs"
 								}
 
 							}
@@ -3006,7 +3006,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 199.0, 360.0, 224.0, 36.0 ],
+									"patching_rect" : [ 199.0, 360.0, 224.0, 35.0 ],
 									"style" : "",
 									"text" : "\"Dante:/Users/hughlobel/Desktop/Test Falder\""
 								}
@@ -3139,7 +3139,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
+									"destination" : [ "obj-6", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-2", 0 ]
@@ -3690,14 +3690,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-40",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 371.0, 22.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/MSDP Files/MSDP_Projects/Score_Tutorial\""
+									"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test\""
 								}
 
 							}
@@ -9642,7 +9641,11 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "msdpfs.mxo",
+				"type" : "iLaX"
+			}
+ ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",

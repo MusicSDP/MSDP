@@ -1,5 +1,9 @@
 Music_SDP changelog:
 
+[Beta 1.1.4a.5] 2017-04-24
+Changed
+ 	• Replaced all instances of file sys.class with msdpfs external, removing Java dependancy. 
+
 [Beta 1.1.4a.3] 2017-04-06
 Changed
  	• Began making automation for the Performer View. Made some adjustments to the iyo maxpat. Need to finish.

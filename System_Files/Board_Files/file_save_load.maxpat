@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 1,
-			"architecture" : "x86",
+			"revision" : 3,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 138.0, 171.0, 1660.0, 783.0 ],
+		"rect" : [ 266.0, 250.0, 611.0, 431.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,9 +44,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 929.0, 792.0, 207.0, 50.0 ],
+					"patching_rect" : [ 929.0, 792.0, 207.0, 49.0 ],
 					"style" : "",
-					"text" : "cp  \"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_13/New_Test_14\""
+					"text" : "cp \"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_13/New_Test_14\""
 				}
 
 			}
@@ -62,8 +62,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -126,6 +126,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-1",
+									"index" : 3,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -144,7 +145,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 429.875, 149.0, 349.0, 22.0 ],
 									"style" : "",
-									"text" : "\"C:/Users/Hugh/Desktop/MSDP Stuff/Music_SDP Beta 1.1.2.25\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3\""
 								}
 
 							}
@@ -160,8 +161,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 1,
-											"architecture" : "x86",
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -234,6 +235,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-2",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -259,6 +261,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-1",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -285,6 +288,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-77",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -327,6 +331,7 @@
 													"destination" : [ "obj-4", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-77", 0 ]
 												}
 
@@ -336,6 +341,7 @@
 													"destination" : [ "obj-71", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 1,
 													"source" : [ "obj-77", 0 ]
 												}
 
@@ -448,8 +454,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 1,
-											"architecture" : "x86",
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -526,6 +532,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-4",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -539,6 +546,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-5",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -552,6 +560,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-6",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -594,6 +603,7 @@
 													"disabled" : 0,
 													"hidden" : 0,
 													"midpoints" : [ 464.0, 397.0, 380.5, 397.0 ],
+													"order" : 1,
 													"source" : [ "obj-4", 0 ]
 												}
 
@@ -603,6 +613,7 @@
 													"destination" : [ "obj-2", 2 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-4", 0 ]
 												}
 
@@ -646,6 +657,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-32",
+									"index" : 2,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -659,6 +671,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-34",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -672,6 +685,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-40",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -713,6 +727,7 @@
 									"destination" : [ "obj-36", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -722,6 +737,7 @@
 									"destination" : [ "obj-79", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -767,6 +783,7 @@
 									"destination" : [ "obj-3", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-72", 1 ]
 								}
 
@@ -776,6 +793,7 @@
 									"destination" : [ "obj-42", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-72", 1 ]
 								}
 
@@ -870,7 +888,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 571.0, 731.5, 255.0, 36.0 ],
+					"patching_rect" : [ 571.0, 731.5, 255.0, 35.0 ],
 					"style" : "",
 					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_14/Saved Plugins\""
 				}
@@ -914,8 +932,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -955,7 +973,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 429.875, 149.0, 349.0, 22.0 ],
 									"style" : "",
-									"text" : "\"C:/Users/Hugh/Desktop/MSDP Stuff/Music_SDP Beta 1.1.2.25\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3\""
 								}
 
 							}
@@ -971,8 +989,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 1,
-											"architecture" : "x86",
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -1045,6 +1063,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-2",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -1070,6 +1089,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-1",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -1096,6 +1116,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-77",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -1111,6 +1132,7 @@
 													"destination" : [ "obj-4", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -1120,6 +1142,7 @@
 													"destination" : [ "obj-71", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 1,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -1189,8 +1212,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 1,
-											"architecture" : "x86",
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -1263,6 +1286,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-9",
+													"index" : 2,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -1314,6 +1338,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-2",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -1339,6 +1364,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-1",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -1365,6 +1391,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-77",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -1398,6 +1425,7 @@
 													"destination" : [ "obj-4", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 1,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -1407,6 +1435,7 @@
 													"destination" : [ "obj-7", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -1416,6 +1445,7 @@
 													"destination" : [ "obj-71", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 2,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -1599,8 +1629,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 1,
-											"architecture" : "x86",
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -1680,6 +1710,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-4",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -1693,6 +1724,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-5",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -1706,6 +1738,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-6",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -1758,6 +1791,7 @@
 													"disabled" : 0,
 													"hidden" : 0,
 													"midpoints" : [ 137.0, 72.0, 53.5, 72.0 ],
+													"order" : 1,
 													"source" : [ "obj-4", 0 ]
 												}
 
@@ -1767,6 +1801,7 @@
 													"destination" : [ "obj-2", 2 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-4", 0 ]
 												}
 
@@ -1801,6 +1836,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-32",
+									"index" : 2,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -1814,6 +1850,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-34",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -1827,6 +1864,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-40",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -1859,6 +1897,7 @@
 									"destination" : [ "obj-36", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -1868,6 +1907,7 @@
 									"destination" : [ "obj-79", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -2009,7 +2049,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 456.0, 679.0, 241.0, 36.0 ],
+					"patching_rect" : [ 456.0, 679.0, 241.0, 35.0 ],
 					"style" : "",
 					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_14/Saved MIDI\""
 				}
@@ -2077,8 +2117,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2118,7 +2158,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 429.875, 149.0, 349.0, 22.0 ],
 									"style" : "",
-									"text" : "\"C:/Users/Hugh/Desktop/MSDP Stuff/Music_SDP Beta 1.1.2.25\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3\""
 								}
 
 							}
@@ -2134,8 +2174,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 1,
-											"architecture" : "x86",
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2208,6 +2248,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-2",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -2233,6 +2274,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-1",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -2259,6 +2301,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-77",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -2274,6 +2317,7 @@
 													"destination" : [ "obj-4", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -2283,6 +2327,7 @@
 													"destination" : [ "obj-71", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 1,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -2352,8 +2397,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 1,
-											"architecture" : "x86",
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2426,6 +2471,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-9",
+													"index" : 2,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -2477,6 +2523,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-2",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -2502,6 +2549,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-1",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -2528,6 +2576,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-77",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -2561,6 +2610,7 @@
 													"destination" : [ "obj-4", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 1,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -2570,6 +2620,7 @@
 													"destination" : [ "obj-7", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -2579,6 +2630,7 @@
 													"destination" : [ "obj-71", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 2,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -2763,8 +2815,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 1,
-											"architecture" : "x86",
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2844,6 +2896,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-4",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -2857,6 +2910,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-5",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -2870,6 +2924,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-6",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -2922,6 +2977,7 @@
 													"disabled" : 0,
 													"hidden" : 0,
 													"midpoints" : [ 137.0, 72.0, 53.5, 72.0 ],
+													"order" : 1,
 													"source" : [ "obj-4", 0 ]
 												}
 
@@ -2931,6 +2987,7 @@
 													"destination" : [ "obj-2", 2 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-4", 0 ]
 												}
 
@@ -2965,6 +3022,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-32",
+									"index" : 2,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -2978,6 +3036,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-34",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -2991,6 +3050,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-40",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -3023,6 +3083,7 @@
 									"destination" : [ "obj-36", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -3032,6 +3093,7 @@
 									"destination" : [ "obj-79", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -3214,8 +3276,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3277,6 +3339,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-1",
+									"index" : 2,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -3336,7 +3399,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 371.0, 22.0 ],
 									"style" : "",
-									"text" : "\"C:/Users/Hugh/Desktop/MSDP Stuff/Music_SDP Beta 1.1.2.25\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3\""
 								}
 
 							}
@@ -3371,6 +3434,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-31",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -3384,6 +3448,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-32",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -3479,6 +3544,7 @@
 									"destination" : [ "obj-17", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -3488,6 +3554,7 @@
 									"destination" : [ "obj-3", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -3588,6 +3655,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-26",
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3601,6 +3669,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3612,13 +3681,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"linecount" : 21,
+					"linecount" : 19,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1357.5, 30.0, 227.0, 296.0 ],
+					"patching_rect" : [ 1357.5, 30.0, 317.0, 261.0 ],
 					"style" : "",
-					"text" : "This patch generates a folder structure on your computer that can be used to save a project.\n\nHit the bang, select where you want the folder saved, and then give it a name.\n\nCheck that location on your hard drive to make sure that the folders were saved where you expected them to be.\n\nRequires the \nfilesys.class\nfilesys.java\nfilesys.maxhelp\n\nThese can be anywhere in the search path and they don't have to go into the app directly.\n\nFilesys was created by Patrick Delges"
+					"text" : "This patch generates a folder structure on your computer that can be used to save a project.\n\nHit the bang, select where you want the folder saved, and then give it a name.\n\nCheck that location on your hard drive to make sure that the folders were saved where you expected them to be.\n\nRequires the \nfilesys.class\nfilesys.java\nfilesys.maxhelp\n\nThese can be anywhere in the search path and they don't have to go into the app directly.\n\nMSDPFS was created by Dirk Leas, and it's based on Filesys by Patrick Delges"
 				}
 
 			}
@@ -3629,7 +3698,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 285.0, 30.0, 150.0, 34.0 ],
+					"patching_rect" : [ 285.0, 30.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "click to make the folder system"
 				}
@@ -3656,7 +3725,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 105.0, 711.0, 120.0, 64.0 ],
+					"patching_rect" : [ 105.0, 711.0, 120.0, 62.0 ],
 					"style" : "",
 					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_14/Recorded Audio\""
 				}
@@ -3772,10 +3841,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 52.0, 644.0, 66.0, 22.0 ],
+					"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+					"patching_rect" : [ 52.0, 644.0, 49.0, 22.0 ],
 					"style" : "",
-					"text" : "mxj filesys"
+					"text" : "msdpfs"
 				}
 
 			}
@@ -3813,7 +3882,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 432.0, 637.5, 253.0, 36.0 ],
+					"patching_rect" : [ 432.0, 637.5, 253.0, 35.0 ],
 					"style" : "",
 					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_14/Saved Scores\""
 				}
@@ -3827,7 +3896,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 356.0, 593.0, 257.0, 36.0 ],
+					"patching_rect" : [ 356.0, 593.0, 257.0, 35.0 ],
 					"style" : "",
 					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_14/Saved Presets\""
 				}
@@ -3841,7 +3910,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 313.0, 542.0, 253.0, 36.0 ],
+					"patching_rect" : [ 313.0, 542.0, 253.0, 35.0 ],
 					"style" : "",
 					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_14/Saved Boards\""
 				}
@@ -3855,7 +3924,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 279.0, 497.0, 263.0, 36.0 ],
+					"patching_rect" : [ 279.0, 497.0, 263.0, 35.0 ],
 					"style" : "",
 					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_14/Recorded Audio\""
 				}
@@ -3934,7 +4003,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 237.0, 440.0, 237.0, 36.0 ],
+					"patching_rect" : [ 237.0, 440.0, 237.0, 35.0 ],
 					"style" : "",
 					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_14/Audio Files\""
 				}
@@ -3948,7 +4017,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 241.0, 833.0, 50.0, 22.0 ],
+					"patching_rect" : [ 140.0, 819.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -3972,10 +4041,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 241.0, 793.0, 66.0, 22.0 ],
+					"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+					"patching_rect" : [ 241.0, 793.0, 49.0, 22.0 ],
 					"style" : "",
-					"text" : "mxj filesys"
+					"text" : "msdpfs"
 				}
 
 			}
@@ -3987,7 +4056,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 186.0, 370.0, 212.0, 36.0 ],
+					"patching_rect" : [ 186.0, 370.0, 212.0, 35.0 ],
 					"style" : "",
 					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/New_Test_14\""
 				}
@@ -4024,6 +4093,7 @@
 					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -4033,6 +4103,7 @@
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -4042,6 +4113,7 @@
 					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -4087,6 +4159,7 @@
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -4096,6 +4169,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -4105,6 +4179,7 @@
 					"destination" : [ "obj-54", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -4156,15 +4231,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4178,6 +4244,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 319.5, 195.0, 342.5, 195.0, 342.5, 135.0, 455.5, 135.0 ],
+					"order" : 7,
 					"source" : [ "obj-21", 6 ]
 				}
 
@@ -4188,6 +4255,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 319.5, 196.5, 494.5, 196.5 ],
+					"order" : 6,
 					"source" : [ "obj-21", 6 ]
 				}
 
@@ -4198,6 +4266,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 319.5, 222.5, 527.5, 222.5 ],
+					"order" : 5,
 					"source" : [ "obj-21", 6 ]
 				}
 
@@ -4208,6 +4277,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 319.5, 249.5, 570.5, 249.5 ],
+					"order" : 4,
 					"source" : [ "obj-21", 6 ]
 				}
 
@@ -4218,6 +4288,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 319.5, 308.5, 646.5, 308.5 ],
+					"order" : 3,
 					"source" : [ "obj-21", 6 ]
 				}
 
@@ -4227,6 +4298,7 @@
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 5,
 					"source" : [ "obj-21", 3 ]
 				}
 
@@ -4236,6 +4308,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 4,
 					"source" : [ "obj-21", 3 ]
 				}
 
@@ -4245,6 +4318,7 @@
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 3,
 					"source" : [ "obj-21", 3 ]
 				}
 
@@ -4254,6 +4328,7 @@
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-21", 3 ]
 				}
 
@@ -4272,6 +4347,7 @@
 					"destination" : [ "obj-40", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-21", 2 ]
 				}
 
@@ -4281,6 +4357,7 @@
 					"destination" : [ "obj-42", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-21", 2 ]
 				}
 
@@ -4290,6 +4367,7 @@
 					"destination" : [ "obj-47", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-21", 3 ]
 				}
 
@@ -4300,6 +4378,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 319.5, 357.0, 546.0, 357.0, 546.0, 438.0, 673.5, 438.0 ],
+					"order" : 2,
 					"source" : [ "obj-21", 6 ]
 				}
 
@@ -4310,6 +4389,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 319.5, 290.0, 388.5, 290.0 ],
+					"order" : 8,
 					"source" : [ "obj-21", 6 ]
 				}
 
@@ -4328,6 +4408,7 @@
 					"destination" : [ "obj-50", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-21", 6 ]
 				}
 
@@ -4337,6 +4418,7 @@
 					"destination" : [ "obj-51", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-21", 3 ]
 				}
 
@@ -4346,6 +4428,7 @@
 					"destination" : [ "obj-54", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-21", 6 ]
 				}
 
@@ -4355,6 +4438,7 @@
 					"destination" : [ "obj-54", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-21", 2 ]
 				}
 
@@ -4400,6 +4484,7 @@
 					"destination" : [ "obj-28", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -4409,6 +4494,7 @@
 					"destination" : [ "obj-33", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -4508,6 +4594,7 @@
 					"destination" : [ "obj-36", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -4517,6 +4604,7 @@
 					"destination" : [ "obj-53", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -4553,6 +4641,7 @@
 					"destination" : [ "obj-18", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -4562,6 +4651,7 @@
 					"destination" : [ "obj-42", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -4589,6 +4679,7 @@
 					"destination" : [ "obj-20", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -4598,6 +4689,7 @@
 					"destination" : [ "obj-40", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -4715,6 +4807,7 @@
 					"destination" : [ "obj-23", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -4724,6 +4817,7 @@
 					"destination" : [ "obj-56", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -4768,8 +4862,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 505.0, 146.0, 282.0, 394.0 ],
+		"rect" : [ 400.0, 63.0, 282.0, 394.0 ],
 		"bgcolor" : [ 0.380392, 0.411765, 0.45098, 1.0 ],
 		"editing_bgcolor" : [ 0.380392, 0.411765, 0.45098, 1.0 ],
 		"bglocked" : 0,
@@ -41,9 +41,22 @@
 		"title" : "Board Manager",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 90.875, 457.0, 36.0, 22.0 ],
+					"style" : "",
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-33",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -634,7 +647,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 11.0, 100.0, 78.0, 50.0 ],
+					"patching_rect" : [ 11.0, 100.0, 78.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -657,7 +670,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 132.0, 397.0, 128.0, 128.0 ],
+					"patching_rect" : [ 1155.0, 52.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.820007, 204.0, 252.5, 4.0 ],
 					"proportion" : 0.39,
@@ -800,7 +813,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 79.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -1063,7 +1076,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 832.0, 246.0, 50.0, 50.0 ],
+					"patching_rect" : [ 832.0, 246.0, 50.0, 49.0 ],
 					"style" : "",
 					"text" : "\"Select Module\""
 				}
@@ -1102,7 +1115,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 832.0, 275.67041, 190.0, 50.0 ],
+					"patching_rect" : [ 832.0, 275.67041, 190.0, 49.0 ],
 					"style" : "",
 					"text" : "s MSDP_User_Manually_Add_Module_Perm"
 				}
@@ -1144,7 +1157,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 291.5, 307.17041, 90.0, 50.0 ],
+					"patching_rect" : [ 291.5, 307.17041, 92.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.820007, 74.320007, 251.0, 21.0 ],
 					"style" : "",
@@ -1317,7 +1330,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 79.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -1572,7 +1585,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 367.0, 652.0, 82.0, 36.0 ],
+					"patching_rect" : [ 367.0, 652.0, 82.0, 22.0 ],
 					"style" : "",
 					"text" : "Convolve787"
 				}
@@ -1756,7 +1769,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 79.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -1978,6 +1991,7 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Lato Regular",
+					"hidden" : 1,
 					"id" : "obj-79",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2264,7 +2278,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 138.125, 108.087891, 281.0, 36.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests/Saved Boards\""
+									"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Saved Boards\""
 								}
 
 							}
@@ -2658,7 +2672,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 557.0, 292.0, 305.0, 36.0 ],
 													"style" : "",
-													"text" : "\"Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests/Saved Boards\""
+													"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Saved Boards\""
 												}
 
 											}
@@ -3260,19 +3274,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.875, 453.0, 36.0, 22.0 ],
-					"style" : "",
-					"text" : "sel 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -3303,10 +3304,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 90.875, 427.0, 66.0, 22.0 ],
+					"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+					"patching_rect" : [ 90.875, 402.0, 49.0, 22.0 ],
 					"style" : "",
-					"text" : "mxj filesys"
+					"text" : "msdpfs"
 				}
 
 			}
@@ -3555,14 +3556,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-159",
-									"linecount" : 3,
+									"linecount" : 5,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 281.5, 211.0, 154.0, 64.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests/Saved Boards\""
+									"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Saved Boards\""
 								}
 
 							}
@@ -3829,7 +3830,7 @@
 					"bgfillcolor_type" : "color",
 					"fontname" : "Lato Regular",
 					"id" : "obj-169",
-					"items" : [ "big_drones", ",", "glitch_monster" ],
+					"items" : [ "test1", ",", "test2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4161,10 +4162,52 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-34", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 100.375, 677.17041, 544.5, 677.17041 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 100.375, 485.0, 463.4375, 485.0, 463.4375, 363.34082, 485.5, 363.34082 ],
+					"order" : 2,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 3,
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -4226,48 +4269,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 100.375, 677.17041, 544.5, 677.17041 ],
-					"order" : 1,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 100.375, 485.0, 463.4375, 485.0, 463.4375, 363.34082, 485.5, 363.34082 ],
-					"order" : 2,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 3,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4276,6 +4277,18 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "fs_toggle.maxpat",
+				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4a.5/System_Files/Includes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "msdpfs.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -4324,8 +4337,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

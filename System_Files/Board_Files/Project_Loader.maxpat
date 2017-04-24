@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 336.0, 110.0, 766.0, 380.0 ],
+		"rect" : [ 0.0, 45.0, 1440.0, 851.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -239,7 +239,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 512.5, 343.0, 56.0, 25.0 ],
 					"style" : "",
-					"text" : "1.1.4"
+					"text" : "1.1.4a"
 				}
 
 			}
@@ -1020,7 +1020,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1621.0, 505.0, 159.0, 35.0 ],
+					"patching_rect" : [ 1621.0, 505.0, 159.0, 34.0 ],
 					"style" : "",
 					"text" : "window size 36 67 294 618, window exec"
 				}
@@ -1035,7 +1035,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1548.1875, 472.0, 185.0, 22.0 ],
+					"patching_rect" : [ 1548.1875, 472.0, 185.0, 21.0 ],
 					"style" : "",
 					"text" : "window size 1 1 1 1, window exec"
 				}
@@ -1088,7 +1088,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1382.0, 496.0, 159.0, 35.0 ],
+					"patching_rect" : [ 1382.0, 496.0, 159.0, 34.0 ],
 					"style" : "",
 					"text" : "window size 36 67 294 618, window exec"
 				}
@@ -1994,7 +1994,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1204.0, 316.5, 333.0, 37.0 ],
 					"style" : "",
-					"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4.21/System_Files/Saved Projects"
+					"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects"
 				}
 
 			}
@@ -2041,7 +2041,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 104.0, 855.0, 629.0 ],
+						"rect" : [ 413.0, 79.0, 855.0, 629.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2070,14 +2070,51 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-1",
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 22.0, 310.0, 34.0, 22.0 ],
+									"style" : "",
+									"text" : "print"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 44.0, 426.0, 34.0, 22.0 ],
+									"style" : "",
+									"text" : "print"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 404.0, 371.0, 80.0, 22.0 ],
+									"patching_rect" : [ 44.0, 260.0, 20.0, 22.0 ],
 									"style" : "",
-									"text" : "mxj filesys"
+									"text" : "t i"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+									"patching_rect" : [ 404.0, 371.0, 49.0, 22.0 ],
+									"style" : "",
+									"text" : "msdpfs"
 								}
 
 							}
@@ -2116,7 +2153,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 404.0, 244.0, 203.0, 62.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4.1/System_Files/Saved Projects/Score_Tutorial\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects/LCS2_Tests\""
 								}
 
 							}
@@ -2432,9 +2469,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 237.0, 244.0, 149.0, 49.0 ],
+									"patching_rect" : [ 237.0, 244.0, 123.0, 62.0 ],
 									"style" : "",
-									"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/Score_Tutorial/Score_Tutorial\""
+									"text" : "Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests/LCS2_Tests"
 								}
 
 							}
@@ -2446,7 +2483,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 81.0, 270.0, 50.0, 22.0 ],
+									"patching_rect" : [ 81.0, 277.5, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -2471,10 +2508,10 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 81.0, 244.0, 80.0, 22.0 ],
+									"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+									"patching_rect" : [ 81.0, 244.0, 49.0, 22.0 ],
 									"style" : "",
-									"text" : "mxj filesys"
+									"text" : "msdpfs"
 								}
 
 							}
@@ -2553,9 +2590,20 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -2575,6 +2623,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -2842,7 +2899,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 162.5, 244.0, 81.0, 36.0 ],
+									"patching_rect" : [ 162.5, 244.0, 81.0, 35.0 ],
 									"style" : "",
 									"text" : "s search_path"
 								}
@@ -2857,7 +2914,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 162.5, 213.0, 80.0, 22.0 ],
+									"patching_rect" : [ 162.5, 213.0, 80.0, 21.0 ],
 									"style" : "",
 									"text" : "regexp (.+)/.+"
 								}
@@ -2871,7 +2928,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 250.25, 244.0, 143.0, 50.0 ],
+									"patching_rect" : [ 250.25, 244.0, 143.0, 49.0 ],
 									"style" : "",
 									"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/Score_Tutorial\""
 								}
@@ -3589,9 +3646,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 463.0, 108.742432, 309.0, 36.0 ],
+									"patching_rect" : [ 463.0, 108.742432, 309.0, 35.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4.21/System_Files/Saved Projects"
+									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects"
 								}
 
 							}
@@ -4172,7 +4229,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 266.0, 374.5, 277.0, 22.0 ],
 									"style" : "",
-									"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/Score_Tutorial\""
+									"text" : "Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests"
 								}
 
 							}
@@ -4575,9 +4632,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 463.0, 108.742432, 311.0, 36.0 ],
+									"patching_rect" : [ 463.0, 108.742432, 311.0, 35.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4.21/System_Files/Saved Projects"
+									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects"
 								}
 
 							}
@@ -4757,6 +4814,31 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 113.0, 409.0, 34.0, 22.0 ],
+									"style" : "",
+									"text" : "print"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 130.0, 368.0, 20.0, 22.0 ],
+									"style" : "",
+									"text" : "t i"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-105",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -4776,7 +4858,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 410.5, 379.0, 158.0, 64.0 ],
+									"patching_rect" : [ 410.5, 379.0, 158.0, 62.0 ],
 									"style" : "",
 									"text" : "\"C:/Users/Hugh/Desktop/MSDP Stuff/Music_SDP Beta 1.1.3.11/System_Files/Saved Projects/Score_Tutorial\""
 								}
@@ -4880,9 +4962,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 316.5, 201.0, 309.0, 36.0 ],
+									"patching_rect" : [ 316.5, 201.0, 309.0, 35.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4.21/System_Files/Saved Projects"
+									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects"
 								}
 
 							}
@@ -4918,10 +5000,10 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 230.5, 348.0, 65.0, 22.0 ],
+									"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+									"patching_rect" : [ 230.5, 348.0, 49.0, 22.0 ],
 									"style" : "",
-									"text" : "mxj filesys"
+									"text" : "msdpfs"
 								}
 
 							}
@@ -4960,7 +5042,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 141.5, 142.0, 80.0, 22.0 ],
+									"patching_rect" : [ 141.5, 142.0, 80.0, 21.0 ],
 									"style" : "",
 									"text" : "regexp (.+)/.+"
 								}
@@ -5094,6 +5176,26 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-101", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"order" : 1,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-84", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"order" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-104", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -5202,20 +5304,20 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-101", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"order" : 1,
+									"order" : 0,
 									"source" : [ "obj-77", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-84", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-77", 0 ]
 								}
 
@@ -5596,7 +5698,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 849.0, 236.5, 58.0, 23.0 ],
+					"patching_rect" : [ 828.0, 255.5, 58.0, 23.0 ],
 					"style" : "",
 					"text" : "tosymbol"
 				}
@@ -7129,15 +7231,25 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "New_Logo_BG_1b.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.21/System_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "LCS2_Tests",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MSDP Logo.svg",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.21/System_Files/Images",
+				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Images",
 				"type" : "svg ",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "msdpfs.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

@@ -2294,7 +2294,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-142",
-					"items" : [ "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete..." ],
+					"items" : [ "Select", "File", "to", "Delete...", ",", "353194__inspectorj__wind-chimes-a.wav", ",", "Ambience.aiff" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2380,7 +2380,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1739.179932, 696.0, 89.0, 22.0 ],
+					"patching_rect" : [ 1739.179932, 696.0, 89.0, 21.0 ],
 					"style" : "",
 					"text" : "window getsize"
 				}
@@ -2395,7 +2395,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2157.179932, 758.0, 241.0, 22.0 ],
+					"patching_rect" : [ 2157.179932, 758.0, 241.0, 21.0 ],
 					"style" : "",
 					"text" : "window size 100 100 577 429, window exec"
 				}
@@ -2661,7 +2661,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-163",
-					"items" : [ "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder..." ],
+					"items" : [ "Browse", "Project", "Folder...", ",", "353194__inspectorj__wind-chimes-a.wav", ",", "Ambience.aiff" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3032,10 +3032,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 488.875, 440.0, 66.0, 23.0 ],
+					"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+					"patching_rect" : [ 488.875, 440.0, 48.0, 23.0 ],
 					"style" : "",
-					"text" : "mxj filesys"
+					"text" : "msdpfs"
 				}
 
 			}
@@ -3114,7 +3114,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 577.0, 352.0, 281.0, 37.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/A_+2/Audio Files\""
+					"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Audio Files\""
 				}
 
 			}
@@ -3249,7 +3249,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 607.375, 859.5, 87.75, 34.0 ],
+					"patching_rect" : [ 607.375, 859.5, 87.75, 33.0 ],
 					"style" : "",
 					"text" : "Duration (seconds)"
 				}
@@ -3264,7 +3264,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 490.125, 932.3125, 55.625, 34.0 ],
+					"patching_rect" : [ 490.125, 932.3125, 55.625, 33.0 ],
 					"style" : "",
 					"text" : "Sample Rate"
 				}
@@ -3333,7 +3333,7 @@
 , 			{
 				"box" : 				{
 					"allowdrag" : 0,
-					"buffername" : "ezbuff658549",
+					"buffername" : "ezbuff835858",
 					"id" : "obj-58",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -3461,7 +3461,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 251.0, 489.5, 588.0, 23.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/A_+2/Audio Files\""
+					"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Audio Files\""
 				}
 
 			}
@@ -3501,7 +3501,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 191.0, 319.8125, 282.0, 37.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/A_+2/Audio Files\""
+					"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Audio Files\""
 				}
 
 			}
@@ -3697,7 +3697,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 305.0, 35.0 ],
 									"style" : "",
-									"text" : "\"C:/Users/Hugh/Desktop/MSDP Projects/A_+2/Audio Files\""
+									"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Audio Files\""
 								}
 
 							}
@@ -4133,10 +4133,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 200.0, 162.0, 66.0, 23.0 ],
+					"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+					"patching_rect" : [ 200.0, 170.0, 48.0, 23.0 ],
 					"style" : "",
-					"text" : "mxj filesys"
+					"text" : "msdpfs"
 				}
 
 			}
@@ -5573,19 +5573,19 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "single_file_player 1.1 .maxpat",
-				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4.3/System_Files/Includes",
+				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4a.5/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fs_toggle.maxpat",
-				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4.3/System_Files/Includes",
+				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4a.5/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mxj.mxe64",
-				"type" : "mx64"
+				"name" : "msdpfs.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

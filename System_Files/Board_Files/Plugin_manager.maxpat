@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 1,
-			"architecture" : "x86",
+			"revision" : 3,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -67,19 +67,6 @@
 					"style" : "",
 					"text" : "*on OSX, vst files must be manually added by copying and pasting them into your project's \"Saved Plugins\" folder",
 					"textcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-55",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 378.0, 223.0, 50.0, 23.0 ],
-					"style" : ""
 				}
 
 			}
@@ -226,8 +213,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -288,6 +275,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-3",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -369,6 +357,7 @@
 									"destination" : [ "obj-103", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -378,6 +367,7 @@
 									"destination" : [ "obj-5", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -449,8 +439,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -617,51 +607,6 @@
 						"parameter_enable" : 1
 					}
 ,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "vst~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"pluginname" : "lkjb_PitchedDelay.vst",
-							"plugindisplayname" : "PitchedDelay",
-							"pluginsavedname" : "~/Desktop/lkjb_PitchedDelay.vst",
-							"pluginsaveduniqueid" : 0,
-							"version" : 1,
-							"isbank" : 0,
-							"isbase64" : 1,
-							"blob" : "1681.CMlaKA....fQPMDZ....Av1ZPQD...fd....I........................................XPUVMjLgvjA...OPkFcigVYjQTYrEVdfPUXhESKPkFcigVOh.iKzbyL2PSN4jSMh.BUgIVLsLUdtMVOh.iK2byM2byM2jSLh.BUgIVLs.UZzMFZTkGbk0iHv3RLxTiHfPUXhESKPIWYPkFcigVOh.iHfPUXhESKPIWYjUFagkWOh.iHfPUXhESKPIWYsX0arUWak0iHwHBHTElXwzBQkwVX40iHv3RL3bSMh.BUgIVLsXTYkQlXgM1Z8HBLtLCNxjSN4jCN1HBHTElXwzRQQ0BU4AWY8HRLh.BUgIVLsTTTsXjbkEWOh.iK1LiMxTyL0jSMh.BUgIVLsTTTsDUOh.iKzbCLwLiM2LiLh.BUgIVLsTTTsbTXo4VOh.iK0HBHTElXwzRSuQVY8HRLh.BUgIVLsX0arUWak0iHwHBHTElXwzBTg4VOh.iK0HBHTElXwzRQtElXrUFY8HRLh.BUgIlLs.UZzMFZ8HBLtPiM1HSMv.CLxHBHTElXxzxT441X8HBLtbyM2byM2bSNwHBHTElXxzBToQ2XnQUdvUVOh.iKwHSMh.BUgIlLs.kbkAUZzMFZ8HBLh.BUgIlLs.kbkQVYrEVd8HBLh.BUgIlLs.kbk0hUuwVcsUVOhDiHfPUXhISKDUFagkWOh.iKxLSL4TCLwDSNh.BUgIlLsXTYkQlXgM1Z8HBLtPSM0.CLv.SLyHBHTElXxzRQQ0BU4AWY8HRLh.BUgIlLsTTTsXjbkEWOh.iKyjiLy.CM4fyMh.BUgIlLsTTTsDUOh.iKxfiLxLiL0HyLh.BUgIlLsTTTsbTXo4VOh.iK0HBHTElXxzRSuQVY8HBLh.BUgIlLsX0arUWak0iHwHBHTElXxzBTg4VOh.iK0HBHTElXxzRQtElXrUFY8HRLh.BUgI1Ls.UZzMFZ8HBLtTiHfPUXhMSKSkmai0iHvHBHTElXyzBToQ2XnQUdvUVOh.iHfPUXhMSKPIWYPkFcigVOh.iHfPUXhMSKPIWYjUFagkWOh.iHfPUXhMSKPIWYsX0arUWak0iHwHBHTElXyzBQkwVX40iHv3RMh.BUgI1LsXTYkQlXgM1Z8HBLh.BUgI1LsTTTsPUdvUVOh.iHfPUXhMSKEEUKFIWYw0iHv3RMh.BUgI1LsTTTsDUOh.iKwbSNxjiM3TSLh.BUgI1LsTTTsbTXo4VOh.iK0HBHTElXyzRSuQVY8HBLh.BUgI1LsX0arUWak0iHwHBHTElXyzBTg4VOh.iK0HBHTElXyzRQtElXrUFY8HBLh.BUgIFMs.UZzMFZ8HBLtTiHfPUXhQSKSkmai0iHvHBHTElXzzBToQ2XnQUdvUVOh.iHfPUXhQSKPIWYPkFcigVOh.iHfPUXhQSKPIWYjUFagkWOh.iHfPUXhQSKPIWYsX0arUWak0iHwHBHTElXzzBQkwVX40iHv3RMh.BUgIFMsXTYkQlXgM1Z8HBLh.BUgIFMsTTTsPUdvUVOh.iHfPUXhQSKEEUKFIWYw0iHv3RMh.BUgIFMsTTTsDUOh.iKwbSNxjiM3TSLh.BUgIFMsTTTsbTXo4VOh.iK0HBHTElXzzRSuQVY8HBLh.BUgIFMsX0arUWak0iHwHBHTElXzzBTg4VOh.iK0HBHTElXzzRQtElXrUFY8HBLh.BUgIVMs.UZzMFZ8HBLtTiHfPUXhUSKSkmai0iHvHBHTElX0zBToQ2XnQUdvUVOh.iHfPUXhUSKPIWYPkFcigVOh.iHfPUXhUSKPIWYjUFagkWOh.iHfPUXhUSKPIWYsX0arUWak0iHwHBHTElX0zBQkwVX40iHv3RMh.BUgIVMsXTYkQlXgM1Z8HBLh.BUgIVMsTTTsPUdvUVOh.iHfPUXhUSKEEUKFIWYw0iHv3RMh.BUgIVMsTTTsDUOh.iKwbSNxjiM3TSLh.BUgIVMsTTTsbTXo4VOh.iK0HBHTElX0zRSuQVY8HBLh.BUgIVMsX0arUWak0iHwHBHTElX0zBTg4VOh.iK0HBHTElX0zRQtElXrUFY8HBLh.BQxkmUuwVcsUVOh.iKxTSLwjCLv.yMh.RSgMGckImUuwVcsUVOh.iKxTSLwjCLv.yMh.xX0Imbk4FczElX8HBLh.xbn81cz81arQWZvMWOhDiHfTFdzUlajUFY8HRLh7hO..∆À–“”‘÷‘–Õ…√º¥¨ûèÄkR9"
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "PitchedDelay",
-									"origin" : "lkjb_PitchedDelay.vst",
-									"type" : "VST",
-									"subtype" : "AudioEffect",
-									"embed" : 0,
-									"fileref" : 									{
-										"name" : "PitchedDelay",
-										"filename" : "PitchedDelay.maxsnap",
-										"filepath" : "~/Documents/Max 7/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "3471d777ca94280ff60ee81f02383405"
-									}
-
-								}
- ]
-						}
-
-					}
-,
 					"style" : "",
 					"text" : "vst~",
 					"varname" : "vst~",
@@ -744,8 +689,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -805,6 +750,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
+									"index" : 2,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -991,6 +937,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-3",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -1003,6 +950,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -1090,6 +1038,7 @@
 									"destination" : [ "obj-39", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-57", 0 ]
 								}
 
@@ -1099,6 +1048,7 @@
 									"destination" : [ "obj-42", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 2,
 									"source" : [ "obj-57", 0 ]
 								}
 
@@ -1108,6 +1058,7 @@
 									"destination" : [ "obj-43", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 3,
 									"source" : [ "obj-57", 0 ]
 								}
 
@@ -1117,6 +1068,7 @@
 									"destination" : [ "obj-58", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 4,
 									"source" : [ "obj-57", 0 ]
 								}
 
@@ -1126,6 +1078,7 @@
 									"destination" : [ "obj-8", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-57", 0 ]
 								}
 
@@ -1153,6 +1106,7 @@
 									"destination" : [ "obj-34", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1162,6 +1116,7 @@
 									"destination" : [ "obj-41", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1171,6 +1126,7 @@
 									"destination" : [ "obj-45", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 3,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1180,6 +1136,7 @@
 									"destination" : [ "obj-53", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 2,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1189,6 +1146,7 @@
 									"destination" : [ "obj-58", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 4,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1532,8 +1490,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1594,6 +1552,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-10",
+									"index" : 2,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -1801,6 +1760,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-52",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -1814,6 +1774,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-53",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -1837,6 +1798,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 2,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -1846,6 +1808,7 @@
 									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -1855,6 +1818,7 @@
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -2113,8 +2077,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2175,6 +2139,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-10",
+									"index" : 2,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -2382,6 +2347,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-52",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -2395,6 +2361,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-53",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -2418,6 +2385,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 2,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -2427,6 +2395,7 @@
 									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -2436,6 +2405,7 @@
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -2798,7 +2768,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
 					"id" : "obj-142",
-					"items" : [ "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete...", ",", "Select", "File", "to", "Delete..." ],
+					"items" : [ "Select", "File", "to", "Delete...", ",", "SL Drums 3.vst" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3062,7 +3032,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
 					"id" : "obj-163",
-					"items" : [ "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder...", ",", "Browse", "Project", "Folder..." ],
+					"items" : [ "Browse", "Project", "Folder...", ",", "SL Drums 3.vst" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3306,6 +3276,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-29",
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3410,10 +3381,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 488.875, 440.0, 66.0, 23.0 ],
+					"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+					"patching_rect" : [ 488.875, 440.0, 48.0, 23.0 ],
 					"style" : "",
-					"text" : "mxj filesys"
+					"text" : "msdpfs"
 				}
 
 			}
@@ -3492,7 +3463,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 577.0, 352.0, 287.0, 37.0 ],
 					"style" : "",
-					"text" : "\"Dante:/Users/hughlobel/Desktop/MSDP Files/MSDP_Projects/Mo_Testin/Saved Plugins\""
+					"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Saved Plugins\""
 				}
 
 			}
@@ -3583,7 +3554,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 251.0, 489.5, 588.0, 23.0 ],
 					"style" : "",
-					"text" : "\"Dante:/Users/hughlobel/Desktop/MSDP Files/MSDP_Projects/Mo_Testin/Saved Plugins\""
+					"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Saved Plugins\""
 				}
 
 			}
@@ -3623,7 +3594,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 230.179932, 312.0, 288.0, 37.0 ],
 					"style" : "",
-					"text" : "\"Dante:/Users/hughlobel/Desktop/MSDP Files/MSDP_Projects/Mo_Testin/Saved Plugins\""
+					"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Saved Plugins\""
 				}
 
 			}
@@ -3735,8 +3706,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3771,6 +3742,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-1",
+									"index" : 2,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -3818,7 +3790,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 305.0, 35.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/MSDP Files/MSDP_Projects/Mo_Testin/Saved Plugins\""
+									"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Saved Plugins\""
 								}
 
 							}
@@ -3853,6 +3825,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-3",
+									"index" : 2,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -3865,6 +3838,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-31",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -3878,6 +3852,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-32",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -3901,6 +3876,7 @@
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -3910,6 +3886,7 @@
 									"destination" : [ "obj-9", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -4040,8 +4017,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4121,6 +4098,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-4",
+									"index" : 2,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -4134,6 +4112,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-5",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -4147,6 +4126,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -4199,6 +4179,7 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"midpoints" : [ 137.0, 72.0, 53.5, 72.0 ],
+									"order" : 1,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -4208,6 +4189,7 @@
 									"destination" : [ "obj-2", 2 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -4244,10 +4226,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 200.0, 162.0, 66.0, 23.0 ],
+					"outlettype" : [ "cmd status, 1=success, 0=failure" ],
+					"patching_rect" : [ 200.0, 162.0, 48.0, 23.0 ],
 					"style" : "",
-					"text" : "mxj filesys"
+					"text" : "msdpfs"
 				}
 
 			}
@@ -4382,15 +4364,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4403,6 +4376,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -4421,6 +4395,7 @@
 					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -4430,6 +4405,7 @@
 					"destination" : [ "obj-80", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -4512,6 +4488,7 @@
 					"destination" : [ "obj-134", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-128", 0 ]
 				}
 
@@ -4521,6 +4498,7 @@
 					"destination" : [ "obj-136", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-128", 0 ]
 				}
 
@@ -4584,6 +4562,7 @@
 					"destination" : [ "obj-127", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-133", 0 ]
 				}
 
@@ -4602,6 +4581,7 @@
 					"destination" : [ "obj-129", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-133", 0 ]
 				}
 
@@ -4792,6 +4772,7 @@
 					"destination" : [ "obj-81", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-153", 0 ]
 				}
 
@@ -4801,6 +4782,7 @@
 					"destination" : [ "obj-87", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-153", 0 ]
 				}
 
@@ -4810,6 +4792,7 @@
 					"destination" : [ "obj-78", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-154", 0 ]
 				}
 
@@ -4819,6 +4802,7 @@
 					"destination" : [ "obj-84", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-154", 0 ]
 				}
 
@@ -4828,6 +4812,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -4837,6 +4822,7 @@
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -4846,6 +4832,7 @@
 					"destination" : [ "obj-141", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-161", 0 ]
 				}
 
@@ -4855,6 +4842,7 @@
 					"destination" : [ "obj-172", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-161", 0 ]
 				}
 
@@ -4864,6 +4852,7 @@
 					"destination" : [ "obj-175", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-161", 0 ]
 				}
 
@@ -4882,6 +4871,7 @@
 					"destination" : [ "obj-88", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-163", 1 ]
 				}
 
@@ -4891,6 +4881,7 @@
 					"destination" : [ "obj-89", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-163", 1 ]
 				}
 
@@ -4909,6 +4900,7 @@
 					"destination" : [ "obj-142", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -4918,6 +4910,7 @@
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-17", 1 ]
 				}
 
@@ -4927,6 +4920,7 @@
 					"destination" : [ "obj-163", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -4937,6 +4931,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 146.5, 335.15625, 65.5, 335.15625 ],
+					"order" : 0,
 					"source" : [ "obj-17", 1 ]
 				}
 
@@ -5126,6 +5121,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -5135,6 +5131,7 @@
 					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -5288,6 +5285,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 4,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -5297,6 +5295,7 @@
 					"destination" : [ "obj-174", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 3,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -5306,6 +5305,7 @@
 					"destination" : [ "obj-19", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -5315,6 +5315,7 @@
 					"destination" : [ "obj-23", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -5324,6 +5325,7 @@
 					"destination" : [ "obj-31", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -5432,6 +5434,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -5441,6 +5444,7 @@
 					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -5468,6 +5472,7 @@
 					"destination" : [ "obj-142", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -5477,6 +5482,7 @@
 					"destination" : [ "obj-163", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -5531,6 +5537,7 @@
 					"destination" : [ "obj-47", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -5540,6 +5547,7 @@
 					"destination" : [ "obj-74", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -5549,6 +5557,7 @@
 					"destination" : [ "obj-84", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -5662,6 +5671,22 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-22" : [ "vst~", "vst~", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "fs_toggle.maxpat",
+				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4a.5/System_Files/Includes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "msdpfs.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -5710,8 +5735,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
