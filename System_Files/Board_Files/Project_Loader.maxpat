@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 3,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 0.0, 45.0, 1440.0, 851.0 ],
+		"rect" : [ 336.0, 110.0, 766.0, 380.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -461,7 +461,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1410,7 +1410,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1994,7 +1994,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1204.0, 316.5, 333.0, 37.0 ],
 					"style" : "",
-					"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects"
+					"text" : "Dante:/Users/hughlobel/GitHub/source-code/System_Files/Saved Projects"
 				}
 
 			}
@@ -2037,7 +2037,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2223,7 +2223,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -2810,7 +2810,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3111,7 +3111,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3555,7 +3555,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3648,7 +3648,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 463.0, 108.742432, 309.0, 35.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects"
+									"text" : "Dante:/Users/hughlobel/GitHub/source-code/System_Files/Saved Projects"
 								}
 
 							}
@@ -3796,7 +3796,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4097,7 +4097,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4541,7 +4541,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4634,7 +4634,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 463.0, 108.742432, 311.0, 35.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects"
+									"text" : "Dante:/Users/hughlobel/GitHub/source-code/System_Files/Saved Projects"
 								}
 
 							}
@@ -4781,7 +4781,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4964,7 +4964,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 316.5, 201.0, 309.0, 35.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects"
+									"text" : "Dante:/Users/hughlobel/GitHub/source-code/System_Files/Saved Projects"
 								}
 
 							}
@@ -5480,7 +5480,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -6028,7 +6028,7 @@
 					"elementcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
 					"fontsize" : 18.0,
 					"id" : "obj-46",
-					"items" : "LCS2_Tests",
+					"items" : "EX2",
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -6205,7 +6205,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 739.611109, 635.5, 330.0, 635.5 ],
+					"midpoints" : [ 739.611084, 635.5, 330.0, 635.5 ],
 					"source" : [ "obj-115", 2 ]
 				}
 
@@ -6485,7 +6485,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 823.111109, 605.0, 330.0, 605.0 ],
+					"midpoints" : [ 823.111084, 605.0, 330.0, 605.0 ],
 					"source" : [ "obj-4", 2 ]
 				}
 
@@ -7231,19 +7231,13 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "New_Logo_BG_1b.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LCS2_Tests",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Saved Projects",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "MSDP Logo.svg",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a.3/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "svg ",
 				"implicit" : 1
 			}
