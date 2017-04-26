@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 3,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 336.0, 110.0, 766.0, 380.0 ],
+		"rect" : [ 592.0, 343.0, 766.0, 380.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -137,7 +137,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2014.5, 304.5, 131.0, 37.0 ],
 					"style" : "",
-					"text" : ";\rmax launch_browser $1"
+					"text" : ";\r\nmax launch_browser $1"
 				}
 
 			}
@@ -293,7 +293,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1824.0, 684.0, 256.0, 52.0 ],
 					"style" : "",
-					"text" : ";\rmax launch_browser http://www.musicsdp.com/download-music-sdp"
+					"text" : ";\r\nmax launch_browser http://www.musicsdp.com/download-music-sdp"
 				}
 
 			}
@@ -461,7 +461,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -514,7 +514,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 326.0, 262.0, 118.0, 22.0 ],
 									"style" : "",
-									"text" : "0 0 1440 900"
+									"text" : "0 0 1920 1080"
 								}
 
 							}
@@ -1410,7 +1410,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1994,7 +1994,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1204.0, 316.5, 333.0, 37.0 ],
 					"style" : "",
-					"text" : "Dante:/Users/hughlobel/GitHub/source-code/System_Files/Saved Projects"
+					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Saved Projects"
 				}
 
 			}
@@ -2037,7 +2037,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2223,7 +2223,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2810,7 +2810,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3111,7 +3111,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3555,7 +3555,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3648,7 +3648,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 463.0, 108.742432, 309.0, 35.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/GitHub/source-code/System_Files/Saved Projects"
+									"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Saved Projects"
 								}
 
 							}
@@ -3796,7 +3796,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4097,7 +4097,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4541,7 +4541,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4634,7 +4634,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 463.0, 108.742432, 311.0, 35.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/GitHub/source-code/System_Files/Saved Projects"
+									"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Saved Projects"
 								}
 
 							}
@@ -4781,7 +4781,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4964,7 +4964,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 316.5, 201.0, 309.0, 35.0 ],
 									"style" : "",
-									"text" : "Dante:/Users/hughlobel/GitHub/source-code/System_Files/Saved Projects"
+									"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Saved Projects"
 								}
 
 							}
@@ -5480,7 +5480,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -6028,7 +6028,7 @@
 					"elementcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
 					"fontsize" : 18.0,
 					"id" : "obj-46",
-					"items" : "EX2",
+					"items" : [ "LCS2_Tests", ",", "readme" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -6205,7 +6205,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 739.611084, 635.5, 330.0, 635.5 ],
+					"midpoints" : [ 739.611109, 635.5, 330.0, 635.5 ],
 					"source" : [ "obj-115", 2 ]
 				}
 
@@ -6485,7 +6485,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 823.111084, 605.0, 330.0, 605.0 ],
+					"midpoints" : [ 823.111109, 605.0, 330.0, 605.0 ],
 					"source" : [ "obj-4", 2 ]
 				}
 
@@ -7231,19 +7231,19 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "New_Logo_BG_1b.png",
-				"bootpath" : "~/GitHub/source-code/System_Files/Images",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSDP Logo.svg",
-				"bootpath" : "~/GitHub/source-code/System_Files/Images",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
 				"type" : "svg ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "msdpfs.mxo",
-				"type" : "iLaX"
+				"name" : "msdpfs.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 25.0, 320.0, 1367.0, 604.0 ],
+		"rect" : [ 2050.0, 228.0, 1367.0, 604.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -79,7 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 118.0, 37.0, 58.0, 33.0 ],
+					"patching_rect" : [ 118.0, 37.0, 58.0, 34.0 ],
 					"style" : "",
 					"text" : "Make \nDirectory"
 				}
@@ -92,7 +92,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 674.0, 30.0, 150.0, 33.0 ],
+					"patching_rect" : [ 674.0, 30.0, 150.0, 34.0 ],
 					"style" : "",
 					"text" : "Same as first test, but using absolute paths"
 				}
@@ -349,7 +349,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1102.0, 377.5, 202.0, 22.0 ],
 					"style" : "",
-					"text" : "rm Dante:/Users/hughlobel/tmp/foo"
+					"text" : "rm C:/Users/Hugh/tmp/foo"
 				}
 
 			}
@@ -362,7 +362,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 986.0, 344.5, 237.0, 22.0 ],
 					"style" : "",
-					"text" : "rm Dante:/Users/hughlobel/tmp/passwd"
+					"text" : "rm C:/Users/Hugh/tmp/passwd"
 				}
 
 			}
@@ -571,9 +571,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 764.0, 163.0, 266.0, 35.0 ],
+					"patching_rect" : [ 764.0, 163.0, 266.0, 36.0 ],
 					"style" : "",
-					"text" : "cp Dante:/Users/hughlobel/etc/passwd Dante:/Users/hughlobel/tmp/passwd"
+					"text" : "cp C:/Users/Hugh/etc/passwd C:/Users/Hugh/tmp/passwd"
 				}
 
 			}
@@ -586,7 +586,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 674.0, 135.0, 214.0, 22.0 ],
 					"style" : "",
-					"text" : "mkdir Dante:/Users/hughlobel/tmp/foo"
+					"text" : "mkdir C:/Users/Hugh/tmp/foo"
 				}
 
 			}
@@ -912,7 +912,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 857.0, 202.5, 236.0, 22.0 ],
 					"style" : "",
-					"text" : "exists Dante:/Users/hughlobel/tmp/foo"
+					"text" : "exists C:/Users/Hugh/tmp/foo"
 				}
 
 			}
@@ -925,7 +925,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 882.5, 230.5, 236.0, 22.0 ],
 					"style" : "",
-					"text" : "exists Dante:/Users/hughlobel/tmp/passwd"
+					"text" : "exists C:/Users/Hugh/tmp/passwd"
 				}
 
 			}
@@ -938,7 +938,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 956.0, 313.5, 236.0, 22.0 ],
 					"style" : "",
-					"text" : "exists Dante:/Users/hughlobel/nope"
+					"text" : "exists C:/Users/Hugh/nope"
 				}
 
 			}
@@ -951,7 +951,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 931.5, 287.5, 236.0, 22.0 ],
 					"style" : "",
-					"text" : "exists Dante:/Users/hughlobel/etc/passwd"
+					"text" : "exists C:/Users/Hugh/etc/passwd"
 				}
 
 			}
@@ -976,7 +976,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 907.0, 258.5, 236.0, 22.0 ],
 					"style" : "",
-					"text" : "exists Dante:/Users/hughlobel/etc"
+					"text" : "exists C:/Users/Hugh/etc"
 				}
 
 			}
@@ -997,7 +997,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 1102.0, 166.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1026,12 +1026,25 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 131.0, 296.0, 59.0, 22.0 ],
+									"style" : "",
+									"text" : "tosymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-5",
 									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 176.0, 159.0, 74.0 ],
+									"patching_rect" : [ 212.0, 176.0, 159.0, 75.0 ],
 									"style" : "",
 									"text" : "Find location of patch, remove everything but the volume name, users folder, and individual user folder location"
 								}
@@ -1173,7 +1186,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-27", 0 ]
@@ -1204,6 +1217,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -1781,8 +1803,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "msdpfs.mxo",
-				"type" : "iLaX"
+				"name" : "msdpfs.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0

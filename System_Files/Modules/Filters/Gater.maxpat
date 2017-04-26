@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 411.0, 783.0 ],
+		"rect" : [ 42.0, 85.0, 1042.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -399,18 +399,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-71",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 137.0, 0.0, 35.0, 23.0 ],
-					"style" : "",
-					"text" : "print"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
 					"fontsize" : 10.0,
 					"id" : "obj-228",
@@ -530,7 +518,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 256.0, 136.0, 150.0, 33.0 ],
+									"patching_rect" : [ 256.0, 136.0, 150.0, 34.0 ],
 									"style" : "",
 									"text" : "in from storage name/ routing"
 								}
@@ -626,7 +614,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 203.0, 249.0, 423.0, 22.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests/Saved Presets\""
+									"text" : "\"C:/Users/Hugh/Desktop/LCS2_Tests/Saved Presets\""
 								}
 
 							}
@@ -1258,7 +1246,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u027014506"
+					"varname" : "u195011762"
 				}
 
 			}
@@ -1818,7 +1806,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 423.0, 22.0 ],
 									"style" : "",
-									"text" : "\"Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests/Saved Presets\""
+									"text" : "\"C:/Users/Hugh/Desktop/LCS2_Tests/Saved Presets\""
 								}
 
 							}
@@ -2422,7 +2410,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage fullpatch @savemode 3",
-					"varname" : "presets815613"
+					"varname" : "presets299353"
 				}
 
 			}
@@ -2504,7 +2492,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 614.682617, 865.320862, 104.0, 24.0 ],
-					"pattrstorage" : "presets815613",
+					"pattrstorage" : "presets299353",
 					"presentation" : 1,
 					"presentation_rect" : [ 147.5, 20.0, 104.0, 24.0 ],
 					"style" : ""
@@ -6500,7 +6488,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 34.0, 78.0, 847.0, 480.0 ],
+						"rect" : [ 42.0, 85.0, 847.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6582,7 +6570,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 259.0, 170.318848, 50.0, 35.0 ],
+									"patching_rect" : [ 259.0, 170.318848, 50.0, 36.0 ],
 									"style" : "",
 									"text" : "Master Out"
 								}
@@ -6959,7 +6947,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 34.0, 78.0, 640.0, 480.0 ],
+										"rect" : [ 42.0, 85.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -7223,7 +7211,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 505.0, 222.318848, 76.0, 35.0 ],
+									"patching_rect" : [ 505.0, 222.318848, 76.0, 36.0 ],
 									"style" : "",
 									"text" : "sprintf set %sR"
 								}
@@ -7239,7 +7227,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 421.0, 222.318848, 76.0, 35.0 ],
+									"patching_rect" : [ 421.0, 222.318848, 76.0, 36.0 ],
 									"style" : "",
 									"text" : "sprintf set %sL"
 								}
@@ -7255,7 +7243,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 139.0, 222.318848, 76.0, 35.0 ],
+									"patching_rect" : [ 139.0, 222.318848, 76.0, 36.0 ],
 									"style" : "",
 									"text" : "sprintf set %sR"
 								}
@@ -7271,7 +7259,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 222.318848, 76.0, 35.0 ],
+									"patching_rect" : [ 50.0, 222.318848, 76.0, 36.0 ],
 									"style" : "",
 									"text" : "sprintf set %sL"
 								}
@@ -9411,7 +9399,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
+						"rect" : [ 42.0, 85.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -9460,7 +9448,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "int" ],
-									"patching_rect" : [ 125.0, 100.0, 32.5, 20.0 ],
+									"patching_rect" : [ 125.0, 100.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "t b i"
 								}
@@ -9475,7 +9463,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 160.0, 80.0, 20.0 ],
+									"patching_rect" : [ 50.0, 160.0, 80.0, 22.0 ],
 									"style" : "",
 									"text" : "sprintf %s%s"
 								}
@@ -10622,7 +10610,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.0, 94.0, 76.0, 35.0 ],
+					"patching_rect" : [ 51.0, 94.0, 76.0, 36.0 ],
 					"style" : "",
 					"text" : "sprintf set %sL",
 					"varname" : "receiveL"
@@ -11647,7 +11635,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 34.0, 79.0, 640.0, 480.0 ],
+						"rect" : [ 42.0, 85.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -11727,9 +11715,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 19.0, 351.0, 112.0, 35.0 ],
+									"patching_rect" : [ 19.0, 351.0, 112.0, 22.0 ],
 									"style" : "",
-									"text" : "tabname Gater316"
+									"text" : "tabname Gater756"
 								}
 
 							}
@@ -11787,7 +11775,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 308.625, 247.0, 142.0, 21.0 ],
+									"patching_rect" : [ 308.625, 247.0, 142.0, 22.0 ],
 									"style" : "",
 									"text" : "presentation_rect 0 0 370"
 								}
@@ -11862,7 +11850,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 186.625, 247.0, 122.0, 21.0 ],
+									"patching_rect" : [ 186.625, 247.0, 122.0, 22.0 ],
 									"style" : "",
 									"text" : "patching_rect 0 0 370"
 								}
@@ -12416,7 +12404,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 635.0, 229.0, 42.0, 47.0 ],
+					"patching_rect" : [ 635.0, 229.0, 42.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 274.5, 155.0, 79.5, 20.0 ],
 					"style" : "",
@@ -13027,7 +13015,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 423.0, 215.5, 28.0, 21.0 ],
+					"patching_rect" : [ 423.0, 215.5, 28.0, 22.0 ],
 					"style" : "",
 					"text" : "rms"
 				}
@@ -13042,7 +13030,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 215.5, 43.0, 21.0 ],
+					"patching_rect" : [ 325.0, 215.5, 43.0, 22.0 ],
 					"style" : "",
 					"text" : "bipolar"
 				}
@@ -13057,7 +13045,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 369.0, 215.5, 52.0, 21.0 ],
+					"patching_rect" : [ 369.0, 215.5, 52.0, 22.0 ],
 					"style" : "",
 					"text" : "absolute"
 				}
@@ -13254,16 +13242,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 4,
-					"source" : [ "obj-103", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-71", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"order" : 3,
@@ -15352,68 +15330,68 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-23" : [ "number[5]", "number", 0 ],
-			"obj-179" : [ "umenu[9]", "umenu", 0 ],
-			"obj-45" : [ "number[1]", "number[1]", 0 ],
-			"obj-235::obj-21" : [ "live.dial", "live.dial", 0 ],
 			"obj-46" : [ "number[2]", "number[2]", 0 ],
 			"obj-126" : [ "umenu[26]", "umenu[2]", 0 ],
+			"obj-42" : [ "number[3]", "number[3]", 0 ],
+			"obj-135" : [ "umenu[25]", "umenu[2]", 0 ],
+			"obj-31" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-235::obj-21" : [ "live.dial", "live.dial", 0 ],
+			"obj-49" : [ "number[4]", "number[4]", 0 ],
+			"obj-132" : [ "umenu[1]", "umenu[1]", 0 ],
+			"obj-94" : [ "umenu[10]", "umenu[8]", 0 ],
+			"obj-179" : [ "umenu[9]", "umenu", 0 ],
 			"obj-77" : [ "umenu", "umenu", 0 ],
 			"obj-171" : [ "umenu[24]", "umenu[3]", 0 ],
-			"obj-94" : [ "umenu[10]", "umenu[8]", 0 ],
-			"obj-31" : [ "toggle[1]", "toggle[1]", 0 ],
-			"obj-135" : [ "umenu[25]", "umenu[2]", 0 ],
-			"obj-42" : [ "number[3]", "number[3]", 0 ],
-			"obj-132" : [ "umenu[1]", "umenu[1]", 0 ],
-			"obj-49" : [ "number[4]", "number[4]", 0 ],
+			"obj-45" : [ "number[1]", "number[1]", 0 ],
+			"obj-23" : [ "number[5]", "number", 0 ],
 			"obj-128" : [ "umenu[23]", "umenu[3]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tempo_sync.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.20/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_dial_1.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.20/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.20/System_Files/Images",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_vol_fix.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.20/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "default_gater.json",
-				"bootpath" : "~/Desktop/LCS2/LCS2_Tests/Saved Presets",
+				"bootpath" : "~/Desktop/LCS2_Tests/Saved Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Load_button.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.20/System_Files/Images",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Save_button.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.20/System_Files/Images",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "New_button.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.20/System_Files/Images",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
