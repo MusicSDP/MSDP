@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 3,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 702.0, 101.0, 1042.0, 921.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -84,7 +84,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 199.0, 115.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1"
+					"text" : "0"
 				}
 
 			}
@@ -111,17 +111,6 @@
 					"patching_rect" : [ 575.0, 222.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "replace"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-61",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 172.0, 821.0, 45.0, 45.0 ],
-					"style" : ""
 				}
 
 			}
@@ -196,14 +185,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 5,
-					"outlettype" : [ "float", "float", "int", "int", "int" ],
+					"outlettype" : [ "float", "float", "bang", "int", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1030,7 +1019,7 @@
 					"patching_rect" : [ 646.0, 643.0, 192.0, 63.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 161.0, 9.0, 161.375, 21.0 ],
-					"size" : 84837.006803,
+					"size" : 84837.007812,
 					"style" : "",
 					"thickness" : 25.0
 				}
@@ -1083,9 +1072,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 318.0, 351.0, 80.0, 36.0 ],
+					"patching_rect" : [ 318.0, 351.0, 80.0, 35.0 ],
 					"style" : "",
-					"text" : "55367.303503"
+					"text" : "55367.304688"
 				}
 
 			}
@@ -1625,7 +1614,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"buffername" : "ezbuff331726",
+					"buffername" : "ezbuff225629",
 					"id" : "obj-57",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -1891,17 +1880,6 @@
 					"destination" : [ "obj-151", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -1948,17 +1926,6 @@
 					"destination" : [ "obj-152", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -2848,7 +2815,7 @@
 					"destination" : [ "obj-185", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 430.1, 318.330566, 482.0, 318.330566 ],
+					"midpoints" : [ 430.100006, 318.330566, 482.0, 318.330566 ],
 					"order" : 2,
 					"source" : [ "obj-57", 3 ]
 				}
@@ -2859,7 +2826,7 @@
 					"destination" : [ "obj-185", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 395.9, 335.330566, 451.0, 335.330566 ],
+					"midpoints" : [ 395.899994, 335.330566, 451.0, 335.330566 ],
 					"order" : 2,
 					"source" : [ "obj-57", 2 ]
 				}
@@ -3056,37 +3023,37 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-25" : [ "flonum[6]", "flonum[3]", 0 ],
-			"obj-169::obj-21" : [ "live.dial", "live.dial", 0 ]
+			"obj-169::obj-21" : [ "live.dial", "live.dial", 0 ],
+			"obj-25" : [ "flonum[6]", "flonum[3]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "grooveduck2.maxpat",
-				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4.8/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio_loader.maxpat",
-				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4.8/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_vol_fix.maxpat",
-				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4.8/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_dial_s1.maxpat",
-				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4.8/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Desktop/MSDP Stuff/Music_SDP Beta 1.1.4.8/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}

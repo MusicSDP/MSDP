@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 3,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 36.0, 67.0, 258.0, 551.0 ],
+		"rect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"bgcolor" : [ 0.454959, 0.684788, 0.824976, 1.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -250,7 +250,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.625, 712.703125, 72.0, 34.0 ],
+					"patching_rect" : [ 82.625, 712.703125, 72.0, 33.0 ],
 					"style" : "",
 					"text" : "select_board"
 				}
@@ -269,7 +269,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -513,7 +513,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -655,7 +655,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -797,7 +797,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1057,7 +1057,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1166,7 +1166,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -1390,7 +1390,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -1862,7 +1862,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2093,7 +2093,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 6,
 					"outlettype" : [ "int", "int", "int", "int", "int", "bang" ],
-					"patching_rect" : [ 455.0, 604.320313, 71.5, 22.0 ],
+					"patching_rect" : [ 455.0, 604.320312, 71.5, 22.0 ],
 					"style" : "",
 					"text" : "t i i i i i b"
 				}
@@ -2108,7 +2108,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1734.5625, 587.117188, 106.75, 34.0 ],
+					"patching_rect" : [ 1734.5625, 587.117188, 106.75, 33.0 ],
 					"style" : "",
 					"text" : "Access Audio File manager"
 				}
@@ -2122,7 +2122,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1915.8125, 578.539062, 151.0, 50.0 ],
+					"patching_rect" : [ 1915.8125, 578.539062, 151.0, 49.0 ],
 					"style" : "",
 					"text" : "r msdp_board_manager_opener"
 				}
@@ -2291,7 +2291,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2582,7 +2582,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-272",
-					"items" : "Built-in Output",
+					"items" : [ "Built-in Output", ",", "AirParrot" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2626,7 +2626,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-275",
-					"items" : "Built-in Microphone",
+					"items" : [ "Built-in Microphone", ",", "AirParrot" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2701,7 +2701,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2902,7 +2902,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1147.5, 283.5, 69.0, 50.0 ],
+					"patching_rect" : [ 1147.5, 283.5, 69.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2986,7 +2986,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 114.0, 56.0, 22.0 ],
+					"patching_rect" : [ 270.0, 117.0, 56.0, 22.0 ],
 					"style" : "",
 					"text" : "deferlow"
 				}
@@ -3057,7 +3057,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3258,7 +3258,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 252.625, 496.5, 69.0, 50.0 ],
+					"patching_rect" : [ 252.625, 496.5, 69.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3435,7 +3435,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 587.625, 283.5, 62.75, 34.0 ],
+					"patching_rect" : [ 587.625, 283.5, 62.75, 33.0 ],
 					"style" : "",
 					"text" : "Metro\nTabs"
 				}
@@ -3613,7 +3613,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1734.75, 258.578125, 106.75, 34.0 ],
+					"patching_rect" : [ 1734.75, 258.578125, 106.75, 33.0 ],
 					"style" : "",
 					"text" : "Access Audio File manager"
 				}
@@ -3627,7 +3627,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1916.0, 250.0, 74.0, 64.0 ],
+					"patching_rect" : [ 1916.0, 250.0, 74.0, 62.0 ],
 					"style" : "",
 					"text" : "r msdp_plugin_manager_opener"
 				}
@@ -3688,7 +3688,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1731.0, 334.328125, 183.0, 36.0 ],
+					"patching_rect" : [ 1731.0, 334.328125, 183.0, 35.0 ],
 					"style" : "",
 					"text" : "plugin_manager"
 				}
@@ -3707,7 +3707,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4290,7 +4290,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 190.8125, 113.0, 55.0, 64.0 ],
+					"patching_rect" : [ 190.8125, 113.0, 55.0, 62.0 ],
 					"style" : "",
 					"text" : "receive MSDP_System_Text"
 				}
@@ -4309,7 +4309,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4644,7 +4644,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 703.75, 434.25, 110.0, 34.0 ],
+					"patching_rect" : [ 703.75, 434.25, 110.0, 33.0 ],
 					"style" : "",
 					"text" : "Access MIDI File manager"
 				}
@@ -4658,7 +4658,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 702.0, 380.0, 101.0, 54.0 ],
+					"patching_rect" : [ 702.0, 380.0, 101.0, 53.0 ],
 					"style" : "",
 					"text" : "midi_file_manager"
 				}
@@ -4698,7 +4698,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 754.0, 269.5, 70.0, 64.0 ],
+					"patching_rect" : [ 754.0, 269.5, 70.0, 62.0 ],
 					"style" : "",
 					"text" : "r msdp_midi_manager_opener"
 				}
@@ -4804,7 +4804,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -5005,7 +5005,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1332.0, 112.75, 69.0, 50.0 ],
+					"patching_rect" : [ 1332.0, 112.75, 69.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5050,7 +5050,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -5251,7 +5251,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 492.0, 502.75, 69.0, 50.0 ],
+					"patching_rect" : [ 492.0, 502.75, 69.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5375,7 +5375,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -5576,7 +5576,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 252.625, 407.1875, 69.0, 50.0 ],
+					"patching_rect" : [ 252.625, 407.1875, 69.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5642,7 +5642,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1332.0, -18.0, 450.0, 110.0 ],
+					"patching_rect" : [ 1332.0, -18.0, 450.0, 107.0 ],
 					"style" : "",
 					"text" : "Each Yellow Panel Represents a different function or section of the System Board"
 				}
@@ -5657,7 +5657,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ -13.75, 848.0, 1457.1875, 41.0 ],
+					"patching_rect" : [ -13.75, 848.0, 1457.1875, 40.0 ],
 					"style" : "",
 					"text" : "-------------------------------------- Full View Windows are Stored below ----------------------------------------------------"
 				}
@@ -5672,7 +5672,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 133.0625, 115.75, 55.0, 34.0 ],
+					"patching_rect" : [ 133.0625, 115.75, 55.0, 33.0 ],
 					"style" : "",
 					"text" : "Resizer Tools"
 				}
@@ -5715,7 +5715,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1735.75, 116.578125, 106.75, 34.0 ],
+					"patching_rect" : [ 1735.75, 116.578125, 106.75, 33.0 ],
 					"style" : "",
 					"text" : "Access Audio File manager"
 				}
@@ -5851,7 +5851,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -6326,7 +6326,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1917.0, 114.828125, 62.0, 64.0 ],
+					"patching_rect" : [ 1917.0, 114.828125, 62.0, 62.0 ],
 					"style" : "",
 					"text" : "r msdp_file_manager_opener"
 				}
@@ -6387,7 +6387,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1732.0, 199.328125, 243.0, 36.0 ],
+					"patching_rect" : [ 1732.0, 199.328125, 243.0, 35.0 ],
 					"style" : "",
 					"text" : "audio_file_manager"
 				}
@@ -6483,7 +6483,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -6661,14 +6661,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-159",
-									"linecount" : 5,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 281.5, 211.0, 148.0, 50.0 ],
 									"style" : "",
-									"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Saved Boards\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests/Saved Boards\""
 								}
 
 							}
@@ -6935,7 +6935,7 @@
 					"bgfillcolor_type" : "color",
 					"fontname" : "Lato Regular",
 					"id" : "obj-169",
-					"items" : [ "test1", ",", "test2" ],
+					"items" : [ "big_drones", ",", "glitch_monster", ",", "test1" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6996,7 +6996,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 761.125, 720.5, 488.0, 22.0 ],
 					"style" : "",
-					"text" : "\"Apple HDD:/Applications\""
+					"text" : "Dante:/Applications"
 				}
 
 			}
@@ -7009,7 +7009,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 721.0, 570.375, 454.0, 22.0 ],
 					"style" : "",
-					"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test\""
+					"text" : "Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests"
 				}
 
 			}
@@ -7035,7 +7035,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1083.5, 587.375, 83.0, 40.0 ],
+					"patching_rect" : [ 1083.5, 587.375, 83.0, 39.0 ],
 					"style" : "",
 					"text" : ";\rmax sendapppath #0_appPath"
 				}
@@ -7113,7 +7113,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -7481,7 +7481,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -7862,7 +7862,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -8091,7 +8091,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 447.5, 7.5, 202.0, 48.0 ],
+					"patching_rect" : [ 447.5, 7.5, 202.0, 47.0 ],
 					"style" : "",
 					"text" : "bang right before saving, to make sure the System Board doesn't appear on program open"
 				}
@@ -8134,7 +8134,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -8521,7 +8521,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1189.25, 770.625, 193.0, 36.0 ],
+					"patching_rect" : [ 1189.25, 770.625, 193.0, 35.0 ],
 					"style" : "",
 					"text" : "Custom_Patches",
 					"varname" : "Custom_Patches"
@@ -8537,7 +8537,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1297.5, 679.625, 150.0, 89.0 ],
+					"patching_rect" : [ 1297.5, 679.625, 150.0, 87.0 ],
 					"style" : "",
 					"text" : "If you decide to, you can\nACTUALLY save a board file under a unique name and place it here to ensure that it loads on launch but stays hidden"
 				}
@@ -8552,7 +8552,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1189.25, 637.625, 240.0, 41.0 ],
+					"patching_rect" : [ 1189.25, 637.625, 240.0, 40.0 ],
 					"style" : "",
 					"text" : "System Patches"
 				}
@@ -8565,7 +8565,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1098.25, 479.25, 76.75, 75.0 ],
+					"patching_rect" : [ 1098.25, 479.25, 76.75, 74.0 ],
 					"style" : "",
 					"text" : "Goes back to the Loader and shuts it down"
 				}
@@ -8631,7 +8631,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 467.375, 346.0, 57.363647, 48.0 ],
+					"patching_rect" : [ 467.375, 346.0, 57.363647, 47.0 ],
 					"style" : "",
 					"text" : "Access System Score"
 				}
@@ -8688,7 +8688,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 434.488647, 245.0, 64.0, 62.0 ],
+					"patching_rect" : [ 434.488647, 245.0, 64.0, 60.0 ],
 					"style" : "",
 					"text" : "Unstick and\nAbout MSDP"
 				}
@@ -8730,7 +8730,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -10028,7 +10028,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 341.625, 401.0, 177.0, 36.0 ],
+					"patching_rect" : [ 341.625, 401.0, 177.0, 35.0 ],
 					"style" : "",
 					"text" : "Score_Player"
 				}
@@ -10089,7 +10089,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -11458,7 +11458,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -11932,7 +11932,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.9375, 143.75, 89.0, 22.0 ],
+					"patching_rect" : [ 17.9375, 143.75, 89.0, 21.0 ],
 					"style" : "",
 					"text" : "window getsize"
 				}
@@ -11947,7 +11947,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 17.9375, 227.0, 144.0, 22.0 ],
+					"patching_rect" : [ 17.9375, 227.0, 144.0, 21.0 ],
 					"style" : "",
 					"text" : "route flags size title notitle"
 				}
@@ -11962,7 +11962,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 17.9375, 204.0, 79.0, 22.0 ],
+					"patching_rect" : [ 17.9375, 204.0, 79.0, 21.0 ],
 					"style" : "",
 					"text" : "route window"
 				}
@@ -12032,7 +12032,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -12114,7 +12114,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 727.0, 190.0, 250.0, 36.0 ],
 									"style" : "",
-									"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Audio Files/\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests/Audio Files/\""
 								}
 
 							}
@@ -12145,7 +12145,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 463.0, 190.0, 250.0, 36.0 ],
 									"style" : "",
-									"text" : "\"Apple HDD:/Users/Hugh/Desktop/MSDP Projects/EX_Test/Recorded Audio/\""
+									"text" : "\"Dante:/Users/hughlobel/Desktop/LCS2/LCS2_Tests/Recorded Audio/\""
 								}
 
 							}
@@ -12742,7 +12742,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1723.8125, 574.539063, 271.5, 133.328125 ],
+					"patching_rect" : [ 1723.8125, 574.539062, 271.5, 133.328125 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -13434,15 +13434,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-189", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-141", 0 ]
 				}
 
 			}
@@ -14532,7 +14523,7 @@
 					"destination" : [ "obj-275", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1487.5, 401.251968, 1474.307373, 401.251968, 1474.307373, 292.795272, 1487.5, 292.795272 ],
+					"midpoints" : [ 1487.5, 401.251953, 1474.307373, 401.251953, 1474.307373, 292.795258, 1487.5, 292.795258 ],
 					"source" : [ "obj-274", 0 ]
 				}
 
@@ -14682,7 +14673,7 @@
 					"destination" : [ "obj-279", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1002.9, -172.375, 1099.65625, -172.375 ],
+					"midpoints" : [ 1002.900024, -172.375, 1099.65625, -172.375 ],
 					"source" : [ "obj-287", 1 ]
 				}
 
@@ -14701,7 +14692,7 @@
 					"destination" : [ "obj-297", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1023.8, -172.375, 1196.5, -172.375 ],
+					"midpoints" : [ 1023.799988, -172.375, 1196.5, -172.375 ],
 					"source" : [ "obj-287", 2 ]
 				}
 
@@ -14711,7 +14702,7 @@
 					"destination" : [ "obj-298", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1044.7, -172.375, 1309.0, -172.375 ],
+					"midpoints" : [ 1044.699951, -172.375, 1309.0, -172.375 ],
 					"source" : [ "obj-287", 3 ]
 				}
 
@@ -14721,7 +14712,7 @@
 					"destination" : [ "obj-299", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1065.6, -172.375, 1414.625, -172.375 ],
+					"midpoints" : [ 1065.599976, -172.375, 1414.625, -172.375 ],
 					"source" : [ "obj-287", 4 ]
 				}
 
@@ -15752,388 +15743,388 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-194::obj-100::obj-69" : [ "live.button[47]", "live.button", 0 ],
-			"obj-194::obj-131::obj-69" : [ "live.button[15]", "live.button", 0 ],
-			"obj-194::obj-81::obj-70" : [ "live.button[40]", "live.button", 0 ],
-			"obj-194::obj-122::obj-70" : [ "live.button[8]", "live.button", 0 ],
-			"obj-194::obj-73::obj-69" : [ "live.button[37]", "live.button", 0 ],
-			"obj-194::obj-31::obj-69" : [ "live.button[63]", "live.button", 0 ],
-			"obj-194::obj-116::obj-69" : [ "live.button[5]", "live.button", 0 ],
-			"obj-212" : [ "live.text", "live.text", 0 ],
-			"obj-194::obj-155::obj-69" : [ "live.button[31]", "live.button", 0 ],
-			"obj-194::obj-39::obj-70" : [ "live.button[58]", "live.button", 0 ],
-			"obj-194::obj-149::obj-70" : [ "live.button[26]", "live.button", 0 ],
-			"obj-194::obj-53::obj-70" : [ "live.button[52]", "live.button", 0 ],
-			"obj-194::obj-140::obj-70" : [ "live.button[20]", "live.button", 0 ],
-			"obj-194::obj-109::obj-69" : [ "live.button[49]", "live.button", 0 ],
-			"obj-194::obj-134::obj-69" : [ "live.button[17]", "live.button", 0 ],
-			"obj-194::obj-92::obj-69" : [ "live.button[43]", "live.button", 0 ],
-			"obj-194::obj-125::obj-70" : [ "live.button[10]", "live.button", 0 ],
-			"obj-194::obj-77::obj-70" : [ "live.button[38]", "live.button", 0 ],
+			"obj-194::obj-143::obj-69" : [ "live.button[23]", "live.button", 0 ],
+			"obj-194::obj-134::obj-70" : [ "live.button[16]", "live.button", 0 ],
+			"obj-194::obj-128::obj-70" : [ "live.button[12]", "live.button", 0 ],
+			"obj-194::obj-2::obj-70" : [ "live.button[64]", "live.button", 0 ],
 			"obj-194::obj-119::obj-69" : [ "live.button[7]", "live.button", 0 ],
-			"obj-194::obj-158::obj-70" : [ "live.button[32]", "live.button", 0 ],
 			"obj-194::obj-35::obj-69" : [ "live.button[61]", "live.button", 0 ],
-			"obj-194::obj-113::obj-69" : [ "live.button[1]", "live.button", 0 ],
-			"obj-194::obj-152::obj-69" : [ "live.button[29]", "live.button", 0 ],
-			"obj-165" : [ "live.text[2]", "live.text[2]", 0 ],
-			"obj-194::obj-60::obj-70" : [ "live.button[54]", "live.button", 0 ],
-			"obj-194::obj-143::obj-70" : [ "live.button[22]", "live.button", 0 ],
-			"obj-228::obj-22" : [ "vst~", "vst~", 0 ],
-			"obj-194::obj-48::obj-69" : [ "live.button[51]", "live.button", 0 ],
-			"obj-194::obj-137::obj-70" : [ "live.button[18]", "live.button", 0 ],
-			"obj-194::obj-96::obj-70" : [ "live.button[44]", "live.button", 0 ],
-			"obj-194::obj-128::obj-69" : [ "live.button[13]", "live.button", 0 ],
-			"obj-194::obj-81::obj-69" : [ "live.button[41]", "live.button", 0 ],
-			"obj-194::obj-122::obj-69" : [ "live.button[9]", "live.button", 0 ],
-			"obj-194::obj-68::obj-69" : [ "live.button[35]", "live.button", 0 ],
-			"obj-194::obj-31::obj-70" : [ "live.button[62]", "live.button", 0 ],
-			"obj-194::obj-113::obj-70" : [ "live.button[3]", "live.button", 0 ],
-			"obj-194::obj-155::obj-70" : [ "live.button[30]", "live.button", 0 ],
+			"obj-212" : [ "live.text", "live.text", 0 ],
 			"obj-194::obj-64::obj-69" : [ "live.button[57]", "live.button", 0 ],
-			"obj-194::obj-146::obj-69" : [ "live.button[25]", "live.button", 0 ],
-			"obj-194::obj-53::obj-69" : [ "live.button[53]", "live.button", 0 ],
-			"obj-194::obj-140::obj-69" : [ "live.button[21]", "live.button", 0 ],
-			"obj-194::obj-100::obj-70" : [ "live.button[46]", "live.button", 0 ],
-			"obj-194::obj-131::obj-70" : [ "live.button[14]", "live.button", 0 ],
-			"obj-159" : [ "power_switch", "power_switch", 0 ],
-			"obj-194::obj-92::obj-70" : [ "live.button[42]", "live.button", 0 ],
-			"obj-194::obj-125::obj-69" : [ "live.button[11]", "live.button", 0 ],
+			"obj-194::obj-48::obj-69" : [ "live.button[51]", "live.button", 0 ],
+			"obj-194::obj-100::obj-69" : [ "live.button[47]", "live.button", 0 ],
+			"obj-194::obj-81::obj-70" : [ "live.button[40]", "live.button", 0 ],
 			"obj-194::obj-73::obj-70" : [ "live.button[36]", "live.button", 0 ],
+			"obj-194::obj-155::obj-69" : [ "live.button[31]", "live.button", 0 ],
+			"obj-194::obj-149::obj-69" : [ "live.button[27]", "live.button", 0 ],
+			"obj-33" : [ "live.text[1]", "live.text[1]", 0 ],
+			"obj-194::obj-140::obj-70" : [ "live.button[20]", "live.button", 0 ],
+			"obj-194::obj-113::obj-69" : [ "live.button[1]", "live.button", 0 ],
+			"obj-194::obj-134::obj-69" : [ "live.button[17]", "live.button", 0 ],
+			"obj-194::obj-125::obj-69" : [ "live.button[11]", "live.button", 0 ],
+			"obj-165" : [ "live.text[2]", "live.text[2]", 0 ],
+			"obj-194::obj-119::obj-70" : [ "live.button[6]", "live.button", 0 ],
+			"obj-194::obj-35::obj-70" : [ "live.button[60]", "live.button", 0 ],
+			"obj-194::obj-60::obj-69" : [ "live.button[55]", "live.button", 0 ],
+			"obj-194::obj-48::obj-70" : [ "live.button[50]", "live.button", 0 ],
+			"obj-194::obj-96::obj-69" : [ "live.button[45]", "live.button", 0 ],
+			"obj-194::obj-81::obj-69" : [ "live.button[41]", "live.button", 0 ],
+			"obj-194::obj-68::obj-69" : [ "live.button[35]", "live.button", 0 ],
+			"obj-194::obj-155::obj-70" : [ "live.button[30]", "live.button", 0 ],
 			"obj-71::obj-23" : [ "live.button[2]", "live.button", 0 ],
+			"obj-194::obj-146::obj-69" : [ "live.button[25]", "live.button", 0 ],
+			"obj-194::obj-140::obj-69" : [ "live.button[21]", "live.button", 0 ],
+			"obj-194::obj-131::obj-70" : [ "live.button[14]", "live.button", 0 ],
+			"obj-194::obj-125::obj-70" : [ "live.button[10]", "live.button", 0 ],
 			"obj-194::obj-2::obj-69" : [ "live.button[65]", "live.button", 0 ],
 			"obj-194::obj-116::obj-70" : [ "live.button[4]", "live.button", 0 ],
-			"obj-194::obj-158::obj-69" : [ "live.button[33]", "live.button", 0 ],
 			"obj-194::obj-39::obj-69" : [ "live.button[59]", "live.button", 0 ],
-			"obj-194::obj-149::obj-69" : [ "live.button[27]", "live.button", 0 ],
-			"obj-194::obj-60::obj-69" : [ "live.button[55]", "live.button", 0 ],
-			"obj-129::obj-59" : [ "flonum[7]", "flonum[7]", 0 ],
-			"obj-194::obj-143::obj-69" : [ "live.button[23]", "live.button", 0 ],
-			"obj-194::obj-109::obj-70" : [ "live.button[48]", "live.button", 0 ],
-			"obj-194::obj-134::obj-70" : [ "live.button[16]", "live.button", 0 ],
-			"obj-194::obj-96::obj-69" : [ "live.button[45]", "live.button", 0 ],
-			"obj-194::obj-128::obj-70" : [ "live.button[12]", "live.button", 0 ],
-			"obj-194::obj-77::obj-69" : [ "live.button[39]", "live.button", 0 ],
-			"obj-33" : [ "live.text[1]", "live.text[1]", 0 ],
-			"obj-194::obj-2::obj-70" : [ "live.button[64]", "live.button", 0 ],
-			"obj-194::obj-119::obj-70" : [ "live.button[6]", "live.button", 0 ],
+			"obj-194::obj-60::obj-70" : [ "live.button[54]", "live.button", 0 ],
+			"obj-228::obj-22" : [ "vst~", "vst~", 0 ],
+			"obj-194::obj-109::obj-69" : [ "live.button[49]", "live.button", 0 ],
+			"obj-194::obj-96::obj-70" : [ "live.button[44]", "live.button", 0 ],
+			"obj-194::obj-77::obj-70" : [ "live.button[38]", "live.button", 0 ],
 			"obj-194::obj-68::obj-70" : [ "live.button[34]", "live.button", 0 ],
-			"obj-194::obj-35::obj-70" : [ "live.button[60]", "live.button", 0 ],
-			"obj-194::obj-152::obj-70" : [ "live.button[28]", "live.button", 0 ],
-			"obj-194::obj-64::obj-70" : [ "live.button[56]", "live.button", 0 ],
+			"obj-194::obj-152::obj-69" : [ "live.button[29]", "live.button", 0 ],
 			"obj-194::obj-146::obj-70" : [ "live.button[24]", "live.button", 0 ],
-			"obj-194::obj-48::obj-70" : [ "live.button[50]", "live.button", 0 ],
-			"obj-194::obj-137::obj-69" : [ "live.button[19]", "live.button", 0 ]
+			"obj-194::obj-137::obj-69" : [ "live.button[19]", "live.button", 0 ],
+			"obj-194::obj-131::obj-69" : [ "live.button[15]", "live.button", 0 ],
+			"obj-194::obj-122::obj-70" : [ "live.button[8]", "live.button", 0 ],
+			"obj-194::obj-31::obj-70" : [ "live.button[62]", "live.button", 0 ],
+			"obj-194::obj-116::obj-69" : [ "live.button[5]", "live.button", 0 ],
+			"obj-194::obj-39::obj-70" : [ "live.button[58]", "live.button", 0 ],
+			"obj-194::obj-53::obj-69" : [ "live.button[53]", "live.button", 0 ],
+			"obj-194::obj-109::obj-70" : [ "live.button[48]", "live.button", 0 ],
+			"obj-194::obj-92::obj-70" : [ "live.button[42]", "live.button", 0 ],
+			"obj-194::obj-77::obj-69" : [ "live.button[39]", "live.button", 0 ],
+			"obj-194::obj-158::obj-70" : [ "live.button[32]", "live.button", 0 ],
+			"obj-194::obj-152::obj-70" : [ "live.button[28]", "live.button", 0 ],
+			"obj-194::obj-143::obj-70" : [ "live.button[22]", "live.button", 0 ],
+			"obj-159" : [ "power_switch", "power_switch", 0 ],
+			"obj-194::obj-137::obj-70" : [ "live.button[18]", "live.button", 0 ],
+			"obj-194::obj-128::obj-69" : [ "live.button[13]", "live.button", 0 ],
+			"obj-194::obj-122::obj-69" : [ "live.button[9]", "live.button", 0 ],
+			"obj-194::obj-31::obj-69" : [ "live.button[63]", "live.button", 0 ],
+			"obj-194::obj-113::obj-70" : [ "live.button[3]", "live.button", 0 ],
+			"obj-194::obj-64::obj-70" : [ "live.button[56]", "live.button", 0 ],
+			"obj-194::obj-53::obj-70" : [ "live.button[52]", "live.button", 0 ],
+			"obj-194::obj-100::obj-70" : [ "live.button[46]", "live.button", 0 ],
+			"obj-129::obj-59" : [ "flonum[7]", "flonum[7]", 0 ],
+			"obj-194::obj-92::obj-69" : [ "live.button[43]", "live.button", 0 ],
+			"obj-194::obj-73::obj-69" : [ "live.button[37]", "live.button", 0 ],
+			"obj-194::obj-158::obj-69" : [ "live.button[33]", "live.button", 0 ],
+			"obj-194::obj-149::obj-70" : [ "live.button[26]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "System_BG_1.jpg",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Recorder.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Resizer_2.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Slave_Temp.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fs_toggle.maxpat",
-				"bootpath" : "~/source-code/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Score_Player.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Performer_View.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "iyo.maxpat",
-				"bootpath" : "~/source-code/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "default_performer.json",
-				"bootpath" : "~/Desktop/MSDP Projects/EX_Test/Saved Presets",
+				"bootpath" : "~/Desktop/LCS2/LCS2_Tests/Saved Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Load_button.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Save_button.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "New_button.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Master_Mixer.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "default_mixer.json",
-				"bootpath" : "~/Desktop/MSDP Projects/EX_Test/Saved Presets",
+				"bootpath" : "~/Desktop/LCS2/LCS2_Tests/Saved Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "solo_button.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mute_button.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Master_Temp.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Custom_Patches.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Controller_Setup.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_sliders.maxpat",
-				"bootpath" : "~/source-code/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "default_vsliders.json",
-				"bootpath" : "~/Desktop/MSDP Projects/EX_Test/Saved Presets",
+				"bootpath" : "~/Desktop/LCS2/LCS2_Tests/Saved Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_keys.maxpat",
-				"bootpath" : "~/source-code/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "virtual_pads.maxpat",
-				"bootpath" : "~/source-code/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "drum_pad.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "default_controller.json",
-				"bootpath" : "~/Desktop/MSDP Projects/EX_Test/Saved Presets",
+				"bootpath" : "~/Desktop/LCS2/LCS2_Tests/Saved Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MSDP_Power_Button.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio_file_manager.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "single_file_player 1.1 .maxpat",
-				"bootpath" : "~/source-code/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi_file_manager.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi_player_basic.maxpat",
-				"bootpath" : "~/source-code/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Big_View_Metro.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Metro_Automator.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Metronome_Automator_core.maxpat",
-				"bootpath" : "~/source-code/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "default_metro_automator.json",
-				"bootpath" : "~/Desktop/MSDP Projects/EX_Test/Saved Presets",
+				"bootpath" : "~/Desktop/LCS2/LCS2_Tests/Saved Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Project_Settings.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "EX_Test",
-				"bootpath" : "~/Desktop/MSDP Projects/EX_Test",
+				"name" : "LCS2_Tests",
+				"bootpath" : "~/Desktop/LCS2/LCS2_Tests",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Board_Browser.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Boards_Instruments.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Boards_Tools.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Boards_Effects.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Boards_File_P.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Boards_Combo.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "plugin_manager.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Rec_Start.svg",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "svg ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Rec_Stop.svg",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "svg ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "New_Board.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Power_Off.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Power_On.png",
-				"bootpath" : "~/source-code/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Module_Menu_Maker.maxpat",
-				"bootpath" : "~/source-code/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "perm_mod_data.txt",
-				"bootpath" : "~/Desktop/MSDP Projects/EX_Test/Saved Presets",
+				"bootpath" : "~/Desktop/LCS2/LCS2_Tests/Saved Presets",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "perm_mod_list.txt",
-				"bootpath" : "~/Desktop/MSDP Projects/EX_Test/Saved Presets",
+				"bootpath" : "~/Desktop/LCS2/LCS2_Tests/Saved Presets",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "board_manager.maxpat",
-				"bootpath" : "~/source-code/System_Files/Board_Files",
+				"bootpath" : "~/GitHub/source-code/System_Files/Board_Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -16164,20 +16155,20 @@
 , 			{
 				"name" : "default_style",
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"toggle" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
 				}
 ,
 				"button" : 				{
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -16186,20 +16177,20 @@
 , 			{
 				"name" : "default_style-1",
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"toggle" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
 				}
 ,
 				"button" : 				{
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -16208,9 +16199,9 @@
 , 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
+					"fontname" : [ "Arial" ],
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-					"fontsize" : [ 13.0 ],
-					"fontname" : [ "Arial" ]
+					"fontsize" : [ 13.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -16223,81 +16214,6 @@
 			}
 , 			{
 				"name" : "master_style",
-				"attrui" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
-				}
-,
-				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgfillcolor" : 					{
-						"type" : "gradient",
-						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0
-					}
-
-				}
-,
-				"ezdac~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"slider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
-				}
-,
-				"kslider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
-				}
-,
-				"gain~" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"ezadc~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -16309,6 +16225,81 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"kslider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"button" : 				{
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"gain~" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
+				}
+,
+				"slider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"ezdac~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"attrui" : 				{
+					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -16316,81 +16307,6 @@
 			}
 , 			{
 				"name" : "master_style-1",
-				"attrui" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
-				}
-,
-				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgfillcolor" : 					{
-						"type" : "gradient",
-						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0.0
-					}
-
-				}
-,
-				"ezdac~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"slider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
-				}
-,
-				"kslider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
-				}
-,
-				"gain~" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"ezadc~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -16402,6 +16318,81 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0.0
+					}
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"kslider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"button" : 				{
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"gain~" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
+				}
+,
+				"slider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"ezdac~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"attrui" : 				{
+					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -16409,81 +16400,6 @@
 			}
 , 			{
 				"name" : "master_style-2",
-				"attrui" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
-				}
-,
-				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgfillcolor" : 					{
-						"type" : "gradient",
-						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0.0
-					}
-
-				}
-,
-				"ezdac~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"slider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
-				}
-,
-				"kslider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
-				}
-,
-				"gain~" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"ezadc~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -16495,6 +16411,81 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0.0
+					}
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"kslider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"button" : 				{
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"gain~" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
+				}
+,
+				"slider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"ezdac~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"attrui" : 				{
+					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -16502,81 +16493,6 @@
 			}
 , 			{
 				"name" : "master_style-3",
-				"attrui" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
-				}
-,
-				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgfillcolor" : 					{
-						"type" : "gradient",
-						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0.0
-					}
-
-				}
-,
-				"ezdac~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"slider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
-				}
-,
-				"kslider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
-				}
-,
-				"gain~" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"ezadc~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -16588,6 +16504,81 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0.0
+					}
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"kslider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"button" : 				{
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"gain~" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
+				}
+,
+				"slider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"ezdac~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"attrui" : 				{
+					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
