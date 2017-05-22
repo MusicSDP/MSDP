@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1169.0, 91.0, 387.0, 171.0 ],
+		"rect" : [ 320.0, 137.0, 387.0, 171.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,44 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 864.0, 215.0, 183.0, 22.0 ],
+					"style" : "",
+					"text" : "C:/Users/Hugh/Desktop/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 917.0, 145.0, 109.0, 22.0 ],
+					"style" : "",
+					"text" : "value source_path"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 639.0, 92.0, 129.0, 22.0 ],
+					"style" : "",
+					"text" : "s MSDP_perm_switch"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "message",
@@ -85,7 +123,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 797.5, 958.0, 559.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/MIDI Tools\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/Modules/MIDI Tools\""
 				}
 
 			}
@@ -116,7 +154,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.0, 1000.0, 457.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/MSDP Boards/Tools\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/Tools\""
 				}
 
 			}
@@ -146,7 +184,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.0, 943.0, 507.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/MSDP Boards/File Processes\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/File Processes\""
 				}
 
 			}
@@ -176,7 +214,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 33.0, 883.0, 499.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/MSDP Boards/Effect Chains\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/Effect Chains\""
 				}
 
 			}
@@ -206,7 +244,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 33.0, 826.0, 467.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/MSDP Boards/Combo\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/Combo\""
 				}
 
 			}
@@ -236,7 +274,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 35.0, 766.0, 491.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/MSDP Boards/Instruments\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/Instruments\""
 				}
 
 			}
@@ -266,7 +304,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.0, 583.0, 425.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/MSDP Boards\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards\""
 				}
 
 			}
@@ -296,7 +334,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 797.5, 894.0, 559.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/3rd Party\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/Modules/3rd Party\""
 				}
 
 			}
@@ -327,7 +365,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 790.5, 832.0, 559.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/Audio Tools\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/Modules/Audio Tools\""
 				}
 
 			}
@@ -358,7 +396,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 785.0, 763.0, 559.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/Utilities"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/Utilities"
 				}
 
 			}
@@ -389,7 +427,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 781.0, 696.0, 559.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/Buffer Effects\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/Modules/Buffer Effects\""
 				}
 
 			}
@@ -420,7 +458,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 775.0, 629.0, 559.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/Filters"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/Filters"
 				}
 
 			}
@@ -451,7 +489,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 769.0, 566.0, 559.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/Instruments"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/Instruments"
 				}
 
 			}
@@ -519,7 +557,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 767.0, 491.0, 556.0, 22.0 ],
 					"style" : "",
-					"text" : "\"C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Default Presets\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/Default Presets\""
 				}
 
 			}
@@ -550,7 +588,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 767.0, 370.0, 538.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Board_Files"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Board_Files"
 				}
 
 			}
@@ -581,7 +619,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.0, 395.0, 559.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Includes"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Includes"
 				}
 
 			}
@@ -612,7 +650,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 195.0, 521.0, 419.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Images"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Images"
 				}
 
 			}
@@ -642,7 +680,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 195.0, 271.0, 443.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Buffers/"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Buffers/"
 				}
 
 			}
@@ -672,7 +710,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.0, 325.0, 553.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/"
 				}
 
 			}
@@ -703,7 +741,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 197.0, 459.0, 463.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Collections/"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Collections/"
 				}
 
 			}
@@ -863,7 +901,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.0, 152.0, 419.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/"
 				}
 
 			}
@@ -893,7 +931,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 197.0, 218.0, 455.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Externals/"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Externals/"
 				}
 
 			}
@@ -983,7 +1021,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 820.0, 115.0, 325.0, 22.0 ],
 					"style" : "",
-					"text" : "C:/Users/Hugh/Documents/GitHub/source-code/"
+					"text" : "C:/Users/Hugh/Desktop/"
 				}
 
 			}
@@ -1025,7 +1063,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 189.0, 206.5, 189.0 ],
-					"order" : 15,
+					"order" : 16,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1036,7 +1074,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 204.5, 114.0 ],
-					"order" : 18,
+					"order" : 19,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1047,7 +1085,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 486.0, 206.5, 486.0 ],
-					"order" : 13,
+					"order" : 14,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1058,7 +1096,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 354.0, 202.5, 354.0 ],
-					"order" : 19,
+					"order" : 20,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1080,7 +1118,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 776.5, 312.0 ],
-					"order" : 10,
+					"order" : 11,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1091,7 +1129,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 426.0, 208.5, 426.0 ],
-					"order" : 12,
+					"order" : 13,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1102,7 +1140,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 549.0, 204.5, 549.0 ],
-					"order" : 16,
+					"order" : 17,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1113,7 +1151,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 762.0, 312.0, 762.0, 450.0, 776.5, 450.0 ],
-					"order" : 9,
+					"order" : 10,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1124,7 +1162,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 297.0, 204.5, 297.0 ],
-					"order" : 17,
+					"order" : 18,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1135,7 +1173,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 762.0, 312.0, 762.0, 450.0, 753.0, 450.0, 753.0, 594.0, 784.5, 594.0 ],
-					"order" : 7,
+					"order" : 8,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1146,7 +1184,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 243.0, 206.5, 243.0 ],
-					"order" : 14,
+					"order" : 15,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1157,7 +1195,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 46.5, 114.0 ],
-					"order" : 20,
+					"order" : 21,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1168,7 +1206,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 762.0, 312.0, 762.0, 450.0, 753.0, 450.0, 753.0, 657.0, 790.5, 657.0 ],
-					"order" : 6,
+					"order" : 7,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1190,7 +1228,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 762.0, 312.0, 762.0, 450.0, 753.0, 450.0, 753.0, 723.0, 794.5, 723.0 ],
-					"order" : 5,
+					"order" : 6,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1201,7 +1239,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 762.0, 312.0, 762.0, 450.0, 753.0, 450.0, 753.0, 792.0, 800.0, 792.0 ],
-					"order" : 4,
+					"order" : 5,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1212,7 +1250,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 762.0, 312.0, 762.0, 450.0, 753.0, 450.0, 753.0, 855.0, 807.0, 855.0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1223,7 +1261,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 21.0, 114.0, 21.0, 792.0, 44.5, 792.0 ],
-					"order" : 22,
+					"order" : 23,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1234,7 +1272,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 18.0, 114.0, 18.0, 849.0, 44.5, 849.0 ],
-					"order" : 21,
+					"order" : 22,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1245,7 +1283,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 762.0, 312.0, 762.0, 450.0, 753.0, 450.0, 753.0, 525.0, 778.5, 525.0 ],
-					"order" : 8,
+					"order" : 9,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1256,7 +1294,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 18.0, 114.0, 18.0, 966.0, 42.5, 966.0 ],
-					"order" : 23,
+					"order" : 24,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1267,7 +1305,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 18.0, 114.0, 18.0, 909.0, 42.5, 909.0 ],
-					"order" : 24,
+					"order" : 25,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1278,6 +1316,17 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 762.0, 312.0, 762.0, 450.0, 753.0, 450.0, 753.0, 918.0, 807.0, 918.0 ],
+					"order" : 3,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-68", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 725.5, 140.5, 926.5, 140.5 ],
 					"order" : 2,
 					"source" : [ "obj-1", 1 ]
 				}
@@ -1289,7 +1338,7 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 725.5, 312.0, 756.0, 312.0, 756.0, 357.0, 753.0, 357.0, 753.0, 702.0, 654.5, 702.0 ],
-					"order" : 11,
+					"order" : 12,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1907,10 +1956,30 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-67", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-67", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-68", 0 ]
 				}
 
 			}

@@ -94,7 +94,7 @@
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 98.0, 143.0, 58.0, 23.0 ],
@@ -210,7 +210,7 @@
 									"fontface" : 0,
 									"fontsize" : 16.0,
 									"id" : "obj-68",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -276,7 +276,7 @@
 								"box" : 								{
 									"id" : "obj-59",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 399.0, 18.5, 57.0, 23.0 ],
@@ -869,7 +869,6 @@
 									"fontface" : 1,
 									"fontsize" : 18.0,
 									"id" : "obj-28",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -2278,7 +2277,7 @@
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 205.5, 223.0, 369.0, 78.0 ],
 					"style" : "",
-					"text" : "The Music and Sound Design Platform \nMusic_SDP\nBeta 1.1.4a",
+					"text" : "The Music and Sound Design Platform \nMusic_SDP\nBeta 1.1.5",
 					"textjustification" : 1
 				}
 
@@ -2456,13 +2455,13 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "MSDP Icon6a.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.21/System_Files/Images",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fs_toggle.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4.21/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
