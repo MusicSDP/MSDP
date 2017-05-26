@@ -1,5 +1,40 @@
 Music_SDP changelog:
 
+[Beta 1.1.5] 2017-05-26
+
+Major Project Updates:
+
+Sierra support has been implemented - An overhaul to processes behind how we build Music_SDP means that Sierra’s new security measures no longer break the functionality of our program. 
+
+Mac installer is now simpler - No more folder structure, no more extra installs. Just open the installer and follow the one simple step to get everything you need up and running.
+
+Java has been removed - Thanks to a new external, Music_SDP no longer relies on Java to control project file management. Because of this, no user needs to install or maintain any version of Java in order to run Music_SDP on either Windows or MacOS. This also frees up system resources, meaning you should be able to do more in Music_SDP before running out of CPU overhead.
+
+Source-Code includes new launch options - For Max users who want to look at the source code, new launch options have been added, making it easier to test code and to explore patches.
+
+GitHub has relaunched for access to experimental releases - Source-code users may now look to our GitHub repository to find our most recent experimental releases. Keep up-to-date with all of our work as we make headway towards the next stable release, and try out new features along with us.
+
+New Module:
+
+Chopper 2 - New live audio chopper with a multitude of options that allow for unexpected glitchy results. Includes Basic mode, Grid mode, and Keyboard mode.
+
+System Updates:
+
+Music_SDP folder now added to Documents tree - When launching Music_SDP for the first time, either as an application or as source code, a new set of folders will be added to your Documents path. These folders allow Music_SDP to keep track of projects from a central location, and make it easy to add third party modules without having to re-install them when new releases to the application come out.
+
+Cleaner, rewritten project loader - The project loader now closes entirely once a project is selected, freeing up system resources. Behind the scenes, the code has been cleaned up, making it easier for explorers to navigate the inner-workings of the patch.
+
+Fixes:
+
+EZ File Player no longer outputs to a mystery source - The mystery output source has been tracked down and eliminated.
+
+Gater no longer sends out bangs to console when activated
+
+Fixes applied to System Board - Several small fixes and improvements have been made across the system board code.
+
+“Unidentified Developer” issue resolved - We are finally Apple Certified developers, and it is reflected in the installation process on MacOS. Users should no longer encounter “App is Broken” message, or the message stating the Music_SDP is from an “unidentified developer”. You’ll still be asked to confirm that you want to open an application that’s been downloaded from the internet.
+
+
 [Beta 1.1.4a.5] 2017-04-24
 Changed
  	• Replaced all instances of file sys.class with msdpfs external, removing Java dependancy. 
