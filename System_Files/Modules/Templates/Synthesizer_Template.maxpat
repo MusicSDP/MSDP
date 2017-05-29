@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 3,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 433.0, 783.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 744.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -48,7 +48,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -647,7 +647,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1094,7 +1094,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2047,7 +2047,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2375,7 +2375,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2867,7 +2867,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u746010649"
+					"varname" : "u572003622"
 				}
 
 			}
@@ -3510,7 +3510,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3867,7 +3867,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4670,7 +4670,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage fullpatch @savemode 3",
-					"varname" : "presets475570"
+					"varname" : "presets822483"
 				}
 
 			}
@@ -4700,7 +4700,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 934.573486, 640.545715, 104.0, 24.0 ],
-					"pattrstorage" : "presets475570",
+					"pattrstorage" : "presets822483",
 					"presentation" : 1,
 					"presentation_rect" : [ 121.75, 18.0, 104.0, 24.0 ],
 					"style" : ""
@@ -4716,7 +4716,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1252.173584, 499.442322, 110.699951, 21.0 ],
 					"style" : "",
-					"text" : "Preset Code"
+					"text" : "Preset Box"
 				}
 
 			}
@@ -4841,7 +4841,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -5019,7 +5019,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -5238,7 +5238,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -5282,7 +5282,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -5557,7 +5557,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -6558,7 +6558,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -6602,7 +6602,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -6877,7 +6877,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -7938,7 +7938,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -8105,7 +8105,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -8397,7 +8397,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 3,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -9446,7 +9446,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -10579,7 +10579,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 3,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -10703,7 +10703,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 25.0, 326.0, 206.0, 22.0 ],
 									"style" : "",
-									"text" : "tabname Module_Name930"
+									"text" : "tabname Module_Name958"
 								}
 
 							}
@@ -11616,7 +11616,7 @@
 					"destination" : [ "obj-135", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1192.644898, 377.657837, 962.511536, 377.657837, 962.511536, 310.657837, 980.661499, 310.657837 ],
+					"midpoints" : [ 1192.644897, 377.657837, 962.511536, 377.657837, 962.511536, 310.657837, 980.661499, 310.657837 ],
 					"source" : [ "obj-122", 4 ]
 				}
 
@@ -11653,7 +11653,7 @@
 					"destination" : [ "obj-122", 4 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1240.336548, 344.407837, 1234.871558, 344.407837 ],
+					"midpoints" : [ 1240.336548, 344.407837, 1234.871582, 344.407837 ],
 					"source" : [ "obj-125", 1 ]
 				}
 
@@ -11674,7 +11674,7 @@
 					"destination" : [ "obj-122", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1170.336548, 344.407837, 1171.531568, 344.407837 ],
+					"midpoints" : [ 1170.336548, 344.407837, 1171.531616, 344.407837 ],
 					"order" : 1,
 					"source" : [ "obj-126", 1 ]
 				}
@@ -11703,7 +11703,7 @@
 					"destination" : [ "obj-122", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1074.036499, 344.407837, 1044.851587, 344.407837 ],
+					"midpoints" : [ 1074.036499, 344.407837, 1044.851562, 344.407837 ],
 					"source" : [ "obj-128", 1 ]
 				}
 
@@ -11713,7 +11713,7 @@
 					"destination" : [ "obj-122", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1004.036499, 344.407837, 1108.191577, 344.407837 ],
+					"midpoints" : [ 1004.036499, 344.407837, 1108.191528, 344.407837 ],
 					"order" : 0,
 					"source" : [ "obj-135", 1 ]
 				}
@@ -12284,7 +12284,7 @@
 					"destination" : [ "obj-56", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 786.480377, 191.715881, 360.480377, 191.715881 ],
+					"midpoints" : [ 786.480347, 191.715881, 360.480377, 191.715881 ],
 					"source" : [ "obj-218", 1 ]
 				}
 
@@ -12828,7 +12828,7 @@
 					"destination" : [ "obj-100", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1122.41156, 275.157837, 1133.536499, 275.157837, 1133.536499, 204.157837, 980.661499, 204.157837 ],
+					"midpoints" : [ 1122.411621, 275.157837, 1133.536499, 275.157837, 1133.536499, 204.157837, 980.661499, 204.157837 ],
 					"source" : [ "obj-99", 2 ]
 				}
 
@@ -12838,7 +12838,7 @@
 					"destination" : [ "obj-128", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1051.53653, 272.157837, 1052.411499, 272.157837 ],
+					"midpoints" : [ 1051.536499, 272.157837, 1052.411499, 272.157837 ],
 					"source" : [ "obj-99", 1 ]
 				}
 
@@ -12855,12 +12855,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-135" : [ "umenu[2]", "umenu[2]", 0 ],
-			"obj-34" : [ "flonum[3]", "flonum[3]", 0 ],
-			"obj-126" : [ "umenu[5]", "umenu[2]", 0 ],
 			"obj-176::obj-21" : [ "live.dial", "live.dial", 0 ],
+			"obj-34" : [ "flonum[3]", "flonum[3]", 0 ],
 			"obj-128" : [ "umenu[3]", "umenu[3]", 0 ],
-			"obj-125" : [ "umenu[4]", "umenu[3]", 0 ]
+			"obj-135" : [ "umenu[2]", "umenu[2]", 0 ],
+			"obj-125" : [ "umenu[4]", "umenu[3]", 0 ],
+			"obj-126" : [ "umenu[5]", "umenu[2]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -12871,43 +12871,43 @@
 			}
 , 			{
 				"name" : "Load_button.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Save_button.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "New_button.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "demo_synth.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_dial_1.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a/System_Files/Images",
+				"bootpath" : "~/GitHub/source-code/System_Files/Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_sig_out.maxpat",
-				"bootpath" : "~/Desktop/Music_SDP Beta 1.1.4a/System_Files/Includes",
+				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -12961,8 +12961,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
