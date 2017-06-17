@@ -1,6 +1,6 @@
 Music_SDP changelog:
 
-[Beta 1.1.5] 2017-05-26
+[Beta 1.1.5] 2017-5-26
 
 Major Project Updates:
 
