@@ -1,0 +1,17 @@
+{
+	"p3" : 4,
+	"p2" : 3,
+	"p1" : [ 1.0, 2.0 ],
+	"meta" : 	{
+		"function" : "module",
+		"type" : "instrument",
+		"parameters" : 		{
+			"p1" : "list",
+			"p2" : "string",
+			"p3" : "integer"
+		}
+,
+		"patchPath" : "C:/Users/Hugh/Documents/GitHub/source-code/In-Progress/"
+	}
+
+}
