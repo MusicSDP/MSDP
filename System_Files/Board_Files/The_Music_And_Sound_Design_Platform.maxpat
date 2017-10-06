@@ -3303,6 +3303,19 @@
 														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-1",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 195.0, 108.0, 252.0, 22.0 ],
+																	"style" : "",
+																	"text" : "\"~/Documents/Music_SDP/3rd Party Presets\""
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-13",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -4455,7 +4468,7 @@
  ]
 																	}
 ,
-																	"patching_rect" : [ 332.0, 108.0, 123.0, 22.0 ],
+																	"patching_rect" : [ 61.0, 108.0, 123.0, 22.0 ],
 																	"saved_object_attributes" : 																	{
 																		"description" : "",
 																		"digest" : "",
@@ -4657,6 +4670,13 @@
 														"lines" : [ 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-31", 0 ],
+																	"source" : [ "obj-1", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-31", 0 ],
 																	"source" : [ "obj-13", 1 ]
 																}
 
@@ -4678,8 +4698,16 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-13", 0 ],
+																	"destination" : [ "obj-1", 0 ],
 																	"order" : 4,
+																	"source" : [ "obj-20", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-13", 0 ],
+																	"order" : 5,
 																	"source" : [ "obj-20", 0 ]
 																}
 
@@ -4875,14 +4903,14 @@
 														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-1",
+																	"id" : "obj-10",
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 163.0, 121.0, 192.0, 22.0 ],
+																	"patching_rect" : [ 101.0, 121.0, 252.0, 22.0 ],
 																	"style" : "",
-																	"text" : "~/Documents/Music_SDP/Presets"
+																	"text" : "\"~/Documents/Music_SDP/3rd Party Presets\""
 																}
 
 															}
@@ -5000,6 +5028,14 @@
  ],
 														"lines" : [ 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-13", 0 ],
+																	"midpoints" : [ 110.5, 166.0, 172.5, 166.0 ],
+																	"source" : [ "obj-10", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-11", 0 ],
 																	"midpoints" : [ 172.5, 244.0, 172.5, 244.0 ],
 																	"source" : [ "obj-12", 0 ]
@@ -5048,7 +5084,8 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-1", 0 ],
+																	"destination" : [ "obj-10", 0 ],
+																	"midpoints" : [ 767.75, 105.5, 110.5, 105.5 ],
 																	"order" : 4,
 																	"source" : [ "obj-18", 0 ]
 																}
@@ -5057,6 +5094,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-14", 0 ],
+																	"midpoints" : [ 767.75, 105.5, 374.5, 105.5 ],
 																	"order" : 3,
 																	"source" : [ "obj-18", 0 ]
 																}
@@ -5065,6 +5103,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-15", 0 ],
+																	"midpoints" : [ 767.75, 105.5, 643.5, 105.5 ],
 																	"order" : 2,
 																	"source" : [ "obj-18", 0 ]
 																}
@@ -5073,6 +5112,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-16", 0 ],
+																	"midpoints" : [ 767.75, 105.5, 1167.5, 105.5 ],
 																	"order" : 0,
 																	"source" : [ "obj-18", 0 ]
 																}
@@ -5081,6 +5121,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-17", 0 ],
+																	"midpoints" : [ 767.75, 105.5, 912.5, 105.5 ],
 																	"order" : 1,
 																	"source" : [ "obj-18", 0 ]
 																}

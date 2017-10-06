@@ -93,10 +93,10 @@
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 37.125, 101.5, 180.0, 22.0 ],
+					"patching_rect" : [ 37.125, 104.5, 180.0, 22.0 ],
 					"style" : "",
 					"text" : "msdp_preset_manager_innards"
 				}
@@ -175,8 +175,8 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 1 ],
-					"midpoints" : [ 112.125, 99.5, 127.125, 99.5 ],
-					"order" : 1,
+					"midpoints" : [ 112.125, 99.5, 207.625, 99.5 ],
+					"order" : 0,
 					"source" : [ "obj-19", 1 ]
 				}
 
@@ -192,7 +192,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"midpoints" : [ 112.125, 71.0, 135.208313, 71.0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-19", 1 ]
 				}
 
