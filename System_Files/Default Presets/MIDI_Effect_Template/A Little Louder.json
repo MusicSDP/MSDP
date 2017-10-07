@@ -1,0 +1,15 @@
+{
+	"p3" : 1.338583,
+	"meta" : 	{
+		"function" : "module",
+		"type" : "instrument",
+		"parameters" : 		{
+			"p1" : "list",
+			"p2" : "string",
+			"p3" : "integer"
+		}
+,
+		"patchName" : "append Open and Import Preset"
+	}
+
+}
