@@ -1,0 +1,14 @@
+{
+	"meta" : 	{
+		"function" : "module",
+		"type" : "instrument",
+		"parameters" : 		{
+			"p1" : "list",
+			"p2" : "string",
+			"p3" : "integer"
+		}
+
+	}
+,
+	"p3" : "params 4 12088.3273 0.9528 0.9248 params 3 2156.3469 1.0821 1.8679 params 2 269.1970 1.0444 2.4521 params 1 126.7495 1.0246 2.0839 params 0 236.8205 4.9676 1.5105"
+}
