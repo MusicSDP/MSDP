@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2079.0, 55.0, 73.0, 23.0 ],
+					"style" : "",
+					"text" : "fromsymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -3168,7 +3181,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 215.0, 99.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "28"
+									"text" : "110"
 								}
 
 							}
@@ -5072,7 +5085,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"buffername" : "drumbuff541775",
+					"buffername" : "drumbuff887377",
 					"id" : "obj-10",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -5200,7 +5213,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 128.643738, 225.0, 100.0, 23.0 ],
 					"style" : "",
-					"text" : "drumbuff541775"
+					"text" : "drumbuff887377"
 				}
 
 			}
@@ -5213,7 +5226,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 104.643738, 285.0, 120.0, 23.0 ],
 					"style" : "",
-					"text" : "set drumbuff541775"
+					"text" : "set drumbuff887377"
 				}
 
 			}
@@ -8762,6 +8775,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-253", 0 ],
+					"order" : 1,
+					"source" : [ "obj-202", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"order" : 0,
 					"source" : [ "obj-202", 0 ]
 				}
 
@@ -9399,6 +9421,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-253", 0 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-282", 0 ],
 					"order" : 0,
 					"source" : [ "obj-43", 0 ]
@@ -9691,11 +9720,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-43" : [ "dial[1]", "dial", 0 ],
+			"obj-241" : [ "umenu[103]", "umenu[3]", 0 ],
 			"obj-116" : [ "live.dial", "live.dial", 0 ],
 			"obj-123" : [ "dial[34]", "dial", 0 ],
-			"obj-242" : [ "umenu[104]", "umenu[2]", 0 ],
-			"obj-241" : [ "umenu[103]", "umenu[3]", 0 ]
+			"obj-43" : [ "dial[1]", "dial", 0 ],
+			"obj-242" : [ "umenu[104]", "umenu[2]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
