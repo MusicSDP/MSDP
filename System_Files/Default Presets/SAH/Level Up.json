@@ -1,0 +1,22 @@
+{
+	"p5" : 30.0,
+	"p3" : 0.976378,
+	"p12" : [ 0.0, 0.112676, 1.0, 0.633803 ],
+	"p6" : 87.0,
+	"p10" : 8,
+	"p11" : 12,
+	"p2" : [ "Master", "Out", "B", 2 ],
+	"meta" : 	{
+		"function" : "module",
+		"type" : [ "file", "player" ],
+		"parameters" : 		{
+			"p1" : "list",
+			"p2" : "string",
+			"p3" : "integer"
+		}
+,
+		"patchPath" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Board_Files/"
+	}
+,
+	"p4" : 0.503937
+}

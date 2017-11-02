@@ -1,0 +1,37 @@
+{
+	"p4" : [ "notes", 48, 52, 53, 55, 57, 59, 60, 62, 64, 65, 50, 67 ],
+	"p1" : 1,
+	"p6" : 123.076923,
+	"p5" : 123.076923,
+	"p8" : 164.938462,
+	"p7" : 164.938462,
+	"p3" : 0.566929,
+	"p10" : 119,
+	"p12" : 5,
+	"p11" : 4,
+	"p24" : 1,
+	"p14" : 1.0,
+	"p13" : 0.0,
+	"p16" : 2.0,
+	"p15" : 1.0,
+	"p18" : 0.917949,
+	"p20" : 0.01,
+	"p19" : -0.01,
+	"p21" : 17,
+	"p22" : 99.0,
+	"p2" : [ "Master", "Out", "B", 2 ],
+	"meta" : 	{
+		"function" : "module",
+		"type" : [ "file", "player" ],
+		"parameters" : 		{
+			"p1" : "list",
+			"p2" : "string",
+			"p3" : "integer"
+		}
+,
+		"patchPath" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/Instruments/"
+	}
+,
+	"p9" : 111,
+	"p17" : 0.076923
+}
