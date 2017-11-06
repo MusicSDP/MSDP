@@ -1,0 +1,27 @@
+{
+	"p2" : [ "Master", "Out", "Master", 16 ],
+	"p24" : 169.230769,
+	"p3" : 1.0,
+	"p10" : 118,
+	"p9" : 64,
+	"meta" : 	{
+		"function" : "module",
+		"type" : [ "file", "player" ],
+		"parameters" : 		{
+			"p1" : "list",
+			"p2" : "string",
+			"p3" : "integer"
+		}
+,
+		"patchPath" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/Instruments/"
+	}
+,
+	"p32" : 2,
+	"p25" : 169.230769,
+	"p27" : 0.0,
+	"p26" : 0.0,
+	"p29" : 0.0,
+	"p28" : 0.0,
+	"p31" : 0.0,
+	"p30" : 0.0
+}
