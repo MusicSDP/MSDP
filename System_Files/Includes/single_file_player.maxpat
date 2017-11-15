@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1372.0, 745.0 ],
+		"rect" : [ 42.0, 85.0, 895.0, 745.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -257,7 +257,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -792,7 +792,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.164706, 0.176471, 0.172549, 0.0 ],
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 0.988235 ],
 					"fontname" : "Roboto Mono",
 					"fontsize" : 8.0,
 					"format" : 6,
@@ -813,7 +813,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.164706, 0.176471, 0.172549, 0.0 ],
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 0.988235 ],
 					"fontname" : "Roboto Mono",
 					"fontsize" : 8.0,
 					"format" : 6,
@@ -860,7 +860,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 0.99 ],
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 0.988235 ],
 					"fontname" : "Lato Regular",
 					"fontsize" : 9.0,
 					"id" : "obj-30",
@@ -1144,7 +1144,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"fontname" : "Lato Regular",
 					"id" : "obj-26",
 					"maxclass" : "textbutton",
@@ -1512,7 +1512,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"fontname" : "Lato Regular",
 					"fontsize" : 10.0,
 					"id" : "obj-234",
@@ -1536,7 +1536,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"fontname" : "Lato Regular",
 					"id" : "obj-175",
 					"maxclass" : "textbutton",
@@ -1623,7 +1623,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"id" : "obj-60",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -1638,8 +1638,8 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"buffername" : "ezbuff626891",
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 0.988235 ],
+					"buffername" : "ezbuff757981",
 					"id" : "obj-57",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -2648,7 +2648,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-185", 1 ],
-					"midpoints" : [ 430.100006, 318.330566, 482.0, 318.330566 ],
+					"midpoints" : [ 430.1, 318.330566, 482.0, 318.330566 ],
 					"order" : 2,
 					"source" : [ "obj-57", 3 ]
 				}
@@ -2657,7 +2657,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-185", 0 ],
-					"midpoints" : [ 395.899994, 335.330566, 451.0, 335.330566 ],
+					"midpoints" : [ 395.9, 335.330566, 451.0, 335.330566 ],
 					"order" : 2,
 					"source" : [ "obj-57", 2 ]
 				}
@@ -2874,41 +2874,41 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-169::obj-21" : [ "live.dial", "live.dial", 0 ],
-			"obj-25" : [ "flonum[8]", "flonum[3]", 0 ]
+			"obj-25" : [ "flonum[8]", "flonum[3]", 0 ],
+			"obj-169::obj-21" : [ "live.dial", "live.dial", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "grooveduck2.maxpat",
-				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio_loader.maxpat",
-				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_vol_fix.maxpat",
-				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "msdp_dial_s1.maxpat",
-				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/GitHub/source-code/System_Files/Images",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
 				"patcherrelativepath" : "../Images",
 				"type" : "PNG ",
 				"implicit" : 1
@@ -2936,8 +2936,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
