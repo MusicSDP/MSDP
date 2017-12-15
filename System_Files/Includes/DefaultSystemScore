@@ -4,11 +4,11 @@
 3, RepeatScore repeat.txt;
 4, Initial_Event 0;
 5, RecProjToggle 0;
-6, PerformerView 1;
+6, PerformerView 0;
 7, DryMicToggle 0;
 8, mastertempo bpm 120;
 9, mastertempo toggle 0;
-10, TabView 2;
+10, TabView 5;
 11, Limit_Set 1;
 12, bg_pattern 1;
 13, Board_State 0;
