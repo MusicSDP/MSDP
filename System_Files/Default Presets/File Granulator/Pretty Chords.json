@@ -10,7 +10,6 @@
 	"p20" : 3,
 	"p19" : 2,
 	"p18" : 1,
-	"p2" : [ "Master", "Out", "A", 1 ],
 	"p6" : 5699.410628,
 	"p7" : 0.25,
 	"p23" : 0,
@@ -19,19 +18,6 @@
 	"p4" : 2459.319813,
 	"p3" : 1.275591,
 	"p10" : 1.0,
-	"p1" : "Violin_MONO.wav",
 	"p11" : 1,
-	"meta" : 	{
-		"function" : "module",
-		"type" : [ "file", "player" ],
-		"parameters" : 		{
-			"p1" : "list",
-			"p2" : "string",
-			"p3" : "integer"
-		}
-,
-		"patchPath" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/Buffer Effects/"
-	}
-,
 	"p24" : [ "notes", 60, 64, 67, 72, 76, 79, 55, 52, 48, 45 ]
 }

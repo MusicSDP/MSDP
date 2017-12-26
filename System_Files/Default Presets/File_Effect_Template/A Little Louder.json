@@ -1,19 +1,5 @@
 {
-	"p2" : [ "Master", "Out", "Master", 16 ],
 	"p4" : 0,
 	"p5" : 1.0,
-	"p3" : 1.511811,
-	"meta" : 	{
-		"function" : "module",
-		"type" : "instrument",
-		"parameters" : 		{
-			"p1" : "list",
-			"p2" : "string",
-			"p3" : "integer"
-		}
-,
-		"patchPath" : "C:/Users/Hugh/Documents/GitHub/source-code/System_Files/Modules/Templates/",
-		"patchName" : "append Open and Import Preset"
-	}
-
+	"p3" : 1.511811
 }

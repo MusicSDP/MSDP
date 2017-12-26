@@ -1,15 +1,3 @@
 {
-	"p4" : 0.1,
-	"p1" : [ "Mic", 0 ],
-	"meta" : 	{
-		"function" : "module",
-		"type" : "instrument",
-		"parameters" : 		{
-			"p1" : "list",
-			"p2" : "string",
-			"p3" : "integer"
-		}
-
-	}
-
+	"p4" : 0.1
 }
