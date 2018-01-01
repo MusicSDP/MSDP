@@ -1,5 +1,82 @@
 Music_SDP changelog:
 
+[Beta 1.1.6] 2018-01-01
+
+Major Project Updates:
+
+New Preset System
+
+New Modules:
+
+Stochastic Controller
+
+System Updates:
+
+'Project Settings' has been taken off of the Full View tabs and given it's own screen. 'Score Player' has taken it's place on the tabs.
+-
+New 'Project Settings' screen allows users to toggle full view tabs on/off
+-
+Metronome now includes Ableton Link functionality
+-
+Three Drum Kits added to the Drum Machine
+-
+Streamlined the module creation process, automating the parameter in/out tools, preset system, and naming system.
+-
+New folders and functionality added to the Music_SDP Documents folder, including new 3rd party developer functions for presets.
+-
+Developer Panel (in source code) expanded to include quick access to core system components, and easier navigation of panel code.
+-
+Optimizations and re-writes to several core components:
+* System Board
+* Project Loader
+* File Managers
+* Metronome
+* Virtual Instruments
+* App Launcher / Developer Panel
+-
+Darker aesthetic for all modules, in-line with the System Board's darker aesthetic.
+-
+Virtual Keyboard can now be controlled by computer keyboard (if toggled on)
+-
+Module names can now have spaces in them, and it won't break parameter retrieval.
+
+Module Updates:
+
+Stochastic Files and Stochastic Grains now includes new parameters for ADSR and Velocity, as well as polyphony.
+-
+Hand-crafted system presets created for almost every module in the program. Try them out and learn creative ways to use modules!
+-
+More thoughtful default parameters for many modules. Should provide better results when first loading the module.
+-
+Delay renamed to Signal Delay -> fixes issue where Delay fails to load
+-
+Chorus delay time max increased
+-
+Flush button added to Vocoder, and MIDI Arpeggiator sends flush on toggle off.
+-
+Min/Max values for Cent Offset in Additive and A+2 have been removed. Offset should go as low or as high as the user wants.
+
+Fixes:
+
+ReTuner - sends stereo instead of mono signal
+EZ File Player - several fixes
+Audio File Player - parameter load time reduced and file name now re-saves properly.
+Delay and Echo - Auatomation of clear button fixed
+Audio Loader / MIDI Loader / Plugin Loader - grabs new, more accurate project path
+Chopper - Fixes to improve save and preset states. Fixed grid display bug. Fixed buffer name bug.
+Chopper 2 - Fixed keyboard save issue, grid save issue, max segment size save issue, and hold button save issue.
+File Granulator - can now save keyboard notes. Fixed smoother bug, removed unecessary ZL object. Fixed select all on file load issue.
+Live Granulator - can now save keyboard notes and UI improvements
+Looper - Buffer name can now be saved and Auto Start toggle issue resolved.
+Chaos Synth - power button can now be automated / saved. Several fixes to parameter saving. Fixed Note Order bug, and fixed loadmess to frequency range in stochastic mode.
+Stochastic Files and Grains - several parameter saving issues resolved.
+Meta-Box - Processing toggle properly updates on parameter recall.
+EZ MIDI Player - fixed start time bug, added flush on loop restart and when playback is stopped.
+MIDI Explorer - now includes parameter routing
+All Keyboards - fixed a bug where a single note would save, even if no note was selected on the keyboard.
+Drum Machine - Fixed issue where several parameters weren't being saved. Fixed audio file name save issue.
+
+
 [Beta 1.1.5] 2017-5-26
 
 Major Project Updates:
