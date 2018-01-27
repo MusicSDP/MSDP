@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 223.0, 83.0, 410.0, 370.0 ],
+		"rect" : [ 301.0, 118.0, 410.0, 370.0 ],
 		"bgcolor" : [ 0.858824, 0.870588, 0.878431, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,33 @@
 		"subpatcher_template" : "",
 		"title" : "Pedal Board",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -920.0, 449.0, 33.0, 22.0 ],
+					"style" : "",
+					"text" : "load"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-95",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1424.666748, 566.0, 121.0, 31.0 ],
+					"style" : "",
+					"text" : "Popout Board"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-151",
 					"linecount" : 3,
@@ -9518,11 +9545,11 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1424.666748, 575.0, 121.0, 31.0 ],
+					"patching_rect" : [ -920.0, 416.0, 121.0, 31.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 100.0, 7.0, 83.0, 31.0 ],
 					"style" : "",
-					"text" : "Popout Board"
+					"text" : "Load Board"
 				}
 
 			}
@@ -14529,7 +14556,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1407.666748, 757.0, 69.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 223, 83, 633, 453, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 301, 118, 711, 488, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
 				}
@@ -14782,6 +14809,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-253", 1 ],
 					"source" : [ "obj-102", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-130", 0 ],
+					"source" : [ "obj-103", 0 ]
 				}
 
 			}
@@ -15099,6 +15133,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-163", 1 ],
+					"midpoints" : [ -428.5, 951.25, -181.5, 951.25 ],
+					"source" : [ "obj-192", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"midpoints" : [ -439.5, 864.0, -320.25, 864.0, -320.25, 725.0, -303.5, 725.0 ],
 					"source" : [ "obj-192", 0 ]
@@ -15136,7 +15178,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
+					"destination" : [ "obj-103", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -16033,6 +16075,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-95", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-464", 0 ],
 					"source" : [ "obj-96", 0 ]
 				}
@@ -16060,19 +16109,7 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-163", 1 ],
-					"midpoints" : [ -428.5, 951.25, -181.5, 951.25 ],
-					"source" : [ "obj-192", 1 ]
-				}
-
-			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "ModTLoad.maxpat",
 				"bootpath" : "D:/Github/source-code/System_Files/Board_Files",
