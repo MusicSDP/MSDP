@@ -39,13 +39,42 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-85",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1154.0, 474.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-82",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1154.0, 516.0, 98.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend 0_Build"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-83",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1426.0, 655.0, 110.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "reCheck 1 1"
 				}
 
 			}
@@ -70,7 +99,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1135.0, 635.0, 50.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "1 1"
 				}
 
 			}
@@ -90,11 +120,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-79",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1106.5, 666.0, 25.0, 25.0 ],
+					"patching_rect" : [ 1147.5, 714.0, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -159,7 +189,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1256.0, 572.0, 200.0, 22.0 ],
 					"style" : "",
-					"text" : "2_ID 1 1 \"Type Automation ID Here\""
+					"text" : "2_ID 1 1 \"Chorus 518\""
 				}
 
 			}
@@ -313,14 +343,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
-									"linecount" : 7,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 631.5, 301.0, 37.0, 22.0 ],
 									"style" : "",
-									"text" : "\"\\\"Audio File Player 713\\\"\""
+									"text" : "\"Chorus 518\""
 								}
 
 							}
@@ -431,12 +461,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-73",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 290.0, 303.0, 50.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "\"Chorus 518\""
 								}
 
 							}
@@ -717,7 +749,6 @@
 					"fontsize" : 13.0,
 					"id" : "obj-19",
 					"keymode" : 1,
-					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -729,7 +760,7 @@
 					"presentation_rect" : [ 150.5, 6.0, 219.0, 23.0 ],
 					"rounded" : 0.0,
 					"style" : "",
-					"text" : "Type Automation ID Here",
+					"text" : "Chorus 518",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -829,7 +860,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-63",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -917,7 +948,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-56",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -942,7 +973,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-52",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1000,7 +1031,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 110.75, 593.0, 174.0, 22.0 ],
 					"style" : "",
-					"text" : "1_effect 1 1 s"
+					"text" : "1_effect 1 1 Chorus"
 				}
 
 			}
@@ -1029,7 +1060,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 495.0, 143.0, 22.0 ],
 					"style" : "",
-					"text" : "\"Audio File Player\""
+					"text" : "Chorus"
 				}
 
 			}
@@ -1176,7 +1207,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 639.0, 581.0, 118.0, 36.0 ],
 					"style" : "",
-					"text" : "Rmod1 \"Type Automation ID Here\""
+					"text" : "Rmod1 \"Chorus 518\""
 				}
 
 			}
@@ -1184,7 +1215,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-38",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1273,11 +1304,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-32",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1012.0, 120.5, 25.0, 25.0 ],
 					"style" : ""
 				}
@@ -1287,7 +1318,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1324,7 +1355,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 324.5, 573.0, 118.0, 36.0 ],
 					"style" : "",
-					"text" : "2_ID 1 1 \"Type Automation ID Here\""
+					"text" : "2_ID 1 1 \"Chorus 518\""
 				}
 
 			}
@@ -1391,7 +1422,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-12",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1523,7 +1554,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1537,7 +1568,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1633,7 +1664,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1646,7 +1677,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1970,7 +2001,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -1978,7 +2009,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -1986,7 +2017,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -1995,6 +2026,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
 					"order" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-85", 0 ],
+					"order" : 1,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -2228,7 +2267,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-61", 0 ]
 				}
 
@@ -2244,7 +2283,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-80", 1 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-61", 0 ]
 				}
 
@@ -2253,6 +2292,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-83", 0 ],
 					"source" : [ "obj-61", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-85", 1 ],
+					"order" : 1,
+					"source" : [ "obj-61", 0 ]
 				}
 
 			}
@@ -2365,21 +2412,26 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-79", 0 ],
 					"source" : [ "obj-83", 0 ]
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "choose_1.maxpat",
-				"bootpath" : "~/Documents/GitHub/Music_SDP_Files/Tests/pMode_Tests",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"source" : [ "obj-85", 0 ]
+				}
+
 			}
  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
