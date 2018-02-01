@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1639.0, 809.0 ],
+		"rect" : [ 26.0, 85.0, 1639.0, 809.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -120,7 +120,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-79",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -749,6 +749,7 @@
 					"fontsize" : 13.0,
 					"id" : "obj-19",
 					"keymode" : 1,
+					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -760,7 +761,7 @@
 					"presentation_rect" : [ 150.5, 6.0, 219.0, 23.0 ],
 					"rounded" : 0.0,
 					"style" : "",
-					"text" : "Chorus 518",
+					"text" : "Type Automation ID Here",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -860,7 +861,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-63",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -948,7 +949,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-56",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -973,7 +974,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-52",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1031,7 +1032,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 110.75, 593.0, 174.0, 22.0 ],
 					"style" : "",
-					"text" : "1_effect 1 1 Chorus"
+					"text" : "1_effect 1 1 s"
 				}
 
 			}
@@ -1215,7 +1216,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-38",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1304,11 +1305,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-32",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1012.0, 120.5, 25.0, 25.0 ],
 					"style" : ""
 				}
@@ -1318,7 +1319,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-13",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1422,7 +1423,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-12",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1554,7 +1555,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1568,7 +1569,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1664,7 +1665,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1677,7 +1678,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2432,6 +2433,15 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "choose_1.maxpat",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Board_Files",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
