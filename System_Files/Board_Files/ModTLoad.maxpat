@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 26.0, 85.0, 1639.0, 809.0 ],
+		"rect" : [ 42.0, 85.0, 1468.0, 713.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -45,7 +45,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1154.0, 474.0, 50.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "1 1"
 				}
 
 			}
@@ -189,7 +190,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1256.0, 572.0, 200.0, 22.0 ],
 					"style" : "",
-					"text" : "2_ID 1 1 \"Chorus 518\""
+					"text" : "2_ID 1 1 \"Type Automation ID Here\""
 				}
 
 			}
@@ -461,14 +462,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-73",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 290.0, 303.0, 50.0, 22.0 ],
-									"style" : "",
-									"text" : "\"Chorus 518\""
+									"style" : ""
 								}
 
 							}
@@ -786,12 +785,12 @@
 				"box" : 				{
 					"id" : "obj-61",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 703.0, 147.0, 148.0, 22.0 ],
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 703.0, 147.0, 207.0, 22.0 ],
 					"style" : "",
-					"text" : "route location getLocation"
+					"text" : "route location getLocation deleteMod"
 				}
 
 			}
@@ -1030,7 +1029,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 110.75, 593.0, 174.0, 22.0 ],
+					"patching_rect" : [ 110.75, 593.0, 212.0, 22.0 ],
 					"style" : "",
 					"text" : "1_effect 1 1 s"
 				}
@@ -1059,9 +1058,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 495.0, 143.0, 22.0 ],
+					"patching_rect" : [ 50.0, 495.0, 147.0, 22.0 ],
 					"style" : "",
-					"text" : "Chorus"
+					"text" : "\"-- REMOVE MODULE --\""
 				}
 
 			}
@@ -1208,7 +1207,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 639.0, 581.0, 118.0, 36.0 ],
 					"style" : "",
-					"text" : "Rmod1 \"Chorus 518\""
+					"text" : "Rmod1 \"Type Automation ID Here\""
 				}
 
 			}
@@ -1356,7 +1355,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 324.5, 573.0, 118.0, 36.0 ],
 					"style" : "",
-					"text" : "2_ID 1 1 \"Chorus 518\""
+					"text" : "2_ID 1 1 \"Type Automation ID Here\""
 				}
 
 			}
@@ -1654,7 +1653,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 230.0, 315.0, 129.0, 31.0 ],
+					"patching_rect" : [ 225.0, 318.0, 129.0, 31.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 1.0, 145.0, 31.0 ],
 					"viewvisibility" : 1
@@ -2278,6 +2277,13 @@
 					"destination" : [ "obj-76", 0 ],
 					"order" : 0,
 					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"source" : [ "obj-61", 2 ]
 				}
 
 			}
