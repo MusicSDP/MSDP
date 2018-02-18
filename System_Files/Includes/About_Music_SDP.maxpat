@@ -1607,8 +1607,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2223,7 +2223,7 @@
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 205.5, 223.0, 369.0, 78.0 ],
 					"style" : "",
-					"text" : "The Music and Sound Design Platform \nMusic_SDP\nBeta 1.1.6",
+					"text" : "The Music and Sound Design Platform \nMusic_SDP\nBeta 1.2.0",
 					"textjustification" : 1
 				}
 
