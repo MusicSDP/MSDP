@@ -210,7 +210,7 @@
 									"fontface" : 0,
 									"fontsize" : 16.0,
 									"id" : "obj-68",
-									"linecount" : 4,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -1607,8 +1607,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2223,7 +2223,7 @@
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 205.5, 223.0, 369.0, 78.0 ],
 					"style" : "",
-					"text" : "The Music and Sound Design Platform \nMusic_SDP\nBeta 1.2.0",
+					"text" : "The Music and Sound Design Platform \nMusic_SDP\nBeta 1.2.0.1",
 					"textjustification" : 1
 				}
 
@@ -2379,14 +2379,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "MSDP Icon6a.png",
-				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
+				"bootpath" : "D:/Github/source-code/System_Files/Images",
 				"patcherrelativepath" : "../Images",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fs_toggle.maxpat",
-				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "D:/Github/source-code/System_Files/Includes",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
