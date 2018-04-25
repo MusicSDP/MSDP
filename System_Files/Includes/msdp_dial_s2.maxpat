@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 452.0, 170.0, 856.0, 805.0 ],
+		"rect" : [ 452.0, 170.0, 1075.0, 805.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"linecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 236.0, 137.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 31.0, 32.0, 7.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 577.0, 118.0, 30.0, 23.0 ],
+					"patching_rect" : [ 580.0, 122.0, 30.0, 23.0 ],
 					"style" : "",
 					"text" : "+ 1."
 				}
@@ -56,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 577.0, 83.5, 42.0, 23.0 ],
+					"patching_rect" : [ 580.0, 87.5, 42.0, 23.0 ],
 					"style" : "",
 					"text" : "* 0.01"
 				}
@@ -68,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 578.0, 30.0, 102.0, 21.0 ],
+					"patching_rect" : [ 581.0, 34.0, 102.0, 21.0 ],
 					"style" : "",
 					"text" : "scaling exponent"
 				}
@@ -81,7 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 577.0, 49.0, 76.0, 23.0 ],
+					"patching_rect" : [ 580.0, 53.0, 76.0, 23.0 ],
 					"style" : "",
 					"text" : "loadmess #5"
 				}
@@ -181,11 +194,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 309.0, 196.0, 49.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 28.0, 29.0, 19.0 ],
+					"presentation_rect" : [ 2.0, 29.0, 29.0, 19.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"triangle" : 0,
-					"tricolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
+					"tricolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"triscale" : 0.75
 				}
 
@@ -659,7 +672,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 262.0, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 261.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -841,7 +854,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 309.0, 134.0, 36.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.5, 3.0, 26.0, 26.0 ],
+					"presentation_rect" : [ 3.0, 4.0, 26.0, 26.0 ],
 					"trackvertical" : 1
 				}
 
@@ -867,28 +880,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-4",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 301.0, 130.0, 50.0, 42.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 32.0, 32.0 ],
-					"proportion" : 0.39,
-					"rounded" : 0,
-					"shadow" : -1,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
+					"bgcolor" : [ 0.4, 0.870588, 0.811765, 1.0 ],
 					"border" : 1,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-25",
@@ -1043,7 +1035,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 1 ],
-					"midpoints" : [ 38.5, 124.5, 258.5, 124.5 ],
+					"midpoints" : [ 38.5, 124.5, 255.166667, 124.5 ],
 					"order" : 0,
 					"source" : [ "obj-45", 0 ]
 				}
@@ -1061,7 +1053,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 2 ],
-					"midpoints" : [ 199.5, 147.5, 268.5, 147.5 ],
+					"midpoints" : [ 199.5, 147.5, 261.833333, 147.5 ],
 					"order" : 0,
 					"source" : [ "obj-46", 0 ]
 				}
@@ -1119,10 +1111,6 @@
 
 			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "cyan_light_knob.png",
 				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",

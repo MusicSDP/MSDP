@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 452.0, 170.0, 1075.0, 805.0 ],
+		"rect" : [ 203.0, 231.0, 1075.0, 805.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"linecolor" : [ 0.4, 0.870588, 0.811765, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 236.0, 137.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 31.0, 32.0, 7.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
@@ -183,9 +196,9 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 29.0, 29.0, 19.0 ],
 					"style" : "",
-					"textcolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
+					"textcolor" : [ 0.4, 0.870588, 0.811765, 1.0 ],
 					"triangle" : 0,
-					"tricolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
+					"tricolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"triscale" : 0.75
 				}
 
@@ -870,27 +883,6 @@
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"border" : 1,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-4",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 301.0, 130.0, 50.0, 42.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 1.0, 31.0, 31.0 ],
-					"proportion" : 0.39,
-					"rounded" : 0,
-					"shadow" : -1,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-25",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -1043,7 +1035,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 1 ],
-					"midpoints" : [ 38.5, 124.5, 258.5, 124.5 ],
+					"midpoints" : [ 38.5, 124.5, 255.166667, 124.5 ],
 					"order" : 0,
 					"source" : [ "obj-45", 0 ]
 				}
@@ -1061,7 +1053,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 2 ],
-					"midpoints" : [ 199.5, 147.5, 268.5, 147.5 ],
+					"midpoints" : [ 199.5, 147.5, 261.833333, 147.5 ],
 					"order" : 0,
 					"source" : [ "obj-46", 0 ]
 				}
@@ -1119,10 +1111,6 @@
 
 			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "cyan_light_knob.png",
 				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
