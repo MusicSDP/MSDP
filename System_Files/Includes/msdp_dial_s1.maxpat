@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 203.0, 231.0, 1075.0, 805.0 ],
+		"rect" : [ 642.0, 324.0, 1075.0, 805.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 236.0, 137.0, 5.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 31.0, 32.0, 7.0 ]
+					"presentation_rect" : [ 0.0, 34.0, 32.0, 7.0 ]
 				}
 
 			}
@@ -194,7 +194,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 309.0, 196.0, 49.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 29.0, 29.0, 19.0 ],
+					"presentation_rect" : [ 2.0, 32.0, 29.0, 19.0 ],
 					"style" : "",
 					"textcolor" : [ 0.4, 0.870588, 0.811765, 1.0 ],
 					"triangle" : 0,
@@ -854,14 +854,14 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 309.0, 134.0, 36.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 4.0, 26.0, 26.0 ],
+					"presentation_rect" : [ 3.0, 7.0, 26.0, 26.0 ],
 					"trackvertical" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.164706, 0.176471, 0.172549, 0.0 ],
+					"bgcolor" : [ 0.094118, 0.101961, 0.101961, 0.0 ],
 					"fontsize" : 10.0,
 					"id" : "obj-7",
 					"maxclass" : "comment",
@@ -869,7 +869,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 304.0, 111.0, 43.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 222.0, 89.0, 48.0, 18.0 ],
+					"presentation_rect" : [ 122.0, 15.0, 32.0, 18.0 ],
 					"style" : "",
 					"text" : "#1",
 					"textcolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
@@ -890,7 +890,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 301.0, 111.0, 50.0, 78.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 32.0, 45.0 ],
+					"presentation_rect" : [ 0.0, 2.5, 32.0, 45.5 ],
 					"proportion" : 0.39,
 					"rounded" : 10,
 					"shadow" : -1,
@@ -1113,7 +1113,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
+				"bootpath" : "D:/Github/source-code/System_Files/Images",
 				"patcherrelativepath" : "../Images",
 				"type" : "PNG ",
 				"implicit" : 1

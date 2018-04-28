@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -91,19 +91,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 48.5, 194.0, 165.0, 89.0 ],
-					"style" : "",
-					"text" : "Insert the name of your module into this sprintf here ---------------------------------->\n\nKeep the %s after it, do NOT add a space"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-7",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -139,7 +126,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 25.0, 326.0, 206.0, 22.0 ],
 					"style" : "",
-					"text" : "tabname EZ Audio Player120"
+					"text" : "tabname Dial_Tutorial 837"
 				}
 
 			}
