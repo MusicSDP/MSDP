@@ -38,6 +38,290 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-81",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1351.829712, 944.0, 56.0, 22.0 ],
+					"style" : "",
+					"text" : "pack 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1351.829712, 984.423584, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend p6"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"blackkeycolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"id" : "obj-79",
+					"maxclass" : "kslider",
+					"mode" : 1,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"offset" : 48,
+					"outlettype" : [ "int", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1351.829712, 869.423584, 481.0, 57.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 336.0, 53.0 ],
+					"range" : 64,
+					"style" : "",
+					"varname" : "kslider[1]",
+					"whitekeycolor" : [ 0.803922, 0.898039, 0.909804, 0.3 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Lato",
+					"fontsize" : 14.0,
+					"id" : "obj-76",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "flush" ],
+					"patching_rect" : [ 1029.956909, 259.0, 173.0, 25.0 ],
+					"style" : "",
+					"text" : "msdp.param.keyboard p17",
+					"varname" : "p15[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-74",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 759.0, 1248.0, 163.0, 117.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 402.72937, 561.779785, 335.0, 62.0 ],
+					"style" : "",
+					"text" : "Keyboard is a special parameter to organize all the MSDP keyboard functions. Learn more in the synthesizer template. There is only one default argument for this tool, and that's parameter name"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 295.26062, 1462.0, 112.0, 22.0 ],
+					"style" : "",
+					"text" : "send~ MasterOutR"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 171.26062, 1462.0, 110.0, 22.0 ],
+					"style" : "",
+					"text" : "send~ MasterOutL"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "flush" ],
+					"patching_rect" : [ 45.26062, 1369.635254, 147.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 27.328125, 540.635254, 145.0, 22.0 ],
+					"style" : "",
+					"text" : "msdp.param.keyboard p6",
+					"varname" : "p6"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"id" : "obj-77",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 149.460632, 1210.041748, 94.906067, 20.5 ],
+					"style" : "",
+					"text" : "FLUSH",
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"texton" : "",
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 148.26062, 1186.910156, 150.0, 20.0 ],
+					"presentation_rect" : [ 649.0, 83.0, 150.0, 21.0 ],
+					"style" : "",
+					"text" : "Emergency All-Notes-Off"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"id" : "obj-516",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 45.26062, 1255.104736, 94.906067, 20.5 ],
+					"style" : "",
+					"text" : "Controller OFF",
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"texton" : "Controller ON",
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textovercolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
+					"usetextovercolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-226",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 171.26062, 1426.325439, 124.0, 22.0 ],
+					"presentation_rect" : [ 288.980377, 355.056458, 124.0, 23.0 ],
+					"style" : "",
+					"text" : "poly~ demo_synth 16"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-190",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 45.26062, 1226.119629, 72.0, 22.0 ],
+					"presentation_rect" : [ -33.644714, 56.056458, 72.0, 23.0 ],
+					"style" : "",
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-212",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 173.26062, 1258.353638, 72.0, 22.0 ],
+					"presentation_rect" : [ 187.265961, 81.375305, 72.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"fontface" : 1,
+					"fontname" : "Roboto Mono Light",
+					"fontsize" : 12.0,
+					"id" : "obj-213",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 173.26062, 1324.02417, 53.0, 24.0 ],
+					"style" : "",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"varname" : "moct"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-214",
+					"maxclass" : "incdec",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 173.26062, 1281.923584, 22.0, 40.0 ],
+					"presentation_rect" : [ 187.265961, 108.375305, 22.0, 40.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Lato Regular",
+					"fontsize" : 12.0,
+					"id" : "obj-215",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 173.26062, 1234.03479, 64.0, 21.0 ],
+					"style" : "",
+					"text" : "Oct. +/-"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"blackkeycolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"id" : "obj-218",
+					"maxclass" : "kslider",
+					"mode" : 1,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"offset" : 48,
+					"outlettype" : [ "int", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 260.385712, 1264.923584, 481.0, 57.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 27.328125, 570.279785, 370.0, 45.0 ],
+					"range" : 64,
+					"style" : "",
+					"varname" : "kslider",
+					"whitekeycolor" : [ 0.803922, 0.898039, 0.909804, 0.3 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-62",
@@ -58,7 +342,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1632.432861, 986.212463, 119.0, 22.0 ],
+					"patching_rect" : [ 1623.316895, 1099.212402, 119.0, 22.0 ],
 					"style" : "",
 					"text" : "msdp.module.saving",
 					"varname" : "pSave"
@@ -73,7 +357,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1730.432861, 1015.317017, 25.0, 25.0 ],
+					"patching_rect" : [ 1721.316895, 1128.317017, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -86,7 +370,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1605.496826, 1081.0, 158.313965, 21.0 ],
+					"patching_rect" : [ 1596.380859, 1194.0, 158.313965, 21.0 ],
 					"style" : "",
 					"text" : "Select / Save / Open Presets",
 					"textjustification" : 2
@@ -107,7 +391,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1585.682861, 1108.0, 210.5, 25.923401 ],
+					"patching_rect" : [ 1576.566895, 1221.0, 210.5, 25.923401 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 38.0, 3.148438, 210.5, 29.0 ],
 					"viewvisibility" : 1
@@ -120,7 +404,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1587.940674, 986.212463, 42.5, 20.0 ],
+					"patching_rect" : [ 1578.824707, 1099.212402, 43.0, 20.0 ],
 					"style" : "",
 					"text" : "pSave"
 				}
@@ -134,7 +418,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1475.668457, 950.0, 282.150757, 21.0 ],
+					"patching_rect" : [ 1466.55249, 1063.0, 282.150757, 21.0 ],
 					"style" : "",
 					"text" : "Gather, Save, and Recall Parameters into Preset Files",
 					"textjustification" : 2
@@ -149,7 +433,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1632.432861, 1013.212463, 25.0, 25.0 ],
+					"patching_rect" : [ 1623.316895, 1126.212402, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -165,7 +449,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1472.491211, 1013.212463, 74.227295, 20.0 ],
+					"patching_rect" : [ 1463.375244, 1126.212402, 74.227295, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 250.5, 8.945313, 62.5625, 17.40625 ],
 					"style" : "",
@@ -185,7 +469,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1578.491211, 1073.571777, 25.0, 25.0 ],
+					"patching_rect" : [ 1569.375244, 1186.571777, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -199,7 +483,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1472.491211, 1044.034424, 125.0, 22.0 ],
+					"patching_rect" : [ 1463.375244, 1157.034424, 125.0, 22.0 ],
 					"style" : "",
 					"text" : "msdp.module.naming",
 					"varname" : "namerBox"
@@ -215,7 +499,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1472.491211, 988.706116, 72.0, 22.0 ],
+					"patching_rect" : [ 1463.375244, 1101.706177, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess 0"
 				}
@@ -230,7 +514,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1475.668457, 1073.571777, 69.0, 22.0 ],
+					"patching_rect" : [ 1466.55249, 1186.571777, 69.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
@@ -313,7 +597,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1336.241211, 949.0, 125.125, 35.0 ],
+					"patching_rect" : [ 1327.125244, 1062.0, 125.125, 35.0 ],
 					"style" : "",
 					"text" : "Optional Meta Build and Priority Set Code",
 					"textjustification" : 2
@@ -326,7 +610,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1351.829712, 1081.0, 81.0, 20.0 ],
+					"patching_rect" : [ 1342.713745, 1194.0, 81.0, 20.0 ],
 					"style" : "",
 					"text" : "priorityBang"
 				}
@@ -628,7 +912,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1343.829712, 1107.717529, 98.0, 22.0 ],
+					"patching_rect" : [ 1334.713745, 1220.717529, 98.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -843,7 +1127,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1346.329712, 1054.0, 79.0, 22.0 ],
+					"patching_rect" : [ 1337.213745, 1167.0, 79.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -865,7 +1149,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1346.329712, 994.0, 92.0, 22.0 ],
+					"patching_rect" : [ 1337.213745, 1107.0, 92.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess path"
 				}
@@ -878,7 +1162,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1346.329712, 1021.0, 69.0, 22.0 ],
+					"patching_rect" : [ 1337.213745, 1134.0, 69.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
@@ -1056,13 +1340,13 @@
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-87",
-					"linecount" : 7,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 40.0, 286.0, 1377.0, 124.0 ],
+					"patching_rect" : [ 40.0, 286.0, 1377.0, 141.0 ],
 					"style" : "",
-					"text" : "There are five msdp.param objects (so far); three objects that serve unique purposes, and two variants that exist to help with module loading.\n1. msdp,param - this receives and sends any value through to the UI object\n2. msdp.param.defer - this works the same way, but the initial value will not be set until the rest of the module loads. This can help with order of events\n3. msdp.param.line - this receives a float, an int, or a pair of numbers, either [int int], [int float], [float int]. or [float float]. If you only send one vaue in, it will set the UI object to that value immediately. If you send it a pair of values, however, the UI object will ramp from the current value to the first value in the pair, over a duration in milliseconds set by the second number in the pair. See the included test for further explanation.\n4. msdp.param.line.defer - works like the param.line object, but defers the initial value set until the rest of the module has loaded.  THIS MUST BE USED FOR MSDP DIALS!\n5. msdp.param.textedit - this includes some additional functions to specifically required for the textedit object. Otherwise, it works identically to the msdp.param object "
+					"text" : "There are six msdp.param objects (so far); four objects that serve unique purposes, and two variants that exist to help with module loading.\n1. msdp,param - this receives and sends any value through to the UI object\n2. msdp.param.defer - this works the same way, but the initial value will not be set until the rest of the module loads. This can help with order of events\n3. msdp.param.line - this receives a float, an int, or a pair of numbers, either [int int], [int float], [float int]. or [float float]. If you only send one vaue in, it will set the UI object to that value immediately. If you send it a pair of values, however, the UI object will ramp from the current value to the first value in the pair, over a duration in milliseconds set by the second number in the pair. See the included test for further explanation.\n4. msdp.param.line.defer - works like the param.line object, but defers the initial value set until the rest of the module has loaded.  THIS MUST BE USED FOR MSDP DIALS!\n5. msdp.param.textedit - this includes some additional functions to specifically required for the textedit object. Otherwise, it works identically to the msdp.param object \n6. msdp.param.keyboard - this includes several additional functions specifically for our MIDI I/O routing. The only argument for this object is parameter name."
 				}
 
 			}
@@ -1446,9 +1730,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1164.614014, 904.755859, 73.0, 22.0 ],
+					"patching_rect" : [ 1164.614014, 904.755859, 117.0, 22.0 ],
 					"style" : "",
-					"text" : "pvar backIn"
+					"text" : "pattrforward pRoute"
 				}
 
 			}
@@ -1896,7 +2180,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1337.241211, 944.0, 130.25, 206.0 ],
+					"patching_rect" : [ 1328.125244, 1057.0, 130.25, 206.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -1932,7 +2216,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1466.491211, 944.0, 338.428162, 206.0 ],
+					"patching_rect" : [ 1457.375244, 1057.0, 338.428162, 206.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -2001,6 +2285,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-516", 0 ],
+					"source" : [ "obj-190", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"midpoints" : [ 64.5, 742.387054, 40.5, 742.387054, 40.5, 665.0, 64.5, 665.0 ],
 					"source" : [ "obj-2", 0 ]
@@ -2012,6 +2303,57 @@
 					"destination" : [ "obj-46", 0 ],
 					"midpoints" : [ 1033.806763, 791.0, 1100.748657, 791.0 ],
 					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-214", 0 ],
+					"source" : [ "obj-212", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 5 ],
+					"source" : [ "obj-213", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-213", 0 ],
+					"source" : [ "obj-214", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 3 ],
+					"midpoints" : [ 731.885712, 1365.279465, 131.56062, 1365.279465 ],
+					"source" : [ "obj-218", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 2 ],
+					"midpoints" : [ 269.885712, 1359.279465, 105.96062, 1359.279465 ],
+					"source" : [ "obj-218", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 0 ],
+					"source" : [ "obj-226", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-226", 1 ]
 				}
 
 			}
@@ -2032,7 +2374,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 1 ],
-					"midpoints" : [ 1481.991211, 1037.718842, 1587.991211, 1037.718842 ],
+					"midpoints" : [ 1472.875244, 1150.718842, 1578.875244, 1150.718842 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -2201,6 +2543,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"source" : [ "obj-516", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-55", 0 ]
 				}
@@ -2223,6 +2572,21 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-218", 0 ],
+					"midpoints" : [ 54.76062, 1401.635254, 246.323166, 1401.635254, 246.323166, 1253.923584, 269.885712, 1253.923584 ],
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-226", 0 ],
+					"source" : [ "obj-66", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
 					"midpoints" : [ 64.5, 1053.310639, 39.5, 1053.310639, 39.5, 931.774109, 64.5, 931.774109 ],
 					"source" : [ "obj-75", 0 ]
@@ -2231,8 +2595,43 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-66", 4 ],
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 1 ],
+					"source" : [ "obj-79", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-80", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"source" : [ "obj-81", 0 ]
 				}
 
 			}
@@ -2323,6 +2722,20 @@
 			}
 , 			{
 				"name" : "msdp.module.saving.maxpat",
+				"bootpath" : "D:/Github/source-code/System_Files/Includes",
+				"patcherrelativepath" : "../../Includes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "demo_synth.maxpat",
+				"bootpath" : "D:/Github/source-code/System_Files/Includes",
+				"patcherrelativepath" : "../../Includes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "msdp.param.keyboard.maxpat",
 				"bootpath" : "D:/Github/source-code/System_Files/Includes",
 				"patcherrelativepath" : "../../Includes",
 				"type" : "JSON",
