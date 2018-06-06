@@ -1,4 +1,4 @@
-outlets = 4;
+outlets = 5;
 // establish the list of necessary objects and arrays
 var timestamp = new Date()
 var msdp = {
@@ -6,257 +6,407 @@ var msdp = {
     "uName": "UUID",
     "data": 3,
     "appState": {
-      "major": 1, "minor": 3, "revision": 0,
+      "major": 1, "minor": 2, "revision": 1,
       "state": "app"
     },
     "os": "Windows",
     "io": {
-      "driver": "driver", "in": "microphone", "out": "speakers"
+      "driver": "driver", "in": "microphone", "out": "speakers", "sampleRate": 44000, "ioVector": 512, "sigVector": 64
     },
     "settings": {
-      "dac": true, "limiter": true,
-      "fullScreen": true, "fullView": false,
+      "dac": 1, "limiter": 1,
+      "fullScreen": 1, "fullView": 0,
       "defaultViews": {
-        "performer": false, "mixer": false, "score": false,
-        "metronome": false, "controller": true, "browser": true },
-      "dryMics": false, "recordedInProject": false,
-      "sampleRate": 44000, "ioVector": 512, "sigVector": 64,
+        "performer": 0, "mixer": 0, "score": 0,
+        "metronome": 0, "controller": 1, "browser": 1 },
+      "dryMics": 0, "recordedInProject": 0,
       "keyboardMIDI": false, "keyOctave": 4
     },
-	"lastOpened": timestamp, "lastUpdated" : timestamp
+    "lastOpened": timestamp, "lastUpdated" : timestamp,
   },
   "project": {
-    "title": "New Project",
+    "title": "New Project", 'path': 'C:/msdpProject',
     "settings": {
-      "dac": true, "limiter": true,
-      "fullScreen": true, "fullView": false,
+      "dac": 1, "limiter": 1,
+      "fullScreen": 1, "fullView": 0,
       "defaultViews": {
-        "performer": false, "mixer": false, "score": false,
-        "metronome": false, "controller": true, "browser": true },
-      "dryMics": false, "recordedInProject": false,
+        "performer": 0, "mixer": 0, "score": 0,
+        "metronome": 0, "controller": 1, "browser": 1 },
+      "dryMics": 0, "recordedInProject": 0,
       "sampleRate": 44000, "ioVector": 512, "sigVector": 64,
       "keyboardMIDI": false, "keyOctave": 4
     },
     "assets": {
-      "savedBoards": [],
-      "savedScores": [],
-      "savedAudio": [],
-      "savedMIDI": [],
-      "savedPlugins": [],
-      "recordedAudio": []
-    },
+      "scores": [], "audio": [], "midi": [], "plugins": [] },
     "openBoards": [], "savedBoards": []
   }
 };
+//initialize the session objects
+var session = {
+  'sessionBoards': [],
+  'boardPointers': {}
+};
+
 //update time and output the object as a JSON string
 function projectOut(){
   msdp.system.lastUpdated = new Date();
   outlet(0, JSON.stringify(msdp, null, 4));
-}
-function newBoard(title){
-  for(b in msdp.project.openBoards) {
-      if(msdp.project.openBoards[b]['title'] === title) {
-          outlet (1, "Board "+ title + " already exists.");
-          uuid = simpleRan();
-          msdp.project.openBoards.push({ "title": title + "_" + uuid, "power": 1, "modules": [] });
-      	  outlet (1, "Board " + title + "_" + uuid + " built");
-          return;
+};
+
+function sessionOut(){
+  outlet(3, JSON.stringify(session, null, 4));
+};
+
+function newProject(title, path){
+  msdp.project.title = title;
+  msdp.project.settings = msdp.system.settings;
+  msdp.project.assets = {"scores": [], "audio": [], "midi": [], "plugins": []};
+  msdp.project.openBoards = [];
+  msdp.project.savedBoards = [];
+  session.sessionBoards = [];
+  session.boardPointers = [];
+  export('project', path);
+};
+
+function add(type, v, v2){
+  var ran = simpleRan();
+  if(type === 'board'){ // build a new board
+    typeof v === 'undefined' ? v = 'Board_' + ran : v = v ;
+    if(session.boardPointers.hasOwnProperty(v) === true){v = v + '_' + ran};
+    session.sessionBoards.push({ "title": v, "position": [0, 0, 0, 0], "power": 1, "modules": [] });
+    session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': v, "open": 1, 'modules': {}};
+  } else if (type === 'module') { // add a module to an existing board
+    i = session.boardPointers[v].index;
+    m = session.boardPointers[v].modules;
+    if(session.boardPointers[v]['modules'].hasOwnProperty(v2) === true){v2 = v2 + '_' + ran};
+    session.sessionBoards[i].modules.push({ "location": [0, 0], "process": "Choose One", "id": v2, "parameters": { "p3": "1.0" }});
+    session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'exists': 1};
+  } else if (type === 'asset') { // add an asset to the asset list
+    msdp.project.assets[v].push(v2);
+    outlet (1, v2 + " added to the " + v + " list");
+  };
+};
+
+function remove(type, v, v2){
+  if(type === 'savedBoard'){ // remove board from saved list
+    for (b in msdp.project.savedBoards) {
+      if(msdp.project.savedBoards[b]['title'] === v) {
+        msdp.project.savedBoards.splice(b, 1);
+        outlet (1, 'board ' + v +' removed from saved board list');
+        return;
       }
-  }
-  msdp.project.openBoards.push({ "title": title, "power": 1, "modules": [] });
-  outlet (1, "Board " + title + " built");
-};
-
-function findBoard(title) {
-  for(b in msdp.project.openBoards) {
-    if(msdp.project.openBoards[b]['title'] === title) {
-      outlet (1, "Board " + title + " found");
-      outlet (2, JSON.stringify(msdp.project.openBoards[b], null, 4));
-      return;
     }
-  }
-  outlet (1, "board " + title + " not found");
-};
-
-function saveBoard(title){
-  for (b in msdp.project.openBoards) {
-    if(msdp.project.openBoards[b]['title'] === title) {
-      for (var c in msdp.project.savedBoards) {
-        if(msdp.project.savedBoards[c]['title'] === title) {
-          outlet (1, "Board " + title + " updated");
-          msdp.project.savedBoards.splice(c, 1, JSON.parse(JSON.stringify(msdp.project.openBoards[b])));
+    post ('board ' + v +' not found in saved board list');
+  } else if (type === 'openBoard'){
+    session.boardPointers[v]['open'] = 0;
+  } else if (type === 'module') { // remove module from an existing board
+      session.boardPointers[v]['modules'][v2]['exists'] = 0;
+  } else if (type === 'asset') { // remove an asset from the asset list
+      for (a in msdp.project.assets[v]) {
+        if(msdp.project.assets[v][a] === v2) {
+          msdp.project.assets[v].splice(a, 1);
+          outlet (1, v2 + ' at ' + v +' removed');
           return;
         }
       }
-      outlet (1, "Board " + title + " added to saved list");
-      msdp.project.savedBoards.push(JSON.parse(JSON.stringify(msdp.project.openBoards[b])));
-      return;
-    }
-  }
-  outlet (1, "Board " + title + " not found in open list");
+      outlet (1, asset + ' in ' + type +' not found');
+  };
 };
 
-function openBoard(title){
-  var oFound = false;
-  var sFound = false;
-  var oBoard = {};
+function update(type, v, v2, v3, v4){
+  if (type === 'value'){
+    typeof v2 === 'number' ? e = 'msdp' + '.' + v + ' = ' + v2 + ';' : e = 'msdp' + '.' + v + ' = "' + v2 + '";';
+    outlet(1, 'e: ' +  e);
+    eval(e);
+  } else if (type === 'board'){
+    var i = session.boardPointers[v]['index'];
+    if(v2 === 'title'){
+      if(session.boardPointers.hasOwnProperty(v3) === true){
+        var ran = simpleRan();
+        v3 = v3 + '_' + ran;
+      };
+      Object.defineProperty(session.boardPointers, v3,
+      Object.getOwnPropertyDescriptor(session.boardPointers, v));
+      delete session.boardPointers[v];
+      session.boardPointers[v3]['proto'] = v3;
+    }
+    session.sessionBoards[i][v2] = v3;
+    outlet(1, 'board ' + v + ' ' + v2 + ' set to ' + v3);
+  } else if (type === 'module'){
+    var i = session.boardPointers[v]['index'];
+    var i2 = session.boardPointers[v]['modules'][v2]['index'];
+    if(v3 === 'id'){
+      if(session.boardPointers[v]['modules'].hasOwnProperty(v4) === true){
+        var ran = simpleRan();
+        v4 = v4 + '_' + ran;
+      };
+      Object.defineProperty(session.boardPointers[v]['modules'], v4,
+      Object.getOwnPropertyDescriptor(session.boardPointers[v]['modules'], v2));
+      delete session.boardPointers[v]['modules'][v2];
+    }
+    session.sessionBoards[i]['modules'][i2][v3] = v4;
+    outlet(1, 'module ' + v2 + ' on board ' + v + ' value ' + v3 + ' set to ' + v4);
+  } else if (type === 'parameter'){
+    var i = session.boardPointers[v]['index'];
+    var i2 = session.boardPointers[v]['modules'][v2]['index'];
+    session.sessionBoards[i]['modules'][i2]['parameters'][v3] = v4;
+    outlet(1, 'parameter ' + v3 + ' set to ' + v4 + ' in module ' + v2 + ' on board ' + v);
+  }
+};
 
-  for (b in msdp.project.savedBoards){
-    if(msdp.project.savedBoards[b]['title'] === title) {
-      var clone = JSON.parse(JSON.stringify(msdp.project.savedBoards[b]));
-      for (c in msdp.project.openBoards){
-        if(msdp.project.openBoards[c]['title'] === title) {
-          outlet (1, "Board " + title + " already exists in open list");
-          var uuid = simpleRan();
-          clone.title = title + "_" + uuid;
-          msdp.project.openBoards.push(clone);
-          outlet (1, "Board " + clone.title + " added to open list");
-          return;
-        }
+function copy(loc, val, dest){
+  if(loc === 'session'){
+    var index = session.boardPointers[val]['index'];
+    var clone = JSON.parse(JSON.stringify(session.sessionBoards[index]));
+    var rList = [];
+    for (var m in session.boardPointers[val]['modules']){
+      if (session.boardPointers[val]['modules'][m]['exists'] === 0){
+        rList.push(session.boardPointers[val]['modules'][m]['index']);
       }
-      outlet (1, "Board " + title + " added to open list");
+    };
+    rList.sort(function(a, b){return b-a});
+    for (var n in rList){
+      clone['modules'].splice(n, 1);
+    };
+    if(dest === 'open'){
       msdp.project.openBoards.push(clone);
-      return;
-    }
-  }
-  outlet (1, "Board " + title + " not found in saved list");
-};
-
-function closeBoard(title){
-  for (b in msdp.project.openBoards) {
-    if(msdp.project.openBoards[b]['title'] === title) {
-      msdp.project.openBoards.splice(b, 1);
-      outlet (1, 'board ' + title +' closed');
-      return;
-    }
-  }
-  outlet (1, 'board ' + title +' not found');
-};
-
-function deleteBoard(title){
-  for (b in msdp.project.savedBoards) {
-    if(msdp.project.savedBoards[b]['title'] === title) {
-      msdp.project.savedBoards.splice(b, 1);
-      outlet (1, 'board ' + title +' removed from saved board list');
-      return;
-    }
-  }
-  outlet (1, 'board ' + title +' not found in saved board list');
-};
-
-function updateBoard(title, key, value){
-  for (b in msdp.project.openBoards) {
-    if(msdp.project.openBoards[b]['title'] === title) {
-      if( key === "title" ){
-        for (c in msdp.project.openBoards) {
-          if(msdp.project.openBoards[c]['title'] === value) {
-            var uuid = simpleRan();
-            msdp.project.openBoards[b]["title"] = value + "_" + uuid;
-            outlet (1, 'board ' + value + "_" + uuid + " already exists, " + newKey + " used instead.");
+    } else if(dest === 'saved'){
+        for (var c in msdp.project.savedBoards) {
+          if(msdp.project.savedBoards[c]['title'] === val) {
+            outlet (1, "Board " + val + " updated");
+            msdp.project.savedBoards.splice(c, 1, clone);
             return;
           }
         }
-        msdp.project.openBoards[b][key] = value;
-        outlet (1, 'board ' + title +' ' + key + " set to " + value);
-        return;
-      } else {
-        msdp.project.openBoards[b][key] = value;
-        outlet (1, 'board ' + title +' ' + key + " set to " + value);
-        return;
+        outlet (1, "Board " + val + " added to saved list");
+        msdp.project.savedBoards.push(clone);
       }
+    } else if(loc === 'saved'){
+      for (b in msdp.project.savedBoards){
+        if(msdp.project.savedBoards[b]['title'] === val) {
+          var clone = JSON.parse(JSON.stringify(msdp.project.savedBoards[b]));
+          var cMods = {};
+          for (var m in clone['modules']){
+            var title = clone['modules'][m]['id'];
+              cMods[title] = {
+                  'index': m,
+                  'exists': 1
+                };
+            }
+          };
+          break;
+        };
+      if(dest === 'session'){
+        var ran = simpleRan();
+        var title = val;
+        if(session.boardPointers.hasOwnProperty(val) === true){
+          title = val + '_' + ran;
+          clone.title = title;
+        };
+        session.boardPointers[title] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cMods};
+        session.sessionBoards.push(clone);
+        post('board ' + title + ' added to session');
+      }
+  } else if(loc === 'open'){ // copy open board into session
+    for (b in msdp.project.openBoards){
+      if(msdp.project.openBoards[b]['title'] === val) {
+        var clone = JSON.parse(JSON.stringify(msdp.project.openBoards[b]));
+        var cMods = {};
+        for (var m in clone['modules']){
+          var title = clone['modules'][m]['id'];
+            cMods[title] = {
+                'index': m,
+                'exists': 1
+              };
+          }
+        };
+      };
+      outlet(1, 'board ' + val + ' added to session');
+    if(dest === 'session'){
+      var ran = simpleRan();
+      var title = val;
+      if(session.boardPointers.hasOwnProperty(val) === true){
+        title = val + '_' + ran;
+        clone.title = title;
+      };
+      session.boardPointers[title] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cMods};
+      session.sessionBoards.push(clone);
+      outlet(1, 'board ' + title + ' added to session');
     }
   }
-  outlet (1, 'board ' + title +' not found in open board list');
 };
 
-function addModule(title, mID){
-  for (m in msdp.project.openBoards) {
-    if(msdp.project.openBoards[m]['title'] === title) {
-      for (c in msdp.project.openBoards[m].modules){
-        if(msdp.project.openBoards[m].modules[c]['id'] === mID) {
-          outlet (1, "Module " + mID + " already exists in " + title);
-          var uuid = simpleRan();
-          newModule = { "location": [0, 0], "process": "Choose One", "id": mID + "_" + uuid, "parameters": { "p3": "1.0" }};
-          msdp.project.openBoards[m].modules.push(newModule);
-          outlet (1, "Module " + mID + "_" + uuid + " built in " + title);
-          return;
+function get(type, v, v2){
+  if (type === 'asset'){ // get the list of current assets
+    outlet(2, JSON.stringify(msdp.project.assets[v]));
+  } else if (type === 'system'){
+    outlet(2, JSON.stringify(msdp.system, null, 4));
+  } else if (type === 'list'){ // determine whether asking for a list of boards or modules off a board
+    if (v === 'modules'){
+      outlet(2, Object.keys(session.boardPointers[v2]['modules']));
+    } else {
+      outlet(2, Object.keys(session.boardPointers));
+    }
+  } else if (type === 'board'){ // get a board
+    if (v === 'session'){
+      var i = session.boardPointers[v2]['index'];
+      outlet(2, JSON.stringify(session.sessionBoards[i], null, 4));
+      return;
+    } else if (v === 'open'){
+      var path = msdp.project.openBoards;
+    } else {
+      var path = msdp.project.savedBoards;
+    };
+    for (b in path){
+      if(path[b]['title'] === v2){
+        outlet(2, JSON.stringify(path[b], null, 4));
+        return;
+      };
+    };
+    outlet(1, v2 + ' not found');
+  }
+};
+
+function export(type, v1, v2){
+  if(type === 'home'){ //send all information out
+    msdp.project.openBoards = [];
+    for (var key in session.boardPointers) {
+      if (session.boardPointers.hasOwnProperty(key)) {
+        if(session.boardPointers[key]['open'] === 1){
+          copy('session', key, 'open');
         }
       }
-    newModule = { "location": [0, 0], "process": "Choose One", "id": mID, "parameters": { "p3": "1.0" }};
-    msdp.project.openBoards[m].modules.push(newModule);
-    outlet (1, "Module " + mID + " built in " + title);
+    };
+    msdp.system.lastUpdated = new Date();
+    if(msdp.system.data === 0){
+      var sendOut = {};
+      sendOut.uName = msdp.system.uName;
+      sendOut.startTime = msdp.system.lastOpened;
+      sendOut.sendTime = new Date();
+      outlet(4, JSON.stringify(sendOut, null, 4));
+      return;
+    } else if(msdp.system.data === 1){
+      var clone = JSON.parse(JSON.stringify(msdp));
+      clone.project.assets = 'anon';
+      clone.project.title = "anon";
+      clone.project.path = 'anon';
+      for (b in clone.project.openBoards){
+        clone.project.openBoards[b]['title'] = 'anon';
+        for (c in clone.project.openBoards[b]['modules']){
+          clone.project.openBoards[b]['modules'][c]['id'] = 'anon';
+          clone.project.openBoards[b]['modules'][c]['parameters'] = 'anon';
+        }
+      };
+      for (b in clone.project.savedBoards){
+        clone.project.savedBoards[b]['title'] = 'anon';
+        for (c in clone.project.savedBoards[b]['modules']){
+          clone.project.savedBoards[b]['modules'][c]['id'] = 'anon';
+          clone.project.savedBoards[b]['modules'][c]['parameters'] = 'anon';
+        }
+      };
+      outlet(4, JSON.stringify(clone), null, 4);
+      return;
+    } else{
+      outlet(4, JSON.stringify(msdp, null, 4));
+      return;
+    }
+    outlet(4, JSON.stringify(msdp, null, 4));
     return;
-    }
-  }
-  outlet (1, "Board " + title + " not found");
-};
-
-function updateModule(title, id, key, value){
-  for (m in msdp.project.openBoards) {
-    if(msdp.project.openBoards[m]['title'] === title) {
-      found = true;
-      for (n in msdp.project.openBoards[m].modules) {
-          if(msdp.project.openBoards[m].modules[n]['id'] === id) {
-            mFound = true;
-            msdp.project.openBoards[m].modules[n][key] = value;
-            outlet (1, 'module ' + id + " " + " set to " + value);
-            return;
-          }
-        }
-      outlet (1, 'module ' + id + " on board "+ title +' not found');
-      return;
-    }
-  }
-  outlet (1, 'board ' + title +' not found in open board list');
-};
-
-function deleteModule(title, id){
-  for (m in msdp.project.openBoards) {
-    if(msdp.project.openBoards[m]['title'] === title) {
-      for (n in msdp.project.openBoards[m].modules) {
-        if(msdp.project.openBoards[m].modules[n]['id'] === id) {
-          msdp.project.openBoards[m].modules.splice(n, 1);
-          outlet (1, 'module ' + id + ' on board ' + title + ' removed');
-          return;
+  } else if(type === 'backup'){ //create backup for recovery
+    var path = v1;
+    var mode = msdp;
+  } else if(type === 'system'){ //export system info
+    var path = v1;
+    var mode = msdp.system;
+  } else if(type === 'project'){ //export project info
+    msdp.project.openBoards = [];
+    for (var key in session.boardPointers) {
+      if (session.boardPointers.hasOwnProperty(key)) {
+        if(session.boardPointers[key]['open'] === 1){
+          copy('session', key, 'open');
+          var path = v1;
+          var mode = msdp.project;
         }
       }
-      outlet (1, 'module ' + id + ' on board ' + title + ' not found');
-      return;
     }
+  } else if(type === 'board'){ //export board to a file for sharing
+    var path = v2;
+    var i = session.boardPointers[v1]['index'];
+    var mode = JSON.parse(JSON.stringify(session.sessionBoards[i]));
+    var rList = [];
+    for (var m in session.boardPointers[v1]['modules']){
+      if (session.boardPointers[v1]['modules'][m]['exists'] === 0){
+        rList.push(session.boardPointers[v1]['modules'][m]['index']);
+      }
+    };
+    rList.sort(function(a, b){return b-a});
+    for (var n in rList){
+      mode['modules'].splice(n, 1);
+    };
   }
-  outlet (1, 'board ' + title +' not found');
+  var fout = new File(path,"write","JSON");
+	if (fout.isopen) {
+		fout.eof = 0;
+		fout.writeline(JSON.stringify(mode, null, 4));
+		fout.close();
+		post("\nJSON Write",path);
+	} else {
+		post("\ncould not create json file: " + path);
+	}
 };
 
-function updateParameter(bTitle, mID, param, value){
-  for (var i = 0; i < msdp.project.openBoards.length; i++) {
-    if(msdp.project.openBoards[i]['title'] === bTitle) {
-      for (var j = 0; j < msdp.project.openBoards[i].modules.length; j++){
-        if(msdp.project.openBoards[i].modules[j]['id'] === mID) {
-          msdp.project.openBoards[i].modules[j].parameters[param] = value;
-          outlet (2, JSON.stringify(msdp.project.openBoards[i].modules[j].parameters, null, 4));
-        }}}}};
-
-function update(c, v){
-  typeof v === 'number' ? e = 'msdp' + '.' + c + ' = ' + v + ';' : e = 'msdp' + '.' + c + ' = "' + v + '";';
-  post('e:', e);
-  eval(e);
-};
-
-function addAsset(type, asset){
-  msdp.project.assets[type].push(asset)
-  outlet (1, asset + " added to the " + type + " list");
-};
-
-function deleteAsset(type, asset){
-  for (a in msdp.project.assets[type]) {
-    if(msdp.project.assets[type][a] === asset) {
-      msdp.project.assets[type].splice(a, 1);
-      outlet (1, asset + ' at ' + type +' removed');
-      return;
+function import (type, path){
+  // copy contents into an object
+  var memstr = "";
+	var data = "";
+	var f = new File(path,"read");
+	f.open();
+	if (f.isopen) {
+		while(f.position<f.eof) {
+			memstr+=f.readstring(2048);
+		}
+		f.close();
+	} else { post("Error\n"); };
+  var clone = JSON.parse(memstr);
+  post("\nJSON Read",path);
+  // place object into the project as appropriate
+  if (type === 'system'){
+    msdp.system = clone;
+  }else if (type === 'project'){ // load a saved project
+    session.sessionBoards = [];
+    session.boardPointers = {};
+    msdp.project = clone;
+    for (b in msdp.project.openBoards){
+      var send = msdp.project.openBoards[b]['title'];
+      copy('open', send, 'session');
+      get('board', 'open', send);
     }
+    post('project ' + msdp.project.title + ' loaded');
+  } else if (type === 'board'){ // load and open an exported board
+    var ran = simpleRan();
+    var cMods = {};
+    for (var m in clone['modules']){
+      var title = clone['modules'][m]['id'];
+        cMods[title] = {
+            'index': m,
+            'exists': 1
+          };
+      }
+    var val = clone.title;
+    if(session.boardPointers.hasOwnProperty(val) === true){
+      title = val + '_' + ran;
+      clone.title = title;
+    };
+    session.boardPointers[val] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cMods};
+    session.sessionBoards.push(clone);
+    outlet(1, 'board ' + val + ' imported into session');
+    get('board', 'session', val);
+  } else if (type === 'system'){
+    msdp.system = {};
+    msdp.system = clone;
+  	post("\nJSON Read",path);
   }
-  outlet (1, asset + ' at ' + type +' not found');
-};
+}
 
 function simpleRan(){
   var ran = Math.floor(Math.random() * 4294967295);
@@ -270,101 +420,3 @@ function uuidv4() {
   });
 };
 function makeID(){ id = uuidv4(); msdp.system.uName = id };
-
-function write(path){
-	var fout = new File(path,"write","JSON");
-	if (fout.isopen) {
-		fout.eof = 0;
-		fout.writeline(JSON.stringify(msdp.project, null, 4));
-		fout.close();
-		post("\nJSON Write",path);
-	} else {
-		post("\ncould not create json file: " + path);
-	}
-};
-
-function exportSystem(path){
-	var fout = new File(path,"write","JSON");
-	if (fout.isopen) {
-		fout.eof = 0;
-		fout.writeline(JSON.stringify(msdp.system, null, 4));
-		fout.close();
-		post("\nJSON Write",path);
-	} else {
-		post("\ncould not create json file: " + path);
-	}
-};
-
-function exportBoard(title, path){
-  var fout = new File(path,"write","JSON");
-  for (b in msdp.project.openBoards) {
-    if(msdp.project.openBoards[b]['title'] === title) {
-      if (fout.isopen) {
-        fout.eof = 0;
-        fout.writeline(JSON.stringify(msdp.project.openBoards[b], null, 4));
-        fout.close();
-        post("\nJSON Write",path);
-        outlet (2, JSON.stringify(msdp.project.openBoards[b], null, 4));
-      } else {
-        post("\ncould not create json file: " + path);
-      }
-      return;
-    }
-  }
-};
-
-function read(path) {
-	var memstr = "";
-	var data = "";
-	var f = new File(path,"read");
-	f.open();
-	if (f.isopen) {
-		while(f.position<f.eof) {
-			memstr+=f.readstring(2048);
-		}
-		f.close();
-	} else { post("Error\n"); }
-  msdp.project = JSON.parse(memstr);
-	post("\nJSON Read",path);
-};
-
-function importSystem(path) {
-	var memstr = "";
-	var data = "";
-	var f = new File(path,"read");
-	f.open();
-	if (f.isopen) {
-		while(f.position<f.eof) {
-			memstr+=f.readstring(2048);
-		}
-		f.close();
-	} else { post("Error\n"); }
-  msdp.system = JSON.parse(memstr);
-	post("\nJSON Read",path);
-};
-
-function importBoard(path) {
-  var memstr = "";
-	var data = "";
-	var f = new File(path,"read");
-	f.open();
-	if (f.isopen) {
-		while(f.position<f.eof) {
-			memstr+=f.readstring(2048);
-		}
-		f.close();
-	} else { post("Error\n"); }
-  var iBoard = JSON.parse(memstr);
-	post("\nJSON Read",path);
-  for (b in msdp.project.openBoards) {
-    if(msdp.project.openBoards[b]['title'] === iBoard.title) {
-      uuid = simpleRan();
-      outlet (1, "Board " + iBoard.title + " already exists, " + iBoard.title + "_" + uuid + " added to opened list");
-      iBoard.title = iBoard.title + "_" + uuid;
-      msdp.project.openBoards.push(iBoard);
-      return;
-      }
-    }
-  outlet (1, "Board " + iBoard.title + " added to opened list");
-  msdp.project.openBoards.push(iBoard);
-};
