@@ -19,7 +19,11 @@ var msdp = {
       "defaultViews": {
         "performer": 0, "mixer": 0, "score": 0,
         "metronome": 0, "controller": 1, "browser": 1 },
+      "tabOpen": 1, "bgPattern": 1,
+      "metroTog": 1, "bpm": 120,
+      "showBoards": 1, "initEvent": 0,
       "dryMics": 0, "recordedInProject": 0,
+      "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
       "keyboardMIDI": false, "keyOctave": 4
     },
     "lastOpened": timestamp, "lastUpdated" : timestamp,
@@ -32,8 +36,11 @@ var msdp = {
       "defaultViews": {
         "performer": 0, "mixer": 0, "score": 0,
         "metronome": 0, "controller": 1, "browser": 1 },
+      "tabOpen": 1, "bgPattern": 1,
+      "metroTog": 1, "bpm": 120,
+      "showBoards": 1, "initEvent": 0,
       "dryMics": 0, "recordedInProject": 0,
-      "sampleRate": 44000, "ioVector": 512, "sigVector": 64,
+      "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
       "keyboardMIDI": false, "keyOctave": 4
     },
     "assets": {
