@@ -246,8 +246,10 @@ function copy(loc, val, dest){
 function get(type, v, v2){
   if (type === 'asset'){ // get the list of current assets
     outlet(2, JSON.stringify(msdp.project.assets[v]));
-  } else if (type === 'system'){
+  } else if (type === 'system'){ // get the system contents
     outlet(2, JSON.stringify(msdp.system, null, 4));
+  } else if ( type === 'pSettings'){ // get the project settings content
+    outlet(2, JSON.stringify(msdp.project.settings, null, 4));
   } else if (type === 'list'){ // determine whether asking for a list of boards or modules off a board
     if (v === 'modules'){
       outlet(2, Object.keys(session.boardPointers[v2]['modules']));
@@ -331,11 +333,11 @@ function export(type, v1, v2){
       if (session.boardPointers.hasOwnProperty(key)) {
         if(session.boardPointers[key]['open'] === 1){
           copy('session', key, 'open');
-          var path = v1;
-          var mode = msdp.project;
         }
       }
     }
+    var path = v1;
+    var mode = msdp.project;
   } else if(type === 'board'){ //export board to a file for sharing
     var path = v2;
     var i = session.boardPointers[v1]['index'];
