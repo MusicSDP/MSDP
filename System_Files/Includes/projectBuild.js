@@ -121,11 +121,11 @@ function remove(type, v, v2){
 };
 
 function update(type, v, v2, v3, v4){
-  if (type === 'value'){
+  if (type === 'value'){ //update system or project value on object not in list
     typeof v2 === 'number' ? e = 'msdp' + '.' + v + ' = ' + v2 + ';' : e = 'msdp' + '.' + v + ' = "' + v2 + '";';
     outlet(1, 'e: ' +  e);
     eval(e);
-  } else if (type === 'board'){
+  } else if (type === 'board'){ //update board value other than modules
     var i = session.boardPointers[v]['index'];
     if(v2 === 'title'){
       if(session.boardPointers.hasOwnProperty(v3) === true){
@@ -139,7 +139,7 @@ function update(type, v, v2, v3, v4){
     }
     session.sessionBoards[i][v2] = v3;
     outlet(1, 'board ' + v + ' ' + v2 + ' set to ' + v3);
-  } else if (type === 'module'){
+  } else if (type === 'module'){ //update a module on a board
     var i = session.boardPointers[v]['index'];
     var i2 = session.boardPointers[v]['modules'][v2]['index'];
     if(v3 === 'id'){
@@ -153,7 +153,7 @@ function update(type, v, v2, v3, v4){
     }
     session.sessionBoards[i]['modules'][i2][v3] = v4;
     outlet(1, 'module ' + v2 + ' on board ' + v + ' value ' + v3 + ' set to ' + v4);
-  } else if (type === 'parameter'){
+  } else if (type === 'parameter'){ // update a parameter in a module on a board
     var i = session.boardPointers[v]['index'];
     var i2 = session.boardPointers[v]['modules'][v2]['index'];
     session.sessionBoards[i]['modules'][i2]['parameters'][v3] = v4;
