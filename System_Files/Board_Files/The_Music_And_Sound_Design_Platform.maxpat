@@ -4959,7 +4959,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 2217.0, 117.0, 751.0, 907.0 ],
+						"rect" : [ 669.0, 102.0, 751.0, 907.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4986,21 +4986,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-27",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 405.0, 320.0, 266.0, 22.0 ],
-									"style" : "",
-									"text" : "update module Module_0416ee60 location \"1 1\""
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-23",
 									"maxclass" : "button",
@@ -10057,16 +10043,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-27", 1 ],
-									"order" : 0,
-									"source" : [ "obj-22", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
-									"order" : 1,
 									"source" : [ "obj-22", 0 ]
 								}
 
@@ -10134,13 +10111,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-25", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-27", 0 ]
 								}
 
 							}
