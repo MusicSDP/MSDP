@@ -1,4 +1,4 @@
-outlets = 5;
+outlets = 6;
 // establish the list of necessary objects and arrays
 var timestamp = new Date()
 var msdp = {
@@ -71,7 +71,7 @@ function newProject(title, path){
   msdp.project.openBoards = [];
   msdp.project.savedBoards = [];
   session.sessionBoards = [];
-  session.boardPointers = [];
+  session.boardPointers = {};
   export('project', path);
 };
 
@@ -80,7 +80,7 @@ function add(type, v, v2){
   if(type === 'board'){ // build a new board
     typeof v === 'undefined' ? v = 'Board_' + ran : v = v ;
     if(session.boardPointers.hasOwnProperty(v) === true){v = v + '_' + ran};
-    session.sessionBoards.push({ "title": v, "position": [0, 0, 0, 0], "power": 1, "modules": [] });
+    session.sessionBoards.push({ "title": v, "position": [10, 50, 420, 420], "power": 1, 'saved': 0, "modules": [] });
     session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': v, "open": 1, 'modules': {}};
   } else if (type === 'module') { // add a module to an existing board
     i = session.boardPointers[v].index;
@@ -104,7 +104,7 @@ function remove(type, v, v2){
       }
     }
     post ('board ' + v +' not found in saved board list');
-  } else if (type === 'openBoard'){
+  } else if (type === 'openBoard'){ // mark an open board as closed in the boardPointers object
     session.boardPointers[v]['open'] = 0;
   } else if (type === 'module') { // remove module from an existing board
       session.boardPointers[v]['modules'][v2]['exists'] = 0;
@@ -157,7 +157,6 @@ function update(type, v, v2, v3, v4){
     var i = session.boardPointers[v]['index'];
     var i2 = session.boardPointers[v]['modules'][v2]['index'];
     session.sessionBoards[i]['modules'][i2]['parameters'][v3] = v4;
-    outlet(1, 'parameter ' + v3 + ' set to ' + v4 + ' in module ' + v2 + ' on board ' + v);
   }
 };
 
@@ -172,12 +171,15 @@ function copy(loc, val, dest){
       }
     };
     rList.sort(function(a, b){return b-a});
+    outlet(1, rList);
     for (var n in rList){
-      clone['modules'].splice(n, 1);
+      clone['modules'].splice(rList[n], 1);
     };
     if(dest === 'open'){
       msdp.project.openBoards.push(clone);
     } else if(dest === 'saved'){
+      session.sessionBoards[index].saved = 1;
+      clone.saved = 1;
         for (var c in msdp.project.savedBoards) {
           if(msdp.project.savedBoards[c]['title'] === val) {
             outlet (1, "Board " + val + " updated");
@@ -313,13 +315,13 @@ function export(type, v1, v2){
           clone.project.savedBoards[b]['modules'][c]['parameters'] = 'anon';
         }
       };
-      outlet(4, JSON.stringify(clone), null, 4);
+      outlet(6, JSON.stringify(clone), null, 4);
       return;
     } else{
-      outlet(4, JSON.stringify(msdp, null, 4));
+      outlet(6, JSON.stringify(msdp, null, 4));
       return;
     }
-    outlet(4, JSON.stringify(msdp, null, 4));
+    outlet(6, JSON.stringify(msdp, null, 4));
     return;
   } else if(type === 'backup'){ //create backup for recovery
     var path = v1;
@@ -379,8 +381,12 @@ function import (type, path){
   var clone = JSON.parse(memstr);
   post("\nJSON Read",path);
   // place object into the project as appropriate
-  if (type === 'system'){
+  if (type === 'system'){ // load a system preferences file.
     msdp.system = clone;
+    if (msdp.system.uName === 'UUID'){
+      makeID();
+      msdp.system.data = 1;
+    }
   }else if (type === 'project'){ // load a saved project
     session.sessionBoards = [];
     session.boardPointers = {};
