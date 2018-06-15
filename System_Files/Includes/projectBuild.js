@@ -255,7 +255,19 @@ function get(type, v, v2){
   } else if (type === 'list'){ // determine whether asking for a list of boards or modules off a board
     if (v === 'modules'){
       outlet(2, Object.keys(session.boardPointers[v2]['modules']));
-    } else {
+    } else if (v === 'savedBoards'){ // get the list of saved boards
+      for (b in msdp.project.savedBoards){
+        var bList = [];
+        bList.push(msdp.project.savedBoards[b]['title']);
+        outlet(2, bList);
+      }
+    } else if (v === 'openBoards'){ // get the list of open boards
+      for (b in msdp.project.openBoards){
+        var bList = [];
+        bList.push(msdp.project.openBoards[b]['title']);
+        outlet(2, bList);
+      }
+    } else { // get the boards in the session
       outlet(2, Object.keys(session.boardPointers));
     }
   } else if (type === 'board'){ // get a board
