@@ -403,11 +403,11 @@ function import (type, path){
     session.sessionBoards = [];
     session.boardPointers = {};
     msdp.project = clone;
-    for (b in msdp.project.openBoards){
-      var send = msdp.project.openBoards[b]['title'];
-      copy('open', send, 'session');
-      get('board', 'open', send);
-    }
+    // for (b in msdp.project.openBoards){
+    //  var send = msdp.project.openBoards[b]['title'];
+    //  copy('open', send, 'session');
+    //  get('board', 'open', send);
+    // }
     post('project ' + msdp.project.title + ' loaded');
   } else if (type === 'board'){ // load and open an exported board
     var ran = simpleRan();
