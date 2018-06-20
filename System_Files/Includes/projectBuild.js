@@ -248,6 +248,10 @@ function copy(loc, val, dest){
 function get(type, v, v2){
   if (type === 'asset'){ // get the list of current assets
     outlet(2, JSON.stringify(msdp.project.assets[v]));
+  } else if (type === 'path'){ // get the project path
+    var p = msdp.project.path;
+    p = p.substring(0, p.lastIndexOf("/"));
+    outlet(2, p);
   } else if (type === 'system'){ // get the system contents
     outlet(2, JSON.stringify(msdp.system, null, 4));
   } else if ( type === 'pSettings'){ // get the project settings content
