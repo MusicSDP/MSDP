@@ -90,7 +90,7 @@ function add(type, v, v2){
   } else if (type === 'module') { // add a module to an existing board
     i = session.boardPointers[v].index;
     m = session.boardPointers[v].modules;
-    if(session.boardPointers[v]['modules'].hasOwnProperty(v2) === true){v2 = v2 + '_' + ran};
+    // if(session.boardPointers[v]['modules'].hasOwnProperty(v2) === true){v2 = v2 + '_' + ran};
     session.sessionBoards[i].modules.push({ "location": [0, 0], "process": "Choose One", "id": v2, "parameters": { "p3": "1.0" }});
     session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'exists': 1};
   } else if (type === 'asset') { // add an asset to the asset list
@@ -165,10 +165,12 @@ function update(type, v, v2, v3, v4){
   }
 };
 
-function copy(loc, val, dest){
+function copy(loc, val, dest, dest2){
   if(loc === 'session'){
     var index = session.boardPointers[val]['index'];
+    var proto = session.boardPointers[val]['proto'];
     var clone = JSON.parse(JSON.stringify(session.sessionBoards[index]));
+    clone.title = proto;
     var rList = [];
     for (var m in session.boardPointers[val]['modules']){
       if (session.boardPointers[val]['modules'][m]['exists'] === 0){
@@ -184,10 +186,11 @@ function copy(loc, val, dest){
       msdp.project.openBoards.push(clone);
     } else if(dest === 'saved'){
       session.sessionBoards[index].saved = 1;
+      // clone.title = dest2;
       clone.saved = 1;
         for (var c in msdp.project.savedBoards) {
-          if(msdp.project.savedBoards[c]['title'] === val) {
-            outlet (1, "Board " + val + " updated");
+          if(msdp.project.savedBoards[c]['title'] === proto) {
+            outlet (1, "Board " + proto + " updated");
             msdp.project.savedBoards.splice(c, 1, clone);
             return;
           }
