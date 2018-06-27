@@ -79,9 +79,18 @@ function add(type, v, v2){
   var ran = simpleRan();
   if(type === 'board'){ // build a new board
     var proto = v;
+    outlet(1, 'saved 1');
     typeof v === 'undefined' ? v = 'Board_' + ran : v = v ;
     if(session.boardPointers.hasOwnProperty(v) === true){
       v = v + '_' + ran;
+      for (b in session.boardPointers){
+        if (session.boardPointers[b].proto === proto){
+          if (session.boardPointers[b].open === 1){
+          outlet(1, 'saved 0');
+          }
+        }
+
+      }
     };
     session.sessionBoards.push({ "title": v, "position": [10, 50, 420, 420], "power": 1, 'saved': 0, "modules": [] });
     session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': proto, "open": 1, 'modules': {}};
