@@ -192,6 +192,13 @@ function copy(loc, val, dest, dest2){
       clone['modules'].splice(rList[n], 1);
     };
     if(dest === 'open'){
+      if(proto != val){
+        if(session.boardPointers.hasOwnProperty(proto) === true){
+          if(session.boardPointers[proto].open === 1){
+            clone.title = val;
+          }
+        }
+      };
       msdp.project.openBoards.push(clone);
     } else if(dest === 'saved'){
       session.sessionBoards[index].saved = 1;
