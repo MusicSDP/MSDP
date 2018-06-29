@@ -159,7 +159,7 @@ function update(type, v, v2, v3, v4){
     if(v3 === 'id'){
       if(session.boardPointers[v]['modules'].hasOwnProperty(v4) === true){
         var ran = simpleRan();
-        v4 = v4 + '_' + ran;
+        //v4 = v4 + '_' + ran;
       };
       Object.defineProperty(session.boardPointers[v]['modules'], v4,
       Object.getOwnPropertyDescriptor(session.boardPointers[v]['modules'], v2));
