@@ -100,7 +100,7 @@ function add(type, v, v2){
     i = session.boardPointers[v].index;
     m = session.boardPointers[v].modules;
     // if(session.boardPointers[v]['modules'].hasOwnProperty(v2) === true){v2 = v2 + '_' + ran};
-    session.sessionBoards[i].modules.push({ "location": [0, 0], "process": "Choose One", "id": v2, "parameters": { "p3": "1.0" }});
+    session.sessionBoards[i].modules.push({ "location": [0, 0], "process": "Choose One", "id": v2, "parameters": { "p3": "0.0" }});
     session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'exists': 1};
   } else if (type === 'asset') { // add an asset to the asset list
     msdp.project.assets[v].push(v2);
