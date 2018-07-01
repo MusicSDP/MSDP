@@ -101,7 +101,7 @@ function add(type, v, v2){
     m = session.boardPointers[v].modules;
     // if(session.boardPointers[v]['modules'].hasOwnProperty(v2) === true){v2 = v2 + '_' + ran};
     session.sessionBoards[i].modules.push({ "location": [0, 0], "process": "Choose One", "id": v2, "parameters": {}});
-    session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'exists': 1};
+    session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'exists': 1, 'id': v2};
   } else if (type === 'asset') { // add an asset to the asset list
     msdp.project.assets[v].push(v2);
     outlet (1, v2 + " added to the " + v + " list");
@@ -134,7 +134,7 @@ function remove(type, v, v2){
   };
 };
 
-function update(type, v, v2, v3, v4){
+function update(type, v, v2, v3, v4, v5){
   if (type === 'value'){ //update system or project value on object not in list
     typeof v2 === 'number' ? e = 'msdp' + '.' + v + ' = ' + v2 + ';' : e = 'msdp' + '.' + v + ' = "' + v2 + '";';
     outlet(1, 'e: ' +  e);
@@ -157,13 +157,12 @@ function update(type, v, v2, v3, v4){
     var i = session.boardPointers[v]['index'];
     var i2 = session.boardPointers[v]['modules'][v2]['index'];
     if(v3 === 'id'){
-      if(session.boardPointers[v]['modules'].hasOwnProperty(v4) === true){
-        var ran = simpleRan();
-        //v4 = v4 + '_' + ran;
-      };
-      Object.defineProperty(session.boardPointers[v]['modules'], v4,
-      Object.getOwnPropertyDescriptor(session.boardPointers[v]['modules'], v2));
-      delete session.boardPointers[v]['modules'][v2];
+      // var proto = v4;
+      //if(session.boardPointers[v]['modules'].hasOwnProperty(v4) === true){
+      //  var ran = simpleRan();
+      //  var v4 = v4 + '_' + ran;
+      //};
+      session.boardPointers[v]['modules'][v2]['id'] = v4;
     }
     session.sessionBoards[i]['modules'][i2][v3] = v4;
     outlet(1, 'module ' + v2 + ' on board ' + v + ' value ' + v3 + ' set to ' + v4);
