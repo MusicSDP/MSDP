@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 0.0, 50.0, 285.0, 725.0 ],
+		"rect" : [ 44.0, 77.0, 285.0, 725.0 ],
 		"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 		"editing_bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 		"bglocked" : 0,
@@ -5123,7 +5123,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 367.0, 115.0, 890.0, 958.0 ],
+						"rect" : [ 401.0, 123.0, 890.0, 855.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5657,7 +5657,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 67.0, 110.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -5740,7 +5740,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ 143.0, 183.0, 655.0, 471.0 ],
+														"rect" : [ 712.0, 296.0, 655.0, 553.0 ],
 														"bgcolor" : [ 0.380392, 0.411765, 0.45098, 1.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
@@ -5770,6 +5770,79 @@
 														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
+																	"fontface" : 1,
+																	"fontname" : "Lato",
+																	"id" : "obj-22",
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 84.0, 178.0, 220.0, 21.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 5.511353, 4.5, 609.0, 21.0 ],
+																	"style" : "",
+																	"text" : "Select One:",
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"fontname" : "Lato",
+																	"id" : "obj-21",
+																	"linecount" : 26,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 84.0, 178.0, 226.0, 395.0 ],
+																	"presentation" : 1,
+																	"presentation_linecount" : 16,
+																	"presentation_rect" : [ 5.511353, 293.5, 609.0, 237.0 ],
+																	"style" : "",
+																	"text" : "\nBasic Feedback \n•\tAn anonymous user id\n•\tIP address\n \nFull Feedback - Basic Feedback information plus:\n•\tGeneral information on your software configuration within the program.\n•\tGeneral information on your project you're working on\n \nAnonymized Feedback - This is the same as full feedback, but all file names, module names, and board names are anonymized as well, to remove all personally identifiable information from the project data.\n \nParticipating in the feedback program will help us better define the most/least used features and to better understand the size and scope of our userbase.\n \nCollecting this information will not affect performance.\n",
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"fontface" : 1,
+																	"fontname" : "Lato",
+																	"id" : "obj-16",
+																	"linecount" : 4,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 69.0, 163.0, 219.0, 64.0 ],
+																	"presentation" : 1,
+																	"presentation_linecount" : 2,
+																	"presentation_rect" : [ 5.511353, 259.0, 609.0, 35.0 ],
+																	"style" : "",
+																	"text" : "To respect your privacy, we have provided the following options that determine the type and amount of data that we will collect:",
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"fontface" : 1,
+																	"fontname" : "Lato",
+																	"fontsize" : 14.0,
+																	"id" : "obj-11",
+																	"linecount" : 2,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 69.0, 163.0, 232.0, 40.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 5.511353, 95.5, 383.0, 23.0 ],
+																	"style" : "",
+																	"text" : "Please help us improve our software",
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-19",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -5789,7 +5862,7 @@
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 52.011353, 117.0, 69.0, 22.0 ],
-																	"save" : [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+																	"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 712, 296, 1367, 849, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 																	"style" : "",
 																	"text" : "thispatcher"
 																}
@@ -6734,15 +6807,18 @@
 															}
 , 															{
 																"box" : 																{
+																	"fontname" : "Lato",
 																	"id" : "obj-17",
+																	"linecount" : 16,
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 54.0, 148.0, 150.0, 20.0 ],
+																	"patching_rect" : [ 54.0, 148.0, 220.0, 237.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 74.5, 50.0, 150.0, 20.0 ],
+																	"presentation_linecount" : 8,
+																	"presentation_rect" : [ 5.511353, 118.0, 609.0, 122.0 ],
 																	"style" : "",
-																	"text" : "Telemetry Settings",
+																	"text" : "In order to help us make better releases and refine the most important areas of our software, we collect usage statistics. These statistics are not shared with third-party vendors and are only used to expand our understanding of how the software is used. By using this software, you consent to the gathering of usage statistics, to the extent that you deem appropriate.\n \nWe will not:\n•\tgather any information outside of your use of the software\n•\tcollect the content of your audio, midi, or plugin files.",
 																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 																}
 
@@ -6798,9 +6874,9 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 230.0, 173.0, 79.0, 42.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 199.0, 119.0, 79.0, 42.0 ],
+																	"presentation_rect" : [ 5.511353, 29.5, 135.0, 42.0 ],
 																	"style" : "",
-																	"text" : "Full"
+																	"text" : "Full Feedback"
 																}
 
 															}
@@ -6816,9 +6892,9 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 140.0, 173.0, 79.0, 42.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 110.0, 119.0, 79.0, 42.0 ],
+																	"presentation_rect" : [ 242.511353, 29.5, 135.0, 42.0 ],
 																	"style" : "",
-																	"text" : "Limited"
+																	"text" : "Anonymized Feedback"
 																}
 
 															}
@@ -6834,9 +6910,9 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 54.0, 173.0, 79.0, 42.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 24.0, 119.0, 79.0, 42.0 ],
+																	"presentation_rect" : [ 478.999878, 29.5, 135.511475, 42.0 ],
 																	"style" : "",
-																	"text" : "Basic"
+																	"text" : "Basic Feedback"
 																}
 
 															}
@@ -7690,7 +7766,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 67.0, 110.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
