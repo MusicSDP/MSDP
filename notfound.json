@@ -1,0 +1,128 @@
+{
+    "title": "TestC",
+    "path": "C:/Users/Hugh/Desktop/TestC",
+    "settings": {
+        "dac": 1,
+        "limiter": 1,
+        "fullScreen": 1,
+        "fullView": 0,
+        "defaultViews": {
+            "performer": 0,
+            "mixer": 0,
+            "score": 0,
+            "metronome": 0,
+            "controller": 0,
+            "browser": 0
+        },
+        "tabOpen": 1,
+        "bgPattern": 1,
+        "metroTog": 1,
+        "bpm": 120,
+        "showBoards": 0,
+        "initEvent": 0,
+        "dryMics": 0,
+        "recordedInProject": 0,
+        "scoreMain": "main_demo.txt",
+        "scoreRepeat": "repeat.txt",
+        "scoreDelay": "delay.txt",
+        "keyboardMIDI": 0,
+        "keyOctave": 4
+    },
+    "assets": {
+        "scores": [],
+        "audio": [],
+        "midi": [],
+        "plugins": []
+    },
+    "openBoards": [
+        {
+            "title": "Board2",
+            "position": [
+                10,
+                50,
+                420,
+                420
+            ],
+            "power": "1",
+            "saved": 0,
+            "modules": [
+                {
+                    "location": "1 1",
+                    "process": "Add1t1ve",
+                    "id": "Add1t1ve 972",
+                    "parameters": {
+                        "p15": "0.3622",
+                        "p10": "0.4567",
+                        "p5": "0.4724",
+                        "p3": "1.0000",
+                        "p27": "90",
+                        "p21": "0.0000 0.0568 1.0000 0.0000",
+                        "p25": "120",
+                        "p28": "1",
+                        "p4": "3",
+                        "p14": "7",
+                        "p9": "7",
+                        "p22": "1",
+                        "p26": "100 100 100 100",
+                        "p11": "1",
+                        "p16": "2"
+                    }
+                }
+            ]
+        }
+    ],
+    "savedBoards": [
+        {
+            "title": "Board1",
+            "position": "722 250 1132 620",
+            "power": "1",
+            "saved": 1,
+            "modules": [
+                {
+                    "location": "1 1",
+                    "process": "Audio File Player",
+                    "id": "Audio File Player 831",
+                    "parameters": {
+                        "p9": "0.0000",
+                        "p3": "1.0000",
+                        "p1": "HUSH.aif",
+                        "p11": "141703.6330",
+                        "p10": "90102.8603",
+                        "p5": "0",
+                        "p8": "1.0000"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Board2",
+            "position": "595 179 1005 549",
+            "power": "1",
+            "saved": 1,
+            "modules": [
+                {
+                    "location": "1 1",
+                    "process": "Add1t1ve",
+                    "id": "Add1t1ve 588",
+                    "parameters": {
+                        "p15": "0.3622",
+                        "p10": "0.4567",
+                        "p5": "0.4724",
+                        "p3": "1.0000",
+                        "p27": "90",
+                        "p21": "0.0000 0.0568 1.0000 0.0000",
+                        "p25": "120",
+                        "p28": "1",
+                        "p4": "3",
+                        "p14": "7",
+                        "p9": "7",
+                        "p22": "1",
+                        "p26": "100 100 100 100",
+                        "p11": "1",
+                        "p16": "2"
+                    }
+                }
+            ]
+        }
+    ]
+}
