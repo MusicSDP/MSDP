@@ -24,29 +24,7 @@ var msdp = {
       "showBoards": 1, "initEvent": 0,
       "dryMics": 0, "recordedInProject": 0,
       "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
-      "keyboardMIDI": false, "keyOctave": 4,
-      "metroSettings": {"source": 0,"bpm": 60, "bpMeasure": 4, "tick": 0, "customDiv": 5, "loopState": 0, 'loopStartB': 1, 'loopStartM': 1, 'loopStopB': 1, 'loopStopM': 4, 'display': 1},
-      'performerSettings': {
-        'mFade': 1127,'s1Route': 'Z 1','s1Fade': 121,'s2Route': 'Y 1','s2Fade': 121,'s3Route': 'X 1','s3Fade': 121,
-        'm1RouteI': 'Mic 1','m1RouteO': 'A 2','m1Fade': 0,'m2RouteI': 'Mic 2','m2RouteO': 'B 2','m2Fade': 0,'skipTo': 0},
-      'mixerSettings':{
-        'v1': 0, 'r1': 0, 'm1': 0, 's1': 0,
-        'v2': 0, 'r2': 0, 'm2': 0, 's2': 0,
-        'v3': 0, 'r3': 0, 'm3': 0, 's3': 0,
-        'v4': 0, 'r4': 0, 'm4': 0, 's4': 0,
-        'v5': 0, 'r5': 0, 'm5': 0, 's5': 0,
-        'v6': 0, 'r6': 0, 'm6': 0, 's6': 0,
-        'v7': 0, 'r7': 0, 'm7': 0, 's7': 0,
-        'v8': 0, 'r8': 0, 'm8': 0, 's8': 0,
-        'v9': 0, 'r9': 0, 'm9': 0, 's9': 0,
-        'v10': 0, 'r10': 0, 'm10': 0, 's10': 0,
-        'v11': 0, 'r11': 0, 'm11': 0, 's11': 0,
-        'v12': 0, 'r12': 0, 'm12': 0, 's12': 0,
-        'v13': 0, 'r13': 0, 'm13': 0, 's13': 0,
-        'v14': 0, 'r14': 0, 'm14': 0, 's14': 0,
-        'v15': 0, 'r15': 0, 'm15': 0, 's15': 0,
-        'v16': 0, 'r16': 0, 'm16': 0, 's16': 0,
-      }
+      "keyboardMIDI": false, "keyOctave": 4
     },
     "lastOpened": timestamp, "lastUpdated" : timestamp,
   },
@@ -63,31 +41,32 @@ var msdp = {
       "showBoards": 1, "initEvent": 0,
       "dryMics": 0, "recordedInProject": 0,
       "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
-      "keyboardMIDI": false, "keyOctave": 4,
+      "keyboardMIDI": false, "keyOctave": 4
+    },
+    "openBoards": [], "savedBoards": [],
+    'systemBoard': {
       "metroSettings": {"source": 0,"bpm": 60, "bpMeasure": 4, "tick": 0, "customDiv": 5, "loopState": 0, 'loopStartB': 1, 'loopStartM': 1, 'loopStopB': 1, 'loopStopM': 4, 'display': 1},
       'performerSettings': {
         'mFade': 1127,'s1Route': 'Z 1','s1Fade': 121,'s2Route': 'Y 1','s2Fade': 121,'s3Route': 'X 1','s3Fade': 121,
         'm1RouteI': 'Mic 1','m1RouteO': 'A 2','m1Fade': 0,'m2RouteI': 'Mic 2','m2RouteO': 'B 2','m2Fade': 0,'skipTo': 0},
       'mixerSettings':{
-        'v1': 0, 'r1': 0, 'm1': 0, 's1': 0,
-        'v2': 0, 'r2': 0, 'm2': 0, 's2': 0,
-        'v3': 0, 'r3': 0, 'm3': 0, 's3': 0,
-        'v4': 0, 'r4': 0, 'm4': 0, 's4': 0,
-        'v5': 0, 'r5': 0, 'm5': 0, 's5': 0,
-        'v6': 0, 'r6': 0, 'm6': 0, 's6': 0,
-        'v7': 0, 'r7': 0, 'm7': 0, 's7': 0,
-        'v8': 0, 'r8': 0, 'm8': 0, 's8': 0,
-        'v9': 0, 'r9': 0, 'm9': 0, 's9': 0,
-        'v10': 0, 'r10': 0, 'm10': 0, 's10': 0,
-        'v11': 0, 'r11': 0, 'm11': 0, 's11': 0,
-        'v12': 0, 'r12': 0, 'm12': 0, 's12': 0,
-        'v13': 0, 'r13': 0, 'm13': 0, 's13': 0,
-        'v14': 0, 'r14': 0, 'm14': 0, 's14': 0,
-        'v15': 0, 'r15': 0, 'm15': 0, 's15': 0,
-        'v16': 0, 'r16': 0, 'm16': 0, 's16': 0,
-      }
-    },
-    "openBoards": [], "savedBoards": []
+        'v1': 0, 'r1': 0, 'm1': 0, 's1': 0, 'v2': 0, 'r2': 0, 'm2': 0, 's2': 0, 'v3': 0, 'r3': 0, 'm3': 0, 's3': 0,
+        'v4': 0, 'r4': 0, 'm4': 0, 's4': 0,'v5': 0, 'r5': 0, 'm5': 0, 's5': 0, 'v6': 0, 'r6': 0, 'm6': 0, 's6': 0,
+        'v7': 0, 'r7': 0, 'm7': 0, 's7': 0, 'v8': 0, 'r8': 0, 'm8': 0, 's8': 0, 'v9': 0, 'r9': 0, 'm9': 0, 's9': 0,
+        'v10': 0, 'r10': 0, 'm10': 0, 's10': 0, 'v11': 0, 'r11': 0, 'm11': 0, 's11': 0, 'v12': 0, 'r12': 0, 'm12': 0, 's12': 0,
+        'v13': 0, 'r13': 0, 'm13': 0, 's13': 0, 'v14': 0, 'r14': 0, 'm14': 0, 's14': 0, 'v15': 0, 'r15': 0, 'm15': 0, 's15': 0,
+        'v16': 0, 'r16': 0, 'm16': 0, 's16': 0},
+        "controllerSettings": {
+            "c1": "Type_Module_Name_Here_1 1 0 0 1 13 0 1", "c2": "Type_Module_Name_Here_2 2 2 2 3 14 1 2", "c3": "Type_Module_Name_Here_3 3 0 4 5 15 0 3", "c4": "Type_Module_Name_Here_4 4 1 6 7 16 1 4",
+            "c5": "Type_Module_Name_Here_5 5 2 8 9 13 0 5", "c6": "Type_Module_Name_Here_6 6 0 10 11 14 1 6", "c7": "Type_Module_Name_Here_7 7 1 12 13 15 0 7", "c8": "Type_Module_Name_Here_8 8 2 14 15 16 1 8",
+            "c9": "Type_Module_Name_Here_9 9 0 16 17 13 0 9", "c10": "Type_Module_Name_Here_10 10 1 18 19 14 1 10", "c11": "Type_Module_Name_Here_11 11 2 20 21 15 0 11", "c12": "Type_Module_Name_Here_12 12 2 22 23 16 1 12",
+            "c13": "Type_Module_Name_Here_13 13 1 24 25 13 0 13", "c14": "Type_Module_Name_Here_14 14 2 26 27 14 1 14", "c15": "Type_Module_Name_Here_15 15 0 28 29 15 0 15", "c16": "Type_Module_Name_Here_16 16 1 30 31 16 1 16",
+            "c17": "Type_Module_Name_Here_17 17 2 32 33 13 0 17", "c18": "Type_Module_Name_Here_18 18 0 34 35 14 1 18", "c19": "Type_Module_Name_Here_19 19 1 36 37 15 0 19", "c20": "Type_Module_Name_Here_20 20 2 38 39 16 1 20",
+            "c21": "Type_Module_Name_Here_21 21 0 40 41 13 0 21", "c22": "Type_Module_Name_Here_22 22 1 42 43 14 1 22", "c23": "Type_Module_Name_Here_23 23 2 44 45 15 0 23", "c24": "Type_Module_Name_Here_24 24 0 46 47 16 1 24",
+            "c25": "Type_Module_Name_Here_25 25 1 48 49 13 0 25", "c26": "Type_Module_Name_Here_26 26 2 50 51 14 1 26", "c27": "Type_Module_Name_Here_27 27 0 52 53 15 0 27", "c28": "Type_Module_Name_Here_28 28 1 54 55 16 1 28",
+            "c29": "Type_Module_Name_Here_29 29 2 56 57 13 0 29", "c30": "Type_Module_Name_Here_30 30 0 58 59 14 1 30", "c31": "Type_Module_Name_Here_31 31 1 60 61 15 0 31", "c32": "Type_Module_Name_Here_32 32 2 62 63 16 1 32"
+        }
+    }
   }
 };
 //initialize the session objects
@@ -321,6 +300,8 @@ function get(type, v, v2){
     outlet(2, JSON.stringify(msdp.system, null, 4));
   } else if ( type === 'pSettings'){ // get the project settings content
     outlet(2, JSON.stringify(msdp.project.settings, null, 4));
+  } else if ( type === 'pSysBoard'){ // get the project settings content
+    outlet(2, JSON.stringify(msdp.project.systemBoard, null, 4));
   } else if (type === 'list'){ // determine whether asking for a list of boards or modules off a board
     if (v === 'modules'){
       outlet(2, Object.keys(session.boardPointers[v2]['modules']));

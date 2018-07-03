@@ -43,9 +43,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 133.0, 104.0, 22.0 ],
+					"patching_rect" : [ 34.0, 133.0, 127.0, 22.0 ],
 					"style" : "",
-					"text" : "msdp.tool.msglim"
+					"text" : "msdp.tool.msglim 500"
 				}
 
 			}
@@ -180,7 +180,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.394714, 33.0, 91.0, 22.0 ],
+					"patching_rect" : [ 285.394714, 33.0, 263.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess #2"
 				}
@@ -190,7 +190,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -204,7 +204,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -218,7 +218,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -319,16 +319,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "msdp.tool.msglim.maxpat",
-				"bootpath" : "D:/Github/source-code/System_Files/Includes",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
