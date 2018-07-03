@@ -24,7 +24,29 @@ var msdp = {
       "showBoards": 1, "initEvent": 0,
       "dryMics": 0, "recordedInProject": 0,
       "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
-      "keyboardMIDI": false, "keyOctave": 4
+      "keyboardMIDI": false, "keyOctave": 4,
+      "metroSettings": {"source": 0,"bpm": 60, "bpMeasure": 4, "tick": 0, "customDiv": 5, "loopState": 0, 'loopStartB': 1, 'loopStartM': 1, 'loopStopB': 1, 'loopStopM': 4, 'display': 1},
+      'performerSettings': {
+        'mFade': 1127,'s1Route': 'Z 1','s1Fade': 121,'s2Route': 'Y 1','s2Fade': 121,'s3Route': 'X 1','s3Fade': 121,
+        'm1RouteI': 'Mic 1','m1RouteO': 'A 2','m1Fade': 0,'m2RouteI': 'Mic 2','m2RouteO': 'B 2','m2Fade': 0,'skipTo': 0},
+      'mixerSettings':{
+        'v1': 0, 'r1': 0, 'm1': 0, 's1': 0,
+        'v2': 0, 'r2': 0, 'm2': 0, 's2': 0,
+        'v3': 0, 'r3': 0, 'm3': 0, 's3': 0,
+        'v4': 0, 'r4': 0, 'm4': 0, 's4': 0,
+        'v5': 0, 'r5': 0, 'm5': 0, 's5': 0,
+        'v6': 0, 'r6': 0, 'm6': 0, 's6': 0,
+        'v7': 0, 'r7': 0, 'm7': 0, 's7': 0,
+        'v8': 0, 'r8': 0, 'm8': 0, 's8': 0,
+        'v9': 0, 'r9': 0, 'm9': 0, 's9': 0,
+        'v10': 0, 'r10': 0, 'm10': 0, 's10': 0,
+        'v11': 0, 'r11': 0, 'm11': 0, 's11': 0,
+        'v12': 0, 'r12': 0, 'm12': 0, 's12': 0,
+        'v13': 0, 'r13': 0, 'm13': 0, 's13': 0,
+        'v14': 0, 'r14': 0, 'm14': 0, 's14': 0,
+        'v15': 0, 'r15': 0, 'm15': 0, 's15': 0,
+        'v16': 0, 'r16': 0, 'm16': 0, 's16': 0,
+      }
     },
     "lastOpened": timestamp, "lastUpdated" : timestamp,
   },
@@ -41,10 +63,30 @@ var msdp = {
       "showBoards": 1, "initEvent": 0,
       "dryMics": 0, "recordedInProject": 0,
       "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
-      "keyboardMIDI": false, "keyOctave": 4
+      "keyboardMIDI": false, "keyOctave": 4,
+      "metroSettings": {"source": 0,"bpm": 60, "bpMeasure": 4, "tick": 0, "customDiv": 5, "loopState": 0, 'loopStartB': 1, 'loopStartM': 1, 'loopStopB': 1, 'loopStopM': 4, 'display': 1},
+      'performerSettings': {
+        'mFade': 1127,'s1Route': 'Z 1','s1Fade': 121,'s2Route': 'Y 1','s2Fade': 121,'s3Route': 'X 1','s3Fade': 121,
+        'm1RouteI': 'Mic 1','m1RouteO': 'A 2','m1Fade': 0,'m2RouteI': 'Mic 2','m2RouteO': 'B 2','m2Fade': 0,'skipTo': 0},
+      'mixerSettings':{
+        'v1': 0, 'r1': 0, 'm1': 0, 's1': 0,
+        'v2': 0, 'r2': 0, 'm2': 0, 's2': 0,
+        'v3': 0, 'r3': 0, 'm3': 0, 's3': 0,
+        'v4': 0, 'r4': 0, 'm4': 0, 's4': 0,
+        'v5': 0, 'r5': 0, 'm5': 0, 's5': 0,
+        'v6': 0, 'r6': 0, 'm6': 0, 's6': 0,
+        'v7': 0, 'r7': 0, 'm7': 0, 's7': 0,
+        'v8': 0, 'r8': 0, 'm8': 0, 's8': 0,
+        'v9': 0, 'r9': 0, 'm9': 0, 's9': 0,
+        'v10': 0, 'r10': 0, 'm10': 0, 's10': 0,
+        'v11': 0, 'r11': 0, 'm11': 0, 's11': 0,
+        'v12': 0, 'r12': 0, 'm12': 0, 's12': 0,
+        'v13': 0, 'r13': 0, 'm13': 0, 's13': 0,
+        'v14': 0, 'r14': 0, 'm14': 0, 's14': 0,
+        'v15': 0, 'r15': 0, 'm15': 0, 's15': 0,
+        'v16': 0, 'r16': 0, 'm16': 0, 's16': 0,
+      }
     },
-    "assets": {
-      "scores": [], "audio": [], "midi": [], "plugins": [] },
     "openBoards": [], "savedBoards": []
   }
 };
