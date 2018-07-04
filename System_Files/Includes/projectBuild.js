@@ -14,7 +14,7 @@ var msdp = {
       "driver": "driver", "in": "microphone", "out": "speakers", "sampleRate": 44000, "ioVector": 512, "sigVector": 64
     },
     "settings": {
-      "dac": 1, "limiter": 1,
+      "dac": 1, "limiter": 1, 'volume': 127,
       "fullScreen": 1, "fullView": 0,
       "defaultViews": {
         "performer": 0, "mixer": 0, "score": 0,
@@ -31,7 +31,7 @@ var msdp = {
   "project": {
     "title": "New Project", 'path': 'C:/msdpProject',
     "settings": {
-      "dac": 1, "limiter": 1,
+      "dac": 1, "limiter": 1, 'volume': 127,
       "fullScreen": 1, "fullView": 0,
       "defaultViews": {
         "performer": 0, "mixer": 0, "score": 0,
@@ -65,6 +65,16 @@ var msdp = {
             "c21": "Type_Module_Name_Here_21 21 0 40 41 13 0 21", "c22": "Type_Module_Name_Here_22 22 1 42 43 14 1 22", "c23": "Type_Module_Name_Here_23 23 2 44 45 15 0 23", "c24": "Type_Module_Name_Here_24 24 0 46 47 16 1 24",
             "c25": "Type_Module_Name_Here_25 25 1 48 49 13 0 25", "c26": "Type_Module_Name_Here_26 26 2 50 51 14 1 26", "c27": "Type_Module_Name_Here_27 27 0 52 53 15 0 27", "c28": "Type_Module_Name_Here_28 28 1 54 55 16 1 28",
             "c29": "Type_Module_Name_Here_29 29 2 56 57 13 0 29", "c30": "Type_Module_Name_Here_30 30 0 58 59 14 1 30", "c31": "Type_Module_Name_Here_31 31 1 60 61 15 0 31", "c32": "Type_Module_Name_Here_32 32 2 62 63 16 1 32"
+        },
+        "metroControlSettings": {
+            "c1": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c2": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c3": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c4": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1",
+            "c5": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c6": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c7": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c8": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1",
+            "c9": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c10": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c11": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c12": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1",
+            "c13": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c14": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c15": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c16": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1",
+            "c17": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c18": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c19": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c20": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1",
+            "c21": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c22": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c23": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c24": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1",
+            "c25": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c26": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c27": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c28": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1",
+            "c29": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c30": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c31": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c32": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1"
         }
     }
   }
