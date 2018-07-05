@@ -75,6 +75,9 @@ var msdp = {
             "c21": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c22": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c23": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c24": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1",
             "c25": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c26": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c27": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c28": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1",
             "c29": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c30": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c31": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1", "c32": "1 1 0 1 Type_Module_Name 0 0.0000 0.0000 0.0000 0 2 1 0 1"
+        },
+        "scoreSettings": {
+          'mainScore': 'main_demo.txt', 'repeatScore': 'repeat.txt', 'delayScore': 'delay.txt', 'mCtrlMode': 0, 'mCtrlVal': 0, 'dDelTime': 0, 'rDelTime': 0.001, 'rTog': 0
         }
     }
   }

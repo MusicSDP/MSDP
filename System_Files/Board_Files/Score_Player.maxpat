@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 690.0, 167.0, 980.0, 661.0 ],
+		"rect" : [ 0.0, 43.0, 1920.0, 997.0 ],
 		"bgcolor" : [ 0.376471, 0.407843, 0.447059, 1.0 ],
 		"editing_bgcolor" : [ 0.376471, 0.407843, 0.447059, 1.0 ],
 		"bglocked" : 1,
@@ -40,13 +40,521 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-215",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1609.0, 989.59375, 81.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend rTog"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-214",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1492.5, 989.59375, 106.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend rDelTime"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-213",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1128.0, 989.59375, 109.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend dDelTime"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-212",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1382.0, 989.59375, 103.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend mCtrlVal"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-211",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1252.0, 989.59375, 117.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend mCtrlMode"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-191",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1300.0, 681.25, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-193",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1395.15625, 723.25, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-194",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 1395.15625, 691.25, 57.0, 22.0 ],
+					"style" : "",
+					"text" : "strippath"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-195",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1300.0, 723.25, 82.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-210",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 1300.0, 639.25, 69.0, 22.0 ],
+					"style" : "",
+					"text" : "opendialog"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-177",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 380.84375, 675.0, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-159",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 609.84375, 321.0, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 476.0, 717.0, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 476.0, 685.0, 57.0, 22.0 ],
+					"style" : "",
+					"text" : "strippath"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-123",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 380.84375, 717.0, 82.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-154",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 380.84375, 633.0, 69.0, 22.0 ],
+					"style" : "",
+					"text" : "opendialog"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-201",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 835.0, 161.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 20.900024, -63.0, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "scoreGet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-202",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.900024, -30.0, 207.0, 22.0 ],
+					"style" : "",
+					"text" : "s MSDP_System_and_Project_State"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-203",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 20.900024, -97.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-204",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 472.25, -166.0, 165.0, 22.0 ],
+					"style" : "",
+					"text" : "r MSDP_Score_Settings_Set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-205",
+					"maxclass" : "newobj",
+					"numinlets" : 9,
+					"numoutlets" : 9,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 472.25, -25.5, 474.0, 22.0 ],
+					"style" : "",
+					"text" : "route mainScore repeatScore delayScore mCtrlMode mCtrlVal dDelTime rDelTime rTog"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-206",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 472.25, -113.0, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "dict.iter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-207",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 472.25, -81.5, 114.0, 22.0 ],
+					"style" : "",
+					"text" : "route scoreSettings"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-208",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 472.25, -53.5, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "dict.iter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-209",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "dictionary" ],
+					"patching_rect" : [ 472.25, -139.5, 100.0, 23.0 ],
+					"style" : "",
+					"text" : "dict.deserialize"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-198",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1894.5, 995.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-200",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1894.5, 1025.0, 76.0, 22.0 ],
+					"style" : "",
+					"text" : "repeatScore"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-196",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1802.75, 995.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-197",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1802.75, 1025.0, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "delayScore"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-190",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2003.0, 1020.0, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-163",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1713.25, 995.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-165",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1713.25, 1025.0, 68.0, 22.0 ],
+					"style" : "",
+					"text" : "mainScore"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-184",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1713.25, 1058.625, 359.0, 22.0 ],
+					"style" : "",
+					"text" : "sprintf update value project.systemBoard.scoreSettings.%s \\\"%s\\\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-187",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1375.400024, 1123.0, 207.0, 22.0 ],
+					"style" : "",
+					"text" : "s MSDP_System_and_Project_State"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-188",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1375.400024, 1031.0, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-189",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1375.400024, 1058.625, 324.0, 22.0 ],
+					"style" : "",
+					"text" : "sprintf update value project.systemBoard.scoreSettings.%s"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-162",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 705.0, 358.0, 59.0, 22.0 ],
+					"style" : "",
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-111",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 705.0, 326.0, 57.0, 22.0 ],
+					"style" : "",
+					"text" : "strippath"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 609.84375, 353.0, 82.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 609.84375, 274.0, 69.0, 22.0 ],
+					"style" : "",
+					"text" : "opendialog"
 				}
 
 			}
@@ -57,7 +565,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1128.0, 22.0, 60.0, 22.0 ],
+					"patching_rect" : [ 1349.0, -3.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -70,22 +578,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1128.0, 54.0, 74.0, 22.0 ],
+					"patching_rect" : [ 1349.0, 55.0, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "value pPath"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-184",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 788.5, 60.5, 114.0, 22.0 ],
-					"style" : "",
-					"text" : "value SystemScore"
 				}
 
 			}
@@ -96,22 +591,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 597.761353, 24.0, 153.0, 22.0 ],
+					"patching_rect" : [ 1980.761353, 17.5, 153.0, 22.0 ],
 					"style" : "",
 					"text" : "r MSDP_Application_State"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-162",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 495.5, -0.5, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "loadbang"
 				}
 
 			}
@@ -122,7 +604,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.5, 26.5, 95.0, 22.0 ],
+					"patching_rect" : [ 1878.5, 20.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "value app_state"
 				}
@@ -139,7 +621,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 496.5, 54.0, 117.5, 35.0 ],
+					"patching_rect" : [ 1879.5, 47.5, 117.5, 35.0 ],
 					"rounded" : 10.0,
 					"style" : "",
 					"text" : "Unstick",
@@ -157,8 +639,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 495.5, 122.5, 69.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 690, 167, 1670, 828, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"patching_rect" : [ 1879.5, 115.5, 69.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 43, 1920, 1040, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
 				}
@@ -176,7 +658,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -882,7 +1364,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 496.75, 96.5, 153.0, 22.0 ],
+					"patching_rect" : [ 1879.5, 84.5, 153.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1043,7 +1525,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1139.0, 500.25, 56.0, 22.0 ],
+					"patching_rect" : [ 1271.0, 29.25, 56.0, 22.0 ],
 					"style" : "",
 					"text" : "deferlow"
 				}
@@ -1073,7 +1555,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1503,7 +1985,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1372.0, 387.0, 37.0, 22.0 ],
+					"patching_rect" : [ 1743.0, 740.40625, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "open"
 				}
@@ -1518,23 +2000,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 1278.0, 411.0, 93.0, 22.0 ],
+					"patching_rect" : [ 1820.0, 807.0, 93.0, 22.0 ],
 					"save" : [ "#N", "qlist", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", 0.0, "Read", "This", "First!", ";", ";", "#X", "insert", "This", "is", "a", "tutorial", "score", "_comma_", "provided", "to", "teach", "the", "user", "how", "to", "create", "custom", "scores", ";", ";", "#X", "insert", "READ", "THE", "FOLLOWING", "INFORMATION", "BEFORE", "BEGINNING!", ";", ";", "#X", "insert", "First", "Thing's", "First!", "If", "you", "want", "to", "make", "your", "own", "score", "_comma_", "you", "need", "to", "copy", "this", "file!", ";", ";", "#X", "insert", "You", "will", "not", "be", "allowed", "to", "'save", "over'", "this", "score", "until", "you", "replace", "it", "_comma_", "so", "any", "changes", "you", "make", "will", "be", "deleted", "after", "you", "close", "the", "window", ";", ";", "#X", "insert", "To", "make", "your", "own", "_comma_", "modifiable", "file", "_comma_", "follow", "these", "instructions:", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", "Go", "to", "the", "‘Score", "View’", "menu", "and", "select", "'Save", "Score'", ";", ";", "#X", "insert", "Make", "sure", "to", "save", "your", "score", "in", "the", "Saved", "Scores", "project", "folder.", "This", "will", "ensure", "that", "the", "score", "loads", "properly", "on", "launch.", ";", ";", "#X", "insert", "In", "your", "own", "saved", "version", "_comma_", "feel", "free", "to", "delete", "all", "of", "this", "text", "and", "start", "fresh", ";", ";", "#X", "insert", "The", "original", "will", "be", "saved", "with", "the", "program", "_comma_", "so", "don't", "worry", "about", "losing", "this", "tutorial!", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", 1.0, "Introduction", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "Now", "To", "Start", "The", "Tutorial!!!!", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "Notice", "a", "few", "things", "before", "we", "begin!", "Each", "line", "of", "code", "in", "the", "score", "ends", "with", "a", "semi-colon", ";", ";", "#X", "insert", "This", "is", "crucial!", "Make", "sure", "you", "end", "each", "line", "of", "your", "code", "with", "a", "semi-colon", "as", "well", ";", ";", "#X", "insert", "This", "tells", "the", "system", "that", "you've", "finished", "a", "thought", "_comma_", "and", "are", "ready", "to", "start", "your", "next", "thought", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "What", "are", "the", "scores", "_comma_", "and", "what", "do", "they", "do?", ";", ";", "#X", "insert", "The", "scores", "are", "the", "most", "advanced", "way", "of", "creating", "automation", "for", "your", "modules", ";", ";", "#X", "insert", "They", "also", "allows", "you", "to", "breathe", "life", "into", "projects", "for", "easy", "and", "intuitive", "live", "performances", ";", ";", "#X", "insert", "They", "give", "you", "direct", "control", "over", "the", "System", "Board", "Metronome", "and", "allow", "you", "to", "fully", "customize", "your", "experience", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "How", "do", "scores", "function?", ";", ";", "#X", "insert", "The", "score", "are", "user-made", "sets", "of", "Events", "consisting", "of", "one", "or", "more", "Automation", "Messages", ";", ";", "#X", "insert", "Automation", "Messages", "are", "commands", "that", "control", "the", "various", "parameters", "in", "your", "modules", "_comma_", "and", "around", "the", "system", ";", ";", "#X", "insert", "Events", "are", "sets", "of", "automation", "messages", "that", "you", "want", "to", "send", "out", "all", "at", "one", "time", "_comma_", "to", "any", "part", "of", "your", "project", ";", ";", "#X", "insert", "Events", "are", "Triggered", "_comma_", "or", "started", "_comma_", "by", "the", "performer", "in", "or", "out", "of", "sequence", "_comma_", "at", "any", "point", "that", "they", "need", "to", "be", "triggered", ";", ";", "#X", "insert", "Events", "can", "be", "Triggered", "one", "of", "the", "following", "ways:", ";", ";", "#X", "insert", 1.0, "By", "using", "the", "Event", "Buttons", "on", "the", "Perfomer", "View", ";", ";", "#X", "insert", 2.0, "By", "using", "the", "Event", "Buttons", "on", "the", "Score", "Player", ";", ";", "#X", "insert", 3.0, "By", "properly", "setting", "up", "a", "Foot", "Pedal", "or", "Controller", "for", "the", "necessary", "function", ";", ";", "#X", "insert", 4.0, "By", "using", "the", "Pitch-to-MIDI", "module", "to", "convert", "signals", "into", "MIDI", "control", "data", ";", ";", "#X", "insert", 5.0, "By", "using", "the", "Metronome", "to", "trigger", "events", "at", "specific", "points", "in", "time.", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", 2.0, "The", "Automation", "Message", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "Let's", "look", "at", "how", "to", "build", "automation", "messages", "first", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "An", "Automation", "Message", "consists", "of", "Two", "Parts:", "The", "Automation", "ID", "_comma_", "and", "one", "or", "more", "Parameter", "Commands", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "It", "may", "be", "useful", "at", "this", "point", "to", "review", "Automation", "IDs", "_comma_", "how", "they", "function", "_comma_", "and", "what", "they", "do", ";", ";", "#X", "insert", "If", "you", "are", "unfamiliar", "with", "these", "concepts", "_comma_", "go", "to", "our", "YouTube", "channel", "_comma_", "where", "Automation", "is", "introduced", "in", "detail", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "An", "automation", "message", "consists", "of", "a", "single", "line", "of", "code", "_comma_", "set", "to", "change", "the", "parameters", "of", "a", "single", "module", ";", ";", "#X", "insert", "The", "first", "word", "of", "automation", "message", "will", "be", "the", "ID", "of", "the", "module", "you", "want", "to", "control", ";", ";", "#X", "insert", "For", "example", "_comma_", "if", "we", "want", "to", "control", "a", "module", "called", "Echo1", "_comma_", "we", "will", "want", "our", "message", "to", "read", "like", "this:", ";", ";", "#X", "insert", "****", ";", ";", "#X", "insert", "Echo1", "p1", "something", "_comma_", "p2", "something something”… etc;\r\n***;\r\n^--- Check out the name that I gave that message.;\r\nStarting the line with 'Echo1' will send all of the information out to the module with the “Echo1” ID!;\r\nYou can only choose one ID per line, so don't mix and match IDs in a single line. The system won't be sure what to do if you do!;\r\nAlso, remember that the ID MUST go at the beginning of the line. The system will ignore the message if you put the ID anywhere else;\r\n;\r\n~~~;\r\n;\r\nAfter we've placed our ID at the beginning of the line, we can decide how we want to change the parameters.;\r\nThis will make the most sense if you review the YouTube tutorial on Automation first;\r\nRemember that each module is constructed of parameters that can be changed;\r\nMost of these parameters can be controlled via automation messages in the automation board, Controller Board, or Metronome Contoller;\r\nWith the System Score we can control even more parameters and we can control modules in more depth!;\r\nThis is achieved through creation of Parameter Commands;\r\n;\r\n~~~;\r\n;\r\nParameter Commands are the specific commands created to change parameters throughout modules and various System Board screens;\r\nParameter Commands consist of two parts;\r\nThe first part is the parameter number;\r\nThe second part is the value or values for the parameter;\r\n;\r\n~~~;\r\n;\r\nLook at the first example line again. After the word Echo1, we placed the word p1.;\r\nWe tell the system what parameter to change by writing 'p', followed by the number of the parameter.;\r\nIn other words, if we want to change the input of the Echo1 module, we state this by writing p1 for Parameter 1;\r\nIn the same way, changing the output would start with p2, and changing the volume would start with p3;\r\nRemember that p1, p2, and p3 are *almost* always our Input, Output, and Volume controls;\r\nThere are different types of parameters though, and not all can be controlled the same way.;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n;\r\n;\r\n;\r\n2a. Different Types of Parameters;\r\n;\r\nLet's review the different types of parameters now and look at how to build commands for each;\r\n;\r\n~~~;\r\n;\r\nINPUT AND OUTPUT MENUS;\r\n;\r\nFirst there are inputs: This is the couplet of letter and number drop down menus;\r\nIn our system score, we can set our input by simply typing out the letter and number we want to set it to;\r\nHere's an example message:;\r\n***;\r\nEcho1 p1 Mic 2;\r\n***;\r\nThis message would set Echo1's input to Mic 2. With our system score, we can change inputs and outputs on the fly;\r\nThere are a few modules where we can choose two inputs;\r\nIn this case, we group them together into a single command;\r\nHere's an example message:;\r\n***;\r\nConvolve1 p1 Mic 1 B 2;\r\n***;\r\nWe just set the inputs of our Convolve1 module to Mic 1 and B 2;\r\nPretty easy, right?;\r\n~~~;\r\n;\r\nNext let's review Outputs;\r\nOutputs can be set the same way as inputs.;\r\nThe only difference is that we always have two options for outputs.;\r\nThis means that we'll have to provide two sets of choices;\r\nRemember also that outputs are *almost* always parameter 2;\r\nHere's an example message:;\r\n***;\r\nEcho1 p2 Master Out A 13;\r\n***;\r\nThis message sets the first output of Echo1 to Master Out, and our second output to A 13;\r\nJust like with our inputs, we can use the system score to change the routing at any time!;\r\n;\r\n~~~;\r\n;\r\nOTHER MENUS;\r\n;\r\nSometimes we'll find other parameters that are menu-based. All non-input/output menus work a little bit differently;\r\nIn this case, we'll simply use a number, based on it's position in the menu list.;\r\nThe top-most menu item can be called by setting the number to 0, the second from the top is menu item 1, etc..;\r\nThe Degrade module has one such menu;\r\nLook at the menu for parameter four, used to route the signal through either the Overdrive or Degrade effect;\r\nThe menu has three items to choose from.;\r\nThe first item in the menu is labelled 4.", "Choose", "Routing. This is non-functional, but is selected with the number 0;\r\nThe second item is Overdrive. This is selected with the number 1;\r\nThe third item is Degrade. This is selected with the number 2;\r\nChoosing number 1 will set our parameter to Overdrive, and choosing number 2 will set it to Degrade;\r\nHere's an example message:;\r\n***;\r\nDegrade1 p4 1;\r\n***;\r\nSo, if we have a module named Degrade1, we just told it to set the menu to its Overdrive setting.;\r\n;\r\n~~~;\r\n;\r\nKNOBS, SLIDERS, AND NUMBER BOXES;\r\n;\r\nKnobs, Sliders, and Number Boxes are particularly fun to automate, as you can send them gliding from one position to another;\r\nWatching a board full of knobs and boxes that are all moving at their own rate can be really fun!;\r\nSetting these in motion requires a little more attention to detail, so let's look at how to do it.;\r\nFirst, as always, we choose a parameter. Let's use volume as our example parameter... p3;\r\nVolume is a knob, and so it can be sent to move between two states;\r\nFirst, set the parameter to it's starting value. Here's an example message:;\r\n***;\r\nEcho1 p3 0.;\r\n***;\r\nThis message sets our volume on Echo1 to start at 0, or silence.;\r\nAfter a starting state is chosen, you can send it to a new location by giving it a Destination Value AND a Ramp Time.;\r\nThe Destination Value is the number you want the knob to move to.;\r\nThe Ramp Time is how long (in milliseconds), it will take to get there;\r\nHere's an example message:;\r\n***;\r\nEcho1 p3 1.3 10000;\r\n***;\r\nWe just set the volume knob on Echo1 to move to a value of 1.3 over 10 seconds of time;\r\nNote that if we DON'T set a starting volume first, the knob will start moving from its current position.;\r\nAfter the discussion of parameters, we'll look at how to make messages with multiple parameter settings;\r\nThis will make it easier to set the volume all at once;\r\nKnobs, Number Boxes, and Sliders all work the same way.;\r\n;\r\n~~~;\r\n;\r\nMULTI-SLIDERS, EQ GRAPHS, AND LINE GRAPHS;\r\n;\r\nThese controls are set with long messages. These are rarer, and are tricky;\r\nEach of these requires knowing exactly how to build the message, and can not glide between values;\r\nSetting these effects up requires inputting a string of numbers all as a single command.;\r\nPull up a StudioEQ module and you'll see there's a button that let's you view the parameter setting for the current EQ;\r\nA similar button should exist for all of these multiple-value graphs.;\r\nThese parameters should be copied verbatim into the System Score.;\r\nLet's look at an example of one of these long messages:;\r\n***;\r\nEQ1 p3 params 4 6986.908691 3.554371 0.924832 params 3 1307.57 2.688353 1.86785 params 2 353.243591 0.356756 1.762398 params 1 126.749527 1.024613 2.083906 params 0 38.909744 0.518315 1.510518;\r\n***;\r\nThat's a long message! But it's got to be exactly right if you want the EQ to be set exactly this way. These are tricky, but can be well worth it;\r\nLet's look at an example of the messages we get with the multi-slider in the Additive;\r\n***;\r\nAdditivite1 p21 0.261364 0.522727 0.9 0.261364;\r\n***;\r\nFinally, here's an example of the line-graph in the Gater;\r\n***;\r\nGater1 p10 0. 0. 1.904762 1. 35.238094 1. 47.142857 0.569767 53.333328 0. 100. 0.;\r\n***;\r\n;\r\n~~~;\r\n;\r\nKEYBOARDS;\r\n;\r\nKeyboards send and receive midi note values. For reference, Middle C is Midi Note 60;\r\nA good example of setting a keyboard is in the comb tool;\r\nIf we wanted to set the comb keyboard to A3, we'd want to use the value 57;\r\nHere's an example message:;\r\n***;\r\nComb1 p8 57;\r\n***;\r\nHere we sent the keyboard (parameter 8) the midi number for the A below middle C;\r\n;\r\n~~~;\r\n;\r\nTOGGLES and TOGGLING BUTTONS;\r\n;\r\nToggles and Toggling Buttons only have two states. Off (0) and On (1);\r\nTo set the state, simply choose whether you want the toggle to be in the Off (0) or On (1) position;\r\nHere's an example message:;\r\n***;\r\nGranulator1 p19 0;\r\n***;\r\nWe just sent our granulator the command to toggle OFF the Start/Stop switch. Our Granulator has just stopped working!;\r\n;\r\n~~~;\r\n;\r\nNON-TOGGLING BUTTONS;\r\n;\r\nNon-Toggling buttons respond to any message, and will act as if they've been clicked, triggering their action;\r\nGo ahead and send the button parameters any number or word;\r\nHere's an example message:;\r\n***;\r\nScratcher1 p10 scratchy;\r\n***;\r\nWe just triggered the Random", "Chop button on our scratcher, using the word scratchy! Remember that any number or word will do!;\r\n;\r\n~~~;\r\n;\r\nFILE PLAYERS;\r\n;\r\nThe File Player and EZ File Play both provide the ability to load audio files.;\r\nThe System Score actually CAN load audio files directly into a module, as long as the file exists in your project’s Audio Files folder.;\r\nAny file that’s been added via the Audio File manager will already be in the right place, although files may be added manually;\r\nOnce you've placed the audio file into the folder, loading it is as simple as adding the name of the file to the proper parameter;\r\nIn most modules that use files, this is parameter 1, but you’ll want to check for each module you plan on using;\r\nHere's an example message:;\r\n***;\r\nFilePlay1 p1 testaudio.wav;\r\n***;\r\nIn this example we loaded a file called testaudio.wav into the normal file player;\r\n~~~;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n2b. Automation Messages with Multiple Parameter Commands;\r\n;\r\nAll of the demonstration Automation Messages shown in the section above contained a single Parameter Command;\r\nOne thing that makes scores so powerful is its ability to combine Multiple Parameter Commands onto a Single Automation Message;\r\nThis is done simply by adding a comma at the end of the command, and then beginning a new command!;\r\nHere's an example message:;\r\n***;\r\nEcho1 p3 0., p1 Mic 2, p2 Master Out Z 12, p4 0., p4 10000 5000, p3 1.3 10000;\r\n***;\r\nThis Automation Message contains six Parameter Commands, separated by commas;\r\nNotice that we don't put the semi-colon in until the END of the Automation Message;\r\nThe commands do NOT need to follow the parameter number order;\r\nIMPORTANTLY, commands are executed one at a time, in order from left to right;\r\nThat means that:;\r\nThe First event in the message sets volume to zero immediately;\r\nThe Second event sets the inputs immediately. The Third event sets the outputs immediately;\r\nThe Fourth event sets the delay to 0 immediately;\r\nThe Fifth event moves the delay to 10000, over 5 seconds;\r\nThe Sixth event moves the volume to 1.3 over 10 seconds;\r\nThe semi-colon states that the message is over.;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n2c. Leaving comments to yourself;\r\n;\r\nAs you build your score, you might find it to be useful to leave messages to yourself about what you're doing;\r\nThese messages are called Comments, and won't affect the way to score works;\r\nTo make a comment, start a line with the ID MSDP_COMMENT (all caps);\r\nYou can write anything you want in the comment line, and it will be ignored. It's important to avoid ONE THING in your comment:;\r\nDO NOT WRITE A SEMI-COLON FOR ANY REASON OTHER THAN TO END YOUR COMMENT LINE;\r\nHere's an example comment:;\r\n***;\r\nMSDP_COMMENT ///This is an example comment. It won't do anything!///;\r\n***;\r\nNote that I started and ended the comment with three dashes. Because they are part of the comment, the dashes don't do anything;\r\nI like to add the dashes to make it easier for me to see comments.;\r\nConsider adding dashes or your own symbols to make your comments easier to see in the score;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n;\r\n3. Events;\r\n;\r\n3a. Introduction to Events.;\r\n;\r\nAn Event is a collection of Automation Messages and comments that will be triggered and sent out together.;\r\nRemember that the scores are constructed as a sequence of events that the performer will move through one at a time;\r\nAn Event consists of two parts:;\r\n1. One or more Automation Messages;\r\n2. The Event Number; \r\nThe Event Number is a Line consisting only of a number and a semi-colon;\r\n;\r\nThe Automation Messages come first;\r\nThere is no limit to the number of messages that can be grouped together into an event.;\r\n;\r\nThe Event number must come after the last Automation Message for the event;\r\nThe Event number signifies the end of the current event;\r\nThe First Event is Event 0, the Second Event is Event 1, etc...;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n;\r\n3a. An Example Event;\r\n;\r\nHere's an example event;\r\n;\r\n;\r\n;\r\n***;\r\nMSDP_COMMENT ///Here's where the Event Begins///;\r\nFilePlay1 p1 test.aiff, p2 Master Out A 1, p3 1.;\r\nEcho1 p1 A 1, p2 Master Out A 6, p3 0., p3 1. 20000, p5 100., p5 10000 2000;\r\nDelay1 p1 A 1, p2 Master Out A 7, p3 0., p3 1. 10000, p4 5000;\r\nMSDP_MESSAGE This is the First Example Event;\r\nMSDP_DScore p4 delay.txt;\r\nCOMMENT ///This is the end of the event///;\r\n0;\r\n***;\r\n;\r\n;\r\n;\r\nThis event consisted of five automation messages, two comments, and the event number 0 at the end;\r\nSome of these automation messages use special IDs that control unique parts of the system.;\r\nWe'll cover these and more, later in the tutorial.;\r\n;\r\nEvents are executed in sequence from top to bottom;\r\nEach automation message sends its parameter controls in sequence from left to right.;\r\nSo the first the that happens in our example is that the Comment is sent out;\r\nThis doesn't do anything other than send the comment to the Score Player.;\r\nNext, the Echo1 automation message goes out.;\r\nThe input is set, the outputs are set, the volume is set then moved, and the delay is set then moved.;\r\nNext, the Delay1 automation message goes out;\r\nThen, in sequence, the MSDP_MESSAGE, MSDP_DScore, and MSDP_COMMENT commands are sent out.;\r\nFinally, the event is finished, signaled by the Event Number 0.;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n;\r\n4. Controlling the Scores;\r\n;\r\nThe Scores can be controlled from one of seven locations:;\r\n1. The Performer View;\r\n2. The Score Player;\r\n3. Pedals or Controllers;\r\n4. The Metronome Controller;\r\n5. The Signal-to-MIDI Module;\r\n6. Other Scores;\r\n7. The Same Score!;\r\n;\r\nEvents can be triggered sequentially by hitting the next", "event button in the Performer view,;\r\nOr by sending a command to parameter P1 for any of the scores from automation locations;\r\nOr by pressing the correct Controller or playing the correct Pitch, as set by the “Control Method” and “Control Value” in the Score Player;\r\nAlternately, events may be queued to trigger in any order by selecting the desired number from the Choose", "Event number box, then hitting Enter.;\r\nIf a new event is selected from Choose", "Event, then hitting Next", "Event will move to the event and begin the event.;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n;\r\n4a. The System Score Controls;\r\n;\r\nWith the Performer View toggled open, event controls can be found on the right side of the window;\r\nIf the Score Player is opened, the same controls will be found, but with more options.;\r\nThe Score Player can be found in the 'Music_SDP Windows' and 'Scores’ menus on the menu bar.;\r\n;\r\n~~~;\r\n;\r\nThe Current Event Display;\r\nThe top control is the Current Event, which is really just a display of the event that was recently loaded;\r\nThe Current Event is only displayed properly if the event has a special automation message added to the end of it;\r\nThis special message requires the ID 'eventnum' followed by the number you want to display;\r\nA demonstration of this can be seen in the earlier example event;\r\nThis message will be covered in more detail in the next chapter: Customizing Music_SDP;\r\n;\r\n~~~;\r\n;\r\nThe Next Event Button;\r\nThis button, when pressed, moves the System Score forward one event, triggering all of the automation messages in that event;\r\n;\r\n~~~;\r\n;\r\nThe Reset Score Button;\r\nThis button, when pressed, moves the System Score back to Event 0. Resetting the score Does NOT trigger Event 0.;\r\nIn order to trigger Event 0, once the Reset Button has been set, the Next Event button needs to be pressed.;\r\n;\r\n~~~;\r\n;\r\nSkip to Event #;\r\nEntering a number into this number box (and then hitting Return or Enter) will automatically move the score to this event.;\r\nOnce Return or Enter has been pressed, the System Score will move to the selected event and the event will automatically trigger;\r\n;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n;\r\n4b. Foot Pedal and Controller Setup;\r\n;\r\nDuring a performance, it might not always be convenient to work with the keyboard and mouse.;\r\nYou might not be able to take your hands away from your instrument, or you may be working in multiple programs.;\r\nThe Foot Pedal and Controller Setup has been created specifically to address this issue.;\r\n;\r\n(Unfortunately, I haven't finished this section yet. This will be completed in a future update);\r\n;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n;\r\n5. The Performer View;\r\n;\r\nTHE EVENT NUMBER;\r\n;\r\nWhen cycling through the system score, it's useful to keep track of the current event without having the score opened.;\r\nUnfortunately, the only way to view the current event is to set it to display with a special message;\r\nThe ID for this message is 'eventnum'. After the ID is set, enter the event number you want to display.; \r\nCreating this message will make the event number show up on the Performer View and the Score Player when the event is triggered;\r\nHere's an example message:;\r\n***;\r\neventnum 6;\r\n***;\r\nThis simple message sets the Current Event display to show the number 6 when the event is triggered.;\r\n;\r\nTHE MESSAGE VIEWER;\r\n;\r\nWhile performing, it is often useful to have a little information displayed with the current event.;\r\nThe Message Viewer can be found above the Performer View Mixer, and in the Score Player.;\r\nThe viewer isn't very large, so it's important to keep your message brief.;\r\nThis information in your message could be whatever you need.;\r\nMaybe you want to display the measure number for the next event.;\r\nMaybe you want to display a little information about what's happening at that event!;\r\n;\r\nThe Message Viewer is controlled with the ‘MSDP_MESSAGE’ ID;\r\nFollow the ID up with the message you'd like to display with the current event;\r\nHere's an example message:;\r\n***;\r\nMSDP_MESSAGE This is a Demonstration Message;\r\n***;\r\nThis automation message will send the above sentence to the Performer View and the Score Player;\r\nRemember that semi-colons finish lines in the score, so don't place a semi-colon in the middle of your message.;\r\n;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n6. Secondary Scores;\r\n;\r\nTwo other scores exist that compliment and expand upon the capabilities of the main System Score.;\r\nThese other scores are: The Delay Score and the Repeat Score;\r\nThese scores can be written following the same structure as the System Score, but each operates slightly differently;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n6a. Controlling the Secondary Scores;\r\nSecondary scores can not be controlled via direct MIDI data, and lack the option to set a pitch or control value to move forward;\r\nInstead, secondary scores must be controlled via automation messages;\r\nThey may be triggered by other scores, or by custom designed messages in automation boards, or by creating controller or metronome automation;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n6b. The Delay Score;\r\nThe Delay Score functions identically to the System Score, but it includes a changeable delay time.;\r\nThis delay time determines an amount of time between when an event is triggered, and when the messages in the event are actually distributed.;\r\nIf you need to wait a specific amount of time AFTER the beginning of an event for other events to happen, the Delay Score makes this possible;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n6c The Repeat Score;\r\nThe Repeat Score functions identically to the System Score, but it include a repeat on/off toggle and a delay time.;\r\nWhen the repeat toggle is on, the message will be re-triggered after the predetermined delay time has passed.;\r\nThe event will continue to re-trigger at this interval until the repeat toggle is turned off, or until a different event is triggered in the repeat score;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n7. End of Tutorial;\r\nThe following section provides a set of complex and complete sample events;\r\n;\r\n;\r\n;\r\n***;\r\nMSDP_COMMENT ///LOAD THE NECESSARY FILES INTO FILE PLAYERS///;\r\nFile1 p1 testaudio.wav, p2 Master Out A 1, p3 1.0, p4 0, p5 1, p6 1., p7 0;\r\nFile2 p1 testtudio2.mp3, p2 Master Out A 2, p3 1.0, p4 0, p5 0, p6 0.5, p7 1, p8 1.5;\r\nMSDP_COMMENT ///SETUP THE ECHO, SHIFT, AND DEGRADE EFFECTS///;\r\nEcho1 p1 A 1, p2 Master Out Z 0, p3 0.0, p4 1000, p5 0.85, p6 0, p7 0;\r\nShift1 p1 A 2, p2 Master Out Z 0, p3 0.0, p4 -12, p5 0, p6 0, p7 0, p8 0, p9 0, p10 0;\r\nDegrade1 p1 A 1, p2 Master Out Z 0, p3 0.0, p4 2, p5 1.0;\r\nMSDP_COMMENT ///SETUP THE METRONOME///;\r\nMSDP_Metronome p1 60, p2 4;\r\nMSDP_COMMENT ///SEND TWO MESSAGES TO THE DELAY SCORE///;\r\nMSDP_DScore p4 delay.txt, p5 0.5;\r\nMSDP_DScore p1 bang;\r\nMSDP_COMMENT ///SEND TWO MESSAGES TO THE REPEAT SCORE///;\r\nMSDP_RScore p5 delay.txt, p3 1, p6 0.5;\r\nMSDP_RScore p1 bang;\r\nCOMMENT ///THE FINAL BITS///;\r\nMSDP_MESSAGE Begin the Demo;\r\n1;\r\nMSDP_COMMENT ///PLAY THE FILES///;\r\nFile1 p4 1;\r\nFile2 p4 1;\r\nMSDP_COMMENT ///CHANGE THE EFFECTS///;\r\nEcho1 p3 1.0 1000, p4 10000 10000;\r\nShift1 p3 1.0 2000, p5 0.2 2000, p6 -12, p7 12, p8 1;\r\nDegrade1 p3 1.0 4000, p5 0.25 6000;\r\nCOMMENT ///START THE METRONOME///;\r\nMSDP_Metronome toggle 1;\r\nMSDP_COMMENT ///SEND A MESSAGE TO THE REPEAT SCORE///;\r\nMSDP_RScore p3 0;\r\nMSDP_COMMENT ///THE FINAL BITS///;\r\nMSDP_MESSAGE Start the Files and Change the parameters;\r\n2;\r\n***;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;", ";" ],
 					"style" : "",
 					"text" : "qlist tutorial_list"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-84",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 935.0, 170.0, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "0"
 				}
 
 			}
@@ -1550,7 +2019,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1736,7 +2205,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 203.0, 249.0, 339.0, 22.0 ],
 									"style" : "",
-									"text" : "\"D:/MSDP Projects/ST1/Saved Scores/\""
+									"text" : "\"C:/Users/Hugh/Desktop/TestD/Saved Scores/\""
 								}
 
 							}
@@ -1872,7 +2341,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2058,7 +2527,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 203.0, 249.0, 339.0, 22.0 ],
 									"style" : "",
-									"text" : "\"D:/MSDP Projects/ST1/Saved Scores/\""
+									"text" : "\"C:/Users/Hugh/Desktop/TestD/Saved Scores/\""
 								}
 
 							}
@@ -2194,7 +2663,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2380,7 +2849,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 203.0, 249.0, 341.0, 22.0 ],
 									"style" : "",
-									"text" : "\"D:/MSDP Projects/ST1/Saved Scores/\""
+									"text" : "\"C:/Users/Hugh/Desktop/TestD/Saved Scores/\""
 								}
 
 							}
@@ -2517,7 +2986,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3040,19 +3509,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-177",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.75, 113.90625, 72.0, 22.0 ],
-					"style" : "",
-					"text" : "loadmess 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-176",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -3061,32 +3517,6 @@
 					"patching_rect" : [ 350.75, 257.5, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "+ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-159",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1452.0, 81.5, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 966.0, 91.0, 34.0, 22.0 ],
-					"style" : "",
-					"text" : "gate"
 				}
 
 			}
@@ -3195,18 +3625,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-154",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 62.0, 837.0, 24.0, 24.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-151",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -3237,7 +3655,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1139.0, 468.0, 72.0, 22.0 ],
+					"patching_rect" : [ 1271.0, -3.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess 0"
 				}
@@ -3346,19 +3764,6 @@
 					"patching_rect" : [ 877.25, 645.25, 99.0, 22.0 ],
 					"style" : "",
 					"text" : "r MSDP_RScore"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-107",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1300.0, 837.0, 35.0, 22.0 ],
-					"style" : "",
-					"text" : "read"
 				}
 
 			}
@@ -3498,32 +3903,6 @@
 					"style" : "",
 					"textcolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ],
 					"tricolor" : [ 0.435294, 0.835294, 0.811765, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-165",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 177.0, 966.0, 50.0, 22.0 ],
-					"style" : "",
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-163",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 98.0, 854.0, 50.0, 22.0 ],
-					"style" : "",
-					"text" : "next"
 				}
 
 			}
@@ -3705,19 +4084,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-126",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.0, 782.0, 35.0, 22.0 ],
-					"style" : "",
-					"text" : "read"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-127",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -3854,7 +4220,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 913.0, 257.0, 508.0, 22.0 ],
 					"style" : "",
-					"text" : "\"D:/MSDP Projects/ST1/Saved Scores/\""
+					"text" : "\"C:/Users/Hugh/Desktop/TestD/Saved Scores/\""
 				}
 
 			}
@@ -3868,7 +4234,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1232.0, 129.0, 152.0, 22.0 ],
+					"patching_rect" : [ 1349.0, 130.0, 152.0, 22.0 ],
 					"style" : "",
 					"text" : "sprintf \\\"%s/Saved Scores/"
 				}
@@ -3881,7 +4247,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1006.0, 169.0, 82.0, 22.0 ],
+					"patching_rect" : [ 1820.0, 616.0, 82.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend read"
 				}
@@ -3897,35 +4263,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1006.0, 134.0, 204.0, 22.0 ],
+					"patching_rect" : [ 1820.0, 581.0, 204.0, 22.0 ],
 					"style" : "",
 					"text" : "sprintf \\\"%s/Saved Scores/tutorial.txt"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 966.0, 22.0, 72.0, 22.0 ],
-					"style" : "",
-					"text" : "loadmess 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-123",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 610.0, 259.0, 35.0, 22.0 ],
-					"style" : "",
-					"text" : "read"
 				}
 
 			}
@@ -4013,7 +4353,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
 					"patching_rect" : [ 187.0, 436.0, 40.0, 22.0 ],
-					"save" : [ "#N", "qlist", ";", "#X", "insert", "MSDP_MESSAGE", "Important", "Performer", "Messages", "can", "be", "found", "here.", ";", ";", "#X", "insert", 0, ";", ";", "#X", "insert", "MSDP_MESSAGE", "This", "is", "a", "test", "message.", "This", "is", "only", "a", "test", "message", ";", ";", "#X", "insert", "MSDP_COMMENT", "This", "is", "a", "test", "comment.", "This", "is", "only", "a", "test", "comment", ";", ";", "#X", "insert", "MSDP_DScore", "p2", 1, "_comma_", "p5", 10, "_comma_", "p1", "bang", ";", ";", "#X", "insert", "MSDP_RScore", "p6", 5, "_comma_", "p2", 0, "_comma_", "p3", 1, "_comma_", "p1", "bang", ";", ";", "#X", "insert", "MSDP_Score", "p4", 0, "_comma_", "p5", 60, ";", ";", "#X", "insert", 1, ";", ";", "#X", "insert", "Test", "p4", 0, "_comma_", "p4", 10, 10000, ";", ";", "#X", "insert", "MSDP_Score", "p4", 0, "_comma_", "p5", 62, ";", ";", "#X", "insert", "MSDP_RScore", "p3", 0, ";", ";", "#X", "insert", 2, ";", ";", "#X", "insert", "Test", "p4", 10, "_comma_", "p4", 0, 10000, ";", ";", "#X", "insert", "MSDP_Score", "p4", 0, "_comma_", "p5", 64, ";", ";", "#X", "insert", 3, ";", ";" ],
+					"save" : [ "#N", "qlist", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", 0.0, "Read", "This", "First!", ";", ";", "#X", "insert", "This", "is", "a", "tutorial", "score", "_comma_", "provided", "to", "teach", "the", "user", "how", "to", "create", "custom", "scores", ";", ";", "#X", "insert", "READ", "THE", "FOLLOWING", "INFORMATION", "BEFORE", "BEGINNING!", ";", ";", "#X", "insert", "First", "Thing's", "First!", "If", "you", "want", "to", "make", "your", "own", "score", "_comma_", "you", "need", "to", "copy", "this", "file!", ";", ";", "#X", "insert", "You", "will", "not", "be", "allowed", "to", "'save", "over'", "this", "score", "until", "you", "replace", "it", "_comma_", "so", "any", "changes", "you", "make", "will", "be", "deleted", "after", "you", "close", "the", "window", ";", ";", "#X", "insert", "To", "make", "your", "own", "_comma_", "modifiable", "file", "_comma_", "follow", "these", "instructions:", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", "Go", "to", "the", "‘Score", "View’", "menu", "and", "select", "'Save", "Score'", ";", ";", "#X", "insert", "Make", "sure", "to", "save", "your", "score", "in", "the", "Saved", "Scores", "project", "folder.", "This", "will", "ensure", "that", "the", "score", "loads", "properly", "on", "launch.", ";", ";", "#X", "insert", "In", "your", "own", "saved", "version", "_comma_", "feel", "free", "to", "delete", "all", "of", "this", "text", "and", "start", "fresh", ";", ";", "#X", "insert", "The", "original", "will", "be", "saved", "with", "the", "program", "_comma_", "so", "don't", "worry", "about", "losing", "this", "tutorial!", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", 1.0, "Introduction", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "Now", "To", "Start", "The", "Tutorial!!!!", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "Notice", "a", "few", "things", "before", "we", "begin!", "Each", "line", "of", "code", "in", "the", "score", "ends", "with", "a", "semi-colon", ";", ";", "#X", "insert", "This", "is", "crucial!", "Make", "sure", "you", "end", "each", "line", "of", "your", "code", "with", "a", "semi-colon", "as", "well", ";", ";", "#X", "insert", "This", "tells", "the", "system", "that", "you've", "finished", "a", "thought", "_comma_", "and", "are", "ready", "to", "start", "your", "next", "thought", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "What", "are", "the", "scores", "_comma_", "and", "what", "do", "they", "do?", ";", ";", "#X", "insert", "The", "scores", "are", "the", "most", "advanced", "way", "of", "creating", "automation", "for", "your", "modules", ";", ";", "#X", "insert", "They", "also", "allows", "you", "to", "breathe", "life", "into", "projects", "for", "easy", "and", "intuitive", "live", "performances", ";", ";", "#X", "insert", "They", "give", "you", "direct", "control", "over", "the", "System", "Board", "Metronome", "and", "allow", "you", "to", "fully", "customize", "your", "experience", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "How", "do", "scores", "function?", ";", ";", "#X", "insert", "The", "score", "are", "user-made", "sets", "of", "Events", "consisting", "of", "one", "or", "more", "Automation", "Messages", ";", ";", "#X", "insert", "Automation", "Messages", "are", "commands", "that", "control", "the", "various", "parameters", "in", "your", "modules", "_comma_", "and", "around", "the", "system", ";", ";", "#X", "insert", "Events", "are", "sets", "of", "automation", "messages", "that", "you", "want", "to", "send", "out", "all", "at", "one", "time", "_comma_", "to", "any", "part", "of", "your", "project", ";", ";", "#X", "insert", "Events", "are", "Triggered", "_comma_", "or", "started", "_comma_", "by", "the", "performer", "in", "or", "out", "of", "sequence", "_comma_", "at", "any", "point", "that", "they", "need", "to", "be", "triggered", ";", ";", "#X", "insert", "Events", "can", "be", "Triggered", "one", "of", "the", "following", "ways:", ";", ";", "#X", "insert", 1.0, "By", "using", "the", "Event", "Buttons", "on", "the", "Perfomer", "View", ";", ";", "#X", "insert", 2.0, "By", "using", "the", "Event", "Buttons", "on", "the", "Score", "Player", ";", ";", "#X", "insert", 3.0, "By", "properly", "setting", "up", "a", "Foot", "Pedal", "or", "Controller", "for", "the", "necessary", "function", ";", ";", "#X", "insert", 4.0, "By", "using", "the", "Pitch-to-MIDI", "module", "to", "convert", "signals", "into", "MIDI", "control", "data", ";", ";", "#X", "insert", 5.0, "By", "using", "the", "Metronome", "to", "trigger", "events", "at", "specific", "points", "in", "time.", ";", ";", "#X", "insert", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "~~~", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", "*****************************************************************************************************************", ";", ";", "#X", "insert", 2.0, "The", "Automation", "Message", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "Let's", "look", "at", "how", "to", "build", "automation", "messages", "first", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "An", "Automation", "Message", "consists", "of", "Two", "Parts:", "The", "Automation", "ID", "_comma_", "and", "one", "or", "more", "Parameter", "Commands", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "It", "may", "be", "useful", "at", "this", "point", "to", "review", "Automation", "IDs", "_comma_", "how", "they", "function", "_comma_", "and", "what", "they", "do", ";", ";", "#X", "insert", "If", "you", "are", "unfamiliar", "with", "these", "concepts", "_comma_", "go", "to", "our", "YouTube", "channel", "_comma_", "where", "Automation", "is", "introduced", "in", "detail", ";", ";", "#X", "insert", ";", ";", "#X", "insert", "An", "automation", "message", "consists", "of", "a", "single", "line", "of", "code", "_comma_", "set", "to", "change", "the", "parameters", "of", "a", "single", "module", ";", ";", "#X", "insert", "The", "first", "word", "of", "automation", "message", "will", "be", "the", "ID", "of", "the", "module", "you", "want", "to", "control", ";", ";", "#X", "insert", "For", "example", "_comma_", "if", "we", "want", "to", "control", "a", "module", "called", "Echo1", "_comma_", "we", "will", "want", "our", "message", "to", "read", "like", "this:", ";", ";", "#X", "insert", "****", ";", ";", "#X", "insert", "Echo1", "p1", "something", "_comma_", "p2", "something something”… etc;\r\n***;\r\n^--- Check out the name that I gave that message.;\r\nStarting the line with 'Echo1' will send all of the information out to the module with the “Echo1” ID!;\r\nYou can only choose one ID per line, so don't mix and match IDs in a single line. The system won't be sure what to do if you do!;\r\nAlso, remember that the ID MUST go at the beginning of the line. The system will ignore the message if you put the ID anywhere else;\r\n;\r\n~~~;\r\n;\r\nAfter we've placed our ID at the beginning of the line, we can decide how we want to change the parameters.;\r\nThis will make the most sense if you review the YouTube tutorial on Automation first;\r\nRemember that each module is constructed of parameters that can be changed;\r\nMost of these parameters can be controlled via automation messages in the automation board, Controller Board, or Metronome Contoller;\r\nWith the System Score we can control even more parameters and we can control modules in more depth!;\r\nThis is achieved through creation of Parameter Commands;\r\n;\r\n~~~;\r\n;\r\nParameter Commands are the specific commands created to change parameters throughout modules and various System Board screens;\r\nParameter Commands consist of two parts;\r\nThe first part is the parameter number;\r\nThe second part is the value or values for the parameter;\r\n;\r\n~~~;\r\n;\r\nLook at the first example line again. After the word Echo1, we placed the word p1.;\r\nWe tell the system what parameter to change by writing 'p', followed by the number of the parameter.;\r\nIn other words, if we want to change the input of the Echo1 module, we state this by writing p1 for Parameter 1;\r\nIn the same way, changing the output would start with p2, and changing the volume would start with p3;\r\nRemember that p1, p2, and p3 are *almost* always our Input, Output, and Volume controls;\r\nThere are different types of parameters though, and not all can be controlled the same way.;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n;\r\n;\r\n;\r\n2a. Different Types of Parameters;\r\n;\r\nLet's review the different types of parameters now and look at how to build commands for each;\r\n;\r\n~~~;\r\n;\r\nINPUT AND OUTPUT MENUS;\r\n;\r\nFirst there are inputs: This is the couplet of letter and number drop down menus;\r\nIn our system score, we can set our input by simply typing out the letter and number we want to set it to;\r\nHere's an example message:;\r\n***;\r\nEcho1 p1 Mic 2;\r\n***;\r\nThis message would set Echo1's input to Mic 2. With our system score, we can change inputs and outputs on the fly;\r\nThere are a few modules where we can choose two inputs;\r\nIn this case, we group them together into a single command;\r\nHere's an example message:;\r\n***;\r\nConvolve1 p1 Mic 1 B 2;\r\n***;\r\nWe just set the inputs of our Convolve1 module to Mic 1 and B 2;\r\nPretty easy, right?;\r\n~~~;\r\n;\r\nNext let's review Outputs;\r\nOutputs can be set the same way as inputs.;\r\nThe only difference is that we always have two options for outputs.;\r\nThis means that we'll have to provide two sets of choices;\r\nRemember also that outputs are *almost* always parameter 2;\r\nHere's an example message:;\r\n***;\r\nEcho1 p2 Master Out A 13;\r\n***;\r\nThis message sets the first output of Echo1 to Master Out, and our second output to A 13;\r\nJust like with our inputs, we can use the system score to change the routing at any time!;\r\n;\r\n~~~;\r\n;\r\nOTHER MENUS;\r\n;\r\nSometimes we'll find other parameters that are menu-based. All non-input/output menus work a little bit differently;\r\nIn this case, we'll simply use a number, based on it's position in the menu list.;\r\nThe top-most menu item can be called by setting the number to 0, the second from the top is menu item 1, etc..;\r\nThe Degrade module has one such menu;\r\nLook at the menu for parameter four, used to route the signal through either the Overdrive or Degrade effect;\r\nThe menu has three items to choose from.;\r\nThe first item in the menu is labelled 4.", "Choose", "Routing. This is non-functional, but is selected with the number 0;\r\nThe second item is Overdrive. This is selected with the number 1;\r\nThe third item is Degrade. This is selected with the number 2;\r\nChoosing number 1 will set our parameter to Overdrive, and choosing number 2 will set it to Degrade;\r\nHere's an example message:;\r\n***;\r\nDegrade1 p4 1;\r\n***;\r\nSo, if we have a module named Degrade1, we just told it to set the menu to its Overdrive setting.;\r\n;\r\n~~~;\r\n;\r\nKNOBS, SLIDERS, AND NUMBER BOXES;\r\n;\r\nKnobs, Sliders, and Number Boxes are particularly fun to automate, as you can send them gliding from one position to another;\r\nWatching a board full of knobs and boxes that are all moving at their own rate can be really fun!;\r\nSetting these in motion requires a little more attention to detail, so let's look at how to do it.;\r\nFirst, as always, we choose a parameter. Let's use volume as our example parameter... p3;\r\nVolume is a knob, and so it can be sent to move between two states;\r\nFirst, set the parameter to it's starting value. Here's an example message:;\r\n***;\r\nEcho1 p3 0.;\r\n***;\r\nThis message sets our volume on Echo1 to start at 0, or silence.;\r\nAfter a starting state is chosen, you can send it to a new location by giving it a Destination Value AND a Ramp Time.;\r\nThe Destination Value is the number you want the knob to move to.;\r\nThe Ramp Time is how long (in milliseconds), it will take to get there;\r\nHere's an example message:;\r\n***;\r\nEcho1 p3 1.3 10000;\r\n***;\r\nWe just set the volume knob on Echo1 to move to a value of 1.3 over 10 seconds of time;\r\nNote that if we DON'T set a starting volume first, the knob will start moving from its current position.;\r\nAfter the discussion of parameters, we'll look at how to make messages with multiple parameter settings;\r\nThis will make it easier to set the volume all at once;\r\nKnobs, Number Boxes, and Sliders all work the same way.;\r\n;\r\n~~~;\r\n;\r\nMULTI-SLIDERS, EQ GRAPHS, AND LINE GRAPHS;\r\n;\r\nThese controls are set with long messages. These are rarer, and are tricky;\r\nEach of these requires knowing exactly how to build the message, and can not glide between values;\r\nSetting these effects up requires inputting a string of numbers all as a single command.;\r\nPull up a StudioEQ module and you'll see there's a button that let's you view the parameter setting for the current EQ;\r\nA similar button should exist for all of these multiple-value graphs.;\r\nThese parameters should be copied verbatim into the System Score.;\r\nLet's look at an example of one of these long messages:;\r\n***;\r\nEQ1 p3 params 4 6986.908691 3.554371 0.924832 params 3 1307.57 2.688353 1.86785 params 2 353.243591 0.356756 1.762398 params 1 126.749527 1.024613 2.083906 params 0 38.909744 0.518315 1.510518;\r\n***;\r\nThat's a long message! But it's got to be exactly right if you want the EQ to be set exactly this way. These are tricky, but can be well worth it;\r\nLet's look at an example of the messages we get with the multi-slider in the Additive;\r\n***;\r\nAdditivite1 p21 0.261364 0.522727 0.9 0.261364;\r\n***;\r\nFinally, here's an example of the line-graph in the Gater;\r\n***;\r\nGater1 p10 0. 0. 1.904762 1. 35.238094 1. 47.142857 0.569767 53.333328 0. 100. 0.;\r\n***;\r\n;\r\n~~~;\r\n;\r\nKEYBOARDS;\r\n;\r\nKeyboards send and receive midi note values. For reference, Middle C is Midi Note 60;\r\nA good example of setting a keyboard is in the comb tool;\r\nIf we wanted to set the comb keyboard to A3, we'd want to use the value 57;\r\nHere's an example message:;\r\n***;\r\nComb1 p8 57;\r\n***;\r\nHere we sent the keyboard (parameter 8) the midi number for the A below middle C;\r\n;\r\n~~~;\r\n;\r\nTOGGLES and TOGGLING BUTTONS;\r\n;\r\nToggles and Toggling Buttons only have two states. Off (0) and On (1);\r\nTo set the state, simply choose whether you want the toggle to be in the Off (0) or On (1) position;\r\nHere's an example message:;\r\n***;\r\nGranulator1 p19 0;\r\n***;\r\nWe just sent our granulator the command to toggle OFF the Start/Stop switch. Our Granulator has just stopped working!;\r\n;\r\n~~~;\r\n;\r\nNON-TOGGLING BUTTONS;\r\n;\r\nNon-Toggling buttons respond to any message, and will act as if they've been clicked, triggering their action;\r\nGo ahead and send the button parameters any number or word;\r\nHere's an example message:;\r\n***;\r\nScratcher1 p10 scratchy;\r\n***;\r\nWe just triggered the Random", "Chop button on our scratcher, using the word scratchy! Remember that any number or word will do!;\r\n;\r\n~~~;\r\n;\r\nFILE PLAYERS;\r\n;\r\nThe File Player and EZ File Play both provide the ability to load audio files.;\r\nThe System Score actually CAN load audio files directly into a module, as long as the file exists in your project’s Audio Files folder.;\r\nAny file that’s been added via the Audio File manager will already be in the right place, although files may be added manually;\r\nOnce you've placed the audio file into the folder, loading it is as simple as adding the name of the file to the proper parameter;\r\nIn most modules that use files, this is parameter 1, but you’ll want to check for each module you plan on using;\r\nHere's an example message:;\r\n***;\r\nFilePlay1 p1 testaudio.wav;\r\n***;\r\nIn this example we loaded a file called testaudio.wav into the normal file player;\r\n~~~;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n2b. Automation Messages with Multiple Parameter Commands;\r\n;\r\nAll of the demonstration Automation Messages shown in the section above contained a single Parameter Command;\r\nOne thing that makes scores so powerful is its ability to combine Multiple Parameter Commands onto a Single Automation Message;\r\nThis is done simply by adding a comma at the end of the command, and then beginning a new command!;\r\nHere's an example message:;\r\n***;\r\nEcho1 p3 0., p1 Mic 2, p2 Master Out Z 12, p4 0., p4 10000 5000, p3 1.3 10000;\r\n***;\r\nThis Automation Message contains six Parameter Commands, separated by commas;\r\nNotice that we don't put the semi-colon in until the END of the Automation Message;\r\nThe commands do NOT need to follow the parameter number order;\r\nIMPORTANTLY, commands are executed one at a time, in order from left to right;\r\nThat means that:;\r\nThe First event in the message sets volume to zero immediately;\r\nThe Second event sets the inputs immediately. The Third event sets the outputs immediately;\r\nThe Fourth event sets the delay to 0 immediately;\r\nThe Fifth event moves the delay to 10000, over 5 seconds;\r\nThe Sixth event moves the volume to 1.3 over 10 seconds;\r\nThe semi-colon states that the message is over.;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n2c. Leaving comments to yourself;\r\n;\r\nAs you build your score, you might find it to be useful to leave messages to yourself about what you're doing;\r\nThese messages are called Comments, and won't affect the way to score works;\r\nTo make a comment, start a line with the ID MSDP_COMMENT (all caps);\r\nYou can write anything you want in the comment line, and it will be ignored. It's important to avoid ONE THING in your comment:;\r\nDO NOT WRITE A SEMI-COLON FOR ANY REASON OTHER THAN TO END YOUR COMMENT LINE;\r\nHere's an example comment:;\r\n***;\r\nMSDP_COMMENT ///This is an example comment. It won't do anything!///;\r\n***;\r\nNote that I started and ended the comment with three dashes. Because they are part of the comment, the dashes don't do anything;\r\nI like to add the dashes to make it easier for me to see comments.;\r\nConsider adding dashes or your own symbols to make your comments easier to see in the score;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n;\r\n3. Events;\r\n;\r\n3a. Introduction to Events.;\r\n;\r\nAn Event is a collection of Automation Messages and comments that will be triggered and sent out together.;\r\nRemember that the scores are constructed as a sequence of events that the performer will move through one at a time;\r\nAn Event consists of two parts:;\r\n1. One or more Automation Messages;\r\n2. The Event Number; \r\nThe Event Number is a Line consisting only of a number and a semi-colon;\r\n;\r\nThe Automation Messages come first;\r\nThere is no limit to the number of messages that can be grouped together into an event.;\r\n;\r\nThe Event number must come after the last Automation Message for the event;\r\nThe Event number signifies the end of the current event;\r\nThe First Event is Event 0, the Second Event is Event 1, etc...;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n;\r\n3a. An Example Event;\r\n;\r\nHere's an example event;\r\n;\r\n;\r\n;\r\n***;\r\nMSDP_COMMENT ///Here's where the Event Begins///;\r\nFilePlay1 p1 test.aiff, p2 Master Out A 1, p3 1.;\r\nEcho1 p1 A 1, p2 Master Out A 6, p3 0., p3 1. 20000, p5 100., p5 10000 2000;\r\nDelay1 p1 A 1, p2 Master Out A 7, p3 0., p3 1. 10000, p4 5000;\r\nMSDP_MESSAGE This is the First Example Event;\r\nMSDP_DScore p4 delay.txt;\r\nCOMMENT ///This is the end of the event///;\r\n0;\r\n***;\r\n;\r\n;\r\n;\r\nThis event consisted of five automation messages, two comments, and the event number 0 at the end;\r\nSome of these automation messages use special IDs that control unique parts of the system.;\r\nWe'll cover these and more, later in the tutorial.;\r\n;\r\nEvents are executed in sequence from top to bottom;\r\nEach automation message sends its parameter controls in sequence from left to right.;\r\nSo the first the that happens in our example is that the Comment is sent out;\r\nThis doesn't do anything other than send the comment to the Score Player.;\r\nNext, the Echo1 automation message goes out.;\r\nThe input is set, the outputs are set, the volume is set then moved, and the delay is set then moved.;\r\nNext, the Delay1 automation message goes out;\r\nThen, in sequence, the MSDP_MESSAGE, MSDP_DScore, and MSDP_COMMENT commands are sent out.;\r\nFinally, the event is finished, signaled by the Event Number 0.;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n;\r\n4. Controlling the Scores;\r\n;\r\nThe Scores can be controlled from one of seven locations:;\r\n1. The Performer View;\r\n2. The Score Player;\r\n3. Pedals or Controllers;\r\n4. The Metronome Controller;\r\n5. The Signal-to-MIDI Module;\r\n6. Other Scores;\r\n7. The Same Score!;\r\n;\r\nEvents can be triggered sequentially by hitting the next", "event button in the Performer view,;\r\nOr by sending a command to parameter P1 for any of the scores from automation locations;\r\nOr by pressing the correct Controller or playing the correct Pitch, as set by the “Control Method” and “Control Value” in the Score Player;\r\nAlternately, events may be queued to trigger in any order by selecting the desired number from the Choose", "Event number box, then hitting Enter.;\r\nIf a new event is selected from Choose", "Event, then hitting Next", "Event will move to the event and begin the event.;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n;\r\n4a. The System Score Controls;\r\n;\r\nWith the Performer View toggled open, event controls can be found on the right side of the window;\r\nIf the Score Player is opened, the same controls will be found, but with more options.;\r\nThe Score Player can be found in the 'Music_SDP Windows' and 'Scores’ menus on the menu bar.;\r\n;\r\n~~~;\r\n;\r\nThe Current Event Display;\r\nThe top control is the Current Event, which is really just a display of the event that was recently loaded;\r\nThe Current Event is only displayed properly if the event has a special automation message added to the end of it;\r\nThis special message requires the ID 'eventnum' followed by the number you want to display;\r\nA demonstration of this can be seen in the earlier example event;\r\nThis message will be covered in more detail in the next chapter: Customizing Music_SDP;\r\n;\r\n~~~;\r\n;\r\nThe Next Event Button;\r\nThis button, when pressed, moves the System Score forward one event, triggering all of the automation messages in that event;\r\n;\r\n~~~;\r\n;\r\nThe Reset Score Button;\r\nThis button, when pressed, moves the System Score back to Event 0. Resetting the score Does NOT trigger Event 0.;\r\nIn order to trigger Event 0, once the Reset Button has been set, the Next Event button needs to be pressed.;\r\n;\r\n~~~;\r\n;\r\nSkip to Event #;\r\nEntering a number into this number box (and then hitting Return or Enter) will automatically move the score to this event.;\r\nOnce Return or Enter has been pressed, the System Score will move to the selected event and the event will automatically trigger;\r\n;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n;\r\n4b. Foot Pedal and Controller Setup;\r\n;\r\nDuring a performance, it might not always be convenient to work with the keyboard and mouse.;\r\nYou might not be able to take your hands away from your instrument, or you may be working in multiple programs.;\r\nThe Foot Pedal and Controller Setup has been created specifically to address this issue.;\r\n;\r\n(Unfortunately, I haven't finished this section yet. This will be completed in a future update);\r\n;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n;\r\n5. The Performer View;\r\n;\r\nTHE EVENT NUMBER;\r\n;\r\nWhen cycling through the system score, it's useful to keep track of the current event without having the score opened.;\r\nUnfortunately, the only way to view the current event is to set it to display with a special message;\r\nThe ID for this message is 'eventnum'. After the ID is set, enter the event number you want to display.; \r\nCreating this message will make the event number show up on the Performer View and the Score Player when the event is triggered;\r\nHere's an example message:;\r\n***;\r\neventnum 6;\r\n***;\r\nThis simple message sets the Current Event display to show the number 6 when the event is triggered.;\r\n;\r\nTHE MESSAGE VIEWER;\r\n;\r\nWhile performing, it is often useful to have a little information displayed with the current event.;\r\nThe Message Viewer can be found above the Performer View Mixer, and in the Score Player.;\r\nThe viewer isn't very large, so it's important to keep your message brief.;\r\nThis information in your message could be whatever you need.;\r\nMaybe you want to display the measure number for the next event.;\r\nMaybe you want to display a little information about what's happening at that event!;\r\n;\r\nThe Message Viewer is controlled with the ‘MSDP_MESSAGE’ ID;\r\nFollow the ID up with the message you'd like to display with the current event;\r\nHere's an example message:;\r\n***;\r\nMSDP_MESSAGE This is a Demonstration Message;\r\n***;\r\nThis automation message will send the above sentence to the Performer View and the Score Player;\r\nRemember that semi-colons finish lines in the score, so don't place a semi-colon in the middle of your message.;\r\n;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n6. Secondary Scores;\r\n;\r\nTwo other scores exist that compliment and expand upon the capabilities of the main System Score.;\r\nThese other scores are: The Delay Score and the Repeat Score;\r\nThese scores can be written following the same structure as the System Score, but each operates slightly differently;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n6a. Controlling the Secondary Scores;\r\nSecondary scores can not be controlled via direct MIDI data, and lack the option to set a pitch or control value to move forward;\r\nInstead, secondary scores must be controlled via automation messages;\r\nThey may be triggered by other scores, or by custom designed messages in automation boards, or by creating controller or metronome automation;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n6b. The Delay Score;\r\nThe Delay Score functions identically to the System Score, but it includes a changeable delay time.;\r\nThis delay time determines an amount of time between when an event is triggered, and when the messages in the event are actually distributed.;\r\nIf you need to wait a specific amount of time AFTER the beginning of an event for other events to happen, the Delay Score makes this possible;\r\n*****************************************************************************************************************;\r\n~~~;\r\n*****************************************************************************************************************;\r\n6c The Repeat Score;\r\nThe Repeat Score functions identically to the System Score, but it include a repeat on/off toggle and a delay time.;\r\nWhen the repeat toggle is on, the message will be re-triggered after the predetermined delay time has passed.;\r\nThe event will continue to re-trigger at this interval until the repeat toggle is turned off, or until a different event is triggered in the repeat score;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n7. End of Tutorial;\r\nThe following section provides a set of complex and complete sample events;\r\n;\r\n;\r\n;\r\n***;\r\nMSDP_COMMENT ///LOAD THE NECESSARY FILES INTO FILE PLAYERS///;\r\nFile1 p1 testaudio.wav, p2 Master Out A 1, p3 1.0, p4 0, p5 1, p6 1., p7 0;\r\nFile2 p1 testtudio2.mp3, p2 Master Out A 2, p3 1.0, p4 0, p5 0, p6 0.5, p7 1, p8 1.5;\r\nMSDP_COMMENT ///SETUP THE ECHO, SHIFT, AND DEGRADE EFFECTS///;\r\nEcho1 p1 A 1, p2 Master Out Z 0, p3 0.0, p4 1000, p5 0.85, p6 0, p7 0;\r\nShift1 p1 A 2, p2 Master Out Z 0, p3 0.0, p4 -12, p5 0, p6 0, p7 0, p8 0, p9 0, p10 0;\r\nDegrade1 p1 A 1, p2 Master Out Z 0, p3 0.0, p4 2, p5 1.0;\r\nMSDP_COMMENT ///SETUP THE METRONOME///;\r\nMSDP_Metronome p1 60, p2 4;\r\nMSDP_COMMENT ///SEND TWO MESSAGES TO THE DELAY SCORE///;\r\nMSDP_DScore p4 delay.txt, p5 0.5;\r\nMSDP_DScore p1 bang;\r\nMSDP_COMMENT ///SEND TWO MESSAGES TO THE REPEAT SCORE///;\r\nMSDP_RScore p5 delay.txt, p3 1, p6 0.5;\r\nMSDP_RScore p1 bang;\r\nCOMMENT ///THE FINAL BITS///;\r\nMSDP_MESSAGE Begin the Demo;\r\n1;\r\nMSDP_COMMENT ///PLAY THE FILES///;\r\nFile1 p4 1;\r\nFile2 p4 1;\r\nMSDP_COMMENT ///CHANGE THE EFFECTS///;\r\nEcho1 p3 1.0 1000, p4 10000 10000;\r\nShift1 p3 1.0 2000, p5 0.2 2000, p6 -12, p7 12, p8 1;\r\nDegrade1 p3 1.0 4000, p5 0.25 6000;\r\nCOMMENT ///START THE METRONOME///;\r\nMSDP_Metronome toggle 1;\r\nMSDP_COMMENT ///SEND A MESSAGE TO THE REPEAT SCORE///;\r\nMSDP_RScore p3 0;\r\nMSDP_COMMENT ///THE FINAL BITS///;\r\nMSDP_MESSAGE Start the Files and Change the parameters;\r\n2;\r\n***;\r\n;\r\n;\r\n;\r\n~~~;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;\r\n*****************************************************************************************************************;", ";" ],
 					"style" : "",
 					"text" : "qlist"
 				}
@@ -4904,7 +5244,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1413.34375, 307.59375, 71.0, 63.0 ],
+					"patching_rect" : [ 1743.0, 668.0, 71.0, 63.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 833.84375, 9.59375, 72.0, 169.0 ],
 					"style" : "",
@@ -4987,7 +5327,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1323.412109, 307.0, 71.0, 63.0 ],
+					"patching_rect" : [ 1428.25, 432.15625, 71.0, 63.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 833.84375, 181.59375, 73.0, 161.0 ],
 					"style" : "",
@@ -5015,7 +5355,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5205,7 +5545,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5475,7 +5815,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1746.75, 161.0, 90.0, 22.0 ],
+					"patching_rect" : [ 1746.75, 166.59375, 90.0, 22.0 ],
 					"style" : "",
 					"text" : "r SystemName"
 				}
@@ -6084,7 +6424,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-133", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-104", 0 ]
 				}
 
@@ -6092,16 +6432,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-166", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-104", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-132", 0 ],
-					"midpoints" : [ 1309.5, 894.0, 1058.0, 894.0 ],
-					"source" : [ "obj-107", 0 ]
+					"destination" : [ "obj-215", 0 ],
+					"order" : 0,
+					"source" : [ "obj-104", 0 ]
 				}
 
 			}
@@ -6137,6 +6477,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-162", 0 ],
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-112", 0 ]
 				}
@@ -6144,7 +6491,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-104", 0 ],
+					"destination" : [ "obj-69", 0 ],
 					"order" : 0,
 					"source" : [ "obj-113", 0 ]
 				}
@@ -6152,7 +6499,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-69", 0 ],
+					"destination" : [ "obj-8", 0 ],
 					"order" : 1,
 					"source" : [ "obj-113", 0 ]
 				}
@@ -6160,16 +6507,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"order" : 2,
-					"source" : [ "obj-113", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-113", 0 ]
 				}
 
@@ -6262,15 +6601,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-199", 0 ],
-					"midpoints" : [ 607.261353, 49.5, 506.0, 49.5 ],
+					"midpoints" : [ 1990.261353, 43.0, 1889.0, 43.0 ],
 					"source" : [ "obj-122", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-121", 0 ],
-					"midpoints" : [ 619.5, 384.5, 196.5, 384.5 ],
+					"destination" : [ "obj-141", 0 ],
+					"midpoints" : [ 390.34375, 865.0, 264.5, 865.0 ],
 					"source" : [ "obj-123", 0 ]
 				}
 
@@ -6286,14 +6625,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-116", 0 ],
 					"source" : [ "obj-125", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 0 ],
-					"midpoints" : [ 393.5, 865.0, 264.5, 865.0 ],
-					"source" : [ "obj-126", 0 ]
 				}
 
 			}
@@ -6421,17 +6752,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-84", 0 ],
-					"midpoints" : [ 975.5, 141.0, 944.5, 141.0 ],
-					"order" : 1,
+					"destination" : [ "obj-111", 0 ],
+					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-159", 0 ],
+					"order" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -6452,16 +6782,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-165", 1 ],
-					"order" : 1,
-					"source" : [ "obj-141", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
-					"order" : 0,
 					"source" : [ "obj-141", 0 ]
 				}
 
@@ -6490,6 +6811,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-151", 0 ],
+					"order" : 1,
+					"source" : [ "obj-145", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-213", 0 ],
+					"order" : 0,
 					"source" : [ "obj-145", 0 ]
 				}
 
@@ -6498,23 +6828,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-141", 0 ],
 					"midpoints" : [ 176.5, 929.5, 264.5, 929.5 ],
-					"order" : 0,
-					"source" : [ "obj-149", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-154", 0 ],
-					"order" : 2,
-					"source" : [ "obj-149", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-163", 1 ],
-					"order" : 1,
 					"source" : [ "obj-149", 0 ]
 				}
 
@@ -6590,6 +6903,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-177", 0 ],
+					"order" : 1,
+					"source" : [ "obj-154", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
+					"source" : [ "obj-154", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-86", 1 ],
 					"midpoints" : [ 1399.75, 731.921875, 1201.5, 731.921875 ],
 					"source" : [ "obj-155", 0 ]
@@ -6619,16 +6948,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
-					"order" : 0,
-					"source" : [ "obj-159", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-84", 0 ],
 					"source" : [ "obj-159", 0 ]
 				}
 
@@ -6658,8 +6978,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-167", 0 ],
+					"destination" : [ "obj-163", 0 ],
 					"source" : [ "obj-162", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-165", 0 ],
+					"source" : [ "obj-163", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-190", 0 ],
+					"source" : [ "obj-163", 1 ]
 				}
 
 			}
@@ -6667,6 +7001,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-158", 0 ],
 					"source" : [ "obj-164", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-184", 0 ],
+					"source" : [ "obj-165", 0 ]
 				}
 
 			}
@@ -6764,7 +7105,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
+					"destination" : [ "obj-123", 0 ],
 					"source" : [ "obj-177", 0 ]
 				}
 
@@ -6787,6 +7128,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-155", 0 ],
+					"order" : 1,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-214", 0 ],
+					"order" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -6825,32 +7175,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-181", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-187", 0 ],
 					"source" : [ "obj-184", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-194", 1 ],
-					"order" : 0,
-					"source" : [ "obj-184", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"order" : 2,
-					"source" : [ "obj-186", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
-					"order" : 1,
+					"midpoints" : [ 1358.5, 537.0, 1829.5, 537.0 ],
+					"order" : 0,
 					"source" : [ "obj-186", 0 ]
 				}
 
@@ -6858,15 +7192,43 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-186", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-184", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-189", 0 ],
+					"source" : [ "obj-188", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-187", 0 ],
+					"source" : [ "obj-189", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-184", 1 ],
+					"source" : [ "obj-190", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-195", 0 ],
+					"source" : [ "obj-191", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-167", 0 ],
+					"order" : 0,
 					"source" : [ "obj-192", 0 ]
 				}
 
@@ -6874,8 +7236,81 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-186", 0 ],
-					"order" : 0,
+					"order" : 3,
 					"source" : [ "obj-192", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"order" : 1,
+					"source" : [ "obj-192", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"order" : 2,
+					"source" : [ "obj-192", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-198", 0 ],
+					"source" : [ "obj-193", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-193", 0 ],
+					"source" : [ "obj-194", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-132", 0 ],
+					"midpoints" : [ 1309.5, 894.0, 1058.0, 894.0 ],
+					"source" : [ "obj-195", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-190", 0 ],
+					"source" : [ "obj-196", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-197", 0 ],
+					"source" : [ "obj-196", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-184", 0 ],
+					"source" : [ "obj-197", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-190", 0 ],
+					"source" : [ "obj-198", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-200", 0 ],
+					"source" : [ "obj-198", 0 ]
 				}
 
 			}
@@ -6883,6 +7318,169 @@
 				"patchline" : 				{
 					"destination" : [ "obj-179", 0 ],
 					"source" : [ "obj-199", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-184", 0 ],
+					"source" : [ "obj-200", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-202", 0 ],
+					"source" : [ "obj-201", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-201", 0 ],
+					"source" : [ "obj-203", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-209", 0 ],
+					"source" : [ "obj-204", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"source" : [ "obj-205", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-145", 0 ],
+					"source" : [ "obj-205", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-205", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-181", 0 ],
+					"source" : [ "obj-205", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-182", 0 ],
+					"source" : [ "obj-205", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-183", 0 ],
+					"source" : [ "obj-205", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-205", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-205", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-207", 0 ],
+					"source" : [ "obj-206", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-208", 0 ],
+					"source" : [ "obj-207", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-205", 0 ],
+					"source" : [ "obj-208", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-206", 0 ],
+					"source" : [ "obj-209", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-191", 0 ],
+					"order" : 1,
+					"source" : [ "obj-210", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-194", 0 ],
+					"order" : 0,
+					"source" : [ "obj-210", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"source" : [ "obj-211", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"source" : [ "obj-212", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"source" : [ "obj-213", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"source" : [ "obj-214", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"source" : [ "obj-215", 0 ]
 				}
 
 			}
@@ -6918,7 +7516,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-181", 0 ],
-					"midpoints" : [ 147.071429, 108.25, 603.5, 108.25 ],
+					"midpoints" : [ 147.071429, 119.25, 603.5, 119.25 ],
 					"source" : [ "obj-27", 6 ]
 				}
 
@@ -6989,6 +7587,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-196", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -6997,7 +7602,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 1015.5, 169.5, 1015.5, 169.5 ],
+					"midpoints" : [ 1829.5, 616.5, 1829.5, 616.5 ],
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -7012,7 +7617,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-123", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-45", 0 ]
 				}
 
@@ -7026,7 +7631,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-126", 0 ],
+					"destination" : [ "obj-154", 0 ],
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -7063,6 +7668,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-176", 0 ],
+					"order" : 1,
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-211", 0 ],
+					"order" : 0,
 					"source" : [ "obj-53", 0 ]
 				}
 
@@ -7070,6 +7684,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-180", 1 ],
+					"order" : 1,
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-212", 0 ],
+					"order" : 0,
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -7149,7 +7772,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -7172,7 +7795,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-107", 0 ],
+					"destination" : [ "obj-210", 0 ],
 					"source" : [ "obj-80", 0 ]
 				}
 
@@ -7187,8 +7810,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 944.5, 202.0, 929.5, 202.0, 929.5, 86.0, 975.5, 86.0 ],
+					"destination" : [ "obj-121", 0 ],
+					"midpoints" : [ 619.34375, 384.5, 196.5, 384.5 ],
 					"source" : [ "obj-84", 0 ]
 				}
 
@@ -7249,7 +7872,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
-					"midpoints" : [ 1241.5, 189.5, 1411.5, 189.5 ],
+					"midpoints" : [ 1358.5, 189.5, 1411.5, 189.5 ],
 					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
@@ -7258,7 +7881,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-181", 1 ],
-					"midpoints" : [ 1241.5, 162.0, 958.5, 162.0, 958.5, 135.0, 675.5, 135.0 ],
+					"midpoints" : [ 1358.5, 162.0, 958.5, 162.0, 958.5, 135.0, 675.5, 135.0 ],
 					"order" : 2,
 					"source" : [ "obj-9", 0 ]
 				}
@@ -7267,7 +7890,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-182", 1 ],
-					"midpoints" : [ 1241.5, 405.610168, 509.25, 405.610168 ],
+					"midpoints" : [ 1358.5, 405.610168, 509.25, 405.610168 ],
 					"order" : 3,
 					"source" : [ "obj-9", 0 ]
 				}
@@ -7276,7 +7899,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-183", 1 ],
-					"midpoints" : [ 1241.5, 450.125, 1370.5, 450.125 ],
+					"midpoints" : [ 1358.5, 450.125, 1370.5, 450.125 ],
 					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
@@ -7321,20 +7944,20 @@
 , 			{
 				"name" : "default_style",
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"toggle" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
+					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"button" : 				{
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7343,20 +7966,20 @@
 , 			{
 				"name" : "default_style-1",
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"toggle" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
+					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"button" : 				{
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7390,63 +8013,27 @@
 , 			{
 				"name" : "master_style",
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgfillcolor" : 					{
-						"type" : "gradient",
-						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0
-					}
-
-				}
-,
-				"attrui" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
-				}
-,
-				"ezdac~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"gain~" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
+				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"button" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 				}
 ,
 				"kslider" : 				{
@@ -7454,14 +8041,21 @@
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
-				"function" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				"gain~" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
 				}
 ,
-				"multislider" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7475,6 +8069,35 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"attrui" : 				{
+					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7483,63 +8106,27 @@
 , 			{
 				"name" : "master_style-1",
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgfillcolor" : 					{
-						"type" : "gradient",
-						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0.0
-					}
-
-				}
-,
-				"attrui" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
-				}
-,
-				"ezdac~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"gain~" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
+				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"button" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 				}
 ,
 				"kslider" : 				{
@@ -7547,14 +8134,21 @@
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
-				"function" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				"gain~" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
 				}
 ,
-				"multislider" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7568,6 +8162,35 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0.0
+					}
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"attrui" : 				{
+					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7576,63 +8199,27 @@
 , 			{
 				"name" : "master_style-2",
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgfillcolor" : 					{
-						"type" : "gradient",
-						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0.0
-					}
-
-				}
-,
-				"attrui" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
-				}
-,
-				"ezdac~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"gain~" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
+				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"button" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 				}
 ,
 				"kslider" : 				{
@@ -7640,14 +8227,21 @@
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
-				"function" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				"gain~" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
 				}
 ,
-				"multislider" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7661,6 +8255,35 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0.0
+					}
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"attrui" : 				{
+					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7669,63 +8292,27 @@
 , 			{
 				"name" : "master_style-3",
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgfillcolor" : 					{
-						"type" : "gradient",
-						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0.0
-					}
-
-				}
-,
-				"attrui" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
-				}
-,
-				"ezdac~" : 				{
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"gain~" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
+				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"button" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 				}
 ,
 				"kslider" : 				{
@@ -7733,14 +8320,21 @@
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
-				"function" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				"gain~" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
 				}
 ,
-				"multislider" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7754,6 +8348,35 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+						"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0.0
+					}
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"attrui" : 				{
+					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
