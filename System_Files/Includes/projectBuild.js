@@ -18,7 +18,7 @@ var msdp = {
       "fullScreen": 1, "fullView": 0,
       "defaultViews": {
         "performer": 0, "mixer": 0, "score": 0,
-        "metronome": 0, "controller": 1, "browser": 1 },
+        "metronome": 0, "controller": 1},
       "tabOpen": 1, "bgPattern": 1,
       "metroTog": 1, "bpm": 120,
       "showBoards": 1, "initEvent": 0,
@@ -35,7 +35,7 @@ var msdp = {
       "fullScreen": 1, "fullView": 0,
       "defaultViews": {
         "performer": 0, "mixer": 0, "score": 0,
-        "metronome": 0, "controller": 1, "browser": 1 },
+        "metronome": 0, "controller": 1},
       "tabOpen": 1, "bgPattern": 1,
       "metroTog": 1, "bpm": 120,
       "showBoards": 1, "initEvent": 0,
@@ -366,13 +366,13 @@ function export(type, v1, v2){
     if(msdp.system.data === 0){
       var sendOut = {};
       sendOut.uName = msdp.system.uName;
-      sendOut.startTime = msdp.system.lastOpened;
-      sendOut.sendTime = new Date();
-      outlet(4, JSON.stringify(sendOut, null, 4));
+      sendOut.lastOpened = msdp.system.lastOpened;
+      sendOut.lastUpdated = new Date();
+      outlet(5, JSON.stringify(sendOut, null, 4));
       return;
     } else if(msdp.system.data === 1){
       var clone = JSON.parse(JSON.stringify(msdp));
-      clone.project.assets = 'anon';
+      delete clone.project.systemBoard;
       clone.project.title = "anon";
       clone.project.path = 'anon';
       for (b in clone.project.openBoards){
@@ -389,13 +389,15 @@ function export(type, v1, v2){
           clone.project.savedBoards[b]['modules'][c]['parameters'] = 'anon';
         }
       };
-      outlet(6, JSON.stringify(clone), null, 4);
+      outlet(5, JSON.stringify(clone), null, 4);
       return;
-    } else{
-      outlet(6, JSON.stringify(msdp, null, 4));
+    } else {
+      var clone = JSON.parse(JSON.stringify(msdp));
+      delete clone.project.systemBoard;
+      outlet(5, JSON.stringify(clone, null, 4));
       return;
     }
-    outlet(6, JSON.stringify(msdp, null, 4));
+    outlet(5, JSON.stringify(msdp, null, 4));
     return;
   } else if(type === 'backup'){ //create backup for recovery
     var path = v1;
