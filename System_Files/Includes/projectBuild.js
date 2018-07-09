@@ -150,7 +150,7 @@ function remove(type, v, v2){
         return;
       }
     }
-    post ('board ' + v +' not found in saved board list');
+    outlet (1, 'board ' + v +' not found in saved board list');
   } else if (type === 'openBoard'){ // mark an open board as closed in the boardPointers object
     session.boardPointers[v]['open'] = 0;
   } else if (type === 'module') { // remove module from an existing board
@@ -219,7 +219,6 @@ function copy(loc, val, dest, dest2){
       }
     };
     rList.sort(function(a, b){return b-a});
-    outlet(1, rList);
     for (var n in rList){
       clone['modules'].splice(rList[n], 1);
     };
@@ -270,7 +269,7 @@ function copy(loc, val, dest, dest2){
         };
         session.boardPointers[title] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cMods};
         session.sessionBoards.push(clone);
-        post('board ' + title + ' added to session');
+        outlet(1, 'board ' + title + ' added to session');
       }
   } else if(loc === 'open'){ // copy open board into session
     for (b in msdp.project.openBoards){
@@ -436,9 +435,9 @@ function export(type, v1, v2){
 		fout.eof = 0;
 		fout.writeline(JSON.stringify(mode, null, 4));
 		fout.close();
-		post("\nJSON Write",path);
+		outlet(1, "JSON Write "+ path);
 	} else {
-		post("\ncould not create json file: " + path);
+		outlet(1, "could not create json file: " + path);
 	}
 };
 
@@ -453,9 +452,9 @@ function import (type, path){
 			memstr+=f.readstring(2048);
 		}
 		f.close();
-	} else { post("Error\n"); };
+	} else { outlet(1, "Error\n"); };
   var clone = JSON.parse(memstr);
-  post("\nJSON Read",path);
+  outlet(1, "JSON Read " + path);
   // place object into the project as appropriate
   if (type === 'system'){ // load a system preferences file.
     msdp.system = clone;
@@ -472,7 +471,7 @@ function import (type, path){
     //  copy('open', send, 'session');
     //  get('board', 'open', send);
     // }
-    post('project ' + msdp.project.title + ' loaded');
+    outlet(1, 'project ' + msdp.project.title + ' loaded');
   } else if (type === 'board'){ // load and open an exported board
     var ran = simpleRan();
     var cMods = {};
@@ -495,7 +494,7 @@ function import (type, path){
   } else if (type === 'system'){
     msdp.system = {};
     msdp.system = clone;
-  	post("\nJSON Read",path);
+  	outlet(1, "JSON Read "+ path);
   }
 }
 
