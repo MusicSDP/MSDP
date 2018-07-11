@@ -29,7 +29,7 @@ var msdp = {
     "lastOpened": timestamp, "lastUpdated" : timestamp
   },
   "project": {
-    "title": "New Project", 'path': 'C:/msdpProject',
+    "title": "New Project", "lastOpened": timestamp, "lastUpdated" : timestamp, 'path': 'C:/msdpProject',
     "settings": {
       "dac": 1, "limiter": 1, 'volume': 127,
       "fullScreen": 1, "fullView": 0,
@@ -44,7 +44,6 @@ var msdp = {
       "keyboardMIDI": false, "keyOctave": 4
     },
     "openBoards": [], "savedBoards": [],
-    "lastOpened": timestamp, "lastUpdated" : timestamp,
     'systemBoard': {
       "metroSettings": {"source": 0,"bpm": 60, "bpMeasure": 4, "tick": 0, "customDiv": 5, "loopState": 0, 'loopStartB': 1, 'loopStartM': 1, 'loopStopB': 1, 'loopStopM': 4, 'display': 1},
       'performerSettings': {
