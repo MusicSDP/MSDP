@@ -26,7 +26,7 @@ var msdp = {
       "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
       "keyboardMIDI": false, "keyOctave": 4
     },
-    "lastOpened": timestamp, "lastUpdated" : timestamp,
+    "lastOpened": timestamp, "lastUpdated" : timestamp
   },
   "project": {
     "title": "New Project", 'path': 'C:/msdpProject',
@@ -44,6 +44,7 @@ var msdp = {
       "keyboardMIDI": false, "keyOctave": 4
     },
     "openBoards": [], "savedBoards": [],
+    "lastOpened": timestamp, "lastUpdated" : timestamp,
     'systemBoard': {
       "metroSettings": {"source": 0,"bpm": 60, "bpMeasure": 4, "tick": 0, "customDiv": 5, "loopState": 0, 'loopStartB': 1, 'loopStartM': 1, 'loopStopB': 1, 'loopStopM': 4, 'display': 1},
       'performerSettings': {
@@ -100,7 +101,7 @@ function sessionOut(){
 function newProject(title, path){
   msdp.project.title = title;
   msdp.project.settings = msdp.system.settings;
-  msdp.project.assets = {"scores": [], "audio": [], "midi": [], "plugins": []};
+  //msdp.project.assets = {"scores": [], "audio": [], "midi": [], "plugins": []};
   msdp.project.openBoards = [];
   msdp.project.savedBoards = [];
   session.sessionBoards = [];
@@ -414,6 +415,7 @@ function export(type, v1, v2){
       }
     }
     var path = v1;
+    msdp.project.lastUpdated = new Date();
     var mode = msdp.project;
   } else if(type === 'board'){ //export board to a file for sharing
     var path = v2;
@@ -462,7 +464,19 @@ function import (type, path){
       makeID();
       msdp.system.data = 1;
     }
-  }else if (type === 'project'){ // load a saved project
+  } else if (type === 'project'){ // load a saved project
+    session.sessionBoards = [];
+    session.boardPointers = {};
+    msdp.project = clone;
+    msdp.project.lastOpened = new Date();
+    msdp.project.lastUpdated = new Date();
+    // for (b in msdp.project.openBoards){
+    //  var send = msdp.project.openBoards[b]['title'];
+    //  copy('open', send, 'session');
+    //  get('board', 'open', send);
+    // }
+    outlet(1, 'project ' + msdp.project.title + ' loaded');
+  } else if (type === 'backup'){ // load a saved project
     session.sessionBoards = [];
     session.boardPointers = {};
     msdp.project = clone;
@@ -471,7 +485,7 @@ function import (type, path){
     //  copy('open', send, 'session');
     //  get('board', 'open', send);
     // }
-    outlet(1, 'project ' + msdp.project.title + ' loaded');
+    outlet(1, 'last save ' + msdp.project.title + ' loaded');
   } else if (type === 'board'){ // load and open an exported board
     var ran = simpleRan();
     var cMods = {};
