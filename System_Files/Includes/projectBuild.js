@@ -1,4 +1,4 @@
-outlets = 6;
+outlets = 7;
 // establish the list of necessary objects and arrays
 var timestamp = new Date()
 var msdp = {
@@ -30,31 +30,9 @@ var msdp = {
   },
   "project": {
     "title": "New Project", "lastOpened": timestamp, "lastUpdated" : timestamp, 'path': 'C:/msdpProject',
-    "settings": {
-      "dac": 1, "limiter": 1, 'volume': 127,
-      "fullScreen": 1, "fullView": 0,
-      "defaultViews": {
-        "performer": 0, "mixer": 0, "score": 0,
-        "metronome": 0, "controller": 1},
-      "tabOpen": 1, "bgPattern": 1,
-      "metroTog": 1, "bpm": 120,
-      "showBoards": 1, "initEvent": 0,
-      "dryMics": 0, "recordedInProject": 0,
-      "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
-      "keyboardMIDI": false, "keyOctave": 4
-    },
+    "settings": {},
     "openBoards": [], "savedBoards": [],
-    'systemBoard': {
-      "metroSettings": {"source": 0,"bpm": 60, "bpMeasure": 4, "tick": 0, "customDiv": 5, "loopState": 0, 'loopStartB': 1, 'loopStartM': 1, 'loopStopB': 1, 'loopStopM': 4, 'display': 1},
-      'performerSettings': {
-        'mFade': 127,'s1Route': 'Z 1','s1Fade': 121,'s2Route': 'Y 1','s2Fade': 121,'s3Route': 'X 1','s3Fade': 121,
-        'm1RouteI': 'Mic 1','m1RouteO': 'A 2','m1Fade': 0,'m2RouteI': 'Mic 2','m2RouteO': 'B 2','m2Fade': 0,'skipTo': 0},
-      'mixerSettings':{},
-        "controllerSettings": {},
-        "metroControlSettings": {},
-        "scoreSettings": {'mainScore': 'main_demo.txt', 'repeatScore': 'repeat.txt', 'delayScore': 'delay.txt', 'mCtrlMode': 0, 'mCtrlVal': 0, 'dDelTime': 0, 'rDelTime': 0.001, 'rTog': 0},
-        'virtualControllers': {'keyboard': 0, 'slider': 0, 'pads': 0}
-    }
+    'systemBoard': {"metroSettings": {}, 'performerSettings': {}, 'mixerSettings':{}, "controllerSettings": {}, "metroControlSettings": {}, "scoreSettings": {}, 'virtualControllers': {}}
   }
 };
 //initialize the session objects
@@ -329,6 +307,7 @@ function get(type, v, v2){
 
 function export(type, v1, v2){
   if(type === 'home'){ //send all information out
+    outlet(6, JSON.stringify(msdp.system.uName, null, 4));
     msdp.project.openBoards = [];
     for (var key in session.boardPointers) {
       if (session.boardPointers.hasOwnProperty(key)) {
@@ -368,7 +347,6 @@ function export(type, v1, v2){
       return;
     } else {
       var clone = JSON.parse(JSON.stringify(msdp));
-      delete clone.project.systemBoard;
       outlet(5, JSON.stringify(clone, null, 4));
       return;
     }
@@ -435,6 +413,7 @@ function import (type, path){
   // place object into the project as appropriate
   if (type === 'system'){ // load a system preferences file.
     msdp.system = clone;
+    outlet(6, JSON.stringify(msdp.system.uName, null, 4));
     if (msdp.system.uName === 'UUID'){
       makeID();
       msdp.system.data = 1;
@@ -498,4 +477,7 @@ function uuidv4() {
     return v.toString(16);
   });
 };
-function makeID(){ id = uuidv4(); msdp.system.uName = id };
+function makeID(){
+  id = uuidv4(); msdp.system.uName = id;
+  outlet(6, JSON.stringify(msdp.system.uName, null, 4));
+ };
