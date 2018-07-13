@@ -326,7 +326,6 @@ function export(type, v1, v2){
       return;
     } else if(msdp.system.data === 1){
       var clone = JSON.parse(JSON.stringify(msdp));
-      delete clone.project.systemBoard;
       clone.project.title = "anon";
       clone.project.path = 'anon';
       for (b in clone.project.openBoards){
