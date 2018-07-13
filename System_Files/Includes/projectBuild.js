@@ -343,7 +343,7 @@ function export(type, v1, v2){
           clone.project.savedBoards[b]['modules'][c]['parameters'] = 'anon';
         }
       };
-      outlet(5, JSON.stringify(clone, null, 4);
+      outlet(5, JSON.stringify(clone, null, 4));
       return;
     } else {
       var clone = JSON.parse(JSON.stringify(msdp));
