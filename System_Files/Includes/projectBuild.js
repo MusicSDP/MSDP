@@ -343,7 +343,7 @@ function export(type, v1, v2){
           clone.project.savedBoards[b]['modules'][c]['parameters'] = 'anon';
         }
       };
-      outlet(5, JSON.stringify(clone), null, 4);
+      outlet(5, JSON.stringify(clone, null, 4);
       return;
     } else {
       var clone = JSON.parse(JSON.stringify(msdp));
@@ -480,4 +480,7 @@ function uuidv4() {
 function makeID(){
   id = uuidv4(); msdp.system.uName = id;
   outlet(6, JSON.stringify(msdp.system.uName, null, 4));
+ };
+ function getID(){
+   outlet(6, JSON.stringify(msdp.system.uName, null, 4));
  };
