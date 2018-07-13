@@ -6,7 +6,7 @@ var msdp = {
     "uName": "UUID",
     "data": 3,
     "appState": {
-      "major": 1, "minor": 2, "revision": 1,
+      "major": 1, "minor": 3, "revision": 0,
       "state": "app"
     },
     "os": "Windows",
@@ -25,8 +25,7 @@ var msdp = {
       "dryMics": 0, "recordedInProject": 0,
       "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
       "keyboardMIDI": false, "keyOctave": 4
-    },
-    "lastOpened": timestamp, "lastUpdated" : timestamp
+    }
   },
   "project": {
     "title": "New Project", "lastOpened": timestamp, "lastUpdated" : timestamp, 'path': 'C:/msdpProject',
@@ -43,7 +42,7 @@ var session = {
 
 //update time and output the object as a JSON string
 function projectOut(){
-  msdp.system.lastUpdated = new Date();
+  msdp.project.lastUpdated = new Date();
   outlet(0, JSON.stringify(msdp, null, 4));
 };
 
@@ -316,11 +315,11 @@ function export(type, v1, v2){
         }
       }
     };
-    msdp.system.lastUpdated = new Date();
+    msdp.project.lastUpdated = new Date();
     if(msdp.system.data === 0){
       var sendOut = {};
       sendOut.uName = msdp.system.uName;
-      sendOut.lastOpened = msdp.system.lastOpened;
+      sendOut.lastOpened = msdp.project.lastOpened;
       sendOut.lastUpdated = new Date();
       outlet(5, JSON.stringify(sendOut, null, 4));
       return;
