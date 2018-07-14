@@ -4,7 +4,8 @@ var id;
 var ip;
 var timestamp;
 var userId;
-var stringifiedState;
+var version;
+var hashedState;
 
 function idA(s) {
   id = s;
@@ -18,11 +19,14 @@ function timestampA(s) {
 function userIdA(s) {
   userId = s;
 }
-function stringifiedStateA(s) {
-  stringifiedState = s;
+function versionA(s) {
+  version = s;
+}
+function hashedStateA(s) {
+  hashedState = s;
 }
 
 function makeMessage() {
-  var message = 'mutation { createState (input: { id: \" ' + id + '\" ip: \" ' + ip + '\" timestamp: ' + timestamp + ' userId: \"' + userId +'\" stringifiedState: \"' + stringifiedState + '\" } ) { id } }'
+  var message = 'mutation { createState (input: { id: \" ' + id + '\" ip: \" ' + ip + '\" timestamp: ' + timestamp + ' userId: \"' + userId +  '\" version: \"' + version + '\" hashedState: \"' + hashedState + '\" } ) { id } }'
   outlet(0, message);
 }
