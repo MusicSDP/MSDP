@@ -343,6 +343,8 @@ function export(type, v1, v2){
       };
       outlet(5, JSON.stringify(clone, null, 4));
       return;
+    } else if(msdp.system.data === -1){
+      return;
     } else {
       var clone = JSON.parse(JSON.stringify(msdp));
       outlet(5, JSON.stringify(clone, null, 4));
