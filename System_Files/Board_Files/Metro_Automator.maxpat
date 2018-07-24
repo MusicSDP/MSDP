@@ -1921,7 +1921,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 40.0, 395.0, 180.0, 22.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 1, 1, 0, 1, "Chorus", 5, 0.0, 0.0, 100.0, 3, 1, 1, 0, 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -1962,7 +1962,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 40.0, 327.0, 180.0, 22.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 1, 1, 0, 1, "Chorus", 4, 0.0, 0.0, 2.0, 1, 2, 2, 0, 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -2261,7 +2261,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 203.0, 249.0, 423.0, 22.0 ],
 									"style" : "",
-									"text" : "\"C:/Users/Hugh/Desktop/eTest/Saved Presets\""
+									"text" : "\"~/Documents/Music_SDP/Default Project/Saved Presets\""
 								}
 
 							}
@@ -2844,7 +2844,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr @autorestore 0",
-					"varname" : "u653002806"
+					"varname" : "u113005097"
 				}
 
 			}
@@ -3421,7 +3421,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 557.0, 292.0, 423.0, 22.0 ],
 									"style" : "",
-									"text" : "\"C:/Users/Hugh/Desktop/eTest/Saved Presets\""
+									"text" : "\"~/Documents/Music_SDP/Default Project/Saved Presets\""
 								}
 
 							}
@@ -3893,7 +3893,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage fullpatch @savemode 3 @autorestore 0",
-					"varname" : "presets725479"
+					"varname" : "presets506243"
 				}
 
 			}
@@ -3947,7 +3947,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 962.896362, 104.250244, 104.0, 24.0 ],
-					"pattrstorage" : "presets725479",
+					"pattrstorage" : "presets506243",
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, 24.0, 786.0, 44.0 ],
 					"style" : ""
@@ -3978,7 +3978,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 40.0, 255.0, 180.0, 22.0 ],
-					"restore" : [ 1, 1, 0, 1, "Test1", 1, 0.0, 3.0, 4.0, 5, 1, 1, 0, 1 ],
+					"restore" : [ 1, 1, 0, 1, "Chorus", 3, 0.0, 0.0, 1.0, 2, 3, 1, 0, 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -6078,70 +6078,70 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-155::obj-69" : [ "live.button[28]", "live.button", 0 ],
-			"obj-39::obj-69" : [ "live.button[56]", "live.button", 0 ],
-			"obj-149::obj-69" : [ "live.button[24]", "live.button", 0 ],
-			"obj-53::obj-69" : [ "live.button[50]", "live.button", 0 ],
-			"obj-140::obj-69" : [ "live.button[18]", "live.button", 0 ],
+			"obj-39::obj-70" : [ "live.button[55]", "live.button", 0 ],
+			"obj-149::obj-70" : [ "live.button[23]", "live.button", 0 ],
+			"obj-53::obj-70" : [ "live.button[49]", "live.button", 0 ],
+			"obj-140::obj-70" : [ "live.button[17]", "live.button", 0 ],
 			"obj-109::obj-69" : [ "live.button[46]", "live.button", 0 ],
 			"obj-134::obj-69" : [ "live.button[14]", "live.button", 0 ],
 			"obj-92::obj-70" : [ "live.button[39]", "live.button", 0 ],
 			"obj-125::obj-69" : [ "live.button[8]", "live.button", 0 ],
-			"obj-77::obj-70" : [ "live.button[35]", "live.button", 0 ],
+			"obj-113::obj-69" : [ "live.button[64]", "live.button", 0 ],
+			"obj-77::obj-69" : [ "live.button[36]", "live.button", 0 ],
 			"obj-119::obj-69" : [ "live.button[4]", "live.button", 0 ],
 			"obj-2::obj-70" : [ "live.button[61]", "live.button", 0 ],
-			"obj-158::obj-69" : [ "live.button[30]", "live.button", 0 ],
+			"obj-158::obj-70" : [ "live.button[29]", "live.button", 0 ],
 			"obj-35::obj-70" : [ "live.button[57]", "live.button", 0 ],
 			"obj-152::obj-70" : [ "live.button[25]", "live.button", 0 ],
 			"obj-60::obj-70" : [ "live.button[51]", "live.button", 0 ],
-			"obj-143::obj-70" : [ "live.button[19]", "live.button", 0 ],
-			"obj-48::obj-70" : [ "live.button[47]", "live.button", 0 ],
+			"obj-143::obj-69" : [ "live.button[20]", "live.button", 0 ],
+			"obj-48::obj-69" : [ "live.button[48]", "live.button", 0 ],
 			"obj-137::obj-69" : [ "live.button[16]", "live.button", 0 ],
-			"obj-96::obj-70" : [ "live.button[41]", "live.button", 0 ],
-			"obj-128::obj-70" : [ "live.button[9]", "live.button", 0 ],
-			"obj-113::obj-69" : [ "live.button[64]", "live.button", 0 ],
+			"obj-96::obj-69" : [ "live.button[42]", "live.button", 0 ],
+			"obj-128::obj-69" : [ "live.button[10]", "live.button", 0 ],
 			"obj-81::obj-69" : [ "live.button[38]", "live.button", 0 ],
-			"obj-122::obj-69" : [ "live.button[6]", "live.button", 0 ],
+			"obj-122::obj-70" : [ "live.button[5]", "live.button", 0 ],
+			"obj-2::obj-69" : [ "live.button[65]", "live.button", 0 ],
 			"obj-68::obj-70" : [ "live.button[31]", "live.button", 0 ],
-			"obj-31::obj-69" : [ "live.button[60]", "live.button", 0 ],
-			"obj-155::obj-70" : [ "live.button[27]", "live.button", 0 ],
+			"obj-31::obj-70" : [ "live.button[59]", "live.button", 0 ],
+			"obj-155::obj-69" : [ "live.button[28]", "live.button", 0 ],
 			"obj-64::obj-70" : [ "live.button[53]", "live.button", 0 ],
 			"obj-146::obj-69" : [ "live.button[22]", "live.button", 0 ],
-			"obj-53::obj-70" : [ "live.button[49]", "live.button", 0 ],
-			"obj-140::obj-70" : [ "live.button[17]", "live.button", 0 ],
-			"obj-116::obj-69" : [ "live.button[2]", "live.button", 0 ],
-			"obj-100::obj-70" : [ "live.button[43]", "live.button", 0 ],
+			"obj-53::obj-69" : [ "live.button[50]", "live.button", 0 ],
+			"obj-140::obj-69" : [ "live.button[18]", "live.button", 0 ],
+			"obj-100::obj-69" : [ "live.button[44]", "live.button", 0 ],
 			"obj-131::obj-69" : [ "live.button[12]", "live.button", 0 ],
+			"obj-113::obj-70" : [ "live.button[63]", "live.button", 0 ],
 			"obj-92::obj-69" : [ "live.button[40]", "live.button", 0 ],
 			"obj-125::obj-70" : [ "live.button[7]", "live.button", 0 ],
 			"obj-73::obj-70" : [ "live.button[33]", "live.button", 0 ],
-			"obj-2::obj-69" : [ "live.button[65]", "live.button", 0 ],
-			"obj-158::obj-70" : [ "live.button[29]", "live.button", 0 ],
-			"obj-39::obj-70" : [ "live.button[55]", "live.button", 0 ],
-			"obj-149::obj-70" : [ "live.button[23]", "live.button", 0 ],
+			"obj-116::obj-70" : [ "live.button[1]", "live.button", 0 ],
+			"obj-158::obj-69" : [ "live.button[30]", "live.button", 0 ],
+			"obj-39::obj-69" : [ "live.button[56]", "live.button", 0 ],
+			"obj-149::obj-69" : [ "live.button[24]", "live.button", 0 ],
 			"obj-60::obj-69" : [ "live.button[52]", "live.button", 0 ],
-			"obj-143::obj-69" : [ "live.button[20]", "live.button", 0 ],
+			"obj-143::obj-70" : [ "live.button[19]", "live.button", 0 ],
 			"obj-109::obj-70" : [ "live.button[45]", "live.button", 0 ],
 			"obj-134::obj-70" : [ "live.button[13]", "live.button", 0 ],
-			"obj-113::obj-70" : [ "live.button[63]", "live.button", 0 ],
-			"obj-96::obj-69" : [ "live.button[42]", "live.button", 0 ],
-			"obj-128::obj-69" : [ "live.button[10]", "live.button", 0 ],
-			"obj-77::obj-69" : [ "live.button[36]", "live.button", 0 ],
+			"obj-96::obj-70" : [ "live.button[41]", "live.button", 0 ],
+			"obj-128::obj-70" : [ "live.button[9]", "live.button", 0 ],
+			"obj-77::obj-70" : [ "live.button[35]", "live.button", 0 ],
 			"obj-119::obj-70" : [ "live.button[3]", "live.button", 0 ],
 			"obj-68::obj-69" : [ "live.button[32]", "live.button", 0 ],
 			"obj-35::obj-69" : [ "live.button[58]", "live.button", 0 ],
 			"obj-152::obj-69" : [ "live.button[26]", "live.button", 0 ],
 			"obj-64::obj-69" : [ "live.button[54]", "live.button", 0 ],
-			"obj-116::obj-70" : [ "live.button[1]", "live.button", 0 ],
 			"obj-146::obj-70" : [ "live.button[21]", "live.button", 0 ],
-			"obj-48::obj-69" : [ "live.button[48]", "live.button", 0 ],
+			"obj-48::obj-70" : [ "live.button[47]", "live.button", 0 ],
 			"obj-137::obj-70" : [ "live.button[15]", "live.button", 0 ],
-			"obj-100::obj-69" : [ "live.button[44]", "live.button", 0 ],
+			"obj-100::obj-70" : [ "live.button[43]", "live.button", 0 ],
 			"obj-131::obj-70" : [ "live.button[11]", "live.button", 0 ],
 			"obj-81::obj-70" : [ "live.button[37]", "live.button", 0 ],
-			"obj-122::obj-70" : [ "live.button[5]", "live.button", 0 ],
+			"obj-122::obj-69" : [ "live.button[6]", "live.button", 0 ],
 			"obj-73::obj-69" : [ "live.button[34]", "live.button", 0 ],
-			"obj-31::obj-70" : [ "live.button[59]", "live.button", 0 ]
+			"obj-116::obj-69" : [ "live.button[2]", "live.button", 0 ],
+			"obj-31::obj-69" : [ "live.button[60]", "live.button", 0 ],
+			"obj-155::obj-70" : [ "live.button[27]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -6159,8 +6159,8 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "default_metro_automator.json",
-				"bootpath" : "~/Desktop/eTest/Saved Presets",
+				"name" : ".json",
+				"bootpath" : "~/Documents/Music_SDP/Default Project/Saved Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -6301,6 +6301,11 @@
 
 				}
 ,
+				"kslider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -6330,24 +6335,9 @@
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
-				"kslider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
 				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
@@ -6362,6 +6352,16 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6394,6 +6394,11 @@
 
 				}
 ,
+				"kslider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -6423,24 +6428,9 @@
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
-				"kslider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
 				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
@@ -6455,6 +6445,16 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6487,6 +6487,11 @@
 
 				}
 ,
+				"kslider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -6516,24 +6521,9 @@
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
-				"kslider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
 				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
@@ -6548,6 +6538,16 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6580,6 +6580,11 @@
 
 				}
 ,
+				"kslider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -6609,24 +6614,9 @@
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
-				"kslider" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
 				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
@@ -6641,6 +6631,16 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6676,8 +6676,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

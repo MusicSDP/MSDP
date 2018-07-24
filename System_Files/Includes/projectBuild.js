@@ -31,7 +31,7 @@ var msdp = {
     "title": "New Project", "lastOpened": timestamp, "lastUpdated" : timestamp, 'path': 'C:/msdpProject',
     "settings": {},
     "openBoards": [], "savedBoards": [],
-    'systemBoard': {"metroSettings": {}, 'performerSettings': {}, 'mixerSettings':{}, "controllerSettings": {}, "metroControlSettings": {}, "scoreSettings": {}, 'virtualControllers': {}}
+    'systemBoard': {"metroSettings": {"bpMeasure": 4}, 'performerSettings': {}, 'mixerSettings':{}, "controllerSettings": {}, "metroControlSettings": {}, "scoreSettings": {}, 'virtualControllers': {}}
   }
 };
 //initialize the session objects
