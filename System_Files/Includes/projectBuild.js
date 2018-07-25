@@ -353,8 +353,23 @@ function export(type, v1, v2){
     outlet(5, JSON.stringify(msdp, null, 4));
     return;
   } else if(type === 'backup'){ //create backup for recovery
+    msdp.project.openBoards = [];
+    for (var key in session.boardPointers) {
+      if (session.boardPointers.hasOwnProperty(key)) {
+        if(session.boardPointers[key]['open'] === 1){
+          copy('session', key, 'open');
+        }
+      }
+    }
+    msdp.project.lastUpdated = new Date();
     var path = v1;
-    var mode = msdp;
+    var clone = {
+      "userId": msdp.system.uName,
+      "version": msdp.system.appState.major + "." + msdp.system.appState.minor + "." + msdp.system.appState.revision,
+      "state": {}
+    }
+    clone.state = msdp.project;
+    var mode = clone;
   } else if(type === 'system'){ //export system info
     var path = v1;
     var mode = msdp.system;
@@ -424,21 +439,13 @@ function import (type, path){
     msdp.project = clone;
     msdp.project.lastOpened = new Date();
     msdp.project.lastUpdated = new Date();
-    // for (b in msdp.project.openBoards){
-    //  var send = msdp.project.openBoards[b]['title'];
-    //  copy('open', send, 'session');
-    //  get('board', 'open', send);
-    // }
     outlet(1, 'project ' + msdp.project.title + ' loaded');
   } else if (type === 'backup'){ // load a saved project
     session.sessionBoards = [];
     session.boardPointers = {};
-    msdp.project = clone;
-    // for (b in msdp.project.openBoards){
-    //  var send = msdp.project.openBoards[b]['title'];
-    //  copy('open', send, 'session');
-    //  get('board', 'open', send);
-    // }
+    msdp.project = clone.state;
+    msdp.project.lastOpened = new Date();
+    msdp.project.lastUpdated = new Date();
     outlet(1, 'last save ' + msdp.project.title + ' loaded');
   } else if (type === 'board'){ // load and open an exported board
     var ran = simpleRan();
