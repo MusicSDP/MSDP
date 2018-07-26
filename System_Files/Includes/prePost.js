@@ -3,7 +3,7 @@ function prePost()
 {
   id = uuidv4();
   outlet(0, id);
-  time = new Date().getTime();
+  time = Math.round((new Date()).getTime() / 1000);
   outlet(1, time);
 }
 
