@@ -78,7 +78,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 410.0, 300.0, 633.0, 284.0 ],
+						"rect" : [ 272.0, 214.0, 633.0, 400.0 ],
 						"bgcolor" : [ 0.380392, 0.411765, 0.45098, 1.0 ],
 						"editing_bgcolor" : [ 0.380392, 0.411765, 0.45098, 1.0 ],
 						"bglocked" : 0,
@@ -108,6 +108,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"title" : "System Preferences",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-74",
@@ -191,7 +192,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 40.0, 101.0, 219.0, 222.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 9.0, 30.0, 612.0, 238.0 ],
+									"presentation_rect" : [ 9.0, 30.0, 612.0, 354.0 ],
 									"range" : [ 0.0, 1.0 ],
 									"scroll" : 2,
 									"sono" : 1,
@@ -803,7 +804,6 @@
 				"box" : 				{
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"bgoncolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
