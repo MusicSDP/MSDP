@@ -964,17 +964,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"midpoints" : [ 140.5, 135.0, 288.0, 135.0, 288.0, 306.0, 268.5, 306.0 ],
-					"order" : 1,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -1042,7 +1032,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 1 ],
-					"midpoints" : [ 38.5, 124.5, 258.5, 124.5 ],
+					"midpoints" : [ 38.5, 124.5, 255.166667, 124.5 ],
 					"order" : 0,
 					"source" : [ "obj-45", 0 ]
 				}
@@ -1060,7 +1050,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 2 ],
-					"midpoints" : [ 199.5, 147.5, 268.5, 147.5 ],
+					"midpoints" : [ 199.5, 147.5, 261.833333, 147.5 ],
 					"order" : 0,
 					"source" : [ "obj-46", 0 ]
 				}
@@ -1118,13 +1108,9 @@
 
 			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "cyan_light_knob.png",
-				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Images",
+				"bootpath" : "D:/Github/source-code/System_Files/Images",
 				"patcherrelativepath" : "../Images",
 				"type" : "PNG ",
 				"implicit" : 1

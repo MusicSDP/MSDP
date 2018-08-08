@@ -316,34 +316,7 @@ function export(type, v1, v2){
       }
     };
     msdp.project.lastUpdated = new Date();
-    if(msdp.system.data === 0){
-      var sendOut = {};
-      sendOut.uName = msdp.system.uName;
-      sendOut.lastOpened = msdp.project.lastOpened;
-      sendOut.lastUpdated = new Date();
-      outlet(5, JSON.stringify(sendOut, null, 4));
-      return;
-    } else if(msdp.system.data === 1){
-      var clone = JSON.parse(JSON.stringify(msdp));
-      clone.project.title = "anon";
-      clone.project.path = 'anon';
-      for (b in clone.project.openBoards){
-        clone.project.openBoards[b]['title'] = 'anon';
-        for (c in clone.project.openBoards[b]['modules']){
-          clone.project.openBoards[b]['modules'][c]['id'] = 'anon';
-          clone.project.openBoards[b]['modules'][c]['parameters'] = 'anon';
-        }
-      };
-      for (b in clone.project.savedBoards){
-        clone.project.savedBoards[b]['title'] = 'anon';
-        for (c in clone.project.savedBoards[b]['modules']){
-          clone.project.savedBoards[b]['modules'][c]['id'] = 'anon';
-          clone.project.savedBoards[b]['modules'][c]['parameters'] = 'anon';
-        }
-      };
-      outlet(5, JSON.stringify(clone, null, 4));
-      return;
-    } else if(msdp.system.data === -1){
+    if(msdp.system.data === -1){
       return;
     } else {
       var clone = JSON.parse(JSON.stringify(msdp));
