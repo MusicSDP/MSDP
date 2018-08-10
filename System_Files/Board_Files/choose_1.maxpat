@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1639.0, 809.0 ],
+		"rect" : [ 42.0, 85.0, 1639.0, 809.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -88,7 +88,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -255,12 +255,12 @@
 								"box" : 								{
 									"id" : "obj-22",
 									"maxclass" : "newobj",
-									"numinlets" : 7,
-									"numoutlets" : 7,
-									"outlettype" : [ "", "", "", "", "", "", "" ],
-									"patching_rect" : [ 108.0, 131.0, 407.0, 22.0 ],
+									"numinlets" : 8,
+									"numoutlets" : 8,
+									"outlettype" : [ "", "", "", "", "", "", "", "" ],
+									"patching_rect" : [ 108.0, 131.0, 449.0, 22.0 ],
 									"style" : "",
-									"text" : "route \"Audio Tools\" \"Buffer Effects\" Filters Instruments \"MIDI Tools\" Utilities"
+									"text" : "route Control \"Audio Tools\" \"Buffer Effects\" Filters Instruments \"MIDI Tools\" Utilities"
 								}
 
 							}
@@ -392,6 +392,13 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-22", 6 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-22", 5 ]
 								}
 
@@ -470,6 +477,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
+									"midpoints" : [ 106.5, 119.5, 574.5, 119.5 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -563,7 +571,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-26",
-					"items" : [ "-- Choose Module --", ",", "-- REMOVE MODULE --", ",", "--- Audio Tools ---", ",", "Audio File Player", ",", "Compressor", ",", "EZ Audio Player", ",", "Signal-In Control", ",", "Studio EQ", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Vocoder", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI ARP", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder", ",", "Stochastic Controller", ",", "--- Utilities ---", ",", "Automator", ",", "MIDI Splitter", ",", "Meta-Box", ",", "Randomator", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "Signal-to-MIDI", ",", "VST Controller" ],
+					"items" : [ "-- Choose Module --", ",", "-- REMOVE MODULE --", ",", "--- Audio Tools ---", ",", "Audio File Player", ",", "Compressor", ",", "EZ Audio Player", ",", "Signal-In Control", ",", "Studio EQ", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Subtractive", ",", "Vocoder", ",", "Wavetable Synth", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI ARP", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder", ",", "Stochastic Controller", ",", "--- Utilities ---", ",", "LFO Automator", ",", "MIDI Splitter", ",", "Meta-Box", ",", "Randomator", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "Signal-to-MIDI", ",", "SpectraView", ",", "VST Controller" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
