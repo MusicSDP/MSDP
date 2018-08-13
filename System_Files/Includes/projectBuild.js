@@ -1,4 +1,4 @@
-outlets = 7;
+outlets = 8;
 // establish the list of necessary objects and arrays
 var timestamp = new Date()
 var msdp = {
@@ -31,7 +31,8 @@ var msdp = {
     "title": "New Project", "lastOpened": timestamp, "lastUpdated" : timestamp, 'path': 'C:/msdpProject',
     "settings": {},
     "openBoards": [], "savedBoards": [],
-    'systemBoard': {"metroSettings": {"bpMeasure": 4}, 'performerSettings': {}, 'mixerSettings':{}, "controllerSettings": {}, "metroControlSettings": {}, "scoreSettings": {}, 'virtualControllers': {}}
+    'systemBoard': {"metroSettings": {"bpMeasure": 4}, 'performerSettings': {}, 'mixerSettings':{}, "controllerSettings": {}, "metroControlSettings": {}, "scoreSettings": {}, 'virtualControllers': {}},
+    "assets": {"audio": [], "midi": [], "plugin": [], "score": []}
   }
 };
 //initialize the session objects
@@ -65,14 +66,14 @@ function add(type, v, v2){
   var ran = simpleRan();
   if(type === 'board'){ // build a new board
     var proto = v;
-    outlet(1, 'saved 1');
+    outlet(7, 'saved 1');
     typeof v === 'undefined' ? v = 'Board_' + ran : v = v ;
     if(session.boardPointers.hasOwnProperty(v) === true){
       v = v + '_' + ran;
       for (b in session.boardPointers){
         if (session.boardPointers[b].proto === proto){
           if (session.boardPointers[b].open === 1){
-          outlet(1, 'saved 0');
+          outlet(7, 'saved 0');
           }
         }
 
@@ -80,8 +81,8 @@ function add(type, v, v2){
     };
     session.sessionBoards.push({ "title": v, "position": [10, 50, 420, 420], "power": 1, 'saved': 0, "modules": [] });
     session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': proto, "open": 1, 'modules': {}};
-    outlet (1, 'name ' + v);
-    outlet (1, 'proto ' + proto);
+    outlet (7, 'name ' + v);
+    outlet (7, 'proto ' + proto);
   } else if (type === 'module') { // add a module to an existing board
     i = session.boardPointers[v].index;
     m = session.boardPointers[v].modules;
@@ -109,14 +110,19 @@ function remove(type, v, v2){
   } else if (type === 'module') { // remove module from an existing board
       session.boardPointers[v]['modules'][v2]['exists'] = 0;
   } else if (type === 'asset') { // remove an asset from the asset list
-      for (a in msdp.project.assets[v]) {
-        if(msdp.project.assets[v][a] === v2) {
-          msdp.project.assets[v].splice(a, 1);
-          outlet (1, v2 + ' at ' + v +' removed');
+      if (v2 === 'clearAssets'){
+          msdp.project.assets[v] = [];
+          outlet (1, 'all assets in ' + v +' list removed');
+          return;
+      } else {
+        var index = msdp.project.assets[v].indexOf(v2);
+        if (index > -1){
+          msdp.project.assets[v].splice(index, 1);
+          outlet (1, v2 + ' in ' + v +' list removed');
           return;
         }
       }
-      outlet (1, asset + ' in ' + type +' not found');
+      outlet (1, v2 + ' in ' + v +' list not found');
   };
 };
 
@@ -410,6 +416,7 @@ function import (type, path){
     session.sessionBoards = [];
     session.boardPointers = {};
     msdp.project = clone;
+    msdp.project.assets = msdp.project.assets || {"audio": [], "midi": [], "plugin": [], "score": []}
     msdp.project.lastOpened = new Date();
     msdp.project.lastUpdated = new Date();
     outlet(1, 'project ' + msdp.project.title + ' loaded');
