@@ -43,7 +43,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 348.5, 188.0, 73.0, 22.0 ],
+					"patching_rect" : [ 348.5, 183.0, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "fromsymbol"
 				}
@@ -154,7 +154,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.394714, 26.0, 103.0, 22.0 ],
+					"patching_rect" : [ 444.394714, 77.0, 103.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess #2"
 				}
@@ -239,7 +239,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
