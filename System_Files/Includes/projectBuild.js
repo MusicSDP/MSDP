@@ -5,6 +5,7 @@ var msdp = {
   "system": {
     "uName": "UUID",
     "data": 3,
+    "update": 0,
     "appState": {
       "major": 1, "minor": 3, "revision": 0,
       "state": "app"
@@ -312,7 +313,7 @@ function get(type, v, v2){
 
 function export(type, v1, v2){
   if(type === 'home'){ //send all information out
-    outlet(6, JSON.stringify(msdp.system.uName, null, 4));
+    outlet(6, "id " + JSON.stringify(msdp.system.uName, null, 4));
     msdp.project.openBoards = [];
     for (var key in session.boardPointers) {
       if (session.boardPointers.hasOwnProperty(key)) {
@@ -407,7 +408,7 @@ function import (type, path){
   // place object into the project as appropriate
   if (type === 'system'){ // load a system preferences file.
     msdp.system = clone;
-    outlet(6, JSON.stringify(msdp.system.uName, null, 4));
+    outlet(6, "id " + JSON.stringify(msdp.system.uName, null, 4));
     if (msdp.system.uName === 'UUID'){
       makeID();
       msdp.system.data = 1;
@@ -466,8 +467,12 @@ function uuidv4() {
 };
 function makeID(){
   id = uuidv4(); msdp.system.uName = id;
-  outlet(6, JSON.stringify(msdp.system.uName, null, 4));
+  outlet(6, "id " + JSON.stringify(msdp.system.uName, null, 4));
  };
- function getID(){
-   outlet(6, JSON.stringify(msdp.system.uName, null, 4));
+ function getInfo(){
+   msdp.system.update = msdp.system.update || 0;
+   var version = msdp.system.appState.major + "." + msdp.system.appState.minor + "." + msdp.system.appState.revision;
+   outlet(6, "id " + JSON.stringify(msdp.system.uName, null, 4));
+   outlet(6, "version " + version);
+   outlet(6, "update " + JSON.stringify(msdp.system.update, null, 4));
  };
