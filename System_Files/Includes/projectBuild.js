@@ -472,7 +472,7 @@ function makeID(){
  function getInfo(){
    msdp.system.update = msdp.system.update || 0;
    var version = msdp.system.appState.major + "." + msdp.system.appState.minor + "." + msdp.system.appState.revision;
+   outlet(6, "appStart " + JSON.stringify(msdp.system.uName, null, 4) +" " + version);
    outlet(6, "id " + JSON.stringify(msdp.system.uName, null, 4));
-   outlet(6, "version " + version);
    outlet(6, "update " + JSON.stringify(msdp.system.update, null, 4));
  };
