@@ -1,5 +1,5 @@
 {
-	"Control": [ "-- Choose Module --", "-- REMOVE MODULE --", "--- Control ---","Automator", "LFO Automator", "MIDI Arp", "MIDI Sequencer", "Randomator", "Score Automator", "Stochastic Controller", "VST Controller"],
+	"Control": [ "-- Choose Module --", "-- REMOVE MODULE --", "--- Control ---","Controller Mapper", "Automator", "LFO Automator", "MIDI Arp", "MIDI Sequencer", "Randomator", "Score Automator", "Stochastic Controller", "VST Controller"],
 	"Audio Tools" : [ "--- Audio Tools ---", "Audio File Player", "Compressor", "EZ Audio Player", "Signal-In Control", "Studio EQ" ],
 	"Instruments" : [ "--- Instruments ---", "A+2", "Add1t1ve", "Chaos Synth", "Drum Machine", "SAH", "Stochastic Files", "Stochastic Grains", "VST Instrument", "Subtractive", "Vocoder", "Wavetable Synth" ],
 	"Filters" : [ "--- Effects & Filters ---", "Chorus", "Comb", "Convolve", "DegraderDrive", "Distortion", "Echo", "Filter Shaper", "Flanger", "Gater", "GigaVerb", "Moog Ladder Low Pass", "Morphing Filter", "Pan Machine", "Pitch Shift 2", "Pitch Shift", "RM_AM", "ReTuner", "Resonant Filter", "Reverb", "Signal Delay", "VST Effect" ],
