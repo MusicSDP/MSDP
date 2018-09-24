@@ -1,11 +1,10 @@
-outlets = 8;
+outlets = 7;
 // establish the list of necessary objects and arrays
 var timestamp = new Date()
 var msdp = {
   "system": {
     "uName": "UUID",
     "data": 3,
-    "update": 0,
     "appState": {
       "major": 1, "minor": 3, "revision": 0,
       "state": "app"
@@ -32,8 +31,7 @@ var msdp = {
     "title": "New Project", "lastOpened": timestamp, "lastUpdated" : timestamp, 'path': 'C:/msdpProject',
     "settings": {},
     "openBoards": [], "savedBoards": [],
-    'systemBoard': {"metroSettings": {"bpMeasure": 4}, 'performerSettings': {}, 'mixerSettings':{}, "controllerSettings": {}, "metroControlSettings": {}, "scoreSettings": {}, 'virtualControllers': {}},
-    "assets": {"audio": [], "midi": [], "plugin": [], "score": []}
+    'systemBoard': {"metroSettings": {}, 'performerSettings': {}, 'mixerSettings':{}, "controllerSettings": {}, "metroControlSettings": {}, "scoreSettings": {}, 'virtualControllers': {}}
   }
 };
 //initialize the session objects
@@ -67,14 +65,14 @@ function add(type, v, v2){
   var ran = simpleRan();
   if(type === 'board'){ // build a new board
     var proto = v;
-    outlet(7, 'saved 1');
+    outlet(1, 'saved 1');
     typeof v === 'undefined' ? v = 'Board_' + ran : v = v ;
     if(session.boardPointers.hasOwnProperty(v) === true){
       v = v + '_' + ran;
       for (b in session.boardPointers){
         if (session.boardPointers[b].proto === proto){
           if (session.boardPointers[b].open === 1){
-          outlet(7, 'saved 0');
+          outlet(1, 'saved 0');
           }
         }
 
@@ -82,8 +80,8 @@ function add(type, v, v2){
     };
     session.sessionBoards.push({ "title": v, "position": [10, 50, 420, 420], "power": 1, 'saved': 0, "modules": [] });
     session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': proto, "open": 1, 'modules': {}};
-    outlet (7, 'name ' + v);
-    outlet (7, 'proto ' + proto);
+    outlet (1, 'name ' + v);
+    outlet (1, 'proto ' + proto);
   } else if (type === 'module') { // add a module to an existing board
     i = session.boardPointers[v].index;
     m = session.boardPointers[v].modules;
@@ -111,19 +109,14 @@ function remove(type, v, v2){
   } else if (type === 'module') { // remove module from an existing board
       session.boardPointers[v]['modules'][v2]['exists'] = 0;
   } else if (type === 'asset') { // remove an asset from the asset list
-      if (v2 === 'clearAssets'){
-          msdp.project.assets[v] = [];
-          outlet (1, 'all assets in ' + v +' list removed');
-          return;
-      } else {
-        var index = msdp.project.assets[v].indexOf(v2);
-        if (index > -1){
-          msdp.project.assets[v].splice(index, 1);
-          outlet (1, v2 + ' in ' + v +' list removed');
+      for (a in msdp.project.assets[v]) {
+        if(msdp.project.assets[v][a] === v2) {
+          msdp.project.assets[v].splice(a, 1);
+          outlet (1, v2 + ' at ' + v +' removed');
           return;
         }
       }
-      outlet (1, v2 + ' in ' + v +' list not found');
+      outlet (1, asset + ' in ' + type +' not found');
   };
 };
 
@@ -313,7 +306,7 @@ function get(type, v, v2){
 
 function export(type, v1, v2){
   if(type === 'home'){ //send all information out
-    outlet(6, "id " + JSON.stringify(msdp.system.uName, null, 4));
+    outlet(6, JSON.stringify(msdp.system.uName, null, 4));
     msdp.project.openBoards = [];
     for (var key in session.boardPointers) {
       if (session.boardPointers.hasOwnProperty(key)) {
@@ -323,7 +316,32 @@ function export(type, v1, v2){
       }
     };
     msdp.project.lastUpdated = new Date();
-    if(msdp.system.data === -1){
+    if(msdp.system.data === 0){
+      var sendOut = {};
+      sendOut.uName = msdp.system.uName;
+      sendOut.lastOpened = msdp.project.lastOpened;
+      sendOut.lastUpdated = new Date();
+      outlet(5, JSON.stringify(sendOut, null, 4));
+      return;
+    } else if(msdp.system.data === 1){
+      var clone = JSON.parse(JSON.stringify(msdp));
+      clone.project.title = "anon";
+      clone.project.path = 'anon';
+      for (b in clone.project.openBoards){
+        clone.project.openBoards[b]['title'] = 'anon';
+        for (c in clone.project.openBoards[b]['modules']){
+          clone.project.openBoards[b]['modules'][c]['id'] = 'anon';
+          clone.project.openBoards[b]['modules'][c]['parameters'] = 'anon';
+        }
+      };
+      for (b in clone.project.savedBoards){
+        clone.project.savedBoards[b]['title'] = 'anon';
+        for (c in clone.project.savedBoards[b]['modules']){
+          clone.project.savedBoards[b]['modules'][c]['id'] = 'anon';
+          clone.project.savedBoards[b]['modules'][c]['parameters'] = 'anon';
+        }
+      };
+      outlet(5, JSON.stringify(clone, null, 4));
       return;
     } else {
       var clone = JSON.parse(JSON.stringify(msdp));
@@ -333,23 +351,8 @@ function export(type, v1, v2){
     outlet(5, JSON.stringify(msdp, null, 4));
     return;
   } else if(type === 'backup'){ //create backup for recovery
-    msdp.project.openBoards = [];
-    for (var key in session.boardPointers) {
-      if (session.boardPointers.hasOwnProperty(key)) {
-        if(session.boardPointers[key]['open'] === 1){
-          copy('session', key, 'open');
-        }
-      }
-    }
-    msdp.project.lastUpdated = new Date();
     var path = v1;
-    var clone = {
-      "userId": msdp.system.uName,
-      "version": msdp.system.appState.major + "." + msdp.system.appState.minor + "." + msdp.system.appState.revision,
-      "state": {}
-    }
-    clone.state = msdp.project;
-    var mode = clone;
+    var mode = msdp;
   } else if(type === 'system'){ //export system info
     var path = v1;
     var mode = msdp.system;
@@ -408,7 +411,7 @@ function import (type, path){
   // place object into the project as appropriate
   if (type === 'system'){ // load a system preferences file.
     msdp.system = clone;
-    outlet(6, "id " + JSON.stringify(msdp.system.uName, null, 4));
+    outlet(6, JSON.stringify(msdp.system.uName, null, 4));
     if (msdp.system.uName === 'UUID'){
       makeID();
       msdp.system.data = 1;
@@ -417,16 +420,23 @@ function import (type, path){
     session.sessionBoards = [];
     session.boardPointers = {};
     msdp.project = clone;
-    msdp.project.assets = msdp.project.assets || {"audio": [], "midi": [], "plugin": [], "score": []}
     msdp.project.lastOpened = new Date();
     msdp.project.lastUpdated = new Date();
+    // for (b in msdp.project.openBoards){
+    //  var send = msdp.project.openBoards[b]['title'];
+    //  copy('open', send, 'session');
+    //  get('board', 'open', send);
+    // }
     outlet(1, 'project ' + msdp.project.title + ' loaded');
   } else if (type === 'backup'){ // load a saved project
     session.sessionBoards = [];
     session.boardPointers = {};
-    msdp.project = clone.state;
-    msdp.project.lastOpened = new Date();
-    msdp.project.lastUpdated = new Date();
+    msdp.project = clone;
+    // for (b in msdp.project.openBoards){
+    //  var send = msdp.project.openBoards[b]['title'];
+    //  copy('open', send, 'session');
+    //  get('board', 'open', send);
+    // }
     outlet(1, 'last save ' + msdp.project.title + ' loaded');
   } else if (type === 'board'){ // load and open an exported board
     var ran = simpleRan();
@@ -467,12 +477,8 @@ function uuidv4() {
 };
 function makeID(){
   id = uuidv4(); msdp.system.uName = id;
-  outlet(6, "id " + JSON.stringify(msdp.system.uName, null, 4));
+  outlet(6, JSON.stringify(msdp.system.uName, null, 4));
  };
- function getInfo(){
-   msdp.system.update = msdp.system.update || 0;
-   var version = msdp.system.appState.major + "." + msdp.system.appState.minor + "." + msdp.system.appState.revision;
-   outlet(6, "appStart " + JSON.stringify(msdp.system.uName, null, 4) +" " + version);
-   outlet(6, "id " + JSON.stringify(msdp.system.uName, null, 4));
-   outlet(6, "update " + JSON.stringify(msdp.system.update, null, 4));
+ function getID(){
+   outlet(6, JSON.stringify(msdp.system.uName, null, 4));
  };
