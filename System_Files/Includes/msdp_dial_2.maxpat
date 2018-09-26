@@ -54,6 +54,7 @@
 					"patching_rect" : [ 435.0, 212.0, 41.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, 19.0, 44.0, 44.0 ],
+					"thickness" : 60.0,
 					"vtracking" : 0
 				}
 
@@ -807,23 +808,6 @@
 			}
 , 			{
 				"box" : 				{
-					"frames" : 128,
-					"id" : "obj-16",
-					"maxclass" : "pictctrl",
-					"mode" : 2,
-					"multiplier" : 1,
-					"name" : "cyan_light_knob.png",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 407.0, 332.0, 36.0, 36.0 ],
-					"trackvertical" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.309804, 0.313726, 0.317647, 0.0 ],
 					"fontface" : 1,
 					"fontsize" : 10.0,
@@ -1082,14 +1066,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "cyan_light_knob.png",
-				"bootpath" : "D:/Github/source-code/System_Files/Images",
-				"patcherrelativepath" : "../Images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
