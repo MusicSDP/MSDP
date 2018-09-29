@@ -54,7 +54,7 @@
 					"bgcolor" : [ 0.164706, 0.176471, 0.172549, 0.0 ],
 					"fontface" : 1,
 					"fontname" : "Roboto Mono",
-					"fontsize" : 10.0,
+					"fontsize" : 8.0,
 					"format" : 6,
 					"id" : "obj-2",
 					"ignoreclick" : 1,
@@ -64,9 +64,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 254.0, 257.0, 60.0, 22.0 ],
+					"patching_rect" : [ 254.0, 257.0, 52.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 11.5, 42.0, 22.0 ],
+					"presentation_rect" : [ 7.0, 11.5, 31.0, 19.0 ],
 					"textcolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
 					"triangle" : 0,
 					"tricolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
@@ -106,7 +106,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 321.75, 150.0, 41.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.5, 3.5, 38.0, 38.0 ],
+					"presentation_rect" : [ 2.5, 3.5, 33.0, 33.0 ],
+					"thickness" : 80.0,
 					"vtracking" : 0
 				}
 
@@ -122,7 +123,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 305.5, 137.0, 73.5, 67.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.5, 5.5, 34.0, 34.0 ],
+					"presentation_rect" : [ 4.5, 5.5, 29.0, 29.0 ],
 					"proportion" : 0.5,
 					"rounded" : 100
 				}

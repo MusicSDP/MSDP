@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 43.0, 1920.0, 997.0 ],
+		"rect" : [ 910.0, 119.0, 1316.0, 997.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,40 +39,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 517.0, 43.0, 64.0, 23.0 ],
-					"text" : "loadmess f"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"degrees" : 330,
-					"floatoutput" : 1,
-					"id" : "obj-2",
-					"maxclass" : "dial",
-					"mode" : 4,
-					"needlecolor" : [ 0.396078431372549, 0.874509803921569, 0.811764705882353, 1.0 ],
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"outlinecolor" : [ 0.396078431372549, 0.874509803921569, 0.811764705882353, 1.0 ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 304.0, 130.0, 41.0, 41.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 2.5, 15.0, 27.0, 27.0 ],
-					"thickness" : 80.0,
-					"vtracking" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.164706, 0.176471, 0.172549, 0.0 ],
 					"fontface" : 1,
 					"fontname" : "Roboto Mono",
@@ -87,11 +53,45 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 260.0, 274.5, 49.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 42.0, 29.0, 19.0 ],
+					"presentation_rect" : [ 2.0, 29.0, 29.0, 19.0 ],
 					"textcolor" : [ 0.4, 0.870588, 0.811765, 1.0 ],
 					"triangle" : 0,
 					"tricolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"triscale" : 0.75
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 517.0, 43.0, 64.0, 23.0 ],
+					"text" : "loadmess f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 0.0 ],
+					"degrees" : 330,
+					"floatoutput" : 1,
+					"id" : "obj-2",
+					"maxclass" : "dial",
+					"mode" : 4,
+					"needlecolor" : [ 0.396078431372549, 0.874509803921569, 0.811764705882353, 1.0 ],
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"outlinecolor" : [ 0.396078431372549, 0.874509803921569, 0.811764705882353, 1.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 304.0, 130.0, 41.0, 41.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 2.0, 6.0, 27.0, 27.0 ],
+					"thickness" : 80.0,
+					"vtracking" : 0
 				}
 
 			}
@@ -106,7 +106,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 834.0, 112.0, 39.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 1.0, 32.0, 16.0 ],
+					"presentation_rect" : [ 105.0, 34.5, 32.0, 16.0 ],
 					"text" : "#1",
 					"textcolor" : [ 0.396077990531921, 0.874509990215302, 0.811765015125275, 1.0 ],
 					"textjustification" : 1
@@ -126,7 +126,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 294.0, 129.0, 50.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 14.0, 31.0, 29.0 ],
+					"presentation_rect" : [ 106.5, 32.0, 31.0, 29.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"shadow" : -1
@@ -146,7 +146,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 255.0, 234.5, 50.0, 78.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 1.0, 32.0, 57.0 ],
+					"presentation_rect" : [ 0.0, 2.0, 32.0, 43.0 ],
 					"proportion" : 0.39,
 					"rounded" : 10,
 					"shadow" : -1
