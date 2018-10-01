@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-11",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 398.0, 369.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -172,6 +184,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 0.0 ],
 					"degrees" : 330,
+					"floatoutput" : 1,
 					"id" : "obj-1",
 					"maxclass" : "dial",
 					"mode" : 4,
@@ -634,6 +647,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 0,
 					"source" : [ "obj-70", 0 ]
 				}
 
