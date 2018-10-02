@@ -1,0 +1,7 @@
+{
+	"p1" : [ "message", "param", 1, "low", 0.0, "high", 1.0, "type", 0, "mode", 0, "rate", 1.0, "time", 1.0, "tog", 0 ],
+	"p2" : [ "message", "param", 2, "low", 0.0, "high", 1.0, "type", 0, "mode", 0, "rate", 1.0, "time", 1.0, "tog", 0 ],
+	"p3" : [ "message", "param", 3, "low", 0.0, "high", 1.0, "type", 0, "mode", 0, "rate", 1.0, "time", 1.0, "tog", 0 ],
+	"p4" : [ "message", "param", 4, "low", 0.0, "high", 1.0, "type", 0, "mode", 0, "rate", 1.0, "time", 1.0, "tog", 0 ],
+	"p5" : [ "message", "param", 5, "low", 0.0, "high", 1.0, "type", 0, "mode", 0, "rate", 1.0, "time", 1.0, "tog", 0 ]
+}
