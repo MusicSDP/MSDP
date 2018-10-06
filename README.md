@@ -140,6 +140,10 @@ Our versioning uses the following structure: status.major.minor.revision. As an 
 
 This project is licensed under the GNU General Public License, version 3 - see the [LICENSE.txt](LICENSE.txt) file for details
 
+## Privacy Policy
+
+By downloading and using Music_SDP, you agree to our [privacy policy](http://musicsdp.com/the-music-and-sound-design-platform-privacy-policy/)
+
 ## Contributors
 
 ### Current Contributors
