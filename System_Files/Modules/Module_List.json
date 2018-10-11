@@ -5,6 +5,6 @@
 	"Filters" : [ "--- Effects & Filters ---", "Chorus", "Comb", "Convolve", "cREepVERB", "DegraderDrive", "Distortion", "Echo", "Filter Shaper", "Flanger", "FreeVerb", "Gater", "GigaVerb", "Moog Ladder Low Pass", "Morphing Filter", "Pan Machine", "Pitch Shift 2", "Pitch Shift", "RM_AM", "ReTuner", "Resonant Filter", "Reverb", "Signal Delay", "VST Effect" ],
 	"Buffer Effects" : [ "--- Buffer Effects ---", "Buffer Board", "Chopper", "Chopper 2", "Crash & Burn", "Crash Override", "File Granulator", "File Scratcher", "Glitch Pad", "Live Granulator", "Live Scratcher", "Looper 2", "Looper" ],
 	"MIDI Tools" : [ "--- MIDI Tools ---", "EZ MIDI Player", "MIDI Editor", "MIDI Explorer", "MIDI Recorder"],
-	"Utilities" : [ "--- Utilities ---", "MIDI Splitter", "Meta-Box", "Signal Hub", "Signal Recorder", "Signal Splitter", "Signal-to-MIDI", "SpectroView" ],
+	"Utilities" : [ "--- Utilities ---", "16 Channel Out", "MIDI Splitter", "Meta-Box", "Signal Hub", "Signal Recorder", "Signal Splitter", "Signal-to-MIDI", "SpectroView" ],
 	"3rd Party" : [ "--- 3rd Party Modules ---" ]
 }
