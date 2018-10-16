@@ -1,19 +1,16 @@
 
 const path = require('path');
 const Max = require('max-api');
-var FileAPI = require('file-api')
-  , File = FileAPI.File
-  , FileList = FileAPI.FileList
-  , FileReader = FileAPI.FileReader
-  ;
+const fs = require('fs');
+
 // establish the list of necessary objects and arrays
 var timestamp = new Date()
-const msdp = {
+var msdp = {
   "system": {
     "uName": "UUID",
     "data": 3,
     "appState": {
-      "major": 1, "minor": 3, "revision": 0,
+      "major": 1, "minor": 4, "revision": 0,
       "state": "app"
     },
     "os": "Windows",
@@ -42,7 +39,7 @@ const msdp = {
   }
 };
 //initialize the session objects
-const session = {
+var session = {
   'sessionBoards': [],
   'boardPointers': {}
 };
@@ -362,37 +359,35 @@ function exportP(type, v1, v2){
       mode['modules'].splice(n, 1);
     };
   }
-  var fout = new File(path,"write","JSON");
-	if (fout.isopen) {
-		fout.eof = 0;
-		fout.writeline(JSON.stringify(mode, null, 4));
-		fout.close();
-		Max.outlet ("out1 " + "JSON Write "+ path);
-	} else {
-		Max.outlet ("out1 " + "could not create json file: " + path);
-	}
+  // var fout = new File(path,"write","JSON");
+	// if (fout.isopen) {
+	// 	fout.eof = 0;
+	// 	fout.writeline(JSON.stringify(mode, null, 4));
+	// 	fout.close();
+  //   fs.writeFileSync(JSON.stringify(mode, null, 4));
+	// 	Max.outlet ("out1 " + "JSON Write "+ path);
+	// } else {
+	// 	Max.outlet ("out1 " + "could not create json file: " + path);
+	// }
+  var temp = path+".temp";
+  fs.writeFileSync(temp, JSON.stringify(mode, null, 4));
+  let fileCheck = 0
+  fileCheck = fs.existsSync(path);
+  if (fileCheck == 1){
+    fs.unlinkSync(path);
+  }
+  fs.renameSync(temp, path);
+  Max.outlet ("out1 " + "JSON Write "+ path);
 };
 Max.addHandler("export", (type, v1, v2) => {
-  exportP(type, v, v2);
+  exportP(type, v1, v2);
 });
 
 function importP (type, path){
   // copy contents into an object
-  var memstr = "";
 	var data = "";
 	// var f = new File(path,"read");
-  var f = new File({
-    name: path,
-    stream: new EventEmitter()
-  })
-	f.open();
-	if (f.isopen) {
-		while(f.position<f.eof) {
-			memstr+=f.readstring(2048);
-		}
-		f.close();
-	} else { Max.outlet ("out1 " + "Error\n"); };
-  var clone = JSON.parse(memstr);
+  var clone = JSON.parse(fs.readFileSync(path));
   Max.outlet ("out1 " + "JSON Read " + path);
   // place object into the project as appropriate
   if (type === 'system'){ // load a system preferences file.
@@ -408,21 +403,11 @@ function importP (type, path){
     msdp.project = clone;
     msdp.project.lastOpened = new Date();
     msdp.project.lastUpdated = new Date();
-    // for (b in msdp.project.openBoards){
-    //  var send = msdp.project.openBoards[b]['title'];
-    //  copy('open', send, 'session');
-    //  get('board', 'open', send);
-    // }
     Max.outlet ("out1 " + 'project ' + msdp.project.title + ' loaded');
   } else if (type === 'backup'){ // load a saved project
     session.sessionBoards = [];
     session.boardPointers = {};
     msdp.project = clone;
-    // for (b in msdp.project.openBoards){
-    //  var send = msdp.project.openBoards[b]['title'];
-    //  copy('open', send, 'session');
-    //  get('board', 'open', send);
-    // }
     Max.outlet ("out1 " + 'last save ' + msdp.project.title + ' loaded');
   } else if (type === 'board'){ // load and open an exported board
     var ran = simpleRan();
@@ -469,7 +454,9 @@ function makeID(){
   id = uuidv4(); msdp.system.uName = id;
   Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
  };
-
+ Max.addHandler("makeID", () => {
+   makeID();
+ });
  function getID(){
    Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
  };
