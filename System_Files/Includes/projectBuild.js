@@ -14,16 +14,9 @@ var msdp = {
       "driver": "driver", "in": "microphone", "out": "speakers", "sampleRate": 44000, "ioVector": 512, "sigVector": 64
     },
     "settings": {
-      "dac": 1, "limiter": 1, 'volume': 127,
-      "fullScreen": 1, "fullView": 0,
-      "defaultViews": {
-        "performer": 0, "mixer": 0, "score": 0,
-        "metronome": 0, "controller": 1},
-      "tabOpen": 1, "bgPattern": 1,
+      "dac": 1, "limiter": 1, 'volume': 127, "fullScreen": 1,
       "metroTog": 1, "bpm": 120,
       "showBoards": 1, "initEvent": 0,
-      "dryMics": 0, "recordedInProject": 0,
-      "scoreMain": "main_demo.txt", "scoreRepeat": "repeat.txt", "scoreDelay": "delay.txt",
       "keyboardMIDI": false, "keyOctave": 4
     }
   },
@@ -31,7 +24,7 @@ var msdp = {
     "title": "New Project", "lastOpened": timestamp, "lastUpdated" : timestamp, 'path': 'C:/msdpProject',
     "settings": {},
     "openBoards": [], "savedBoards": [],
-    'systemBoard': {"metroSettings": {}, 'performerSettings': {}, 'mixerSettings':{}, "controllerSettings": {}, "metroControlSettings": {}, "scoreSettings": {}, 'virtualControllers': {}}
+    'systemBoard': {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 1,"customDiv": 5}}
   }
 };
 //initialize the session objects
@@ -330,7 +323,7 @@ function export(type, v1, v2){
       if (session.boardPointers.hasOwnProperty(key)) {
         if(session.boardPointers[key]['open'] === 1){
           copy('session', key, 'open');
-        } 
+        }
       }
     }
     var path = v1;
