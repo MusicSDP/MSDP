@@ -40,11 +40,17 @@ var session = {
 //update time and output the object as a JSON string
 Max.addHandler("projectOut", () => {
   msdp.project.lastUpdated = new Date();
-  Max.outlet("out0 " + JSON.stringify(msdp, null, 4));
+  Max.outlet ("sendTo MSDP_View_Dict_State");
+  Max.outlet ("sendGate 1");
+  Max.outlet (JSON.stringify(msdp, null, 4));
+  Max.outlet ("sendGate 0");
 });
 
 Max.addHandler("sessionOut", () => {
-  Max.outlet("out3 " + JSON.stringify(session, null, 4));
+  Max.outlet ("sendTo MSDP_View_Dict_Session");
+  Max.outlet ("sendGate 1");
+  Max.outlet (JSON.stringify(session, null, 4));
+  Max.outlet ("sendGate 0");
 });
 Max.addHandler("newProject", (title, path) => {
   msdp.project.title = title;
@@ -81,7 +87,7 @@ Max.addHandler("add", (type, v, v2) => {
     i = session.boardPointers[v].index;
     m = session.boardPointers[v].modules;
     // if(session.boardPointers[v]['modules'].hasOwnProperty(v2) === true){v2 = v2 + '_' + ran};
-    session.sessionBoards[i].modules.push({ "location": [0, 0], "process": "Choose One", "id": v2, "parameters": {}});
+    session.sessionBoards[i].modules.push({ "location": "1 1", "process": "Choose One", "id": v2, "parameters": {}});
     session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'exists': 1, 'id': v2};
   } else if (type === 'asset') { // add an asset to the asset list
     msdp.project.assets[v].push(v2);
@@ -257,28 +263,58 @@ function get(type, v, v2){
   } else if (type === 'path'){ // get the project path
     var p = msdp.project.path;
     p = p.substring(0, p.lastIndexOf("/"));
-    Max.outlet ("out2 " + p);
+      Max.outlet ("sendTo MDSP_Backup_Project_Path_Set");
+      Max.outlet ("sendGate 1");
+      Max.outlet (p);
+      Max.outlet ("sendGate 0");
   } else if (type === 'system'){ // get the system contents
-    Max.outlet ("out2 " + JSON.stringify(msdp.system, null, 4));
+      Max.outlet ("sendTo MSDP_System_Settings_Set");
+      Max.outlet ("sendGate 1");
+      Max.outlet (JSON.stringify(msdp.system, null, 4));
+      Max.outlet ("sendGate 0");
   } else if ( type === 'pSettings'){ // get the project settings content
-    Max.outlet ("out2 " + JSON.stringify(msdp.project.settings, null, 4));
+      Max.outlet ("sendTo MSDP_Project_Settings_Set");
+      Max.outlet ("sendGate 1");
+      Max.outlet(JSON.stringify(msdp.project.settings, null, 4));
+      Max.outlet ("sendGate 0");
+      Max.outlet ("sendTo MSDP_Metro_Settings_Set");
+      Max.outlet ("sendGate 1");
+      Max.outlet (JSON.stringify(msdp.project.systemBoard, null, 4));
+      Max.outlet ("sendGate 0");
   } else if ( type === 'pSysBoard'){ // get the project settings content
-    Max.outlet ("out2 " + JSON.stringify(msdp.project.systemBoard, null, 4));
+    if (v === "virtual"){
+      Max.outlet ("sendTo MSDP_Virtual_Settings_Set");
+    }
+      Max.outlet ("sendGate 1");
+      Max.outlet (JSON.stringify(msdp.project.systemBoard, null, 4));
+      Max.outlet ("sendGate 0");
   } else if (type === 'list'){ // determine whether asking for a list of boards or modules off a board
     if (v === 'modules'){
       Max.outlet ("out2 " + Object.keys(session.boardPointers[v2]['modules']));
     } else if (v === 'savedBoards'){ // get the list of saved boards
+      if (v2 === "meta"){
+        Max.outlet ("sendTo MSDP_Saved_Boards_List_Meta");
+      } else if (v2 === "deleted"){
+        Max.outlet ("sendTo MSDP_Deleted_Boards_List");
+      } else {
+        Max.outlet ("sendTo MSDP_Saved_Boards_List");
+      }
+      Max.outlet ("sendGate 1");
       for (b in msdp.project.savedBoards){
         var bList = [];
         bList.push(msdp.project.savedBoards[b]['title']);
-        Max.outlet ("out2 " + bList);
+        Max.outlet (bList);
       }
+      Max.outlet ("sendGate 0");
     } else if (v === 'openBoards'){ // get the list of open boards
+      Max.outlet ("sendTo MSDP_Open_Board_List_Load");
+      Max.outlet ("sendGate 1");
       for (b in msdp.project.openBoards){
         var bList = [];
         bList.push(msdp.project.openBoards[b]['title']);
-        Max.outlet ("out2 " + bList);
+        Max.outlet (bList);
       }
+      Max.outlet ("sendGate 0");
     } else { // get the boards in the session
       Max.outlet ("out2 " + Object.keys(session.boardPointers));
     }
@@ -294,7 +330,10 @@ function get(type, v, v2){
     };
     for (b in path){
       if(path[b]['title'] === v2){
-        Max.outlet ("out2 " + JSON.stringify(path[b], null, 4));
+        Max.outlet ("sendTo " + v2);
+        Max.outlet ("sendGate 1");
+        Max.outlet (JSON.stringify(path[b], null, 4));
+        Max.outlet ("sendGate 0");
         return;
       };
     };
@@ -352,16 +391,6 @@ function exportP(type, v1, v2){
       mode['modules'].splice(n, 1);
     };
   }
-  // var fout = new File(path,"write","JSON");
-	// if (fout.isopen) {
-	// 	fout.eof = 0;
-	// 	fout.writeline(JSON.stringify(mode, null, 4));
-	// 	fout.close();
-  //   fs.writeFileSync(JSON.stringify(mode, null, 4));
-	// 	Max.outlet ("out1 " + "JSON Write "+ path);
-	// } else {
-	// 	Max.outlet ("out1 " + "could not create json file: " + path);
-	// }
   var temp = path+".temp";
   fs.writeFileSync(temp, JSON.stringify(mode, null, 4));
   let fileCheck = 0
@@ -397,11 +426,13 @@ function importP (type, path){
     msdp.project.lastOpened = new Date();
     msdp.project.lastUpdated = new Date();
     Max.outlet ("out1 " + 'project ' + msdp.project.title + ' loaded');
+    Max.outlet ("out1 " + JSON.stringify(msdp.project.openBoards, null, 4));
   } else if (type === 'backup'){ // load a saved project
     session.sessionBoards = [];
     session.boardPointers = {};
     msdp.project = clone;
     Max.outlet ("out1 " + 'last save ' + msdp.project.title + ' loaded');
+    //exportP(home); // send it home after we load it
   } else if (type === 'board'){ // load and open an exported board
     var ran = simpleRan();
     var cMods = {};
