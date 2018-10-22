@@ -61,6 +61,8 @@ Max.addHandler("newProject", (title, path) => {
   session.sessionBoards = [];
   session.boardPointers = {};
   exportP('project', path);
+  get("pSettings");
+  Max.post(msdp.project.settings);
 });
 
 Max.addHandler("add", (type, v, v2) => {
