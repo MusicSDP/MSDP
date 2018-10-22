@@ -484,3 +484,11 @@ function makeID(){
  function getID(){
    Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
  };
+ Max.addHandler("loadProject", (path) => {
+   importP("project", path);
+   Max.post(msdp.project);
+   get("pSettings");
+   Max.post(msdp.project.settings);
+   get("list", "savedBoards");
+   get("list", "openBoards");
+ });
