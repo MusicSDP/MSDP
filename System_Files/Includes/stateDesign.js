@@ -66,6 +66,9 @@ Max.addHandler("newProject", (title, path) => {
 });
 
 Max.addHandler("add", (type, v, v2) => {
+  add(type, v, v2);
+});
+function add(type, v, v2){
   var ran = simpleRan();
   if(type === 'board'){ // build a new board
     var proto = v;
@@ -85,6 +88,8 @@ Max.addHandler("add", (type, v, v2) => {
     session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': proto, "open": 1, 'modules': {}};
     Max.outlet("out1 " + 'name ' + v);
     Max.outlet("out1 " + 'proto ' + proto);
+    Max.post("goTo " + v);
+    return(v);
   } else if (type === 'module') { // add a module to an existing board
     i = session.boardPointers[v].index;
     m = session.boardPointers[v].modules;
@@ -95,7 +100,7 @@ Max.addHandler("add", (type, v, v2) => {
     msdp.project.assets[v].push(v2);
     Max.outlet ("out1 " + v2 + " added to the " + v + " list");
   };
-});
+};
 
 Max.addHandler("remove", (type, v, v2) => {
   if(type === 'savedBoard'){ // remove board from saved list
@@ -321,19 +326,23 @@ function get(type, v, v2){
       Max.outlet ("out2 " + Object.keys(session.boardPointers));
     }
   } else if (type === 'board'){ // get a board
+    var title = v2;
     if (v === 'session'){
       var i = session.boardPointers[v2]['index'];
       Max.outlet ("out2 " + JSON.stringify(session.sessionBoards[i], null, 4));
       return;
     } else if (v === 'open'){
       var path = msdp.project.openBoards;
-    } else {
-      var path = msdp.project.savedBoards;
+    } else if (v === 'saved'){
+        var path = msdp.project.savedBoards;
+        title = add("board", v2);
+        Max.post("the title is " + title);
     };
     for (b in path){
       if(path[b]['title'] === v2){
         Max.outlet ("sendTo " + v2);
         Max.outlet ("sendGate 1");
+        Max.outlet ("title " + title);
         Max.outlet (JSON.stringify(path[b], null, 4));
         Max.outlet ("sendGate 0");
         return;
