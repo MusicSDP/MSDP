@@ -4,8 +4,8 @@ const Max = require('max-api');
 const fs = require('fs');
 
 // establish the list of necessary objects and arrays
-var timestamp = new Date()
-var msdp = {
+let timestamp = new Date()
+let msdp = {
   "system": {
     "uName": "UUID",
     "data": 3,
@@ -32,7 +32,7 @@ var msdp = {
   }
 };
 //initialize the session objects
-var session = {
+let session = {
   'sessionBoards': [],
   'boardPointers': {}
 };
@@ -57,17 +57,14 @@ Max.addHandler("newProject", (title, path) => { // Blank out the project and ses
   exportP('project', path);
   get("pSettings");
 });
-Max.addHandler("loadProject", (path) => { // run all of the required functions to load the project state
+Max.addHandler("loadProject", (path) => { // load the project state
   importP("project", path);
   get("pSettings");
   get("list", "savedBoards");
   get("list", "openBoards");
 });
 Max.addHandler("projectOut", () => { //send the project dict to the dict viewer patch
-  Max.outlet ("sendTo MSDP_View_Dict_State");
-  Max.outlet ("sendGate 1");
-  Max.outlet (JSON.stringify(msdp, null, 4));
-  Max.outlet ("sendGate 0");
+  ["sendTo MSDP_View_Dict_State", "sendGate 1", JSON.stringify(msdp, null, 4), "sendGate 0" ].map(Max.outlet);
 });
 Max.addHandler("sessionOut", () => { //send the session dict to the dict viewer patch
   Max.outlet ("sendTo MSDP_View_Dict_Session");
@@ -76,7 +73,7 @@ Max.addHandler("sessionOut", () => { //send the session dict to the dict viewer 
   Max.outlet ("sendGate 0");
 });
 
-function add(type, v, v2){ //fuction called to create boards and modules
+const add = (type, v, v2) => { //create boards and modules
   var ran = simpleRan();
   if(type === 'board'){ // build a new board
     var proto = v;
@@ -110,7 +107,7 @@ function add(type, v, v2){ //fuction called to create boards and modules
   };
 };
 
-function remove(type, v, v2){ // function called when a board is removed from the saved list, when an open board is closed, when a module is removed from a board, and when an asset is removed from the project.
+const remove = (type, v, v2) => { // used when remove board from the saved list, when an open board is closed, when a module is removed from a board, and when an asset is removed from the project.
   if(type === 'savedBoard'){ // remove board from saved list
     for (b in msdp.project.savedBoards) {
       if(msdp.project.savedBoards[b]['title'] === v) {
@@ -136,7 +133,7 @@ function remove(type, v, v2){ // function called when a board is removed from th
   };
 };
 
-function update(type, v, v2, v3, v4, v5){ //update any value in the system, project, or in a board or module.
+const update = (type, v, v2, v3, v4, v5) => { //update any value in the system, project, or in a board or module.
   if (type === 'value'){ //update system or project value on object not in list
     typeof v2 === 'number' ? e = 'msdp' + '.' + v + ' = ' + v2 + ';' : e = 'msdp' + '.' + v + ' = "' + v2 + '";';
     Max.outlet ("out1 " + 'e: ' +  e);
@@ -170,7 +167,7 @@ function update(type, v, v2, v3, v4, v5){ //update any value in the system, proj
   }
 };
 
-function copy(loc, val, dest, dest2){
+const copy = (loc, val, dest, dest2) => {
   if(loc === 'session'){
     var index = session.boardPointers[val]['index'];
     var proto = session.boardPointers[val]['proto'];
@@ -263,7 +260,7 @@ function copy(loc, val, dest, dest2){
   }
 };
 
-function get(type, v, v2){
+const get = (type, v, v2) => {
   if (type === 'asset'){ // get the list of current assets
     Max.outlet ("out2 " + JSON.stringify(msdp.project.assets[v]));
   } else if (type === 'path'){ // get the project path
@@ -351,7 +348,7 @@ function get(type, v, v2){
   }
 };
 
-function exportP(type, v1, v2){
+const exportP = (type, v1, v2) => {
   if(type === 'home'){ //send all information out
     Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
     msdp.project.openBoards = [];
@@ -409,7 +406,7 @@ function exportP(type, v1, v2){
   Max.outlet ("out1 " + "JSON Write "+ path);
 };
 
-function importP (type, path){
+const importP = (type, path) => {
 	var data = "";
   var clone = JSON.parse(fs.readFileSync(path));
   Max.outlet ("out1 " + "JSON Read " + path);
@@ -460,23 +457,23 @@ function importP (type, path){
   }
 }
 
-function simpleRan(){
+const simpleRan = () => {
   var ran = Math.floor(Math.random() * 4294967295);
   return n = ran.toString(16);
 };
 
-function uuidv4() {
+const uuidv4 = () => {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
     return v.toString(16);
   });
 };
 
-function makeID(){
+const makeID = () => {
   id = uuidv4(); msdp.system.uName = id;
   Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
- };
+};
 
- function getID(){
-   Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
- };
+const getID = () => {
+ Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
+};
