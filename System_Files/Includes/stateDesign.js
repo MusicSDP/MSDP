@@ -37,22 +37,16 @@ var session = {
   'boardPointers': {}
 };
 
-//update time and output the object as a JSON string
-Max.addHandler("projectOut", () => {
-  msdp.project.lastUpdated = new Date();
-  Max.outlet ("sendTo MSDP_View_Dict_State");
-  Max.outlet ("sendGate 1");
-  Max.outlet (JSON.stringify(msdp, null, 4));
-  Max.outlet ("sendGate 0");
-});
-
-Max.addHandler("sessionOut", () => {
-  Max.outlet ("sendTo MSDP_View_Dict_Session");
-  Max.outlet ("sendGate 1");
-  Max.outlet (JSON.stringify(session, null, 4));
-  Max.outlet ("sendGate 0");
-});
-Max.addHandler("newProject", (title, path) => {
+// collection of Max handlers - messages from Max that run functions
+Max.addHandler("add", (type, v, v2) => {add(type, v, v2);});
+Max.addHandler("remove", (type, v, v2) => {remove(type, v, v2);});
+Max.addHandler("update", (type, v, v2, v3, v4, v5) => {update(type, v, v2, v3, v4, v5);});
+Max.addHandler("copy", (loc, val, dest, dest2) => {copy(loc, val, dest, dest2);});
+Max.addHandler("get", (type, v, v2) => {get(type, v, v2);});
+Max.addHandler("import", (type, path) => {importP(type, path);});
+Max.addHandler("export", (type, v1, v2) => {exportP(type, v1, v2);});
+Max.addHandler("makeID", () => {makeID();});
+Max.addHandler("newProject", (title, path) => { // Blank out the project and session dictionaries to begin new project
   msdp.project.title = title;
   msdp.project.settings = msdp.system.settings;
   //msdp.project.assets = {"scores": [], "audio": [], "midi": [], "plugins": []};
@@ -62,13 +56,27 @@ Max.addHandler("newProject", (title, path) => {
   session.boardPointers = {};
   exportP('project', path);
   get("pSettings");
-  Max.post(msdp.project.settings);
+});
+Max.addHandler("loadProject", (path) => { // run all of the required functions to load the project state
+  importP("project", path);
+  get("pSettings");
+  get("list", "savedBoards");
+  get("list", "openBoards");
+});
+Max.addHandler("projectOut", () => { //send the project dict to the dict viewer patch
+  Max.outlet ("sendTo MSDP_View_Dict_State");
+  Max.outlet ("sendGate 1");
+  Max.outlet (JSON.stringify(msdp, null, 4));
+  Max.outlet ("sendGate 0");
+});
+Max.addHandler("sessionOut", () => { //send the session dict to the dict viewer patch
+  Max.outlet ("sendTo MSDP_View_Dict_Session");
+  Max.outlet ("sendGate 1");
+  Max.outlet (JSON.stringify(session, null, 4));
+  Max.outlet ("sendGate 0");
 });
 
-Max.addHandler("add", (type, v, v2) => {
-  add(type, v, v2);
-});
-function add(type, v, v2){
+function add(type, v, v2){ //fuction called to create boards and modules
   var ran = simpleRan();
   if(type === 'board'){ // build a new board
     var proto = v;
@@ -102,7 +110,7 @@ function add(type, v, v2){
   };
 };
 
-Max.addHandler("remove", (type, v, v2) => {
+function remove(type, v, v2){ // function called when a board is removed from the saved list, when an open board is closed, when a module is removed from a board, and when an asset is removed from the project.
   if(type === 'savedBoard'){ // remove board from saved list
     for (b in msdp.project.savedBoards) {
       if(msdp.project.savedBoards[b]['title'] === v) {
@@ -126,9 +134,9 @@ Max.addHandler("remove", (type, v, v2) => {
       }
       Max.outlet ("out1 " + asset + ' in ' + type +' not found');
   };
-});
+};
 
-Max.addHandler("update", (type, v, v2, v3, v4, v5) => {
+function update(type, v, v2, v3, v4, v5){ //update any value in the system, project, or in a board or module.
   if (type === 'value'){ //update system or project value on object not in list
     typeof v2 === 'number' ? e = 'msdp' + '.' + v + ' = ' + v2 + ';' : e = 'msdp' + '.' + v + ' = "' + v2 + '";';
     Max.outlet ("out1 " + 'e: ' +  e);
@@ -151,11 +159,6 @@ Max.addHandler("update", (type, v, v2, v3, v4, v5) => {
     var i = session.boardPointers[v]['index'];
     var i2 = session.boardPointers[v]['modules'][v2]['index'];
     if(v3 === 'id'){
-      // var proto = v4;
-      //if(session.boardPointers[v]['modules'].hasOwnProperty(v4) === true){
-      //  var ran = simpleRan();
-      //  var v4 = v4 + '_' + ran;
-      //};
       session.boardPointers[v]['modules'][v2]['id'] = v4;
     }
     session.sessionBoards[i]['modules'][i2][v3] = v4;
@@ -165,7 +168,7 @@ Max.addHandler("update", (type, v, v2, v3, v4, v5) => {
     var i2 = session.boardPointers[v]['modules'][v2]['index'];
     session.sessionBoards[i]['modules'][i2]['parameters'][v3] = v4;
   }
-});
+};
 
 function copy(loc, val, dest, dest2){
   if(loc === 'session'){
@@ -194,7 +197,6 @@ function copy(loc, val, dest, dest2){
       msdp.project.openBoards.push(clone);
     } else if(dest === 'saved'){
       session.sessionBoards[index].saved = 1;
-      // clone.title = dest2;
       clone.saved = 1;
         for (var c in msdp.project.savedBoards) {
           if(msdp.project.savedBoards[c]['title'] === proto) {
@@ -260,9 +262,6 @@ function copy(loc, val, dest, dest2){
     }
   }
 };
-Max.addHandler("copy", (loc, val, dest, dest2) => {
-  copy(loc, val, dest, dest2);
-});
 
 function get(type, v, v2){
   if (type === 'asset'){ // get the list of current assets
@@ -351,9 +350,6 @@ function get(type, v, v2){
     Max.outlet ("out1 " + v2 + ' not found');
   }
 };
-Max.addHandler("get", (type, v, v2) => {
-  get(type, v, v2);
-});
 
 function exportP(type, v1, v2){
   if(type === 'home'){ //send all information out
@@ -412,17 +408,11 @@ function exportP(type, v1, v2){
   fs.renameSync(temp, path);
   Max.outlet ("out1 " + "JSON Write "+ path);
 };
-Max.addHandler("export", (type, v1, v2) => {
-  exportP(type, v1, v2);
-});
 
 function importP (type, path){
-  // copy contents into an object
 	var data = "";
-	// var f = new File(path,"read");
   var clone = JSON.parse(fs.readFileSync(path));
   Max.outlet ("out1 " + "JSON Read " + path);
-  // place object into the project as appropriate
   if (type === 'system'){ // load a system preferences file.
     msdp.system = clone;
     Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
@@ -469,9 +459,6 @@ function importP (type, path){
   	Max.outlet ("out1 " + "JSON Read "+ path);
   }
 }
-Max.addHandler("import", (type, path) => {
-  importP(type, path);
-});
 
 function simpleRan(){
   var ran = Math.floor(Math.random() * 4294967295);
@@ -489,17 +476,7 @@ function makeID(){
   id = uuidv4(); msdp.system.uName = id;
   Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
  };
- Max.addHandler("makeID", () => {
-   makeID();
- });
+
  function getID(){
    Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
  };
- Max.addHandler("loadProject", (path) => {
-   importP("project", path);
-   Max.post(msdp.project);
-   get("pSettings");
-   Max.post(msdp.project.settings);
-   get("list", "savedBoards");
-   get("list", "openBoards");
- });
