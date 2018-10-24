@@ -46,7 +46,15 @@ Max.addHandler("get", (type, v, v2) => {get(type, v, v2);});
 Max.addHandler("import", (type, path) => {importP(type, path);});
 Max.addHandler("export", (type, v1, v2) => {exportP(type, v1, v2);});
 Max.addHandler("makeID", () => {makeID();});
-Max.addHandler("newProject", (title, path) => { // Blank out the project and session dictionaries to begin new project
+Max.addHandler("newProject", (title, path) => {newProject(title, path);});
+Max.addHandler("loadProject", (path) => { loadProject(path);});
+Max.addHandler("projectOut", () => { //send the project dict to the dict viewer patch
+  ["sendTo MSDP_View_Dict_State", "sendGate 1", JSON.stringify(msdp, null, 4), "sendGate 0" ].map(Max.outlet);
+});
+Max.addHandler("sessionOut", () => { //send the session dict to the dict viewer patch
+  ["sendTo MSDP_View_Dict_Session", "sendGate 1", JSON.stringify(session, null, 4), "sendGate 0" ].map(Max.outlet);
+});
+const newProject = (title, path) => { // Blank out the project and session dictionaries to begin new project
   msdp.project.title = title;
   msdp.project.settings = msdp.system.settings;
   //msdp.project.assets = {"scores": [], "audio": [], "midi": [], "plugins": []};
@@ -56,23 +64,13 @@ Max.addHandler("newProject", (title, path) => { // Blank out the project and ses
   session.boardPointers = {};
   exportP('project', path);
   get("pSettings");
-});
-Max.addHandler("loadProject", (path) => { // load the project state
+};
+const loadProject = (path) => { // load the project state
   importP("project", path);
   get("pSettings");
   get("list", "savedBoards");
   get("list", "openBoards");
-});
-Max.addHandler("projectOut", () => { //send the project dict to the dict viewer patch
-  ["sendTo MSDP_View_Dict_State", "sendGate 1", JSON.stringify(msdp, null, 4), "sendGate 0" ].map(Max.outlet);
-});
-Max.addHandler("sessionOut", () => { //send the session dict to the dict viewer patch
-  Max.outlet ("sendTo MSDP_View_Dict_Session");
-  Max.outlet ("sendGate 1");
-  Max.outlet (JSON.stringify(session, null, 4));
-  Max.outlet ("sendGate 0");
-});
-
+};
 const add = (type, v, v2) => { //create boards and modules
   var ran = simpleRan();
   if(type === 'board'){ // build a new board
@@ -264,33 +262,18 @@ const get = (type, v, v2) => {
   if (type === 'asset'){ // get the list of current assets
     Max.outlet ("out2 " + JSON.stringify(msdp.project.assets[v]));
   } else if (type === 'path'){ // get the project path
-    var p = msdp.project.path;
-    p = p.substring(0, p.lastIndexOf("/"));
-      Max.outlet ("sendTo MDSP_Backup_Project_Path_Set");
-      Max.outlet ("sendGate 1");
-      Max.outlet (p);
-      Max.outlet ("sendGate 0");
+      var p = msdp.project.path;
+      p = p.substring(0, p.lastIndexOf("/"));
+      ["sendTo MDSP_Backup_Project_Path_Set", "sendGate 1", p, "sendGate 0" ].map(Max.outlet);
   } else if (type === 'system'){ // get the system contents
-      Max.outlet ("sendTo MSDP_System_Settings_Set");
-      Max.outlet ("sendGate 1");
-      Max.outlet (JSON.stringify(msdp.system, null, 4));
-      Max.outlet ("sendGate 0");
+      ["sendTo MSDP_System_Settings_Set", "sendGate 1", JSON.stringify(msdp.system, null, 4), "sendGate 0" ].map(Max.outlet);
   } else if ( type === 'pSettings'){ // get the project settings content
-      Max.outlet ("sendTo MSDP_Project_Settings_Set");
-      Max.outlet ("sendGate 1");
-      Max.outlet(JSON.stringify(msdp.project.settings, null, 4));
-      Max.outlet ("sendGate 0");
-      Max.outlet ("sendTo MSDP_Metro_Settings_Set");
-      Max.outlet ("sendGate 1");
-      Max.outlet (JSON.stringify(msdp.project.systemBoard, null, 4));
-      Max.outlet ("sendGate 0");
+      ["sendTo MSDP_Project_Settings_Set", "sendGate 1", JSON.stringify(msdp.project.settings, null, 4), "sendGate 0",
+      "sendTo MSDP_Metro_Settings_Set", "sendGate 1", JSON.stringify(msdp.project.systemBoard, null, 4), "sendGate 0" ].map(Max.outlet);
   } else if ( type === 'pSysBoard'){ // get the project settings content
     if (v === "virtual"){
-      Max.outlet ("sendTo MSDP_Virtual_Settings_Set");
+      ["sendTo MSDP_Virtual_Settings_Set", "sendGate 1", JSON.stringify(msdp.project.systemBoard, null, 4), "sendGate 0" ].map(Max.outlet);
     }
-      Max.outlet ("sendGate 1");
-      Max.outlet (JSON.stringify(msdp.project.systemBoard, null, 4));
-      Max.outlet ("sendGate 0");
   } else if (type === 'list'){ // determine whether asking for a list of boards or modules off a board
     if (v === 'modules'){
       Max.outlet ("out2 " + Object.keys(session.boardPointers[v2]['modules']));
@@ -304,7 +287,7 @@ const get = (type, v, v2) => {
       }
       Max.outlet ("sendGate 1");
       for (b in msdp.project.savedBoards){
-        var bList = [];
+        let bList = [];
         bList.push(msdp.project.savedBoards[b]['title']);
         Max.outlet (bList);
       }
@@ -313,7 +296,7 @@ const get = (type, v, v2) => {
       Max.outlet ("sendTo MSDP_Open_Board_List_Load");
       Max.outlet ("sendGate 1");
       for (b in msdp.project.openBoards){
-        var bList = [];
+        let bList = [];
         bList.push(msdp.project.openBoards[b]['title']);
         Max.outlet (bList);
       }
@@ -336,11 +319,7 @@ const get = (type, v, v2) => {
     };
     for (b in path){
       if(path[b]['title'] === v2){
-        Max.outlet ("sendTo " + v2);
-        Max.outlet ("sendGate 1");
-        Max.outlet ("title " + title);
-        Max.outlet (JSON.stringify(path[b], null, 4));
-        Max.outlet ("sendGate 0");
+        ["sendTo " + v2, "sendGate 1", "title " + title, JSON.stringify(path[b], null, 4), "sendGate 0" ].map(Max.outlet);
         return;
       };
     };
@@ -355,7 +334,9 @@ const exportP = (type, v1, v2) => {
     for (var key in session.boardPointers) {
       if (session.boardPointers.hasOwnProperty(key)) {
         if(session.boardPointers[key]['open'] === 1){
-          copy('session', key, 'open');
+          if(isEmpty(session.boardPointers[key]["modules"]) === false ){
+              copy('session', key, 'open');
+          }
         }
       }
     };
@@ -373,10 +354,12 @@ const exportP = (type, v1, v2) => {
     for (var key in session.boardPointers) {
       if (session.boardPointers.hasOwnProperty(key)) {
         if(session.boardPointers[key]['open'] === 1){
-          copy('session', key, 'open');
+          if(isEmpty(session.boardPointers[key]["modules"]) === false ){
+              copy('session', key, 'open');
+          }
         }
       }
-    }
+    };
     var path = v1;
     msdp.project.lastUpdated = new Date();
     var mode = msdp.project;
@@ -476,4 +459,11 @@ const makeID = () => {
 
 const getID = () => {
  Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
+};
+const isEmpty = (obj) => {
+  for (var key in obj) {
+    if(obj.hasOwnProperty(key))
+    return false;
+  }
+  return true;
 };
