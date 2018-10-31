@@ -1,14 +1,14 @@
 
-const path = require('path');
-const Max = require('max-api');
-const fs = require('fs');
+const path = require('path')
+const fs = require('fs')
+const Max = require('max-api')
+const debug = false
 
-// establish the list of necessary objects and arrays
 let timestamp = new Date()
 let msdp = {
   "system": {
     "uName": "UUID",
-    "data": 3,
+    "data": 3, // deprecated
     "appState": {
       "major": 1, "minor": 4, "revision": 0,
       "state": "app"
@@ -28,10 +28,9 @@ let msdp = {
     "title": "New Project", "lastOpened": timestamp, "lastUpdated" : timestamp, 'path': 'C:/msdpProject',
     "settings": {},
     "openBoards": [], "savedBoards": [],
-    'systemBoard': {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 1,"customDiv": 5}}
+    'systemBoard': {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 0,"customDiv": 5}}
   }
 };
-//initialize the session objects
 let session = {
   'sessionBoards': [],
   'boardPointers': {}
@@ -48,13 +47,13 @@ Max.addHandler("export", (type, v1, v2) => {exportP(type, v1, v2);});
 Max.addHandler("makeID", () => {makeID();});
 Max.addHandler("newProject", (title, path) => {newProject(title, path);});
 Max.addHandler("loadProject", (path) => { loadProject(path);});
-Max.addHandler("projectOut", () => { //send the project dict to the dict viewer patch
+Max.addHandler("projectOut", () => { // send project dict to dict viewer patch
   ["sendTo MSDP_View_Dict_State", "sendGate 1", JSON.stringify(msdp, null, 4), "sendGate 0" ].map(Max.outlet);
 });
-Max.addHandler("sessionOut", () => { //send the session dict to the dict viewer patch
+Max.addHandler("sessionOut", () => { // send session dict to dict viewer patch
   ["sendTo MSDP_View_Dict_Session", "sendGate 1", JSON.stringify(session, null, 4), "sendGate 0" ].map(Max.outlet);
 });
-const newProject = (title, path) => { // Blank out the project and session dictionaries to begin new project
+const newProject = (title, path) => { // blank out project and session dictionaries to begin new project
   msdp.project.title = title;
   msdp.project.settings = msdp.system.settings;
   //msdp.project.assets = {"scores": [], "audio": [], "midi": [], "plugins": []};
@@ -64,6 +63,7 @@ const newProject = (title, path) => { // Blank out the project and session dicti
   session.boardPointers = {};
   exportP('project', path);
   get("pSettings");
+  ["sendTo MSDP_newboard_load", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet);
 };
 const loadProject = (path) => { // load the project state
   importP("project", path);
@@ -71,42 +71,29 @@ const loadProject = (path) => { // load the project state
   get("list", "savedBoards");
   get("list", "openBoards");
 };
-const add = (type, v, v2) => { //create boards and modules
+const add = (type, v, v2) => { // named boards, modules, assets
   var ran = simpleRan();
-  if(type === 'board'){ // build a new board
-    var proto = v;
-    Max.outlet("out1 " + "saved 1");
-    typeof v === 'undefined' ? v = 'Board_' + ran : v = v ;
-    if(session.boardPointers.hasOwnProperty(v) === true){
-      v = v + '_' + ran;
-      for (b in session.boardPointers){
-        if (session.boardPointers[b].proto === proto){
-          if (session.boardPointers[b].open === 1){
-          Max.outlet("out1 " + "saved 0");
-          }
-        }
-      }
-    };
+  if (type === 'board') {
+    let proto = v;
+    if (v === 'undefined') v = 'Board_' + ran;
+    if (session.boardPointers.hasOwnProperty(v) === true) v = v + '_' + ran;
     session.sessionBoards.push({ "title": v, "position": [10, 50, 420, 420], "power": 1, 'saved': 0, "modules": [] });
     session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': proto, "open": 1, 'modules': {}};
-    Max.outlet("out1 " + 'name ' + v);
-    Max.outlet("out1 " + 'proto ' + proto);
-    Max.post("goTo " + v);
+    Max.outlet("out1 " + 'name ' + v); // deprecated
+    Max.outlet("out1 " + 'proto ' + proto); // deprecated
     return(v);
-  } else if (type === 'module') { // add a module to an existing board
+  } else if (type === 'module') {
     i = session.boardPointers[v].index;
-    m = session.boardPointers[v].modules;
-    // if(session.boardPointers[v]['modules'].hasOwnProperty(v2) === true){v2 = v2 + '_' + ran};
     session.sessionBoards[i].modules.push({ "location": "1 1", "process": "Choose One", "id": v2, "parameters": {}});
     session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'exists': 1, 'id': v2};
-  } else if (type === 'asset') { // add an asset to the asset list
+  } else if (type === 'asset') {
     msdp.project.assets[v].push(v2);
-    Max.outlet ("out1 " + v2 + " added to the " + v + " list");
+    Max.outlet("out1 " + v2 + " added to the " + v + " list");
   };
 };
 
-const remove = (type, v, v2) => { // used when remove board from the saved list, when an open board is closed, when a module is removed from a board, and when an asset is removed from the project.
-  if(type === 'savedBoard'){ // remove board from saved list
+const remove = (type, v, v2) => { // named boards, modules, assets
+  if(type === 'savedBoard'){
     for (b in msdp.project.savedBoards) {
       if(msdp.project.savedBoards[b]['title'] === v) {
         msdp.project.savedBoards.splice(b, 1);
@@ -131,7 +118,7 @@ const remove = (type, v, v2) => { // used when remove board from the saved list,
   };
 };
 
-const update = (type, v, v2, v3, v4, v5) => { //update any value in the system, project, or in a board or module.
+const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
   if (type === 'value'){ //update system or project value on object not in list
     typeof v2 === 'number' ? e = 'msdp' + '.' + v + ' = ' + v2 + ';' : e = 'msdp' + '.' + v + ' = "' + v2 + '";';
     Max.outlet ("out1 " + 'e: ' +  e);
@@ -165,7 +152,7 @@ const update = (type, v, v2, v3, v4, v5) => { //update any value in the system, 
   }
 };
 
-const copy = (loc, val, dest, dest2) => {
+const copy = (loc, val, dest, dest2) => { // session to open, session to saved, open to session, saved to session
   if(loc === 'session'){
     var index = session.boardPointers[val]['index'];
     var proto = session.boardPointers[val]['proto'];
@@ -258,7 +245,7 @@ const copy = (loc, val, dest, dest2) => {
   }
 };
 
-const get = (type, v, v2) => {
+const get = (type, v, v2) => { // data from state to max
   if (type === 'asset'){ // get the list of current assets
     Max.outlet ("out2 " + JSON.stringify(msdp.project.assets[v]));
   } else if (type === 'path'){ // get the project path
@@ -327,7 +314,7 @@ const get = (type, v, v2) => {
   }
 };
 
-const exportP = (type, v1, v2) => {
+const exportP = (type, v1, v2) => { // system, project, backup, analytics
   if(type === 'home'){ //send all information out
     Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
     msdp.project.openBoards = [];
@@ -389,7 +376,7 @@ const exportP = (type, v1, v2) => {
   Max.outlet ("out1 " + "JSON Write "+ path);
 };
 
-const importP = (type, path) => {
+const importP = (type, path) => { // system, project, backup
 	var data = "";
   var clone = JSON.parse(fs.readFileSync(path));
   Max.outlet ("out1 " + "JSON Read " + path);
@@ -453,12 +440,12 @@ const uuidv4 = () => {
 };
 
 const makeID = () => {
-  id = uuidv4(); msdp.system.uName = id;
-  Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
+  msdp.system.uName = uuidv4();
+  getID();
 };
 
 const getID = () => {
- Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
+  Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
 };
 const isEmpty = (obj) => {
   for (var key in obj) {
