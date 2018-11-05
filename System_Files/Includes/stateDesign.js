@@ -64,12 +64,14 @@ const newProject = (title, path) => { // blank out project and session dictionar
   exportP('project', path);
   get("pSettings");
   ["sendTo MSDP_newboard_load", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet);
+  ["sendTo MSDP_System_Board_Audio_Path", 'sendGate 1', 'bang', 'sendGate 0'].map(Max.outlet);
 };
 const loadProject = (path) => { // load the project state
   importP("project", path);
   get("pSettings");
   get("list", "savedBoards");
   get("list", "openBoards");
+  ["sendTo MSDP_System_Board_Audio_Path", 'sendGate 1', 'bang', 'sendGate 0'].map(Max.outlet);
 };
 const add = (type, v, v2) => { // named boards, modules, assets
   var ran = simpleRan();
