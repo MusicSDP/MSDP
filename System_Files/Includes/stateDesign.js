@@ -382,6 +382,7 @@ const importP = (type, path) => { // system, project, backup
 	var data = "";
   var clone = JSON.parse(fs.readFileSync(path));
   Max.outlet ("out1 " + "JSON Read " + path);
+  Max.post(JSON.stringify(clone, null, 4));
   if (type === 'system'){ // load a system preferences file.
     msdp.system = clone;
     Max.outlet ("out6 " + JSON.stringify(msdp.system.uName, null, 4));
