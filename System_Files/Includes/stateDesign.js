@@ -16,7 +16,7 @@ let state = {
     "io": {
       "driver": null, "in": null, "out": null, "sampleRate": null, "ioVector": null, "sigVector": null
     },
-    "settings": {
+    "defaultSettings": {
       "dac": 1, "limiter": 1, 'volume': 127, "fullScreen": 1,
       "metroTog": 1, "bpm": 120,
       "showBoards": 1, "initEvent": 0,
@@ -40,9 +40,9 @@ Max.addHandler("add", (type, v, v2) => {add(type, v, v2);});
 Max.addHandler("remove", (type, v, v2) => {remove(type, v, v2);});
 Max.addHandler("update", (type, v, v2, v3, v4, v5) => {update(type, v, v2, v3, v4, v5);});
 Max.addHandler("copy", (loc, val, dest, dest2) => {copy(loc, val, dest, dest2);});
-Max.addHandler("get", (type, v, v2) => {get(type, v, v2);});
-Max.addHandler("import", (type, path) => {importP(type, path);});
-Max.addHandler("export", (type, v1, v2) => {exportP(type, v1, v2);});
+Max.addHandler("get", (type, v, v2) => {getFromMax(type, v, v2);});
+Max.addHandler("import", (type, path) => {importer(type, path);});
+Max.addHandler("export", (type, v1, v2) => {exporter(type, v1, v2);});
 Max.addHandler("makeID", () => {makeID();});
 Max.addHandler("newProject", (title, path) => {newProject(title, path);});
 Max.addHandler("loadProject", (path) => { loadProject(path);});
@@ -55,27 +55,27 @@ Max.addHandler("sessionOut", () => { // send session dict to dict viewer patch
 const newProject = (title, path) => { // blank out project and session dictionaries to begin new project
   state.project.title = title;
   state.project.created = timestamp;
-  state.project.settings = state.system.settings;
+  state.project.settings = state.system.defaultSettings;
   //state.project.assets = {"scores": [], "audio": [], "midi": [], "plugins": []};
   state.project.openBoards = [];
   state.project.savedBoards = [];
   session.sessionBoards = [];
   session.boardPointers = {};
-  exportP('project', path);
-  get("pSettings");
+  exporter('project', path);
+  getFromMax("pSettings");
   ["sendTo MSDP_newboard_load", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet);
   ["sendTo MSDP_System_Board_Audio_Path", 'sendGate 1', 'bang', 'sendGate 0'].map(Max.outlet);
 };
 const loadProject = (path) => { // load the project state
-  importP("project", path);
-  get("pSettings");
-  get("list", "savedBoards");
-  get("list", "openBoards");
+  importer("project", path);
+  getFromMax("pSettings");
+  getFromMax("list", "savedBoards");
+  getFromMax("list", "openBoards");
   ["sendTo MSDP_System_Board_Audio_Path", 'sendGate 1', 'bang', 'sendGate 0'].map(Max.outlet);
   []
 };
 const add = (type, v, v2) => { // named boards, modules, assets
-  var ran = simpleRan();
+  var ran = bigRandStr();
   if (type === 'board') {
     let proto = v;
     if (v === 'undefined') v = 'Board_' + ran;
@@ -130,7 +130,7 @@ const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
     var i = session.boardPointers[v]['index'];
     if(v2 === 'title'){
       if(session.boardPointers.hasOwnProperty(v3) === true){
-        var ran = simpleRan();
+        var ran = bigRandStr();
         v3 = v3 + '_' + ran;
       };
       Object.defineProperty(session.boardPointers, v3,
@@ -209,7 +209,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
           break;
         };
       if(dest === 'session'){
-        var ran = simpleRan();
+        var ran = bigRandStr();
         var title = val;
         if(session.boardPointers.hasOwnProperty(val) === true){
           title = val + '_' + ran;
@@ -235,7 +235,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
       };
       Max.outlet ("out1 " + 'board ' + val + ' added to session');
     if(dest === 'session'){
-      var ran = simpleRan();
+      var ran = bigRandStr();
       var title = val;
       if(session.boardPointers.hasOwnProperty(val) === true){
         title = val + '_' + ran;
@@ -248,7 +248,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
   }
 };
 
-const get = (type, v, v2) => { // data from state to max
+const getFromMax = (type, v, v2) => { // data from state to max
   if (type === 'asset'){ // get the list of current assets
     Max.outlet ("out2 " + JSON.stringify(state.project.assets[v]));
   } else if (type === 'path'){ // get the project path
@@ -317,7 +317,7 @@ const get = (type, v, v2) => { // data from state to max
   }
 };
 
-const exportP = (type, v1, v2) => { // system, project, backup, analytics
+const exporter = (type, v1, v2) => { // system, project, backup, analytics
   if(type === 'home'){ //send all information out
     Max.outlet ("out6 " + JSON.stringify(state.system.uName, null, 4));
     state.project.openBoards = [];
@@ -379,7 +379,7 @@ const exportP = (type, v1, v2) => { // system, project, backup, analytics
   Max.outlet ("out1 " + "JSON Write "+ path);
 };
 
-const importP = (type, path) => { // system, project, backup
+const importer = (type, path) => { // system, project, backup
 	var data = "";
   var clone = JSON.parse(fs.readFileSync(path));
   Max.outlet ("out1 " + "JSON Read " + path);
@@ -389,8 +389,12 @@ const importP = (type, path) => { // system, project, backup
     Max.outlet ("out6 " + JSON.stringify(state.system.uName, null, 4));
     if (state.system.uName === null){
       makeID();
-      state.system.data = 1;
-    }
+    };
+    if (typeof state.system.defaultSettings == "undefined") {
+      Max.post("didn't find default settings")
+      state.system.defaultSettings = state.system.settings;
+      delete state.system.settings;
+    };
   } else if (type === 'project'){ // load a saved project
     session.sessionBoards = [];
     session.boardPointers = {};
@@ -404,9 +408,9 @@ const importP = (type, path) => { // system, project, backup
     session.boardPointers = {};
     state.project = clone;
     Max.outlet ("out1 " + 'last save ' + state.project.title + ' loaded');
-    //exportP(home); // send it home after we load it
+    //exporter(home); // send it home after we load it
   } else if (type === 'board'){ // load and open an exported board
-    var ran = simpleRan();
+    var ran = bigRandStr();
     var cMods = {};
     for (var m in clone['modules']){
       var title = clone['modules'][m]['id'];
@@ -423,7 +427,7 @@ const importP = (type, path) => { // system, project, backup
     session.boardPointers[val] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cMods};
     session.sessionBoards.push(clone);
     Max.outlet ("out1 " + 'board ' + val + ' imported into session');
-    get('board', 'session', val);
+    getFromMax('board', 'session', val);
   } else if (type === 'system'){
     state.system = {};
     state.system = clone;
@@ -431,7 +435,7 @@ const importP = (type, path) => { // system, project, backup
   }
 }
 
-const simpleRan = () => {
+const bigRandStr = () => {
   var ran = Math.floor(Math.random() * 4294967295);
   return n = ran.toString(16);
 };
