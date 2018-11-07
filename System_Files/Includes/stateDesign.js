@@ -86,7 +86,7 @@ const add = (type, v, v2) => { // named boards, modules, assets
   } else if (type === 'module') {
     i = session.boardPointers[v].index;
     session.sessionBoards[i].modules.push({ "location": "1 1", "process": "Choose One", "id": v2, "parameters": {}});
-    session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'exists': 1, 'id': v2};
+    session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'open': 1, 'id': v2};
   } else if (type === 'asset') {
     state.project.assets[v].push(v2);
     Max.outlet("out1 " + v2 + " added to the " + v + " list");
@@ -106,7 +106,7 @@ const remove = (type, v, v2) => { // named boards, modules, assets
   } else if (type === 'openBoard'){ // mark an open board as closed in the boardPointers object
     session.boardPointers[v]['open'] = 0;
   } else if (type === 'module') { // remove module from an existing board
-      session.boardPointers[v]['modules'][v2]['exists'] = 0;
+      session.boardPointers[v]['modules'][v2]['open'] = 0;
   } else if (type === 'asset') { // remove an asset from the asset list
       for (a in state.project.assets[v]) {
         if(state.project.assets[v][a] === v2) {
@@ -161,7 +161,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
     clone.title = proto;
     var rList = [];
     for (var m in session.boardPointers[val]['modules']){
-      if (session.boardPointers[val]['modules'][m]['exists'] === 0){
+      if (session.boardPointers[val]['modules'][m]['open'] === 0){
         rList.push(session.boardPointers[val]['modules'][m]['index']);
       }
     };
@@ -200,7 +200,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
             var title = clone['modules'][m]['id'];
               cMods[title] = {
                   'index': m,
-                  'exists': 1
+                  'open': 1
                 };
             }
           };
@@ -226,7 +226,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
           var title = clone['modules'][m]['id'];
             cMods[title] = {
                 'index': m,
-                'exists': 1
+                'open': 1
               };
           }
         };
@@ -361,7 +361,7 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
     var mode = JSON.parse(JSON.stringify(session.sessionBoards[i]));
     var rList = [];
     for (var m in session.boardPointers[v1]['modules']){
-      if (session.boardPointers[v1]['modules'][m]['exists'] === 0){
+      if (session.boardPointers[v1]['modules'][m]['open'] === 0){
         rList.push(session.boardPointers[v1]['modules'][m]['index']);
       }
     };
@@ -414,7 +414,7 @@ const importer = (type, path) => { // system, project, backup
       var title = clone['modules'][m]['id'];
         cMods[title] = {
             'index': m,
-            'exists': 1
+            'open': 1
           };
       }
     var val = clone.title;
