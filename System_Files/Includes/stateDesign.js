@@ -3,8 +3,13 @@ const path = require('path')
 const fs = require('fs')
 const Max = require('max-api')
 const uuidv1 = require('uuid/v1');
-const debug = false
 
+let debug = false
+let log= (output) => {
+  if (debug) {
+    Max.post(output);
+  }
+}
 let timestamp = new Date()
 let state = {
   "system": {
@@ -52,6 +57,8 @@ Max.addHandler("projectOut", () => { // send project dict to dict viewer patch
 Max.addHandler("sessionOut", () => { // send session dict to dict viewer patch
   ["sendTo MSDP_View_Dict_Session", "sendGate 1", JSON.stringify(session, null, 4), "sendGate 0" ].map(Max.outlet);
 });
+Max.addHandler("debug", (v) => {debug = v; Max.post(`debug mode ${v}`)});
+
 const newProject = (title, path) => { // blank out project and session dictionaries to begin new project
   state.project.title = title;
   state.project.created = timestamp;
@@ -89,7 +96,7 @@ const add = (type, v, v2) => { // named boards, modules, assets
     session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'open': 1, 'id': v2};
   } else if (type === 'asset') {
     state.project.assets[v].push(v2);
-    Max.outlet("out1 " + v2 + " added to the " + v + " list");
+    log(` ${v2} added to the ${v} list`);
   };
 };
 
@@ -98,11 +105,11 @@ const remove = (type, v, v2) => { // named boards, modules, assets
     for (b in state.project.savedBoards) {
       if(state.project.savedBoards[b]['title'] === v) {
         state.project.savedBoards.splice(b, 1);
-        Max.outlet ("out1 " + 'board ' + v +' removed from saved board list');
+        log(`board ${v} removed from saved board list`);
         return;
       }
     }
-    Max.outlet ("out1 " + 'board ' + v +' not found in saved board list');
+    log(`board ${v} not found in saved board list`);
   } else if (type === 'openBoard'){ // mark an open board as closed in the boardPointers object
     session.boardPointers[v]['open'] = 0;
   } else if (type === 'module') { // remove module from an existing board
@@ -111,18 +118,18 @@ const remove = (type, v, v2) => { // named boards, modules, assets
       for (a in state.project.assets[v]) {
         if(state.project.assets[v][a] === v2) {
           state.project.assets[v].splice(a, 1);
-          Max.outlet ("out1 " +  v2 + ' at ' + v +' removed');
+          log(`${v2} at ${v} removed`);
           return;
         }
       }
-      Max.outlet ("out1 " + asset + ' in ' + type +' not found');
+      log(`${asset} in ${type} not found`);
   };
 };
 
 const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
   if (type === 'value'){ //update system or project value on object not in list
     typeof v2 === 'number' ? e = 'state' + '.' + v + ' = ' + v2 + ';' : e = 'state' + '.' + v + ' = "' + v2 + '";';
-    Max.outlet ("out1 " + 'e: ' +  e);
+    log(`update: ${e}`);
     eval(e);
   } else if (type === 'board'){ //update board value other than modules
     var i = session.boardPointers[v]['index'];
@@ -137,7 +144,7 @@ const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
       session.boardPointers[v3]['proto'] = v3;
     }
     session.sessionBoards[i][v2] = v3;
-    Max.outlet ("out1 " + 'board ' + v + ' ' + v2 + ' set to ' + v3);
+    log(`board ${v} ${v2} set to ${v3}`);
   } else if (type === 'module'){ //update a module on a board
     var i = session.boardPointers[v]['index'];
     var i2 = session.boardPointers[v]['modules'][v2]['index'];
@@ -145,7 +152,7 @@ const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
       session.boardPointers[v]['modules'][v2]['id'] = v4;
     }
     session.sessionBoards[i]['modules'][i2][v3] = v4;
-    Max.outlet ("out1 " + 'module ' + v2 + ' on board ' + v + ' value ' + v3 + ' set to ' + v4);
+    log(`module ${v2} on board ${v} value ${v3} set to ${v4}`);
   } else if (type === 'parameter'){ // update a parameter in a module on a board
     var i = session.boardPointers[v]['index'];
     var i2 = session.boardPointers[v]['modules'][v2]['index'];
@@ -183,12 +190,12 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
       clone.saved = 1;
         for (var c in state.project.savedBoards) {
           if(state.project.savedBoards[c]['title'] === proto) {
-            Max.outlet ("out1 " + "Board " + proto + " updated");
+            log(`Board ${proto} updated`);
             state.project.savedBoards.splice(c, 1, clone);
             return;
           }
         }
-        Max.outlet ("out1 " + "Board " + val + " added to saved list");
+        log(`Board ${val} added to saved list`);
         state.project.savedBoards.push(clone);
       }
     } else if(loc === 'saved'){
@@ -215,7 +222,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
         };
         session.boardPointers[title] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cMods};
         session.sessionBoards.push(clone);
-        Max.outlet ("out1 " + 'board ' + title + ' added to session');
+        log(`Board ${title} added to session`);
       }
   } else if(loc === 'open'){ // copy open board into session
     for (b in state.project.openBoards){
@@ -231,7 +238,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
           }
         };
       };
-      Max.outlet ("out1 " + 'board ' + val + ' added to session');
+      log( `Board ${val} added to session`);
     if(dest === 'session'){
       var ran = bigRandStr();
       var title = val;
@@ -241,7 +248,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
       };
       session.boardPointers[title] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cMods};
       session.sessionBoards.push(clone);
-      Max.outlet ("out1 " + 'board ' + title + ' added to session');
+      log(`Board ${title} added to session`);
     }
   }
 };
@@ -303,7 +310,7 @@ const getFromMax = (type, v, v2) => { // data from state to max
     } else if (v === 'saved'){
         var path = state.project.savedBoards;
         title = add("board", v2);
-        Max.post("the title is " + title);
+        log("the title is " + title);
     };
     for (b in path){
       if(path[b]['title'] === v2){
@@ -311,7 +318,7 @@ const getFromMax = (type, v, v2) => { // data from state to max
         return;
       };
     };
-    Max.outlet ("out1 " + v2 + ' not found');
+    log(`${v2} not found`);
   }
 };
 
@@ -378,14 +385,14 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
     fs.unlinkSync(path);
   }
   fs.renameSync(temp, path);
-  Max.outlet ("out1 " + "JSON Write "+ path);
+  log(`JSON write ${path}`);
 };
 
 const importer = (type, path) => { // system, project, backup
 	var data = "";
   var clone = JSON.parse(fs.readFileSync(path));
-  Max.outlet ("out1 " + "JSON Read " + path);
-  Max.post(JSON.stringify(clone, null, 4));
+  log(`JSON read ${path}`);
+  log(JSON.stringify(clone, null, 4));
   if (type === 'system'){ // load a system preferences file.
     state.system = clone;
     Max.outlet ("out6 " + JSON.stringify(state.system.uName, null, 4));
@@ -399,13 +406,13 @@ const importer = (type, path) => { // system, project, backup
     state.project = clone;
     state.project.lastOpened = new Date();
     state.project.lastUpdated = new Date();
-    Max.outlet ("out1 " + 'project ' + state.project.title + ' loaded');
-    Max.outlet ("out1 " + JSON.stringify(state.project.openBoards, null, 4));
+    log('project ' + state.project.title + ' loaded');
+    log(JSON.stringify(state.project.openBoards, null, 4));
   } else if (type === 'backup'){ // load a saved project
     session.sessionBoards = [];
     session.boardPointers = {};
     state.project = clone;
-    Max.outlet ("out1 " + 'last save ' + state.project.title + ' loaded');
+    log('last save ' + state.project.title + ' loaded');
     //exporter(home); // send it home after we load it
   } else if (type === 'board'){ // load and open an exported board
     var ran = bigRandStr();
@@ -424,12 +431,12 @@ const importer = (type, path) => { // system, project, backup
     };
     session.boardPointers[val] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cMods};
     session.sessionBoards.push(clone);
-    Max.outlet ("out1 " + 'board ' + val + ' imported into session');
+    log(`board ${val} imported into session`);
     getFromMax('board', 'session', val);
   } else if (type === 'system'){
     state.system = {};
     state.system = clone;
-  	Max.outlet ("out1 " + "JSON Read "+ path);
+  	log(`JSON Read ${path}`);
   }
 }
 
