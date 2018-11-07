@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "file-api": "^0.10.4"
+    "file-api": "^0.10.4",
+    "uuid": "^3.3.2"
   }
 }

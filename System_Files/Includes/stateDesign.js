@@ -2,6 +2,7 @@
 const path = require('path')
 const fs = require('fs')
 const Max = require('max-api')
+const uuidv1 = require('uuid/v1');
 const debug = false
 
 let timestamp = new Date()
@@ -43,7 +44,6 @@ Max.addHandler("copy", (loc, val, dest, dest2) => {copy(loc, val, dest, dest2);}
 Max.addHandler("get", (type, v, v2) => {getFromMax(type, v, v2);});
 Max.addHandler("import", (type, path) => {importer(type, path);});
 Max.addHandler("export", (type, v1, v2) => {exporter(type, v1, v2);});
-Max.addHandler("makeID", () => {makeID();});
 Max.addHandler("newProject", (title, path) => {newProject(title, path);});
 Max.addHandler("loadProject", (path) => { loadProject(path);});
 Max.addHandler("projectOut", () => { // send project dict to dict viewer patch
@@ -80,10 +80,8 @@ const add = (type, v, v2) => { // named boards, modules, assets
     let proto = v;
     if (v === 'undefined') v = 'Board_' + ran;
     if (session.boardPointers.hasOwnProperty(v) === true) v = v + '_' + ran;
-    session.sessionBoards.push({ "title": v, "position": [10, 50, 420, 420], "power": 1, 'saved': 0, "modules": [] });
+    session.sessionBoards.push({ "title": v, "position": null, "power": 1, 'saved': 0, "modules": [] });
     session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': proto, "open": 1, 'modules': {}};
-    Max.outlet("out1 " + 'name ' + v); // deprecated
-    Max.outlet("out1 " + 'proto ' + proto); // deprecated
     return(v);
   } else if (type === 'module') {
     i = session.boardPointers[v].index;
@@ -337,6 +335,10 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
     var path = v1;
     var mode = state;
   } else if(type === 'system'){ //export system info
+    if (state.system.uName === null){
+      state.system.uName = uuidv1();
+      Max.outlet ("out6 " + JSON.stringify(state.system.uName, null, 4));
+    };
     var path = v1;
     var mode = state.system;
   } else if(type === 'project'){ //export project info
@@ -387,11 +389,7 @@ const importer = (type, path) => { // system, project, backup
   if (type === 'system'){ // load a system preferences file.
     state.system = clone;
     Max.outlet ("out6 " + JSON.stringify(state.system.uName, null, 4));
-    if (state.system.uName === null){
-      makeID();
-    };
     if (typeof state.system.defaultSettings == "undefined") {
-      Max.post("didn't find default settings")
       state.system.defaultSettings = state.system.settings;
       delete state.system.settings;
     };
@@ -440,21 +438,6 @@ const bigRandStr = () => {
   return n = ran.toString(16);
 };
 
-const uuidv4 = () => {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-    return v.toString(16);
-  });
-};
-
-const makeID = () => {
-  state.system.uName = uuidv4();
-  getID();
-};
-
-const getID = () => {
-  Max.outlet ("out6 " + JSON.stringify(state.system.uName, null, 4));
-};
 const isEmpty = (obj) => {
   for (var key in obj) {
     if(obj.hasOwnProperty(key))
