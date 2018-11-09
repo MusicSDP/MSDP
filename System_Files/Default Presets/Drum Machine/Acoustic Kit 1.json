@@ -1,9 +1,9 @@
 {
 	"p11" : 0,
 	"p3" : 1.0,
-	"p30" : 1,
-	"p31" : 4,
-	"p5" : 32,
+	"p30" : 0,
+	"p31" : 10,
+	"p5" : 8,
 	"p6" : 112,
 	"p29" : [ "Voice 1  ", "Voice 2  ", "Voice 3  ", "Voice 4  ", "Voice 5  ", "Voice 6  ", "Voice 7  ", "Voice 8  ", "Voice 9  ", "Voice 10  ", "Voice 11  ", "Voice 12  ", "Voice 13  ", "Voice 14  ", "Voice 15  ", "Voice 16  " ],
 	"p14" : "all d1 absolute_media_path ~/Documents/Music_SDP/Drum Kits/Kit1/ds1_large-tom-under21.wav d2 0 17 d3 0.0000 d4 0 d5 0.5000 d6 0.0000 d7 679.8125 d8 0 d9 1.0000 d10 0.0000",
