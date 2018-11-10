@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 393.0, 76.0, 1277.0, 997.0 ],
+		"rect" : [ 961.0, 48.0, 958.0, 991.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 331.0, 159.0, 41.0, 23.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -56,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 175.5, 126.0, 50.0, 23.0 ],
+					"patching_rect" : [ 239.0, 112.20654296875, 50.0, 23.0 ],
 					"text" : "gate 2 2"
 				}
 
@@ -68,7 +80,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 268.0, 140.0, 82.0, 23.0 ],
+					"patching_rect" : [ 329.0, 126.0, 82.0, 23.0 ],
 					"text" : "scale 0. 1. 0. 1."
 				}
 
@@ -97,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -397,7 +409,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1248,7 +1260,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 206.5, 87.20654296875, 59.0, 22.0 ],
+					"patching_rect" : [ 206.5, 67.20654296875, 59.0, 22.0 ],
 					"text" : "line 0. 10"
 				}
 
@@ -1314,18 +1326,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 418.0, 319.0, 54.0, 23.0 ],
 					"text" : "format 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-70",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 303.5, 463.0, 41.0, 23.0 ],
-					"text" : "set $1"
 				}
 
 			}
@@ -1473,7 +1473,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 233.0, 357.0, 56.0, 22.0 ],
+					"patching_rect" : [ 230.0, 357.0, 56.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 60.0, 45.0, 22.0 ],
 					"textcolor" : [ 0.396, 0.875, 0.812, 1.0 ],
@@ -1646,7 +1646,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 329.0, 50.0, 78.0 ],
+					"patching_rect" : [ 233.0, 334.0, 50.0, 78.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 50.0, 82.0 ],
 					"proportion" : 0.39,
@@ -1783,6 +1783,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -1790,7 +1797,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -1811,8 +1818,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 185.0, 177.603271484375, 352.5, 177.603271484375 ],
+					"destination" : [ "obj-24", 0 ],
+					"midpoints" : [ 248.5, 140.0, 340.5, 140.0 ],
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -1840,7 +1847,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 1 ],
+					"destination" : [ "obj-9", 0 ],
+					"midpoints" : [ 216.0, 208.603271484375, 239.5, 208.603271484375 ],
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -1898,16 +1906,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"order" : 0,
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-35", 1 ],
+					"source" : [ "obj-5", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-70", 0 ],
-					"source" : [ "obj-5", 1 ]
+					"destination" : [ "obj-36", 0 ],
+					"order" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -1984,24 +1992,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-38", 0 ],
+					"order" : 1,
 					"source" : [ "obj-66", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"order" : 0,
-					"source" : [ "obj-70", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
-					"order" : 1,
-					"source" : [ "obj-70", 0 ]
+					"source" : [ "obj-66", 0 ]
 				}
 
 			}
@@ -2078,7 +2079,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "msdp.tool.msglim.maxpat",
-				"bootpath" : "D:/Github/source-code/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
