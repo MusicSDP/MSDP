@@ -33,7 +33,7 @@ let state = {
     "title": null, "created": null, "lastOpened": null, "lastUpdated" : null, 'path': null,
     "settings": {},
     "openBoards": [], "savedBoards": [],
-    'systemBoard': {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 0,"customDiv": 5}}
+    'systemBoard': {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 0,"customDiv": 5}, "virtualControllers": {"keyboard": 0,"slider": 0,"pads": 0}}
   }
 };
 let session = {
