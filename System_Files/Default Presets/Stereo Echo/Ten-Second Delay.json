@@ -1,0 +1,27 @@
+{
+	"p3" : 1.0,
+	"p2" : [ "Master", "Out", "Master", 0 ],
+	"p1" : [ "E", 1 ],
+	"p4" : 7,
+	"p9" : 8,
+	"p6" : 0.383381503389857,
+	"p11" : 0.374814817125909,
+	"p7" : 0.649999976158142,
+	"p12" : 0.649999976158142,
+	"p8" : 1,
+	"p5" : 10000.0,
+	"p13" : 1,
+	"p10" : 10000.0,
+	"meta" : 	{
+		"function" : "module",
+		"type" : [ "file", "player" ],
+		"parameters" : 		{
+			"p1" : "list",
+			"p2" : "string",
+			"p3" : "integer"
+		}
+,
+		"patchPath" : "D:/Github/source-code/System_Files/Board_Files/"
+	}
+
+}

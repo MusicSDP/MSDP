@@ -68,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 239.0, 112.20654296875, 50.0, 23.0 ],
+					"patching_rect" : [ 240.0, 142.20654296875, 50.0, 23.0 ],
 					"text" : "gate 2 2"
 				}
 
@@ -1147,7 +1147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 295.0, 41.0, 23.0 ],
+					"patching_rect" : [ 404.5, 408.0, 41.0, 23.0 ],
 					"text" : "set $1"
 				}
 
@@ -1819,7 +1819,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"midpoints" : [ 248.5, 140.0, 340.5, 140.0 ],
+					"midpoints" : [ 249.5, 140.0, 340.5, 140.0 ],
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -1897,6 +1897,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"order" : 0,
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"midpoints" : [ 242.5, 457.0, 17.5, 457.0, 17.5, 88.0, 48.5, 88.0 ],
 					"order" : 1,
@@ -1907,6 +1915,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 1 ],
+					"order" : 1,
 					"source" : [ "obj-5", 1 ]
 				}
 
@@ -2079,7 +2088,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "msdp.tool.msglim.maxpat",
-				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "D:/Github/source-code/System_Files/Includes",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
