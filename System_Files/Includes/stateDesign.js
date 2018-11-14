@@ -2,54 +2,25 @@
 const path = require('path')
 const fs = require('fs')
 const Max = require('max-api')
-const uuidv1 = require('uuid/v1');
+const uuidv1 = require('uuid/v1')
 
 let debug = false
-let log= (output) => {
-  if (debug) {
-    Max.post(output);
-  }
-}
-let timestamp = new Date()
-let state = {
-  "system": {
-    "uName": null,
-    "appState": {
-      "major": null, "minor": null, "revision": null,
-      "state": null
-    },
-    "os": "Windows",
-    "io": {
-      "driver": null, "in": null, "out": null, "sampleRate": null, "ioVector": null, "sigVector": null
-    },
-    "defaultSettings": {
-      "dac": 1, "limiter": 1, 'volume': 127, "fullScreen": 1,
-      "metroTog": 1, "bpm": 120,
-      "showBoards": 1, "initEvent": 0,
-      "keyboardMIDI": false, "keyOctave": 4
-    }
-  },
-  "project": {
-    "title": null, "created": null, "lastOpened": null, "lastUpdated" : null, 'path': null,
-    "settings": {},
-    "openBoards": [], "savedBoards": [],
-    'systemBoard': {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 0,"customDiv": 5}, "virtualControllers": {"keyboard": 0,"slider": 0,"pads": 0}}
-  }
-};
-let session = {
-  'sessionBoards': [],
-  'boardPointers': {}
-};
+let log= (output) => { if (debug) Max.post(output) }
+
+let state = {}
+state.system = require('defaultSystem.json')
+state.project = require('defaultProject.json')
+let session = { "sessionBoards": [], "boardPointers": {} }
 
 // collection of Max handlers - messages from Max that run functions
-Max.addHandler("add", (type, v, v2) => {add(type, v, v2);});
-Max.addHandler("remove", (type, v, v2) => {remove(type, v, v2);});
-Max.addHandler("update", (type, v, v2, v3, v4, v5) => {update(type, v, v2, v3, v4, v5);});
-Max.addHandler("copy", (loc, val, dest, dest2) => {copy(loc, val, dest, dest2);});
-Max.addHandler("get", (type, v, v2) => {getFromMax(type, v, v2);});
-Max.addHandler("import", (type, path) => {importer(type, path);});
-Max.addHandler("export", (type, v1, v2) => {exporter(type, v1, v2);});
-Max.addHandler("newProject", (title, path) => {newProject(title, path);});
+Max.addHandler("add", (type, v, v2) => {add(type, v, v2)})
+Max.addHandler("remove", (type, v, v2) => {remove(type, v, v2)})
+Max.addHandler("update", (type, v, v2, v3, v4, v5) => {update(type, v, v2, v3, v4, v5)})
+Max.addHandler("copy", (loc, val, dest, dest2) => {copy(loc, val, dest, dest2)})
+Max.addHandler("get", (type, v, v2) => {getFromMax(type, v, v2)})
+Max.addHandler("import", (type, path) => {importer(type, path)})
+Max.addHandler("export", (type, v1, v2) => {exporter(type, v1, v2)})
+Max.addHandler("newProject", (title, path) => {newProject(title, path)})
 Max.addHandler("loadProject", (path) => { loadProject(path);});
 Max.addHandler("projectOut", () => { // send project dict to dict viewer patch
   ["sendTo MSDP_View_Dict_State", "sendGate 1", JSON.stringify(state, null, 4), "sendGate 0" ].map(Max.outlet);
@@ -61,12 +32,9 @@ Max.addHandler("debug", (v) => {debug = v; Max.post(`debug mode ${v}`)});
 
 const newProject = (title, path) => { // blank out project and session dictionaries to begin new project
   state.project.title = title;
-  state.project.created = timestamp;
+  state.project.created = new Date();
   state.project.settings = state.system.defaultSettings;
-  //state.project.assets = {"scores": [], "audio": [], "midi": [], "plugins": []};
-  state.project.openBoards = [];
-  state.project.savedBoards = [];
-  session.sessionBoards = [];
+  state.project.openBoards = state.project.savedBoards = session.sessionBoards = [];
   session.boardPointers = {};
   exporter('project', path);
   getFromMax("pSettings");
