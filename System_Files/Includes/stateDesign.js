@@ -291,6 +291,7 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
 
 const importer = (type, path) => { // system, project, backup
   let clone = require(path)
+  // let clone = JSON.parse(fs.readFileSync(path));
   log(`JSON read ${path}`)
   if (type === 'system'){
     state.system = clone
