@@ -2,15 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 42.0, 85.0, 1639.0, 809.0 ],
-		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 181.0, 216.0, 36.0, 22.0 ],
-					"style" : "",
 					"text" : "sel 1"
 				}
 
@@ -58,8 +57,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 143.5, 386.920166, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 143.5, 386.920165999999995, 25.0, 25.0 ]
 				}
 
 			}
@@ -71,7 +69,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 126.0, 40.0, 60.0, 22.0 ],
-					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -86,13 +83,14 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 5,
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
+						"classnamespace" : "box",
 						"rect" : [ 67.0, 110.0, 830.0, 584.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -120,6 +118,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
@@ -128,7 +127,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 565.0, 273.0, 257.0, 22.0 ],
-									"style" : "",
 									"text" : "\"~/Documents/Music_SDP/3rd Party Modules\""
 								}
 
@@ -141,7 +139,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 587.0, 372.0, 36.0, 22.0 ],
-									"style" : "",
 									"text" : "sel 1"
 								}
 
@@ -154,7 +151,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 587.0, 343.0, 29.5, 22.0 ],
-									"style" : "",
 									"text" : "> 0"
 								}
 
@@ -167,7 +163,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "int" ],
 									"patching_rect" : [ 565.0, 305.0, 41.0, 22.0 ],
-									"style" : "",
 									"text" : "folder"
 								}
 
@@ -180,7 +175,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 298.0, 306.0, 67.0, 22.0 ],
-									"style" : "",
 									"text" : "route clear"
 								}
 
@@ -193,8 +187,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 587.0, 407.0, 125.0, 36.0 ],
-									"style" : "",
+									"patching_rect" : [ 587.0, 407.0, 125.0, 35.0 ],
 									"text" : "append \"--- 3rd Party Modules --- \""
 								}
 
@@ -207,7 +200,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 298.0, 229.0, 257.0, 22.0 ],
-									"style" : "",
 									"text" : "\"~/Documents/Music_SDP/3rd Party Modules\""
 								}
 
@@ -220,7 +212,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "int" ],
 									"patching_rect" : [ 298.0, 265.0, 41.0, 22.0 ],
-									"style" : "",
 									"text" : "folder"
 								}
 
@@ -233,7 +224,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 97.0, 55.0, 30.0, 22.0 ],
-									"style" : "",
 									"text" : "t b l"
 								}
 
@@ -246,7 +236,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 108.0, 87.0, 49.0, 22.0 ],
-									"style" : "",
 									"text" : "dict.iter"
 								}
 
@@ -255,12 +244,11 @@
 								"box" : 								{
 									"id" : "obj-22",
 									"maxclass" : "newobj",
-									"numinlets" : 8,
-									"numoutlets" : 8,
-									"outlettype" : [ "", "", "", "", "", "", "", "" ],
-									"patching_rect" : [ 108.0, 131.0, 449.0, 22.0 ],
-									"style" : "",
-									"text" : "route Control \"Audio Tools\" \"Buffer Effects\" Filters Instruments \"MIDI Tools\" Utilities"
+									"numinlets" : 9,
+									"numoutlets" : 9,
+									"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
+									"patching_rect" : [ 108.0, 131.0, 485.0, 22.0 ],
+									"text" : "route Control \"Audio Tools\" \"Buffer Effects\" Filters Instruments \"MIDI Tools\" Utilities Video"
 								}
 
 							}
@@ -272,7 +260,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 697.0, 196.0, 37.0, 22.0 ],
-									"style" : "",
 									"text" : "clear"
 								}
 
@@ -285,7 +272,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 187.0, 273.0, 98.0, 22.0 ],
-									"style" : "",
 									"text" : "prepend append"
 								}
 
@@ -298,7 +284,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 187.0, 239.0, 27.0, 22.0 ],
-									"style" : "",
 									"text" : "iter"
 								}
 
@@ -312,8 +297,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "dictionary" ],
-									"patching_rect" : [ 97.0, 12.0, 30.0, 30.0 ],
-									"style" : ""
+									"patching_rect" : [ 97.0, 12.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -326,8 +310,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "dictionary" ],
-									"patching_rect" : [ 697.0, 51.0, 30.0, 30.0 ],
-									"style" : ""
+									"patching_rect" : [ 697.0, 51.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -339,8 +322,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 184.5, 366.0, 30.0, 30.0 ],
-									"style" : ""
+									"patching_rect" : [ 184.5, 366.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -386,6 +368,13 @@
 									"destination" : [ "obj-25", 0 ],
 									"midpoints" : [ 706.5, 337.0, 194.0, 337.0 ],
 									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-22", 7 ]
 								}
 
 							}
@@ -529,11 +518,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p menu_maker"
 				}
 
@@ -548,10 +535,10 @@
 					"patching_rect" : [ 126.0, 79.0, 153.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"parameter_enable" : 0
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "dict m_list module_list.json"
 				}
 
@@ -571,7 +558,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-26",
-					"items" : [ "-- Choose Module --", ",", "-- REMOVE MODULE --", ",", "--- Audio Tools ---", ",", "Audio File Player", ",", "Compressor", ",", "EZ Audio Player", ",", "Signal-In Control", ",", "Studio EQ", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Subtractive", ",", "Vocoder", ",", "Wavetable Synth", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI ARP", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder", ",", "Stochastic Controller", ",", "--- Utilities ---", ",", "LFO Automator", ",", "MIDI Splitter", ",", "Meta-Box", ",", "Randomator", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "Signal-to-MIDI", ",", "SpectraView", ",", "VST Controller" ],
+					"items" : [ "-- Choose Module --", ",", "-- REMOVE MODULE --", ",", "--- Control ---", ",", "Controller Mapper", ",", "Automator", ",", "LFO Automator", ",", "Metronome Automator", ",", "MIDI Arp", ",", "MIDI Sequencer", ",", "Randomator", ",", "Score Automator", ",", "Signal Automator", ",", "Stochastic Controller", ",", "VST Controller", ",", "--- Audio Tools ---", ",", "Audio File Player", ",", "Compressor", ",", "EZ Audio Player", ",", "Signal-In Control", ",", "Studio EQ", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Subtractive", ",", "Vocoder", ",", "Wavetable Synth", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "cREepVERB", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "FreeVerb", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "Stereo Echo", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Amp Emulator", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder", ",", "--- Utilities ---", ",", "4-Channel Out", ",", "8-Channel Out", ",", "16-Channel Out", ",", "MIDI Splitter", ",", "Meta-Box", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "Signal-to-MIDI", ",", "SpectroView" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -580,7 +567,6 @@
 					"patching_rect" : [ 36.0, 175.0, 136.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 5.0, 136.0, 23.0 ],
-					"style" : "",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
@@ -594,7 +580,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 83.0, 270.0, 59.0, 22.0 ],
-					"style" : "",
 					"text" : "tosymbol"
 				}
 
@@ -608,8 +593,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 83.0, 40.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 83.0, 40.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -622,8 +606,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -635,8 +618,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.0, 386.920166, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 80.0, 386.920165999999995, 25.0, 25.0 ]
 				}
 
 			}
@@ -655,8 +637,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 5.0, 136.0, 23.0 ],
 					"proportion" : 0.39,
-					"rounded" : 0,
-					"style" : ""
+					"rounded" : 0
 				}
 
 			}
@@ -747,7 +728,8 @@
 				"parentstyle" : "",
 				"multi" : 0
 			}
- ]
+ ],
+		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 	}
 
 }
