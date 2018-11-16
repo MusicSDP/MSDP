@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 403.0, 147.0, 387.0, 171.0 ],
+		"rect" : [ 340.0, 163.0, 387.0, 171.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,13 +41,41 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-77",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 217.0, 390.0, 443.0, 22.0 ],
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Buffers/Amps"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-78",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 211.0, 360.0, 238.0, 22.0 ],
+					"text" : "sprintf \\\"%sSystem_Files/Buffers/Reverbs\\\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-75",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 794.5, 1098.0, 559.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Modules/Control"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/Video"
 				}
 
 			}
@@ -76,7 +104,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 207.0, 334.0, 443.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Buffers/Amps"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Buffers/Amps"
 				}
 
 			}
@@ -104,7 +132,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 794.5, 1033.0, 559.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Modules/Control"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/Control"
 				}
 
 			}
@@ -133,7 +161,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 794.5, 971.0, 559.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Modules/Templates"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/Templates"
 				}
 
 			}
@@ -243,7 +271,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 790.5, 903.0, 559.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/Modules/MIDI Tools\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/Modules/MIDI Tools\""
 				}
 
 			}
@@ -271,8 +299,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 1000.0, 457.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/MSDP Boards/Tools\""
+					"patching_rect" : [ 31.0, 1047.0, 457.0, 22.0 ],
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/Tools\""
 				}
 
 			}
@@ -285,7 +313,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 971.0, 261.0, 22.0 ],
+					"patching_rect" : [ 33.0, 1018.0, 261.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/MSDP Boards/Tools\\\""
 				}
 
@@ -299,8 +327,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 943.0, 507.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/MSDP Boards/File Processes\""
+					"patching_rect" : [ 31.0, 990.0, 507.0, 22.0 ],
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/File Processes\""
 				}
 
 			}
@@ -313,7 +341,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 914.0, 312.0, 22.0 ],
+					"patching_rect" : [ 33.0, 961.0, 312.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/MSDP Boards/File Processes\\\""
 				}
 
@@ -327,8 +355,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 883.0, 499.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/MSDP Boards/Effect Chains\""
+					"patching_rect" : [ 33.0, 930.0, 499.0, 22.0 ],
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/Effect Chains\""
 				}
 
 			}
@@ -341,7 +369,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 854.0, 304.0, 22.0 ],
+					"patching_rect" : [ 35.0, 901.0, 304.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/MSDP Boards/Effect Chains\\\""
 				}
 
@@ -355,8 +383,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 826.0, 467.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/MSDP Boards/Combo\""
+					"patching_rect" : [ 33.0, 873.0, 467.0, 22.0 ],
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/Combo\""
 				}
 
 			}
@@ -369,7 +397,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 797.0, 272.0, 22.0 ],
+					"patching_rect" : [ 35.0, 844.0, 272.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/MSDP Boards/Combo\\\""
 				}
 
@@ -383,8 +411,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 766.0, 491.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/MSDP Boards/Instruments\""
+					"patching_rect" : [ 35.0, 813.0, 491.0, 22.0 ],
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards/Instruments\""
 				}
 
 			}
@@ -397,7 +425,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.0, 737.0, 296.0, 22.0 ],
+					"patching_rect" : [ 37.0, 784.0, 296.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/MSDP Boards/Instruments\\\""
 				}
 
@@ -411,8 +439,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 661.0, 425.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/MSDP Boards\""
+					"patching_rect" : [ 195.0, 708.0, 425.0, 22.0 ],
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/MSDP Boards\""
 				}
 
 			}
@@ -425,7 +453,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 623.0, 230.0, 22.0 ],
+					"patching_rect" : [ 195.0, 670.0, 230.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/MSDP Boards\\\""
 				}
 
@@ -440,7 +468,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 790.5, 832.0, 559.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/Modules/Audio Tools\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/Modules/Audio Tools\""
 				}
 
 			}
@@ -469,7 +497,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 785.0, 763.0, 559.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Modules/Utilities"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/Utilities"
 				}
 
 			}
@@ -498,7 +526,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 781.0, 696.0, 559.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/Modules/Buffer Effects\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/Modules/Buffer Effects\""
 				}
 
 			}
@@ -527,7 +555,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 775.0, 629.0, 559.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Modules/Filters"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/Filters"
 				}
 
 			}
@@ -556,7 +584,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 769.0, 566.0, 559.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Modules/Instruments"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/Instruments"
 				}
 
 			}
@@ -620,7 +648,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 767.0, 491.0, 556.0, 22.0 ],
-					"text" : "\"C:/Users/hughl/Desktop/System_Files/Default Presets\""
+					"text" : "\"C:/Users/Hugh/Desktop/System_Files/Default Presets\""
 				}
 
 			}
@@ -649,7 +677,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 767.0, 370.0, 538.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Board_Files"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Board_Files"
 				}
 
 			}
@@ -677,8 +705,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 193.0, 464.0, 559.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Includes"
+					"patching_rect" : [ 193.0, 511.0, 559.0, 22.0 ],
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Includes"
 				}
 
 			}
@@ -692,7 +720,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 193.0, 429.0, 198.0, 22.0 ],
+					"patching_rect" : [ 193.0, 476.0, 198.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/Includes\\\""
 				}
 
@@ -706,8 +734,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.0, 598.0, 419.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Images"
+					"patching_rect" : [ 197.0, 645.0, 419.0, 22.0 ],
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Images"
 				}
 
 			}
@@ -720,7 +748,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.0, 561.0, 193.0, 22.0 ],
+					"patching_rect" : [ 197.0, 608.0, 193.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/Images\\\""
 				}
 
@@ -735,7 +763,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 197.0, 276.0, 443.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Buffers/"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Buffers/"
 				}
 
 			}
@@ -762,8 +790,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 193.0, 394.0, 553.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Modules/"
+					"patching_rect" : [ 193.0, 441.0, 553.0, 22.0 ],
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Modules/"
 				}
 
 			}
@@ -777,7 +805,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 370.0, 202.0, 22.0 ],
+					"patching_rect" : [ 195.0, 417.0, 202.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/Modules/\\\""
 				}
 
@@ -791,8 +819,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.0, 528.0, 463.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Collections/"
+					"patching_rect" : [ 197.0, 575.0, 463.0, 22.0 ],
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Collections/"
 				}
 
 			}
@@ -805,7 +833,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 199.0, 499.0, 216.0, 22.0 ],
+					"patching_rect" : [ 199.0, 546.0, 216.0, 22.0 ],
 					"text" : "sprintf \\\"%sSystem_Files/Collections/\\\""
 				}
 
@@ -943,7 +971,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.0, 152.0, 419.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/"
 				}
 
 			}
@@ -971,7 +999,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 197.0, 218.0, 455.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/System_Files/Externals/"
+					"text" : "C:/Users/Hugh/Desktop/System_Files/Externals/"
 				}
 
 			}
@@ -1055,7 +1083,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 820.0, 115.0, 325.0, 22.0 ],
-					"text" : "C:/Users/hughl/Desktop/"
+					"text" : "C:/Users/Hugh/Desktop/"
 				}
 
 			}
@@ -1093,7 +1121,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 189.0, 206.5, 189.0 ],
-					"order" : 18,
+					"order" : 19,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1102,7 +1130,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 204.5, 114.0 ],
-					"order" : 21,
+					"order" : 22,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1111,7 +1139,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 486.0, 206.5, 486.0 ],
-					"order" : 17,
+					"order" : 18,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1120,7 +1148,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 354.0, 202.5, 354.0 ],
-					"order" : 22,
+					"order" : 23,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1147,7 +1175,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 426.0, 208.5, 426.0 ],
-					"order" : 16,
+					"order" : 17,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1156,7 +1184,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 549.0, 204.5, 549.0 ],
-					"order" : 19,
+					"order" : 20,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1174,7 +1202,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 297.0, 204.5, 297.0 ],
-					"order" : 20,
+					"order" : 21,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1192,7 +1220,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 215.0, 202.5, 215.0 ],
-					"order" : 23,
+					"order" : 24,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1201,7 +1229,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 46.5, 114.0 ],
-					"order" : 24,
+					"order" : 25,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1255,7 +1283,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 21.0, 114.0, 21.0, 792.0, 44.5, 792.0 ],
-					"order" : 26,
+					"order" : 27,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1264,7 +1292,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 18.0, 114.0, 18.0, 849.0, 44.5, 849.0 ],
-					"order" : 25,
+					"order" : 26,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1282,7 +1310,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 18.0, 114.0, 18.0, 966.0, 42.5, 966.0 ],
-					"order" : 27,
+					"order" : 28,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1291,7 +1319,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"midpoints" : [ 725.5, 126.0, 360.0, 126.0, 360.0, 114.0, 18.0, 114.0, 18.0, 909.0, 42.5, 909.0 ],
-					"order" : 28,
+					"order" : 29,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1336,7 +1364,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
 					"midpoints" : [ 725.5, 90.0, 735.0, 90.0, 735.0, 78.0, 780.0, 78.0, 780.0, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 300.0, 210.5, 300.0 ],
-					"order" : 15,
+					"order" : 16,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1345,6 +1373,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
 					"order" : 3,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"midpoints" : [ 725.5, 90.0, 735.0, 90.0, 735.0, 78.0, 780.0, 78.0, 780.0, 126.0, 360.0, 126.0, 360.0, 114.0, 180.0, 114.0, 180.0, 357.0, 220.5, 357.0 ],
+					"order" : 15,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1388,7 +1425,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 1 ],
-					"midpoints" : [ 206.5, 586.0, 606.5, 586.0 ],
+					"midpoints" : [ 206.5, 633.0, 606.5, 633.0 ],
 					"order" : 1,
 					"source" : [ "obj-15", 0 ]
 				}
@@ -1414,7 +1451,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
-					"midpoints" : [ 202.5, 457.0, 742.5, 457.0 ],
+					"midpoints" : [ 202.5, 504.0, 742.5, 504.0 ],
 					"order" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
@@ -1520,7 +1557,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 1 ],
-					"midpoints" : [ 208.5, 524.0, 650.5, 524.0 ],
+					"midpoints" : [ 208.5, 571.0, 650.5, 571.0 ],
 					"order" : 0,
 					"source" : [ "obj-31", 0 ]
 				}
@@ -1538,7 +1575,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
-					"midpoints" : [ 204.5, 648.0, 610.5, 648.0 ],
+					"midpoints" : [ 204.5, 695.0, 610.5, 695.0 ],
 					"order" : 1,
 					"source" : [ "obj-33", 0 ]
 				}
@@ -1574,7 +1611,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 1 ],
-					"midpoints" : [ 204.5, 392.5, 736.5, 392.5 ],
+					"midpoints" : [ 204.5, 439.5, 736.5, 439.5 ],
 					"order" : 0,
 					"source" : [ "obj-38", 0 ]
 				}
@@ -1641,7 +1678,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 1 ],
-					"midpoints" : [ 46.5, 762.0, 33.0, 762.0, 33.0, 723.0, 516.5, 723.0 ],
+					"midpoints" : [ 46.5, 809.0, 33.0, 809.0, 33.0, 770.0, 516.5, 770.0 ],
 					"order" : 1,
 					"source" : [ "obj-47", 0 ]
 				}
@@ -1751,7 +1788,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 1 ],
-					"midpoints" : [ 44.5, 822.0, 21.0, 822.0, 21.0, 723.0, 465.0, 723.0, 465.0, 813.0, 490.5, 813.0 ],
+					"midpoints" : [ 44.5, 869.0, 21.0, 869.0, 21.0, 770.0, 465.0, 770.0, 465.0, 860.0, 490.5, 860.0 ],
 					"order" : 1,
 					"source" : [ "obj-57", 0 ]
 				}
@@ -1769,7 +1806,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 1 ],
-					"midpoints" : [ 44.5, 879.0, 522.5, 879.0 ],
+					"midpoints" : [ 44.5, 926.0, 522.5, 926.0 ],
 					"order" : 1,
 					"source" : [ "obj-59", 0 ]
 				}
@@ -1804,7 +1841,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 1 ],
-					"midpoints" : [ 42.5, 996.0, 18.0, 996.0, 18.0, 1032.0, 450.0, 1032.0, 450.0, 996.0, 478.5, 996.0 ],
+					"midpoints" : [ 42.5, 1043.0, 18.0, 1043.0, 18.0, 1079.0, 450.0, 1079.0, 450.0, 1043.0, 478.5, 1043.0 ],
 					"order" : 1,
 					"source" : [ "obj-61", 0 ]
 				}
@@ -1822,7 +1859,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 1 ],
-					"midpoints" : [ 42.5, 939.0, 18.0, 939.0, 18.0, 1032.0, 462.0, 1032.0, 462.0, 939.0, 528.5, 939.0 ],
+					"midpoints" : [ 42.5, 986.0, 18.0, 986.0, 18.0, 1079.0, 462.0, 1079.0, 462.0, 986.0, 528.5, 986.0 ],
 					"order" : 1,
 					"source" : [ "obj-63", 0 ]
 				}
@@ -1954,6 +1991,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"midpoints" : [ 220.5, 384.0, 180.0, 384.0, 180.0, 741.0, 630.0, 741.0, 630.0, 711.0, 654.5, 711.0 ],
+					"order" : 1,
+					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 1 ],
+					"midpoints" : [ 220.5, 382.5, 650.5, 382.5 ],
+					"order" : 0,
+					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"midpoints" : [ 654.5, 767.0, 654.5, 767.0 ],
 					"source" : [ "obj-8", 0 ]
@@ -2068,10 +2123,21 @@
 
 				}
 ,
+				"ezadc~" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+,
 				"toggle" : 				{
 					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"ezdac~" : 				{
@@ -2091,21 +2157,20 @@
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-				}
-,
 				"button" : 				{
 					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
 					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
 				}
 ,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				"gain~" : 				{
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"kslider" : 				{
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -2119,16 +2184,6 @@
 						"autogradient" : 0
 					}
 
-				}
-,
-				"gain~" : 				{
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"kslider" : 				{
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2161,10 +2216,21 @@
 
 				}
 ,
+				"ezadc~" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+,
 				"toggle" : 				{
 					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"ezdac~" : 				{
@@ -2184,21 +2250,20 @@
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-				}
-,
 				"button" : 				{
 					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
 					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
 				}
 ,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				"gain~" : 				{
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"kslider" : 				{
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -2212,16 +2277,6 @@
 						"autogradient" : 0
 					}
 
-				}
-,
-				"gain~" : 				{
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"kslider" : 				{
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2254,10 +2309,21 @@
 
 				}
 ,
+				"ezadc~" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+,
 				"toggle" : 				{
 					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"ezdac~" : 				{
@@ -2277,21 +2343,20 @@
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-				}
-,
 				"button" : 				{
 					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
 					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
 				}
 ,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				"gain~" : 				{
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"kslider" : 				{
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -2305,16 +2370,6 @@
 						"autogradient" : 0
 					}
 
-				}
-,
-				"gain~" : 				{
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"kslider" : 				{
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2347,10 +2402,21 @@
 
 				}
 ,
+				"ezadc~" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+,
 				"toggle" : 				{
 					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"ezdac~" : 				{
@@ -2370,21 +2436,20 @@
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-				}
-,
 				"button" : 				{
 					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
 					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
 				}
 ,
-				"multislider" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				"gain~" : 				{
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"kslider" : 				{
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -2398,16 +2463,6 @@
 						"autogradient" : 0
 					}
 
-				}
-,
-				"gain~" : 				{
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"kslider" : 				{
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
