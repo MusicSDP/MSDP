@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 64.0, 122.0, 732.0, 480.0 ],
+		"rect" : [ 64.0, 123.0, 732.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,30 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 257.0, 327.0, 55.0, 22.0 ],
+					"text" : "2000000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 284.0, 291.0, 34.0, 22.0 ],
+					"text" : "sel 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
@@ -134,7 +158,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 282.0, 283.0, 184.0, 22.0 ],
+					"patching_rect" : [ 282.0, 351.0, 184.0, 22.0 ],
 					"text" : "sprintf send MSDPVideoBus_%d"
 				}
 
@@ -157,7 +181,7 @@
 					"patching_rect" : [ 282.0, 237.0, 40.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 17.0, -2.0, 46.0, 28.0 ],
-					"textcolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 1.0 ],
+					"textcolor" : [ 0.376470588235294, 0.737254901960784, 0.737254901960784, 1.0 ],
 					"triangle" : 0,
 					"tricolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 1.0 ]
 				}
@@ -174,7 +198,8 @@
 					"patching_rect" : [ 266.0, 239.0, 62.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 1.0, 62.0, 23.0 ],
-					"text" : "V"
+					"text" : "V",
+					"textcolor" : [ 0.376470595598221, 0.737254917621613, 0.737254917621613, 1.0 ]
 				}
 
 			}
@@ -219,9 +244,9 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.376470588235294, 0.737254901960784, 0.737254901960784, 1.0 ],
+					"bgcolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 1.0 ],
 					"border" : 1,
-					"bordercolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 1.0 ],
+					"bordercolor" : [ 0.376470588235294, 0.737254901960784, 0.737254901960784, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -253,9 +278,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"order" : 0,
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -277,6 +316,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-36", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
