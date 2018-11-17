@@ -1,0 +1,42 @@
+{
+	"author" : "Kevin Kripper",
+	"authors" : [  ],
+	"description" : "A series of modules built around Gen that together make a modular video synthesizer. With a Beap/Vizzie feel, the Vsynth introduces video synthesis and image processing with the efficiency of hardware-accelerated processes.",
+	"displayname" : "",
+	"extends" : "",
+	"extensible" : 0,
+	"homepatcher" : "vsynth_launch.maxpat",
+	"max_version_max" : "none",
+	"max_version_min" : "7.0",
+	"name" : "Vsynth",
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "x64", "ia32" ],
+			"min_version" : "none"
+		}
+,
+		"windows" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "none"
+		}
+
+	}
+,
+	"package_extra" : 	{
+
+	}
+,
+	"tags" : [ "video", "graphics", "jitter", "synth" ],
+	"version" : "1.2.3",
+	"website" : "http://www.instagram.com/vsynth74",
+	"filelist" : 	{
+		"patchers" : [ "displacement_gui.maxpat", "launcher_help/scene_1_help.json", "launcher_help/scene_2_help.json", "launcher_help/sin_palette_examples.json", "launcher_help/vs_am_help.maxpat", "launcher_help/vs_audio_to_vsynth_help.maxpat", "launcher_help/vs_cam2_help.maxpat", "launcher_help/vs_cam_help.maxpat", "launcher_help/vs_chromakey_help.maxpat", "launcher_help/vs_color_extractor_help.maxpat", "launcher_help/vs_cornerpins_help.maxpat", "launcher_help/vs_cos_palettes_help.maxpat", "launcher_help/vs_edges_help.maxpat", "launcher_help/vs_envelope_help.maxpat", "launcher_help/vs_external_conection_help.maxpat", "launcher_help/vs_feedback_help.maxpat", "launcher_help/vs_filters_cam_help.maxpat", "launcher_help/vs_filters_help.maxpat", "launcher_help/vs_fm_help.maxpat", "launcher_help/vs_frame_delay_help.maxpat", "launcher_help/vs_lfo_help.maxpat", "launcher_help/vs_lumakey_help.maxpat", "launcher_help/vs_mixers_help.maxpat", "launcher_help/vs_node_help.json", "launcher_help/vs_node_help.maxpat", "launcher_help/vs_noise_help.maxpat", "launcher_help/vs_op_help.maxpat", "launcher_help/vs_polar_coord_help.maxpat", "launcher_help/vs_presentation.maxpat", "launcher_help/vs_presets_help.maxpat", "launcher_help/vs_pwm_help.maxpat", "launcher_help/vs_record_help.maxpat", "launcher_help/vs_render_context_help.maxpat", "launcher_help/vs_rgb_offset_help.maxpat", "launcher_help/vs_rgb_swiz&mix_help.maxpat", "launcher_help/vs_rutt_etra_help.maxpat", "launcher_help/vs_s&h_help.maxpat", "launcher_help/vs_scenes_help.maxpat", "launcher_help/vs_shadow_help.json", "launcher_help/vs_shadows_help.maxpat", "launcher_help/vs_sin_palette_help.maxpat", "launcher_help/vs_spat_granular_synthesis_help.maxpat", "launcher_help/vs_spatial_mixer_help.maxpat", "launcher_help/vs_spatial_s&h_help.maxpat", "launcher_help/vs_sync_time_help.maxpat", "launcher_help/vs_syphon_help.maxpat", "launcher_help/vs_vca_help.maxpat", "launcher_help/vs_video_image_help.maxpat", "launcher_help/vs_vsynth_to_audio_help.maxpat", "launcher_help/vs_wfg_help.maxpat", "launcher_help/vs_wfg_shapes_help.maxpat", "launcher_help/vs_xyz_disp_help.maxpat", "patchbook/patchbhook_radial_feedback.json", "patchbook/patchbook_dx7_6.json", "patchbook/vs_patchbook_additive_displacement.json", "patchbook/vs_patchbook_additive_displacement.maxpat", "patchbook/vs_patchbook_dx7_6.maxpat", "patchbook/vs_patchbook_hearts.json", "patchbook/vs_patchbook_hearts.maxpat", "patchbook/vs_patchbook_hpfc_flow.json", "patchbook/vs_patchbook_hpfc_flow.maxpat", "patchbook/vs_patchbook_landscapes.json", "patchbook/vs_patchbook_landscapes.maxpat", "patchbook/vs_patchbook_logo.json", "patchbook/vs_patchbook_logo.maxpat", "patchbook/vs_patchbook_mod_grid.json", "patchbook/vs_patchbook_mod_grid.maxpat", "patchbook/vs_patchbook_radial_displacement.json", "patchbook/vs_patchbook_radial_displacement.maxpat", "patchbook/vs_patchbook_radial_feedback.maxpat", "patchbook/vs_patchbook_radial_patterns.json", "patchbook/vs_patchbook_radial_patterns.maxpat", "timediv.txt", "vs_alpha_blend.maxpat", "vs_camera_fm.maxpat", "vs_camera_s.maxpat", "vs_capture.maxpat", "vs_cartopol.maxpat", "vs_chroma_key.maxpat", "vs_clr_solid.maxpat", "vs_clr_xtrct.maxpat", "vs_colorizer.maxpat", "vs_comparator.maxpat", "vs_cos_palettes.maxpat", "vs_crssfade.maxpat", "vs_differentiator.maxpat", "vs_displacement.maxpat", "vs_edges.maxpat", "vs_envelope.maxpat", "vs_fader.maxpat", "vs_feedback.maxpat", "vs_filter_hp4x.maxpat", "vs_filter_lp2x.maxpat", "vs_filter_lp4x.maxpat", "vs_filter_spat.maxpat", "vs_filter_temp.maxpat", "vs_flip&swap.maxpat", "vs_frame_delay.maxpat", "vs_freq_encoder.maxpat", "vs_hue_rot.maxpat", "vs_luma_key.maxpat", "vs_mixer_2.maxpat", "vs_mixer_3.maxpat", "vs_mixer_3_1.maxpat", "vs_mixer_6.maxpat", "vs_mixer_fdbk.maxpat", "vs_mixer_spat.maxpat", "vs_modules.maxpat", "vs_noise_2.maxpat", "vs_noise_s.maxpat", "vs_offset+rot.maxpat", "vs_offset.maxpat", "vs_op1.maxpat", "vs_op2.maxpat", "vs_output.maxpat", "vs_pixelator.maxpat", "vs_poltocar.maxpat", "vs_preview.maxpat", "vs_preview2.maxpat", "vs_render.maxpat", "vs_render_extra.maxpat", "vs_rgb2luma.maxpat", "vs_rgb_mixer.maxpat", "vs_rgb_offstr.maxpat", "vs_rgb_swiz.maxpat", "vs_s&h.maxpat", "vs_s&h_spat.maxpat", "vs_scope.maxpat", "vs_snapshot.maxpat", "vs_spout_client.maxpat", "vs_spout_server.maxpat", "vs_sync.maxpat", "vs_sync_time.maxpat", "vs_syphon_client.maxpat", "vs_syphon_server.maxpat", "vs_vca.maxpat", "vs_wfg_2.maxpat", "vs_wfg_rad.maxpat", "vs_wfg_s.maxpat", "vs_wfg_shapes.maxpat", "vs_xyz_disp.maxpat" ],
+		"media" : [ "A.png", "ab.flowrepos.jxs", "ab.hsflow.jxs", "ab.rgbluma.jxs", "B.png", "C.png", "circ.svg", "D.png", "manray.jpg", "noise2.svg", "rad1.svg", "rad2.svg", "rad3.svg", "rectngl.svg", "rhombus.svg", "sq.svg", "sqround.svg", "trngle.svg", "vtfk.jxs" ],
+		"clippings" : [ "vs_extras/vse_freq_encoder.maxpat", "vs_extras/vse_mixer_2.maxpat", "vs_extras/vse_movie.maxpat", "vs_extras/vse_render_extras.maxpat", "vs_extras/vse_route.maxpat", "vs_extras/vse_spout_client.maxpat", "vs_extras/vse_spout_server.maxpat", "vs_extras/vse_switch.maxpat", "vs_menu.maxpat", "vs_new_blank.maxpat", "vs_new_camera_default.maxpat", "vs_new_synth_default.maxpat", "vs_preview_monitor.maxpat", "vs_scope_monitor.maxpat", "vsynth_presets.maxpat" ],
+		"javascript" : [ "addmod.js", "jit.gl.textureset.js", "vs_presize.js" ],
+		"extras" : [ "vsynth_launch.maxpat", "vsynth_patchbook.maxpat" ]
+	}
+,
+	"c74install" : 1,
+	"installdate" : 3624210188
+}

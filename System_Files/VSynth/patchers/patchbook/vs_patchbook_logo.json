@@ -1,0 +1,81 @@
+{
+	"pattrstorage" : 	{
+		"name" : "logox",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"vs_offset::offset" : [ 0.93 ],
+					"vs_offset+rot::offrot_angle" : [ 0.0 ],
+					"vs_offset+rot::offrot_anglemenu" : [ 0.0 ],
+					"vs_offset+rot::offrot_boundmode" : [ 0.0 ],
+					"vs_offset+rot::offrot_x" : [ 0.02 ],
+					"vs_offset+rot::offrot_x_range" : [ 0.0 ],
+					"vs_offset+rot::offrot_y" : [ 0.0 ],
+					"vs_offset+rot::offrot_y_range" : [ 0.0 ],
+					"vs_offset+rot::offrot_zoom" : [ 1.0 ],
+					"vs_rgb_mixer::rgbmix_b" : [ 1.0 ],
+					"vs_rgb_mixer::rgbmix_g" : [ 1.0 ],
+					"vs_rgb_mixer::rgbmix_r" : [ 1.0 ],
+					"vs_op2[1]::op2_op" : [ 2.0 ],
+					"vs_op2::op2_op" : [ 1.0 ],
+					"vs_wfg_rad::radwfg_fm" : [ 0.0 ],
+					"vs_wfg_rad::radwfg_fm_range" : [ 0.0 ],
+					"vs_wfg_rad::radwfg_freq" : [ 37.952755 ],
+					"vs_wfg_rad::radwfg_freq_60mult" : [ 1.0 ],
+					"vs_wfg_rad::radwfg_freq_range" : [ 0.0 ],
+					"vs_wfg_rad::radwfg_pw" : [ 57.874016 ],
+					"vs_wfg_rad::radwfg_pwm" : [ 0.0 ],
+					"vs_wfg_rad::radwfg_shape" : [ 0.0 ],
+					"vs_wfg_rad::radwfg_time" : [ 0.0 ],
+					"vs_wfg_rad::radwfg_time_dir" : [ 0.0 ],
+					"vs_wfg_rad::radwfg_wf" : [ 4.0 ],
+					"vs_wfg_2::wfg2_fm" : [ 0.0 ],
+					"vs_wfg_2::wfg2_fm_range" : [ 0.0 ],
+					"vs_wfg_2::wfg2_freq" : [ 124.566925 ],
+					"vs_wfg_2::wfg2_freq_range" : [ 0.0 ],
+					"vs_wfg_2::wfg2_pm" : [ 1.0 ],
+					"vs_wfg_2::wfg2_pw" : [ 50.0 ],
+					"vs_wfg_2::wfg2_pwm" : [ 0.0 ],
+					"vs_wfg_2::wfg2_sync_dir" : [ 0 ],
+					"vs_wfg_2::wfg2_sync_lock" : [ 0.0 ],
+					"vs_wfg_2::wfg2_time" : [ 3.0 ],
+					"vs_wfg_2::wfg2_wf" : [ 0.0 ],
+					"vs_wfg_2[1]::wfg2_fm" : [ 0.0 ],
+					"vs_wfg_2[1]::wfg2_fm_range" : [ 0.0 ],
+					"vs_wfg_2[1]::wfg2_freq" : [ 285.039368 ],
+					"vs_wfg_2[1]::wfg2_freq_range" : [ 0.0 ],
+					"vs_wfg_2[1]::wfg2_pm" : [ 0.514173 ],
+					"vs_wfg_2[1]::wfg2_pw" : [ 49.212677 ],
+					"vs_wfg_2[1]::wfg2_pwm" : [ 0.0 ],
+					"vs_wfg_2[1]::wfg2_sync_dir" : [ 0 ],
+					"vs_wfg_2[1]::wfg2_sync_lock" : [ 2.0 ],
+					"vs_wfg_2[1]::wfg2_time" : [ 1.0 ],
+					"vs_wfg_2[1]::wfg2_wf" : [ 4.0 ],
+					"vs_preview::preview_size" : [ 0.0 ],
+					"vs_wfg_rad[2]::radwfg_fm" : [ 0.0 ],
+					"vs_wfg_rad[2]::radwfg_fm_range" : [ 0.0 ],
+					"vs_wfg_rad[2]::radwfg_freq" : [ 122.834648 ],
+					"vs_wfg_rad[2]::radwfg_freq_60mult" : [ 0.0 ],
+					"vs_wfg_rad[2]::radwfg_freq_range" : [ 0.0 ],
+					"vs_wfg_rad[2]::radwfg_pw" : [ 7.480315 ],
+					"vs_wfg_rad[2]::radwfg_pwm" : [ 0.0 ],
+					"vs_wfg_rad[2]::radwfg_shape" : [ 0.0 ],
+					"vs_wfg_rad[2]::radwfg_time" : [ 0.0 ],
+					"vs_wfg_rad[2]::radwfg_time_dir" : [ 0.0 ],
+					"vs_wfg_rad[2]::radwfg_wf" : [ 4.0 ],
+					"vs_preview[1]::preview_size" : [ 0.0 ],
+					"vs_filter_lp2x[2]::lpf_freq" : [ 0.230315 ],
+					"vs_preview[2]::preview_size" : [ 0.0 ],
+					"vs_op2[2]::op2_op" : [ 3.0 ],
+					"vs_preview[3]::preview_size" : [ 0.0 ],
+					"vs_preview[4]::preview_size" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

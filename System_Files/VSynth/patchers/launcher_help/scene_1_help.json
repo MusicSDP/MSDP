@@ -1,0 +1,55 @@
+{
+	"pattrstorage" : 	{
+		"name" : "vsynth",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"vs_filter_lp4x::lpf_freq" : [ 0.194882 ],
+					"vs_filter_temp::temp_freq" : [ 0.85 ],
+					"vs_offset+rot::offrot_angle" : [ 0.2 ],
+					"vs_offset+rot::offrot_anglemenu" : [ 4.0 ],
+					"vs_offset+rot::offrot_x" : [ 0.0 ],
+					"vs_offset+rot::offrot_x_range" : [ 0.0 ],
+					"vs_offset+rot::offrot_y" : [ 0.0 ],
+					"vs_offset+rot::offrot_y_range" : [ 0.0 ],
+					"vs_offset+rot::offrot_zoom" : [ 0.98 ],
+					"vs_mixer_3::mixer3_in_1" : [ 1.0 ],
+					"vs_mixer_3::mixer3_in_2" : [ 0.830808 ],
+					"vs_mixer_3::mixer3_in_3" : [ 0.0 ],
+					"vs_mixer_3::mixer3_master" : [ 1.0 ],
+					"vs_colorizer::clrizer_color" : [ 0.170213, 1.0, 0.36524, 1.0, 0.372506, 1.0, 0.585106 ],
+					"vs_colorizer::clrizer_hue" : [ 134.102 ],
+					"vs_wfg_shapes::shapewfg_dir" : [ 0.0 ],
+					"vs_wfg_shapes::shapewfg_fm" : [ 2.0 ],
+					"vs_wfg_shapes::shapewfg_fm_range" : [ 1.0 ],
+					"vs_wfg_shapes::shapewfg_freq" : [ 60.0 ],
+					"vs_wfg_shapes::shapewfg_freq_range" : [ 0.0 ],
+					"vs_wfg_shapes::shapewfg_polygons" : [ 3.0 ],
+					"vs_wfg_shapes::shapewfg_pw" : [ 16.535433 ],
+					"vs_wfg_shapes::shapewfg_pwm" : [ 0.0 ],
+					"vs_wfg_shapes::shapewfg_shape" : [ 0.0 ],
+					"vs_wfg_shapes::shapewfg_time" : [ 0.0 ],
+					"vs_wfg_shapes::shapewfg_wf" : [ 1.0 ],
+					"vs_wfg_shapes[1]::shapewfg_dir" : [ 0.0 ],
+					"vs_wfg_shapes[1]::shapewfg_fm" : [ 2.0 ],
+					"vs_wfg_shapes[1]::shapewfg_fm_range" : [ 1.0 ],
+					"vs_wfg_shapes[1]::shapewfg_freq" : [ 120.0 ],
+					"vs_wfg_shapes[1]::shapewfg_freq_range" : [ 0.0 ],
+					"vs_wfg_shapes[1]::shapewfg_polygons" : [ 3.0 ],
+					"vs_wfg_shapes[1]::shapewfg_pw" : [ 69.291339 ],
+					"vs_wfg_shapes[1]::shapewfg_pwm" : [ 0.0 ],
+					"vs_wfg_shapes[1]::shapewfg_shape" : [ 3.0 ],
+					"vs_wfg_shapes[1]::shapewfg_time" : [ 1.0 ],
+					"vs_wfg_shapes[1]::shapewfg_wf" : [ 4.0 ],
+					"vs_colorizer[1]::clrizer_color" : [ 1.0, 0.382979, 0.932962, 1.0, 0.851441, 1.0, 0.691489 ],
+					"vs_colorizer[1]::clrizer_hue" : [ 306.518857 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

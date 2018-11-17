@@ -1,0 +1,59 @@
+<jittershader name="shady.jxs">
+	<description>transform matrices</description>
+	<param name="amount" type="vec3" default="0. 0. 0.">
+	</param>
+	<param name="tex0" type="int" default="0" />
+	<language name="glsl" version="1.2">
+	<bind param="amount" program="vp" />
+	<bind param="tex0" program="vp" />
+	<program name="vp" type="vertex">
+<![CDATA[
+
+#version 120
+
+uniform vec3 amount;
+uniform sampler2D tex0;
+varying vec2 texcoord0;
+
+
+void main(void)
+{
+	texcoord0 = vec2(gl_TextureMatrix[0] * gl_MultiTexCoord0);
+
+	vec4 noise = texture2D(tex0, texcoord0.xy);
+	
+	vec4 normal = vec4(gl_NormalMatrix * gl_Normal, 1.);
+
+	vec4 v = vec4(gl_Vertex);
+		
+	v.z += (noise.x * amount.z);
+	v.y += (noise.x * amount.y);
+	v.x += (noise.x * amount.x);
+
+	vec4 pos = gl_ModelViewMatrix * v;
+
+	gl_Position = gl_ProjectionMatrix * (pos + normalize(normal));
+		
+gl_FrontColor = noise * gl_Color;
+	
+
+}
+
+]]>
+</program>
+<program name="fp" type="fragment">
+<![CDATA[
+
+#version 120
+
+varying vec2 texcoord0;
+
+void main (void)
+{
+	gl_FragColor = gl_Color;
+}
+
+]]>
+		</program>
+	</language>
+</jittershader>
