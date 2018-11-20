@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 40.0, 82.0, 1392.0, 930.0 ],
+		"rect" : [ 34.0, 76.0, 1392.0, 930.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,273 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-167",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 839.0, 699.0, 50.0, 23.0 ],
+					"text" : "forward"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-164",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 886.0, 450.0, 106.0, 23.0 ],
+					"text" : "msdp.param p27 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-163",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 310.14300537109375, 483.0, 106.0, 23.0 ],
+					"text" : "msdp.param p21 0",
+					"varname" : "p21"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-162",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 318.0, 193.0, 150.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 284.0, 216.0, 74.915611267089844, 21.0 ],
+					"text" : "27. Mix Out"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-158",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 303.0, 178.0, 150.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 295.0, 179.0, 61.915611267089844, 21.0 ],
+					"text" : "26. Mode"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "p26", 0 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-154",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "msdp.ui.vOutput.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 875.0, 657.0, 71.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 295.0, 232.0, 71.0, 27.0 ],
+					"varname" : "p26",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 1.0 ],
+					"fontsize" : 16.0,
+					"id" : "obj-152",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 310.14300537109375, 515.0, 114.0, 74.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 176.0, 68.0, 82.0 ],
+					"text" : "21. 4-Out Mix Off",
+					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"texton" : "21. 4-Out Mix On",
+					"textoncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"truncate" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "p25", "25. D", 0.0, 1.0, 0.33, "f", 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-148",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "msdp.ui.dial.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 639.5, 507.0, 55.5, 94.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 229.5, 176.0, 61.0, 94.0 ],
+					"varname" : "p25",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "p24", "24. C", 0.0, 1.0, 0.33, "f", 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-149",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "msdp.ui.dial.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 587.5, 507.0, 55.5, 94.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 178.5, 176.0, 61.0, 94.0 ],
+					"varname" : "p24",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "p23", "23. B", 0.0, 1.0, 0.33, "f", 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-147",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "msdp.ui.dial.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 530.5, 507.0, 55.5, 94.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 127.5, 176.0, 61.0, 94.0 ],
+					"varname" : "p23",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "p22", "22. A", 0.0, 1.0, 0.33, "f", 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-146",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "msdp.ui.dial.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 474.0, 507.0, 55.5, 94.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 77.0, 176.0, 61.0, 94.0 ],
+					"varname" : "p22",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Ableton Sans Medium",
+					"fontsize" : 12.0,
+					"id" : "obj-141",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 875.0, 531.0, 89.0, 23.0 ],
+					"text" : "scale 0 32 0. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"focusbordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontname" : "Lato",
+					"fontsize" : 16.0,
+					"hint" : "Sets the operation to be used when combining the video images Although + is used for additive mixing, other operations may produce interesting results.",
+					"hltcolor" : [ 0.4, 0.4, 0.4, 1.0 ],
+					"id" : "obj-137",
+					"maxclass" : "live.menu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 875.0, 491.991424560546875, 100.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 295.0, 194.792236328125, 61.915611267089844, 23.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_shortname" : "umenu",
+							"parameter_enum" : [ "*", "/", "+", "\\-", "+m", "-m", "%", "min", "max", "abs", "avg", "absdiff", "!pass", "!/", "!-", "!%", "&", "|", "^", "~", ">", "<", ">=", "<=", "==", "!=", ">p", "<p", ">=p", "<=p", "==p", "!=p" ],
+							"parameter_type" : 2,
+							"parameter_longname" : "umenu[7]",
+							"parameter_initial_enable" : 1,
+							"parameter_initial" : [ 2.0 ]
+						}
+
+					}
+,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"tricolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"varname" : "umenu[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-136",
+					"maxclass" : "newobj",
+					"numinlets" : 9,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 839.0, 607.0, 103.0, 23.0 ],
+					"text" : "vz.4mixr",
+					"varname" : "vz.4mixr"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
@@ -767,7 +1034,51 @@
 					"bgcolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 1.0 ],
 					"clipheight" : 34.0,
 					"data" : 					{
-						"clips" : [  ]
+						"clips" : [ 							{
+								"filename" : "C:/Users/hughl/Desktop/vTest/Saved Video/Banned Cartoons - Trans-Lux - Felix The Cat - King Of The Moon - Very Good.mp4",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u925001686" ],
+									"dim" : [ 1, 1 ],
+									"framereport" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"unique" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"interp" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"loopstart" : [ 0 ],
+									"texture_name" : [ "u720001684" ],
+									"fps" : [ 0.0 ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"timescale" : [ 600 ],
+									"adapt" : [ 1 ],
+									"looppoints" : [ 0, 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"vol" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"drawto" : [ "" ],
+									"looppoints_ms" : [ 0, 0 ],
+									"time_ms" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"automatic" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"duration" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"framecount" : [ 0 ],
+									"time" : [ 0 ]
+								}
+
+							}
+ ]
 					}
 ,
 					"id" : "obj-128",
@@ -1157,7 +1468,51 @@
 					"bgcolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 1.0 ],
 					"clipheight" : 34.0,
 					"data" : 					{
-						"clips" : [  ]
+						"clips" : [ 							{
+								"filename" : "C:/Users/hughl/Desktop/vTest/Saved Video/A Corny Concerto (1943).mp4",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u925001686" ],
+									"dim" : [ 1, 1 ],
+									"framereport" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"unique" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"interp" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"loopstart" : [ 0 ],
+									"texture_name" : [ "u720001684" ],
+									"fps" : [ 0.0 ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"timescale" : [ 600 ],
+									"adapt" : [ 1 ],
+									"looppoints" : [ 0, 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"vol" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"drawto" : [ "" ],
+									"looppoints_ms" : [ 0, 0 ],
+									"time_ms" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"automatic" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"duration" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"framecount" : [ 0 ],
+									"time" : [ 0 ]
+								}
+
+							}
+ ]
 					}
 ,
 					"id" : "obj-97",
@@ -1547,7 +1902,51 @@
 					"bgcolor" : [ 0.094117647058824, 0.101960784313725, 0.101960784313725, 1.0 ],
 					"clipheight" : 34.0,
 					"data" : 					{
-						"clips" : [  ]
+						"clips" : [ 							{
+								"filename" : "C:/Users/hughl/Desktop/vTest/Saved Video/20120116SandiaMountainsTimeLapse2.mp4",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u925001686" ],
+									"dim" : [ 1, 1 ],
+									"framereport" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"unique" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"interp" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"loopstart" : [ 0 ],
+									"texture_name" : [ "u720001684" ],
+									"fps" : [ 0.0 ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"timescale" : [ 600 ],
+									"adapt" : [ 1 ],
+									"looppoints" : [ 0, 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"vol" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"drawto" : [ "" ],
+									"looppoints_ms" : [ 0, 0 ],
+									"time_ms" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"automatic" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"duration" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"framecount" : [ 0 ],
+									"time" : [ 0 ]
+								}
+
+							}
+ ]
 					}
 ,
 					"id" : "obj-6",
@@ -2634,6 +3033,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-130", 0 ],
+					"order" : 0,
+					"source" : [ "obj-128", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 2 ],
+					"order" : 1,
 					"source" : [ "obj-128", 0 ]
 				}
 
@@ -2654,6 +3062,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-167", 0 ],
+					"source" : [ "obj-136", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-141", 0 ],
+					"source" : [ "obj-137", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
@@ -2661,8 +3083,57 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-136", 8 ],
+					"source" : [ "obj-141", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-108", 0 ],
 					"source" : [ "obj-144", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 4 ],
+					"source" : [ "obj-146", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 5 ],
+					"source" : [ "obj-147", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 7 ],
+					"source" : [ "obj-148", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 6 ],
+					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
+					"source" : [ "obj-152", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-167", 0 ],
+					"source" : [ "obj-154", 0 ]
 				}
 
 			}
@@ -2706,6 +3177,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-165", 0 ],
 					"source" : [ "obj-161", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-152", 0 ],
+					"source" : [ "obj-163", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-137", 0 ],
+					"source" : [ "obj-164", 0 ]
 				}
 
 			}
@@ -3040,6 +3525,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-6", 2 ]
 				}
@@ -3055,6 +3548,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -3106,6 +3600,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-132", 0 ],
+					"order" : 0,
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 3 ],
+					"order" : 1,
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -3354,6 +3857,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-136", 1 ],
+					"order" : 0,
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-90", 0 ],
 					"source" : [ "obj-97", 2 ]
 				}
@@ -3369,6 +3880,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-99", 0 ],
+					"order" : 1,
 					"source" : [ "obj-97", 0 ]
 				}
 
@@ -3381,6 +3893,25 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-136::obj-29" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
+			"obj-136::obj-36" : [ "Mix 2[1]", "Mix 2", 0 ],
+			"obj-136::obj-57" : [ "Mix 3[1]", "Mix 3", 0 ],
+			"obj-136::obj-37" : [ "Mix 1[1]", "Mix 1", 0 ],
+			"obj-136::obj-1" : [ "range[4]", "range", 0 ],
+			"obj-137" : [ "umenu[7]", "umenu", 0 ],
+			"obj-136::obj-58" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
+			"obj-136::obj-14" : [ "umenu[1]", "umenu", 0 ],
+			"obj-136::obj-35" : [ "Mix 4[1]", "Mix 4", 0 ],
+			"obj-136::obj-22" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
+			"obj-136::obj-51" : [ "pictctrl[12]", "pictctrl[1]", 0 ],
+			"obj-136::obj-26" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "msdp.module.paramSystem.maxpat",
 				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
@@ -3400,6 +3931,13 @@
 				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : "../../Includes",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "20120116SandiaMountainsTimeLapse2.mp4",
+				"bootpath" : "~/Desktop/vTest/Saved Video",
+				"patcherrelativepath" : "../../../../../../Desktop/vTest/Saved Video",
+				"type" : "mpg4",
 				"implicit" : 1
 			}
 , 			{
@@ -3429,6 +3967,73 @@
 				"patcherrelativepath" : "../../Includes",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "A Corny Concerto (1943).mp4",
+				"bootpath" : "~/Desktop/vTest/Saved Video",
+				"patcherrelativepath" : "../../../../../../Desktop/vTest/Saved Video",
+				"type" : "mpg4",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Banned Cartoons - Trans-Lux - Felix The Cat - King Of The Moon - Very Good.mp4",
+				"bootpath" : "~/Desktop/vTest/Saved Video",
+				"patcherrelativepath" : "../../../../../../Desktop/vTest/Saved Video",
+				"type" : "mpg4",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.4mixr.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Vizzie/patchers",
+				"patcherrelativepath" : "../../../../../Max 8/Packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mixdata-handler.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Vizzie/patchers",
+				"patcherrelativepath" : "../../../../../Max 8/Packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Vizzie/patchers",
+				"patcherrelativepath" : "../../../../../Max 8/Packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Vizzie/patchers",
+				"patcherrelativepath" : "../../../../../Max 8/Packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Vizzie/code",
+				"patcherrelativepath" : "../../../../../Max 8/Packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Vizzie/patchers",
+				"patcherrelativepath" : "../../../../../Max 8/Packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "msdp.ui.dial.maxpat",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
+				"patcherrelativepath" : "../../Includes",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,
