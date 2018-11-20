@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 40.0, 82.0, 1852.0, 930.0 ],
+		"rect" : [ 28.0, 82.0, 1852.0, 930.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,8 +56,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 407.4287109375, 277.0, 124.0, 22.0 ],
-					"text" : "sprintf %s/Video Files"
+					"patching_rect" : [ 407.4287109375, 277.0, 133.0, 22.0 ],
+					"text" : "sprintf %s/Saved Video"
 				}
 
 			}
