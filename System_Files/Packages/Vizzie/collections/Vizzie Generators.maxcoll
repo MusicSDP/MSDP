@@ -1,0 +1,5 @@
+{
+	"name" : "Vizzie Generators",
+	"type" : "query",
+	"contents" : [ "package:Vizzie", "tag:Generator" ]
+}

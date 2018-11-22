@@ -1,0 +1,5 @@
+{
+	"name" : "Vizzie Effects",
+	"type" : "query",
+	"contents" : [ "package:Vizzie", "tag:Effect" ]
+}

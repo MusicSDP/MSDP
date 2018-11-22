@@ -1,0 +1,5 @@
+{
+	"name" : "Vizzie Controllers",
+	"type" : "query",
+	"contents" : [ "package:Vizzie", "tag:Control" ]
+}

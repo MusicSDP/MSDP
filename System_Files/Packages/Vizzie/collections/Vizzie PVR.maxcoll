@@ -1,0 +1,5 @@
+{
+	"name" : "Vizzie PVR",
+	"type" : "query",
+	"contents" : [ "package:Vizzie", "tag:PVR" ]
+}

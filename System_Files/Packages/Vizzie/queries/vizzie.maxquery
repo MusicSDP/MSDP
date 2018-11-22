@@ -1,0 +1,201 @@
+{
+	"queries" : [	
+
+	{
+		"name" : "Vizzie Controllers",
+		"columns" : [ "name", "description" ],
+		"order_by" : "name",
+		"order" : "ascending",
+		"slots" : [
+			{
+				"field" : "name",
+				"comparison" : "beginswith",
+				"argument" : ""
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Vizzie"
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Control"
+			}
+		]
+	},
+	
+	{
+		"name" : "Vizzie Effects",
+		"columns" : [ "name", "description" ],
+		"order_by" : "name",
+		"order" : "ascending",
+		"slots" : [
+			{
+				"field" : "name",
+				"comparison" : "beginswith",
+				"argument" : ""
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Vizzie"
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Effect"
+			}
+		]
+	},
+	
+	
+	{
+		"name" : "Vizzie Generators",
+		"columns" : [ "name", "description" ],
+		"order_by" : "name",
+		"order" : "ascending",
+		"slots" : [
+			{
+				"field" : "name",
+				"comparison" : "beginswith",
+				"argument" : ""
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Vizzie"
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Generator"
+			}
+		]
+	},
+	
+	
+	{
+		"name" : "Vizzie Inputs",
+		"columns" : [ "name", "description" ],
+		"order_by" : "name",
+		"order" : "ascending",
+		"slots" : [
+			{
+				"field" : "name",
+				"comparison" : "beginswith",
+				"argument" : ""
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Vizzie"
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Input"
+			}
+		]
+	},
+	
+	{
+		"name" : "Vizzie Mix-Composite",
+		"columns" : [ "name", "description" ],
+		"order_by" : "name",
+		"order" : "ascending",
+		"slots" : [
+			{
+				"field" : "name",
+				"comparison" : "beginswith",
+				"argument" : ""
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Vizzie"
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Mix-Composite"
+			}
+		]
+	},
+	
+	{
+		"name" : "Vizzie Outputs",
+		"columns" : [ "name", "description" ],
+		"order_by" : "name",
+		"order" : "ascending",
+		"slots" : [
+			{
+				"field" : "name",
+				"comparison" : "beginswith",
+				"argument" : ""
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Vizzie"
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Output"
+			}
+		]
+	},
+	
+	{
+		"name" : "Vizzie Transformers",
+		"columns" : [ "name", "description" ],
+		"order_by" : "name",
+		"order" : "ascending",
+		"slots" : [
+			{
+				"field" : "name",
+				"comparison" : "beginswith",
+				"argument" : ""
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Vizzie"
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Transformer"
+			}
+		]
+	},
+	
+	{
+		"name" : "Vizzie Utilities",
+		"columns" : [ "name", "description" ],
+		"order_by" : "name",
+		"order" : "ascending",
+		"slots" : [
+			{
+				"field" : "name",
+				"comparison" : "beginswith",
+				"argument" : ""
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Vizzie"
+			},
+			{
+				"field" : "tag",
+				"comparison" : "is",
+				"argument" : "Utility"
+			}
+		]
+	}
+	
+	
+
+	]
+}
