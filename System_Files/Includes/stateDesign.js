@@ -254,7 +254,11 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
       if (session.boardPointers.hasOwnProperty(key)) if (session.boardPointers[key]['open'] === 1) if (isEmpty(session.boardPointers[key].modules) === false ) copy('session', key, 'open')
     }
     state.project.lastUpdated = new Date()
-    Max.outlet ("stateOut " + JSON.stringify(state, null, 4))
+    // Max.outlet ("stateOut " + JSON.stringify(state, null, 4))
+    Max.outlet('sendTo MSDP_State_Information_Out')
+    Max.outlet('sendGate 1')
+    Max.outlet(JSON.stringify(state, null, 4))
+    Max.outlet('sendGate 0')
     return
   }
   else if (type === 'system') { //export system info
@@ -295,11 +299,18 @@ const importer = (type, path) => { // system, project, backup
   log(`JSON read ${path}`)
   if (type === 'system'){
     state.system = clone
+    if (state.system.dev === true) {Max.outlet ("dev 1")}
     Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
     if (typeof state.system.defaultSettings == "undefined") {
       state.system.defaultSettings = state.system.settings
       delete state.system.settings
     }
+  }
+  else if (type === 'backup'){ // load a saved project
+    session.sessionBoards = [];
+    session.boardPointers = {};
+    msdp.project = clone;
+    log(1, 'last save ' + msdp.project.title + ' loaded');
   }
   else if (type === 'project'){
     session.sessionBoards = [], session.boardPointers = {}
