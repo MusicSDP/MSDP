@@ -5,7 +5,7 @@
 	"Filters" : [ "--- Effects & Filters ---", "Chorus", "Comb", "Convolve", "cREepVERB", "DegraderDrive", "Distortion", "Echo", "Filter Shaper", "Flanger", "FreeVerb", "Gater", "GigaVerb", "Moog Ladder Low Pass", "Morphing Filter", "Pan Machine", "Pitch Shift 2", "Pitch Shift", "RM_AM", "ReTuner", "Resonant Filter", "Reverb", "Signal Delay", "Stereo Echo", "VST Effect" ],
 	"Buffer Effects" : [ "--- Buffer Effects ---", "Buffer Board", "Chopper", "Chopper 2", "Crash & Burn", "Crash Override", "File Granulator", "File Scratcher", "Glitch Pad", "IR Convolution", "Live Granulator", "Live Scratcher", "Looper 2", "Looper" ],
 	"MIDI Tools" : [ "--- MIDI Tools ---", "EZ MIDI Player", "MIDI Editor", "MIDI Explorer", "MIDI Recorder" ],
-	"Video" : [ "Video", "-- REMOVE MODULE --", "2-Video Mix", "4-Video Mix", "Bricosa Filter", "Camera Capture", "ColorToner", "EZ Video Player", "Fractals", "GlitchBox", "MoshFlow", "Projector", "Scanner", "Slider", "VBitCrush", "VDelay", "VGate", "VS-WFG-2", "VS-WFG-Radial", "VS-WFG-Shapes" ],
+	"Video" : [ "Video", "-- REMOVE MODULE --", "2-Video Mix", "4-Video Mix", "Bricosa Filter", "Camera Capture", "ColorToner", "EZ Video Player", "Fractals", "GlitchBox", "MoshFlow", "Projector", "Scanner", "Slider", "Video File Player", "VBitCrush", "VDelay", "VGate", "VS-WFG-2", "VS-WFG-Radial", "VS-WFG-Shapes" ],
 	"Utilities" : [ "--- Utilities ---", "4-Channel Out", "8-Channel Out","16-Channel Out", "MIDI Splitter", "Meta-Box", "Signal Hub", "Signal Recorder", "Signal Splitter", "Signal-to-MIDI", "SpectroView" ],
 	"3rd Party" : [ "--- 3rd Party Modules ---" ]
 }
