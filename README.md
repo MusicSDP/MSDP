@@ -1,22 +1,22 @@
 # The Music and Sound Design Platform (Music\_SDP)
 
-Music\_SDP (also referred to as MSDP) is a free and open-source platform for the performance and creation of live electronic and electroacoustic music, built in **Max 7**. Our project's goal is to provide powerful and meaningful tools for live audio generation and manipulation using a modular structure that can be expanded to fit the needs of any type of musical performance. Music\_SDP is available as an application for both Windows and MacOS, and can be downloaded [here.](http://www.musicsdp.com/download-music-sdp/) The git repository includes all of the source code to open the program in [Max 7](http://www.cycling74.com) and this README will explain how to setup and explore the software.
+Music\_SDP (also referred to as MSDP) is a free and open-source platform for the performance and creation of live electronic and electroacoustic music, built in **Max 8**. Our project's goal is to provide powerful and meaningful tools for live audio generation and manipulation using a modular structure that can be expanded to fit the needs of any type of musical performance. Music\_SDP is available as an application for both Windows and MacOS, and can be downloaded [here.](http://www.musicsdp.com/download-music-sdp/) The git repository includes all of the source code to open the program in [Max 8](http://www.cycling74.com) and this README will explain how to setup and explore the software.
 
 ## Quickstart
 
 
 In order to run the Music\_SDP source code, you must have the latest 64-bit version of **Max 7** installed, and you should install the included custom fonts to ensure UI compatibility. You'll also want to make a modification to the **Max 7** preferences window, disabling "Restore Windows on Launch."
 
-1. Install the latest version of [Max 7 64-bit.](www.cycling74.com) 
-  * In Windows, there is a separate download for the 64-bit version of **Max 7**. 
+1. Install the latest version of [Max 8 64-bit.](www.cycling74.com) 
+  * In Windows, there is a separate download for the 64-bit version of **Max 8**. 
   
-  * **Max 7** for MacOS includes the option to switch between 32-bit mode and 64-bit mode. Right click on the **Max 7** application file and select _Get Info._ With the information panel open, look for the _Open in 32-bit mode_ option and make sure that it is de-selected.
+  * **Max 8** for MacOS includes the option to switch between 32-bit mode and 64-bit mode. Right click on the **Max 8** application file and select _Get Info._ With the information panel open, look for the _Open in 32-bit mode_ option and make sure that it is de-selected.
   
 2. Clone (or download and uncompress the zip of) the Music\_SDP source code. 
 
 3. In the root Music\_SDP folder, look for the included _fonts_ folder. This contains all of the open-source google font files used by the MSDP user interface. Install all of the fonts before attempting to run Music\_SDP.
 
-4. Before opening Music\_SDP for the first time, you'll need to make one modification to your **Max 7** preferences. Open Max, navigate to the Preferences window, then ensure that _Restore Windows on Launch_ is deselected. Close the preferences window to save this state, then close out of **Max 7**.
+4. Before opening Music\_SDP for the first time, you'll need to make one modification to your **Max 8** preferences. Open Max, navigate to the Preferences window, then ensure that _Restore Windows on Launch_ is deselected. Close the preferences window to save this state, then close out of **Max 8**.
 
 5. Back in the root MSDP directory, double click the _\_Music\_SDP.maxpat_ file to open Max and launch MSDP.
 
