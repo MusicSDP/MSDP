@@ -327,6 +327,12 @@ const importer = (type, path) => { // system, project, backup
     log(`JSON read ${path}`)
     if (type === 'system'){
       state.system = clone
+      if (state.system.appState.major === 1 ) {
+        let uName = state.system.uName
+        state.system = require('defaultSystem.json')
+        state.system.uName = uName
+        exporter('system', path)
+      }
       if (state.system.dev === true) {Max.outlet ("dev 1")}
       Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
       if (typeof state.system.defaultSettings == "undefined") {
