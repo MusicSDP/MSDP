@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "adm-zip": "^0.4.13",
+    "axios": "^0.18.0",
     "file-api": "^0.10.4",
     "uuid": "^3.3.2"
   }
