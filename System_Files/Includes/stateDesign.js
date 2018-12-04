@@ -13,6 +13,7 @@ state.project = require('defaultProject.json')
 let session = { "sessionBoards": [], "boardPointers": {} }
 
 // collection of Max handlers - messages from Max that run functions
+// Max.addHandler("updateCheck", () => {updateCheck()})
 Max.addHandler("add", (type, v, v2) => {add(type, v, v2)})
 Max.addHandler("remove", (type, v, v2) => {remove(type, v, v2)})
 Max.addHandler("update", (type, v, v2, v3, v4, v5) => {update(type, v, v2, v3, v4, v5)})
@@ -322,22 +323,37 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
 
 const importer = (type, path) => { // system, project, backup
   try {
-    let clone = require(path)
-    // let clone = JSON.parse(fs.readFileSync(path));
+    let clone = require(path) // should check if exists, if not, make
     log(`JSON read ${path}`)
     if (type === 'system'){
-      state.system = clone
-      if (state.system.appState.major === 1 ) {
-        let uName = state.system.uName
-        state.system = require('defaultSystem.json')
-        state.system.uName = uName
-        exporter('system', path)
+      if (fs.existsSync(path)) {
+        state.system = clone
+        if (state.system.appState.major === 1 ) {
+          let uName = state.system.uName
+          state.system = require('defaultSystem.json')
+          state.system.uName = uName
+          exporter('system', path)
+        }
+        if (state.system.dev === true) {Max.outlet ("dev 1")}
+        if (state.system.autoUpdate === null) { // if auto update hasn't been set
+          Max.outlet('sendTo MSDP_AutoUpdate_Window_Confirm')
+          Max.outlet('sendGate 1')
+          Max.outlet('open')
+          Max.outlet('sendGate 0')
+        }
+        Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
+        if (typeof state.system.defaultSettings == "undefined") {
+          state.system.defaultSettings = state.system.settings
+          delete state.system.settings
+        }
       }
-      if (state.system.dev === true) {Max.outlet ("dev 1")}
-      Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
-      if (typeof state.system.defaultSettings == "undefined") {
-        state.system.defaultSettings = state.system.settings
-        delete state.system.settings
+      else { // if not initialized, make system file
+        state.system = require('defaultSystem.json')
+        exporter('system', path)
+        Max.outlet('sendTo MSDP_AutoUpdate_Window_Confirm')
+        Max.outlet('sendGate 1')
+        Max.outlet('open')
+        Max.outlet('sendGate 0')
       }
     }
     else if (type === 'backup'){ // load a saved project
