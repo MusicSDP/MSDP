@@ -335,12 +335,7 @@ const importer = (type, path) => { // system, project, backup
           exporter('system', path)
         }
         if (state.system.dev === true) {Max.outlet ("dev 1")}
-        if (state.system.autoUpdate === null) { // if auto update hasn't been set
-          Max.outlet('sendTo MSDP_AutoUpdate_Window_Confirm')
-          Max.outlet('sendGate 1')
-          Max.outlet('open')
-          Max.outlet('sendGate 0')
-        }
+        if (state.system.autoUpdate === null) { ["sendTo MSDP_AutoUpdate_Window_Confirm", "sendGate 1", "open", "sendGate 0" ].map(Max.outlet) }
         Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
         if (typeof state.system.defaultSettings == "undefined") {
           state.system.defaultSettings = state.system.settings
@@ -350,10 +345,7 @@ const importer = (type, path) => { // system, project, backup
       else { // if not initialized, make system file
         state.system = require('defaultSystem.json')
         exporter('system', path)
-        Max.outlet('sendTo MSDP_AutoUpdate_Window_Confirm')
-        Max.outlet('sendGate 1')
-        Max.outlet('open')
-        Max.outlet('sendGate 0')
+        ["sendTo MSDP_AutoUpdate_Window_Confirm", "sendGate 1", "open", "sendGate 0" ].map(Max.outlet)
       }
     }
     else if (type === 'backup'){ // load a saved project
