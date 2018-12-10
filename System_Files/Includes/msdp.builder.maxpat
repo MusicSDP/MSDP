@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 186.0, 225.0, 1108.0, 538.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 40.0, 123.0, 1392.0, 878.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +45,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 740.0, 18.0, 130.0, 22.0 ],
-					"style" : "",
 					"text" : "bgcolor 0.09 0.1 0.1 1."
 				}
 
@@ -59,7 +59,6 @@
 					"patching_rect" : [ 614.5, 241.0, 113.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 39.0, 115.0, 21.0 ],
-					"style" : "",
 					"text" : "1. Make Selection"
 				}
 
@@ -72,7 +71,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 197.5, 140.0, 72.0, 22.0 ],
-					"style" : "",
 					"text" : "loadmess 0"
 				}
 
@@ -85,7 +83,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 49.0, 104.0, 454.0, 22.0 ],
-					"style" : "",
 					"text" : "loadmess set Select a desired MSDP object\\, collection\\, or kit and then click 'Create'"
 				}
 
@@ -101,7 +98,6 @@
 					"patching_rect" : [ 539.0, 490.0, 385.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.5, 0.0, 332.5, 35.0 ],
-					"style" : "",
 					"text" : "MSDP Builder Tool",
 					"textjustification" : 1
 				}
@@ -120,7 +116,6 @@
 					"patching_rect" : [ 71.0, 172.0, 111.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 90.0, 111.0, 22.0 ],
-					"style" : "",
 					"text" : "2. Create"
 				}
 
@@ -136,17 +131,17 @@
 					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
+					"fontname" : "Lato",
 					"id" : "obj-112",
-					"items" : [ "--", 1.0, "Select", "--", ",", "--", "UI", "+", "Param--", ",", "msdp.dial.1", ",", "msdp.dial.1s", ",", "msdp.dial.1xs", ",", "msdp.dial.2", ",", "msdp.dial.2s", ",", "msdp.dial.3", ",", "msdp.dial.3s", ",", "textbutton-click", ",", "textbutton-toggle", ",", "number" ],
+					"items" : [ "--", 1.0, "Select", "--", ",", "--", "UI", "+", "Param--", ",", "msdp.ui.dial", ",", "msdp.ui.dial.small", ",", "msdp.ui.dial.xs", ",", "msdp.ui.keyboard", ",", "msdp.ui.outputs.vertical", ",", "msdp.ui.outputs.horizontal", ",", "msdp.ui.input", ",", "msdp.ui.vInput", ",", "msdp.ui.vOutput", ",", "textbutton-click", ",", "textbutton-toggle", ",", "number" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 197.5, 172.0, 202.0, 22.0 ],
+					"patching_rect" : [ 197.5, 172.0, 202.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.0, 60.0, 115.0, 22.0 ],
-					"style" : ""
+					"presentation_rect" : [ 14.0, 60.0, 115.0, 23.0 ]
 				}
 
 			}
@@ -158,7 +153,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 49.0, 380.0, 74.0, 22.0 ],
-					"style" : "",
 					"text" : "prepend set"
 				}
 
@@ -171,11 +165,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.0, 426.0, 114.0, 78.0 ],
+					"patching_rect" : [ 49.0, 426.0, 112.0, 78.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 137.0, 39.0, 114.0, 78.0 ],
-					"style" : "",
+					"presentation_rect" : [ 137.0, 39.0, 112.0, 78.0 ],
 					"text" : "Select a desired MSDP object, collection, or kit and then click 'Create'"
 				}
 
@@ -187,8 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 879.0, 18.0, 175.0, 379.0 ],
-					"style" : "",
+					"patching_rect" : [ 879.0, 18.0, 175.0, 382.0 ],
 					"text" : "\"Standard\" MSDP UI objects\n\nDial1 - DONE\nDial1s - DONE\nDial1xs - DONE\nDial2 - DONE\nDial2s - DONE\nDial3 - DONE\nDial3s - DONE\ntextbox\nbutton\ntoggle\nclickbutton - DONE\ntogglebutton - DONE\nnumber - DONE\numenu\n\nMSDP object \"kits\"\nrequiredCode\nkeyboard\naudioFileIn\nmidiFileIn\npluginFileIn\nrouteIn\nrouteOut\nrhythmSystem\naudioOutSystem\n"
 				}
 
@@ -209,8 +201,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ -0.5, 0.0, 332.5, 128.0 ],
 					"proportion" : 0.39,
-					"rounded" : 0,
-					"style" : ""
+					"rounded" : 0
 				}
 
 			}
@@ -222,7 +213,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 294.0, 206.0, 119.0, 22.0 ],
-					"style" : "",
 					"text" : "prepend objectMake"
 				}
 
@@ -240,7 +230,6 @@
 						"parameter_enable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "js builderBase.js"
 				}
 
@@ -253,7 +242,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 117.0, 232.0, 196.0, 22.0 ],
-					"style" : "",
 					"text" : "objectMake -- 1. Select --"
 				}
 
@@ -266,7 +254,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 117.0, 295.5, 73.0, 22.0 ],
-					"style" : "",
 					"text" : "fromsymbol"
 				}
 
@@ -338,7 +325,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "builderBase.js",
-				"bootpath" : "~/Documents/GitHub/Music_SDP_Files/In-Progress",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
