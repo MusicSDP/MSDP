@@ -1,15 +1,25 @@
-
+//comment lines 2-4 out when building the parcel package. Then copy-paste the lines into the beginning of the package
+const Max = require('max-api')
 const path = require('path')
 const fs = require('fs')
-const Max = require('max-api')
 const uuidv1 = require('uuid/v1')
 
 let debug = false
-let log= (output) => { if (debug) Max.post(output) }
-
-let state = {}
-state.system = require('defaultSystem.json')
-state.project = require('defaultProject.json')
+let log = (output) => { if (debug) Max.post(output) }
+let defaultSystem = {
+  "uName": null,
+  "appState": { "major": null, "minor": null, "revision": null, "state": null },
+  "os": "Windows", "autoUpdate": null, "vidFPS": 2, "recFPS": 1,
+  "io": { "driver": null, "in": null, "out": null, "sampleRate": null, "ioVector": null, "sigVector": null },
+  "defaultSettings": { "dac": 1, "limiter": 1, "volume": 127, "fullScreen": 1, "metroTog": 1, "bpm": 120, "showBoards": 1, "initEvent": 0, "keyboardMIDI": false, "keyOctave": 4, "recType": 0, "vWidth": 320, "vHeight": 320, "vChan": 1 }
+}
+let state = {
+  system: defaultSystem,
+  project: {
+    "title": null, "created": null, "lastOpened": null, "lastUpdated" : null, "path": null, "settings": {}, "openBoards": [], "savedBoards": [],
+    "systemBoard": {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 0,"customDiv": 5}, "virtualControllers": {"keyboard": 0,"slider": 0,"pads": 0}}
+  }
+}
 let session = { "sessionBoards": [], "boardPointers": {} }
 
 // collection of Max handlers - messages from Max that run functions
@@ -271,7 +281,7 @@ const getFromMax = (type, v, v2) => { // data from state to max
 }
 
 const exporter = (type, v1, v2) => { // system, project, backup, analytics
-  try {
+  // try {
     let path, output
     if (type === 'home') { //send all information out
       Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
@@ -317,8 +327,8 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
     if (fileCheck == 1) fs.unlinkSync(path)
     fs.renameSync(path+".temp", path)
     log(`JSON write ${path}`)
-  }
-  catch(error){ log(error) }
+  // }
+  // catch(error){ log(error) }
 }
 
 const importer = (type, path) => { // system, project, backup
@@ -330,7 +340,7 @@ const importer = (type, path) => { // system, project, backup
         state.system = clone
         if (state.system.appState.major === 1 ) {
           let uName = state.system.uName
-          state.system = require('defaultSystem.json')
+          state.system = defaultSystem
           state.system.uName = uName
           exporter('system', path)
         }
@@ -343,7 +353,7 @@ const importer = (type, path) => { // system, project, backup
         }
       }
       else { // if not initialized, make system file
-        state.system = require('defaultSystem.json')
+        state.system = defaultSystem
         exporter('system', path)
         ["sendTo MSDP_AutoUpdate_Window_Confirm", "sendGate 1", "open", "sendGate 0" ].map(Max.outlet)
       }
