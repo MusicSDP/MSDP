@@ -1,15 +1,16 @@
-//comment lines 2-4 out when building the parcel package. Then copy-paste the lines into the beginning of the package
+//comment lines 2-4 out when building the parcel package. Then copy-paste the lines into the beginning of the distribution package
 const Max = require('max-api')
 const path = require('path')
 const fs = require('fs')
 const uuidv1 = require('uuid/v1')
+const axios = require('axios')
+const AdmZip = require('adm-zip')
 
 let debug = false
 let log = (output) => { if (debug) Max.post(output) }
 let defaultSystem = {
-  "uName": null,
+  "uName": null, "os": "Windows", "autoUpdate": null, "vidFPS": 2, "recFPS": 1,
   "appState": { "major": null, "minor": null, "revision": null, "state": null },
-  "os": "Windows", "autoUpdate": null, "vidFPS": 2, "recFPS": 1,
   "io": { "driver": null, "in": null, "out": null, "sampleRate": null, "ioVector": null, "sigVector": null },
   "defaultSettings": { "dac": 1, "limiter": 1, "volume": 127, "fullScreen": 1, "metroTog": 1, "bpm": 120, "showBoards": 1, "initEvent": 0, "keyboardMIDI": false, "keyOctave": 4, "recType": 0, "vWidth": 320, "vHeight": 320, "vChan": 1 }
 }
@@ -20,6 +21,7 @@ let state = {
     "systemBoard": {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 0,"customDiv": 5}, "virtualControllers": {"keyboard": 0,"slider": 0,"pads": 0}}
   }
 }
+
 let session = { "sessionBoards": [], "boardPointers": {} }
 
 // collection of Max handlers - messages from Max that run functions
@@ -40,6 +42,40 @@ Max.addHandler("sessionOut", () => { // send session dict to dict viewer patch
   ["sendTo MSDP_View_Dict_Session", "sendGate 1", JSON.stringify(session, null, 4), "sendGate 0" ].map(Max.outlet);
 });
 Max.addHandler("debug", (v) => {debug = v; Max.post(`debug mode ${v}`)});
+Max.addHandler("updateCheck", (path) => { updateCheck(path) })
+
+const updateCheck = (path) => { // updater code goes here
+  try {
+    const os = require('os').platform() // darwin | win32
+    let syspath = path
+    log('this is path ' + syspath)
+    let localVersion = JSON.stringify(state.system.appState.major) + '.' + JSON.stringify(state.system.appState.minor) + '.' + JSON.stringify(state.system.appState.revision)
+    log('this is version ' + localVersion)
+    const targetRoot = (os === 'darwin') ? '/tmp/msdp/test' : '/tmp/msdp/test'
+    const msdpRoot = 'https://s3.amazonaws.com/msdpautoupdatetest'
+    const msdpFile = `${msdpRoot}/music_sdp.${os}.zip`, hashFile = 'music_sdp.hash'
+    const updateSet = state.system.autoUpdate
+    const updater = async _ => {
+      const res = await axios.get(`${msdpRoot}/${hashFile}`)
+      const hash = res.data.toString().trim()
+      if (! ( hash === localVersion )) {
+        log("update found")
+        if ( updateSet === 1 ) {
+          const res = await axios.get(msdpFile, {responseType: 'arraybuffer'})
+          new AdmZip(res.data).extractAllTo(syspath, true)
+          log('update confirmed')
+          // fs.writeFileSync(`${targetRoot}/${hashFile}`, hash, 'utf8')
+        }
+        else { log('autoSet off') }
+        // send command back to MSDP to initialize update ask
+      }
+      else { log('program is already up-to-date') }
+    }
+    log("checking for update")
+    updater()
+  }
+  catch(error) { log(error) }
+}
 
 const newProject = (title, path) => { // blank out project and session dictionaries to begin new project
   try {
