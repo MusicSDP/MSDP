@@ -51,8 +51,8 @@ const updateCheck = (path) => { // updater code goes here
     log('this is path ' + syspath)
     let localVersion = JSON.stringify(state.system.appState.major) + '.' + JSON.stringify(state.system.appState.minor) + '.' + JSON.stringify(state.system.appState.revision)
     log('this is version ' + localVersion)
-    const targetRoot = (os === 'darwin') ? '/tmp/msdp/test' : '/tmp/msdp/test'
-    const msdpRoot = 'http://musicsdp.com/download'
+    // const targetRoot = (os === 'darwin') ? '/tmp/msdp/test' : '/tmp/msdp/test'
+    const msdpRoot = 'http://musicsdp.netlify.com/download'
     const msdpFile = `${msdpRoot}/music_sdp.${os}.zip`, hashFile = 'music_sdp.hash'
     const updateSet = state.system.autoUpdate
     const updater = async _ => {
