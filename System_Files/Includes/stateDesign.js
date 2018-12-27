@@ -10,8 +10,8 @@ const axios = require('axios')
 const AdmZip = require('adm-zip')
 
 // required info
+let debug = false
 const os = require('os').platform() // darwin | win32
-let debug = true
 let log = (output) => { if (debug) Max.post(output) }
 let defaultSystem = {
   "uName": null, "os": "Windows", "autoUpdate": null, "vidFPS": 2, "recFPS": 1,
@@ -27,6 +27,7 @@ let state = {
   }
 }
 let session = { "sessionBoards": [], "boardPointers": {} }
+let backupState, backupSession
 
 // collection of Max handlers - messages from Max that run functions
 Max.addHandler("add", (type, v, v2) => {add(type, v, v2)})
@@ -48,8 +49,25 @@ Max.addHandler("debug", (v) => {debug = v; Max.post(`debug mode ${v}`)});
 Max.addHandler("updateCheck", (path) => { updateCheck(path) })
 Max.addHandler("updateDL", (dlpath) => { updateDL(dlpath) })
 Max.addHandler("startUpdate", (dlpath) => { startUpdate(dlpath) })
+Max.addHandler("stateRecover", () => { stateRecover() })
+Max.addHandler("updateBackups", () => { updateBackups() })
 Max.addHandler("crash", () => { crash() })
 // begin function definitions
+const stateRecover = () => {
+  const getBackupDicts = async _ => {
+    try {
+      state = await Max.getDict('msdpState');
+      session = await Max.getDict('msdpSession');
+      log('dump backup info')
+    } catch (err) {log('did not grab backups')}
+  }
+  getBackupDicts()
+}
+const updateBackups = () => {
+  Max.setDict('msdpState', state)
+  Max.setDict('msdpSession', session)
+}
+
 const updateCheck = (path) => { // updater code goes here
   try {
     const updateRequest = () => {
@@ -80,7 +98,6 @@ const updateCheck = (path) => { // updater code goes here
   }
   catch(error) { log(error) }
 }
-
 const updateDL = (dlpath) => {
   try {
     log('beginning download')
@@ -107,7 +124,6 @@ const updateDL = (dlpath) => {
   }
   catch(error) { log(error) }
 }
-
 const startUpdate = (dlpath) => {
   try {
     function resolveAfter5Seconds() {
@@ -150,6 +166,7 @@ const newProject = (title, path) => { // blank out project and session dictionar
     getFromMax("pSettings");
     ["sendTo MSDP_newboard_load", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet);
     ["sendTo MSDP_System_Board_Audio_Path", 'sendGate 1', 'bang', 'sendGate 0'].map(Max.outlet);
+    updateBackups()
   }
   catch(error) { log(error) }
 }
@@ -160,9 +177,11 @@ const loadProject = (path) => { // load the project state
     getFromMax("list", "savedBoards")
     getFromMax("list", "openBoards"); // for some reason, removing the semi-colon here breaks everything!
     ['sendTo MSDP_System_Board_Audio_Path', 'sendGate 1', 'bang', 'sendGate 0'].map(Max.outlet)
+    updateBackups()
   }
   catch(error) { log(error) }
 }
+
 const add = (type, v, v2) => { // named boards, modules, assets
   try {
     var rand = bigRandStr();
@@ -183,6 +202,7 @@ const add = (type, v, v2) => { // named boards, modules, assets
       state.project.assets[v].push(v2)
       log(` ${v2} added to the ${v} list`)
     }
+    updateBackups()
   }
   catch(error) { log(error) }
 }
@@ -210,6 +230,7 @@ const remove = (type, v, v2) => { // named boards, modules, assets
       }
       log(`${asset} in ${type} not found`)
   }
+  updateBackups()
 }
 
 const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
@@ -226,6 +247,7 @@ const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
         Object.defineProperty(session.boardPointers, v3, Object.getOwnPropertyDescriptor(session.boardPointers, v))
         delete session.boardPointers[v]
         session.boardPointers[v3].proto = v3
+        updateBackups()
       }
       session.sessionBoards[i][v2] = v3;
       log(`board ${v} ${v2} set to ${v3}`);
@@ -236,11 +258,13 @@ const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
       if (v3 === 'id') session.boardPointers[v]['modules'][v2]['id'] = v4
       session.sessionBoards[i].modules[i2][v3] = v4
       log(`module ${v2} on board ${v} value ${v3} set to ${v4}`)
+      updateBackups()
     }
     else if (type === 'parameter'){ // update a parameter in a module on a board
       var i = session.boardPointers[v]['index']
       var i2 = session.boardPointers[v]['modules'][v2]['index']
       session.sessionBoards[i]['modules'][i2]['parameters'][v3] = v4
+      updateBackups()
     }
   }
   catch(error) {
@@ -315,6 +339,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
       session.sessionBoards.push(clone)
       log(`Board ${clone.title} added to session`)
     }
+    updateBackups()
   }
   catch(error) {
     log(error)
@@ -372,6 +397,7 @@ const getFromMax = (type, v, v2) => { // data from state to max
       }
       log(`${v2} not found`);
     }
+    updateBackups()
   }
   catch(error) {
     log(error)
@@ -406,7 +432,7 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
     else if (type === 'project') { //export project info
       state.project.openBoards = []
       for (let key in session.boardPointers) {
-        if (session.boardPointers.hasOwnProperty(key)) if (session.boardPointers[key].open === 1) if (isEmpty(session.boardPointers[key].modules) === false ) copy('session', key, 'open')
+        if (session.boardPointers.hasOwnProperty(key)) if (session.boardPointers[key].open === 1) if (session.boardPointers[key] != null) if (isEmpty(session.boardPointers[key].modules) === false ) copy('session', key, 'open')
       }
       state.project.lastUpdated = new Date()
       path = v1
