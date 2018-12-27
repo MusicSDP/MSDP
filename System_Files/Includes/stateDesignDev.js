@@ -1,12 +1,17 @@
-//comment lines 2-4 out when building the parcel package. Then copy-paste the lines into the beginning of the distribution package
+// comment lines 2-5 out when building the parcel package. Then copy-paste the lines into the beginning of the distribution package
 const Max = require('max-api')
 const path = require('path')
 const fs = require('fs')
+var exec = require('child_process')
+// external node packages need to be compiled into a single file using parcel
+const dmg = require('dmg')
 const uuidv1 = require('uuid/v1')
 const axios = require('axios')
 const AdmZip = require('adm-zip')
 
-let debug = false
+// required info
+const os = require('os').platform() // darwin | win32
+let debug = true
 let log = (output) => { if (debug) Max.post(output) }
 let defaultSystem = {
   "uName": null, "os": "Windows", "autoUpdate": null, "vidFPS": 2, "recFPS": 1,
@@ -21,11 +26,9 @@ let state = {
     "systemBoard": {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 0,"customDiv": 5}, "virtualControllers": {"keyboard": 0,"slider": 0,"pads": 0}}
   }
 }
-
 let session = { "sessionBoards": [], "boardPointers": {} }
 
 // collection of Max handlers - messages from Max that run functions
-// Max.addHandler("updateCheck", () => {updateCheck()})
 Max.addHandler("add", (type, v, v2) => {add(type, v, v2)})
 Max.addHandler("remove", (type, v, v2) => {remove(type, v, v2)})
 Max.addHandler("update", (type, v, v2, v3, v4, v5) => {update(type, v, v2, v3, v4, v5)})
@@ -43,31 +46,30 @@ Max.addHandler("sessionOut", () => { // send session dict to dict viewer patch
 });
 Max.addHandler("debug", (v) => {debug = v; Max.post(`debug mode ${v}`)});
 Max.addHandler("updateCheck", (path) => { updateCheck(path) })
+Max.addHandler("updateDL", (dlpath) => { updateDL(dlpath) })
+Max.addHandler("startUpdate", (dlpath) => { startUpdate(dlpath) })
 
+// begin function definitions
 const updateCheck = (path) => { // updater code goes here
+  log(`The parent process is pid ${process.ppid}`)
   try {
-    const os = require('os').platform() // darwin | win32
-    let syspath = path
-    log('this is path ' + syspath)
+    let dlpath = path
+    log('download path is ' + dlpath)
     let localVersion = JSON.stringify(state.system.appState.major) + '.' + JSON.stringify(state.system.appState.minor) + '.' + JSON.stringify(state.system.appState.revision)
     log('this is version ' + localVersion)
-    // const targetRoot = (os === 'darwin') ? '/tmp/msdp/test' : '/tmp/msdp/test'
-    const msdpRoot = 'http://musicsdp.netlify.com/download'
-    const msdpFile = `${msdpRoot}/music_sdp.${os}.zip`, hashFile = 'music_sdp.hash'
     const updateSet = state.system.autoUpdate
     const updater = async _ => {
-      const res = await axios.get(`${msdpRoot}/${hashFile}`)
+      const res = await axios.get('https://musicsdp.com/download/music_sdp.hash')
       const hash = res.data.toString().trim()
       if (! ( hash === localVersion )) {
         log("update found")
         if ( updateSet === 1 ) {
-          const res = await axios.get(msdpFile, {responseType: 'arraybuffer'})
-          new AdmZip(res.data).extractAllTo(syspath, true)
-          log('update confirmed')
-          // fs.writeFileSync(`${targetRoot}/${hashFile}`, hash, 'utf8')
+          updateDL(dlpath)
         }
-        else { log('autoSet off') }
-        // send command back to MSDP to initialize update ask
+        else {
+          log('auto-download off')
+          ["sendTo MSDP_Updater_Request", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet)   // send command back to MSDP to initialize update request
+        }
       }
       else { log('program is already up-to-date') }
     }
@@ -75,6 +77,47 @@ const updateCheck = (path) => { // updater code goes here
     updater()
   }
   catch(error) { log(error) }
+}
+
+const updateDL = (dlpath) => {
+  const requestInstall = () => {
+    ["sendTo MSDP_Install_Request", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet)   // send command back to MSDP to initialize update request
+  }
+  const downloader = async _ => {
+    const res = await axios.get(`https://musicsdp.com/download/music_sdp.${os}.zip`, {responseType: 'arraybuffer'})
+    new AdmZip(res.data).extractAllTo(dlpath, true)
+    requestInstall()
+    log('installer downloaded')
+  }
+  downloader()
+}
+
+const startUpdate = (dlpath) => {
+  function resolveAfter5Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(killApplication());
+    }, 5000);
+  });
+}
+  const killApplication = () => {
+    ["sendTo MSDP_Application_Kill", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet)   // send command to kill application
+  }
+  const updateLauncher = async _ => {
+    let installerName
+    if (os == 'darwin') { installerName = `${dlpath}/Install_Music_SDP.dmg` } else { installerName = `${dlpath}/InstallerDemo.exe` }
+    log(installerName)
+    if (os == 'darwin') {   // to open & mount the dmg
+      dmg.mount(installerName, function(err, path) {
+        log(fs.readdirSync(path));
+      });
+    }
+    else {
+      exec.exec(installerName)
+    }
+    await resolveAfter5Seconds()
+  }
+  updateLauncher()
 }
 
 const newProject = (title, path) => { // blank out project and session dictionaries to begin new project

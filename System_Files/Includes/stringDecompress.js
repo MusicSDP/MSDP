@@ -293,7 +293,7 @@ function decompressThis(s){
 
 outlets = 3;
 function loot(payload) {
-	outlet(0, lzw_encode(Base64.encode(payload)));
-	outlet(1, Base64.encode(payload));
-	outlet(2, Base64.decode(lzw_decode(lzw_encode(Base64.encode(payload)))));
+	outlet(0, Base64.encode(lzw_encode(payload)));
+	// outlet(1, Base64.encode(payload));
+	// outlet(2, Base64.decode(lzw_decode(lzw_encode(Base64.encode(payload)))));
 }
