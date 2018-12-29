@@ -4,14 +4,15 @@ const path = require('path')
 const fs = require('fs')
 var exec = require('child_process')
 // external node packages need to be compiled into a single file using parcel
-const dmg = require('dmg')
+const opn = require('opn');
 const uuidv1 = require('uuid/v1')
 const axios = require('axios')
 const AdmZip = require('adm-zip')
 
 // required info
-let debug = true
+let debug = false
 const os = require('os').platform() // darwin | win32
+const homedir = require('os').homedir()
 let log = (output) => { if (debug) Max.post(output) }
 let defaultSystem = {
   "uName": null, "os": "Windows", "autoUpdate": null, "vidFPS": 2, "recFPS": 1,
@@ -96,7 +97,10 @@ const updateCheck = (path) => { // updater code goes here
     log("checking for update")
     updater()
   }
-  catch(error) { log(error) }
+  catch(error) {
+    log(error)
+    informDLFail()
+  }
 }
 const updateDL = (dlpath) => {
   try {
@@ -105,10 +109,10 @@ const updateDL = (dlpath) => {
     const requestInstall = () => {
       ["sendTo MSDP_Install_Request", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet)   // send command back to MSDP to initialize update request
     }
-    const informDLFail = () => {
-      ["sendTo MSDP_DL_Failed", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet)   // send command back to MSDP to initialize update request
-    }
     const downloader = async _ => {
+      if (os == 'darwin') {
+      dlpath = `${homedir}/Downloads`
+      }
       try {
         const res = await axios.get(url, {responseType: 'arraybuffer'})
         new AdmZip(res.data).extractAllTo(dlpath, true)
@@ -137,13 +141,10 @@ const startUpdate = (dlpath) => {
       ["sendTo MSDP_Application_Kill", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet)   // send command to kill application
     }
     const updateLauncher = async _ => {
-      let installerName
-      if (os == 'darwin') { installerName = `${dlpath}/Install_Music_SDP.dmg` } else { installerName = `${dlpath}/InstallerDemo.exe` }
-      log(installerName)
+      let installerName = `${dlpath}/InstallerDemo.exe`
       if (os == 'darwin') {   // to open & mount the dmg
-        dmg.mount(installerName, function(err, path) {
-          log(fs.readdirSync(path));
-        });
+        installerName = `${homedir}/Downloads/music_sdp.darwin.dmg`
+        opn(installerName)
       }
       else {
         exec.exec(installerName)
@@ -152,9 +153,14 @@ const startUpdate = (dlpath) => {
     }
     updateLauncher()
   }
-  catch(error) { log(error) }
+  catch(error) {
+    informDLFail()
+    log(error)
+  }
 }
-
+const informDLFail = () => {
+  ["sendTo MSDP_DL_Failed", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet)   // send command back to MSDP to initialize update request
+}
 const newProject = (title, path) => { // blank out project and session dictionaries to begin new project
   try {
     state.project.title = title;
