@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 420.0, 175.0, 719.0, 809.0 ],
+		"rect" : [ 634.0, 150.0, 719.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -49,7 +49,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -85,12 +85,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 565.0, 273.0, 257.0, 22.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules\""
+									"patching_rect" : [ 565.0, 273.0, 232.0, 35.0 ],
+									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Video\""
 								}
 
 							}
@@ -125,7 +126,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "int" ],
-									"patching_rect" : [ 565.0, 305.0, 41.0, 22.0 ],
+									"patching_rect" : [ 565.0, 312.0, 41.0, 22.0 ],
 									"text" : "folder"
 								}
 
@@ -162,8 +163,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 298.0, 229.0, 257.0, 22.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules\""
+									"patching_rect" : [ 298.0, 229.0, 289.0, 22.0 ],
+									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Video\""
 								}
 
 							}
@@ -451,13 +452,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 67.0, 110.0, 830.0, 584.0 ],
+						"rect" : [ 570.0, 170.0, 830.0, 584.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -487,12 +488,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 565.0, 273.0, 257.0, 22.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules\""
+									"patching_rect" : [ 565.0, 273.0, 205.0, 35.0 ],
+									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Data\""
 								}
 
 							}
@@ -564,8 +566,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 298.0, 229.0, 257.0, 22.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules\""
+									"patching_rect" : [ 298.0, 229.0, 283.0, 22.0 ],
+									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Data\""
 								}
 
 							}
@@ -863,7 +865,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-10",
-					"items" : [ "Video", ",", "-- REMOVE MODULE --", ",", "--- Video ---", ",", "Camera Capture", ",", "Fractals", ",", "Projector", ",", "Slider", ",", "VGate", ",", "VS-Waveform Synthesis" ],
+					"items" : [ "Video", ",", "-- REMOVE MODULE --", ",", "--- Sources ---", ",", "Camera Capture", ",", "EZ Video Player", ",", "Video File Player", ",", "VS-Camera-FM", ",", "--- Generators ---", ",", "VS-WFG-2", ",", "VS-WFG-Radial", ",", "VS-WFG-Shapes", ",", "--- Tools and Effects ---", ",", "2-Video Mix", ",", "4-Video Mix", ",", "Bricosa Filter", ",", "ColorToner", ",", "Fractals", ",", "GlitchBox", ",", "Kaleidoscope", ",", "MoshFlow", ",", "Scanner", ",", "Sketch", ",", "Slider", ",", "Trace", ",", "VBitCrush", ",", "VDelay", ",", "VGate", ",", "VS-3-Mix", ",", "--- Output ---", ",", "Projector" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -892,7 +894,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-9",
-					"items" : [ "Data", ",", "-- REMOVE MODULE --", ",", "--- Control ---", ",", "Controller Mapper", ",", "Automator", ",", "LFO Automator", ",", "Metronome Automator", ",", "MIDI Arp", ",", "MIDI Sequencer", ",", "Randomator", ",", "Score Automator", ",", "Signal Automator", ",", "Stochastic Controller", ",", "VST Controller", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder" ],
+					"items" : [ "Data", ",", "-- REMOVE MODULE --", ",", "--- Note Generators ---", ",", "MIDI Arp", ",", "MIDI Sequencer", ",", "--- Control ---", ",", "Controller Mapper", ",", "Automator", ",", "LFO Automator", ",", "Metronome Automator", ",", "Randomator", ",", "Score Automator", ",", "Signal Automator", ",", "Stochastic Controller", ",", "VST Controller", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder", ",", "MIDI Splitter", ",", "Signal-to-MIDI" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -954,7 +956,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -990,12 +992,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 565.0, 273.0, 257.0, 22.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules\""
+									"patching_rect" : [ 565.0, 273.0, 205.0, 35.0 ],
+									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Sound\""
 								}
 
 							}
@@ -1067,8 +1070,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 298.0, 229.0, 257.0, 22.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules\""
+									"patching_rect" : [ 298.0, 229.0, 293.0, 22.0 ],
+									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Sound\""
 								}
 
 							}
@@ -1405,7 +1408,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-26",
-					"items" : [ "Sound", ",", "-- REMOVE MODULE --", ",", "--- Audio Tools ---", ",", "Audio File Player", ",", "Compressor", ",", "EZ Audio Player", ",", "Signal-In Control", ",", "Studio EQ", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Subtractive", ",", "Vocoder", ",", "Wavetable Synth", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "cREepVERB", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "FreeVerb", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "Stereo Echo", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "IR Convolution", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- Utilities ---", ",", "4-Channel Out", ",", "8-Channel Out", ",", "16-Channel Out", ",", "MIDI Splitter", ",", "Meta-Box", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "Signal-to-MIDI", ",", "SpectroView" ],
+					"items" : [ "Sound", ",", "-- REMOVE MODULE --", ",", "--- Audio Tools ---", ",", "Audio File Player", ",", "Compressor", ",", "EZ Audio Player", ",", "Signal-In Control", ",", "Studio EQ", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Subtractive", ",", "Vocoder", ",", "Wavetable Synth", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "cREepVERB", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "FreeVerb", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "Stereo Echo", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "IR Convolution", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- Utilities ---", ",", "4-Channel Out", ",", "8-Channel Out", ",", "16-Channel Out", ",", "Meta-Box", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "SpectroView", ",", "Synthesizer_Template.maxpat" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
