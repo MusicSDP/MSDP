@@ -1,14 +1,12 @@
-MSDP_MESSAGE Important Performer Messages can be found here.;
+// Any messages placed in event number 0 will be loaded when the score is loaded or when the saved score module opens again.
 0;
-MSDP_MESSAGE This is a test message. This is only a test message;
-MSDP_COMMENT This is a test comment. This is only a test comment;
-MSDP_DScore p2 1, p5 10, p1 bang;
-MSDP_RScore p6 5, p2 0, p3 1, p1 bang;
-MSDP_Score p4 0, p5 60;
+//The message below sets a theoretical chorus pedal to a volume (parameter 3) of 0, then it sets the value to 1.0 and has that value ramp up over 200 milliseconds / 2 seconds. It also sets a delay time of 100ms;
+ChorusModule p3 0, p3 1.0 2000, p4 100;
+//The message below can be used to set the score module to trigger the next event when the metronome reaches measure 3, beat 2, tick 2, and sets the subdivision to triplets. This will be the time when event 2 starts.
+ScoreModule p7 2, p8 3 2 2 triplets;
 1;
-Test p4 0, p4 10 10000;
-MSDP_Score p4 0, p5 62;
-MSDP_RScore p3 0;
+//The message below can be used to set the score module to trigger the next event when the metro clock reached hour 0, minute 5, second 12. This will be the time when event 3 is triggered.
+ScoreModule p7 3, p8 0 5 12;
 2;
 Test p4 10, p4 0 10000;
 MSDP_Score p4 0, p5 64;
