@@ -212,7 +212,7 @@ const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
         Object.defineProperty(session.boardPointers, v3, Object.getOwnPropertyDescriptor(session.boardPointers, v))
         delete session.boardPointers[v]
         session.boardPointers[v3].proto = v3
-        backupDicts()
+        // backupDicts()
       }
       session.sessionBoards[i][v2] = v3;
       log(`board ${v} ${v2} set to ${v3}`);
@@ -223,13 +223,13 @@ const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
       if (v3 === 'id') session.boardPointers[v]['modules'][v2]['id'] = v4
       session.sessionBoards[i].modules[i2][v3] = v4
       log(`module ${v2} on board ${v} value ${v3} set to ${v4}`)
-      backupDicts()
+      // backupDicts()
     }
     else if (type === 'parameter'){ // update a parameter in a module on a board
       var i = session.boardPointers[v]['index']
       var i2 = session.boardPointers[v]['modules'][v2]['index']
       session.sessionBoards[i]['modules'][i2]['parameters'][v3] = v4
-      backupDicts()
+      // backupDicts()
     }
   }
   catch(error) {
