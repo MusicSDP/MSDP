@@ -13,6 +13,7 @@ let debug = false
 let log = (output) => { if (debug) Max.post(output) }
 const os = require('os').platform()
 const homedir = require('os').homedir()
+let remoteVersion = null
 let defaultSystem = {
   "uName": null, "os": "Windows", "autoUpdate": null, "vidFPS": 2, "recFPS": 1,
   "appState": { "major": null, "minor": null, "revision": null, "state": null },
@@ -66,15 +67,26 @@ const backupDicts = () => {
 const updateCheck = () => { // updater code goes here
   try {
     const updateRequest = () => { ["sendTo MSDP_Updater_Request", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet) }
+    const installRequest = () => { ["sendTo MSDP_Install_Request", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet) }
     let localVersion = `${JSON.stringify(state.system.appState.major)}.${JSON.stringify(state.system.appState.minor)}.${JSON.stringify(state.system.appState.revision)}`
     log('this is version ' + localVersion)
     const updater = async _ => {
       const res = await axios.get('https://musicsdp.com/download/music_sdp.hash')
-      const remoteVersion = res.data.toString().trim()
+      remoteVersion = res.data.toString().trim()
       if (! ( remoteVersion === localVersion )) {
         log("update found")
-        if ( state.system.autoUpdate === 1 ) { updateDL() }
-        else { updateRequest() }
+        let localCheck = `${homedir}/Downloads/Install_MSDP_${remoteVersion}.dmg`
+        if (os == 'win32') { localCheck = `${homedir}/Downloads/Install_MSDP_${remoteVersion}.exe` }
+        let dlExists = fs.existsSync( localCheck )
+        log(dlExists)
+        if (dlExists == 0) {
+          if ( state.system.autoUpdate === 2 ) { updateDL() }
+          else { updateRequest() }
+        }
+        else {
+          log('download already exists')
+          installRequest()
+        }
       }
       else { log('program is up-to-date') }
     }
@@ -88,7 +100,8 @@ const updateDL = () => {
     const requestInstall = () => { ["sendTo MSDP_Install_Request", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet) }
     const downloader = async _ => {
       try {
-        const res = await axios.get(`https://musicsdp.com/download/music_sdp.${os}.zip`, {responseType: 'arraybuffer'})
+        log(`looking for msdp${remoteVersion}.${os}.zip`)
+        const res = await axios.get(`https://musicsdp.com/download/msdp${remoteVersion}.${os}.zip`, {responseType: 'arraybuffer'})
         new AdmZip(res.data).extractAllTo(`${homedir}/Downloads`, true)
         requestInstall()
         log('installer downloaded')
@@ -106,8 +119,8 @@ const startUpdate = () => {
     const resolveAfter3Seconds = () => { return new Promise(resolve => { setTimeout(() => { resolve(killMSDP()) }, 3000) }) }
     const killMSDP = () => { ["sendTo MSDP_Application_Kill", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet) }
     const updateLauncher = async _ => {
-      if (os == 'darwin') { opn( `${homedir}/Downloads/Install_Music_SDP.dmg` ) }
-      else { exec.exec( `${homedir}/Downloads/Install_Music_SDP.exe` ) }
+      if (os == 'darwin') { opn( `${homedir}/Downloads/Install_MSDP_${remoteVersion}.dmg` ) }
+      else { exec.exec( `${homedir}/Downloads/Install_MSDP_${remoteVersion}.exe` ) }
       await resolveAfter3Seconds()
     }
     updateLauncher()
@@ -394,8 +407,8 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
         let oldCheck = fs.existsSync(`${homedir}/Documents/Music_SDP/SystemSettings.json`)
         if (oldCheck == 1) {
           log("retreiving uname from 1.x")
-          let clone = require(`${homedir}/Documents/Music_SDP/SystemSettings.json`)
-          state.system.uName = clone.uName
+          let oldSettings = require(`${homedir}/Documents/Music_SDP/SystemSettings.json`)
+          state.system.uName = oldSettings.uName
           Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
         }
         else {
