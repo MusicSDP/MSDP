@@ -6,11 +6,11 @@
 	"p31" : 4,
 	"p5" : 16,
 	"p6" : 92,
-	"p14" : [ "d1 absolute_media_path ~/Documents/Music_SDP/Drum Kits/Kit3/ds3_closedHat.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 679.8125", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
-	"p15" : [ "d1 absolute_media_path ~/Documents/Music_SDP/Drum Kits/Kit3/ds3_crash.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 646.6979", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
-	"p13" : [ "d1 absolute_media_path ~/Documents/Music_SDP/Drum Kits/Kit3/ds3_hiTom.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 198.7604", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
-	"p18" : [ "d1 absolute_media_path ~/Documents/Music_SDP/Drum Kits/Kit3/ds3_kick.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 300.0000", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
-	"p17" : [ "d1 absolute_media_path ~/Documents/Music_SDP/Drum Kits/Kit3/ds3_openHat.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 5141.2292", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
-	"p16" : [ "d1 absolute_media_path ~/Documents/Music_SDP/Drum Kits/Kit3/ds3_ride.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 961.9792", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
-	"p19" : [ "d1 absolute_media_path ~/Documents/Music_SDP/Drum Kits/Kit3/ds3_snare.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 1028.4688", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ]
+	"p14" : [ "d1 absolute_media_path ~/Documents/MSDP 2/Drum Kits/Kit3/ds3_closedHat.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 679.8125", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
+	"p15" : [ "d1 absolute_media_path ~/Documents/MSDP 2/Drum Kits/Kit3/ds3_crash.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 646.6979", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
+	"p13" : [ "d1 absolute_media_path ~/Documents/MSDP 2/Drum Kits/Kit3/ds3_hiTom.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 198.7604", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
+	"p18" : [ "d1 absolute_media_path ~/Documents/MSDP 2/Drum Kits/Kit3/ds3_kick.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 300.0000", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
+	"p17" : [ "d1 absolute_media_path ~/Documents/MSDP 2/Drum Kits/Kit3/ds3_openHat.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 5141.2292", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
+	"p16" : [ "d1 absolute_media_path ~/Documents/MSDP 2/Drum Kits/Kit3/ds3_ride.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 961.9792", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ],
+	"p19" : [ "d1 absolute_media_path ~/Documents/MSDP 2/Drum Kits/Kit3/ds3_snare.wav", "d2 0 17", "d3 0.0000", "s", "d5 0.5000", "d6 0.0000", "d7 1028.4688", "d8 0", "d9 1.0000", "d10 0.0000", "d11 100", "s", "s", "s", "d15 1182.0700" ]
 }

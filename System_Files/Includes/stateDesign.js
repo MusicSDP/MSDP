@@ -391,8 +391,17 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
     }
     else if (type === 'system') { //export system info
       if (state.system.uName === null){
-        state.system.uName = uuidv1()
-        Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
+        let oldCheck = fs.existsSync(`${homedir}/Documents/Music_SDP/SystemSettings.json`)
+        if (oldCheck == 1) {
+          log("retreiving uname from 1.x")
+          let clone = require(`${homedir}/Documents/Music_SDP/SystemSettings.json`)
+          state.system.uName = clone.uName
+          Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
+        }
+        else {
+          state.system.uName = uuidv1()
+          Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
+        }
       }
       path = v1
       output = state.system
