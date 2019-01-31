@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1039.0, 198.0, 1070.0, 673.0 ],
+		"rect" : [ 506.0, 217.0, 1070.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -72,14 +72,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 31.0, 524.3778076171875, 195.5, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.440803527832031, 74.0, 111.044334411621094, 23.0 ],
+					"presentation_rect" : [ 111.440803527832031, 63.0, 111.044334411621094, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "umenu[1]",
 							"parameter_type" : 3,
 							"parameter_longname" : "umenu[3]",
 							"parameter_invisible" : 1,
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "umenu[1]"
 						}
 
 					}
@@ -134,7 +134,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 133.0, 549.3778076171875, 148.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.440803527832031, 57.0, 109.0, 21.0 ],
+					"presentation_rect" : [ 111.440803527832031, 46.0, 109.0, 21.0 ],
 					"text" : "3. Mode",
 					"textjustification" : 1
 				}
@@ -149,7 +149,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 294.0, 383.5, 141.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.440803527832031, 16.0, 105.0, 21.0 ],
+					"presentation_rect" : [ 111.440803527832031, 5.0, 105.0, 21.0 ],
 					"text" : "2. Select Source",
 					"textjustification" : 1
 				}
@@ -246,7 +246,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -856,7 +856,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2304,12 +2304,12 @@
 					"presentation_rect" : [ 4.396469116210938, 3.0, 105.044334411621094, 129.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "textbutton",
 							"parameter_type" : 3,
 							"parameter_longname" : "textbutton",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_initial" : [ 0 ]
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "textbutton"
 						}
 
 					}
@@ -2347,14 +2347,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 427.0, 382.5, 195.5, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.440803527832031, 36.0, 111.044334411621094, 23.0 ],
+					"presentation_rect" : [ 111.440803527832031, 25.0, 111.044334411621094, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "umenu[1]",
 							"parameter_type" : 3,
 							"parameter_longname" : "umenu[1]",
 							"parameter_invisible" : 1,
-							"parameter_mmax" : -1.0
+							"parameter_mmax" : -1.0,
+							"parameter_shortname" : "umenu[1]"
 						}
 
 					}
@@ -2623,9 +2623,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-17" : [ "umenu[3]", "umenu[1]", 0 ],
 			"obj-56" : [ "textbutton", "textbutton", 0 ],
 			"obj-5" : [ "umenu[1]", "umenu[1]", 0 ],
-			"obj-17" : [ "umenu[3]", "umenu[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
