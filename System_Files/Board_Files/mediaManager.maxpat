@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 601.0, 124.0, 393.0, 655.0 ],
+		"rect" : [ 634.0, 92.0, 393.0, 655.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -147,19 +147,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-127",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1083.25, 365.5, 331.0, 35.0 ],
-					"text" : "\"C:/Users/hughl/Documents/MSDP 2/User Collections/Boards/newTest.json\""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-137",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -235,7 +222,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "0"
 								}
 
 							}
@@ -396,6 +383,7 @@
 					"fontface" : 0,
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
+					"hidden" : 1,
 					"id" : "obj-96",
 					"linecount" : 5,
 					"maxclass" : "comment",
@@ -639,7 +627,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1144.0, 1165.0675048828125, 592.285400390625, 22.0 ],
-					"text" : "\"C:/Users/hughl/Documents/MSDP 2/User Collections/Boards/newTest.json\""
+					"text" : "\"C:/Users/hughl/Documents/MSDP 2/User Collections/Boards/Another Test.json\""
 				}
 
 			}
@@ -951,7 +939,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 0.0, 123.0, 69.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 601, 124, 994, 779, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 634, 92, 1027, 747, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
 
@@ -3973,7 +3961,6 @@
 					"fontface" : 0,
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
-					"hidden" : 1,
 					"id" : "obj-11",
 					"linecount" : 5,
 					"maxclass" : "comment",
@@ -5665,7 +5652,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 291.7249755859375, 287.2349853515625, 300.0, 22.0 ],
-									"text" : "\"~/Documents/MSDP 2/User Collections/Boards\""
+									"text" : "foo"
 								}
 
 							}
@@ -8848,7 +8835,7 @@
 					"fontname" : "Lato",
 					"fontsize" : 12.0,
 					"id" : "obj-9",
-					"items" : [ "newTest.json", ",", "Simple", "Audio-Reactive", "Template.json" ],
+					"items" : [ "vTest1", ",", "vTest2", ",", "vTest3", ",", "vTest4", ",", "A1", ",", "BringItIn" ],
 					"margin" : 11,
 					"maxclass" : "chooser",
 					"multiselect" : 0,
@@ -8858,6 +8845,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 173.75, 226.0, 182.0, 371.0 ],
 					"prefix" : "C:/Users/hughl/Documents/MSDP 2/User Collections/Boards/",
+					"prefix_mode" : 2,
 					"presentation" : 1,
 					"presentation_rect" : [ 13.75, 176.0, 363.875, 352.0 ],
 					"selectioncolor" : [ 0.376470588235294, 0.737254901960784, 0.737254901960784, 1.0 ],
@@ -10517,7 +10505,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-127", 1 ],
+					"destination" : [ "obj-16", 1 ],
 					"order" : 0,
 					"source" : [ "obj-9", 1 ]
 				}
@@ -10525,16 +10513,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 1 ],
-					"order" : 1,
-					"source" : [ "obj-9", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-28", 1 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-9", 1 ]
 				}
 
