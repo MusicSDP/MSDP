@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -49,7 +49,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -90,8 +90,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 565.0, 273.0, 232.0, 35.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Video\""
+									"patching_rect" : [ 565.0, 273.0, 187.0, 35.0 ],
+									"text" : "\"~/Documents/MSDP 2/3rd Party Modules/Video\""
 								}
 
 							}
@@ -163,8 +163,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 298.0, 229.0, 289.0, 22.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Video\""
+									"patching_rect" : [ 298.0, 229.0, 271.0, 22.0 ],
+									"text" : "\"~/Documents/MSDP 2/3rd Party Modules/Video\""
 								}
 
 							}
@@ -452,7 +452,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -493,8 +493,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 565.0, 273.0, 205.0, 35.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Data\""
+									"patching_rect" : [ 565.0, 273.0, 187.0, 35.0 ],
+									"text" : "\"~/Documents/MSDP 2/3rd Party Modules/Data\""
 								}
 
 							}
@@ -566,8 +566,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 298.0, 229.0, 283.0, 22.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Data\""
+									"patching_rect" : [ 298.0, 229.0, 265.0, 22.0 ],
+									"text" : "\"~/Documents/MSDP 2/3rd Party Modules/Data\""
 								}
 
 							}
@@ -894,7 +894,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-9",
-					"items" : [ "Data", ",", "-- REMOVE MODULE --", ",", "--- Note Generators ---", ",", "MIDI Arp", ",", "MIDI Sequencer", ",", "--- Control ---", ",", "Controller Mapper", ",", "Automator", ",", "LFO Automator", ",", "Metronome Automator", ",", "Randomator", ",", "Score Automator", ",", "Signal Automator", ",", "Stochastic Controller", ",", "VST Controller", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder", ",", "MIDI Splitter", ",", "Signal-to-MIDI" ],
+					"items" : [ "Data", ",", "-- REMOVE MODULE --", ",", "--- Note Generators ---", ",", "MIDI Arp", ",", "MIDI Sequencer", ",", "Stochastic Controller", ",", "--- Control ---", ",", "Controller Mapper", ",", "Automator", ",", "LFO Automator", ",", "Metronome Automator", ",", "Randomator", ",", "Score Automator", ",", "Signal Automator", ",", "VST Controller", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder", ",", "MIDI Splitter", ",", "Signal-to-MIDI" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -956,7 +956,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -997,8 +997,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 565.0, 273.0, 205.0, 35.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Sound\""
+									"patching_rect" : [ 565.0, 273.0, 187.0, 35.0 ],
+									"text" : "\"~/Documents/MSDP 2/3rd Party Modules/Sound\""
 								}
 
 							}
@@ -1070,8 +1070,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 298.0, 229.0, 293.0, 22.0 ],
-									"text" : "\"~/Documents/Music_SDP/3rd Party Modules/Sound\""
+									"patching_rect" : [ 298.0, 229.0, 275.0, 22.0 ],
+									"text" : "\"~/Documents/MSDP 2/3rd Party Modules/Sound\""
 								}
 
 							}
@@ -1408,7 +1408,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-26",
-					"items" : [ "Sound", ",", "-- REMOVE MODULE --", ",", "--- Audio Tools ---", ",", "Audio File Player", ",", "Compressor", ",", "EZ Audio Player", ",", "Signal-In Control", ",", "Studio EQ", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Subtractive", ",", "Vocoder", ",", "Wavetable Synth", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "cREepVERB", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "FreeVerb", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "Stereo Echo", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "IR Convolution", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- Utilities ---", ",", "4-Channel Out", ",", "8-Channel Out", ",", "16-Channel Out", ",", "Meta-Box", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "SpectroView", ",", "Synthesizer_Template.maxpat" ],
+					"items" : [ "Sound", ",", "-- REMOVE MODULE --", ",", "--- Audio Tools ---", ",", "Audio File Player", ",", "Compressor", ",", "EZ Audio Player", ",", "Signal-In Control", ",", "Studio EQ", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Subtractive", ",", "Vocoder", ",", "Wavetable Synth", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "cREepVERB", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "Stereo Echo", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "IR Convolution", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- Utilities ---", ",", "4-Channel-to-Stereo", ",", "8-Channel-to-Stereo", ",", "16-Channel-to-Stereo", ",", "4-Channel Multi-Out", ",", "8-Channel Multi-Out", ",", "16-Channel Multi-Out", ",", "Meta-Box", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "SpectroView" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
