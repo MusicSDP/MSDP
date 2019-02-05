@@ -1,0 +1,2 @@
+Much of these samples are taken from the qubitelectronix sample library, which is public domain under the Creative Commons CC0 1.0 Universal license.
+More can be found at http://www.qubitelectronix.com/sample-library/
