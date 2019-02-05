@@ -1,0 +1,123 @@
+{
+    "title": "twinkles",
+    "position": "445 284 1235 954",
+    "power": "1",
+    "saved": 1,
+    "modules": [
+        {
+            "location": "1 1",
+            "process": "IR Convolution",
+            "id": "IR Convolution 574",
+            "parameters": {
+                "p3": "0.5854",
+                "p2": "S 1 Master 0",
+                "p1": "S 2",
+                "p5": "0",
+                "p6": "5",
+                "p8": "0",
+                "p4": "5",
+                "p7": "piano note.wav"
+            }
+        },
+        {
+            "location": "2 1",
+            "process": "Stochastic Files",
+            "id": "Stochastic Files 748",
+            "parameters": {
+                "p1": "piano note.wav",
+                "p3": "1.0000",
+                "p25": "2",
+                "p7": "0.1284",
+                "p6": "0.1284",
+                "p2": "S 2 Master 0",
+                "p19": "30.2640",
+                "p18": "-31.3769"
+            }
+        },
+        {
+            "location": "1 2",
+            "process": "4-Channel-to-Stereo",
+            "id": "4-Channel-to-Stereo 216",
+            "parameters": {
+                "p6": "S 1",
+                "p5": "0",
+                "p7": "1",
+                "p8": "0",
+                "p4": "0.5000",
+                "p3": "0.5000",
+                "p2": "0.5000",
+                "p1": "0.7652",
+                "p9": "Master 2",
+                "p10": "1",
+                "p11": "0",
+                "p12": "Master 3",
+                "p13": "1",
+                "p14": "0",
+                "p15": "Master 4",
+                "p16": "1",
+                "p17": "0",
+                "p18": "Master Out"
+            }
+        },
+        {
+            "location": "1 1",
+            "process": "Choose One",
+            "id": "Module_0262d280",
+            "parameters": {}
+        },
+        {
+            "location": "1 1",
+            "process": "IR Convolution",
+            "id": "IR Convolution 575",
+            "parameters": {
+                "p3": "0.6433",
+                "p2": "Master Out Master 0",
+                "p1": "S 2",
+                "p5": "0",
+                "p6": "5",
+                "p8": "0",
+                "p4": "5",
+                "p7": "piano note.wav"
+            }
+        },
+        {
+            "location": "2 1",
+            "process": "Stochastic Files",
+            "id": "Stochastic Files 748",
+            "parameters": {
+                "p1": "piano note.wav",
+                "p3": "1.0000",
+                "p7": "0.1284",
+                "p6": "0.1284",
+                "p2": "S 2 Master 0",
+                "p19": "30.2640",
+                "p18": "-31.3769"
+            }
+        },
+        {
+            "location": "1 2",
+            "process": "4-Channel-to-Stereo",
+            "id": "4-Channel-to-Stereo 216",
+            "parameters": {
+                "p5": "0",
+                "p7": "1",
+                "p8": "0",
+                "p9": "Master 2",
+                "p10": "1",
+                "p11": "0",
+                "p12": "Master 3",
+                "p4": "0.5000",
+                "p3": "0.5000",
+                "p2": "0.5000",
+                "p1": "0.5275",
+                "p13": "1",
+                "p14": "0",
+                "p15": "Master 4",
+                "p16": "1",
+                "p17": "0",
+                "p18": "Master Out",
+                "p6": "S 1"
+            }
+        }
+    ]
+}
