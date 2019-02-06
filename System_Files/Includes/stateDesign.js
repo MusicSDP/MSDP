@@ -164,14 +164,17 @@ const loadProject = (path) => { // load the project state
 
 const add = (type, v, v2) => { // named boards, modules, assets
   try {
+    log('the name of the board is ' + v)
     var rand = bigRandStr();
     if (type === 'board') {
       let proto = v;
-      if (v === 'undefined') v = 'Board_' + bigRandStr()
-      if (session.boardPointers.hasOwnProperty(v) === true) v =+ bigRandStr()
-      session.sessionBoards.push({ "title": v, "position": null, "power": 1, 'saved': 0, "modules": [] })
-      session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': proto, "open": 1, 'modules': {}}
-      return(v)
+      let name = v;
+      if (name === 'undefined') name = 'Board_' + bigRandStr()
+      log (name)
+      if (session.boardPointers.hasOwnProperty(name) === true) name = name+bigRandStr()
+      session.sessionBoards.push({ "title": name, "position": null, "power": 1, 'saved': 0, "modules": [] })
+      session.boardPointers[name] = {'index': session.sessionBoards.length-1, 'proto': proto, "open": 1, 'modules': {}}
+      return(name)
     }
     else if (type === 'module') {
       i = session.boardPointers[v].index
@@ -223,7 +226,8 @@ const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
     else if (type === 'board') { //update board value other than modules
       let i = session.boardPointers[v].index
       if(v2 === 'title'){
-        if(session.boardPointers.hasOwnProperty(v3) === true) v3 =+ '_' + bigRandStr()
+        if(session.boardPointers.hasOwnProperty(v3) === true) v3 = v3 + '_' + bigRandStr()
+        log(v3)
         Object.defineProperty(session.boardPointers, v3, Object.getOwnPropertyDescriptor(session.boardPointers, v))
         delete session.boardPointers[v]
         session.boardPointers[v3].proto = v3
