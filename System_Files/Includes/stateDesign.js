@@ -1,117 +1,512 @@
+// comment lines 2-5 out when building the parcel package. Then copy-paste the lines into the beginning of the distribution package
 const Max = require('max-api')
 const path = require('path')
 const fs = require('fs')
 var exec = require('child_process')
+// external node packages need to be compiled into a single file using parcel
+const opn = require('opn');
+const uuidv1 = require('uuid/v1')
+const axios = require('axios')
+const AdmZip = require('adm-zip')
+// required info
+let debug = false
+let log = (output) => { if (debug) Max.post(output) }
+const os = require('os').platform()
+const homedir = require('os').homedir()
+let remoteVersion = null
+let defaultSystem = {
+  "uName": null, "os": "Windows", "autoUpdate": 0, "vidFPS": 2, "recFPS": 1,
+  "appState": { "major": null, "minor": null, "revision": null, "state": null },
+  "io": { "driver": null, "in": null, "out": null, "sampleRate": null, "ioVector": null, "sigVector": null },
+  "defaultSettings": { "dac": 1, "limiter": 1, "volume": 127, "fullScreen": 1, "metroTog": 1, "bpm": 120, "showBoards": 1, "initEvent": 0, "keyboardMIDI": false, "keyOctave": 4, "recType": 0, "vWidth": 320, "vHeight": 320, "vChan": 1 }
+}
+let state = {
+  system: defaultSystem,
+  project: {
+    "title": null, "created": null, "lastOpened": null, "lastUpdated" : null, "path": null, "settings": {}, "openBoards": [], "savedBoards": [],
+    "systemBoard": {"metroSettings": {"bpm": 120,"bpMeasure": 4,"tick": 0,"customDiv": 5}, "virtualControllers": {"keyboard": 0,"slider": 0,"pads": 0}}
+  }
+}
+let session = { "sessionBoards": [], "boardPointers": {} }
 
-parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRequire,o="function"==typeof require&&require;function u(n,t){if(!r[n]){if(!e[n]){var f="function"==typeof parcelRequire&&parcelRequire;if(!t&&f)return f(n,!0);if(i)return i(n,!0);if(o&&"string"==typeof n)return o(n);var c=new Error("Cannot find module '"+n+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[n][1][r]||r},p.cache={};var l=r[n]=new u.Module(n);e[n][0].call(l.exports,p,l,l.exports,this)}return r[n].exports;function p(e){return u(p.resolve(e))}}u.isParcelRequire=!0,u.Module=function(e){this.id=e,this.bundle=u,this.exports={}},u.modules=e,u.cache=r,u.parent=i,u.register=function(r,n){e[r]=[function(e,r){r.exports=n},{}]};for(var f=0;f<n.length;f++)u(n[f]);if(n.length){var c=u(n[n.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=c:"function"==typeof define&&define.amd?define(function(){return c}):t&&(this[t]=c)}return u}({"tkZt":[function(require,module,exports) {
-"use strict";const r=require("os"),e=require("fs"),s=()=>{if("linux"!==process.platform)return!1;if(r.release().includes("Microsoft"))return!0;try{return e.readFileSync("/proc/version","utf8").includes("Microsoft")}catch(s){return!1}};process.env.__IS_WSL_TEST__?module.exports=s:module.exports=s();
-},{}],"g1Op":[function(require,module,exports) {
-"use strict";const e=require("path"),r=require("child_process"),p=require("is-wsl");module.exports=((t,a)=>{if("string"!=typeof t)return Promise.reject(new Error("Expected a `target`"));let s;a=Object.assign({wait:!0},a);let o=[],i=[];const n={};Array.isArray(a.app)&&(o=a.app.slice(1),a.app=a.app[0]),"darwin"===process.platform?(s="open",a.wait&&i.push("-W"),a.app&&i.push("-a",a.app)):"win32"===process.platform||p?(s="cmd"+(p?".exe":""),i.push("/c","start",'""',"/b"),t=t.replace(/&/g,"^&"),a.wait&&i.push("/wait"),a.app&&i.push(a.app),o.length>0&&(i=i.concat(o))):(s=a.app?a.app:"android"===process.platform?"xdg-open":e.join(__dirname,"xdg-open"),o.length>0&&(i=i.concat(o)),a.wait||(n.stdio="ignore",n.detached=!0)),i.push(t),"darwin"===process.platform&&o.length>0&&(i.push("--args"),i=i.concat(o));const c=r.spawn(s,i,n);return a.wait?new Promise((e,r)=>{c.once("error",r),c.once("close",p=>{p>0?r(new Error("Exited with code "+p)):e(c)})}):(c.unref(),Promise.resolve(c))});
-},{"is-wsl":"tkZt"}],"J/vH":[function(require,module,exports) {
-var r=require("crypto");module.exports=function(){return r.randomBytes(16)};
-},{}],"O4sp":[function(require,module,exports) {
-for(var r=[],o=0;o<256;++o)r[o]=(o+256).toString(16).substr(1);function t(o,t){var n=t||0,u=r;return[u[o[n++]],u[o[n++]],u[o[n++]],u[o[n++]],"-",u[o[n++]],u[o[n++]],"-",u[o[n++]],u[o[n++]],"-",u[o[n++]],u[o[n++]],"-",u[o[n++]],u[o[n++]],u[o[n++]],u[o[n++]],u[o[n++]],u[o[n++]]].join("")}module.exports=t;
-},{}],"acME":[function(require,module,exports) {
-var e,r,o=require("./lib/rng"),s=require("./lib/bytesToUuid"),i=0,n=0;function c(c,l,u){var v=l&&u||0,a=l||[],d=(c=c||{}).node||e,t=void 0!==c.clockseq?c.clockseq:r;if(null==d||null==t){var m=o();null==d&&(d=e=[1|m[0],m[1],m[2],m[3],m[4],m[5]]),null==t&&(t=r=16383&(m[6]<<8|m[7]))}var q=void 0!==c.msecs?c.msecs:(new Date).getTime(),f=void 0!==c.nsecs?c.nsecs:n+1,b=q-i+(f-n)/1e4;if(b<0&&void 0===c.clockseq&&(t=t+1&16383),(b<0||q>i)&&void 0===c.nsecs&&(f=0),f>=1e4)throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");i=q,n=f,r=t;var k=(1e4*(268435455&(q+=122192928e5))+f)%4294967296;a[v++]=k>>>24&255,a[v++]=k>>>16&255,a[v++]=k>>>8&255,a[v++]=255&k;var w=q/4294967296*1e4&268435455;a[v++]=w>>>8&255,a[v++]=255&w,a[v++]=w>>>24&15|16,a[v++]=w>>>16&255,a[v++]=t>>>8|128,a[v++]=255&t;for(var g=0;g<6;++g)a[v+g]=d[g];return l||s(a)}module.exports=c;
-},{"./lib/rng":"J/vH","./lib/bytesToUuid":"O4sp"}],"hRTX":[function(require,module,exports) {
-"use strict";module.exports=function(r,n){return function(){for(var t=new Array(arguments.length),e=0;e<t.length;e++)t[e]=arguments[e];return r.apply(n,t)}};
-},{}],"yQtW":[function(require,module,exports) {
-function t(t){return!!t.constructor&&"function"==typeof t.constructor.isBuffer&&t.constructor.isBuffer(t)}function n(n){return"function"==typeof n.readFloatLE&&"function"==typeof n.slice&&t(n.slice(0,0))}module.exports=function(o){return null!=o&&(t(o)||n(o)||!!o._isBuffer)};
-},{}],"Feqj":[function(require,module,exports) {
-"use strict";var e=require("./helpers/bind"),r=require("is-buffer"),n=Object.prototype.toString;function t(e){return"[object Array]"===n.call(e)}function i(e){return"[object ArrayBuffer]"===n.call(e)}function o(e){return"undefined"!=typeof FormData&&e instanceof FormData}function f(e){return"undefined"!=typeof ArrayBuffer&&ArrayBuffer.isView?ArrayBuffer.isView(e):e&&e.buffer&&e.buffer instanceof ArrayBuffer}function u(e){return"string"==typeof e}function c(e){return"number"==typeof e}function a(e){return void 0===e}function l(e){return null!==e&&"object"==typeof e}function s(e){return"[object Date]"===n.call(e)}function p(e){return"[object File]"===n.call(e)}function y(e){return"[object Blob]"===n.call(e)}function d(e){return"[object Function]"===n.call(e)}function b(e){return l(e)&&d(e.pipe)}function j(e){return"undefined"!=typeof URLSearchParams&&e instanceof URLSearchParams}function m(e){return e.replace(/^\s*/,"").replace(/\s*$/,"")}function B(){return("undefined"==typeof navigator||"ReactNative"!==navigator.product)&&("undefined"!=typeof window&&"undefined"!=typeof document)}function v(e,r){if(null!=e)if("object"!=typeof e&&(e=[e]),t(e))for(var n=0,i=e.length;n<i;n++)r.call(null,e[n],n,e);else for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&r.call(null,e[o],o,e)}function A(){var e={};function r(r,n){"object"==typeof e[n]&&"object"==typeof r?e[n]=A(e[n],r):e[n]=r}for(var n=0,t=arguments.length;n<t;n++)v(arguments[n],r);return e}function g(r,n,t){return v(n,function(n,i){r[i]=t&&"function"==typeof n?e(n,t):n}),r}module.exports={isArray:t,isArrayBuffer:i,isBuffer:r,isFormData:o,isArrayBufferView:f,isString:u,isNumber:c,isObject:l,isUndefined:a,isDate:s,isFile:p,isBlob:y,isFunction:d,isStream:b,isURLSearchParams:j,isStandardBrowserEnv:B,forEach:v,merge:A,extend:g,trim:m};
-},{"./helpers/bind":"hRTX","is-buffer":"yQtW"}],"njyv":[function(require,module,exports) {
-"use strict";var e=require("../utils");module.exports=function(t,r){e.forEach(t,function(e,o){o!==r&&o.toUpperCase()===r.toUpperCase()&&(t[r]=e,delete t[o])})};
-},{"../utils":"Feqj"}],"Lpyz":[function(require,module,exports) {
-"use strict";module.exports=function(e,o,r,s,t){return e.config=o,r&&(e.code=r),e.request=s,e.response=t,e};
-},{}],"NZT3":[function(require,module,exports) {
-"use strict";var r=require("./enhanceError");module.exports=function(e,n,o,t,u){var a=new Error(e);return r(a,n,o,t,u)};
-},{"./enhanceError":"Lpyz"}],"Ztkp":[function(require,module,exports) {
-"use strict";var t=require("./createError");module.exports=function(e,s,u){var a=u.config.validateStatus;u.status&&a&&!a(u.status)?s(t("Request failed with status code "+u.status,u.config,null,u.request,u)):e(u)};
-},{"./createError":"NZT3"}],"phS/":[function(require,module,exports) {
-"use strict";var e=require("./../utils");function r(e){return encodeURIComponent(e).replace(/%40/gi,"@").replace(/%3A/gi,":").replace(/%24/g,"$").replace(/%2C/gi,",").replace(/%20/g,"+").replace(/%5B/gi,"[").replace(/%5D/gi,"]")}module.exports=function(i,n,t){if(!n)return i;var a;if(t)a=t(n);else if(e.isURLSearchParams(n))a=n.toString();else{var c=[];e.forEach(n,function(i,n){null!=i&&(e.isArray(i)?n+="[]":i=[i],e.forEach(i,function(i){e.isDate(i)?i=i.toISOString():e.isObject(i)&&(i=JSON.stringify(i)),c.push(r(n)+"="+r(i))}))}),a=c.join("&")}return a&&(i+=(-1===i.indexOf("?")?"?":"&")+a),i};
-},{"./../utils":"Feqj"}],"Zn5P":[function(require,module,exports) {
-"use strict";var e=require("./../utils"),t=["age","authorization","content-length","content-type","etag","expires","from","host","if-modified-since","if-unmodified-since","last-modified","location","max-forwards","proxy-authorization","referer","retry-after","user-agent"];module.exports=function(r){var i,o,n,s={};return r?(e.forEach(r.split("\n"),function(r){if(n=r.indexOf(":"),i=e.trim(r.substr(0,n)).toLowerCase(),o=e.trim(r.substr(n+1)),i){if(s[i]&&t.indexOf(i)>=0)return;s[i]="set-cookie"===i?(s[i]?s[i]:[]).concat([o]):s[i]?s[i]+", "+o:o}}),s):s};
-},{"./../utils":"Feqj"}],"Rpqp":[function(require,module,exports) {
-"use strict";var t=require("./../utils");module.exports=t.isStandardBrowserEnv()?function(){var r,e=/(msie|trident)/i.test(navigator.userAgent),o=document.createElement("a");function a(t){var r=t;return e&&(o.setAttribute("href",r),r=o.href),o.setAttribute("href",r),{href:o.href,protocol:o.protocol?o.protocol.replace(/:$/,""):"",host:o.host,search:o.search?o.search.replace(/^\?/,""):"",hash:o.hash?o.hash.replace(/^#/,""):"",hostname:o.hostname,port:o.port,pathname:"/"===o.pathname.charAt(0)?o.pathname:"/"+o.pathname}}return r=a(window.location.href),function(e){var o=t.isString(e)?a(e):e;return o.protocol===r.protocol&&o.host===r.host}}():function(){return!0};
-},{"./../utils":"Feqj"}],"XHRg":[function(require,module,exports) {
-"use strict";var r="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";function t(){this.message="String contains an invalid character"}function o(o){for(var e,a,n=String(o),c="",i=0,h=r;n.charAt(0|i)||(h="=",i%1);c+=h.charAt(63&e>>8-i%1*8)){if((a=n.charCodeAt(i+=.75))>255)throw new t;e=e<<8|a}return c}t.prototype=new Error,t.prototype.code=5,t.prototype.name="InvalidCharacterError",module.exports=o;
-},{}],"M+LC":[function(require,module,exports) {
-"use strict";var e=require("./../utils");module.exports=e.isStandardBrowserEnv()?{write:function(n,t,o,r,i,u){var s=[];s.push(n+"="+encodeURIComponent(t)),e.isNumber(o)&&s.push("expires="+new Date(o).toGMTString()),e.isString(r)&&s.push("path="+r),e.isString(i)&&s.push("domain="+i),!0===u&&s.push("secure"),document.cookie=s.join("; ")},read:function(e){var n=document.cookie.match(new RegExp("(^|;\\s*)("+e+")=([^;]*)"));return n?decodeURIComponent(n[3]):null},remove:function(e){this.write(e,"",Date.now()-864e5)}}:{write:function(){},read:function(){return null},remove:function(){}};
-},{"./../utils":"Feqj"}],"akUF":[function(require,module,exports) {
-"use strict";var e=require("./../utils"),r=require("./../core/settle"),t=require("./../helpers/buildURL"),o=require("./../helpers/parseHeaders"),s=require("./../helpers/isURLSameOrigin"),n=require("../core/createError"),i="undefined"!=typeof window&&window.btoa&&window.btoa.bind(window)||require("./../helpers/btoa");module.exports=function(a){return new Promise(function(u,d){var l=a.data,p=a.headers;e.isFormData(l)&&delete p["Content-Type"];var f=new XMLHttpRequest,c="onreadystatechange",w=!1;if("test"===process.env.NODE_ENV||"undefined"==typeof window||!window.XDomainRequest||"withCredentials"in f||s(a.url)||(f=new window.XDomainRequest,c="onload",w=!0,f.onprogress=function(){},f.ontimeout=function(){}),a.auth){var h=a.auth.username||"",m=a.auth.password||"";p.Authorization="Basic "+i(h+":"+m)}if(f.open(a.method.toUpperCase(),t(a.url,a.params,a.paramsSerializer),!0),f.timeout=a.timeout,f[c]=function(){if(f&&(4===f.readyState||w)&&(0!==f.status||f.responseURL&&0===f.responseURL.indexOf("file:"))){var e="getAllResponseHeaders"in f?o(f.getAllResponseHeaders()):null,t={data:a.responseType&&"text"!==a.responseType?f.response:f.responseText,status:1223===f.status?204:f.status,statusText:1223===f.status?"No Content":f.statusText,headers:e,config:a,request:f};r(u,d,t),f=null}},f.onerror=function(){d(n("Network Error",a,null,f)),f=null},f.ontimeout=function(){d(n("timeout of "+a.timeout+"ms exceeded",a,"ECONNABORTED",f)),f=null},e.isStandardBrowserEnv()){var y=require("./../helpers/cookies"),q=(a.withCredentials||s(a.url))&&a.xsrfCookieName?y.read(a.xsrfCookieName):void 0;q&&(p[a.xsrfHeaderName]=q)}if("setRequestHeader"in f&&e.forEach(p,function(e,r){void 0===l&&"content-type"===r.toLowerCase()?delete p[r]:f.setRequestHeader(r,e)}),a.withCredentials&&(f.withCredentials=!0),a.responseType)try{f.responseType=a.responseType}catch(v){if("json"!==a.responseType)throw v}"function"==typeof a.onDownloadProgress&&f.addEventListener("progress",a.onDownloadProgress),"function"==typeof a.onUploadProgress&&f.upload&&f.upload.addEventListener("progress",a.onUploadProgress),a.cancelToken&&a.cancelToken.promise.then(function(e){f&&(f.abort(),d(e),f=null)}),void 0===l&&(l=null),f.send(l)})};
-},{"./../utils":"Feqj","./../core/settle":"Ztkp","./../helpers/buildURL":"phS/","./../helpers/parseHeaders":"Zn5P","./../helpers/isURLSameOrigin":"Rpqp","../core/createError":"NZT3","./../helpers/btoa":"XHRg","./../helpers/cookies":"M+LC"}],"LVkZ":[function(require,module,exports) {
-var s=1e3,e=60*s,r=60*e,a=24*r,n=365.25*a;function c(c){if(!((c=String(c)).length>100)){var t=/^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(c);if(t){var i=parseFloat(t[1]);switch((t[2]||"ms").toLowerCase()){case"years":case"year":case"yrs":case"yr":case"y":return i*n;case"days":case"day":case"d":return i*a;case"hours":case"hour":case"hrs":case"hr":case"h":return i*r;case"minutes":case"minute":case"mins":case"min":case"m":return i*e;case"seconds":case"second":case"secs":case"sec":case"s":return i*s;case"milliseconds":case"millisecond":case"msecs":case"msec":case"ms":return i;default:return}}}}function t(n){return n>=a?Math.round(n/a)+"d":n>=r?Math.round(n/r)+"h":n>=e?Math.round(n/e)+"m":n>=s?Math.round(n/s)+"s":n+"ms"}function i(n){return o(n,a,"day")||o(n,r,"hour")||o(n,e,"minute")||o(n,s,"second")||n+" ms"}function o(s,e,r){if(!(s<e))return s<1.5*e?Math.floor(s/e)+" "+r:Math.ceil(s/e)+" "+r+"s"}module.exports=function(s,e){e=e||{};var r=typeof s;if("string"===r&&s.length>0)return c(s);if("number"===r&&!1===isNaN(s))return e.long?i(s):t(s);throw new Error("val is not a non-empty string or a valid number. val="+JSON.stringify(s))};
-},{}],"btPN":[function(require,module,exports) {
-function e(e){var r,s=0;for(r in e)s=(s<<5)-s+e.charCodeAt(r),s|=0;return exports.colors[Math.abs(s)%exports.colors.length]}function r(r){var t;function o(){if(o.enabled){var e=o,r=+new Date,s=r-(t||r);e.diff=s,e.prev=t,e.curr=r,t=r;for(var n=new Array(arguments.length),p=0;p<n.length;p++)n[p]=arguments[p];n[0]=exports.coerce(n[0]),"string"!=typeof n[0]&&n.unshift("%O");var a=0;n[0]=n[0].replace(/%([a-zA-Z%])/g,function(r,s){if("%%"===r)return r;a++;var t=exports.formatters[s];if("function"==typeof t){var o=n[a];r=t.call(e,o),n.splice(a,1),a--}return r}),exports.formatArgs.call(e,n),(o.log||exports.log||console.log.bind(console)).apply(e,n)}}return o.namespace=r,o.enabled=exports.enabled(r),o.useColors=exports.useColors(),o.color=e(r),o.destroy=s,"function"==typeof exports.init&&exports.init(o),exports.instances.push(o),o}function s(){var e=exports.instances.indexOf(this);return-1!==e&&(exports.instances.splice(e,1),!0)}function t(e){var r;exports.save(e),exports.names=[],exports.skips=[];var s=("string"==typeof e?e:"").split(/[\s,]+/),t=s.length;for(r=0;r<t;r++)s[r]&&("-"===(e=s[r].replace(/\*/g,".*?"))[0]?exports.skips.push(new RegExp("^"+e.substr(1)+"$")):exports.names.push(new RegExp("^"+e+"$")));for(r=0;r<exports.instances.length;r++){var o=exports.instances[r];o.enabled=exports.enabled(o.namespace)}}function o(){exports.enable("")}function n(e){if("*"===e[e.length-1])return!0;var r,s;for(r=0,s=exports.skips.length;r<s;r++)if(exports.skips[r].test(e))return!1;for(r=0,s=exports.names.length;r<s;r++)if(exports.names[r].test(e))return!0;return!1}function p(e){return e instanceof Error?e.stack||e.message:e}exports=module.exports=r.debug=r.default=r,exports.coerce=p,exports.disable=o,exports.enable=t,exports.enabled=n,exports.humanize=require("ms"),exports.instances=[],exports.names=[],exports.skips=[],exports.formatters={};
-},{"ms":"LVkZ"}],"j+D9":[function(require,module,exports) {
-function e(){return!("undefined"==typeof window||!window.process||"renderer"!==window.process.type)||("undefined"==typeof navigator||!navigator.userAgent||!navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/))&&("undefined"!=typeof document&&document.documentElement&&document.documentElement.style&&document.documentElement.style.WebkitAppearance||"undefined"!=typeof window&&window.console&&(window.console.firebug||window.console.exception&&window.console.table)||"undefined"!=typeof navigator&&navigator.userAgent&&navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/)&&parseInt(RegExp.$1,10)>=31||"undefined"!=typeof navigator&&navigator.userAgent&&navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/))}function o(e){var o=this.useColors;if(e[0]=(o?"%c":"")+this.namespace+(o?" %c":" ")+e[0]+(o?"%c ":" ")+"+"+exports.humanize(this.diff),o){var C="color: "+this.color;e.splice(1,0,C,"color: inherit");var t=0,n=0;e[0].replace(/%[a-zA-Z%]/g,function(e){"%%"!==e&&(t++,"%c"===e&&(n=t))}),e.splice(n,0,C)}}function C(){return"object"==typeof console&&console.log&&Function.prototype.apply.call(console.log,console,arguments)}function t(e){try{null==e?exports.storage.removeItem("debug"):exports.storage.debug=e}catch(o){}}function n(){var e;try{e=exports.storage.debug}catch(o){}return!e&&"undefined"!=typeof process&&"env"in process&&(e=process.env.DEBUG),e}function r(){try{return window.localStorage}catch(e){}}exports=module.exports=require("./debug"),exports.log=C,exports.formatArgs=o,exports.save=t,exports.load=n,exports.useColors=e,exports.storage="undefined"!=typeof chrome&&void 0!==chrome.storage?chrome.storage.local:r(),exports.colors=["#0000CC","#0000FF","#0033CC","#0033FF","#0066CC","#0066FF","#0099CC","#0099FF","#00CC00","#00CC33","#00CC66","#00CC99","#00CCCC","#00CCFF","#3300CC","#3300FF","#3333CC","#3333FF","#3366CC","#3366FF","#3399CC","#3399FF","#33CC00","#33CC33","#33CC66","#33CC99","#33CCCC","#33CCFF","#6600CC","#6600FF","#6633CC","#6633FF","#66CC00","#66CC33","#9900CC","#9900FF","#9933CC","#9933FF","#99CC00","#99CC33","#CC0000","#CC0033","#CC0066","#CC0099","#CC00CC","#CC00FF","#CC3300","#CC3333","#CC3366","#CC3399","#CC33CC","#CC33FF","#CC6600","#CC6633","#CC9900","#CC9933","#CCCC00","#CCCC33","#FF0000","#FF0033","#FF0066","#FF0099","#FF00CC","#FF00FF","#FF3300","#FF3333","#FF3366","#FF3399","#FF33CC","#FF33FF","#FF6600","#FF6633","#FF9900","#FF9933","#FFCC00","#FFCC33"],exports.formatters.j=function(e){try{return JSON.stringify(e)}catch(o){return"[UnexpectedJSONParseError]: "+o.message}},exports.enable(n());
-},{"./debug":"btPN"}],"kPue":[function(require,module,exports) {
-var t=require("tty"),e=require("util");exports=module.exports=require("./debug"),exports.init=u,exports.log=p,exports.formatArgs=o,exports.save=i,exports.load=c,exports.useColors=r,exports.colors=[6,2,3,4,5,1];try{var s=require("supports-color");s&&s.level>=2&&(exports.colors=[20,21,26,27,32,33,38,39,40,41,42,43,44,45,56,57,62,63,68,69,74,75,76,77,78,79,80,81,92,93,98,99,112,113,128,129,134,135,148,149,160,161,162,163,164,165,166,167,168,169,170,171,172,173,178,179,184,185,196,197,198,199,200,201,202,203,204,205,206,207,208,209,214,215,220,221])}catch(l){}function r(){return"colors"in exports.inspectOpts?Boolean(exports.inspectOpts.colors):t.isatty(process.stderr.fd)}function o(t){var e=this.namespace;if(this.useColors){var s=this.color,r="[3"+(s<8?s:"8;5;"+s),o="  "+r+";1m"+e+" [0m";t[0]=o+t[0].split("\n").join("\n"+o),t.push(r+"m+"+exports.humanize(this.diff)+"[0m")}else t[0]=n()+e+" "+t[0]}function n(){return exports.inspectOpts.hideDate?"":(new Date).toISOString()+" "}function p(){return process.stderr.write(e.format.apply(e,arguments)+"\n")}function i(t){null==t?delete process.env.DEBUG:process.env.DEBUG=t}function c(){return process.env.DEBUG}function u(t){t.inspectOpts={};for(var e=Object.keys(exports.inspectOpts),s=0;s<e.length;s++)t.inspectOpts[e[s]]=exports.inspectOpts[e[s]]}exports.inspectOpts=Object.keys(process.env).filter(function(t){return/^debug_/i.test(t)}).reduce(function(t,e){var s=e.substring(6).toLowerCase().replace(/_([a-z])/g,function(t,e){return e.toUpperCase()}),r=process.env[e];return r=!!/^(yes|on|true|enabled)$/i.test(r)||!/^(no|off|false|disabled)$/i.test(r)&&("null"===r?null:Number(r)),t[s]=r,t},{}),exports.formatters.o=function(t){return this.inspectOpts.colors=this.useColors,e.inspect(t,this.inspectOpts).split("\n").map(function(t){return t.trim()}).join(" ")},exports.formatters.O=function(t){return this.inspectOpts.colors=this.useColors,e.inspect(t,this.inspectOpts)},exports.enable(c());
-},{"./debug":"btPN"}],"7Ez0":[function(require,module,exports) {
-"undefined"==typeof process||"renderer"===process.type?module.exports=require("./browser.js"):module.exports=require("./node.js");
-},{"./browser.js":"j+D9","./node.js":"kPue"}],"ia3g":[function(require,module,exports) {
-var e=require("url"),t=require("http"),r=require("https"),s=require("assert"),o=require("stream").Writable,i=require("debug")("follow-redirects"),n={GET:!0,HEAD:!0,OPTIONS:!0,TRACE:!0},h=Object.create(null);function a(e,t){o.call(this),e.headers=e.headers||{},this._options=e,this._redirectCount=0,this._redirects=[],this._requestBodyLength=0,this._requestBodyBuffers=[],e.host&&(e.hostname||(e.hostname=e.host),delete e.host),t&&this.on("response",t);var r=this;if(this._onNativeResponse=function(e){r._processResponse(e)},!e.pathname&&e.path){var s=e.path.indexOf("?");s<0?e.pathname=e.path:(e.pathname=e.path.substring(0,s),e.search=e.path.substring(s))}this._performRequest()}function u(t){var r={maxRedirects:21,maxBodyLength:10485760},o={};return Object.keys(t).forEach(function(n){var h=n+":",u=o[h]=t[n],c=r[n]=Object.create(u);c.request=function(t,n){return"string"==typeof t?(t=e.parse(t)).maxRedirects=r.maxRedirects:t=Object.assign({protocol:h,maxRedirects:r.maxRedirects,maxBodyLength:r.maxBodyLength},t),t.nativeProtocols=o,s.equal(t.protocol,h,"protocol mismatch"),i("options",t),new a(t,n)},c.get=function(e,t){var r=c.request(e,t);return r.end(),r}}),r}["abort","aborted","error","socket","timeout"].forEach(function(e){h[e]=function(t){this._redirectable.emit(e,t)}}),a.prototype=Object.create(o.prototype),a.prototype.write=function(e,t,r){if(!("string"==typeof e||"object"==typeof e&&"length"in e))throw new Error("data should be a string, Buffer or Uint8Array");"function"==typeof t&&(r=t,t=null),0!==e.length?this._requestBodyLength+e.length<=this._options.maxBodyLength?(this._requestBodyLength+=e.length,this._requestBodyBuffers.push({data:e,encoding:t}),this._currentRequest.write(e,t,r)):(this.emit("error",new Error("Request body larger than maxBodyLength limit")),this.abort()):r&&r()},a.prototype.end=function(e,t,r){"function"==typeof e?(r=e,e=t=null):"function"==typeof t&&(r=t,t=null);var s=this._currentRequest;this.write(e||"",t,function(){s.end(null,null,r)})},a.prototype.setHeader=function(e,t){this._options.headers[e]=t,this._currentRequest.setHeader(e,t)},a.prototype.removeHeader=function(e){delete this._options.headers[e],this._currentRequest.removeHeader(e)},["abort","flushHeaders","getHeader","setNoDelay","setSocketKeepAlive","setTimeout"].forEach(function(e){a.prototype[e]=function(t,r){return this._currentRequest[e](t,r)}}),["aborted","connection","socket"].forEach(function(e){Object.defineProperty(a.prototype,e,{get:function(){return this._currentRequest[e]}})}),a.prototype._performRequest=function(){var t=this._options.protocol,r=this._options.nativeProtocols[t];if(r){if(this._options.agents){var s=t.substr(0,t.length-1);this._options.agent=this._options.agents[s]}var o=this._currentRequest=r.request(this._options,this._onNativeResponse);for(var i in this._currentUrl=e.format(this._options),o._redirectable=this,h)i&&o.on(i,h[i]);if(this._isRedirect){var n=0,a=this._requestBodyBuffers;!function e(){if(n<a.length){var t=a[n++];o.write(t.data,t.encoding,e)}else o.end()}()}}else this.emit("error",new Error("Unsupported protocol "+t))},a.prototype._processResponse=function(t){this._options.trackRedirects&&this._redirects.push({url:this._currentUrl,headers:t.headers,statusCode:t.statusCode});var r=t.headers.location;if(r&&!1!==this._options.followRedirects&&t.statusCode>=300&&t.statusCode<400){if(++this._redirectCount>this._options.maxRedirects)return void this.emit("error",new Error("Max redirects exceeded."));var s,o=this._options.headers;if(307!==t.statusCode&&!(this._options.method in n))for(s in this._options.method="GET",this._requestBodyBuffers=[],o)/^content-/i.test(s)&&delete o[s];if(!this._isRedirect)for(s in o)/^host$/i.test(s)&&delete o[s];var h=e.resolve(this._currentUrl,r);i("redirecting to",h),Object.assign(this._options,e.parse(h)),this._isRedirect=!0,this._performRequest(),t.destroy()}else t.responseUrl=this._currentUrl,t.redirects=this._redirects,this.emit("response",t),this._requestBodyBuffers=[]},module.exports=u({http:t,https:r}),module.exports.wrap=u;
-},{"debug":"7Ez0"}],"b3VU":[function(require,module,exports) {
-module.exports={_from:"axios@^0.18.0",_id:"axios@0.18.0",_inBundle:!1,_integrity:"sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=",_location:"/axios",_phantomChildren:{},_requested:{type:"range",registry:!0,raw:"axios@^0.18.0",name:"axios",escapedName:"axios",rawSpec:"^0.18.0",saveSpec:null,fetchSpec:"^0.18.0"},_requiredBy:["#USER","/"],_resolved:"http://registry.npmjs.org/axios/-/axios-0.18.0.tgz",_shasum:"32d53e4851efdc0a11993b6cd000789d70c05102",_spec:"axios@^0.18.0",_where:"D:\\Github\\source-code\\System_Files\\Includes",author:{name:"Matt Zabriskie"},browser:{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},bugs:{url:"https://github.com/axios/axios/issues"},bundleDependencies:!1,bundlesize:[{path:"./dist/axios.min.js",threshold:"5kB"}],dependencies:{"follow-redirects":"^1.3.0","is-buffer":"^1.1.5"},deprecated:!1,description:"Promise based HTTP client for the browser and node.js",devDependencies:{bundlesize:"^0.5.7",coveralls:"^2.11.9","es6-promise":"^4.0.5",grunt:"^1.0.1","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.0.0","grunt-contrib-nodeunit":"^1.0.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^19.0.0","grunt-karma":"^2.0.0","grunt-ts":"^6.0.0-beta.3","grunt-webpack":"^1.0.18","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1",karma:"^1.3.0","karma-chrome-launcher":"^2.0.0","karma-coverage":"^1.0.0","karma-firefox-launcher":"^1.0.0","karma-jasmine":"^1.0.2","karma-jasmine-ajax":"^0.1.13","karma-opera-launcher":"^1.0.0","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^1.1.0","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.7","karma-webpack":"^1.7.0","load-grunt-tasks":"^3.5.2",minimist:"^1.2.0",sinon:"^1.17.4",typescript:"^2.0.3","url-search-params":"^0.6.1",webpack:"^1.13.1","webpack-dev-server":"^1.14.1"},homepage:"https://github.com/axios/axios",keywords:["xhr","http","ajax","promise","node"],license:"MIT",main:"index.js",name:"axios",repository:{type:"git",url:"git+https://github.com/axios/axios.git"},scripts:{build:"NODE_ENV=production grunt build",coveralls:"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",examples:"node ./examples/server.js",postversion:"git push && git push --tags",preversion:"npm test",start:"node ./sandbox/server.js",test:"grunt test && bundlesize",version:"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},typings:"./index.d.ts",version:"0.18.0"};
-},{}],"FEJg":[function(require,module,exports) {
-"use strict";var e=require("./../utils"),t=require("./../core/settle"),r=require("./../helpers/buildURL"),a=require("http"),o=require("https"),n=require("follow-redirects").http,s=require("follow-redirects").https,i=require("url"),u=require("zlib"),h=require("./../../package.json"),p=require("../core/createError"),c=require("../core/enhanceError");module.exports=function(f){return new Promise(function(d,m){var l,g=f.data,v=f.headers;if(v["User-Agent"]||v["user-agent"]||(v["User-Agent"]="axios/"+h.version),g&&!e.isStream(g)){if(Buffer.isBuffer(g));else if(e.isArrayBuffer(g))g=new Buffer(new Uint8Array(g));else{if(!e.isString(g))return m(p("Data after transformation must be a string, an ArrayBuffer, a Buffer, or a Stream",f));g=new Buffer(g,"utf-8")}v["Content-Length"]=g.length}var x=void 0;f.auth&&(x=(f.auth.username||"")+":"+(f.auth.password||""));var q=i.parse(f.url),B=q.protocol||"http:";if(!x&&q.auth){var b=q.auth.split(":");x=(b[0]||"")+":"+(b[1]||"")}x&&delete v.Authorization;var w="https:"===B,C=w?f.httpsAgent:f.httpAgent,y={path:r(q.path,f.params,f.paramsSerializer).replace(/^\?/,""),method:f.method,headers:v,agent:C,auth:x};f.socketPath?y.socketPath=f.socketPath:(y.hostname=q.hostname,y.port=q.port);var A,L=f.proxy;if(!L&&!1!==L){var T=B.slice(0,-1)+"_proxy",z=process.env[T]||process.env[T.toUpperCase()];if(z){var S=i.parse(z);if(L={host:S.hostname,port:S.port},S.auth){var k=S.auth.split(":");L.auth={username:k[0],password:k[1]}}}}if(L&&(y.hostname=L.host,y.host=L.host,y.headers.host=q.hostname+(q.port?":"+q.port:""),y.port=L.port,y.path=B+"//"+q.hostname+(q.port?":"+q.port:"")+y.path,L.auth)){var R=new Buffer(L.auth.username+":"+L.auth.password,"utf8").toString("base64");y.headers["Proxy-Authorization"]="Basic "+R}f.transport?A=f.transport:0===f.maxRedirects?A=w?o:a:(f.maxRedirects&&(y.maxRedirects=f.maxRedirects),A=w?s:n),f.maxContentLength&&f.maxContentLength>-1&&(y.maxBodyLength=f.maxContentLength);var U=A.request(y,function(e){if(!U.aborted){clearTimeout(l),l=null;var r=e;switch(e.headers["content-encoding"]){case"gzip":case"compress":case"deflate":r=r.pipe(u.createUnzip()),delete e.headers["content-encoding"]}var a=e.req||U,o={status:e.statusCode,statusText:e.statusMessage,headers:e.headers,config:f,request:a};if("stream"===f.responseType)o.data=r,t(d,m,o);else{var n=[];r.on("data",function(e){n.push(e),f.maxContentLength>-1&&Buffer.concat(n).length>f.maxContentLength&&m(p("maxContentLength size of "+f.maxContentLength+" exceeded",f,null,a))}),r.on("error",function(e){U.aborted||m(c(e,f,null,a))}),r.on("end",function(){var e=Buffer.concat(n);"arraybuffer"!==f.responseType&&(e=e.toString("utf8")),o.data=e,t(d,m,o)})}}});U.on("error",function(e){U.aborted||m(c(e,f,null,U))}),f.timeout&&!l&&(l=setTimeout(function(){U.abort(),m(p("timeout of "+f.timeout+"ms exceeded",f,"ECONNABORTED",U))},f.timeout)),f.cancelToken&&f.cancelToken.promise.then(function(e){U.aborted||(U.abort(),m(e))}),e.isStream(g)?g.pipe(U):U.end(g)})};
-},{"./../utils":"Feqj","./../core/settle":"Ztkp","./../helpers/buildURL":"phS/","follow-redirects":"ia3g","./../../package.json":"b3VU","../core/createError":"NZT3","../core/enhanceError":"Lpyz"}],"A14q":[function(require,module,exports) {
-"use strict";var e=require("./utils"),t=require("./helpers/normalizeHeaderName"),r={"Content-Type":"application/x-www-form-urlencoded"};function n(t,r){!e.isUndefined(t)&&e.isUndefined(t["Content-Type"])&&(t["Content-Type"]=r)}function a(){var e;return"undefined"!=typeof XMLHttpRequest?e=require("./adapters/xhr"):"undefined"!=typeof process&&(e=require("./adapters/http")),e}var i={adapter:a(),transformRequest:[function(r,a){return t(a,"Content-Type"),e.isFormData(r)||e.isArrayBuffer(r)||e.isBuffer(r)||e.isStream(r)||e.isFile(r)||e.isBlob(r)?r:e.isArrayBufferView(r)?r.buffer:e.isURLSearchParams(r)?(n(a,"application/x-www-form-urlencoded;charset=utf-8"),r.toString()):e.isObject(r)?(n(a,"application/json;charset=utf-8"),JSON.stringify(r)):r}],transformResponse:[function(e){if("string"==typeof e)try{e=JSON.parse(e)}catch(t){}return e}],timeout:0,xsrfCookieName:"XSRF-TOKEN",xsrfHeaderName:"X-XSRF-TOKEN",maxContentLength:-1,validateStatus:function(e){return e>=200&&e<300},headers:{common:{Accept:"application/json, text/plain, */*"}}};e.forEach(["delete","get","head"],function(e){i.headers[e]={}}),e.forEach(["post","put","patch"],function(t){i.headers[t]=e.merge(r)}),module.exports=i;
-},{"./utils":"Feqj","./helpers/normalizeHeaderName":"njyv","./adapters/xhr":"akUF","./adapters/http":"FEJg"}],"xpeW":[function(require,module,exports) {
-"use strict";var t=require("./../utils");function e(){this.handlers=[]}e.prototype.use=function(t,e){return this.handlers.push({fulfilled:t,rejected:e}),this.handlers.length-1},e.prototype.eject=function(t){this.handlers[t]&&(this.handlers[t]=null)},e.prototype.forEach=function(e){t.forEach(this.handlers,function(t){null!==t&&e(t)})},module.exports=e;
-},{"./../utils":"Feqj"}],"IAOH":[function(require,module,exports) {
-"use strict";var r=require("./../utils");module.exports=function(t,u,e){return r.forEach(e,function(r){t=r(t,u)}),t};
-},{"./../utils":"Feqj"}],"mXc0":[function(require,module,exports) {
-"use strict";module.exports=function(t){return!(!t||!t.__CANCEL__)};
-},{}],"R56a":[function(require,module,exports) {
-"use strict";module.exports=function(t){return/^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(t)};
-},{}],"uRyQ":[function(require,module,exports) {
-"use strict";module.exports=function(e,r){return r?e.replace(/\/+$/,"")+"/"+r.replace(/^\/+/,""):e};
-},{}],"6H+A":[function(require,module,exports) {
-"use strict";var e=require("./../utils"),r=require("./transformData"),a=require("../cancel/isCancel"),s=require("../defaults"),t=require("./../helpers/isAbsoluteURL"),n=require("./../helpers/combineURLs");function o(e){e.cancelToken&&e.cancelToken.throwIfRequested()}module.exports=function(d){return o(d),d.baseURL&&!t(d.url)&&(d.url=n(d.baseURL,d.url)),d.headers=d.headers||{},d.data=r(d.data,d.headers,d.transformRequest),d.headers=e.merge(d.headers.common||{},d.headers[d.method]||{},d.headers||{}),e.forEach(["delete","get","head","post","put","patch","common"],function(e){delete d.headers[e]}),(d.adapter||s.adapter)(d).then(function(e){return o(d),e.data=r(e.data,e.headers,d.transformResponse),e},function(e){return a(e)||(o(d),e&&e.response&&(e.response.data=r(e.response.data,e.response.headers,d.transformResponse))),Promise.reject(e)})};
-},{"./../utils":"Feqj","./transformData":"IAOH","../cancel/isCancel":"mXc0","../defaults":"A14q","./../helpers/isAbsoluteURL":"R56a","./../helpers/combineURLs":"uRyQ"}],"2trU":[function(require,module,exports) {
-"use strict";var e=require("./../defaults"),t=require("./../utils"),r=require("./InterceptorManager"),o=require("./dispatchRequest");function s(e){this.defaults=e,this.interceptors={request:new r,response:new r}}s.prototype.request=function(r){"string"==typeof r&&(r=t.merge({url:arguments[0]},arguments[1])),(r=t.merge(e,{method:"get"},this.defaults,r)).method=r.method.toLowerCase();var s=[o,void 0],u=Promise.resolve(r);for(this.interceptors.request.forEach(function(e){s.unshift(e.fulfilled,e.rejected)}),this.interceptors.response.forEach(function(e){s.push(e.fulfilled,e.rejected)});s.length;)u=u.then(s.shift(),s.shift());return u},t.forEach(["delete","get","head","options"],function(e){s.prototype[e]=function(r,o){return this.request(t.merge(o||{},{method:e,url:r}))}}),t.forEach(["post","put","patch"],function(e){s.prototype[e]=function(r,o,s){return this.request(t.merge(s||{},{method:e,url:r,data:o}))}}),module.exports=s;
-},{"./../defaults":"A14q","./../utils":"Feqj","./InterceptorManager":"xpeW","./dispatchRequest":"6H+A"}],"qFUg":[function(require,module,exports) {
-"use strict";function t(t){this.message=t}t.prototype.toString=function(){return"Cancel"+(this.message?": "+this.message:"")},t.prototype.__CANCEL__=!0,module.exports=t;
-},{}],"VgQU":[function(require,module,exports) {
-"use strict";var e=require("./Cancel");function n(n){if("function"!=typeof n)throw new TypeError("executor must be a function.");var o;this.promise=new Promise(function(e){o=e});var r=this;n(function(n){r.reason||(r.reason=new e(n),o(r.reason))})}n.prototype.throwIfRequested=function(){if(this.reason)throw this.reason},n.source=function(){var e;return{token:new n(function(n){e=n}),cancel:e}},module.exports=n;
-},{"./Cancel":"qFUg"}],"4yis":[function(require,module,exports) {
-"use strict";module.exports=function(n){return function(t){return n.apply(null,t)}};
-},{}],"Wzmt":[function(require,module,exports) {
-"use strict";var e=require("./utils"),r=require("./helpers/bind"),n=require("./core/Axios"),t=require("./defaults");function u(t){var u=new n(t),l=r(n.prototype.request,u);return e.extend(l,n.prototype,u),e.extend(l,u),l}var l=u(t);l.Axios=n,l.create=function(r){return u(e.merge(t,r))},l.Cancel=require("./cancel/Cancel"),l.CancelToken=require("./cancel/CancelToken"),l.isCancel=require("./cancel/isCancel"),l.all=function(e){return Promise.all(e)},l.spread=require("./helpers/spread"),module.exports=l,module.exports.default=l;
-},{"./utils":"Feqj","./helpers/bind":"hRTX","./core/Axios":"2trU","./defaults":"A14q","./cancel/Cancel":"qFUg","./cancel/CancelToken":"VgQU","./cancel/isCancel":"mXc0","./helpers/spread":"4yis"}],"O4Aa":[function(require,module,exports) {
-module.exports=require("./lib/axios");
-},{"./lib/axios":"Wzmt"}],"ola/":[function(require,module,exports) {
-exports.require=function(){var r=require("fs");if(process.versions.electron)try{originalFs=require("original-fs"),Object.keys(originalFs).length>0&&(r=originalFs)}catch(e){}return r};
-},{}],"FI0b":[function(require,module,exports) {
-module.exports={LOCHDR:30,LOCSIG:67324752,LOCVER:4,LOCFLG:6,LOCHOW:8,LOCTIM:10,LOCCRC:14,LOCSIZ:18,LOCLEN:22,LOCNAM:26,LOCEXT:28,EXTSIG:134695760,EXTHDR:16,EXTCRC:4,EXTSIZ:8,EXTLEN:12,CENHDR:46,CENSIG:33639248,CENVEM:4,CENVER:6,CENFLG:8,CENHOW:10,CENTIM:12,CENCRC:16,CENSIZ:20,CENLEN:24,CENNAM:28,CENEXT:30,CENCOM:32,CENDSK:34,CENATT:36,CENATX:38,CENOFF:42,ENDHDR:22,ENDSIG:101010256,ENDSUB:8,ENDTOT:10,ENDSIZ:12,ENDOFF:16,ENDCOM:20,STORED:0,SHRUNK:1,REDUCED1:2,REDUCED2:3,REDUCED3:4,REDUCED4:5,IMPLODED:6,DEFLATED:8,ENHANCED_DEFLATED:9,PKWARE:10,BZIP2:12,LZMA:14,IBM_TERSE:18,IBM_LZ77:19,FLG_ENC:0,FLG_COMP1:1,FLG_COMP2:2,FLG_DESC:4,FLG_ENH:8,FLG_STR:16,FLG_LNG:1024,FLG_MSK:4096,FILE:0,BUFFER:1,NONE:2,EF_ID:0,EF_SIZE:2,ID_ZIP64:1,ID_AVINFO:7,ID_PFS:8,ID_OS2:9,ID_NTFS:10,ID_OPENVMS:12,ID_UNIX:13,ID_FORK:14,ID_PATCH:15,ID_X509_PKCS7:20,ID_X509_CERTID_F:21,ID_X509_CERTID_C:22,ID_STRONGENC:23,ID_RECORD_MGT:24,ID_X509_PKCS7_RL:25,ID_IBM1:101,ID_IBM2:102,ID_POSZIP:18064,EF_ZIP64_OR_32:4294967295,EF_ZIP64_OR_16:65535,EF_ZIP64_SUNCOMP:0,EF_ZIP64_SCOMP:8,EF_ZIP64_RHO:16,EF_ZIP64_DSN:24};
-},{}],"M2c7":[function(require,module,exports) {
-module.exports={INVALID_LOC:"Invalid LOC header (bad signature)",INVALID_CEN:"Invalid CEN header (bad signature)",INVALID_END:"Invalid END header (bad signature)",NO_DATA:"Nothing to decompress",BAD_CRC:"CRC32 checksum failed",FILE_IN_THE_WAY:"There is a file in the way: %s",UNKNOWN_METHOD:"Invalid/unsupported compression method",AVAIL_DATA:"inflate::Available inflate data did not terminate",INVALID_DISTANCE:"inflate::Invalid literal/length or distance code in fixed or dynamic block",TO_MANY_CODES:"inflate::Dynamic block code description: too many length or distance codes",INVALID_REPEAT_LEN:"inflate::Dynamic block code description: repeat more than specified lengths",INVALID_REPEAT_FIRST:"inflate::Dynamic block code description: repeat lengths with no first length",INCOMPLETE_CODES:"inflate::Dynamic block code description: code lengths codes incomplete",INVALID_DYN_DISTANCE:"inflate::Dynamic block code description: invalid distance code lengths",INVALID_CODES_LEN:"inflate::Dynamic block code description: invalid literal/length code lengths",INVALID_STORE_BLOCK:"inflate::Stored block length did not match one's complement",INVALID_BLOCK_TYPE:"inflate::Invalid block type (type == 3)",CANT_EXTRACT_FILE:"Could not extract the file",CANT_OVERRIDE:"Target file already exists",NO_ZIP:"No zip file was loaded",NO_ENTRY:"Entry doesn't exist",DIRECTORY_CONTENT_ERROR:"A directory cannot have content",FILE_NOT_FOUND:"File not found: %s",NOT_IMPLEMENTED:"Not implemented",INVALID_FILENAME:"Invalid filename",INVALID_FORMAT:"Invalid or unsupported zip format. No END header found"};
-},{}],"Gs9g":[function(require,module,exports) {
-var t=require("./fileSystem").require(),n=require("path");t.existsSync=t.existsSync||n.existsSync,module.exports=function(){var r=[],e=require("./constants"),i=require("./errors"),c=n.sep;function o(n){var r=n.split(c)[0];n.split(c).forEach(function(n){if(n&&":"!==n.substr(-1,1)){var e;r+=c+n;try{e=t.statSync(r)}catch(o){t.mkdirSync(r)}if(e&&e.isFile())throw i.FILE_IN_THE_WAY.replace("%s",r)}})}return{makeDir:function(t){o(t)},crc32:function(t){"string"==typeof t&&(t=Buffer.alloc(t.length,t));var n=Buffer.alloc(4);if(!r.length)for(var e=0;e<256;e++){for(var i=e,c=8;--c>=0;)0!=(1&i)?i=3988292384^i>>>1:i>>>=1;i<0&&(n.writeInt32LE(i,0),i=n.readUInt32LE(0)),r[e]=i}for(var o=0,f=0,u=t.length,s=~o;--u>=0;)s=r[255&(s^t[f++])]^s>>>8;return o=~s,n.writeInt32LE(4294967295&o,0),n.readUInt32LE(0)},methodToString:function(t){switch(t){case e.STORED:return"STORED ("+t+")";case e.DEFLATED:return"DEFLATED ("+t+")";default:return"UNSUPPORTED ("+t+")"}},writeFileTo:function(r,e,i,c){if(t.existsSync(r)){if(!i)return!1;if(t.statSync(r).isDirectory())return!1}var f,u=n.dirname(r);t.existsSync(u)||o(u);try{f=t.openSync(r,"w",438)}catch(s){t.chmodSync(r,438),f=t.openSync(r,"w",438)}if(f)try{t.writeSync(f,e,0,e.length,0)}catch(s){throw s}finally{t.closeSync(f)}return t.chmodSync(r,c||438),!0},writeFileToAsync:function(r,e,i,c,f){"function"==typeof c&&(f=c,c=void 0),t.exists(r,function(u){if(u&&!i)return f(!1);t.stat(r,function(i,s){if(u&&s.isDirectory())return f(!1);var a=n.dirname(r);t.exists(a,function(n){n||o(a),t.open(r,"w",438,function(n,i){n?t.chmod(r,438,function(){t.open(r,"w",438,function(n,i){t.write(i,e,0,e.length,0,function(){t.close(i,function(){t.chmod(r,c||438,function(){f(!0)})})})})}):i?t.write(i,e,0,e.length,0,function(){t.close(i,function(){t.chmod(r,c||438,function(){f(!0)})})}):t.chmod(r,c||438,function(){f(!0)})})})})})},findFiles:function(r){return function r(e,i,o){"boolean"==typeof i&&(o=i,i=void 0);var f=[];return t.readdirSync(e).forEach(function(u){var s=n.join(e,u);t.statSync(s).isDirectory()&&o&&(f=f.concat(r(s,i,o))),i&&!i.test(s)||f.push(n.normalize(s)+(t.statSync(s).isDirectory()?c:""))}),f}(r,!0)},getAttributes:function(t){},setAttributes:function(t){},toBuffer:function(t){return Buffer.isBuffer(t)?t:0===t.length?Buffer.alloc(0):Buffer.from(t,"utf8")},Constants:e,Errors:i}}();
-},{"./fileSystem":"ola/","./constants":"FI0b","./errors":"M2c7"}],"ftDl":[function(require,module,exports) {
-var e=require("./fileSystem").require(),t=require("path");e.existsSync=e.existsSync||t.existsSync,module.exports=function(n){var r=n||"",i={directory:!1,readonly:!1,hidden:!1,executable:!1,mtime:0,atime:0},a=null;return r&&e.existsSync(r)?(a=e.statSync(r),i.directory=a.isDirectory(),i.mtime=a.mtime,i.atime=a.atime,i.executable=!!(1&parseInt((a.mode&parseInt("777",8)).toString(8)[0])),i.readonly=!!(2&parseInt((a.mode&parseInt("777",8)).toString(8)[0])),i.hidden="."===t.basename(r)[0]):console.warn("Invalid path: "+r),{get directory(){return i.directory},get readOnly(){return i.readonly},get hidden(){return i.hidden},get mtime(){return i.mtime},get atime(){return i.atime},get executable(){return i.executable},decodeAttributes:function(e){},encodeAttributes:function(e){},toString:function(){return'{\n\t"path" : "'+r+',\n\t"isDirectory" : '+i.directory+',\n\t"isReadOnly" : '+i.readonly+',\n\t"isHidden" : '+i.hidden+',\n\t"isExecutable" : '+i.executable+',\n\t"mTime" : '+i.mtime+'\n\t"aTime" : '+i.atime+"\n}"}}};
-},{"./fileSystem":"ola/"}],"7obU":[function(require,module,exports) {
-module.exports=require("./utils"),module.exports.FileSystem=require("./fileSystem"),module.exports.Constants=require("./constants"),module.exports.Errors=require("./errors"),module.exports.FileAttr=require("./fattr");
-},{"./utils":"Gs9g","./fileSystem":"ola/","./constants":"FI0b","./errors":"M2c7","./fattr":"ftDl"}],"P6PY":[function(require,module,exports) {
-var t=require("../util"),e=t.Constants;module.exports=function(){var r=10,n=10,E=0,L=0,a=0,i=0,C=0,I=0,s=0,d=0,N=0,U=0,o=0,g=0,u=0,m={};function O(t){t=new Date(t),a=(t.getFullYear()-1980&127)<<25|t.getMonth()+1<<21|t.getDate()<<16|t.getHours()<<11|t.getMinutes()<<5|t.getSeconds()>>1}return O(+new Date),{get made(){return r},set made(t){r=t},get version(){return n},set version(t){n=t},get flags(){return E},set flags(t){E=t},get method(){return L},set method(t){L=t},get time(){return new Date(1980+(a>>25&127),(a>>21&15)-1,a>>16&31,a>>11&31,a>>5&63,(31&a)<<1)},set time(t){O(t)},get crc(){return i},set crc(t){i=t},get compressedSize(){return C},set compressedSize(t){C=t},get size(){return I},set size(t){I=t},get fileNameLength(){return s},set fileNameLength(t){s=t},get extraLength(){return d},set extraLength(t){d=t},get commentLength(){return N},set commentLength(t){N=t},get diskNumStart(){return U},set diskNumStart(t){U=t},get inAttr(){return o},set inAttr(t){o=t},get attr(){return g},set attr(t){g=t},get offset(){return u},set offset(t){u=t},get encripted(){return 1==(1&E)},get entryHeaderSize(){return e.CENHDR+s+d+N},get realDataOffset(){return u+e.LOCHDR+m.fnameLen+m.extraLen},get dataHeader(){return m},loadDataHeaderFromBinary:function(r){var n=r.slice(u,u+e.LOCHDR);if(n.readUInt32LE(0)!==e.LOCSIG)throw t.Errors.INVALID_LOC;m={version:n.readUInt16LE(e.LOCVER),flags:n.readUInt16LE(e.LOCFLG),method:n.readUInt16LE(e.LOCHOW),time:n.readUInt32LE(e.LOCTIM),crc:n.readUInt32LE(e.LOCCRC),compressedSize:n.readUInt32LE(e.LOCSIZ),size:n.readUInt32LE(e.LOCLEN),fnameLen:n.readUInt16LE(e.LOCNAM),extraLen:n.readUInt16LE(e.LOCEXT)}},loadFromBinary:function(m){if(m.length!==e.CENHDR||m.readUInt32LE(0)!==e.CENSIG)throw t.Errors.INVALID_CEN;r=m.readUInt16LE(e.CENVEM),n=m.readUInt16LE(e.CENVER),E=m.readUInt16LE(e.CENFLG),L=m.readUInt16LE(e.CENHOW),a=m.readUInt32LE(e.CENTIM),i=m.readUInt32LE(e.CENCRC),C=m.readUInt32LE(e.CENSIZ),I=m.readUInt32LE(e.CENLEN),s=m.readUInt16LE(e.CENNAM),d=m.readUInt16LE(e.CENEXT),N=m.readUInt16LE(e.CENCOM),U=m.readUInt16LE(e.CENDSK),o=m.readUInt16LE(e.CENATT),g=m.readUInt32LE(e.CENATX),u=m.readUInt32LE(e.CENOFF)},dataHeaderToBinary:function(){var t=Buffer.alloc(e.LOCHDR);return t.writeUInt32LE(e.LOCSIG,0),t.writeUInt16LE(n,e.LOCVER),t.writeUInt16LE(E,e.LOCFLG),t.writeUInt16LE(L,e.LOCHOW),t.writeUInt32LE(a,e.LOCTIM),t.writeUInt32LE(i,e.LOCCRC),t.writeUInt32LE(C,e.LOCSIZ),t.writeUInt32LE(I,e.LOCLEN),t.writeUInt16LE(s,e.LOCNAM),t.writeUInt16LE(d,e.LOCEXT),t},entryHeaderToBinary:function(){var t=Buffer.alloc(e.CENHDR+s+d+N);return t.writeUInt32LE(e.CENSIG,0),t.writeUInt16LE(r,e.CENVEM),t.writeUInt16LE(n,e.CENVER),t.writeUInt16LE(E,e.CENFLG),t.writeUInt16LE(L,e.CENHOW),t.writeUInt32LE(a,e.CENTIM),t.writeInt32LE(65535&i,e.CENCRC,!0),t.writeUInt32LE(C,e.CENSIZ),t.writeUInt32LE(I,e.CENLEN),t.writeUInt16LE(s,e.CENNAM),t.writeUInt16LE(d,e.CENEXT),t.writeUInt16LE(N,e.CENCOM),t.writeUInt16LE(U,e.CENDSK),t.writeUInt16LE(o,e.CENATT),t.writeUInt32LE(g,e.CENATX),t.writeUInt32LE(u,e.CENOFF),t.fill(0,e.CENHDR),t},toString:function(){return'{\n\t"made" : '+r+',\n\t"version" : '+n+',\n\t"flags" : '+E+',\n\t"method" : '+t.methodToString(L)+',\n\t"time" : '+this.time+',\n\t"crc" : 0x'+i.toString(16).toUpperCase()+',\n\t"compressedSize" : '+C+' bytes,\n\t"size" : '+I+' bytes,\n\t"fileNameLength" : '+s+',\n\t"extraLength" : '+d+' bytes,\n\t"commentLength" : '+N+' bytes,\n\t"diskNumStart" : '+U+',\n\t"inAttr" : '+o+',\n\t"attr" : '+g+',\n\t"offset" : '+u+',\n\t"entryHeaderSize" : '+(e.CENHDR+s+d+N)+" bytes\n}"}}};
-},{"../util":"7obU"}],"631f":[function(require,module,exports) {
-var t=require("../util"),e=t.Constants;module.exports=function(){var n=0,r=0,E=0,i=0,s=0;return{get diskEntries(){return n},set diskEntries(t){n=r=t},get totalEntries(){return r},set totalEntries(t){r=n=t},get size(){return E},set size(t){E=t},get offset(){return i},set offset(t){i=t},get commentLength(){return s},set commentLength(t){s=t},get mainHeaderSize(){return e.ENDHDR+s},loadFromBinary:function(o){if(o.length!==e.ENDHDR||o.readUInt32LE(0)!==e.ENDSIG)throw t.Errors.INVALID_END;n=o.readUInt16LE(e.ENDSUB),r=o.readUInt16LE(e.ENDTOT),E=o.readUInt32LE(e.ENDSIZ),i=o.readUInt32LE(e.ENDOFF),s=o.readUInt16LE(e.ENDCOM)},toBinary:function(){var t=Buffer.alloc(e.ENDHDR+s);return t.writeUInt32LE(e.ENDSIG,0),t.writeUInt32LE(0,4),t.writeUInt16LE(n,e.ENDSUB),t.writeUInt16LE(r,e.ENDTOT),t.writeUInt32LE(E,e.ENDSIZ),t.writeUInt32LE(i,e.ENDOFF),t.writeUInt16LE(s,e.ENDCOM),t.fill(" ",e.ENDHDR),t},toString:function(){return'{\n\t"diskEntries" : '+n+',\n\t"totalEntries" : '+r+',\n\t"size" : '+E+' bytes,\n\t"offset" : 0x'+i.toString(16).toUpperCase()+',\n\t"commentLength" : 0x'+s+"\n}"}}};
-},{"../util":"7obU"}],"eawt":[function(require,module,exports) {
-exports.EntryHeader=require("./entryHeader"),exports.MainHeader=require("./mainHeader");
-},{"./entryHeader":"P6PY","./mainHeader":"631f"}],"6sS8":[function(require,module,exports) {
-module.exports=function(e){var n=require("zlib"),t={chunkSize:1024*(parseInt(e.length/1024)+1)};return{deflate:function(){return n.deflateRawSync(e,t)},deflateAsync:function(a){var r=n.createDeflateRaw(t),l=[],f=0;r.on("data",function(e){l.push(e),f+=e.length}),r.on("end",function(){var e=Buffer.alloc(f),n=0;e.fill(0);for(var t=0;t<l.length;t++){var r=l[t];r.copy(e,n),n+=r.length}a&&a(e)}),r.end(e)}}};
-},{}],"aQ/a":[function(require,module,exports) {
-module.exports=function(n){var e=require("zlib");return{inflate:function(){return e.inflateRawSync(n)},inflateAsync:function(t){var a=e.createInflateRaw(),r=[],f=0;a.on("data",function(n){r.push(n),f+=n.length}),a.on("end",function(){var n=Buffer.alloc(f),e=0;n.fill(0);for(var a=0;a<r.length;a++){var l=r[a];l.copy(n,e),e+=l.length}t&&t(n)}),a.end(n)}}};
-},{}],"5LNQ":[function(require,module,exports) {
-exports.Deflater=require("./deflater"),exports.Inflater=require("./inflater");
-},{"./deflater":"6sS8","./inflater":"aQ/a"}],"HItS":[function(require,module,exports) {
-var e=require("./util"),t=require("./headers"),r=e.Constants,n=require("./methods");module.exports=function(a){var o=new t.EntryHeader,s=Buffer.alloc(0),l=Buffer.alloc(0),f=!1,c=null,u=Buffer.alloc(0);function i(){return a&&Buffer.isBuffer(a)?(o.loadDataHeaderFromBinary(a),a.slice(o.realDataOffset,o.realDataOffset+o.compressedSize)):Buffer.alloc(0)}function g(t){return 8==(8&o.flags)||e.crc32(t)===o.dataHeader.crc}function d(t,r,a){if(void 0===r&&"string"==typeof t&&(t,t=void 0),f)return t&&r&&r(Buffer.alloc(0),e.Errors.DIRECTORY_CONTENT_ERROR),Buffer.alloc(0);var l=i();if(0===l.length)return t&&r&&r(l,e.Errors.NO_DATA),l;var c=Buffer.alloc(o.size);switch(o.method){case e.Constants.STORED:return l.copy(c),g(c)?(t&&r&&r(c),c):(t&&r&&r(c,e.Errors.BAD_CRC),e.Errors.BAD_CRC);case e.Constants.DEFLATED:var u=new n.Inflater(l);if(!t)return u.inflate(c).copy(c,0),g(c)||console.warn(e.Errors.BAD_CRC+" "+s.toString()),c;u.inflateAsync(function(t){t.copy(c,0),g(c)?r&&r(c):r&&r(c,e.Errors.BAD_CRC)});break;default:return t&&r&&r(Buffer.alloc(0),e.Errors.UNKNOWN_METHOD),e.Errors.UNKNOWN_METHOD}}function h(t,r){if((!c||!c.length)&&Buffer.isBuffer(a))return t&&r&&r(i()),i();if(c.length&&!f){var s;switch(o.method){case e.Constants.STORED:return o.compressedSize=o.size,s=Buffer.alloc(c.length),c.copy(s),t&&r&&r(s),s;default:case e.Constants.DEFLATED:var l=new n.Deflater(c);if(!t){var u=l.deflate();return o.compressedSize=u.length,u}l.deflateAsync(function(e){s=Buffer.alloc(e.length),o.compressedSize=e.length,e.copy(s),r&&r(s)}),l=null}}else{if(!t||!r)return Buffer.alloc(0);r(Buffer.alloc(0))}}function E(e,t){return(e.readUInt32LE(t+4)<<4)+e.readUInt32LE(t)}function m(e){var t,n,a,s;e.length>=r.EF_ZIP64_SCOMP&&(t=E(e,r.EF_ZIP64_SUNCOMP),o.size===r.EF_ZIP64_OR_32&&(o.size=t)),e.length>=r.EF_ZIP64_RHO&&(n=E(e,r.EF_ZIP64_SCOMP),o.compressedSize===r.EF_ZIP64_OR_32&&(o.compressedSize=n)),e.length>=r.EF_ZIP64_DSN&&(a=E(e,r.EF_ZIP64_RHO),o.offset===r.EF_ZIP64_OR_32&&(o.offset=a)),e.length>=r.EF_ZIP64_DSN+4&&(s=e.readUInt32LE(r.EF_ZIP64_DSN),o.diskNumStart===r.EF_ZIP64_OR_16&&(o.diskNumStart=s))}return{get entryName(){return s.toString()},get rawEntryName(){return s},set entryName(t){var r=(s=e.toBuffer(t))[s.length-1];f=47===r||92===r,o.fileNameLength=s.length},get extra(){return u},set extra(e){u=e,o.extraLength=e.length,function(e){for(var t,n,a,o=0;o<e.length;)t=e.readUInt16LE(o),o+=2,n=e.readUInt16LE(o),o+=2,a=e.slice(o,o+n),o+=n,r.ID_ZIP64===t&&m(a)}(e)},get comment(){return l.toString()},set comment(t){l=e.toBuffer(t),o.commentLength=l.length},get name(){var e=s.toString();return f?e.substr(e.length-1).split("/").pop():e.split("/").pop()},get isDirectory(){return f},getCompressedData:function(){return h(!1,null)},getCompressedDataAsync:function(e){h(!0,e)},setData:function(t){c=e.toBuffer(t),!f&&c.length?(o.size=c.length,o.method=e.Constants.DEFLATED,o.crc=e.crc32(t),o.changed=!0):o.method=e.Constants.STORED},getData:function(e){return o.changed?c:d(!1,null)},getDataAsync:function(e,t){o.changed?e(c):d(!0,e)},set attr(e){o.attr=e},get attr(){return o.attr},set header(e){o.loadFromBinary(e)},get header(){return o},packHeader:function(){var t=o.entryHeaderToBinary();return s.copy(t,e.Constants.CENHDR),o.extraLength&&u.copy(t,e.Constants.CENHDR+s.length),o.commentLength&&l.copy(t,e.Constants.CENHDR+s.length+o.extraLength,l.length),t},toString:function(){return'{\n\t"entryName" : "'+s.toString()+'",\n\t"name" : "'+(f?s.toString().replace(/\/$/,"").split("/").pop():s.toString().split("/").pop())+'",\n\t"comment" : "'+l.toString()+'",\n\t"isDirectory" : '+f+',\n\t"header" : '+o.toString().replace(/\t/gm,"\t\t").replace(/}/gm,"\t}")+',\n\t"compressedData" : <'+(a&&a.length+" bytes buffer"||"null")+'>\n\t"data" : <'+(c&&c.length+" bytes buffer"||"null")+">\n}"}}};
-},{"./util":"7obU","./headers":"eawt","./methods":"5LNQ"}],"MmRv":[function(require,module,exports) {
-var e=require("./zipEntry"),t=require("./headers"),n=require("./util");module.exports=function(r,a){var o=[],s={},i=Buffer.alloc(0),h="",f=n.FileSystem.require(),c=null,l=new t.MainHeader;function u(){for(var t=c.length-n.Constants.ENDHDR,r=Math.max(0,t-65535),a=-1;t>=r;t--)if(80===c[t]&&c.readUInt32LE(t)===n.Constants.ENDSIG){a=t;break}if(!~a)throw n.Errors.INVALID_FORMAT;l.loadFromBinary(c.slice(a,a+n.Constants.ENDHDR)),l.commentLength&&(i=c.slice(a+n.Constants.ENDHDR)),function(){s={},o=new Array(l.diskEntries);for(var t=l.offset,r=0;r<o.length;r++){var a=t,i=new e(c);i.header=c.slice(a,a+=n.Constants.CENHDR),i.entryName=c.slice(a,a+=i.header.fileNameLength),i.header.extraLength&&(i.extra=c.slice(a,a+=i.header.extraLength)),i.header.commentLength&&(i.comment=c.slice(a,a+i.header.commentLength)),t+=i.header.entryHeaderSize,o[r]=i,s[i.entryName]=i}}()}return a===n.Constants.FILE?(h=r,c=f.readFileSync(h),u()):a===n.Constants.BUFFER&&(c=r,u()),{get entries(){return o},get comment(){return i.toString()},set comment(e){l.commentLength=e.length,i=e},getEntry:function(e){return s[e]||null},setEntry:function(e){o.push(e),s[e.entryName]=e,l.totalEntries=o.length},deleteEntry:function(e){var t=s[e];if(t&&t.isDirectory){var n=this;this.getEntryChildren(t).forEach(function(t){t.entryName!==e&&n.deleteEntry(t.entryName)})}o.splice(o.indexOf(t),1),delete s[e],l.totalEntries=o.length},getEntryChildren:function(e){if(e.isDirectory){var t=[],n=e.entryName,r=n.length;return o.forEach(function(e){e.entryName.substr(0,r)===n&&t.push(e)}),t}return[]},compressToBuffer:function(){o.length>1&&o.sort(function(e,t){var n=e.entryName.toLowerCase(),r=t.entryName.toLowerCase();return n<r?-1:n>r?1:0});var e=0,t=[],r=[],a=0;l.size=0,l.offset=0,o.forEach(function(n){var o=n.getCompressedData();n.header.offset=a;var s=n.header.dataHeaderToBinary(),i=n.rawEntryName.length,h=n.extra.toString(),f=Buffer.alloc(i+h.length);n.rawEntryName.copy(f,0),f.fill(h,i);var c=s.length+f.length+o.length;a+=c,t.push(s),t.push(f),t.push(o);var u=n.packHeader();r.push(u),l.size+=u.length,e+=c+u.length}),e+=l.mainHeaderSize,l.offset=a,a=0;var s=Buffer.alloc(e);t.forEach(function(e){e.copy(s,a),a+=e.length}),r.forEach(function(e){e.copy(s,a),a+=e.length});var h=l.toBinary();return i&&i.copy(h,n.Constants.ENDHDR),h.copy(s,a),s},toAsyncBuffer:function(e,t,r,a){o.length>1&&o.sort(function(e,t){var n=e.entryName.toLowerCase(),r=t.entryName.toLowerCase();return n>r?-1:n<r?1:0});var s=0,h=[],f=[],c=0;l.size=0,l.offset=0;!function(t){var o=arguments.callee;if(t.length){var u=t.pop(),g=u.entryName+u.extra.toString();r&&r(g),u.getCompressedDataAsync(function(r){a&&a(g),u.header.offset=c;var y,m=u.header.dataHeaderToBinary();try{y=Buffer.alloc(g.length,g)}catch(N){y=new Buffer(g)}var d=m.length+y.length+r.length;c+=d,h.push(m),h.push(y),h.push(r);var E=u.packHeader();if(f.push(E),l.size+=E.length,s+=d+E.length,t.length)o(t);else{s+=l.mainHeaderSize,l.offset=c,c=0;var p=Buffer.alloc(s);h.forEach(function(e){e.copy(p,c),c+=e.length}),f.forEach(function(e){e.copy(p,c),c+=e.length});var v=l.toBinary();i&&i.copy(v,n.Constants.ENDHDR),v.copy(p,c),e(p)}})}}(o)}}};
-},{"./zipEntry":"HItS","./headers":"eawt","./util":"7obU"}],"31pC":[function(require,module,exports) {
-var r=require("./util"),e=r.FileSystem.require(),t=require("path");e.existsSync=e.existsSync||t.existsSync;var n=require("./zipEntry"),i=require("./zipFile"),o=/^win/.test(process.platform);module.exports=function(o){var a=void 0,f="";if(o&&"string"==typeof o){if(!e.existsSync(o))throw r.Errors.INVALID_FILENAME;f=o,a=new i(o,r.Constants.FILE)}else a=o&&Buffer.isBuffer(o)?new i(o,r.Constants.BUFFER):new i(null,r.Constants.NONE);function s(r,e){r=t.resolve(t.normalize(r));for(var n=e.split("/"),i=0,o=n.length;i<o;i++){var a=t.normalize(t.join(r,n.slice(i,o).join(t.sep)));if(0===a.indexOf(r))return a}return t.normalize(t.join(r,t.basename(e)))}function c(r){var e;if(r&&a&&("string"==typeof r&&(e=a.getEntry(r)),"object"==typeof r&&void 0!==r.entryName&&void 0!==r.header&&(e=a.getEntry(r.entryName)),e))return e;return null}return{readFile:function(r){var e=c(r);return e&&e.getData()||null},readFileAsync:function(r,e){var t=c(r);t?t.getDataAsync(e):e(null,"getEntry failed for:"+r)},readAsText:function(r,e){var t=c(r);if(t){var n=t.getData();if(n&&n.length)return n.toString(e||"utf8")}return""},readAsTextAsync:function(r,e,t){var n=c(r);n?n.getDataAsync(function(r,n){n?e(r,n):r&&r.length?e(r.toString(t||"utf8")):e("")}):e("")},deleteFile:function(r){var e=c(r);e&&a.deleteEntry(e.entryName)},addZipComment:function(r){a.comment=r},getZipComment:function(){return a.comment||""},addZipEntryComment:function(r,e){var t=c(r);t&&(t.comment=e)},getZipEntryComment:function(r){var e=c(r);return e&&e.comment||""},updateFile:function(r,e){var t=c(r);t&&t.setData(e)},addLocalFile:function(t,n,i){if(!e.existsSync(t))throw r.Errors.FILE_NOT_FOUND.replace("%s",t);n?"/"!==(n=n.split("\\").join("/")).charAt(n.length-1)&&(n+="/"):n="";var o=t.split("\\").join("/").split("/").pop();i?this.addFile(n+i,e.readFileSync(t),"",0):this.addFile(n+o,e.readFileSync(t),"",0)},addLocalFolder:function(n,i,o){if(void 0===o?o=function(){return!0}:o instanceof RegExp&&(o=function(r){return function(e){return r.test(e)}}(o)),i?"/"!==(i=i.split("\\").join("/")).charAt(i.length-1)&&(i+="/"):i="","/"!==(n=(n=t.normalize(n)).split("\\").join("/")).charAt(n.length-1)&&(n+="/"),!e.existsSync(n))throw r.Errors.FILE_NOT_FOUND.replace("%s",n);var a=r.findFiles(n),f=this;a.length&&a.forEach(function(r){var t=r.split("\\").join("/").replace(new RegExp(n.replace(/(\(|\))/g,"\\$1"),"i"),"");o(t)&&("/"!==t.charAt(t.length-1)?f.addFile(i+t,e.readFileSync(r),"",0):f.addFile(i+t,Buffer.alloc(0),"",0))})},addFile:function(r,e,t,i){var o=new n;o.entryName=r,o.comment=t||"",i||(i=o.isDirectory?1106051088:420<<16),o.attr=i,o.setData(e),a.setEntry(o)},getEntries:function(){return a?a.entries:[]},getEntry:function(r){return c(r)},extractEntryTo:function(n,i,o,f){f=f||!1,o=void 0===o||o;var u=c(n);if(!u)throw r.Errors.NO_ENTRY;var l=u.entryName,y=s(i,o?l:t.basename(l));if(u.isDirectory)return y=t.resolve(y,".."),a.getEntryChildren(u).forEach(function(e){if(!e.isDirectory){var n=e.getData();if(!n)throw r.Errors.CANT_EXTRACT_FILE;var a=s(i,o?e.entryName:t.basename(e.entryName));r.writeFileTo(a,n,f)}}),!0;var E=u.getData();if(!E)throw r.Errors.CANT_EXTRACT_FILE;if(e.existsSync(y)&&!f)throw r.Errors.CANT_OVERRIDE;return r.writeFileTo(y,E,f),!0},test:function(){if(!a)return!1;for(var r in a.entries)try{if(r.isDirectory)continue;if(!a.entries[r].getData())return!1}catch(e){return!1}return!0},extractAllTo:function(t,n){if(n=n||!1,!a)throw r.Errors.NO_ZIP;a.entries.forEach(function(i){var o=s(t,i.entryName.toString());if(i.isDirectory)r.makeDir(o);else{var a=i.getData();if(!a)throw r.Errors.CANT_EXTRACT_FILE;r.writeFileTo(o,a,n);try{e.utimesSync(o,i.header.time,i.header.time)}catch(f){throw r.Errors.CANT_EXTRACT_FILE}}})},extractAllToAsync:function(n,i,o){if(o||(o=function(){}),i=i||!1,a){var f=a.entries,c=f.length;f.forEach(function(a){if(!(c<=0)){var f=t.normalize(a.entryName.toString());if(a.isDirectory)return r.makeDir(s(n,f)),void(0==--c&&o(void 0));a.getDataAsync(function(u,l){if(!(c<=0)){if(!l)return u?void r.writeFileToAsync(s(n,f),u,i,function(r){try{e.utimesSync(t.resolve(n,f),a.header.time,a.header.time)}catch(l){o(new Error("Unable to set utimes"))}if(!(c<=0))return r?void(0==--c&&o(void 0)):(c=0,void o(new Error("Unable to write")))}):(c=0,void o(new Error(r.Errors.CANT_EXTRACT_FILE)));o(new Error(l))}})}})}else o(new Error(r.Errors.NO_ZIP))},writeZip:function(e,t){if(1===arguments.length&&"function"==typeof e&&(t=e,e=""),!e&&f&&(e=f),e){var n=a.compressToBuffer();if(n){var i=r.writeFileTo(e,n,!0);"function"==typeof t&&t(i?null:new Error("failed"),"")}}},toBuffer:function(r,e,t,n){return this.valueOf=2,"function"==typeof r?(a.toAsyncBuffer(r,e,t,n),null):a.compressToBuffer()}}};
-},{"./util":"7obU","./zipEntry":"HItS","./zipFile":"MmRv"}],"slT2":[function(require,module,exports) {
-const opn=require("opn"),uuidv1=require("uuid/v1"),axios=require("axios"),AdmZip=require("adm-zip");let debug=!1,log=e=>{debug&&Max.post(e)};const os=require("os").platform(),homedir=require("os").homedir();let remoteVersion=null,defaultSystem={uName:null,os:"Windows",autoUpdate:0,vidFPS:2,recFPS:1,appState:{major:null,minor:null,revision:null,state:null},io:{driver:null,in:null,out:null,sampleRate:null,ioVector:null,sigVector:null},defaultSettings:{dac:1,limiter:1,volume:127,fullScreen:1,metroTog:1,bpm:120,showBoards:1,initEvent:0,keyboardMIDI:!1,keyOctave:4,recType:0,vWidth:320,vHeight:320,vChan:1}},state={system:defaultSystem,project:{title:null,created:null,lastOpened:null,lastUpdated:null,path:null,settings:{},openBoards:[],savedBoards:[],systemBoard:{metroSettings:{bpm:120,bpMeasure:4,tick:0,customDiv:5},virtualControllers:{keyboard:0,slider:0,pads:0}}}},session={sessionBoards:[],boardPointers:{}};Max.addHandler("add",(e,s,t)=>{add(e,s,t)}),Max.addHandler("remove",(e,s,t)=>{remove(e,s,t)}),Max.addHandler("update",(e,s,t,o,a,n)=>{update(e,s,t,o,a,n)}),Max.addHandler("copy",(e,s,t,o)=>{copy(e,s,t,o)}),Max.addHandler("get",(e,s,t)=>{getFromMax(e,s,t)}),Max.addHandler("import",(e,s)=>{importer(e,s)}),Max.addHandler("export",(e,s,t)=>{exporter(e,s,t)}),Max.addHandler("newProject",(e,s)=>{newProject(e,s)}),Max.addHandler("loadProject",e=>{loadProject(e)}),Max.addHandler("projectOut",()=>{["sendTo MSDP_View_Dict_State","sendGate 1",JSON.stringify(state,null,4),"sendGate 0"].map(Max.outlet)}),Max.addHandler("sessionOut",()=>{["sendTo MSDP_View_Dict_Session","sendGate 1",JSON.stringify(session,null,4),"sendGate 0"].map(Max.outlet)}),Max.addHandler("debug",e=>{debug=e,Max.post(`debug mode ${e}`)}),Max.addHandler("updateCheck",()=>{updateCheck()}),Max.addHandler("updateDL",()=>{updateDL()}),Max.addHandler("startUpdate",()=>{startUpdate()}),Max.addHandler("stateRecover",()=>{stateRecover()}),Max.addHandler("backupDicts",()=>{backupDicts()}),Max.addHandler("crash",()=>{crash()});const stateRecover=async e=>{try{state=await Max.getDict("msdpState"),session=await Max.getDict("msdpSession"),log("state recovered")}catch(s){log("failed to recover state"),log(s)}},backupDicts=()=>{try{Max.setDict("msdpState",state),Max.setDict("msdpSession",session)}catch(e){log("failed to backup state"),log(e)}},updateCheck=()=>{try{const s=()=>{["sendTo MSDP_Updater_Request","sendGate 1","bang","sendGate 0"].map(Max.outlet)},t=()=>{["sendTo MSDP_Install_Request","sendGate 1","bang","sendGate 0"].map(Max.outlet)};let o=`${JSON.stringify(state.system.appState.major)}.${JSON.stringify(state.system.appState.minor)}.${JSON.stringify(state.system.appState.revision)}`;log("this is version "+o);const a=async e=>{const a=await axios.get("https://musicsdp.com/download/music_sdp.hash");if((remoteVersion=a.data.toString().trim())!==o){log("update found");let e=`${homedir}/Downloads/Install_MSDP_${remoteVersion}.dmg`;"win32"==os&&(e=`${homedir}/Downloads/Install_MSDP_${remoteVersion}.exe`);let o=fs.existsSync(e);log(o),0==o?2===state.system.autoUpdate?updateDL():s():(log("download already exists"),t())}else log("program is up-to-date")};log("checking for update"),a()}catch(e){log(e)}},updateDL=()=>{try{log("beginning download");const s=()=>{["sendTo MSDP_Install_Request","sendGate 1","bang","sendGate 0"].map(Max.outlet)};(async e=>{try{log(`looking for msdp${remoteVersion}.${os}.zip`);const e=await axios.get(`https://musicsdp.com/download/msdp${remoteVersion}.${os}.zip`,{responseType:"arraybuffer"});new AdmZip(e.data).extractAllTo(`${homedir}/Downloads`,!0),s(),log("installer downloaded")}catch(t){log(t),informDLFail()}})()}catch(e){log(e)}},startUpdate=()=>{try{const s=()=>new Promise(e=>{setTimeout(()=>{e(t())},3e3)}),t=()=>{["sendTo MSDP_Application_Kill","sendGate 1","bang","sendGate 0"].map(Max.outlet)};(async e=>{"darwin"==os?opn(`${homedir}/Downloads/Install_MSDP_${remoteVersion}.dmg`):exec.exec(`${homedir}/Downloads/Install_MSDP_${remoteVersion}.exe`),await s()})()}catch(e){informDLFail(),log(e)}},informDLFail=()=>{["sendTo MSDP_DL_Failed","sendGate 1","bang","sendGate 0"].map(Max.outlet)},newProject=(e,s)=>{try{state.project.title=e,state.project.created=new Date,state.project.settings=state.system.defaultSettings,state.project.openBoards=state.project.savedBoards=session.sessionBoards=[],session.boardPointers={},exporter("project",s),getFromMax("pSettings"),getFromMax("title"),["sendTo MSDP_newboard_load","sendGate 1","bang","sendGate 0"].map(Max.outlet),["sendTo MSDP_System_Board_Audio_Path","sendGate 1","bang","sendGate 0"].map(Max.outlet),backupDicts()}catch(t){log(t)}},loadProject=e=>{try{importer("project",e),getFromMax("pSettings"),getFromMax("list","savedBoards"),getFromMax("list","openBoards"),getFromMax("title")["sendGate 0"].map(Max.outlet),backupDicts()}catch(s){log(s)}},add=(e,s,t)=>{try{bigRandStr();if("board"===e){let e=s;return"undefined"===s&&(s="Board_"+bigRandStr()),!0===session.boardPointers.hasOwnProperty(s)&&(s=+bigRandStr()),session.sessionBoards.push({title:s,position:null,power:1,saved:0,modules:[]}),session.boardPointers[s]={index:session.sessionBoards.length-1,proto:e,open:1,modules:{}},s}"module"===e?(i=session.boardPointers[s].index,session.sessionBoards[i].modules.push({location:"1 1",process:"Choose One",id:t,parameters:{}}),session.boardPointers[s].modules[t]={index:session.sessionBoards[i].modules.length-1,open:1,id:t}):"asset"===e&&(state.project.assets[s].push(t),log(` ${t} added to the ${s} list`)),backupDicts()}catch(o){log(o)}},remove=(e,s,t)=>{if("savedBoard"===e){for(b in state.project.savedBoards)if(state.project.savedBoards[b].title===s)return state.project.savedBoards.splice(b,1),void log(`board ${s} removed from saved board list`);log(`board ${s} not found in saved board list`)}else if("openBoard"===e)session.boardPointers[s].open=0;else if("module"===e)session.boardPointers[s].modules[t].open=0;else if("asset"===e){for(a in state.project.assets[s])if(state.project.assets[s][a]===t)return state.project.assets[s].splice(a,1),void log(`${t} at ${s} removed`);log(`${asset} in ${e} not found`)}backupDicts()},update=(type,v,v2,v3,v4,v5)=>{try{if("value"===type)e="number"==typeof v2?"state."+v+" = "+v2+";":"state."+v+' = "'+v2+'";',log(`update: ${e}`),eval(e);else if("board"===type){let e=session.boardPointers[v].index;"title"===v2&&(!0===session.boardPointers.hasOwnProperty(v3)&&(v3=NaN+bigRandStr()),Object.defineProperty(session.boardPointers,v3,Object.getOwnPropertyDescriptor(session.boardPointers,v)),delete session.boardPointers[v],session.boardPointers[v3].proto=v3),session.sessionBoards[e][v2]=v3,log(`board ${v} ${v2} set to ${v3}`)}else if("module"===type){let e=session.boardPointers[v].index,s=session.boardPointers[v].modules[v2].index;"id"===v3&&(session.boardPointers[v].modules[v2].id=v4),session.sessionBoards[e].modules[s][v3]=v4,log(`module ${v2} on board ${v} value ${v3} set to ${v4}`)}else if("parameter"===type){var i=session.boardPointers[v].index,i2=session.boardPointers[v].modules[v2].index;session.sessionBoards[i].modules[i2].parameters[v3]=v4}}catch(error){log(error)}},copy=(e,s,t,o)=>{try{if("session"===e){let e=session.boardPointers[s].index,o=session.boardPointers[s].proto,n=JSON.parse(JSON.stringify(session.sessionBoards[e]));n.title=o;let r=[];for(let t in session.boardPointers[s].modules)0===session.boardPointers[s].modules[t].open&&r.push(session.boardPointers[s].modules[t].index);r.sort(function(e,s){return s-e});for(let s in r)n.modules.splice(r[s],1);if("open"===t)o!=s&&!0===session.boardPointers.hasOwnProperty(o)&&1===session.boardPointers[o].open&&(n.title=s),state.project.openBoards.push(n);else if("saved"===t){for(var a in session.sessionBoards[e].saved=1,n.saved=1,state.project.savedBoards)if(state.project.savedBoards[a].title===o)return log(`Board ${o} updated`),void state.project.savedBoards.splice(a,1,n);log(`Board ${s} added to saved list`),state.project.savedBoards.push(n)}}else if("saved"===e){let e,t={};for(b in state.project.savedBoards)if(state.project.savedBoards[b].title===s)for(var n in(e=state.project.savedBoards[b]).modules){t[e.modules[n].id]={index:n,open:1}}!0===session.boardPointers.hasOwnProperty(s)&&(e.title=+bigRandStr()),session.boardPointers[e.title]={index:session.sessionBoards.length,proto:s,open:1,modules:t},session.sessionBoards.push(e),log(`Board ${e.title} added to session`)}else if("open"===e){let e,t={};for(b in state.project.openBoards)if(state.project.openBoards[b].title===s){e=state.project.openBoards[b];for(let s in e.modules){t[e.modules[s].id]={index:s,open:1}}}!0===session.boardPointers.hasOwnProperty(s)&&(e.title=+bigRandStr()),session.boardPointers[e.title]={index:session.sessionBoards.length,proto:s,open:1,modules:t},session.sessionBoards.push(e),log(`Board ${e.title} added to session`)}backupDicts()}catch(r){log(r)}},getFromMax=(e,s,t)=>{try{if("path"===e){let e=state.project.path;e=e.substring(0,e.lastIndexOf("/")),Max.outlet("sendTo MDSP_Backup_pPath"),Max.outlet("sendGate 1"),Max.outlet(e),Max.outlet("sendGate 0")}else if("system"===e)["sendTo MSDP_System_Settings_Set","sendGate 1",JSON.stringify(state.system,null,4),"sendGate 0"].map(Max.outlet);else if("title"===e)["sendTo MSDP_Set_Project_Title","sendGate 1",JSON.stringify(state.project.title,null,4),"sendGate 0"].map(Max.outlet);else if("pSettings"===e)["sendTo MSDP_Project_Settings_Set","sendGate 1",JSON.stringify(state.project.settings,null,4),"sendGate 0","sendTo MSDP_Metro_Settings_Set","sendGate 1",JSON.stringify(state.project.systemBoard,null,4),"sendGate 0"].map(Max.outlet);else if("pSysBoard"===e)"virtual"===s&&["sendTo MSDP_Virtual_Settings_Set","sendGate 1",JSON.stringify(state.project.systemBoard,null,4),"sendGate 0"].map(Max.outlet);else if("list"===e){if("savedBoards"===s){for(b in"meta"===t?Max.outlet("sendTo MSDP_Saved_Boards_List_Meta"):"deleted"===t?Max.outlet("sendTo MSDP_Deleted_Boards_List"):Max.outlet("sendTo MSDP_Saved_Boards_List"),Max.outlet("sendGate 1"),state.project.savedBoards){let e=[];e.push(state.project.savedBoards[b].title),Max.outlet(e)}Max.outlet("sendGate 0")}else if("openBoards"===s){for(b in["sendTo MSDP_Open_Board_List_Load","sendGate 1"].map(Max.outlet),state.project.openBoards){let e=[];e.push(state.project.openBoards[b].title),Max.outlet(e)}Max.outlet("sendGate 0")}}else if("board"===e){let e,o=t;for(b in"open"===s?e=state.project.openBoards:"saved"===s&&(e=state.project.savedBoards,o=add("board",t)),e)if(e[b].title===t)return void["sendTo "+t,"sendGate 1","title "+o,JSON.stringify(e[b],null,4),"sendGate 0"].map(Max.outlet);log(`${t} not found`)}backupDicts()}catch(o){log(o)}},exporter=(e,s,t)=>{let o,a;if("home"===e){Max.outlet("uname "+JSON.stringify(state.system.uName,null,4)),state.project.openBoards=[];for(let e in session.boardPointers)session.boardPointers.hasOwnProperty(e)&&1===session.boardPointers[e].open&&!1===isEmpty(session.boardPointers[e].modules)&&copy("session",e,"open");return state.project.lastUpdated=new Date,Max.outlet("sendTo MSDP_State_Information_Out"),Max.outlet("sendGate 1"),Max.outlet(JSON.stringify(state,null,4)),void Max.outlet("sendGate 0")}if("system"===e){if(null===state.system.uName){if(1==fs.existsSync(`${homedir}/Documents/Music_SDP/SystemSettings.json`)){log("retreiving uname from 1.x");let e=require(`${homedir}/Documents/Music_SDP/SystemSettings.json`);state.system.uName=e.uName,Max.outlet("uname "+JSON.stringify(state.system.uName,null,4))}else state.system.uName=uuidv1(),Max.outlet("uname "+JSON.stringify(state.system.uName,null,4))}o=s,a=state.system}else if("project"===e){state.project.openBoards=[];for(let e in session.boardPointers)session.boardPointers.hasOwnProperty(e)&&1===session.boardPointers[e].open&&null!=session.boardPointers[e]&&!1===isEmpty(session.boardPointers[e].modules)&&copy("session",e,"open");state.project.lastUpdated=new Date,o=s,a=state.project}else if("board"===e){o=t,a=session.sessionBoards[session.boardPointers[s].index];let e=[];for(let t in session.boardPointers[s].modules)0===session.boardPointers[s].modules[t].open&&e.push(session.boardPointers[s].modules[t].index);e.sort(function(e,s){return s-e});for(let s in e)mode.modules.splice(s+1,1)}fs.writeFileSync(o+".temp",JSON.stringify(a,null,4)),1==fs.existsSync(o)&&fs.unlinkSync(o),fs.renameSync(o+".temp",o),log(`JSON write ${o}`)},importer=(e,s)=>{try{let o=require(s);if(log(`JSON read ${s}`),"system"===e)if(fs.existsSync(s)){if(state.system=o,1===state.system.appState.major){let e=state.system.uName;state.system=defaultSystem,state.system.uName=e,exporter("system",s),log("updating from v1 to v2")}void 0!==state.system.dev&&Max.outlet("dev 1"),null===state.system.autoUpdate&&["sendTo MSDP_AutoUpdate_Window_Confirm","sendGate 1","open","sendGate 0"].map(Max.outlet),Max.outlet("uname "+JSON.stringify(state.system.uName,null,4)),void 0===state.system.defaultSettings&&(state.system.defaultSettings=state.system.settings,delete state.system.settings)}else state.system=defaultSystem,exporter("system",s)["sendGate 0"].map(Max.outlet),log("No sys prefs found. Generating sys prefs file");else if("backup"===e)session.sessionBoards=[],session.boardPointers={},msdp.project=o,log(1,"last save "+msdp.project.title+" loaded");else if("project"===e)session.sessionBoards=[],session.boardPointers={},state.project=o,state.project.lastOpened=new Date,state.project.lastUpdated=new Date,log(`project ${state.project.title} loaded`);else if("board"===e){let e={};for(let s in o.modules)e[o.modules[s].id]={index:s,open:1};!0===session.boardPointers.hasOwnProperty(o.title)&&(o.title=+bigRandStr()),session.boardPointers[o.title]={index:session.sessionBoards.length,proto:o.title,open:1,modules:e},session.sessionBoards.push(o),log(`board ${o.title} imported into session`),getFromMax("board","session",o.title)}else"system"===e&&(state.system=o,log(`JSON Read ${s}`))}catch(t){log(t)}},bigRandStr=()=>Math.floor(4294967295*Math.random()).toString(16),isEmpty=e=>{for(let s in e)if(e.hasOwnProperty(s))return!1;return!0};
-},{"opn":"g1Op","uuid/v1":"acME","axios":"O4Aa","adm-zip":"31pC"}]},{},["slT2"], null)
-//# sourceMappingURL=/stateDesign.map
+// collection of Max handlers - messages from Max that run functions
+Max.addHandler("add", (type, v, v2) => {add(type, v, v2)})
+Max.addHandler("remove", (type, v, v2) => {remove(type, v, v2)})
+Max.addHandler("update", (type, v, v2, v3, v4, v5) => {update(type, v, v2, v3, v4, v5)})
+Max.addHandler("copy", (loc, val, dest, dest2) => {copy(loc, val, dest, dest2)})
+Max.addHandler("get", (type, v, v2) => {getFromMax(type, v, v2)})
+Max.addHandler("import", (type, path) => {importer(type, path)})
+Max.addHandler("export", (type, v1, v2) => {exporter(type, v1, v2)})
+Max.addHandler("newProject", (title, path) => {newProject(title, path)})
+Max.addHandler("loadProject", (path) => { loadProject(path);});
+Max.addHandler("projectOut", () => { ["sendTo MSDP_View_Dict_State", "sendGate 1", JSON.stringify(state, null, 4), "sendGate 0" ].map(Max.outlet); });
+Max.addHandler("sessionOut", () => {  ["sendTo MSDP_View_Dict_Session", "sendGate 1", JSON.stringify(session, null, 4), "sendGate 0" ].map(Max.outlet); });
+Max.addHandler("debug", (v) => {debug = v; Max.post(`debug mode ${v}`)});
+Max.addHandler("updateCheck", () => { updateCheck() })
+Max.addHandler("updateDL", () => { updateDL() })
+Max.addHandler("startUpdate", () => { startUpdate() })
+Max.addHandler("stateRecover", () => { stateRecover() })
+Max.addHandler("backupDicts", () => { backupDicts() })
+Max.addHandler("crash", () => { crash() }) // use to intentionally crash the script
+
+// begin function definitions
+const stateRecover = async _ => {
+  try {
+    state = await Max.getDict('msdpState')
+    session = await Max.getDict('msdpSession')
+    log('state recovered')
+  } catch (err) {log('failed to recover state'), log(err)}
+}
+const backupDicts = () => {
+  try {
+    Max.setDict('msdpState', state)
+    Max.setDict('msdpSession', session)
+  } catch (err) {log('failed to backup state'), log(err)}
+}
+
+const updateCheck = () => { // updater code goes here
+  try {
+    const updateRequest = () => { ["sendTo MSDP_Updater_Request", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet) }
+    const installRequest = () => { ["sendTo MSDP_Install_Request", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet) }
+    let localVersion = `${JSON.stringify(state.system.appState.major)}.${JSON.stringify(state.system.appState.minor)}.${JSON.stringify(state.system.appState.revision)}`
+    log('this is version ' + localVersion)
+    const updater = async _ => {
+      const res = await axios.get('https://musicsdp.com/download/music_sdp.hash')
+      remoteVersion = res.data.toString().trim()
+      if (! ( remoteVersion === localVersion )) {
+        log("update found")
+        let localCheck = `${homedir}/Downloads/Install_MSDP_${remoteVersion}.dmg`
+        if (os == 'win32') { localCheck = `${homedir}/Downloads/Install_MSDP_${remoteVersion}.exe` }
+        let dlExists = fs.existsSync( localCheck )
+        log(dlExists)
+        if (dlExists == 0) {
+          if ( state.system.autoUpdate === 2 ) { updateDL() }
+          else { updateRequest() }
+        }
+        else {
+          log('download already exists')
+          installRequest()
+        }
+      }
+      else { log('program is up-to-date') }
+    }
+    log("checking for update")
+    updater()
+  } catch(err) { log(err) }
+}
+const updateDL = () => {
+  try {
+    log('beginning download')
+    const requestInstall = () => { ["sendTo MSDP_Install_Request", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet) }
+    const downloader = async _ => {
+      try {
+        log(`looking for msdp${remoteVersion}.${os}.zip`)
+        const res = await axios.get(`https://musicsdp.com/download/msdp${remoteVersion}.${os}.zip`, {responseType: 'arraybuffer'})
+        new AdmZip(res.data).extractAllTo(`${homedir}/Downloads`, true)
+        requestInstall()
+        log('installer downloaded')
+      }
+      catch(err) {
+        log(err)
+        informDLFail()
+      }
+    }
+    downloader()
+  } catch(err) { log(err) }
+}
+const startUpdate = () => {
+  try {
+    const resolveAfter3Seconds = () => { return new Promise(resolve => { setTimeout(() => { resolve(killMSDP()) }, 3000) }) }
+    const killMSDP = () => { ["sendTo MSDP_Application_Kill", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet) }
+    const updateLauncher = async _ => {
+      if (os == 'darwin') { opn( `${homedir}/Downloads/Install_MSDP_${remoteVersion}.dmg` ) }
+      else { exec.exec( `${homedir}/Downloads/Install_MSDP_${remoteVersion}.exe` ) }
+      await resolveAfter3Seconds()
+    }
+    updateLauncher()
+  }
+  catch(error) {
+    informDLFail()
+    log(error)
+  }
+}
+const informDLFail = () => {
+  ["sendTo MSDP_DL_Failed", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet)   // send command back to MSDP to initialize update request
+}
+const newProject = (title, path) => { // blank out project and session dictionaries to begin new project
+  try {
+    state.project.title = title;
+    state.project.created = new Date();
+    state.project.settings = state.system.defaultSettings;
+    state.project.openBoards = state.project.savedBoards = session.sessionBoards = [];
+    session.boardPointers = {};
+    exporter('project', path);
+    getFromMax("pSettings");
+    getFromMax("title");
+    ["sendTo MSDP_newboard_load", "sendGate 1", "bang", "sendGate 0" ].map(Max.outlet);
+    ["sendTo MSDP_System_Board_Audio_Path", 'sendGate 1', 'bang', 'sendGate 0'].map(Max.outlet);
+    backupDicts()
+  }
+  catch(error) { log(error) }
+}
+const loadProject = (path) => { // load the project state
+  try {
+    importer("project", path)
+    getFromMax("pSettings")
+    getFromMax("list", "savedBoards")
+    getFromMax("list", "openBoards"); // for some reason, removing the semi-colon here breaks everything!
+    getFromMax("title")
+    ['sendTo MSDP_System_Board_Audio_Path', 'sendGate 1', 'bang', 'sendGate 0'].map(Max.outlet)
+    backupDicts()
+  }
+  catch(error) { log(error) }
+}
+
+const add = (type, v, v2) => { // named boards, modules, assets
+  try {
+    var rand = bigRandStr();
+    if (type === 'board') {
+      let proto = v;
+      if (v === 'undefined') v = 'Board_' + bigRandStr()
+      if (session.boardPointers.hasOwnProperty(v) === true) v =+ bigRandStr()
+      session.sessionBoards.push({ "title": v, "position": null, "power": 1, 'saved': 0, "modules": [] })
+      session.boardPointers[v] = {'index': session.sessionBoards.length-1, 'proto': proto, "open": 1, 'modules': {}}
+      return(v)
+    }
+    else if (type === 'module') {
+      i = session.boardPointers[v].index
+      session.sessionBoards[i].modules.push({ "location": "1 1", "process": "Choose One", "id": v2, "parameters": {}})
+      session.boardPointers[v].modules[v2] = {'index': session.sessionBoards[i].modules.length-1, 'open': 1, 'id': v2}
+    }
+    else if (type === 'asset') {
+      state.project.assets[v].push(v2)
+      log(` ${v2} added to the ${v} list`)
+    }
+    backupDicts()
+  }
+  catch(error) { log(error) }
+}
+
+const remove = (type, v, v2) => { // named boards, modules, assets
+  if (type === 'savedBoard') {
+    for (b in state.project.savedBoards) {
+      if(state.project.savedBoards[b].title === v) {
+        state.project.savedBoards.splice(b, 1)
+        log(`board ${v} removed from saved board list`)
+        return
+      }
+    }
+    log(`board ${v} not found in saved board list`)
+  }
+  else if (type === 'openBoard') session.boardPointers[v].open = 0
+  else if (type === 'module') session.boardPointers[v]['modules'][v2].open = 0
+  else if (type === 'asset') { // remove an asset from the asset list
+      for (a in state.project.assets[v]) {
+        if(state.project.assets[v][a] === v2) {
+          state.project.assets[v].splice(a, 1)
+          log(`${v2} at ${v} removed`)
+          return
+        }
+      }
+      log(`${asset} in ${type} not found`)
+  }
+  backupDicts()
+}
+
+const update = (type, v, v2, v3, v4, v5) => { // system, project,board, module.
+  try {
+    if (type === 'value'){
+      typeof v2 === 'number' ? e = 'state' + '.' + v + ' = ' + v2 + ';' : e = 'state' + '.' + v + ' = "' + v2 + '";'
+      log(`update: ${e}`)
+      eval(e)
+    }
+    else if (type === 'board') { //update board value other than modules
+      let i = session.boardPointers[v].index
+      if(v2 === 'title'){
+        if(session.boardPointers.hasOwnProperty(v3) === true) v3 =+ '_' + bigRandStr()
+        Object.defineProperty(session.boardPointers, v3, Object.getOwnPropertyDescriptor(session.boardPointers, v))
+        delete session.boardPointers[v]
+        session.boardPointers[v3].proto = v3
+        // backupDicts()
+      }
+      session.sessionBoards[i][v2] = v3;
+      log(`board ${v} ${v2} set to ${v3}`);
+    }
+    else if (type === 'module'){ //update a module on a board
+      let i = session.boardPointers[v]['index'];
+      let i2 = session.boardPointers[v]['modules'][v2]['index'];
+      if (v3 === 'id') session.boardPointers[v]['modules'][v2]['id'] = v4
+      session.sessionBoards[i].modules[i2][v3] = v4
+      log(`module ${v2} on board ${v} value ${v3} set to ${v4}`)
+      // backupDicts()
+    }
+    else if (type === 'parameter'){ // update a parameter in a module on a board
+      var i = session.boardPointers[v]['index']
+      var i2 = session.boardPointers[v]['modules'][v2]['index']
+      session.sessionBoards[i]['modules'][i2]['parameters'][v3] = v4
+      // backupDicts()
+    }
+  }
+  catch(error) {
+    log(error)
+  }
+}
+
+const copy = (loc, val, dest, dest2) => { // session to open, session to saved, open to session, saved to session
+  try {
+    if (loc === 'session') {
+      let index = session.boardPointers[val].index
+      let proto = session.boardPointers[val].proto
+      let clone = JSON.parse(JSON.stringify(session.sessionBoards[index]))
+      clone.title = proto
+      let removeList = []
+      for (let m in session.boardPointers[val]['modules']) if (session.boardPointers[val]['modules'][m]['index'] === 0 && session.boardPointers[val]['modules'][m]['id'] === m) removeList.push(session.boardPointers[val]['modules'][m]['index'])
+      for (let m in session.boardPointers[val]['modules']) if (session.boardPointers[val]['modules'][m]['open'] === 0) removeList.push(session.boardPointers[val]['modules'][m]['index'])
+      removeList.sort(function(a, b){return b-a});
+      for (let n in removeList) clone['modules'].splice(removeList[n], 1)
+      if (dest === 'open') {
+        if (proto != val) {
+          if (session.boardPointers.hasOwnProperty(proto) === true) {
+            if(session.boardPointers[proto].open === 1) clone.title = val
+          }
+        }
+        state.project.openBoards.push(clone)
+      }
+      else if (dest === 'saved') {
+        session.sessionBoards[index].saved = 1;
+        clone.saved = 1;
+          for (var c in state.project.savedBoards) {
+            if(state.project.savedBoards[c]['title'] === proto) {
+              log(`Board ${proto} updated`)
+              state.project.savedBoards.splice(c, 1, clone)
+              return
+            }
+          }
+        log(`Board ${val} added to saved list`)
+        state.project.savedBoards.push(clone)
+        }
+    }
+    else if (loc === 'saved') {
+      let clone
+      let cloneModules = {}
+      for (b in state.project.savedBoards){
+        if(state.project.savedBoards[b]['title'] === val) {
+          clone = state.project.savedBoards[b]
+          for (var m in clone.modules){
+            let modName = clone.modules[m].id
+            cloneModules[modName] = { 'index': m,'open': 1 }
+          }
+        }
+      }
+      if (session.boardPointers.hasOwnProperty(val) === true) clone.title =+ bigRandStr()
+      session.boardPointers[clone.title] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cloneModules}
+      session.sessionBoards.push(clone)
+      log(`Board ${clone.title} added to session`);
+    }
+    else if (loc === 'open') { // copy saved open board into session
+      let clone
+      let cloneModules = {}
+      for (b in state.project.openBoards){
+        if (state.project.openBoards[b].title === val) {
+          clone = state.project.openBoards[b]
+          for (let m in clone.modules){
+            let modName = clone.modules[m].id;
+            cloneModules[modName] = {'index': m,'open': 1}
+          }
+        }
+      }
+      if (session.boardPointers.hasOwnProperty(val) === true) clone.title =+ bigRandStr()
+      session.boardPointers[clone.title] = {'index': session.sessionBoards.length, 'proto': val, "open": 1, 'modules': cloneModules}
+      session.sessionBoards.push(clone)
+      log(`Board ${clone.title} added to session`)
+    }
+    backupDicts()
+  }
+  catch(error) {
+    log(error)
+  }
+}
+
+const getFromMax = (type, v, v2) => { // data from state to max
+  try {
+    if (type === 'path'){ // get the project path
+        let p = state.project.path
+        p = p.substring(0, p.lastIndexOf("/"))
+        Max.outlet ("sendTo MDSP_Backup_pPath"); Max.outlet ("sendGate 1"); Max.outlet (p); Max.outlet ("sendGate 0"); // .map added index number and dictionary after. Discuss with Dirk
+    }
+    else if (type === 'system') ["sendTo MSDP_System_Settings_Set", "sendGate 1", JSON.stringify(state.system, null, 4), "sendGate 0" ].map(Max.outlet)
+    else if (type === 'title') ['sendTo MSDP_Set_Project_Title', 'sendGate 1', JSON.stringify(state.project.title, null, 4), 'sendGate 0'].map(Max.outlet)
+    else if ( type === 'pSettings') ["sendTo MSDP_Project_Settings_Set", "sendGate 1", JSON.stringify(state.project.settings, null, 4), "sendGate 0", "sendTo MSDP_Metro_Settings_Set", "sendGate 1", JSON.stringify(state.project.systemBoard, null, 4), "sendGate 0" ].map(Max.outlet)
+    else if ( type === 'pSysBoard'){
+      if (v === "virtual") ["sendTo MSDP_Virtual_Settings_Set", "sendGate 1", JSON.stringify(state.project.systemBoard, null, 4), "sendGate 0" ].map(Max.outlet)
+    }
+    else if (type === 'list'){ // determine whether asking for a list of boards or modules off a board
+      if (v === 'savedBoards') {
+        if (v2 === "meta") Max.outlet("sendTo MSDP_Saved_Boards_List_Meta")
+        else if (v2 === "deleted") Max.outlet("sendTo MSDP_Deleted_Boards_List")
+        else Max.outlet("sendTo MSDP_Saved_Boards_List")
+        Max.outlet("sendGate 1")
+        for (b in state.project.savedBoards) {
+          let savedBoardList = []
+          savedBoardList.push(state.project.savedBoards[b].title)
+          Max.outlet(savedBoardList)
+        }
+        Max.outlet("sendGate 0")
+      }
+      else if (v === 'openBoards') {
+        ["sendTo MSDP_Open_Board_List_Load", "sendGate 1"].map(Max.outlet)
+        for (b in state.project.openBoards){
+          let openBoardList = []
+          openBoardList.push(state.project.openBoards[b]['title'])
+          Max.outlet(openBoardList)
+        }
+        Max.outlet ("sendGate 0")
+      }
+    }
+    else if (type === 'board'){
+      let path
+      let title = v2
+      if (v === 'open') path = state.project.openBoards
+      else if (v === 'saved') {
+          path = state.project.savedBoards
+          title = add("board", v2)
+      }
+      for (b in path) {
+        if (path[b]['title'] === v2){
+          ["sendTo " + v2, "sendGate 1", "title " + title, JSON.stringify(path[b], null, 4), "sendGate 0" ].map(Max.outlet)
+          return
+        }
+      }
+      log(`${v2} not found`);
+    }
+    backupDicts()
+  }
+  catch(error) {
+    log(error)
+  }
+}
+
+const exporter = (type, v1, v2) => { // system, project, backup, analytics
+  // try {
+    let path, output
+    if (type === 'home') { //send all information out
+      Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
+      state.project.openBoards = []
+      for (let key in session.boardPointers) {
+        if (session.boardPointers.hasOwnProperty(key)) if (session.boardPointers[key]['open'] === 1) if (isEmpty(session.boardPointers[key].modules) === false ) copy('session', key, 'open')
+      }
+      state.project.lastUpdated = new Date()
+      // Max.outlet ("stateOut " + JSON.stringify(state, null, 4))
+      Max.outlet('sendTo MSDP_State_Information_Out')
+      Max.outlet('sendGate 1')
+      Max.outlet(JSON.stringify(state, null, 4))
+      Max.outlet('sendGate 0')
+      return
+    }
+    else if (type === 'system') { //export system info
+      if (state.system.uName === null){
+        let oldCheck = fs.existsSync(`${homedir}/Documents/Music_SDP/SystemSettings.json`)
+        if (oldCheck == 1) {
+          log("retreiving uname from 1.x")
+          let oldSettings = require(`${homedir}/Documents/Music_SDP/SystemSettings.json`)
+          state.system.uName = oldSettings.uName
+          Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
+        }
+        else {
+          state.system.uName = uuidv1()
+          Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
+        }
+      }
+      path = v1
+      output = state.system
+    }
+    else if (type === 'project') { //export project info
+      state.project.openBoards = []
+      for (let key in session.boardPointers) {
+        if (session.boardPointers.hasOwnProperty(key)) if (session.boardPointers[key].open === 1) if (session.boardPointers[key] != null) if (isEmpty(session.boardPointers[key].modules) === false ) copy('session', key, 'open')
+      }
+      state.project.lastUpdated = new Date()
+      path = v1
+      output = state.project
+    }
+    else if (type === 'board') {
+      path = v2
+      output = session.sessionBoards[session.boardPointers[v1].index]
+      let removeList = []
+      for (let m in session.boardPointers[v1].modules) if (session.boardPointers[v1].modules[m].open === 0) removeList.push(session.boardPointers[v1].modules[m].index)
+      removeList.sort(function(a, b){return b-a})
+      for (let n in removeList) mode['modules'].splice(n+1, 1)
+    }
+    fs.writeFileSync(path+".temp", JSON.stringify(output, null, 4))
+    let fileCheck = fs.existsSync(path)
+    if (fileCheck == 1) fs.unlinkSync(path)
+    fs.renameSync(path+".temp", path)
+    log(`JSON write ${path}`)
+  // }
+  // catch(error){ log(error) }
+}
+
+const importer = (type, path) => { // system, project, backup
+  try {
+    let clone = require(path) // should check if exists, if not, make
+    log(`JSON read ${path}`)
+    if (type === 'system'){
+      if (fs.existsSync(path)) {
+        state.system = clone
+        if (state.system.appState.major === 1 ) {
+          let uName = state.system.uName
+          state.system = defaultSystem
+          state.system.uName = uName
+          exporter('system', path)
+          log('updating from v1 to v2')
+        }
+        if (! ( state.system.dev === undefined )) {Max.outlet ("dev 1")}
+        if (state.system.autoUpdate === null) { ["sendTo MSDP_AutoUpdate_Window_Confirm", "sendGate 1", "open", "sendGate 0" ].map(Max.outlet) }
+        Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
+        if (typeof state.system.defaultSettings == "undefined") {
+          state.system.defaultSettings = state.system.settings
+          delete state.system.settings
+        }
+      }
+      else { // if not initialized, make system file
+        state.system = defaultSystem
+        exporter('system', path)
+        ["sendTo MSDP_AutoUpdate_Window_Confirm", "sendGate 1", "open", "sendGate 0" ].map(Max.outlet)
+        log('No sys prefs found. Generating sys prefs file')
+      }
+    }
+    else if (type === 'backup'){ // load a saved project
+      session.sessionBoards = [];
+      session.boardPointers = {};
+      msdp.project = clone;
+      log(1, 'last save ' + msdp.project.title + ' loaded');
+    }
+    else if (type === 'project'){
+      session.sessionBoards = [], session.boardPointers = {}
+      state.project = clone
+      state.project.lastOpened = new Date(), state.project.lastUpdated = new Date()
+      log(`project ${state.project.title} loaded`)
+    }
+    else if (type === 'board'){
+      let cloneModules = {}
+      for (let m in clone.modules) cloneModules[clone.modules[m].id] = {'index': m,'open': 1}
+      if (session.boardPointers.hasOwnProperty(clone.title) === true) clone.title =+ bigRandStr()
+      session.boardPointers[clone.title] = {'index': session.sessionBoards.length, 'proto': clone.title, "open": 1, 'modules': cloneModules}
+      session.sessionBoards.push(clone)
+      log(`board ${clone.title} imported into session`)
+      getFromMax('board', 'session', clone.title)
+    }
+    else if (type === 'system') {
+      state.system = clone
+    	log(`JSON Read ${path}`)
+    }
+  }
+  catch(error) { log(error) }
+}
+
+const bigRandStr = () => Math.floor(Math.random() * 4294967295).toString(16)
+
+const isEmpty = (obj) => {
+  for (let key in obj) if (obj.hasOwnProperty(key)) return false
+  return true
+};
