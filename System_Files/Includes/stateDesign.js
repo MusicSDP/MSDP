@@ -421,7 +421,7 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
           Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
         }
       }
-      path = v1
+      path = `${homedir}/Documents/MSDP 2/SystemSettings.json`
       output = state.system
     }
     else if (type === 'project') { //export project info
