@@ -1,0 +1,42 @@
+{
+    "title": "CreepySynth",
+    "position": "387 318 1177 688",
+    "power": "1",
+    "saved": 0,
+    "modules": [
+        {
+            "location": "1 1",
+            "process": "Add1t1ve",
+            "id": "Add1t1ve 943",
+            "parameters": {
+                "p15": "0.9653",
+                "p10": "0.9615",
+                "p5": "1.0000",
+                "p3": "1.0000",
+                "p2": "Master Out E 2",
+                "p9": "0",
+                "p13": "0",
+                "p14": "0",
+                "p18": "0",
+                "p4": "1"
+            }
+        },
+        {
+            "location": "2 1",
+            "process": "cREepVERB",
+            "id": "cREepVERB 389",
+            "parameters": {
+                "p10": "0",
+                "p8": "1",
+                "p5": "0",
+                "p2": "Master Out Master 0",
+                "p1": "E 2",
+                "p9": "0.2539",
+                "p7": "101.5264",
+                "p6": "0.5000",
+                "p3": "1.0000",
+                "p4": "44.4861"
+            }
+        }
+    ]
+}

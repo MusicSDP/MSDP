@@ -1,0 +1,48 @@
+{
+    "title": "Basic Vocoder",
+    "position": "488 326 1658 696",
+    "power": "1",
+    "saved": 0,
+    "modules": [
+        {
+            "location": "1 1",
+            "process": "Signal-In Control",
+            "id": "Signal-In Control 531",
+            "parameters": {
+                "p3": "1.0021",
+                "p2": "Master 0 V 1",
+                "p1": "Mic 1",
+                "p4": "0"
+            }
+        },
+        {
+            "location": "2 1",
+            "process": "Vocoder",
+            "id": "Vocoder 135",
+            "parameters": {
+                "p4": "1.0088",
+                "p6": "0.3000",
+                "p5": "0.3000",
+                "p2": "V 1 Mic 0",
+                "p3": "V 2 Master 0"
+            }
+        },
+        {
+            "location": "3 1",
+            "process": "Compressor",
+            "id": "Compressor 553",
+            "parameters": {
+                "p4": "-6.0000",
+                "p7": "80.0000",
+                "p5": "4.0000",
+                "p9": "1.0000",
+                "p8": "441",
+                "p11": "0",
+                "p10": "0",
+                "p6": "10.0000",
+                "p3": "1.0000",
+                "p1": "V 2"
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "title": "File Player Fun",
+    "position": "691 290 1101 660",
+    "power": "1",
+    "saved": 0,
+    "modules": [
+        {
+            "location": "1 1",
+            "process": "Audio File Player",
+            "id": "Audio File Player 483",
+            "parameters": {
+                "p9": "0.0000",
+                "p3": "1.0000",
+                "p1": "sys_path UkeHappy.aif",
+                "p11": "4778.0274",
+                "p10": "327.9819",
+                "p5": "0",
+                "p6": "1",
+                "p8": "-0.5000",
+                "p7": "0"
+            }
+        }
+    ]
+}

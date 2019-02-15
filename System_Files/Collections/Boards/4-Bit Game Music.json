@@ -1,0 +1,35 @@
+{
+    "title": "4-Bit Game Music",
+    "position": "635 306 1425 676",
+    "power": "1",
+    "saved": 0,
+    "modules": [
+        {
+            "location": "1 1",
+            "process": "SAH",
+            "id": "SAH 376",
+            "parameters": {
+                "p10": "26",
+                "p3": "1.0000",
+                "p5": "37.0000",
+                "p2": "A 7 Master 0",
+                "p6": "14.0000",
+                "p11": "4",
+                "p4": "0.5026"
+            }
+        },
+        {
+            "location": "2 1",
+            "process": "DegraderDrive",
+            "id": "DegraderDrive 175",
+            "parameters": {
+                "p6": "4",
+                "p5": "0.0982",
+                "p3": "1.0000",
+                "p4": "1",
+                "p7": "10.0000",
+                "p1": "A 7"
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "title": "Horror Strings",
+    "position": "716 325 1126 695",
+    "power": "1",
+    "saved": 0,
+    "modules": [
+        {
+            "location": "1 1",
+            "process": "File Granulator",
+            "id": "File Granulator 662",
+            "parameters": {
+                "p1": "sys_path Flutter_1.wav",
+                "p6": "10655.9868",
+                "p5": "10655.9868",
+                "p4": "0.0000",
+                "p17": "foo",
+                "p15": "500",
+                "p16": "2400",
+                "p12": "0",
+                "p10": "0.5060",
+                "p3": "1.0000",
+                "p8": "4",
+                "p19": "0",
+                "p18": "0",
+                "p20": "0",
+                "p21": "0",
+                "p13": "0.5000"
+            }
+        }
+    ]
+}

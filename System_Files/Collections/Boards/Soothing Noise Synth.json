@@ -1,0 +1,42 @@
+{
+    "title": "Soothing Noise Synth",
+    "position": "394 353 1184 723",
+    "power": "1",
+    "saved": 0,
+    "modules": [
+        {
+            "location": "1 1",
+            "process": "Subtractive",
+            "id": "Subtractive 653",
+            "parameters": {
+                "p1": "foo",
+                "p14": "5.0000",
+                "p3": "1.0000",
+                "p38": "0",
+                "p32": "0.0000",
+                "p26": "0.0000",
+                "p20": "1.0000",
+                "p9": "0.2500",
+                "p2": "Master Out R 2",
+                "p6": "4",
+                "p7": "1",
+                "p13": "5.0000",
+                "p31": "0",
+                "p37": "0",
+                "p22": "0 1 0 0"
+            }
+        },
+        {
+            "location": "2 1",
+            "process": "Reverb",
+            "id": "Reverb 414",
+            "parameters": {
+                "p3": "1.0000",
+                "p4": "119",
+                "p5": "103",
+                "p6": "108",
+                "p1": "R 2"
+            }
+        }
+    ]
+}

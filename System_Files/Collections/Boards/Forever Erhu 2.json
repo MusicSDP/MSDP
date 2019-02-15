@@ -1,0 +1,41 @@
+{
+    "title": "Forever Erhu 2",
+    "position": "544 325 1334 695",
+    "power": "1",
+    "saved": 0,
+    "modules": [
+        {
+            "location": "1 1",
+            "process": "Choose One",
+            "id": "Module_034d8200",
+            "parameters": {}
+        },
+        {
+            "location": "1 1",
+            "process": "Stochastic Files",
+            "id": "Stochastic Files 93",
+            "parameters": {
+                "p1": "sys_path Erhu.aif",
+                "p3": "1.0000",
+                "p2": "Master Out G 1",
+                "p4": "1"
+            }
+        },
+        {
+            "location": "2 1",
+            "process": "GigaVerb",
+            "id": "GigaVerb 234",
+            "parameters": {
+                "p3": "0.4423",
+                "p4": "242.1801",
+                "p9": "0.7566",
+                "p7": "0.8090",
+                "p6": "81.0000",
+                "p1": "G 1",
+                "p10": "0.8002",
+                "p8": "0.7959",
+                "p5": "8264.0000"
+            }
+        }
+    ]
+}
