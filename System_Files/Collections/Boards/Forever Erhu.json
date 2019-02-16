@@ -6,12 +6,6 @@
     "modules": [
         {
             "location": "1 1",
-            "process": "Choose One",
-            "id": "Module_034d8200",
-            "parameters": {}
-        },
-        {
-            "location": "1 1",
             "process": "Stochastic Files",
             "id": "Stochastic Files 93",
             "parameters": {
