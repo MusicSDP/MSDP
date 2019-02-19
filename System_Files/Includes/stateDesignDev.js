@@ -11,7 +11,7 @@ const uuidv1 = require('uuid/v1')
 const axios = require('axios')
 const AdmZip = require('adm-zip')
 // required info
-let debug = false
+let debug = true
 let log = (output) => { if (debug) Max.post(output) }
 let remoteVersion = null
 let defaultSystem = {
@@ -151,7 +151,8 @@ const newProject = (title, path) => { // blank out project and session dictionar
 }
 const loadProject = (path) => { // load the project state
   try {
-    importer("project", path)
+    if ( path === 'backup' ) { importer('project', `${homedir}/Documents/MSDP 2/Saved Projects/lastSessionBackup.json`) }
+    else { importer("project", path) }
     getFromMax("pSettings")
     getFromMax("list", "savedBoards")
     getFromMax("list", "openBoards"); // for some reason, removing the semi-colon here breaks everything!
@@ -454,20 +455,14 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
   // catch(error){ log(error) }
 }
 
-const importer = (type, path) => { // system, project, backup
+const importer = (type, path) => { // system, project, board
   try {
-    let clone = require(path) // should check if exists, if not, make
-    log(`JSON read ${path}`)
+    let clone
     if (type === 'system'){
-      if (fs.existsSync(path)) {
-        state.system = clone
-        if (state.system.appState.major === 1 ) {
-          let uName = state.system.uName
-          state.system = defaultSystem
-          state.system.uName = uName
-          exporter('system', path)
-          log('updating from v1 to v2')
-        }
+      log('importing system info')
+      if (fs.existsSync(`${homedir}/Documents/MSDP 2/SystemSettings.json`)) {
+        state.system = require(`${homedir}/Documents/MSDP 2/SystemSettings.json`)
+        log(state.system)
         if (! ( state.system.dev === undefined )) {Max.outlet ("dev 1")}
         if (state.system.autoUpdate === null) { ["sendTo MSDP_AutoUpdate_Window_Confirm", "sendGate 1", "open", "sendGate 0" ].map(Max.outlet) }
         Max.outlet ("uname " + JSON.stringify(state.system.uName, null, 4))
@@ -483,19 +478,14 @@ const importer = (type, path) => { // system, project, backup
         log('No sys prefs found. Generating sys prefs file')
       }
     }
-    else if (type === 'backup'){ // load a saved project
-      session.sessionBoards = [];
-      session.boardPointers = {};
-      msdp.project = clone;
-      log(1, 'last save ' + msdp.project.title + ' loaded');
-    }
     else if (type === 'project'){
       session.sessionBoards = [], session.boardPointers = {}
-      state.project = clone
+      state.project = require(path)
       state.project.lastOpened = new Date(), state.project.lastUpdated = new Date()
       log(`project ${state.project.title} loaded`)
     }
     else if (type === 'board'){
+      clone = require(path)
       let cloneModules = {}
       for (let m in clone.modules) cloneModules[clone.modules[m].id] = {'index': m,'open': 1}
       if (session.boardPointers.hasOwnProperty(clone.title) === true) clone.title =+ bigRandStr()
@@ -503,10 +493,6 @@ const importer = (type, path) => { // system, project, backup
       session.sessionBoards.push(clone)
       log(`board ${clone.title} imported into session`)
       getFromMax('board', 'session', clone.title)
-    }
-    else if (type === 'system') {
-      state.system = clone
-    	log(`JSON Read ${path}`)
     }
   }
   catch(error) { log(error) }
