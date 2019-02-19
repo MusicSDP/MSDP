@@ -11,7 +11,7 @@ const uuidv1 = require('uuid/v1')
 const axios = require('axios')
 const AdmZip = require('adm-zip')
 // required info
-let debug = true
+let debug = false
 let log = (output) => { if (debug) Max.post(output) }
 let remoteVersion = null
 let defaultSystem = {
