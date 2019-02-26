@@ -11,7 +11,7 @@ const uuidv1 = require('uuid/v1')
 const axios = require('axios')
 const AdmZip = require('adm-zip')
 // required info
-let debug = false
+let debug = true
 let log = (output) => { if (debug) Max.post(output) }
 let remoteVersion = null
 let defaultSystem = {
@@ -436,6 +436,20 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
       }
       state.project.lastUpdated = new Date()
       path = v1
+      output = state.project
+    }
+    else if (type === 'backup') { //export project info
+      state.project.openBoards = []
+      for (let key in session.boardPointers) {
+        if (session.boardPointers.hasOwnProperty(key)) if (session.boardPointers[key].open === 1) if (session.boardPointers[key] != null) if (isEmpty(session.boardPointers[key].modules) === false ) copy('session', key, 'open')
+      }
+      for (b in state.project.savedBoards) {
+        if(state.project.savedBoards[b].saved === 0) {
+          state.project.savedBoards.splice(b, 1)
+        }
+      }
+      state.project.lastUpdated = new Date()
+      path = `${homedir}/Documents/MSDP 2/Saved Projects/lastSessionBackup.json`
       output = state.project
     }
     else if (type === 'board') {
