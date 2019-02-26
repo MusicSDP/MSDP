@@ -263,7 +263,7 @@ const copy = (loc, val, dest, dest2) => { // session to open, session to saved, 
       let index = session.boardPointers[val].index
       let proto = session.boardPointers[val].proto
       let clone
-      clone = session.sessionBoards[index]
+      clone = JSON.parse(JSON.stringify(session.sessionBoards[index]))
       clone.title = proto
       let removeList = []
       for (let m in session.boardPointers[val]['modules']) if (session.boardPointers[val]['modules'][m]['index'] === 0 && session.boardPointers[val]['modules'][m]['id'] === m) removeList.push(session.boardPointers[val]['modules'][m]['index'])
@@ -431,11 +431,6 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
       for (let key in session.boardPointers) {
         if (session.boardPointers.hasOwnProperty(key)) if (session.boardPointers[key].open === 1) if (session.boardPointers[key] != null) if (isEmpty(session.boardPointers[key].modules) === false ) copy('session', key, 'open')
       }
-      for (b in state.project.savedBoards) {
-        if(state.project.savedBoards[b].saved === 0) {
-          state.project.savedBoards.splice(b, 1)
-        }
-      }
       state.project.lastUpdated = new Date()
       path = v1
       output = state.project
@@ -444,11 +439,6 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
       state.project.openBoards = []
       for (let key in session.boardPointers) {
         if (session.boardPointers.hasOwnProperty(key)) if (session.boardPointers[key].open === 1) if (session.boardPointers[key] != null) if (isEmpty(session.boardPointers[key].modules) === false ) copy('session', key, 'open')
-      }
-      for (b in state.project.savedBoards) {
-        if(state.project.savedBoards[b].saved === 0) {
-          state.project.savedBoards.splice(b, 1)
-        }
       }
       state.project.lastUpdated = new Date()
       path = `${homedir}/Documents/MSDP 2/Saved Projects/lastSessionBackup.json`
