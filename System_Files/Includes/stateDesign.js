@@ -507,13 +507,28 @@ const importer = (type, path) => { // system, project, board
 
 const msdpfs = (type, path, destination) => { //exists, copy, mkdir, rm
   try {
-    if (type === 'exists'){
+    if (path.slice(0,1) == '~') { path = path.replace("~", homedir) }
+    log(path)
+    if (type === 'existsToMax'){
       let fileCheck = fs.existsSync(path)
-      if ( fileCheck == 1 ) {
-        { [`sendTo ${destination}`, "sendGate 1", 1, "sendGate 0" ].map(Max.outlet) }
-      } else { { [`sendTo ${destination}`, "sendGate 1", 0, "sendGate 0" ].map(Max.outlet) } }
+      { [`sendTo ${destination}`, "sendGate 1", `${fileCheck}`, "sendGate 0" ].map(Max.outlet) }
+      return (fileCheck)
     }
-    else if (type === 'cp'){}
+    else if (type === 'exists') {
+      let fileCheck = fs.existsSync(path)
+      return (fileCheck)
+    }
+    else if (type === 'cp'){
+      let fileCheckA = fs.existsSync(path)
+      let fileCheckB = fs.existsSync(destination)
+      if (fileCheckA == 1) {
+        if (fileCheckB == 0) {
+          fs.copyFileSync(path, destination)
+          log(`${path} copied to ${destination}`)
+        } else { log(`${path} already exists, copy not made`) }
+      }
+      else { log(`${destination} not found, copy can not be made`) }
+    }
     else if (type === 'mkdir'){
       let fileCheck = fs.existsSync(path)
       if (fileCheck == 0) {
