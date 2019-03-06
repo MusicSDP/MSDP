@@ -46,6 +46,11 @@ function objectMake(u){
 		parent.connect(ui,0,param,0);
 		outlet(0, "parameter p" + i + " has been created. Remember to set the arguments in the number inspector and the default value for last argument on msdp.param");
 	}
+	else if (u == "msdp.param" || u == "msdp.param.line" || u == "msdp.param.defer" || u == "msdp.param.line") {
+		var param = parent.newdefault(10, 40, u, "p"+i, 1.0);
+		param.varname = "p"+i;
+		outlet(0, "parameter p" + i + " has been created. Remember to set the default value for last argument on msdp.param");
+	}
 	else if (u == "textbutton-click" || u == "textbutton-toggle") {
 		var param = parent.newdefault(10, 10, "msdp.param", "p"+i);
 		param.varname = "p"+i;

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -133,7 +133,7 @@
 					"bgfillcolor_type" : "color",
 					"fontname" : "Lato",
 					"id" : "obj-112",
-					"items" : [ "--", 1.0, "Select", "--", ",", "--", "All-In-One", "--", ",", "msdp.ui.dial", ",", "msdp.ui.dial.small", ",", "msdp.ui.dial.xs", ",", "msdp.ui.keyboard", ",", "msdp.ui.outputs1.vertical", ",", "msdp.ui.outputs1.horizontal", ",", "msdp.ui.input1", ",", "msdp.ui.vInput", ",", "msdp.ui.vOutput", ",", "--", "UI", "+", "Param", "--", ",", "textbutton-click", ",", "textbutton-toggle", ",", "number" ],
+					"items" : [ "--", 1.0, "Select", "--", ",", "--", "All-In-One", "--", ",", "msdp.ui.dial", ",", "msdp.ui.dial.small", ",", "msdp.ui.dial.xs", ",", "msdp.ui.keyboard", ",", "msdp.ui.outputs1.vertical", ",", "msdp.ui.outputs1.horizontal", ",", "msdp.ui.input1", ",", "msdp.ui.vInput", ",", "msdp.ui.vOutput", ",", "--", "UI", "+", "Param", "--", ",", "textbutton-click", ",", "textbutton-toggle", ",", "number", ",", "--", "MSDP.Params", "--", ",", "msdp.param", ",", "msdp.param.line", ",", "msdp.param.defer" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
