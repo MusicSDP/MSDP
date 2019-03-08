@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 379.0, 47.0, 993.0, 989.0 ],
+		"rect" : [ 379.0, 48.0, 993.0, 989.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -121,7 +121,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -421,7 +421,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1295,7 +1295,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-17",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1308,7 +1308,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-18",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1419,7 +1419,6 @@
 					"floatoutput" : 1,
 					"id" : "obj-1",
 					"maxclass" : "dial",
-					"min" : 2.0,
 					"mode" : 4,
 					"needlecolor" : [ 0.396, 0.875, 0.812, 1.0 ],
 					"numinlets" : 1,
@@ -1431,8 +1430,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, 19.0, 44.0, 44.0 ],
 					"size" : 2.0,
-					"thickness" : 60.0,
-					"vtracking" : 0
+					"thickness" : 60.0
 				}
 
 			}
@@ -1578,7 +1576,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-36",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1622,7 +1620,7 @@
 					"patching_rect" : [ 723.0, 209.0, 43.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 1.0, 48.0, 18.0 ],
-					"text" : "1 test",
+					"text" : "#2",
 					"textcolor" : [ 0.395999997854233, 0.875, 0.811999976634979, 1.0 ],
 					"textjustification" : 1
 				}
@@ -2114,7 +2112,16 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "msdp.tool.msglim.maxpat",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -54,8 +54,7 @@
 					"patching_rect" : [ 304.0, 130.0, 41.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, 15.0, 27.0, 27.0 ],
-					"thickness" : 80.0,
-					"vtracking" : 0
+					"thickness" : 80.0
 				}
 
 			}

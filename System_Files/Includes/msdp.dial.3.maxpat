@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1920.0, -65.0, 1086.0, 1117.0 ],
+		"rect" : [ 828.0, 48.0, 626.0, 1117.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -172,8 +172,7 @@
 					"patching_rect" : [ 304.0, 130.0, 41.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, 19.0, 44.0, 44.0 ],
-					"thickness" : 60.0,
-					"vtracking" : 0
+					"thickness" : 60.0
 				}
 
 			}

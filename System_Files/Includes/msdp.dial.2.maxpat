@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 328.0, 87.0, 491.0, 997.0 ],
+		"rect" : [ 328.0, 89.0, 491.0, 946.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 301.0, 130.0, 50.0, 42.0 ],
+					"patching_rect" : [ 256.0, 130.0, 50.0, 42.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 19.0, 50.0, 43.0 ],
 					"proportion" : 0.39,
@@ -192,8 +192,7 @@
 					"patching_rect" : [ 304.0, 130.0, 41.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 19.0, 44.0, 44.0 ],
-					"thickness" : 60.0,
-					"vtracking" : 0
+					"thickness" : 60.0
 				}
 
 			}
