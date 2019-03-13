@@ -520,6 +520,7 @@ const msdpfs = (type, path, destination) => { //exists, copy, mkdir, rm
     }
     else if (type === 'cp'){
       let fileCheckA = fs.existsSync(path)
+      if (destination.slice(0,1) == '~') { destination = destination.replace("~", homedir) }
       let fileCheckB = fs.existsSync(destination)
       if (fileCheckA == 1) {
         if (fileCheckB == 0) {
