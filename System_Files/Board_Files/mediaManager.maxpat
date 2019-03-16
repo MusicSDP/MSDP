@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 528.0, 45.0, 399.0, 659.0 ],
+		"rect" : [ 1415.0, 81.0, 394.0, 656.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1192,7 +1192,6 @@
 					"bgoncolor" : [ 0.52549, 0.062745, 0.003922, 1.0 ],
 					"fontname" : "Lato",
 					"fontsize" : 20.0,
-					"hidden" : 1,
 					"id" : "obj-5",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -1460,7 +1459,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 0.0, 123.0, 69.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 528, 45, 927, 704, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 1415, 81, 1809, 737, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
 
@@ -2168,8 +2167,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3108,7 +3107,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 66.0, 224.0, 588.0, 22.0 ],
-									"text" : "\"Apple HDD:/Users/Hugh/Documents/MSDP 2/User Collections/Sound\""
+									"text" : "\"C:/Users/hughl/Documents/MSDP 2/User Collections/Boards\""
 								}
 
 							}
@@ -3489,7 +3488,7 @@
 											"version" : 1,
 											"isbank" : 0,
 											"isbase64" : 1,
-											"blob" : "4128.CMlaKA....fQPMDZ....AfTYr0F...fV..P.RLTSfrDakUlbfDjbvA.......................7.460fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHhHrzfBf.hHl8FajUlbe4VXsUlH5.hHhvRCJ.BHhDVczg1axIhNfHhHrzfBf.hHyUFczklamMmH5.xdMn.Hf.BHhDVav8UXzQWXislH5.BLtDCL4TCM0.CLv.CLv.CLv.CLyPCNrzfBf.BHfHRXsA2WjU1XgkmH5.RLtTCKMn.Hf.BHhDVav8kbkwVYgMWYhnCHv3hL4jSN4jSN4jSN4jSN4jSN3fSNrzfBf.BHfHRXsA2WyU2bzEVZtIhNfDCKMn.Hf.BHhDlbv8kYxUVb0UlaikmH5.hLrzfBf.BHfHRXxA2WmEFckIhNf.iK0vRCJ.BHf.hHgIGbe81XzElckMmH5.RLrzfBf.BHfHRXxA2Wu4lH5.BLrzfBf.BHfHRXxA2WvEFczUlbtIhNf.CKMn.Hf.BHhDlbv80b441XhnCHwvRCJ.BHf.hHgIGbeQWYsA2ahnCH4vRCJ.BHf.hHhUVXzM2WvUlbe0VZtUGckIhNfHCKMn.Hf.BHhLlbuM2be01ajUGagQWZu4lH5.BLrzfBf.BHfHxX0Q2alYlH5.BNvvRCJ.BHf.hHjUFagk2WjIWdecWYzIhNf.iK0vRCJ.BHf.hHjUFagk2WlUVYjIVXislH5.BLtPCLv.CLv.CLv.CLv.CLv.iLxHCKMn.Hf.BHhPVYrEVdeYlbkEWck41X4IhNfHCKMn.Hf.BHhPVYrEVde8lahnCHvvRCJ.BHf.hHjUFagk2WykmaiIhNfDCKMn.Hf.BHhPVYrEVdeQWYsA2ahnCH4vRCJ.BHf.hHjk1bz8lbzk1at8EYxklckIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WskFdhnCHwvRCJ.BHf.hHjk1bz8lbzk1at80atIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WzkGbkIhNf.CKMn.Hf.BHhXVZr8UXzQWXislH5.BLrzfBf.BHfHhYow1WjU1XgkmH5.RLtTCKMn.Hf.BHhXVZr8UYtY2WjUFbzglH5.BLrzfBf.BHfHhYow1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHlkFaeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhXVZrQWYx8kXrUlajIhNf.CKMn.Hf.BHhXVZrQWYx8EYxklckIhNf.CKMn.Hf.BHhXVZrQWYx80atIhNf.CKMn.Hf.BHhXVZrQWYx80bnUFalIhNf.CKMn.Hf.BHhXVZrQWYx80bzkGakIhNf.CKMn.Hf.BHhX1ax0VXtQ2Wu4lH5.BLrzfBf.BHfHhYuIWag4FcegmH5.BLtTCKMn.Hf.BHhX1ax0VXtQ2W4IhNf.iK0vRCJ.BHf.hHqUVdzIWXislH5.BLrzfBf.BHfHBakcVXz8lH5.BLrzfBf.BHfHRauQ1WgQGcgM1ZhnCHvvRCJ.BHf.hHs8FYeQVYiEVdhnCHw3RMrzfBf.BHfHRauQ1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHs8FYeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhz1at81WrY1aeEyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8ULeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeEyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWzUVav8lH5.hMrzfBf.BHfHRau41aewlYu8ULecWX1UlYuIWahnCHvvRCJ.BHf.hHs8lau8Eal81Wx7UXsAGaoQWcjUlH5.RLrzfBf.BHfHRau41aewlYu8kLeYlbkEWck41X4IhNfDCKMn.Hf.BHhz1at81WrY1aeIyWxUFcxk1YmUlbhnCHxvRCJ.BHf.hHs8lau8Eal81Wx70b441XhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7Eck0FbuIhNfbCKMn.Hf.BHhz1at81WrY1aeIyW2ElckY1ax0lH5.BLrzfBf.BHfHhauk1bk8kcuwVcsUlH5.BLrzfBf.BHfHha001WyQWYvMmH5.BNrzfBf.BHfHxayM1Ww7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Ww7Ec04VYhnCHvvRCJ.BHf.hHuM2XeEyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Ww7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeEyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeEyW2ElckY1ax0lH5.BMrzfBf.BHfHxayM1Wx7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Wx7Ec04VYhnCHvvRCJ.BHf.hHuM2XeIyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Wx7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeIyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeIyW2ElckY1ax0lH5.BMrzfBf.BHfHxayM1WlUVYjIVXis1Wg01a04FchnCHvvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeQmbg41bv81bkIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8Ec04VYhnCHvvRCJ.BHf.hHvkFcig1WhUlaj8kbg41YkIhNfHCKMn.Hf.BHh.2ark2WrY1aeEVavwVZzUGYkIhNfDCKMn.Hf.BHh.2ark2WrY1aeYlbkEWck41X4IhNfDCKMn.Hf.BHh.2ark2WrY1aeMWdtMlH5.RLrzfBf.BHfHBbuwVdewlYu8Eck0FbuIhNfbCKMn.Hf.BHh.2ark2WrY1aecWX1UlYuIWahnCHvvRCJ.BHf.hHv8Fa4AGZu4VdhnCHzvRCJ.BHf.hHv8lbzEVak4FcuIhNfzxMrzfBf.BHfHBbuIGcg0VYtQ2aeQWdvUlH5.BLrzfBf.BHfHhbkM2atElaiUlH5.BLtTCKMn.Hf.BHhHWY1Ulbh8EYg0Fbo41YhnCHv3RMrzfBf.BHfHhbkYWYxI1WjIWdecWYzIhNf.iK0vRCJ.BHf.hHxUlckImXeYVYkQlXgM1ZhnCHv3RNv.CLv.CLv.CLv.CLv.CLxHiLrzfBf.BHfHhbkYWYxI1Wu4lH5.BLrzfBf.BHfHxbzUFbeYlbkEWck41X4IhNfHCKMn.Hf.BHhLGckA2WyUVbeACLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvDiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELxHhNf.CKMn.Hf.BHhLGckA2WyUVbeAyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvPiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeAiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvbiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeASNhnCHvvRCJ.BHf.hHyQWYv80bkE2Ww.iH5.BLrzfBf.BHfHxbzUFbeMWYw8ULwHhNf.CKMn.Hf.BHhLGckA2WyUVbeEiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwLiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULzHhNf.CKMn.Hf.BHhLGckA2WyUVbeESMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwXiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeECNhnCHvvRCJ.BHf.hHyQWYv80bkE2WwjiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLvHhNf.CKMn.Hf.BHhLGckA2WyUVbeISLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxHiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLyHhNf.CKMn.Hf.BHhLGckA2WyUVbeICMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxTiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeIyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxfiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeMCLhnCHvvRCJ.BHf.hHyQWYv80bkE2WyDiH5.BLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx8kbkQmboc1YkImH5.hLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx80b441XhnCHwvRCJ.BHf.hHyQWYv80bkEWck41XkI2WzUVav8lH5.xMrzfBf.BHfHxbzUFbeMWau8FcnklamIhNf.CKMn.Hf.BHhLGc0QGckI2WlIWYwUWYtMVdhnCHyvRCJ.BHf.hHyQWczQWYx80atIhNf.CKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WlIWYwUWYtMVdhnCHwvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak80b441XhnCHwvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak8Eck0FbuIhNfXCKMn.Hf.BHhLGc0QGckI2Wy8lYz4VYyMmH5.BLtHCLv.CLv.CLv.CLv.CLv.SLwDCKMn.Hf.BHhLGc0QGckI2WykmaiIhNfDCKMn.Hf.BHhLGc0QGckI2WzUVav8lH5.BNrzfBf.BHfHxb0I1WuMFcgYWYhnCHvvRCJ.BHf.hHyUmXeMGZ0YlYrUlH5.BLrzfBf.BHfHxb0I1W18Fa00VYhnCHvvRCJ.BHf.hHyUmXecWX1UlYuIWahnCHxvRCJ.BHf.hH04VZy8laeEyWnElbs8laooWYhnCHvvRCJ.BHf.hH04VZy8laeIyWnElbs8laooWYhnCHvvRCJ.BHf.hH1UFauMVZzk2WzIWXislH5.BLrzfBf.BHfHhcuwVcsUlH5.BLtbCL2DCL1fCLv.CLv.CLv.yL0LSLrzfBf.BHfHRauQVcrEFco8layIhNfrUWMn.HfzWCJzG."
+											"blob" : "4128.CMlaKA....fQPMDZ....AfTYr0F...fV....A........................................7.460fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHhHrzfBf.hHl8FajUlbe4VXsUlH5.hHhvRCJ.BHhDVczg1axIhNfHhHrzfBf.hHyUFczklamMmH5.xdMn.Hf.BHhDVav8UXzQWXislH5.BLtDCL4TCM0.CLv.CLv.CLv.CLyPCNrzfBf.BHfHRXsA2WjU1XgkmH5.RLtTCKMn.Hf.BHhDVav8kbkwVYgMWYhnCHv3hL4jSN4jSN4jSN4jSN4jSN3fSNrzfBf.BHfHRXsA2WyU2bzEVZtIhNfDCKMn.Hf.BHhDlbv8kYxUVb0UlaikmH5.hLrzfBf.BHfHRXxA2WmEFckIhNf.iK0vRCJ.BHf.hHgIGbe81XzElckMmH5.RLrzfBf.BHfHRXxA2Wu4lH5.BLrzfBf.BHfHRXxA2WvEFczUlbtIhNf.CKMn.Hf.BHhDlbv80b441XhnCHwvRCJ.BHf.hHgIGbeQWYsA2ahnCH4vRCJ.BHf.hHhUVXzM2WvUlbe0VZtUGckIhNfDCKMn.Hf.BHhLlbuM2be01ajUGagQWZu4lH5.BLrzfBf.BHfHxX0Q2alYlH5.BNvvRCJ.BHf.hHjUFagk2WjIWdecWYzIhNf.iK0vRCJ.BHf.hHjUFagk2WlUVYjIVXislH5.BLtPCLv.CLv.CLv.CLv.CLv.iLxHCKMn.Hf.BHhPVYrEVdeYlbkEWck41X4IhNfHCKMn.Hf.BHhPVYrEVde8lahnCHvvRCJ.BHf.hHjUFagk2WykmaiIhNfDCKMn.Hf.BHhPVYrEVdeQWYsA2ahnCH4vRCJ.BHf.hHjk1bz8lbzk1at8EYxklckIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WskFdhnCHwvRCJ.BHf.hHjk1bz8lbzk1at80atIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WzkGbkIhNf.CKMn.Hf.BHhXVZr8UXzQWXislH5.BLrzfBf.BHfHhYow1WjU1XgkmH5.RLtTCKMn.Hf.BHhXVZr8UYtY2WjUFbzglH5.BLrzfBf.BHfHhYow1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHlkFaeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhXVZrQWYx8kXrUlajIhNf.CKMn.Hf.BHhXVZrQWYx8EYxklckIhNf.CKMn.Hf.BHhXVZrQWYx80atIhNf.CKMn.Hf.BHhXVZrQWYx80bnUFalIhNf.CKMn.Hf.BHhXVZrQWYx80bzkGakIhNf.CKMn.Hf.BHhX1ax0VXtQ2Wu4lH5.BLrzfBf.BHfHhYuIWag4FcegmH5.BLtTCKMn.Hf.BHhX1ax0VXtQ2W4IhNf.iK0vRCJ.BHf.hHqUVdzIWXislH5.BLrzfBf.BHfHBakcVXz8lH5.BLrzfBf.BHfHRauQ1WgQGcgM1ZhnCHvvRCJ.BHf.hHs8FYeQVYiEVdhnCHw3RMrzfBf.BHfHRauQ1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHs8FYeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhz1at81WrY1aeEyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8ULeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeEyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWzUVav8lH5.hMrzfBf.BHfHRau41aewlYu8ULecWX1UlYuIWahnCHvvRCJ.BHf.hHs8lau8Eal81Wx7UXsAGaoQWcjUlH5.RLrzfBf.BHfHRau41aewlYu8kLeYlbkEWck41X4IhNfDCKMn.Hf.BHhz1at81WrY1aeIyWxUFcxk1YmUlbhnCHxvRCJ.BHf.hHs8lau8Eal81Wx70b441XhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7Eck0FbuIhNfbCKMn.Hf.BHhz1at81WrY1aeIyW2ElckY1ax0lH5.BLrzfBf.BHfHhauk1bk8kcuwVcsUlH5.BLrzfBf.BHfHha001WyQWYvMmH5.BNrzfBf.BHfHxayM1Ww7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Ww7Ec04VYhnCHvvRCJ.BHf.hHuM2XeEyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Ww7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeEyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeEyW2ElckY1ax0lH5.BMrzfBf.BHfHxayM1Wx7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Wx7Ec04VYhnCHvvRCJ.BHf.hHuM2XeIyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Wx7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeIyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeIyW2ElckY1ax0lH5.BMrzfBf.BHfHxayM1WlUVYjIVXis1Wg01a04FchnCHvvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeQmbg41bv81bkIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8Ec04VYhnCHvvRCJ.BHf.hHvkFcig1WhUlaj8kbg41YkIhNfHCKMn.Hf.BHh.2ark2WrY1aeEVavwVZzUGYkIhNfDCKMn.Hf.BHh.2ark2WrY1aeYlbkEWck41X4IhNfDCKMn.Hf.BHh.2ark2WrY1aeMWdtMlH5.RLrzfBf.BHfHBbuwVdewlYu8Eck0FbuIhNfbCKMn.Hf.BHh.2ark2WrY1aecWX1UlYuIWahnCHvvRCJ.BHf.hHv8Fa4AGZu4VdhnCHzvRCJ.BHf.hHv8lbzEVak4FcuIhNfzxMrzfBf.BHfHBbuIGcg0VYtQ2aeQWdvUlH5.BLrzfBf.BHfHhbkM2atElaiUlH5.BLtTCKMn.Hf.BHhHWY1Ulbh8EYg0Fbo41YhnCHv3RMrzfBf.BHfHhbkYWYxI1WjIWdecWYzIhNf.iK0vRCJ.BHf.hHxUlckImXeYVYkQlXgM1ZhnCHv3RNv.CLv.CLv.CLv.CLv.CLxHiLrzfBf.BHfHhbkYWYxI1Wu4lH5.BLrzfBf.BHfHxbzUFbeYlbkEWck41X4IhNfHCKMn.Hf.BHhLGckA2WyUVbeACLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvDiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELxHhNf.CKMn.Hf.BHhLGckA2WyUVbeAyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvPiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeAiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvbiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeASNhnCHvvRCJ.BHf.hHyQWYv80bkE2Ww.iH5.BLrzfBf.BHfHxbzUFbeMWYw8ULwHhNf.CKMn.Hf.BHhLGckA2WyUVbeEiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwLiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULzHhNf.CKMn.Hf.BHhLGckA2WyUVbeESMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwXiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeECNhnCHvvRCJ.BHf.hHyQWYv80bkE2WwjiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLvHhNf.CKMn.Hf.BHhLGckA2WyUVbeISLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxHiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLyHhNf.CKMn.Hf.BHhLGckA2WyUVbeICMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxTiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeIyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxfiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeMCLhnCHvvRCJ.BHf.hHyQWYv80bkE2WyDiH5.BLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx8kbkQmboc1YkImH5.hLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx80b441XhnCHwvRCJ.BHf.hHyQWYv80bkEWck41XkI2WzUVav8lH5.xMrzfBf.BHfHxbzUFbeMWau8FcnklamIhNf.CKMn.Hf.BHhLGc0QGckI2WlIWYwUWYtMVdhnCHyvRCJ.BHf.hHyQWczQWYx80atIhNf.CKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WlIWYwUWYtMVdhnCHwvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak80b441XhnCHwvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak8Eck0FbuIhNfXCKMn.Hf.BHhLGc0QGckI2Wy8lYz4VYyMmH5.BLtHCLv.CLv.CLv.CLv.CLv.SLwDCKMn.Hf.BHhLGc0QGckI2WykmaiIhNfDCKMn.Hf.BHhLGc0QGckI2WzUVav8lH5.BNrzfBf.BHfHxb0I1WuMFcgYWYhnCHvvRCJ.BHf.hHyUmXeMGZ0YlYrUlH5.BLrzfBf.BHfHxb0I1W18Fa00VYhnCHvvRCJ.BHf.hHyUmXecWX1UlYuIWahnCHxvRCJ.BHf.hH04VZy8laeEyWnElbs8laooWYhnCHvvRCJ.BHf.hH04VZy8laeIyWnElbs8laooWYhnCHvvRCJ.BHf.hH1UFauMVZzk2WzIWXislH5.BLrzfBf.BHfHhcuwVcsUlH5.BLtbCL2DCL1fCLv.CLv.CLv.yL0LSLrzfBf.BHfHRauQVcrEFco8layIhNfrUWMn.HfzWCJzG."
 										}
 ,
 										"snapshotlist" : 										{
@@ -3511,7 +3510,7 @@
 														"version" : 1,
 														"isbank" : 0,
 														"isbase64" : 1,
-														"blob" : "4128.CMlaKA....fQPMDZ....AfTYr0F...fV..P.RLTSfrDakUlbfDjbvA.......................7.460fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHhHrzfBf.hHl8FajUlbe4VXsUlH5.hHhvRCJ.BHhDVczg1axIhNfHhHrzfBf.hHyUFczklamMmH5.xdMn.Hf.BHhDVav8UXzQWXislH5.BLtDCL4TCM0.CLv.CLv.CLv.CLyPCNrzfBf.BHfHRXsA2WjU1XgkmH5.RLtTCKMn.Hf.BHhDVav8kbkwVYgMWYhnCHv3hL4jSN4jSN4jSN4jSN4jSN3fSNrzfBf.BHfHRXsA2WyU2bzEVZtIhNfDCKMn.Hf.BHhDlbv8kYxUVb0UlaikmH5.hLrzfBf.BHfHRXxA2WmEFckIhNf.iK0vRCJ.BHf.hHgIGbe81XzElckMmH5.RLrzfBf.BHfHRXxA2Wu4lH5.BLrzfBf.BHfHRXxA2WvEFczUlbtIhNf.CKMn.Hf.BHhDlbv80b441XhnCHwvRCJ.BHf.hHgIGbeQWYsA2ahnCH4vRCJ.BHf.hHhUVXzM2WvUlbe0VZtUGckIhNfHCKMn.Hf.BHhLlbuM2be01ajUGagQWZu4lH5.BLrzfBf.BHfHxX0Q2alYlH5.BNvvRCJ.BHf.hHjUFagk2WjIWdecWYzIhNf.iK0vRCJ.BHf.hHjUFagk2WlUVYjIVXislH5.BLtPCLv.CLv.CLv.CLv.CLv.iLxHCKMn.Hf.BHhPVYrEVdeYlbkEWck41X4IhNfHCKMn.Hf.BHhPVYrEVde8lahnCHvvRCJ.BHf.hHjUFagk2WykmaiIhNfDCKMn.Hf.BHhPVYrEVdeQWYsA2ahnCH4vRCJ.BHf.hHjk1bz8lbzk1at8EYxklckIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WskFdhnCHwvRCJ.BHf.hHjk1bz8lbzk1at80atIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WzkGbkIhNf.CKMn.Hf.BHhXVZr8UXzQWXislH5.BLrzfBf.BHfHhYow1WjU1XgkmH5.RLtTCKMn.Hf.BHhXVZr8UYtY2WjUFbzglH5.BLrzfBf.BHfHhYow1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHlkFaeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhXVZrQWYx8kXrUlajIhNf.CKMn.Hf.BHhXVZrQWYx8EYxklckIhNf.CKMn.Hf.BHhXVZrQWYx80atIhNf.CKMn.Hf.BHhXVZrQWYx80bnUFalIhNf.CKMn.Hf.BHhXVZrQWYx80bzkGakIhNf.CKMn.Hf.BHhX1ax0VXtQ2Wu4lH5.BLrzfBf.BHfHhYuIWag4FcegmH5.BLtTCKMn.Hf.BHhX1ax0VXtQ2W4IhNf.iK0vRCJ.BHf.hHqUVdzIWXislH5.BLrzfBf.BHfHBakcVXz8lH5.BLrzfBf.BHfHRauQ1WgQGcgM1ZhnCHvvRCJ.BHf.hHs8FYeQVYiEVdhnCHw3RMrzfBf.BHfHRauQ1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHs8FYeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhz1at81WrY1aeEyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8ULeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeEyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWzUVav8lH5.hMrzfBf.BHfHRau41aewlYu8ULecWX1UlYuIWahnCHvvRCJ.BHf.hHs8lau8Eal81Wx7UXsAGaoQWcjUlH5.RLrzfBf.BHfHRau41aewlYu8kLeYlbkEWck41X4IhNfDCKMn.Hf.BHhz1at81WrY1aeIyWxUFcxk1YmUlbhnCHxvRCJ.BHf.hHs8lau8Eal81Wx70b441XhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7Eck0FbuIhNfbCKMn.Hf.BHhz1at81WrY1aeIyW2ElckY1ax0lH5.BLrzfBf.BHfHhauk1bk8kcuwVcsUlH5.BLrzfBf.BHfHha001WyQWYvMmH5.BNrzfBf.BHfHxayM1Ww7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Ww7Ec04VYhnCHvvRCJ.BHf.hHuM2XeEyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Ww7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeEyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeEyW2ElckY1ax0lH5.BMrzfBf.BHfHxayM1Wx7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Wx7Ec04VYhnCHvvRCJ.BHf.hHuM2XeIyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Wx7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeIyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeIyW2ElckY1ax0lH5.BMrzfBf.BHfHxayM1WlUVYjIVXis1Wg01a04FchnCHvvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeQmbg41bv81bkIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8Ec04VYhnCHvvRCJ.BHf.hHvkFcig1WhUlaj8kbg41YkIhNfHCKMn.Hf.BHh.2ark2WrY1aeEVavwVZzUGYkIhNfDCKMn.Hf.BHh.2ark2WrY1aeYlbkEWck41X4IhNfDCKMn.Hf.BHh.2ark2WrY1aeMWdtMlH5.RLrzfBf.BHfHBbuwVdewlYu8Eck0FbuIhNfbCKMn.Hf.BHh.2ark2WrY1aecWX1UlYuIWahnCHvvRCJ.BHf.hHv8Fa4AGZu4VdhnCHzvRCJ.BHf.hHv8lbzEVak4FcuIhNfzxMrzfBf.BHfHBbuIGcg0VYtQ2aeQWdvUlH5.BLrzfBf.BHfHhbkM2atElaiUlH5.BLtTCKMn.Hf.BHhHWY1Ulbh8EYg0Fbo41YhnCHv3RMrzfBf.BHfHhbkYWYxI1WjIWdecWYzIhNf.iK0vRCJ.BHf.hHxUlckImXeYVYkQlXgM1ZhnCHv3RNv.CLv.CLv.CLv.CLv.CLxHiLrzfBf.BHfHhbkYWYxI1Wu4lH5.BLrzfBf.BHfHxbzUFbeYlbkEWck41X4IhNfHCKMn.Hf.BHhLGckA2WyUVbeACLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvDiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELxHhNf.CKMn.Hf.BHhLGckA2WyUVbeAyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvPiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeAiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvbiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeASNhnCHvvRCJ.BHf.hHyQWYv80bkE2Ww.iH5.BLrzfBf.BHfHxbzUFbeMWYw8ULwHhNf.CKMn.Hf.BHhLGckA2WyUVbeEiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwLiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULzHhNf.CKMn.Hf.BHhLGckA2WyUVbeESMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwXiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeECNhnCHvvRCJ.BHf.hHyQWYv80bkE2WwjiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLvHhNf.CKMn.Hf.BHhLGckA2WyUVbeISLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxHiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLyHhNf.CKMn.Hf.BHhLGckA2WyUVbeICMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxTiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeIyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxfiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeMCLhnCHvvRCJ.BHf.hHyQWYv80bkE2WyDiH5.BLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx8kbkQmboc1YkImH5.hLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx80b441XhnCHwvRCJ.BHf.hHyQWYv80bkEWck41XkI2WzUVav8lH5.xMrzfBf.BHfHxbzUFbeMWau8FcnklamIhNf.CKMn.Hf.BHhLGc0QGckI2WlIWYwUWYtMVdhnCHyvRCJ.BHf.hHyQWczQWYx80atIhNf.CKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WlIWYwUWYtMVdhnCHwvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak80b441XhnCHwvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak8Eck0FbuIhNfXCKMn.Hf.BHhLGc0QGckI2Wy8lYz4VYyMmH5.BLtHCLv.CLv.CLv.CLv.CLv.SLwDCKMn.Hf.BHhLGc0QGckI2WykmaiIhNfDCKMn.Hf.BHhLGc0QGckI2WzUVav8lH5.BNrzfBf.BHfHxb0I1WuMFcgYWYhnCHvvRCJ.BHf.hHyUmXeMGZ0YlYrUlH5.BLrzfBf.BHfHxb0I1W18Fa00VYhnCHvvRCJ.BHf.hHyUmXecWX1UlYuIWahnCHxvRCJ.BHf.hH04VZy8laeEyWnElbs8laooWYhnCHvvRCJ.BHf.hH04VZy8laeIyWnElbs8laooWYhnCHvvRCJ.BHf.hH1UFauMVZzk2WzIWXislH5.BLrzfBf.BHfHhcuwVcsUlH5.BLtbCL2DCL1fCLv.CLv.CLv.yL0LSLrzfBf.BHfHRauQVcrEFco8layIhNfrUWMn.HfzWCJzG."
+														"blob" : "4128.CMlaKA....fQPMDZ....AfTYr0F...fV....A........................................7.460fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHhHrzfBf.hHl8FajUlbe4VXsUlH5.hHhvRCJ.BHhDVczg1axIhNfHhHrzfBf.hHyUFczklamMmH5.xdMn.Hf.BHhDVav8UXzQWXislH5.BLtDCL4TCM0.CLv.CLv.CLv.CLyPCNrzfBf.BHfHRXsA2WjU1XgkmH5.RLtTCKMn.Hf.BHhDVav8kbkwVYgMWYhnCHv3hL4jSN4jSN4jSN4jSN4jSN3fSNrzfBf.BHfHRXsA2WyU2bzEVZtIhNfDCKMn.Hf.BHhDlbv8kYxUVb0UlaikmH5.hLrzfBf.BHfHRXxA2WmEFckIhNf.iK0vRCJ.BHf.hHgIGbe81XzElckMmH5.RLrzfBf.BHfHRXxA2Wu4lH5.BLrzfBf.BHfHRXxA2WvEFczUlbtIhNf.CKMn.Hf.BHhDlbv80b441XhnCHwvRCJ.BHf.hHgIGbeQWYsA2ahnCH4vRCJ.BHf.hHhUVXzM2WvUlbe0VZtUGckIhNfDCKMn.Hf.BHhLlbuM2be01ajUGagQWZu4lH5.BLrzfBf.BHfHxX0Q2alYlH5.BNvvRCJ.BHf.hHjUFagk2WjIWdecWYzIhNf.iK0vRCJ.BHf.hHjUFagk2WlUVYjIVXislH5.BLtPCLv.CLv.CLv.CLv.CLv.iLxHCKMn.Hf.BHhPVYrEVdeYlbkEWck41X4IhNfHCKMn.Hf.BHhPVYrEVde8lahnCHvvRCJ.BHf.hHjUFagk2WykmaiIhNfDCKMn.Hf.BHhPVYrEVdeQWYsA2ahnCH4vRCJ.BHf.hHjk1bz8lbzk1at8EYxklckIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WskFdhnCHwvRCJ.BHf.hHjk1bz8lbzk1at80atIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WzkGbkIhNf.CKMn.Hf.BHhXVZr8UXzQWXislH5.BLrzfBf.BHfHhYow1WjU1XgkmH5.RLtTCKMn.Hf.BHhXVZr8UYtY2WjUFbzglH5.BLrzfBf.BHfHhYow1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHlkFaeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhXVZrQWYx8kXrUlajIhNf.CKMn.Hf.BHhXVZrQWYx8EYxklckIhNf.CKMn.Hf.BHhXVZrQWYx80atIhNf.CKMn.Hf.BHhXVZrQWYx80bnUFalIhNf.CKMn.Hf.BHhXVZrQWYx80bzkGakIhNf.CKMn.Hf.BHhX1ax0VXtQ2Wu4lH5.BLrzfBf.BHfHhYuIWag4FcegmH5.BLtTCKMn.Hf.BHhX1ax0VXtQ2W4IhNf.iK0vRCJ.BHf.hHqUVdzIWXislH5.BLrzfBf.BHfHBakcVXz8lH5.BLrzfBf.BHfHRauQ1WgQGcgM1ZhnCHvvRCJ.BHf.hHs8FYeQVYiEVdhnCHw3RMrzfBf.BHfHRauQ1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHs8FYeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhz1at81WrY1aeEyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8ULeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeEyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWzUVav8lH5.hMrzfBf.BHfHRau41aewlYu8ULecWX1UlYuIWahnCHvvRCJ.BHf.hHs8lau8Eal81Wx7UXsAGaoQWcjUlH5.RLrzfBf.BHfHRau41aewlYu8kLeYlbkEWck41X4IhNfDCKMn.Hf.BHhz1at81WrY1aeIyWxUFcxk1YmUlbhnCHxvRCJ.BHf.hHs8lau8Eal81Wx70b441XhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7Eck0FbuIhNfbCKMn.Hf.BHhz1at81WrY1aeIyW2ElckY1ax0lH5.BLrzfBf.BHfHhauk1bk8kcuwVcsUlH5.BLrzfBf.BHfHha001WyQWYvMmH5.BNrzfBf.BHfHxayM1Ww7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Ww7Ec04VYhnCHvvRCJ.BHf.hHuM2XeEyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Ww7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeEyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeEyW2ElckY1ax0lH5.BMrzfBf.BHfHxayM1Wx7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Wx7Ec04VYhnCHvvRCJ.BHf.hHuM2XeIyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Wx7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeIyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeIyW2ElckY1ax0lH5.BMrzfBf.BHfHxayM1WlUVYjIVXis1Wg01a04FchnCHvvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeQmbg41bv81bkIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8Ec04VYhnCHvvRCJ.BHf.hHvkFcig1WhUlaj8kbg41YkIhNfHCKMn.Hf.BHh.2ark2WrY1aeEVavwVZzUGYkIhNfDCKMn.Hf.BHh.2ark2WrY1aeYlbkEWck41X4IhNfDCKMn.Hf.BHh.2ark2WrY1aeMWdtMlH5.RLrzfBf.BHfHBbuwVdewlYu8Eck0FbuIhNfbCKMn.Hf.BHh.2ark2WrY1aecWX1UlYuIWahnCHvvRCJ.BHf.hHv8Fa4AGZu4VdhnCHzvRCJ.BHf.hHv8lbzEVak4FcuIhNfzxMrzfBf.BHfHBbuIGcg0VYtQ2aeQWdvUlH5.BLrzfBf.BHfHhbkM2atElaiUlH5.BLtTCKMn.Hf.BHhHWY1Ulbh8EYg0Fbo41YhnCHv3RMrzfBf.BHfHhbkYWYxI1WjIWdecWYzIhNf.iK0vRCJ.BHf.hHxUlckImXeYVYkQlXgM1ZhnCHv3RNv.CLv.CLv.CLv.CLv.CLxHiLrzfBf.BHfHhbkYWYxI1Wu4lH5.BLrzfBf.BHfHxbzUFbeYlbkEWck41X4IhNfHCKMn.Hf.BHhLGckA2WyUVbeACLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvDiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELxHhNf.CKMn.Hf.BHhLGckA2WyUVbeAyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvPiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeAiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvbiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeASNhnCHvvRCJ.BHf.hHyQWYv80bkE2Ww.iH5.BLrzfBf.BHfHxbzUFbeMWYw8ULwHhNf.CKMn.Hf.BHhLGckA2WyUVbeEiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwLiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULzHhNf.CKMn.Hf.BHhLGckA2WyUVbeESMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwXiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeECNhnCHvvRCJ.BHf.hHyQWYv80bkE2WwjiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLvHhNf.CKMn.Hf.BHhLGckA2WyUVbeISLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxHiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLyHhNf.CKMn.Hf.BHhLGckA2WyUVbeICMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxTiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeIyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxfiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeMCLhnCHvvRCJ.BHf.hHyQWYv80bkE2WyDiH5.BLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx8kbkQmboc1YkImH5.hLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx80b441XhnCHwvRCJ.BHf.hHyQWYv80bkEWck41XkI2WzUVav8lH5.xMrzfBf.BHfHxbzUFbeMWau8FcnklamIhNf.CKMn.Hf.BHhLGc0QGckI2WlIWYwUWYtMVdhnCHyvRCJ.BHf.hHyQWczQWYx80atIhNf.CKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WlIWYwUWYtMVdhnCHwvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak80b441XhnCHwvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak8Eck0FbuIhNfXCKMn.Hf.BHhLGc0QGckI2Wy8lYz4VYyMmH5.BLtHCLv.CLv.CLv.CLv.CLv.SLwDCKMn.Hf.BHhLGc0QGckI2WykmaiIhNfDCKMn.Hf.BHhLGc0QGckI2WzUVav8lH5.BNrzfBf.BHfHxb0I1WuMFcgYWYhnCHvvRCJ.BHf.hHyUmXeMGZ0YlYrUlH5.BLrzfBf.BHfHxb0I1W18Fa00VYhnCHvvRCJ.BHf.hHyUmXecWX1UlYuIWahnCHxvRCJ.BHf.hH04VZy8laeEyWnElbs8laooWYhnCHvvRCJ.BHf.hH04VZy8laeIyWnElbs8laooWYhnCHvvRCJ.BHf.hH1UFauMVZzk2WzIWXislH5.BLrzfBf.BHfHhcuwVcsUlH5.BLtbCL2DCL1fCLv.CLv.CLv.yL0LSLrzfBf.BHfHRauQVcrEFco8layIhNfrUWMn.HfzWCJzG."
 													}
 ,
 													"fileref" : 													{
@@ -3519,7 +3518,7 @@
 														"filename" : "Helm_20190207_1.maxsnap",
 														"filepath" : "~/Documents/Max 8/Snapshots",
 														"filepos" : -1,
-														"snapshotfileid" : "08736c395eb9ca9738a04b99b894ff85"
+														"snapshotfileid" : "6c2dac2cd4624ee852949aa8bb2536fd"
 													}
 
 												}
@@ -3957,8 +3956,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4330,6 +4329,7 @@
 					"fontface" : 0,
 					"fontname" : "Lato",
 					"fontsize" : 13.0,
+					"hidden" : 1,
 					"id" : "obj-155",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -4351,6 +4351,7 @@
 					"fontname" : "Roboto Mono Light",
 					"fontsize" : 13.0,
 					"format" : 6,
+					"hidden" : 1,
 					"htricolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
 					"id" : "obj-156",
 					"ignoreclick" : 1,
@@ -4373,6 +4374,7 @@
 					"fontface" : 0,
 					"fontname" : "Lato",
 					"fontsize" : 13.0,
+					"hidden" : 1,
 					"id" : "obj-157",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -4394,6 +4396,7 @@
 					"fontname" : "Roboto Mono Light",
 					"fontsize" : 13.0,
 					"format" : 6,
+					"hidden" : 1,
 					"htricolor" : [ 0.43493, 0.833787, 0.812069, 1.0 ],
 					"id" : "obj-158",
 					"ignoreclick" : 1,
@@ -4417,6 +4420,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-162",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -6481,7 +6485,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 557.0, 292.0, 305.0, 22.0 ],
-													"text" : "\"~/Documents/MSDP 2/User Collections/Sound\""
+													"text" : "\"~/Documents/MSDP 2/User Collections/Boards\""
 												}
 
 											}
@@ -7438,21 +7442,21 @@
 							}
 , 							{
 								"name" : "default_style",
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
 								"toggle" : 								{
 									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
+									"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"button" : 								{
-									"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"newobj" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7460,21 +7464,21 @@
 							}
 , 							{
 								"name" : "default_style-1",
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
 								"toggle" : 								{
 									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
+									"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"button" : 								{
-									"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"newobj" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7507,10 +7511,16 @@
 							}
 , 							{
 								"name" : "master_style",
-								"toggle" : 								{
-									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 								}
 ,
 								"kslider" : 								{
@@ -7525,47 +7535,41 @@
 ,
 								"ezadc~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"toggle" : 								{
+									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"ezdac~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"slider" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"button" : 								{
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"multislider" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"function" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
-								"newobj" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 								}
 ,
 								"attrui" : 								{
 									"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"function" : 								{
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"multislider" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"message" : 								{
@@ -7600,10 +7604,16 @@
 							}
 , 							{
 								"name" : "master_style-1",
-								"toggle" : 								{
-									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 								}
 ,
 								"kslider" : 								{
@@ -7618,47 +7628,41 @@
 ,
 								"ezadc~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"toggle" : 								{
+									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"ezdac~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"slider" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"button" : 								{
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"multislider" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"function" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
-								"newobj" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 								}
 ,
 								"attrui" : 								{
 									"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"function" : 								{
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"multislider" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"message" : 								{
@@ -7693,10 +7697,16 @@
 							}
 , 							{
 								"name" : "master_style-2",
-								"toggle" : 								{
-									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 								}
 ,
 								"kslider" : 								{
@@ -7711,47 +7721,41 @@
 ,
 								"ezadc~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"toggle" : 								{
+									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"ezdac~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"slider" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"button" : 								{
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"multislider" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"function" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
-								"newobj" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 								}
 ,
 								"attrui" : 								{
 									"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"function" : 								{
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"multislider" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"message" : 								{
@@ -7786,10 +7790,16 @@
 							}
 , 							{
 								"name" : "master_style-3",
-								"toggle" : 								{
-									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 								}
 ,
 								"kslider" : 								{
@@ -7804,47 +7814,41 @@
 ,
 								"ezadc~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"toggle" : 								{
+									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"ezdac~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"slider" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"button" : 								{
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"multislider" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"function" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
-								"newobj" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 								}
 ,
 								"attrui" : 								{
 									"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"function" : 								{
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"multislider" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"message" : 								{
@@ -7916,10 +7920,11 @@
 , 							{
 								"name" : "minimal",
 								"default" : 								{
+									"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 0.44 ],
+									"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 									"color" : [ 0.345098, 0.513725, 0.572549, 0.78 ],
 									"selectioncolor" : [ 0.862745, 0.741176, 0.137255, 0.7 ],
-									"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"patchlinecolor" : [ 0.65, 0.65, 0.65, 0.9 ],
 									"bgfillcolor" : 									{
@@ -7931,8 +7936,7 @@
 										"proportion" : 0.99,
 										"autogradient" : 0
 									}
-,
-									"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -7941,8 +7945,8 @@
 , 							{
 								"name" : "multisliderBlue&Yellow",
 								"default" : 								{
-									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ],
-									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ]
+									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ],
+									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8095,8 +8099,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8105,8 +8109,8 @@
 , 							{
 								"name" : "newobjYellow-2",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8115,8 +8119,8 @@
 , 							{
 								"name" : "newobjYellow-3",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8125,8 +8129,8 @@
 , 							{
 								"name" : "newobjYellow-4",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8135,8 +8139,8 @@
 , 							{
 								"name" : "newobjYellow-5",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8145,8 +8149,8 @@
 , 							{
 								"name" : "newobjYellow-6",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8245,8 +8249,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9838,21 +9842,21 @@
 							}
 , 							{
 								"name" : "default_style",
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
 								"toggle" : 								{
 									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
+									"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"button" : 								{
-									"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"newobj" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9860,21 +9864,21 @@
 							}
 , 							{
 								"name" : "default_style-1",
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
 								"toggle" : 								{
 									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
+									"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"button" : 								{
-									"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"newobj" : 								{
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9907,10 +9911,16 @@
 							}
 , 							{
 								"name" : "master_style",
-								"toggle" : 								{
-									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 								}
 ,
 								"kslider" : 								{
@@ -9925,47 +9935,41 @@
 ,
 								"ezadc~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"toggle" : 								{
+									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"ezdac~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"slider" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"button" : 								{
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"multislider" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"function" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
-								"newobj" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 								}
 ,
 								"attrui" : 								{
 									"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"function" : 								{
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"multislider" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"message" : 								{
@@ -10000,10 +10004,16 @@
 							}
 , 							{
 								"name" : "master_style-1",
-								"toggle" : 								{
-									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 								}
 ,
 								"kslider" : 								{
@@ -10018,47 +10028,41 @@
 ,
 								"ezadc~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"toggle" : 								{
+									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"ezdac~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"slider" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"button" : 								{
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"multislider" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"function" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
-								"newobj" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 								}
 ,
 								"attrui" : 								{
 									"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"function" : 								{
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"multislider" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"message" : 								{
@@ -10093,10 +10097,16 @@
 							}
 , 							{
 								"name" : "master_style-2",
-								"toggle" : 								{
-									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 								}
 ,
 								"kslider" : 								{
@@ -10111,47 +10121,41 @@
 ,
 								"ezadc~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"toggle" : 								{
+									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"ezdac~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"slider" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"button" : 								{
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"multislider" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"function" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
-								"newobj" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 								}
 ,
 								"attrui" : 								{
 									"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"function" : 								{
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"multislider" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"message" : 								{
@@ -10186,10 +10190,16 @@
 							}
 , 							{
 								"name" : "master_style-3",
-								"toggle" : 								{
-									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+								"newobj" : 								{
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 								}
 ,
 								"kslider" : 								{
@@ -10204,47 +10214,41 @@
 ,
 								"ezadc~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"toggle" : 								{
+									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"ezdac~" : 								{
 									"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"slider" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"button" : 								{
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-									"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-								}
-,
-								"multislider" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-,
-								"function" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
-								"newobj" : 								{
 									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 								}
 ,
 								"attrui" : 								{
 									"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"function" : 								{
+									"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"multislider" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"message" : 								{
@@ -10316,10 +10320,11 @@
 , 							{
 								"name" : "minimal",
 								"default" : 								{
+									"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 0.44 ],
+									"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 									"color" : [ 0.345098, 0.513725, 0.572549, 0.78 ],
 									"selectioncolor" : [ 0.862745, 0.741176, 0.137255, 0.7 ],
-									"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"patchlinecolor" : [ 0.65, 0.65, 0.65, 0.9 ],
 									"bgfillcolor" : 									{
@@ -10331,8 +10336,7 @@
 										"proportion" : 0.99,
 										"autogradient" : 0
 									}
-,
-									"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -10341,8 +10345,8 @@
 , 							{
 								"name" : "multisliderBlue&Yellow",
 								"default" : 								{
-									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ],
-									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ]
+									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ],
+									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10495,8 +10499,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10505,8 +10509,8 @@
 , 							{
 								"name" : "newobjYellow-2",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10515,8 +10519,8 @@
 , 							{
 								"name" : "newobjYellow-3",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10525,8 +10529,8 @@
 , 							{
 								"name" : "newobjYellow-4",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10535,8 +10539,8 @@
 , 							{
 								"name" : "newobjYellow-5",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10545,8 +10549,8 @@
 , 							{
 								"name" : "newobjYellow-6",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10645,8 +10649,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10679,11 +10683,12 @@
 			}
 , 			{
 				"box" : 				{
+					"enabledrag" : 0,
 					"fontface" : 0,
 					"fontname" : "Lato",
 					"fontsize" : 12.0,
 					"id" : "obj-9",
-					"items" : [ "axe.wav", ",", "Beautiful", "Chaos", "Extended_1.aiff", ",", "I_Am_Female.wav", ",", "piano", "note.wav", ",", "squeek-toy.wav", ",", "stereo_tester.wav", ",", "violin-b3-tremolo.wav", ",", "wind.wav" ],
+					"items" : [ "Another", "Test.json", ",", "Emotional", "Chaos.json", ",", "Forever", "Noise", "Machine.json", ",", "Metro", "On", "60bpm", "-", "Beautiful", "Chaos", "Extended.json", ",", "newTest.json", ",", "Simple", "Audio-Reactive", "Template.json", ",", "Subconscious", "Creep", "-", "Turn", "on", "Metronome.json", ",", "Subconscious", "Creep", "2.json", ",", "twinkles.json" ],
 					"margin" : 11,
 					"maxclass" : "chooser",
 					"multiselect" : 0,
@@ -10692,7 +10697,7 @@
 					"outlettype" : [ "", "", "", "", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 173.75, 226.0, 182.0, 371.0 ],
-					"prefix" : "Apple HDD:/Users/Hugh/Documents/MSDP 2/User Collections/Sound/",
+					"prefix" : "C:/Users/hughl/Documents/MSDP 2/User Collections/Boards/",
 					"presentation" : 1,
 					"presentation_rect" : [ 13.75, 176.0, 363.875, 352.0 ],
 					"selectioncolor" : [ 0.376470588235294, 0.737254901960784, 0.737254901960784, 1.0 ],
@@ -12687,28 +12692,35 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "single_file_player 1.2.maxpat",
-				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : "../Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi_player_basic.maxpat",
-				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : "../Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Helm_20190207_1.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "msdp.tool.macPrep.maxpat",
-				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : "../Includes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fs_toggle.maxpat",
-				"bootpath" : "~/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
 				"patcherrelativepath" : "../Includes",
 				"type" : "JSON",
 				"implicit" : 1
@@ -12770,21 +12782,21 @@
 			}
 , 			{
 				"name" : "default_style",
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
 				"toggle" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
+					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"button" : 				{
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"newobj" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12792,21 +12804,21 @@
 			}
 , 			{
 				"name" : "default_style-1",
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
 				"toggle" : 				{
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ]
+					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"button" : 				{
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"newobj" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12839,10 +12851,16 @@
 			}
 , 			{
 				"name" : "master_style",
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"button" : 				{
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 				}
 ,
 				"kslider" : 				{
@@ -12857,47 +12875,41 @@
 ,
 				"ezadc~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"newobj" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 				}
 ,
 				"attrui" : 				{
 					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"message" : 				{
@@ -12932,10 +12944,16 @@
 			}
 , 			{
 				"name" : "master_style-1",
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"button" : 				{
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 				}
 ,
 				"kslider" : 				{
@@ -12950,47 +12968,41 @@
 ,
 				"ezadc~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"newobj" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 				}
 ,
 				"attrui" : 				{
 					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"message" : 				{
@@ -13025,10 +13037,16 @@
 			}
 , 			{
 				"name" : "master_style-2",
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"button" : 				{
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 				}
 ,
 				"kslider" : 				{
@@ -13043,47 +13061,41 @@
 ,
 				"ezadc~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"newobj" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 				}
 ,
 				"attrui" : 				{
 					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"message" : 				{
@@ -13118,10 +13130,16 @@
 			}
 , 			{
 				"name" : "master_style-3",
-				"toggle" : 				{
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"button" : 				{
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
 				}
 ,
 				"kslider" : 				{
@@ -13136,47 +13154,41 @@
 ,
 				"ezadc~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"ezdac~" : 				{
 					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"slider" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
-				}
-,
-				"multislider" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"function" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"newobj" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 				}
 ,
 				"attrui" : 				{
 					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"multislider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"message" : 				{
@@ -13248,10 +13260,11 @@
 , 			{
 				"name" : "minimal",
 				"default" : 				{
+					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"elementcolor" : [ 0.32549, 0.345098, 0.372549, 0.44 ],
+					"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 					"color" : [ 0.345098, 0.513725, 0.572549, 0.78 ],
 					"selectioncolor" : [ 0.862745, 0.741176, 0.137255, 0.7 ],
-					"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 0.9 ],
 					"bgfillcolor" : 					{
@@ -13263,8 +13276,7 @@
 						"proportion" : 0.99,
 						"autogradient" : 0
 					}
-,
-					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",
@@ -13273,8 +13285,8 @@
 , 			{
 				"name" : "multisliderBlue&Yellow",
 				"default" : 				{
-					"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ],
-					"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ]
+					"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ],
+					"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -13427,8 +13439,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -13437,8 +13449,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -13447,8 +13459,8 @@
 , 			{
 				"name" : "newobjYellow-3",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -13457,8 +13469,8 @@
 , 			{
 				"name" : "newobjYellow-4",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -13467,8 +13479,8 @@
 , 			{
 				"name" : "newobjYellow-5",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -13477,8 +13489,8 @@
 , 			{
 				"name" : "newobjYellow-6",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -13577,8 +13589,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
