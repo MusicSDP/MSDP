@@ -6,6 +6,6 @@
 	"Buffer Effects" : [ "--- Buffer Effects ---", "Buffer Board", "Chopper", "Chopper 2", "Crash & Burn", "Crash Override", "File Granulator", "File Scratcher", "Glitch Pad", "IR Convolution", "Live Granulator", "Live Scratcher", "Looper 2", "Looper" ],
 	"MIDI Tools" : [ "--- MIDI Tools ---", "EZ MIDI Player", "MIDI Editor", "MIDI Explorer", "MIDI Recorder", "MIDI Splitter", "Signal-to-MIDI" ],
 	"Video" : [ "Video", "-- REMOVE MODULE --", "--- Sources ---",  "Camera Capture", "EZ Video Player", "Video File Player", "VS-Camera-FM", "--- Generators ---", "VS-WFG-2", "VS-WFG-Radial", "VS-WFG-Shapes", "--- Tools and Effects ---", "2-Video Mix", "4-Video Mix", "Bricosa Filter", "ColorToner", "Fractals", "GlitchBox", "Kaleidoscope", "MoshFlow", "Scanner", "Sketch", "Slider", "Trace", "VBitCrush", "VDelay", "VGate", "VS-3-Mix",  "--- Output ---", "Projector" ],
-	"Utilities" : [ "--- Utilities ---", "4-Channel-to-Stereo", "8-Channel-to-Stereo","16-Channel-to-Stereo", "4-Channel Multi-Out", "8-Channel Multi-Out","16-Channel Multi-Out", "Meta-Box", "Signal Hub", "Signal Recorder", "Signal Splitter", "SpectroView" ],
+	"Utilities" : [ "--- Utilities ---", "4-Channel-to-Stereo", "8-Channel-to-Stereo","16-Channel-to-Stereo", "4-Channel Multi-Out", "8-Channel Multi-Out","16-Channel Multi-Out", "4-Channel Multi-In", "Meta-Box", "Signal Hub", "Signal Recorder", "Signal Splitter", "SpectroView" ],
 	"3rd Party" : [ "--- 3rd Party Modules ---" ]
 }
