@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -205,7 +205,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -693,7 +693,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "stop", "bang" ],
-					"patching_rect" : [ 26.0, 156.08447265625, 49.0, 22.0 ],
+					"patching_rect" : [ 23.0, 152.08447265625, 49.0, 22.0 ],
 					"text" : "t stop b"
 				}
 
@@ -705,7 +705,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 8,
 					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang" ],
-					"patching_rect" : [ 104.116531372070313, 156.08447265625, 92.5, 22.0 ],
+					"patching_rect" : [ 104.116531372070313, 159.0, 92.5, 22.0 ],
 					"text" : "t b b b b b b b b"
 				}
 
