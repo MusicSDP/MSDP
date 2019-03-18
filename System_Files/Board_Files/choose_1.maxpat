@@ -865,7 +865,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-10",
-					"items" : [ "Video", ",", "-- REMOVE MODULE --", ",", "--- Sources ---", ",", "Camera Capture", ",", "EZ Video Player", ",", "Video File Player", ",", "VS-Camera-FM", ",", "--- Generators ---", ",", "VS-WFG-2", ",", "VS-WFG-Radial", ",", "VS-WFG-Shapes", ",", "--- Tools and Effects ---", ",", "2-Video Mix", ",", "4-Video Mix", ",", "Bricosa Filter", ",", "ColorToner", ",", "Fractals", ",", "GlitchBox", ",", "Kaleidoscope", ",", "MoshFlow", ",", "Scanner", ",", "Sketch", ",", "Slider", ",", "Trace", ",", "VBitCrush", ",", "VDelay", ",", "VGate", ",", "VS-3-Mix", ",", "--- Output ---", ",", "Projector" ],
+					"items" : [ "Video", ",", "-- REMOVE MODULE --", ",", "--- Sources ---", ",", "Camera Capture", ",", "EZ Video Player", ",", "Video File Player", ",", "VS-Camera-FM", ",", "--- Generators ---", ",", "VS-WFG-2", ",", "VS-WFG-Radial", ",", "VS-WFG-Shapes", ",", "--- Tools and Effects ---", ",", "2-Video Mix", ",", "4-Video Mix", ",", "Bricosa Filter", ",", "ColorToner", ",", "Fractals", ",", "GlitchBox", ",", "Kaleidoscope", ",", "MoshFlow", ",", "Scanner", ",", "Sketch", ",", "Slider", ",", "Trace", ",", "VBitCrush", ",", "VDelay", ",", "VGate", ",", "VS-3-Mix", ",", "--- Output ---", ",", "Projector", ",", "--- 3rd Party Modules --- ", ",", "ChromaKeyer.maxpat", ",", "LumaKeyer.maxpat", ",", "VS-Displacement.maxpat" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -894,7 +894,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-9",
-					"items" : [ "Data", ",", "-- REMOVE MODULE --", ",", "--- Note Generators ---", ",", "MIDI Arp", ",", "MIDI Sequencer", ",", "Stochastic Controller", ",", "--- Control ---", ",", "Controller Mapper", ",", "Automator", ",", "LFO Automator", ",", "Metronome Automator", ",", "Randomator", ",", "Score Automator", ",", "Signal Automator", ",", "VST Controller", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder", ",", "MIDI Splitter", ",", "Signal-to-MIDI" ],
+					"items" : [ "Data", ",", "-- REMOVE MODULE --", ",", "--- Note Generators ---", ",", "MIDI Arp", ",", "MIDI Sequencer", ",", "Stochastic Controller", ",", "--- Control ---", ",", "Controller Mapper", ",", "Automator", ",", "LFO Automator", ",", "Metronome Automator", ",", "Randomator", ",", "Score Automator", ",", "Signal Automator", ",", "VST Controller", ",", "--- MIDI Tools ---", ",", "EZ MIDI Player", ",", "MIDI Editor", ",", "MIDI Explorer", ",", "MIDI Recorder", ",", "MIDI Splitter", ",", "Signal-to-MIDI", ",", "--- 3rd Party Modules --- ", ",", "Live Codemator.maxpat" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1115,11 +1115,11 @@
 								"box" : 								{
 									"id" : "obj-22",
 									"maxclass" : "newobj",
-									"numinlets" : 6,
-									"numoutlets" : 6,
-									"outlettype" : [ "", "", "", "", "", "" ],
-									"patching_rect" : [ 108.0, 131.0, 339.0, 22.0 ],
-									"text" : "route \"Audio Tools\" \"Buffer Effects\" Filters Instruments Utilities"
+									"numinlets" : 7,
+									"numoutlets" : 7,
+									"outlettype" : [ "", "", "", "", "", "", "" ],
+									"patching_rect" : [ 108.0, 131.0, 444.0, 22.0 ],
+									"text" : "route \"Sound Sources\" \"Buffer Effects\" Filters Instruments Utilities \"Sound Output\""
 								}
 
 							}
@@ -1239,6 +1239,13 @@
 									"destination" : [ "obj-25", 0 ],
 									"midpoints" : [ 706.5, 337.0, 194.0, 337.0 ],
 									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-22", 5 ]
 								}
 
 							}
@@ -1408,7 +1415,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Regular",
 					"id" : "obj-26",
-					"items" : [ "Sound", ",", "-- REMOVE MODULE --", ",", "--- Audio Tools ---", ",", "Audio File Player", ",", "Compressor", ",", "EZ Audio Player", ",", "Signal-In Control", ",", "Studio EQ", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Subtractive", ",", "Vocoder", ",", "Wavetable Synth", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "cREepVERB", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "Stereo Echo", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "IR Convolution", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- Utilities ---", ",", "4-Channel-to-Stereo", ",", "8-Channel-to-Stereo", ",", "16-Channel-to-Stereo", ",", "4-Channel Multi-Out", ",", "8-Channel Multi-Out", ",", "16-Channel Multi-Out", ",", "Meta-Box", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "SpectroView" ],
+					"items" : [ "Sound", ",", "-- REMOVE MODULE --", ",", "--- Sources ---", ",", "Signal-In Control", ",", "Audio File Player", ",", "EZ Audio Player", ",", "Input 4-Channel", ",", "Input 8-Channel", ",", "--- Instruments ---", ",", "A+2", ",", "Add1t1ve", ",", "Chaos Synth", ",", "Drum Machine", ",", "SAH", ",", "Stochastic Files", ",", "Stochastic Grains", ",", "VST Instrument", ",", "Subtractive", ",", "Vocoder", ",", "Wavetable Synth", ",", "--- Effects & Filters ---", ",", "Chorus", ",", "Comb", ",", "Convolve", ",", "cREepVERB", ",", "DegraderDrive", ",", "Distortion", ",", "Echo", ",", "Filter Shaper", ",", "Flanger", ",", "Gater", ",", "GigaVerb", ",", "Moog Ladder Low Pass", ",", "Morphing Filter", ",", "Pan Machine", ",", "Pitch Shift 2", ",", "Pitch Shift", ",", "RM_AM", ",", "ReTuner", ",", "Resonant Filter", ",", "Reverb", ",", "Signal Delay", ",", "Stereo Echo", ",", "VST Effect", ",", "--- Buffer Effects ---", ",", "Buffer Board", ",", "Chopper", ",", "Chopper 2", ",", "Crash & Burn", ",", "Crash Override", ",", "File Granulator", ",", "File Scratcher", ",", "Glitch Pad", ",", "IR Convolution", ",", "Live Granulator", ",", "Live Scratcher", ",", "Looper 2", ",", "Looper", ",", "--- Utilities ---", ",", "4-Channel-to-Stereo", ",", "8-Channel-to-Stereo", ",", "16-Channel-to-Stereo", ",", "4-Channel Multi-Out", ",", "8-Channel Multi-Out", ",", "16-Channel Multi-Out", ",", "Compressor", ",", "Meta-Box", ",", "Signal Hub", ",", "Signal Recorder", ",", "Signal Splitter", ",", "SpectroView", ",", "Studio EQ", ",", "--- 3rd Party Modules --- ", ",", "Image2Wavetable.amxd", ",", "Sampler-1.maxpat", ",", "Sampler-16.maxpat" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
