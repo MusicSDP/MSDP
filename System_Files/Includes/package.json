@@ -12,8 +12,10 @@
     "adm-zip": "^0.4.13",
     "axios": "^0.18.0",
     "file-api": "^0.10.4",
+    "internet-available": "^1.0.0",
     "max-api": "^1.0.1",
     "opn": "^5.4.0",
+    "public-ip": "^3.0.0",
     "uuid": "^3.3.2"
   }
 }
