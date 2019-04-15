@@ -1,10 +1,13 @@
-// comment lines 2-7 out when building the parcel package. Then copy-paste the lines into the beginning of the distribution package
+// comment lines 2-10 out when building the parcel package. Then copy-paste the lines into the beginning of the distribution package
 const Max = require('max-api')
 const path = require('path')
 const fs = require('fs')
 var exec = require('child_process')
 const os = require('os').platform()
 const homedir = require('os').homedir()
+const zlib = require('zlib')
+const http = require('http');
+const url = require('url');
 // external node packages need to be compiled into a single file using parcel
 const opn = require('opn');
 const uuidv1 = require('uuid/v1')
@@ -14,6 +17,7 @@ const publicIp = require('public-ip')
 const internetAvailable = require('internet-available')
 // required info
 let addy = "offline"
+let destination = "http://analytics.musicsdp.com"
 let debug = false
 let log = (output) => { if (debug) Max.post(output) }
 let remoteVersion = null
@@ -51,10 +55,14 @@ Max.addHandler("startUpdate", () => { startUpdate() })
 Max.addHandler("stateRecover", () => { stateRecover() })
 Max.addHandler("backupDicts", () => { backupDicts() })
 Max.addHandler("msdpfs", (type, path, destination) => { msdpfs(type, path, destination) })
+// In progress test handlers - don't do anything functional yet
 Max.addHandler("getIP", () => { log(addy) })
+Max.addHandler("compressTest", () => { compressTest() })
+Max.addHandler("getRedirect", () => { getRedirect() })
 Max.addHandler("crash", () => { crash() }) // use to intentionally crash the script
 
 // begin function definitions
+
 const stateRecover = async _ => {
   try {
     state = await Max.getDict('msdpState')
@@ -562,6 +570,7 @@ const msdpfs = (type, path, destination) => { //exists, copy, mkdir, rm
   }
   catch(error) { log(error) }
 }
+// Test functions - not release ready
 // ip lookup and analytics passing
 const getIP = () => {
   try {
@@ -572,5 +581,26 @@ const getIP = () => {
     }).catch(() => { addy = "offline" })
   }
   catch(e) { log(e) }
+}
+const getRedirect = () => {
+  Max.post(destination)
+  function findRedirect(destination, callback) {
+    http.get(destination, function(response) {
+        if (response.headers.location) {
+            var loc = response.headers.location;
+            if (loc.match(/^http/)) {
+                loc = new Url(loc);
+                destination = loc.host;
+            } else {
+                destination = loc;
+            }
+            // get(destination, callback); // follows ahead from here
+            Max.post(destination)
+        } else {
+            callback(response);
+        }
+    });
+  }
+  findRedirect()
 }
 getIP() //get IP on script start
