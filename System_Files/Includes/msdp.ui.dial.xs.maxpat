@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 150.0, 79.0, 1293.0, 946.0 ],
+		"rect" : [ 2153.0, 170.0, 1293.0, 946.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -42,7 +42,6 @@
 					"activedialcolor" : [ 0.396078431372549, 0.874509803921569, 0.811764705882353, 1.0 ],
 					"activefgdialcolor" : [ 0.396078431372549, 0.874509803921569, 0.811764705882353, 1.0 ],
 					"activeneedlecolor" : [ 0.396078431372549, 0.874509803921569, 0.811764705882353, 1.0 ],
-					"appearance" : 3,
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 0.0 ],
 					"dialcolor" : [ 0.396078431372549, 0.874509803921569, 0.811764705882353, 0.0 ],
 					"fgdialcolor" : [ 0.396078431372549, 0.874509803921569, 0.811764705882353, 1.0 ],
@@ -55,16 +54,17 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
+					"panelcolor" : [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 0.0 ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 296.0, 251.0, 50.0, 43.0 ],
+					"patching_rect" : [ 309.0, 257.0, 27.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.5, 12.5, 50.0, 43.0 ],
+					"presentation_rect" : [ 11.0, 14.5, 27.0, 28.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.dial[1]"
+							"parameter_longname" : "live.dial[1]",
+							"parameter_shortname" : "live.dial"
 						}
 
 					}
@@ -81,7 +81,7 @@
 					"bgcolor" : [ 0.164706, 0.176471, 0.172549, 0.0 ],
 					"fontface" : 1,
 					"fontname" : "Roboto Mono",
-					"fontsize" : 9.0,
+					"fontsize" : 8.5,
 					"format" : 6,
 					"id" : "obj-27",
 					"ignoreclick" : 1,
@@ -91,9 +91,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 261.5, 520.0, 55.0, 20.0 ],
+					"patching_rect" : [ 261.5, 520.0, 54.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 20.5, 39.0, 20.0 ],
+					"presentation_rect" : [ 11.0, 18.5, 31.0, 20.0 ],
 					"textcolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
 					"triangle" : 0,
 					"tricolor" : [ 0.396078, 0.87451, 0.811765, 1.0 ],
@@ -113,7 +113,7 @@
 					"patching_rect" : [ 738.0, 275.0, 43.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, -1.0, 53.0, 18.0 ],
-					"text" : "#1",
+					"text" : "#2",
 					"textcolor" : [ 0.095481000840664, 0.100395999848843, 0.100293003022671, 1.0 ],
 					"textjustification" : 1
 				}
@@ -130,7 +130,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 284.25, 239.0, 73.5, 67.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.5, 12.5, 40.0, 39.0 ],
+					"presentation_rect" : [ 8.5, 12.5, 31.0, 32.0 ],
 					"proportion" : 0.5,
 					"rounded" : 100
 				}
@@ -166,7 +166,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -211,7 +211,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -523,7 +523,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -695,7 +695,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1434,7 +1434,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 850.0, 502.0, 150.0, 107.0 ],
-					"presentation_linecount" : 7,
 					"text" : "1. Param Number (no p)\n2. Dial Name\n3. Low Value\n4. High Value\n5. Initial Value\n6. Int or Float (i / f)\n7. Theme number"
 				}
 
@@ -1862,7 +1861,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2691,7 +2690,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "msdp.tool.msglim.maxpat",
-				"bootpath" : "~/Documents/GitHub/source-code/System_Files/Includes",
+				"bootpath" : "D:/Github/source-code/System_Files/Includes",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
