@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -857,20 +857,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1041.0, 206.0, 99.0, 23.0 ],
-					"text" : "scale 0. 1. 0 255"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "color 2 R input (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-20",
 					"index" : 0,
@@ -879,20 +865,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1041.0, 96.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1175.0, 206.0, 99.0, 23.0 ],
-					"text" : "scale 0. 1. 0 255"
 				}
 
 			}
@@ -918,22 +890,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1041.0, 279.0, 72.0, 23.0 ],
-					"text" : "pak 0 0 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-34",
-					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1310.0, 206.0, 99.0, 23.0 ],
-					"text" : "scale 0. 1. 0 255"
+					"patching_rect" : [ 1041.0, 279.0, 68.0, 23.0 ],
+					"text" : "pak 0. 0. 0."
 				}
 
 			}
@@ -952,20 +910,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-17",
-					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 489.0, 206.0, 99.0, 23.0 ],
-					"text" : "scale 0. 1. 0 255"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "color 1 R input (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-18",
 					"index" : 0,
@@ -974,20 +918,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 489.0, 96.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 623.0, 206.0, 99.0, 23.0 ],
-					"text" : "scale 0. 1. 0 255"
 				}
 
 			}
@@ -1013,8 +943,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 489.0, 279.0, 72.0, 23.0 ],
-					"text" : "pak 0 0 0"
+					"patching_rect" : [ 489.0, 279.0, 68.0, 23.0 ],
+					"text" : "pak 0. 0. 0."
 				}
 
 			}
@@ -1097,20 +1027,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 213.0, 780.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 758.0, 206.0, 99.0, 23.0 ],
-					"text" : "scale 0. 1. 0 255"
 				}
 
 			}
@@ -1373,13 +1289,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"midpoints" : [ 343.0, 769.75, 222.5, 769.75 ],
 					"source" : [ "obj-11", 0 ]
@@ -1497,22 +1406,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1541,13 +1436,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
 					"source" : [ "obj-21", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 1 ],
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -1626,13 +1514,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 2 ],
-					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -1751,7 +1632,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
+					"destination" : [ "obj-32", 2 ],
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -1766,16 +1647,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-48", 0 ]
+					"destination" : [ "obj-49", 0 ],
+					"midpoints" : [ 701.5, 196.0, 727.0, 196.0, 727.0, 157.0, 744.0, 157.0 ],
+					"source" : [ "obj-48", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"midpoints" : [ 701.5, 196.0, 727.0, 196.0, 727.0, 157.0, 744.0, 157.0 ],
-					"source" : [ "obj-48", 1 ]
+					"destination" : [ "obj-7", 1 ],
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -1804,7 +1685,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -1819,7 +1700,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-7", 2 ],
 					"source" : [ "obj-52", 0 ]
 				}
 
@@ -1878,7 +1759,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
+					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -1937,7 +1818,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-32", 1 ],
 					"source" : [ "obj-63", 0 ]
 				}
 
@@ -2053,13 +1934,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 2 ],
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
@@ -2068,17 +1942,17 @@
  ],
 		"parameters" : 		{
 			"obj-62" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
-			"obj-54" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
-			"obj-58" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-3" : [ "range[1]", "range", 0 ],
+			"obj-12" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
 			"obj-73" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-3" : [ "range[1]", "range", 0 ],
+			"obj-28" : [ "swatch", "swatch", 0 ],
 			"obj-49" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
+			"obj-54" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
+			"obj-27" : [ "swatch[1]", "swatch[1]", 0 ],
+			"obj-58" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-64" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
 			"obj-53" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
 			"obj-45" : [ "slider", "slider", 0 ],
-			"obj-64" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-12" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-28" : [ "swatch", "swatch", 0 ],
-			"obj-27" : [ "swatch[1]", "swatch[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2087,31 +1961,36 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "~/dev/cycling/max6-git/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "~/dev/cycling/max6-git/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/vizzie/code",
+				"bootpath" : "~/dev/cycling/max6-git/max/packages/Vizzie/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "~/dev/cycling/max6-git/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-disable.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "~/dev/cycling/max6-git/max/packages/Vizzie/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}

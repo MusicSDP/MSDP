@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -156,7 +156,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 394.0, 293.5, 226.0, 40.0 ],
-									"presentation_linecount" : 5,
 									"text" : "Set all three planes to the same color for black and white output"
 								}
 
@@ -187,7 +186,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -437,7 +436,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 720.0, 293.5, 146.0, 40.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Double-click on the object to open the UI"
 								}
 
@@ -467,7 +465,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 553.0, 518.0, 339.0, 94.0 ],
-									"presentation_linecount" : 6,
 									"text" : "Every Vizzie module exists in two forms: as a module, and as a Max abstraction. The vz.mappr abstraction is a standard Max abstraction having exactly the same inputs and outputs and functionality as the Vizzie MAPPR module. Abstractions can be very useful when screen real estate is at a premium.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -485,7 +482,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 640.0, 176.0, 251.0, 54.0 ],
-									"presentation_linecount" : 3,
 									"text" : "An integer 1 or 0 in the left inlet enables or disables the module. A disabled module passes video through"
 								}
 
@@ -502,14 +498,14 @@
 									"patching_rect" : [ 620.0, 193.0, 20.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_invisible" : 1,
-											"parameter_mmax" : 1.0,
-											"parameter_initial" : [ 1 ],
 											"parameter_shortname" : "toggle",
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_type" : 3,
 											"parameter_longname" : "toggle",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_mmax" : 1.0,
+											"parameter_initial" : [ 1 ]
 										}
 
 									}
@@ -530,8 +526,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 358.0, 134.0, 83.0 ],
-									"presentation_linecount" : 5,
+									"patching_rect" : [ 10.0, 358.0, 136.0, 83.0 ],
 									"text" : "Select an alternative to the normal RGB plane mapping of your video"
 								}
 
@@ -568,7 +563,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 69.0, 656.0, 21.0 ],
-									"presentation_linecount" : 2,
 									"text" : "A Vizzie module/abstraction to swap and remap RGB colorspaces by remapping color planes in a video or image",
 									"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
 									"varname" : "autohelp_top_digest"
@@ -584,7 +578,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 10.0, 691.0, 60.0 ],
-									"presentation_linecount" : 2,
 									"text" : "PLANEMAPPR / vz.planemappr",
 									"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
 									"varname" : "autohelp_top_digest[1]"
@@ -696,41 +689,41 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-9::obj-64" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-79" : [ "slider[5]", "slider[2]", 0 ],
-			"obj-2::obj-9::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-9::obj-112::obj-89" : [ "FreqMode[7]", "FreqMode", 0 ],
-			"obj-2::obj-9::obj-83" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-60" : [ "pictctrl[24]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-65" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-92" : [ "FreqMode[8]", "FreqMode", 0 ],
-			"obj-2::obj-4::obj-26" : [ "umenu[1]", "umenu[1]", 0 ],
-			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
-			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
 			"obj-2::obj-35::obj-26" : [ "umenu[5]", "umenu[1]", 0 ],
 			"obj-2::obj-35::obj-147" : [ "pictctrl[32]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-148" : [ "pictctrl[48]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-6" : [ "range[4]", "range", 0 ],
-			"obj-2::obj-9::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-2::obj-9::obj-112::obj-121" : [ "speed[12]", "speed", 0 ],
-			"obj-2::obj-9::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
-			"obj-2::obj-19::obj-37" : [ "umenu[22]", "umenu", 0 ],
+			"obj-2::obj-4::obj-65" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"obj-2::obj-9::obj-81" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-104" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
 			"obj-2::obj-9::obj-40" : [ "pictctrl[25]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-120" : [ "range[3]", "range", 0 ],
-			"obj-2::obj-10::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-2::obj-35::obj-148" : [ "pictctrl[31]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-24" : [ "umenu[7]", "umenu", 0 ],
+			"obj-2::obj-9::obj-112::obj-92" : [ "FreqMode[8]", "FreqMode", 0 ],
+			"obj-2::obj-35::obj-24" : [ "umenu[6]", "umenu", 0 ],
+			"obj-2::obj-9::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-2::obj-4::obj-148" : [ "pictctrl[48]", "pictctrl[1]", 0 ],
 			"obj-2::obj-4::obj-147" : [ "pictctrl[49]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-112::obj-120" : [ "range[3]", "range", 0 ],
+			"obj-2::obj-9::obj-112::obj-79" : [ "slider[5]", "slider[2]", 0 ],
+			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
+			"obj-2::obj-35::obj-65" : [ "pictctrl[29]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-112::obj-119" : [ "speed[11]", "speed", 0 ],
+			"obj-2::obj-9::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-2::obj-19::obj-37" : [ "umenu[22]", "umenu", 0 ],
+			"obj-2::obj-9::obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-2::obj-9::obj-83" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-64" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
+			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-2::obj-4::obj-6" : [ "range[4]", "range", 0 ],
+			"obj-2::obj-4::obj-104" : [ "pictctrl[47]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-60" : [ "pictctrl[24]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-104" : [ "pictctrl[30]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-26" : [ "umenu[1]", "umenu[1]", 0 ],
+			"obj-2::obj-9::obj-112::obj-89" : [ "FreqMode[7]", "FreqMode", 0 ],
+			"obj-2::obj-9::obj-112::obj-121" : [ "speed[12]", "speed", 0 ],
+			"obj-2::obj-9::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-10::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-2::obj-10::obj-37" : [ "umenu[23]", "umenu", 0 ],
 			"obj-2::obj-9::obj-28" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-6" : [ "range[2]", "range", 0 ],
-			"obj-2::obj-4::obj-65" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
-			"obj-2::obj-4::obj-24" : [ "umenu[7]", "umenu", 0 ],
-			"obj-2::obj-10::obj-37" : [ "umenu[23]", "umenu", 0 ],
-			"obj-2::obj-35::obj-24" : [ "umenu[6]", "umenu", 0 ],
-			"obj-2::obj-35::obj-148" : [ "pictctrl[31]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-104" : [ "pictctrl[47]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-119" : [ "speed[11]", "speed", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -881,13 +874,13 @@
 						"umenu[6]" : 12.0,
 						"umenu[7]" : 6.0,
 						"blob" : 						{
-							"moviename" : [ "<empty>" ],
-							"moviepath[1]" : [ "C74:/media/jitter/chickens.mp4" ],
+							"moviename" : [ "blading.mov" ],
+							"moviepath[1]" : [ "C74:/media/jitter/blading.mov" ],
 							"range[2]" : [ 1 ],
 							"range[3]" : [ 0 ],
 							"range[4]" : [ 1 ],
 							"rslider[3]" : [ 0.0, 1.0 ],
-							"slider[5]" : [ 0.585693110759074 ],
+							"slider[5]" : [ 0.819337016574586 ],
 							"textbutton[1]" : [ 1 ],
 							"toggle" : [ 1 ]
 						}
@@ -939,13 +932,13 @@
 									"umenu[6]" : 12.0,
 									"umenu[7]" : 6.0,
 									"blob" : 									{
-										"moviename" : [ "<empty>" ],
-										"moviepath[1]" : [ "C74:/media/jitter/chickens.mp4" ],
+										"moviename" : [ "blading.mov" ],
+										"moviepath[1]" : [ "C74:/media/jitter/blading.mov" ],
 										"range[2]" : [ 1 ],
 										"range[3]" : [ 0 ],
 										"range[4]" : [ 1 ],
 										"rslider[3]" : [ 0.0, 1.0 ],
-										"slider[5]" : [ 0.585693110759074 ],
+										"slider[5]" : [ 0.819337016574586 ],
 										"textbutton[1]" : [ 1 ],
 										"toggle" : [ 1 ]
 									}

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -49,7 +49,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 740.0, 291.0, 244.0, 22.0 ],
-					"presentation_rect" : [ 740.0, 291.0, 244.0, 22.0 ],
 					"text" : "window size 20 60 1023 768, window exec"
 				}
 
@@ -64,7 +63,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 740.0, 424.0, 182.0, 22.0 ],
-					"presentation_rect" : [ 740.0, 424.0, 182.0, 22.0 ],
 					"text" : "window size 20 60 922 728"
 				}
 
@@ -79,7 +77,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 765.0, 327.0, 94.0, 22.0 ],
-					"presentation_rect" : [ 765.0, 327.0, 94.0, 22.0 ],
 					"text" : "window getsize"
 				}
 
@@ -94,7 +91,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 740.0, 369.0, 71.0, 22.0 ],
-					"presentation_rect" : [ 740.0, 369.0, 71.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -113,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -157,8 +153,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 770.0, 642.0, 221.0, 24.0 ],
-									"presentation_rect" : [ 770.0, 642.0, 221.0, 24.0 ]
+									"patching_rect" : [ 770.0, 642.0, 221.0, 24.0 ]
 								}
 
 							}
@@ -178,7 +173,6 @@
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 45.0, 456.0, 180.0, 170.0 ],
-									"presentation_rect" : [ 45.0, 456.0, 180.0, 170.0 ],
 									"prototypename" : "pixl",
 									"varname" : "viewr[1]",
 									"viewvisibility" : 1
@@ -202,7 +196,6 @@
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 45.0, 121.0, 348.0, 158.0 ],
-									"presentation_rect" : [ 45.0, 121.0, 348.0, 158.0 ],
 									"prototypename" : "pixl",
 									"varname" : "playr",
 									"viewvisibility" : 1
@@ -225,7 +218,6 @@
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 622.0, 350.0, 180.0, 170.0 ],
-									"presentation_rect" : [ 622.0, 350.0, 180.0, 170.0 ],
 									"prototypename" : "pixl",
 									"varname" : "viewr",
 									"viewvisibility" : 1
@@ -244,7 +236,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 722.0, 310.5, 146.0, 40.0 ],
-									"presentation_rect" : [ 722.0, 310.5, 146.0, 40.0 ],
+									"presentation_linecount" : 2,
 									"text" : "Double-click on the object to open the UI"
 								}
 
@@ -259,7 +251,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 622.0, 321.0, 100.0, 23.0 ],
-									"presentation_rect" : [ 622.0, 321.0, 100.0, 23.0 ],
 									"text" : "vz.zamplr",
 									"varname" : "vz.zamplr[1]"
 								}
@@ -275,7 +266,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 622.0, 532.0, 327.0, 94.0 ],
-									"presentation_rect" : [ 622.0, 532.0, 327.0, 94.0 ],
+									"presentation_linecount" : 6,
 									"text" : "Every Vizzie module exists in two forms: as a module, and as a Max abstraction. The vz.zamplr abstraction is a standard Max abstraction having exactly the same inputs and outputs and functionality as the Vizzie ZAMPLR module. Abstractions can be very useful when screen real estate is at a premium.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -293,7 +284,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 274.0, 359.0, 255.0, 54.0 ],
-									"presentation_rect" : [ 274.0, 359.0, 255.0, 54.0 ],
+									"presentation_linecount" : 3,
 									"text" : "Use the menu to change how data outside of the Vizzie 0. - 1.0 range will be displayed"
 								}
 
@@ -310,7 +301,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 617.0, 140.0, 251.0, 54.0 ],
-									"presentation_rect" : [ 617.0, 140.0, 251.0, 54.0 ],
+									"presentation_linecount" : 3,
 									"text" : "An integer 1 or 0 in the left inlet enables or disables the module. A disabled module passes video through"
 								}
 
@@ -325,17 +316,16 @@
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 1,
 									"patching_rect" : [ 597.0, 150.0, 20.0, 20.0 ],
-									"presentation_rect" : [ 597.0, 150.0, 20.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_shortname" : "toggle",
+											"parameter_enum" : [ "off", "on" ],
+											"parameter_type" : 3,
 											"parameter_longname" : "toggle",
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
 											"parameter_mmax" : 1.0,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "toggle",
-											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 3
+											"parameter_initial" : [ 1 ]
 										}
 
 									}
@@ -360,7 +350,6 @@
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 45.0, 321.0, 228.0, 130.0 ],
-									"presentation_rect" : [ 45.0, 321.0, 228.0, 130.0 ],
 									"prototypename" : "pixl",
 									"varname" : "vz.zamplr",
 									"viewvisibility" : 1
@@ -376,7 +365,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 69.0, 583.0, 21.0 ],
-									"presentation_rect" : [ 10.0, 69.0, 583.0, 21.0 ],
 									"text" : "A Vizzie module/abstraction for idiosyncratic downsampling and saturation",
 									"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
 									"varname" : "autohelp_top_digest"
@@ -394,7 +382,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 274.0, 318.0, 332.0, 25.0 ],
-									"presentation_rect" : [ 274.0, 318.0, 332.0, 25.0 ],
 									"text" : "Mouse over the dots to see what a data inlet controls"
 								}
 
@@ -408,7 +395,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 10.0, 643.0, 60.0 ],
-									"presentation_rect" : [ 10.0, 10.0, 643.0, 60.0 ],
 									"text" : "ZAMPLR / vz.zamplr",
 									"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
 									"varname" : "autohelp_top_digest[1]"
@@ -427,7 +413,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -468,7 +454,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 228.666671752929688, 287.0, 156.0, 22.0 ],
-													"presentation_rect" : [ 228.666671752929688, 287.0, 156.0, 22.0 ],
 													"text" : "load vizzie_opengl.maxhelp"
 												}
 
@@ -481,7 +466,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 160.333328247070312, 228.0, 176.0, 22.0 ],
-													"presentation_rect" : [ 160.333328247070312, 228.0, 176.0, 22.0 ],
 													"text" : "load vizzie_Interfacing.maxhelp"
 												}
 
@@ -494,7 +478,6 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "bang", "bang", "bang", "" ],
 													"patching_rect" : [ 92.0, 112.0, 224.0, 22.0 ],
-													"presentation_rect" : [ 92.0, 112.0, 224.0, 22.0 ],
 													"text" : "select 1 2 3"
 												}
 
@@ -507,7 +490,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 92.0, 166.0, 202.0, 22.0 ],
-													"presentation_rect" : [ 92.0, 166.0, 202.0, 22.0 ],
 													"text" : "load vizzie_module_control.maxhelp"
 												}
 
@@ -520,7 +502,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 92.0, 406.0, 51.0, 22.0 ],
-													"presentation_rect" : [ 92.0, 406.0, 51.0, 22.0 ],
 													"text" : "pcontrol"
 												}
 
@@ -534,8 +515,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "int" ],
-													"patching_rect" : [ 92.0, 66.0, 30.0, 30.0 ],
-													"presentation_rect" : [ 92.0, 66.0, 30.0, 30.0 ]
+													"patching_rect" : [ 92.0, 66.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -593,7 +573,6 @@
 									}
 ,
 									"patching_rect" : [ 770.0, 642.0, 104.0, 23.0 ],
-									"presentation_rect" : [ 770.0, 642.0, 104.0, 23.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -664,11 +643,10 @@
 
 							}
  ],
-						"locked_bgcolor" : [ 0.88, 0.88, 0.88, 1.0 ]
+						"bgcolor" : [ 0.88, 0.88, 0.88, 1.0 ]
 					}
 ,
 					"patching_rect" : [ 36.0, 27.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 36.0, 27.0, 50.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -707,50 +685,49 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-1::obj-101" : [ "umenu[2]", "umenu", 0 ],
-			"obj-2::obj-4::obj-64" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-99" : [ "horizontal[1]", "horizontal", 0 ],
-			"obj-2::obj-4::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-2::obj-35::obj-79" : [ "pictctrl[74]", "pictctrl[1]", 0 ],
-			"obj-2::obj-1::obj-28" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-4::obj-83" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-101" : [ "umenu[15]", "umenu", 0 ],
-			"obj-2::obj-4::obj-60" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-37" : [ "umenu[5]", "umenu", 0 ],
-			"obj-2::obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-2::obj-1::obj-79" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-1::obj-100" : [ "gain[1]", "gain", 0 ],
-			"obj-2::obj-35::obj-28" : [ "pictctrl[71]", "pictctrl[1]", 0 ],
-			"obj-2::obj-1::obj-99" : [ "horizontal[5]", "horizontal", 0 ],
-			"obj-2::obj-4::obj-112::obj-17" : [ "slider[4]", "slider[2]", 0 ],
-			"obj-2::obj-35::obj-50" : [ "pictctrl[70]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-28" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
 			"obj-2::obj-4::obj-81" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-100" : [ "gain", "gain", 0 ],
-			"obj-2::obj-35::obj-98" : [ "vertical[1]", "vertical", 0 ],
-			"obj-2::obj-1::obj-16" : [ "range[1]", "range", 0 ],
-			"obj-2::obj-35::obj-68" : [ "horizontal[3]", "horizontal", 0 ],
-			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
-			"obj-2::obj-1::obj-94" : [ "umenu[1]", "umenu", 0 ],
-			"obj-2::obj-7::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-2::obj-4::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-2::obj-4::obj-40" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
-			"obj-2::obj-7::obj-37" : [ "umenu[6]", "umenu", 0 ],
-			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-2::obj-4::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-2::obj-4::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-35::obj-21" : [ "pictctrl[72]", "pictctrl[1]", 0 ],
-			"obj-2::obj-1::obj-50" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-2::obj-19::obj-37" : [ "umenu[5]", "umenu", 0 ],
 			"obj-2::obj-4::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-2::obj-1::obj-79" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-28" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-79" : [ "pictctrl[74]", "pictctrl[1]", 0 ],
+			"obj-2::obj-1::obj-101" : [ "umenu[2]", "umenu", 0 ],
+			"obj-2::obj-35::obj-98" : [ "vertical[1]", "vertical", 0 ],
+			"obj-2::obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-2::obj-35::obj-68" : [ "horizontal[3]", "horizontal", 0 ],
 			"obj-2::obj-35::obj-94" : [ "umenu[14]", "umenu", 0 ],
-			"obj-2::obj-4::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-35::obj-21" : [ "pictctrl[72]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-64" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-2::obj-7::obj-37" : [ "umenu[6]", "umenu", 0 ],
+			"obj-2::obj-1::obj-99" : [ "horizontal[5]", "horizontal", 0 ],
+			"obj-2::obj-1::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
+			"obj-2::obj-4::obj-60" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-50" : [ "pictctrl[70]", "pictctrl[1]", 0 ],
+			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
 			"obj-2::obj-1::obj-98" : [ "vertical[2]", "vertical", 0 ],
+			"obj-2::obj-4::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-1::obj-100" : [ "gain[1]", "gain", 0 ],
+			"obj-2::obj-35::obj-100" : [ "gain", "gain", 0 ],
+			"obj-2::obj-35::obj-101" : [ "umenu[15]", "umenu", 0 ],
+			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-2::obj-4::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-2::obj-4::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-2::obj-4::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
 			"obj-2::obj-1::obj-21" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-16" : [ "range[24]", "range", 0 ],
-			"obj-2::obj-1::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
+			"obj-2::obj-4::obj-40" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
 			"obj-2::obj-4::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-1::obj-16" : [ "range[1]", "range", 0 ],
+			"obj-2::obj-35::obj-28" : [ "pictctrl[71]", "pictctrl[1]", 0 ],
+			"obj-2::obj-1::obj-94" : [ "umenu[1]", "umenu", 0 ],
+			"obj-2::obj-1::obj-28" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-83" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
+			"obj-2::obj-1::obj-50" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-7::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -758,6 +735,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "vz.zamplr.maxhelp[1].maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../../Users/gtaylor/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "vz.zamplr.maxpat",
 				"bootpath" : "C74:/packages/vizzie/patchers",
 				"type" : "JSON",
@@ -889,87 +873,47 @@
 					"parameter_values" : 					{
 						"FreqMode[12]" : 0.0,
 						"FreqMode[13]" : 0.0,
-						"FreqMode[1]" : 0.0,
-						"FreqMode[26]" : 0.0,
-						"FreqMode[2]" : 0.0,
 						"gain" : 8.0,
 						"gain[1]" : 8.0,
-						"gain[2]" : 8.0,
 						"horizontal[1]" : 0.427953,
 						"horizontal[3]" : 1.0,
 						"horizontal[4]" : 1.0,
 						"horizontal[5]" : 0.427953,
-						"horizontal[6]" : 1.0,
-						"horizontal[7]" : 0.427953,
-						"live.text[1]" : 0.0,
-						"pen size[2]" : 0.91,
+						"letterbox_menu" : 0.0,
+						"letterbox_menu[1]" : 0.0,
 						"pictctrl[11]" : 1.0,
-						"pictctrl[12]" : 1.0,
 						"pictctrl[13]" : 1.0,
-						"pictctrl[146]" : 1.0,
-						"pictctrl[149]" : 1.0,
 						"pictctrl[14]" : 1.0,
-						"pictctrl[150]" : 1.0,
 						"pictctrl[15]" : 1.0,
 						"pictctrl[16]" : 1.0,
 						"pictctrl[17]" : 1.0,
-						"pictctrl[18]" : 1.0,
-						"pictctrl[19]" : 1.0,
 						"pictctrl[1]" : 1.0,
-						"pictctrl[20]" : 1.0,
-						"pictctrl[21]" : 1.0,
-						"pictctrl[22]" : 1.0,
 						"pictctrl[2]" : 1.0,
-						"pictctrl[354]" : 1.0,
-						"pictctrl[356]" : 1.0,
-						"pictctrl[364]" : 1.0,
-						"pictctrl[367]" : 1.0,
-						"pictctrl[368]" : 1.0,
-						"pictctrl[369]" : 1.0,
 						"pictctrl[3]" : 1.0,
 						"pictctrl[4]" : 1.0,
-						"pictctrl[5]" : 1.0,
-						"pictctrl[6]" : 1.0,
 						"pictctrl[70]" : 1.0,
 						"pictctrl[71]" : 1.0,
 						"pictctrl[72]" : 1.0,
 						"pictctrl[74]" : 1.0,
-						"pictctrl[7]" : 0.0,
-						"pictctrl[8]" : 1.0,
-						"pictctrl[9]" : 1.0,
 						"speed" : 1.0,
-						"speed[10]" : 40.0,
 						"speed[1]" : 1.0,
-						"speed[2]" : 1.0,
-						"speed[3]" : 1.0,
-						"step size" : 8.0,
 						"umenu[14]" : 2.0,
 						"umenu[15]" : 0.0,
 						"umenu[1]" : 2.0,
 						"umenu[2]" : 0.0,
-						"umenu[3]" : 2.0,
-						"umenu[4]" : 0.0,
 						"umenu[5]" : 0.0,
 						"umenu[6]" : 0.0,
-						"umenu[7]" : 0.0,
 						"vertical[1]" : 0.405315,
 						"vertical[2]" : 0.405315,
-						"vertical[3]" : 0.405315,
 						"blob" : 						{
-							"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
-							"moviepath[1]" : [ "C74:/media/jitter/chickens.mp4" ],
+							"moviename" : [ "blading.mov" ],
+							"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 							"range" : [ 0 ],
 							"range[1]" : [ 1 ],
 							"range[24]" : [ 1 ],
-							"range[2]" : [ 1 ],
-							"range[3]" : [ 0 ],
 							"rslider[2]" : [ 0.0, 1.0 ],
-							"rslider[3]" : [ 0.0, 1.0 ],
-							"slider[3]" : [ 0.778569 ],
-							"slider[4]" : [ 0.56979 ],
+							"slider[3]" : [ 0.874309392265193 ],
 							"textbutton" : [ 1 ],
-							"textbutton[1]" : [ 1 ],
-							"textbutton[23]" : [ 1 ],
 							"toggle" : [ 1 ]
 						}
 
@@ -985,7 +929,7 @@
 						"filetype" : "C74Snapshot",
 						"version" : 2,
 						"minorversion" : 0,
-						"name" : "vz.zamplr.maxhelp",
+						"name" : "vz.zamplr.maxhelp[1]",
 						"origin" : "vz.zamplr.maxhelp",
 						"type" : "patcher",
 						"subtype" : "Undefined",
@@ -995,87 +939,47 @@
 								"parameter_values" : 								{
 									"FreqMode[12]" : 0.0,
 									"FreqMode[13]" : 0.0,
-									"FreqMode[1]" : 0.0,
-									"FreqMode[26]" : 0.0,
-									"FreqMode[2]" : 0.0,
 									"gain" : 8.0,
 									"gain[1]" : 8.0,
-									"gain[2]" : 8.0,
 									"horizontal[1]" : 0.427953,
 									"horizontal[3]" : 1.0,
 									"horizontal[4]" : 1.0,
 									"horizontal[5]" : 0.427953,
-									"horizontal[6]" : 1.0,
-									"horizontal[7]" : 0.427953,
-									"live.text[1]" : 0.0,
-									"pen size[2]" : 0.91,
+									"letterbox_menu" : 0.0,
+									"letterbox_menu[1]" : 0.0,
 									"pictctrl[11]" : 1.0,
-									"pictctrl[12]" : 1.0,
 									"pictctrl[13]" : 1.0,
-									"pictctrl[146]" : 1.0,
-									"pictctrl[149]" : 1.0,
 									"pictctrl[14]" : 1.0,
-									"pictctrl[150]" : 1.0,
 									"pictctrl[15]" : 1.0,
 									"pictctrl[16]" : 1.0,
 									"pictctrl[17]" : 1.0,
-									"pictctrl[18]" : 1.0,
-									"pictctrl[19]" : 1.0,
 									"pictctrl[1]" : 1.0,
-									"pictctrl[20]" : 1.0,
-									"pictctrl[21]" : 1.0,
-									"pictctrl[22]" : 1.0,
 									"pictctrl[2]" : 1.0,
-									"pictctrl[354]" : 1.0,
-									"pictctrl[356]" : 1.0,
-									"pictctrl[364]" : 1.0,
-									"pictctrl[367]" : 1.0,
-									"pictctrl[368]" : 1.0,
-									"pictctrl[369]" : 1.0,
 									"pictctrl[3]" : 1.0,
 									"pictctrl[4]" : 1.0,
-									"pictctrl[5]" : 1.0,
-									"pictctrl[6]" : 1.0,
 									"pictctrl[70]" : 1.0,
 									"pictctrl[71]" : 1.0,
 									"pictctrl[72]" : 1.0,
 									"pictctrl[74]" : 1.0,
-									"pictctrl[7]" : 0.0,
-									"pictctrl[8]" : 1.0,
-									"pictctrl[9]" : 1.0,
 									"speed" : 1.0,
-									"speed[10]" : 40.0,
 									"speed[1]" : 1.0,
-									"speed[2]" : 1.0,
-									"speed[3]" : 1.0,
-									"step size" : 8.0,
 									"umenu[14]" : 2.0,
 									"umenu[15]" : 0.0,
 									"umenu[1]" : 2.0,
 									"umenu[2]" : 0.0,
-									"umenu[3]" : 2.0,
-									"umenu[4]" : 0.0,
 									"umenu[5]" : 0.0,
 									"umenu[6]" : 0.0,
-									"umenu[7]" : 0.0,
 									"vertical[1]" : 0.405315,
 									"vertical[2]" : 0.405315,
-									"vertical[3]" : 0.405315,
 									"blob" : 									{
-										"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
-										"moviepath[1]" : [ "C74:/media/jitter/chickens.mp4" ],
+										"moviename" : [ "blading.mov" ],
+										"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 										"range" : [ 0 ],
 										"range[1]" : [ 1 ],
 										"range[24]" : [ 1 ],
-										"range[2]" : [ 1 ],
-										"range[3]" : [ 0 ],
 										"rslider[2]" : [ 0.0, 1.0 ],
-										"rslider[3]" : [ 0.0, 1.0 ],
-										"slider[3]" : [ 0.778569 ],
-										"slider[4]" : [ 0.56979 ],
+										"slider[3]" : [ 0.874309392265193 ],
 										"textbutton" : [ 1 ],
-										"textbutton[1]" : [ 1 ],
-										"textbutton[23]" : [ 1 ],
 										"toggle" : [ 1 ]
 									}
 
@@ -1086,11 +990,11 @@
 						}
 ,
 						"fileref" : 						{
-							"name" : "vz.zamplr.maxhelp",
-							"filename" : "vz.zamplr.maxhelp.maxsnap",
-							"filepath" : "~/Documents/Max 7/Snapshots",
+							"name" : "vz.zamplr.maxhelp[1]",
+							"filename" : "vz.zamplr.maxhelp[1].maxsnap",
+							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "75bd4f5789964a3b83f7461d626270ec"
+							"snapshotfileid" : "f91e5d7bfc9c16a796384cd8912d2a46"
 						}
 
 					}
@@ -1099,7 +1003,7 @@
 
 		}
 ,
-		"locked_bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
+		"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 	}
 
 }

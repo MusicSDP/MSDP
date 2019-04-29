@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -169,7 +169,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -419,7 +419,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 672.0, 306.5, 146.0, 40.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Double-click on the object to open the UI"
 								}
 
@@ -450,7 +449,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 588.0, 524.0, 267.0, 123.0 ],
-									"presentation_linecount" : 8,
 									"text" : "Every Vizzie module exists in two forms: as a module, and as a Max abstraction. The vz.resamplr abstraction is a standard Max abstraction having exactly the same inputs and outputs and functionality as the Vizzie RESAMPLR module. Abstractions can be very useful when screen real estate is at a premium.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -468,7 +466,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 608.0, 220.0, 254.0, 54.0 ],
-									"presentation_linecount" : 3,
 									"text" : "An integer 1 or 0 in the left inlet enables or disables the module. A disabled module passes video through"
 								}
 
@@ -485,14 +482,14 @@
 									"patching_rect" : [ 588.0, 237.0, 20.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_shortname" : "toggle",
+											"parameter_enum" : [ "off", "on" ],
+											"parameter_type" : 3,
 											"parameter_longname" : "toggle",
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
 											"parameter_mmax" : 1.0,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "toggle",
-											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 3
+											"parameter_initial" : [ 1 ]
 										}
 
 									}
@@ -670,41 +667,41 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-2::obj-35::obj-28" : [ "pictctrl[71]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-64" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
-			"obj-2::obj-1::obj-98" : [ "vertical[2]", "vertical", 0 ],
 			"obj-2::obj-3::obj-37" : [ "umenu[10]", "umenu", 0 ],
-			"obj-2::obj-35::obj-98" : [ "vertical[1]", "vertical", 0 ],
-			"obj-2::obj-1::obj-79" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-99" : [ "horizontal[1]", "horizontal", 0 ],
-			"obj-2::obj-2::obj-60" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-2::obj-3::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-2::obj-35::obj-79" : [ "pictctrl[74]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-2::obj-1::obj-50" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-2::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-2::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-2::obj-28" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-2::obj-35::obj-50" : [ "pictctrl[70]", "pictctrl[1]", 0 ],
 			"obj-2::obj-2::obj-81" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-83" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-16" : [ "range[24]", "range", 0 ],
-			"obj-2::obj-1::obj-99" : [ "horizontal[2]", "horizontal", 0 ],
-			"obj-2::obj-2::obj-40" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
-			"obj-2::obj-1::obj-16" : [ "range[1]", "range", 0 ],
-			"obj-2::obj-1::obj-37" : [ "umenu[4]", "umenu", 0 ],
-			"obj-2::obj-19::obj-37" : [ "umenu[9]", "umenu", 0 ],
 			"obj-2::obj-2::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-2::obj-1::obj-79" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-28" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-79" : [ "pictctrl[74]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-98" : [ "vertical[1]", "vertical", 0 ],
+			"obj-2::obj-2::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-2::obj-1::obj-99" : [ "horizontal[2]", "horizontal", 0 ],
+			"obj-2::obj-2::obj-64" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-2::obj-2::obj-60" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-50" : [ "pictctrl[70]", "pictctrl[1]", 0 ],
 			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
-			"obj-2::obj-35::obj-37" : [ "umenu[1]", "umenu", 0 ],
-			"obj-2::obj-1::obj-28" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-2::obj-1::obj-98" : [ "vertical[2]", "vertical", 0 ],
+			"obj-2::obj-2::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-1::obj-37" : [ "umenu[4]", "umenu", 0 ],
+			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
 			"obj-2::obj-2::obj-51" : [ "moviepath", "moviepath", 0 ],
 			"obj-2::obj-2::obj-112::obj-121" : [ "speed", "speed", 0 ],
 			"obj-2::obj-2::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-2::obj-1::obj-50" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-2::obj-19::obj-37" : [ "umenu[9]", "umenu", 0 ],
+			"obj-2::obj-35::obj-16" : [ "range[24]", "range", 0 ],
+			"obj-2::obj-2::obj-40" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-2::obj-2::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-1::obj-16" : [ "range[1]", "range", 0 ],
+			"obj-2::obj-35::obj-28" : [ "pictctrl[71]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-37" : [ "umenu[1]", "umenu", 0 ],
+			"obj-2::obj-2::obj-83" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
+			"obj-2::obj-1::obj-28" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-3::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -861,13 +858,13 @@
 						"vertical[1]" : 0.159054992125985,
 						"vertical[2]" : 0.662992,
 						"blob" : 						{
-							"moviename" : [ "<empty>" ],
-							"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
+							"moviename" : [ "blading.mov" ],
+							"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 							"range" : [ 0 ],
 							"range[1]" : [ 1 ],
 							"range[24]" : [ 1 ],
 							"rslider[2]" : [ 0.0, 1.0 ],
-							"slider[3]" : [ 0.301486552146183 ],
+							"slider[3]" : [ 0.319889502762431 ],
 							"textbutton" : [ 1 ],
 							"toggle" : [ 1 ]
 						}
@@ -919,13 +916,13 @@
 									"vertical[1]" : 0.159054992125985,
 									"vertical[2]" : 0.662992,
 									"blob" : 									{
-										"moviename" : [ "<empty>" ],
-										"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
+										"moviename" : [ "blading.mov" ],
+										"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 										"range" : [ 0 ],
 										"range[1]" : [ 1 ],
 										"range[24]" : [ 1 ],
 										"rslider[2]" : [ 0.0, 1.0 ],
-										"slider[3]" : [ 0.301486552146183 ],
+										"slider[3]" : [ 0.319889502762431 ],
 										"textbutton" : [ 1 ],
 										"toggle" : [ 1 ]
 									}

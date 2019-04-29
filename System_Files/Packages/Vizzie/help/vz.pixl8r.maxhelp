@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -169,7 +169,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -355,7 +355,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 554.0, 328.0, 170.0, 170.0 ],
+									"patching_rect" : [ 554.0, 328.0, 180.0, 170.0 ],
 									"prototypename" : "pixl",
 									"varname" : "viewr[1]",
 									"viewvisibility" : 1
@@ -377,7 +377,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 45.0, 431.0, 170.0, 170.0 ],
+									"patching_rect" : [ 45.0, 431.0, 180.0, 170.0 ],
 									"prototypename" : "pixl",
 									"varname" : "viewr",
 									"viewvisibility" : 1
@@ -419,7 +419,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 612.0, 286.0, 146.0, 40.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Double-click on the object to open the UI"
 								}
 
@@ -449,7 +448,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 529.0, 507.0, 339.0, 94.0 ],
-									"presentation_linecount" : 6,
 									"text" : "Every Vizzie module exists in two forms: as a module, and as a Max abstraction. The vz.pixl8r abstraction is a standard Max abstraction having exactly the same inputs and outputs and functionality as the Vizzie PIXIL8R module. Abstractions can be very useful when screen real estate is at a premium.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -467,7 +465,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 573.0, 191.0, 251.0, 54.0 ],
-									"presentation_linecount" : 3,
 									"text" : "An integer 1 or 0 in the left inlet enables or disables the module. A disabled module passes video through"
 								}
 
@@ -484,14 +481,14 @@
 									"patching_rect" : [ 553.5, 208.0, 20.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_shortname" : "toggle",
+											"parameter_enum" : [ "off", "on" ],
+											"parameter_type" : 3,
 											"parameter_longname" : "toggle",
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
 											"parameter_mmax" : 1.0,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "toggle",
-											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 3
+											"parameter_initial" : [ 1 ]
 										}
 
 									}
@@ -668,37 +665,37 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-2::obj-2::obj-68" : [ "horizontal[3]", "horizontal", 0 ],
-			"obj-2::obj-4::obj-64" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-37" : [ "vertical[2]", "vertical", 0 ],
-			"obj-2::obj-2::obj-33" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-60" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-2::obj-7::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-2::obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-2::obj-2::obj-39" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-33" : [ "pictctrl[67]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-2::obj-37" : [ "vertical[3]", "vertical", 0 ],
-			"obj-2::obj-4::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-4::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-4::obj-28" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-2::obj-4::obj-83" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
 			"obj-2::obj-4::obj-81" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-68" : [ "horizontal[2]", "horizontal", 0 ],
-			"obj-2::obj-4::obj-40" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-24" : [ "range[1]", "range", 0 ],
 			"obj-2::obj-4::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
-			"obj-2::obj-7::obj-37" : [ "umenu[1]", "umenu", 0 ],
+			"obj-2::obj-2::obj-33" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-28" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-39" : [ "pictctrl[68]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-37" : [ "umenu[3]", "umenu", 0 ],
+			"obj-2::obj-4::obj-112::obj-120" : [ "range", "range", 0 ],
 			"obj-2::obj-35::obj-24" : [ "range[23]", "range", 0 ],
+			"obj-2::obj-2::obj-68" : [ "horizontal[3]", "horizontal", 0 ],
+			"obj-2::obj-35::obj-68" : [ "horizontal[2]", "horizontal", 0 ],
+			"obj-2::obj-4::obj-64" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
+			"obj-2::obj-19::obj-37" : [ "umenu[3]", "umenu", 0 ],
+			"obj-2::obj-4::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-2::obj-4::obj-60" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
+			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
+			"obj-2::obj-35::obj-37" : [ "vertical[2]", "vertical", 0 ],
+			"obj-2::obj-2::obj-37" : [ "vertical[3]", "vertical", 0 ],
+			"obj-2::obj-4::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-35::obj-33" : [ "pictctrl[67]", "pictctrl[1]", 0 ],
+			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
 			"obj-2::obj-4::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-4::obj-112::obj-121" : [ "speed", "speed", 0 ],
 			"obj-2::obj-4::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-2::obj-4::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-2::obj-2::obj-39" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-40" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-2::obj-4::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-2::obj-24" : [ "range[1]", "range", 0 ],
+			"obj-2::obj-4::obj-83" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
+			"obj-2::obj-7::obj-37" : [ "umenu[1]", "umenu", 0 ],
+			"obj-2::obj-4::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-7::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
 			"parameterbanks" : 			{
 
 			}

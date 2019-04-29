@@ -1,0 +1,71 @@
+<jittershader name="flouride">
+	<param name="lum" type="float" default="0.4" />
+	<param name="tol" type="float" default="0.1" />
+	<param name="mode" type="float" default="0." />
+	<param name="glow" type="vec4" default="0. 1. 1. 1." />
+	<param name="lumcoeff" type="vec4" default="0.299 .587 0.114 0." />
+	<param name="tex0" type="int" default="0" />
+	<language name="glsl" version="1.0">
+		<bind param="tex0" program="fp" />
+		<bind param="lum" program="fp" />
+		<bind param="tol" program="fp" />
+		<bind param="mode" program="fp" />
+		<bind param="glow" program="fp" />
+		<bind param="lumcoeff" program="fp" />
+		<program name="vp" type="vertex">
+<![CDATA[
+
+// define our varying texture coordinates
+varying vec2 texcoord0;
+
+void main(void)
+{
+	// the output vertex postion to the input vertex position
+	// transformed by the current ModelViewProjection matrix 
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+
+	// assign our varying texture coordinates to the
+	// input texture coordinate values transformed 
+	// by the appropriate texture matrix. This is
+	// necessary for rectangular and flipped textures 
+	texcoord0 = vec2(gl_TextureMatrix[0] * gl_MultiTexCoord0);
+}
+]]>
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+//setup for single texture
+varying vec2 texcoord0;
+uniform sampler2DRect tex0;
+
+//luma threshold
+uniform float lum;
+uniform float tol;
+uniform vec4 lumcoeff;
+uniform vec4 glow;
+uniform float mode;
+
+
+void main()
+{   
+
+	vec4 a = texture2DRect(tex0, texcoord0);
+
+	// calculate our luminance
+	float lumi = dot(a,lumcoeff);
+	vec4 raw = mix(vec4(vec3(lumi),a.a),a,mode);
+	//float ltlum = (lum-lumi)*(1./tol);
+	vec4 ltlumix = clamp(mix(raw,glow,smoothstep(lum-tol,lum+tol,lumi)),vec4(0.),vec4(1.));
+	
+	vec4 gtlumix = clamp(glow*(smoothstep(1.,min(lum+tol,0.99),lumi)),vec4(0.),vec4(1.));
+	vec4 flu = mix(ltlumix,gtlumix,step(lum,lumi));
+
+	// output texture with transparency 
+	gl_FragColor = vec4(flu.rgb,a.a);
+}
+
+]]>	
+		</program>
+	</language>
+</jittershader>

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -182,7 +182,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -432,7 +432,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 679.0, 310.0, 146.0, 40.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Double-click on the object to open the UI"
 								}
 
@@ -462,7 +461,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 618.0, 531.0, 327.0, 94.0 ],
-									"presentation_linecount" : 6,
 									"text" : "Every Vizzie module exists in two forms: as a module, and as a Max abstraction. The vz.pannr abstraction is a standard Max abstraction having exactly the same inputs and outputs and functionality as the Vizzie PANNR module. Abstractions can be very useful when screen real estate is at a premium.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -480,7 +478,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 640.0, 211.0, 251.0, 54.0 ],
-									"presentation_linecount" : 3,
 									"text" : "An integer 1 or 0 in the left inlet enables or disables the module. A disabled module passes video through"
 								}
 
@@ -497,14 +494,14 @@
 									"patching_rect" : [ 618.0, 228.0, 20.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_shortname" : "toggle",
+											"parameter_enum" : [ "off", "on" ],
+											"parameter_type" : 3,
 											"parameter_longname" : "toggle",
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
 											"parameter_mmax" : 1.0,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "toggle",
-											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 3
+											"parameter_initial" : [ 1 ]
 										}
 
 									}
@@ -525,7 +522,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 243.0, 372.0, 255.0, 40.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Use the menu to change what happens at the borders of the panned image"
 								}
 
@@ -705,49 +701,49 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-7::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
-			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-2::obj-7::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
-			"obj-2::obj-7::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-2::obj-3::obj-30" : [ "pictctrl[97]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-13" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
 			"obj-2::obj-3::obj-74" : [ "umenu[10]", "umenu", 0 ],
-			"obj-2::obj-35::obj-41" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-2::obj-7::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-2::obj-3::obj-1" : [ "textbutton[3]", "textbutton[1]", 0 ],
+			"obj-2::obj-3::obj-41" : [ "pictctrl[96]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-68" : [ "x offset[1]", "x offset", 0 ],
+			"obj-2::obj-7::obj-112::obj-120" : [ "range[6]", "range", 0 ],
+			"obj-2::obj-7::obj-28" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
+			"obj-2::obj-7::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
+			"obj-2::obj-7::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-48" : [ "umenu[7]", "umenu", 0 ],
 			"obj-2::obj-7::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
-			"obj-2::obj-7::obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
-			"obj-2::obj-7::obj-64" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
-			"obj-2::obj-3::obj-43" : [ "pictctrl[95]", "pictctrl[1]", 0 ],
 			"obj-2::obj-2::obj-41" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-48" : [ "umenu[6]", "umenu", 0 ],
-			"obj-2::obj-7::obj-81" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-3" : [ "range[4]", "range", 0 ],
-			"obj-2::obj-7::obj-112::obj-120" : [ "range[6]", "range", 0 ],
-			"obj-2::obj-2::obj-48" : [ "umenu[7]", "umenu", 0 ],
-			"obj-2::obj-7::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
-			"obj-2::obj-8::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-2::obj-7::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-37" : [ "y offset", "y offset", 0 ],
-			"obj-2::obj-3::obj-12" : [ "pictctrl[98]", "pictctrl[1]", 0 ],
-			"obj-2::obj-7::obj-28" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-2::obj-7::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-35::obj-68" : [ "x offset", "x offset", 0 ],
-			"obj-2::obj-3::obj-41" : [ "pictctrl[96]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-53" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-3" : [ "range[1]", "range", 0 ],
-			"obj-2::obj-8::obj-37" : [ "umenu[4]", "umenu", 0 ],
-			"obj-2::obj-2::obj-68" : [ "x offset[1]", "x offset", 0 ],
-			"obj-2::obj-19::obj-37" : [ "umenu[9]", "umenu", 0 ],
-			"obj-2::obj-7::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
-			"obj-2::obj-7::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
+			"obj-2::obj-7::obj-51" : [ "moviepath[1]", "moviepath", 0 ],
+			"obj-2::obj-7::obj-64" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
+			"obj-2::obj-7::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
+			"obj-2::obj-3::obj-1" : [ "textbutton[3]", "textbutton[1]", 0 ],
 			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
-			"obj-2::obj-3::obj-72" : [ "FreqMode[3]", "FreqMode", 0 ],
-			"obj-2::obj-35::obj-13" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-37" : [ "y offset[1]", "y offset", 0 ],
-			"obj-2::obj-7::obj-83" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
 			"obj-2::obj-3::obj-65" : [ "speed[10]", "speed", 0 ],
+			"obj-2::obj-3::obj-30" : [ "pictctrl[97]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-37" : [ "y offset", "y offset", 0 ],
+			"obj-2::obj-2::obj-53" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-2::obj-7::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-2::obj-7::obj-83" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
+			"obj-2::obj-7::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
+			"obj-2::obj-7::obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-2::obj-7::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-2::obj-3::obj-43" : [ "pictctrl[95]", "pictctrl[1]", 0 ],
+			"obj-2::obj-8::obj-37" : [ "umenu[4]", "umenu", 0 ],
+			"obj-2::obj-35::obj-68" : [ "x offset", "x offset", 0 ],
+			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-2::obj-3::obj-72" : [ "FreqMode[3]", "FreqMode", 0 ],
+			"obj-2::obj-19::obj-37" : [ "umenu[9]", "umenu", 0 ],
+			"obj-2::obj-35::obj-3" : [ "range[4]", "range", 0 ],
+			"obj-2::obj-35::obj-13" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-3" : [ "range[1]", "range", 0 ],
+			"obj-2::obj-35::obj-41" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-2::obj-7::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-2::obj-3::obj-12" : [ "pictctrl[98]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-53" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-2::obj-7::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-2::obj-37" : [ "y offset[1]", "y offset", 0 ],
+			"obj-2::obj-7::obj-81" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
+			"obj-2::obj-8::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-2::obj-2::obj-13" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -918,18 +914,18 @@
 						"umenu[6]" : 1.0,
 						"umenu[7]" : 0.0,
 						"umenu[9]" : 0.0,
-						"x offset" : 48.0,
+						"x offset" : 36.0,
 						"x offset[1]" : 34.251967999999998,
 						"y offset" : 33.464565,
 						"y offset[1]" : 33.464565,
 						"blob" : 						{
-							"moviename" : [ "<empty>" ],
-							"moviepath[1]" : [ "C74:/media/jitter/chickens.mp4" ],
+							"moviename" : [ "blading.mov" ],
+							"moviepath[1]" : [ "C74:/media/jitter/blading.mov" ],
 							"range[1]" : [ 1 ],
 							"range[4]" : [ 1 ],
 							"range[6]" : [ 0 ],
 							"rslider[3]" : [ 0.0, 1.0 ],
-							"slider[4]" : [ 0.053879278153684 ],
+							"slider[4]" : [ 0.465055248618785 ],
 							"textbutton[1]" : [ 1 ],
 							"textbutton[3]" : [ 1 ],
 							"toggle" : [ 1 ]
@@ -984,18 +980,18 @@
 									"umenu[6]" : 1.0,
 									"umenu[7]" : 0.0,
 									"umenu[9]" : 0.0,
-									"x offset" : 48.0,
+									"x offset" : 36.0,
 									"x offset[1]" : 34.251967999999998,
 									"y offset" : 33.464565,
 									"y offset[1]" : 33.464565,
 									"blob" : 									{
-										"moviename" : [ "<empty>" ],
-										"moviepath[1]" : [ "C74:/media/jitter/chickens.mp4" ],
+										"moviename" : [ "blading.mov" ],
+										"moviepath[1]" : [ "C74:/media/jitter/blading.mov" ],
 										"range[1]" : [ 1 ],
 										"range[4]" : [ 1 ],
 										"range[6]" : [ 0 ],
 										"rslider[3]" : [ 0.0, 1.0 ],
-										"slider[4]" : [ 0.053879278153684 ],
+										"slider[4]" : [ 0.465055248618785 ],
 										"textbutton[1]" : [ 1 ],
 										"textbutton[3]" : [ 1 ],
 										"toggle" : [ 1 ]

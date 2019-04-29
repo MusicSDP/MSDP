@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 45.0, 79.0, 599.0, 259.0 ],
+		"rect" : [ 65.0, 108.0, 599.0, 257.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -80,7 +80,7 @@
 				"box" : 				{
 					"comment" : "Blue pattern rotation bound mode (wrap fold clip). off/on messages disable/enable the data inlet.",
 					"id" : "obj-530",
-					"index" : 0,
+					"index" : 21,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -111,12 +111,12 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "normal", "invert" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "umenu[26]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "umenu",
-							"parameter_enum" : [ "normal", "invert" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -145,7 +145,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2879.5, 344.4608154296875, 93.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 2.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -176,13 +176,13 @@
 					"presentation_rect" : [ 407.4375, 122.306121826171875, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "wrap", "fold", "clip" ],
+							"parameter_type" : 2,
 							"parameter_annotation_name" : "Shape",
 							"parameter_longname" : "umenu[39]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "umenu[6]",
-							"parameter_enum" : [ "wrap", "fold", "clip" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu[6]"
 						}
 
 					}
@@ -213,7 +213,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 3554.833251953125, 277.5069580078125, 86.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.545080447042645 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -232,7 +232,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 3442.0, 277.5069580078125, 86.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.545080447042645 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -267,14 +267,14 @@
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_annotation_name" : "Freq",
 							"parameter_longname" : "B y offset[2]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "B y offset",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "B y offset"
 						}
 
 					}
@@ -306,13 +306,13 @@
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_longname" : "B x offset[3]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "B x offset",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "B x offset"
 						}
 
 					}
@@ -339,7 +339,7 @@
 				"box" : 				{
 					"comment" : "Enables a wider Blue zoom range (0. - .49 = low, .5 - 1.0 = high). off/on messages disable/enable the data inlet. ",
 					"id" : "obj-541",
-					"index" : 0,
+					"index" : 22,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -384,13 +384,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[155]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -417,7 +417,7 @@
 				"box" : 				{
 					"comment" : "Blue pattern rotation bound mode (wrap fold clip). off/on messages disable/enable the data inlet.",
 					"id" : "obj-545",
-					"index" : 0,
+					"index" : 25,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -448,13 +448,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[168]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -483,7 +483,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 3304.0, 343.4608154296875, 80.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -514,13 +514,13 @@
 					"presentation_rect" : [ 474.03125, 122.306121826171875, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "wrap", "fold", "clip" ],
+							"parameter_type" : 2,
 							"parameter_annotation_name" : "Shape",
 							"parameter_longname" : "umenu[45]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "umenu[6]",
-							"parameter_enum" : [ "wrap", "fold", "clip" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu[6]"
 						}
 
 					}
@@ -577,13 +577,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[156]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -596,7 +596,7 @@
 				"box" : 				{
 					"comment" : "sets a multiplier applied to the Blue pattern used for pattern generation. 0/1 (integer) turns module off/on.",
 					"id" : "obj-553",
-					"index" : 0,
+					"index" : 20,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -609,11 +609,149 @@
 				"box" : 				{
 					"id" : "obj-554",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2777.5, 268.4854736328125, 113.0, 22.0 ],
-					"text" : "scale 0. 1. 0. 100. 4"
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 2,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 34.0, 103.0, 238.0, 141.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 140.0, 140.0, 22.0 ],
+									"text" : "scale 8.176 2637 0. 100."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 92.0, 103.0, 22.0 ],
+									"text" : "scale 0. 1. 0. 100."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 116.0, 32.0, 22.0 ],
+									"text" : "mtof"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 88.0, 185.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 52.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 2777.5, 268.4854736328125, 70.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p newcurve"
 				}
 
 			}
@@ -647,14 +785,14 @@
 					"presentation_rect" : [ 407.4375, 70.044830322265625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_exponent" : 4.0,
 							"parameter_longname" : "B multiplier[4]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "B multiplier",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "B multiplier"
 						}
 
 					}
@@ -671,7 +809,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2777.5, 320.9854736328125, 65.0, 22.0 ],
-					"restore" : [ 1.0 ],
+					"restore" : [ 0.524285962780207 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -702,13 +840,13 @@
 					"presentation_rect" : [ 407.4375, 45.783477783203125, 130.59375, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "ramp+", "ramp–", "cosine+", "cosine–", "sine+", "sine–", "tan+", "tan–", "triangle+", "triangle–", "square+", "square–" ],
+							"parameter_type" : 2,
 							"parameter_annotation_name" : "Shape",
 							"parameter_longname" : "umenu[46]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "umenu",
-							"parameter_enum" : [ "ramp+", "ramp–", "cosine+", "cosine–", "sine+", "sine–", "tan+", "tan–", "triangle+", "triangle–", "square+", "square–" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -818,7 +956,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2705.0, 296.5, 70.0, 23.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 2.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -840,7 +978,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 3188.0, 308.4608154296875, 75.0, 23.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 75.624371401505528 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -869,7 +1007,7 @@
 				"box" : 				{
 					"comment" : "Blue rotation angle. off/on messages disable/enable the data inlet.",
 					"id" : "obj-573",
-					"index" : 0,
+					"index" : 24,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -914,13 +1052,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "rotation[2]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "rotation",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "rotation"
 						}
 
 					}
@@ -947,14 +1085,14 @@
 					"presentation_rect" : [ 474.03125, 70.044830322265625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -360.0,
 							"parameter_longname" : "B rotation[2]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 360.0,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "B rotation",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_shortname" : "B rotation"
 						}
 
 					}
@@ -1045,7 +1183,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1553,14 +1691,14 @@
 					"presentation_rect" : [ 407.4375, 162.032135009765625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -8.0,
 							"parameter_longname" : "B zoom",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 8.0,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "B zoom",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "B zoom"
 						}
 
 					}
@@ -1589,14 +1727,14 @@
 					"presentation_rect" : [ 407.4375, 142.770782470703125, 57.279212951660156, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 3,
 							"parameter_longname" : "range[14]",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "range",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 3
+							"parameter_shortname" : "range"
 						}
 
 					}
@@ -1630,14 +1768,14 @@
 					"presentation_rect" : [ 407.4375, 162.032135009765625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -2.0,
 							"parameter_longname" : "B zoom[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 2.0,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "B zoom",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "B zoom"
 						}
 
 					}
@@ -1668,13 +1806,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[107]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -1718,7 +1856,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2995.78125, 308.4608154296875, 94.0, 23.0 ],
-					"restore" : [ 0.505471062091102 ],
+					"restore" : [ 0.497044218975166 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1770,7 +1908,7 @@
 				"box" : 				{
 					"comment" : "Blue zooml in (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-591",
-					"index" : 0,
+					"index" : 23,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1813,13 +1951,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[160]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -1832,7 +1970,7 @@
 				"box" : 				{
 					"comment" : "selects the Blue pattern used for pattern generation  (0. - 1.0=on, off/on). 0/1 (integer) turns module off/on.",
 					"id" : "obj-594",
-					"index" : 0,
+					"index" : 19,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1863,13 +2001,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[177]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -1900,13 +2038,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[161]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -1934,7 +2072,7 @@
 					"annotation" : "",
 					"comment" : "sets the Blue Y offset values for image output (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-600",
-					"index" : 0,
+					"index" : 27,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1962,7 +2100,7 @@
 					"annotation" : "",
 					"comment" : "sets the Blue X offset values for image output (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-602",
-					"index" : 0,
+					"index" : 26,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1989,7 +2127,7 @@
 				"box" : 				{
 					"comment" : "Green pattern rotation bound mode (wrap fold clip). off/on messages disable/enable the data inlet.",
 					"id" : "obj-453",
-					"index" : 0,
+					"index" : 12,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2020,12 +2158,12 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "normal", "invert" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "umenu[37]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "umenu",
-							"parameter_enum" : [ "normal", "invert" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -2085,13 +2223,13 @@
 					"presentation_rect" : [ 212.65185546875, 122.306121826171875, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "wrap", "fold", "clip" ],
+							"parameter_type" : 2,
 							"parameter_annotation_name" : "Shape",
 							"parameter_longname" : "umenu[43]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "umenu[6]",
-							"parameter_enum" : [ "wrap", "fold", "clip" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu[6]"
 						}
 
 					}
@@ -2122,7 +2260,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2436.833251953125, 277.5069580078125, 87.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.653067412433885 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2141,7 +2279,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2324.0, 277.5069580078125, 87.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.653067412433885 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2176,14 +2314,14 @@
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_annotation_name" : "Freq",
 							"parameter_longname" : "G y offset[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "G y offset",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "G y offset"
 						}
 
 					}
@@ -2215,13 +2353,13 @@
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_longname" : "G x offset[2]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "G x offset",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "G x offset"
 						}
 
 					}
@@ -2248,7 +2386,7 @@
 				"box" : 				{
 					"comment" : "Enables a wider Green zoom range (0. - .49 = low, .5 - 1.0 = high). off/on messages disable/enable the data inlet. ",
 					"id" : "obj-464",
-					"index" : 0,
+					"index" : 13,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2293,13 +2431,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[148]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -2326,7 +2464,7 @@
 				"box" : 				{
 					"comment" : "Green pattern rotation bound mode (wrap fold clip). off/on messages disable/enable the data inlet.",
 					"id" : "obj-468",
-					"index" : 0,
+					"index" : 16,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2357,13 +2495,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[175]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -2392,7 +2530,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2186.0, 343.4608154296875, 81.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2423,13 +2561,13 @@
 					"presentation_rect" : [ 280.798095703125, 122.306121826171875, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "wrap", "fold", "clip" ],
+							"parameter_type" : 2,
 							"parameter_annotation_name" : "Shape",
 							"parameter_longname" : "umenu[38]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "umenu[6]",
-							"parameter_enum" : [ "wrap", "fold", "clip" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu[6]"
 						}
 
 					}
@@ -2486,13 +2624,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[149]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -2505,7 +2643,7 @@
 				"box" : 				{
 					"comment" : "sets a multiplier applied to the Green pattern used for pattern generation. 0/1 (integer) turns module off/on.",
 					"id" : "obj-476",
-					"index" : 0,
+					"index" : 11,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2518,11 +2656,149 @@
 				"box" : 				{
 					"id" : "obj-477",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1659.5, 268.4854736328125, 113.0, 22.0 ],
-					"text" : "scale 0. 1. 0. 100. 4"
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 2,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 34.0, 103.0, 238.0, 141.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 140.0, 140.0, 22.0 ],
+									"text" : "scale 8.176 2637 0. 100."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 92.0, 103.0, 22.0 ],
+									"text" : "scale 0. 1. 0. 100."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 116.0, 32.0, 22.0 ],
+									"text" : "mtof"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 88.0, 185.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 52.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 1659.5, 268.4854736328125, 70.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p newcurve"
 				}
 
 			}
@@ -2556,14 +2832,14 @@
 					"presentation_rect" : [ 212.65185546875, 70.044830322265625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_exponent" : 4.0,
 							"parameter_longname" : "G multiplier[2]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "G multiplier",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "G multiplier"
 						}
 
 					}
@@ -2580,7 +2856,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1659.5, 320.9854736328125, 66.0, 22.0 ],
-					"restore" : [ 1.0 ],
+					"restore" : [ 3.473478045369352 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2611,13 +2887,13 @@
 					"presentation_rect" : [ 212.65185546875, 45.783477783203125, 132.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "ramp+", "ramp–", "cosine+", "cosine–", "sine+", "sine–", "tan+", "tan–", "triangle+", "triangle–", "square+", "square–" ],
+							"parameter_type" : 2,
 							"parameter_annotation_name" : "Shape",
 							"parameter_longname" : "umenu[44]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "umenu",
-							"parameter_enum" : [ "ramp+", "ramp–", "cosine+", "cosine–", "sine+", "sine–", "tan+", "tan–", "triangle+", "triangle–", "square+", "square–" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -2727,7 +3003,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1587.0, 296.5, 71.0, 23.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 6.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2749,7 +3025,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2070.0, 308.4608154296875, 76.0, 23.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ -63.91536478475183 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2778,7 +3054,7 @@
 				"box" : 				{
 					"comment" : "Green rotation angle. off/on messages disable/enable the data inlet.",
 					"id" : "obj-496",
-					"index" : 0,
+					"index" : 15,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2823,13 +3099,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "rotation[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "rotation",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "rotation"
 						}
 
 					}
@@ -2856,14 +3132,14 @@
 					"presentation_rect" : [ 280.798095703125, 70.044830322265625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -360.0,
 							"parameter_longname" : "G rotation[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 360.0,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "G rotation",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_shortname" : "G rotation"
 						}
 
 					}
@@ -2954,7 +3230,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3449,6 +3725,7 @@
 					"activedialcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"dialcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"hidden" : 1,
 					"hint" : "Move this control to set the amount of zoom for the Green pattern.",
 					"id" : "obj-506",
 					"maxclass" : "live.dial",
@@ -3462,14 +3739,14 @@
 					"presentation_rect" : [ 212.65185546875, 162.032135009765625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -8.0,
 							"parameter_longname" : "G Zoom[4]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 8.0,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "G zoom",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "G zoom"
 						}
 
 					}
@@ -3498,14 +3775,14 @@
 					"presentation_rect" : [ 212.65185546875, 142.770782470703125, 57.279243469238281, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 3,
 							"parameter_longname" : "range[13]",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "range",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 3
+							"parameter_shortname" : "range"
 						}
 
 					}
@@ -3525,7 +3802,6 @@
 					"activedialcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"dialcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"hidden" : 1,
 					"hint" : "Move this control to set the amount of zoom for the Green pattern.",
 					"id" : "obj-508",
 					"maxclass" : "live.dial",
@@ -3539,14 +3815,14 @@
 					"presentation_rect" : [ 212.65185546875, 162.032135009765625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -2.0,
 							"parameter_longname" : "G zoom[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 2.0,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "G zoom",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "G zoom"
 						}
 
 					}
@@ -3577,13 +3853,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[152]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -3627,7 +3903,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1877.78125, 308.4608154296875, 96.0, 23.0 ],
-					"restore" : [ 0.505471062091102 ],
+					"restore" : [ 0.710552518637208 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -3649,7 +3925,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1810.609619140625, 271.5069580078125, 104.0, 23.0 ],
-					"restore" : [ 1 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -3679,7 +3955,7 @@
 				"box" : 				{
 					"comment" : "Green zooml in (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-514",
-					"index" : 0,
+					"index" : 14,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3722,13 +3998,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[165]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -3741,7 +4017,7 @@
 				"box" : 				{
 					"comment" : "selects the Red pattern used for pattern generation  (0. - 1.0=on, off/on). 0/1 (integer) turns module off/on.",
 					"id" : "obj-517",
-					"index" : 0,
+					"index" : 10,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3772,13 +4048,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[171]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -3809,13 +4085,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[176]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -3843,7 +4119,7 @@
 					"annotation" : "",
 					"comment" : "sets the Green Y offset values for image output (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-523",
-					"index" : 0,
+					"index" : 18,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3871,7 +4147,7 @@
 					"annotation" : "",
 					"comment" : "sets the Green X offset values for image output (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-525",
-					"index" : 0,
+					"index" : 17,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3922,7 +4198,7 @@
 				"box" : 				{
 					"comment" : "Red pattern rotation bound mode (wrap fold clip). off/on messages disable/enable the data inlet.",
 					"id" : "obj-371",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3953,12 +4229,12 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "normal", "invert" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "umenu[40]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "umenu",
-							"parameter_enum" : [ "normal", "invert" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -3987,7 +4263,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 668.5, 345.4608154296875, 93.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 2.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -4018,13 +4294,13 @@
 					"presentation_rect" : [ 23.65625, 122.306121826171875, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "wrap", "fold", "clip" ],
+							"parameter_type" : 2,
 							"parameter_annotation_name" : "Shape",
 							"parameter_longname" : "umenu[41]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "umenu[6]",
-							"parameter_enum" : [ "wrap", "fold", "clip" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu[6]"
 						}
 
 					}
@@ -4055,7 +4331,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1343.833251953125, 278.5069580078125, 86.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.140216222870121 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -4074,7 +4350,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1231.0, 278.5069580078125, 86.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.140216222870121 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -4109,15 +4385,15 @@
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
+							"parameter_linknames" : 1,
 							"parameter_annotation_name" : "Freq",
 							"parameter_longname" : "R y offset",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "R y offset",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1,
-							"parameter_linknames" : 1
+							"parameter_shortname" : "R y offset"
 						}
 
 					}
@@ -4149,13 +4425,13 @@
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_longname" : "R x offset[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "R x offset",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "R x offset"
 						}
 
 					}
@@ -4182,7 +4458,7 @@
 				"box" : 				{
 					"comment" : "Enables a wider Red zoom range (0. - .49 = low, .5 - 1.0 = high). off/on messages disable/enable the data inlet. ",
 					"id" : "obj-382",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -4227,13 +4503,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[172]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -4260,7 +4536,7 @@
 				"box" : 				{
 					"comment" : "Red pattern rotation bound mode (wrap fold clip). off/on messages disable/enable the data inlet.",
 					"id" : "obj-387",
-					"index" : 0,
+					"index" : 7,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -4291,13 +4567,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[2]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -4326,7 +4602,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1093.0, 344.4608154296875, 81.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -4357,13 +4633,13 @@
 					"presentation_rect" : [ 88.65185546875, 122.306121826171875, 60.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "wrap", "fold", "clip" ],
+							"parameter_type" : 2,
 							"parameter_annotation_name" : "Shape",
 							"parameter_longname" : "umenu[42]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "umenu[6]",
-							"parameter_enum" : [ "wrap", "fold", "clip" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu[6]"
 						}
 
 					}
@@ -4420,13 +4696,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[173]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -4439,7 +4715,7 @@
 				"box" : 				{
 					"comment" : "sets a multiplier applied to the Red pattern used for pattern generation. 0/1 (integer) turns module off/on.",
 					"id" : "obj-395",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -4452,11 +4728,149 @@
 				"box" : 				{
 					"id" : "obj-398",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 566.5, 269.4854736328125, 113.0, 22.0 ],
-					"text" : "scale 0. 1. 0. 100. 4"
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 2,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 61.0, 90.0, 599.0, 259.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 140.0, 140.0, 22.0 ],
+									"text" : "scale 8.176 2637 0. 100."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 92.0, 103.0, 22.0 ],
+									"text" : "scale 0. 1. 0. 100."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 116.0, 32.0, 22.0 ],
+									"text" : "mtof"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 88.0, 185.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 88.0, 52.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 566.5, 269.4854736328125, 70.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p newcurve"
 				}
 
 			}
@@ -4490,14 +4904,14 @@
 					"presentation_rect" : [ 23.65625, 70.044830322265625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_exponent" : 4.0,
 							"parameter_longname" : "R multiplier[3]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 100.0,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "R multiplier",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "R multiplier"
 						}
 
 					}
@@ -4514,7 +4928,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 566.5, 321.9854736328125, 65.0, 22.0 ],
-					"restore" : [ 7.635571746375051 ],
+					"restore" : [ 6.609039150829228 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -4545,13 +4959,13 @@
 					"presentation_rect" : [ 23.65625, 45.783477783203125, 126.99560546875, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "ramp+", "ramp–", "cosine+", "cosine–", "sine+", "sine–", "tan+", "tan–", "triangle+", "triangle–", "square+", "square–" ],
+							"parameter_type" : 2,
 							"parameter_annotation_name" : "Shape",
 							"parameter_longname" : "umenu[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "umenu",
-							"parameter_enum" : [ "ramp+", "ramp–", "cosine+", "cosine–", "sine+", "sine–", "tan+", "tan–", "triangle+", "triangle–", "square+", "square–" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "umenu"
 						}
 
 					}
@@ -4697,7 +5111,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 977.0, 309.4608154296875, 75.0, 23.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 97.082784428893319 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -4726,7 +5140,7 @@
 				"box" : 				{
 					"comment" : "Red rotation angle. off/on messages disable/enable the data inlet.",
 					"id" : "obj-417",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -4771,13 +5185,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "rotation[6]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "rotation",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "rotation"
 						}
 
 					}
@@ -4804,14 +5218,14 @@
 					"presentation_rect" : [ 88.65185546875, 70.044830322265625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -360.0,
 							"parameter_longname" : "R rotation[3]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 360.0,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "R rotation",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_shortname" : "R rotation"
 						}
 
 					}
@@ -4902,7 +5316,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5410,14 +5824,14 @@
 					"presentation_rect" : [ 23.65625, 162.032135009765625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -8.0,
 							"parameter_longname" : "H Zoom[5]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 8.0,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "H zoom",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "H zoom"
 						}
 
 					}
@@ -5446,14 +5860,14 @@
 					"presentation_rect" : [ 23.65625, 142.770782470703125, 60.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 3,
 							"parameter_longname" : "range[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "range",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 3
+							"parameter_shortname" : "range"
 						}
 
 					}
@@ -5487,14 +5901,14 @@
 					"presentation_rect" : [ 23.65625, 162.032135009765625, 60.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -2.0,
 							"parameter_longname" : "H zoom[6]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 2.0,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "H zoom",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_shortname" : "H zoom"
 						}
 
 					}
@@ -5525,13 +5939,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[5]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -5575,7 +5989,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 784.78125, 309.4608154296875, 95.0, 23.0 ],
-					"restore" : [ 0.505471062091102 ],
+					"restore" : [ 0.123568866453003 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -5627,7 +6041,7 @@
 				"box" : 				{
 					"comment" : "Red zooml in (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-435",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5670,13 +6084,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[4]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -5689,7 +6103,7 @@
 				"box" : 				{
 					"comment" : "selects the horizontal pattern used for pattern generation  (0. - 1.0=on, off/on). 0/1 (integer) turns module off/on.",
 					"id" : "obj-438",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5720,13 +6134,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[174]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -5757,13 +6171,13 @@
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "pictctrl[3]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "pictctrl[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "pictctrl[1]"
 						}
 
 					}
@@ -5790,7 +6204,7 @@
 				"box" : 				{
 					"comment" : "LFO 1 data out (0. - 1.0)",
 					"id" : "obj-442",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5834,7 +6248,7 @@
 					"annotation" : "",
 					"comment" : "sets the Red Y offset values for image output (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-445",
-					"index" : 0,
+					"index" : 9,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5862,7 +6276,7 @@
 					"annotation" : "",
 					"comment" : "sets the Red X offset values for image output (0. - 1.0). off/on messages disable/enable the data inlet.",
 					"id" : "obj-447",
-					"index" : 0,
+					"index" : 8,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5967,14 +6381,14 @@
 					"presentation_rect" : [ 0.0, 16.0, 592.70159912109375, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 3,
 							"parameter_longname" : "textbutton[13]",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "textbutton[1]",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 3
+							"parameter_shortname" : "textbutton[1]"
 						}
 
 					}
@@ -8010,162 +8424,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-379" : [ "R y offset", "R y offset", 0 ],
-			"obj-394" : [ "pictctrl[173]", "pictctrl[1]", 0 ],
-			"obj-430" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-575" : [ "rotation[2]", "rotation", 0 ],
-			"obj-469" : [ "pictctrl[175]", "pictctrl[1]", 0 ],
-			"obj-375" : [ "umenu[41]", "umenu[6]", 0 ],
-			"obj-427" : [ "H Zoom[5]", "H zoom", 0 ],
-			"obj-457" : [ "umenu[43]", "umenu[6]", 0 ],
-			"obj-546" : [ "pictctrl[168]", "pictctrl[1]", 0 ],
-			"obj-391" : [ "umenu[42]", "umenu[6]", 0 ],
-			"obj-534" : [ "umenu[39]", "umenu[6]", 0 ],
-			"obj-440" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-439" : [ "pictctrl[174]", "pictctrl[1]", 0 ],
-			"obj-380" : [ "R x offset[1]", "R x offset", 0 ],
-			"obj-507" : [ "range[13]", "range", 0 ],
-			"obj-508" : [ "G zoom[1]", "G zoom", 0 ],
-			"obj-472" : [ "umenu[38]", "umenu[6]", 0 ],
-			"obj-509" : [ "pictctrl[152]", "pictctrl[1]", 0 ],
-			"obj-429" : [ "H zoom[6]", "H zoom", 0 ],
-			"obj-549" : [ "umenu[45]", "umenu[6]", 0 ],
-			"obj-498" : [ "rotation[1]", "rotation", 0 ],
-			"obj-372" : [ "umenu[40]", "umenu", 0 ],
-			"obj-419" : [ "rotation[6]", "rotation", 0 ],
-			"obj-388" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-278" : [ "textbutton[13]", "textbutton[1]", 0 ],
-			"obj-400" : [ "R multiplier[3]", "R multiplier", 0 ],
-			"obj-516" : [ "pictctrl[165]", "pictctrl[1]", 0 ],
-			"obj-420" : [ "R rotation[3]", "R rotation", 0 ],
-			"obj-583" : [ "B zoom", "B zoom", 0 ],
-			"obj-576" : [ "B rotation[2]", "B rotation", 0 ],
-			"obj-593" : [ "pictctrl[160]", "pictctrl[1]", 0 ],
-			"obj-558" : [ "umenu[46]", "umenu", 0 ],
-			"obj-584" : [ "range[14]", "range", 0 ],
-			"obj-461" : [ "G y offset[1]", "G y offset", 0 ],
-			"obj-437" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-462" : [ "G x offset[2]", "G x offset", 0 ],
-			"obj-585" : [ "B zoom[1]", "B zoom", 0 ],
-			"obj-538" : [ "B y offset[2]", "B y offset", 0 ],
-			"obj-586" : [ "pictctrl[107]", "pictctrl[1]", 0 ],
-			"obj-466" : [ "pictctrl[148]", "pictctrl[1]", 0 ],
-			"obj-481" : [ "umenu[44]", "umenu", 0 ],
-			"obj-539" : [ "B x offset[3]", "B x offset", 0 ],
-			"obj-384" : [ "pictctrl[172]", "pictctrl[1]", 0 ],
-			"obj-543" : [ "pictctrl[155]", "pictctrl[1]", 0 ],
-			"obj-402" : [ "umenu[1]", "umenu", 0 ],
-			"obj-518" : [ "pictctrl[171]", "pictctrl[1]", 0 ],
-			"obj-475" : [ "pictctrl[149]", "pictctrl[1]", 0 ],
-			"obj-519" : [ "pictctrl[176]", "pictctrl[1]", 0 ],
-			"obj-595" : [ "pictctrl[177]", "pictctrl[1]", 0 ],
-			"obj-428" : [ "range[1]", "range", 0 ],
-			"obj-552" : [ "pictctrl[156]", "pictctrl[1]", 0 ],
-			"obj-479" : [ "G multiplier[2]", "G multiplier", 0 ],
-			"obj-454" : [ "umenu[37]", "umenu", 0 ],
-			"obj-506" : [ "G Zoom[4]", "G zoom", 0 ],
-			"obj-596" : [ "pictctrl[161]", "pictctrl[1]", 0 ],
-			"obj-499" : [ "G rotation[1]", "G rotation", 0 ],
-			"obj-556" : [ "B multiplier[4]", "B multiplier", 0 ],
-			"obj-531" : [ "umenu[26]", "umenu", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "vz.3patternmappr.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../../Users/gtaylor/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/vizzie/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "monotile.genjit",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "monorotate.genjit",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rotation_calculation.genjit",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rfc_pix.genjit",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "3joiner.genjit",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
-		"snapshot" : 		{
-			"filetype" : "C74Snapshot",
-			"version" : 2,
-			"minorversion" : 0,
-			"name" : "snapshotlist",
-			"origin" : "jpatcher",
-			"type" : "list",
-			"subtype" : "Undefined",
-			"embed" : 1,
-			"snapshotlist" : 			{
-				"current_snapshot" : -1,
-				"entries" : [ 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "vz.3patternmappr",
-						"origin" : "vz.3patternmappr",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"fileref" : 						{
-							"name" : "vz.3patternmappr",
-							"filename" : "vz.3patternmappr.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "3726617b6fd7cfa1a57b153db4af8c2d"
-						}
-
-					}
- ]
-			}
-
-		}
-,
 		"bgcolor" : [ 0.86, 0.86, 0.86, 1.0 ]
 	}
 

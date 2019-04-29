@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -169,7 +169,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -397,7 +397,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 575.0, 224.0, 189.0, 54.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Turn on the CLICKR switch to enable modulation by the movie position"
 								}
 
@@ -436,7 +435,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 374.0, 380.5, 174.0, 40.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Set the direction and amount of emboss effect"
 								}
 
@@ -451,7 +449,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 388.0, 432.0, 255.0, 94.0 ],
-									"presentation_linecount" : 6,
 									"text" : "The four sliders at the right side of the EMBOSSR control the 'mask' used for embossing. The first slider controls the direction (front or back) and depth, while the next three sliders control the 'curve' of the embossing function.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -493,7 +490,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 15.0, 380.5, 97.0, 40.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Choose the image color"
 								}
 
@@ -508,7 +504,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 69.0, 583.0, 36.0 ],
-									"presentation_linecount" : 2,
 									"text" : "A Vizzie module/abstraction to create an embossed monochrome image based on your input video. You can specify the color of the image and also the amount and direction of the embossing.",
 									"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
 									"varname" : "autohelp_top_digest"
@@ -612,46 +607,46 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-8::obj-11" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-2::obj-3::obj-12" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-2::obj-3::obj-78" : [ "multislider[6]", "multislider", 0 ],
-			"obj-2::obj-8::obj-4" : [ "pictctrl[149]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-2::obj-3::obj-75" : [ "multislider[3]", "multislider", 0 ],
-			"obj-2::obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-2::obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-3::obj-62" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
 			"obj-2::obj-10::obj-40" : [ "pictctrl[27]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-2::obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-3::obj-27" : [ "swatch[1]", "swatch[1]", 0 ],
-			"obj-2::obj-19::obj-41" : [ "pictctrl[25]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-16" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-2::obj-19::obj-12" : [ "textbutton", "textbutton", 0 ],
-			"obj-2::obj-8::obj-22" : [ "range[3]", "range", 0 ],
-			"obj-2::obj-10::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-3::obj-9" : [ "range[4]", "range", 0 ],
-			"obj-2::obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-2::obj-3::obj-53" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-64" : [ "pictctrl[28]", "pictctrl[1]", 0 ],
-			"obj-2::obj-3::obj-49" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
 			"obj-2::obj-3::obj-77" : [ "multislider[5]", "multislider", 0 ],
-			"obj-2::obj-8::obj-66" : [ "pictctrl[146]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-3::obj-64" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-83" : [ "pictctrl[24]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-50" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-2::obj-3::obj-54" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
-			"obj-2::obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-60" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
-			"obj-2::obj-3::obj-28" : [ "swatch", "swatch", 0 ],
-			"obj-2::obj-8::obj-17" : [ "live.text[1]", "live.text", 0 ],
-			"obj-2::obj-3::obj-76" : [ "multislider[4]", "multislider", 0 ],
-			"obj-2::obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-2::obj-8::obj-12" : [ "pictctrl[150]", "pictctrl[1]", 0 ],
+			"obj-2::obj-8::obj-11" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"obj-2::obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-2::obj-3::obj-54" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-2::obj-8::obj-66" : [ "pictctrl[146]", "pictctrl[1]", 0 ],
+			"obj-2::obj-19::obj-41" : [ "pictctrl[25]", "pictctrl[1]", 0 ],
+			"obj-2::obj-3::obj-75" : [ "multislider[3]", "multislider", 0 ],
+			"obj-2::obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-2::obj-3::obj-49" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
 			"obj-2::obj-10::obj-28" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
+			"obj-2::obj-8::obj-22" : [ "range[3]", "range", 0 ],
+			"obj-2::obj-10::obj-64" : [ "pictctrl[28]", "pictctrl[1]", 0 ],
+			"obj-2::obj-3::obj-28" : [ "swatch", "swatch", 0 ],
+			"obj-2::obj-3::obj-78" : [ "multislider[6]", "multislider", 0 ],
+			"obj-2::obj-3::obj-53" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-2::obj-8::obj-4" : [ "pictctrl[149]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-2::obj-3::obj-64" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-10::obj-60" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
+			"obj-2::obj-3::obj-76" : [ "multislider[4]", "multislider", 0 ],
+			"obj-2::obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-2::obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-2::obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-2::obj-8::obj-17" : [ "live.text[1]", "live.text", 0 ],
+			"obj-2::obj-19::obj-50" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-2::obj-3::obj-9" : [ "range[4]", "range", 0 ],
+			"obj-2::obj-10::obj-83" : [ "pictctrl[24]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-2::obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-3::obj-27" : [ "swatch[1]", "swatch[1]", 0 ],
+			"obj-2::obj-19::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-2::obj-19::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-2::obj-3::obj-12" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-3::obj-62" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-2::obj-8::obj-12" : [ "pictctrl[150]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -808,17 +803,17 @@
 						"speed[1]" : 1.0,
 						"swatch[1]" : 1.0,
 						"blob" : 						{
-							"moviename" : [ "<empty>" ],
-							"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
-							"multislider[3]" : [ -17.303031921386719 ],
-							"multislider[4]" : [ 7.095006465911865 ],
-							"multislider[5]" : [ 13.761672973632812 ],
-							"multislider[6]" : [ -7.349438190460205 ],
+							"moviename" : [ "blading.mov" ],
+							"moviepath" : [ "C74:/media/jitter/blading.mov" ],
+							"multislider[3]" : [ -14.270718574523926 ],
+							"multislider[4]" : [ 7 ],
+							"multislider[5]" : [ 14 ],
+							"multislider[6]" : [ -7 ],
 							"range" : [ 0 ],
 							"range[3]" : [ 1 ],
 							"range[4]" : [ 1 ],
 							"rslider[2]" : [ 0.0, 1.0 ],
-							"slider[3]" : [ 0.067424220458521 ],
+							"slider[3]" : [ 0.143232044198895 ],
 							"swatch" : [ 204, 249, 125 ],
 							"textbutton" : [ 0 ],
 							"textbutton[1]" : [ 1 ]
@@ -871,17 +866,17 @@
 									"speed[1]" : 1.0,
 									"swatch[1]" : 1.0,
 									"blob" : 									{
-										"moviename" : [ "<empty>" ],
-										"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
-										"multislider[3]" : [ -17.303031921386719 ],
-										"multislider[4]" : [ 7.095006465911865 ],
-										"multislider[5]" : [ 13.761672973632812 ],
-										"multislider[6]" : [ -7.349438190460205 ],
+										"moviename" : [ "blading.mov" ],
+										"moviepath" : [ "C74:/media/jitter/blading.mov" ],
+										"multislider[3]" : [ -14.270718574523926 ],
+										"multislider[4]" : [ 7 ],
+										"multislider[5]" : [ 14 ],
+										"multislider[6]" : [ -7 ],
 										"range" : [ 0 ],
 										"range[3]" : [ 1 ],
 										"range[4]" : [ 1 ],
 										"rslider[2]" : [ 0.0, 1.0 ],
-										"slider[3]" : [ 0.067424220458521 ],
+										"slider[3]" : [ 0.143232044198895 ],
 										"swatch" : [ 204, 249, 125 ],
 										"textbutton" : [ 0 ],
 										"textbutton[1]" : [ 1 ]

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -169,7 +169,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -523,34 +523,34 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-19::obj-50" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-28" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-48" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-37" : [ "x range", "x range", 0 ],
-			"obj-2::obj-9::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-2::obj-9::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-2::obj-9::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-9::obj-83" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
 			"obj-2::obj-19::obj-41" : [ "pictctrl[27]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-50" : [ "y range", "y range", 0 ],
-			"obj-2::obj-35::obj-47" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-40" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-64" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-19::obj-6" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-2::obj-9::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
 			"obj-2::obj-9::obj-81" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-35::obj-3" : [ "range[4]", "range", 0 ],
-			"obj-2::obj-9::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-2::obj-9::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-35::obj-46" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-60" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
-			"obj-2::obj-35::obj-36" : [ "probability", "probability", 0 ],
-			"obj-2::obj-9::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-9::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-2::obj-35::obj-48" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-28" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
 			"obj-2::obj-9::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-2::obj-19::obj-50" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
+			"obj-2::obj-19::obj-6" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-2::obj-9::obj-64" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-2::obj-35::obj-50" : [ "y range", "y range", 0 ],
+			"obj-2::obj-9::obj-60" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-36" : [ "probability", "probability", 0 ],
+			"obj-2::obj-19::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-2::obj-9::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
 			"obj-2::obj-19::obj-16" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-2::obj-9::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-2::obj-9::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-2::obj-9::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-2::obj-35::obj-46" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-3" : [ "range[4]", "range", 0 ],
+			"obj-2::obj-9::obj-40" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-2::obj-9::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-9::obj-83" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-47" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-89" : [ "moviename", "moviename", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -558,7 +558,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "vz.foggr.maxhelp.maxsnap",
+				"name" : "vz.foggr.maxhelp[1].maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../../Users/gtaylor/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
@@ -696,12 +696,12 @@
 						"x range" : 66.0,
 						"y range" : 18.0,
 						"blob" : 						{
-							"moviename" : [ "chickens.mp4" ],
-							"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
+							"moviename" : [ "blading.mov" ],
+							"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 							"range" : [ 0 ],
 							"range[4]" : [ 1 ],
 							"rslider[2]" : [ 0.0, 1.0 ],
-							"slider[3]" : [ 0.105535625324544 ],
+							"slider[3]" : [ 0.730524861878453 ],
 							"textbutton" : [ 1 ],
 							"textbutton[1]" : [ 0 ]
 						}
@@ -718,7 +718,7 @@
 						"filetype" : "C74Snapshot",
 						"version" : 2,
 						"minorversion" : 0,
-						"name" : "vz.foggr.maxhelp",
+						"name" : "vz.foggr.maxhelp[1]",
 						"origin" : "vz.foggr.maxhelp",
 						"type" : "patcher",
 						"subtype" : "Undefined",
@@ -747,12 +747,12 @@
 									"x range" : 66.0,
 									"y range" : 18.0,
 									"blob" : 									{
-										"moviename" : [ "chickens.mp4" ],
-										"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
+										"moviename" : [ "blading.mov" ],
+										"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 										"range" : [ 0 ],
 										"range[4]" : [ 1 ],
 										"rslider[2]" : [ 0.0, 1.0 ],
-										"slider[3]" : [ 0.105535625324544 ],
+										"slider[3]" : [ 0.730524861878453 ],
 										"textbutton" : [ 1 ],
 										"textbutton[1]" : [ 0 ]
 									}
@@ -764,11 +764,11 @@
 						}
 ,
 						"fileref" : 						{
-							"name" : "vz.foggr.maxhelp",
-							"filename" : "vz.foggr.maxhelp.maxsnap",
+							"name" : "vz.foggr.maxhelp[1]",
+							"filename" : "vz.foggr.maxhelp[1].maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "c6031d939789e97b8b25f3fccd5508ea"
+							"snapshotfileid" : "171ac4b64a12cb34791609bc43270098"
 						}
 
 					}

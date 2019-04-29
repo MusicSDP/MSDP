@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -169,7 +169,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -481,12 +481,12 @@
 									"patching_rect" : [ 550.0, 213.0, 20.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_shortname" : "toggle",
+											"parameter_type" : 3,
 											"parameter_longname" : "toggle",
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "toggle",
-											"parameter_type" : 3
+											"parameter_initial" : [ 1 ]
 										}
 
 									}
@@ -680,49 +680,49 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-10::obj-81" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-51" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-24" : [ "vertical[1]", "vertical", 0 ],
-			"obj-2::obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-2::obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-2::obj-10::obj-64" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-50" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-4::obj-51" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-37" : [ "umenu[8]", "umenu", 0 ],
-			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
-			"obj-2::obj-35::obj-68" : [ "horizontal", "horizontal", 0 ],
-			"obj-2::obj-10::obj-28" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-83" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-35::obj-24" : [ "vertical", "vertical", 0 ],
-			"obj-2::obj-10::obj-60" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-54" : [ "umenu[2]", "umenu", 0 ],
-			"obj-2::obj-9::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
-			"obj-2::obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-2::obj-4::obj-47" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-35::obj-17" : [ "range[4]", "range", 0 ],
-			"obj-2::obj-35::obj-54" : [ "umenu[6]", "umenu", 0 ],
-			"obj-2::obj-35::obj-44" : [ "scale", "scale", 0 ],
-			"obj-2::obj-35::obj-47" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-2::obj-4::obj-53" : [ "pictctrl[12]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-2::obj-35::obj-41" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-94" : [ "umenu[3]", "umenu", 0 ],
-			"obj-2::obj-35::obj-53" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-37" : [ "umenu[9]", "umenu", 0 ],
-			"obj-2::obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-4::obj-41" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-40" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-50" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
 			"obj-2::obj-4::obj-68" : [ "horizontal[1]", "horizontal", 0 ],
-			"obj-2::obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-4::obj-47" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-24" : [ "vertical", "vertical", 0 ],
+			"obj-2::obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-2::obj-4::obj-54" : [ "umenu[2]", "umenu", 0 ],
+			"obj-2::obj-4::obj-24" : [ "vertical[1]", "vertical", 0 ],
 			"obj-2::obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
-			"obj-2::obj-4::obj-17" : [ "range[5]", "range", 0 ],
+			"obj-2::obj-4::obj-50" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-81" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-64" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-94" : [ "umenu[3]", "umenu", 0 ],
+			"obj-2::obj-10::obj-83" : [ "pictctrl[17]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-41" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-2::obj-35::obj-54" : [ "umenu[6]", "umenu", 0 ],
+			"obj-2::obj-19::obj-37" : [ "umenu[8]", "umenu", 0 ],
 			"obj-2::obj-4::obj-44" : [ "scale[1]", "scale", 0 ],
+			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
+			"obj-2::obj-4::obj-53" : [ "pictctrl[12]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-47" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-60" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-41" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-35::obj-68" : [ "horizontal", "horizontal", 0 ],
+			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-2::obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-2::obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-2::obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-2::obj-9::obj-37" : [ "umenu[9]", "umenu", 0 ],
+			"obj-2::obj-35::obj-17" : [ "range[4]", "range", 0 ],
+			"obj-2::obj-10::obj-28" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-17" : [ "range[5]", "range", 0 ],
+			"obj-2::obj-35::obj-44" : [ "scale", "scale", 0 ],
+			"obj-2::obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-2::obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-35::obj-51" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-94" : [ "umenu[1]", "umenu", 0 ],
+			"obj-2::obj-35::obj-53" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-51" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-10::obj-40" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-20" : [ "letterbox_menu[1]", "letterbox_menu", 0 ],
+			"obj-2::obj-35::obj-50" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -730,7 +730,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "vz.interpol8r.maxhelp.maxsnap",
+				"name" : "vz.interpol8r.maxhelp[1].maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../../Users/gtaylor/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
@@ -855,7 +855,7 @@
 						"FreqMode[12]" : 0.0,
 						"FreqMode[13]" : 0.0,
 						"horizontal" : 0.25,
-						"horizontal[1]" : 0.25,
+						"horizontal[1]" : 0.698818897637795,
 						"letterbox_menu" : 0.0,
 						"letterbox_menu[1]" : 0.0,
 						"pictctrl[10]" : 1.0,
@@ -885,15 +885,15 @@
 						"umenu[8]" : 0.0,
 						"umenu[9]" : 0.0,
 						"vertical" : 0.581692913385826,
-						"vertical[1]" : 0.125,
+						"vertical[1]" : 0.313976377952756,
 						"blob" : 						{
-							"moviename" : [ "<empty>" ],
-							"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
+							"moviename" : [ "blading.mov" ],
+							"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 							"range" : [ 0 ],
 							"range[4]" : [ 1 ],
 							"range[5]" : [ 1 ],
 							"rslider[2]" : [ 0.0, 1.0 ],
-							"slider[3]" : [ 0.594413502065217 ],
+							"slider[3]" : [ 0.450138121546961 ],
 							"textbutton" : [ 1 ],
 							"toggle" : [ 1 ]
 						}
@@ -910,7 +910,7 @@
 						"filetype" : "C74Snapshot",
 						"version" : 2,
 						"minorversion" : 0,
-						"name" : "vz.interpol8r.maxhelp",
+						"name" : "vz.interpol8r.maxhelp[1]",
 						"origin" : "vz.interpol8r.maxhelp",
 						"type" : "patcher",
 						"subtype" : "Undefined",
@@ -921,7 +921,7 @@
 									"FreqMode[12]" : 0.0,
 									"FreqMode[13]" : 0.0,
 									"horizontal" : 0.25,
-									"horizontal[1]" : 0.25,
+									"horizontal[1]" : 0.698818897637795,
 									"letterbox_menu" : 0.0,
 									"letterbox_menu[1]" : 0.0,
 									"pictctrl[10]" : 1.0,
@@ -951,15 +951,15 @@
 									"umenu[8]" : 0.0,
 									"umenu[9]" : 0.0,
 									"vertical" : 0.581692913385826,
-									"vertical[1]" : 0.125,
+									"vertical[1]" : 0.313976377952756,
 									"blob" : 									{
-										"moviename" : [ "<empty>" ],
-										"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
+										"moviename" : [ "blading.mov" ],
+										"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 										"range" : [ 0 ],
 										"range[4]" : [ 1 ],
 										"range[5]" : [ 1 ],
 										"rslider[2]" : [ 0.0, 1.0 ],
-										"slider[3]" : [ 0.594413502065217 ],
+										"slider[3]" : [ 0.450138121546961 ],
 										"textbutton" : [ 1 ],
 										"toggle" : [ 1 ]
 									}
@@ -971,11 +971,11 @@
 						}
 ,
 						"fileref" : 						{
-							"name" : "vz.interpol8r.maxhelp",
-							"filename" : "vz.interpol8r.maxhelp.maxsnap",
+							"name" : "vz.interpol8r.maxhelp[1]",
+							"filename" : "vz.interpol8r.maxhelp[1].maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "6e982ce3d438008f7e8acc9397c24445"
+							"snapshotfileid" : "ff0cf69843ec211eff58f59cb5244402"
 						}
 
 					}

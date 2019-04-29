@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -169,7 +169,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -414,7 +414,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 37.0, 453.0, 137.0, 54.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Set the number of horizontal/vertical sub-images"
 								}
 
@@ -431,7 +430,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 236.0, 333.5, 335.0, 40.0 ],
-									"presentation_linecount" : 2,
 									"text" : "An integer 1 or 0 in the left inlet enables or disables the module. A disabled module passes video through."
 								}
 
@@ -448,12 +446,12 @@
 									"patching_rect" : [ 206.0, 343.5, 20.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_shortname" : "toggle",
+											"parameter_type" : 3,
 											"parameter_longname" : "toggle",
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "toggle",
-											"parameter_type" : 3
+											"parameter_initial" : [ 1 ]
 										}
 
 									}
@@ -494,7 +492,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 69.0, 608.0, 50.0 ],
-									"presentation_linecount" : 3,
 									"text" : "A Vizzie module/abstraction to create images composed of smaller versions of that image. Increasing the \"horizontal\" and \"vertical\" parameters will increase the number of images along those axes. When \"tint\" mode is on, you can select different interpolation modes for various ways to color each sub-image. ",
 									"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
 									"varname" : "autohelp_top_digest"
@@ -608,37 +605,37 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-11::obj-83" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-2::obj-11::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
+			"obj-2::obj-19::obj-12" : [ "textbutton", "textbutton", 0 ],
 			"obj-2::obj-19::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-47" : [ "pictctrl[212]", "pictctrl[1]", 0 ],
+			"obj-2::obj-11::obj-28" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
+			"obj-2::obj-11::obj-83" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
+			"obj-2::obj-11::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
 			"obj-2::obj-11::obj-40" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-2::obj-11::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
-			"obj-2::obj-35::obj-51" : [ "pictctrl[211]", "pictctrl[1]", 0 ],
-			"obj-2::obj-11::obj-112::obj-121" : [ "speed[12]", "speed", 0 ],
-			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
-			"obj-2::obj-11::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-2::obj-35::obj-53" : [ "pictctrl[214]", "pictctrl[1]", 0 ],
-			"obj-2::obj-11::obj-51" : [ "moviepath", "moviepath", 0 ],
 			"obj-2::obj-19::obj-6" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-2::obj-35::obj-54" : [ "umenu[3]", "umenu", 0 ],
+			"obj-2::obj-11::obj-112::obj-120" : [ "range[3]", "range", 0 ],
+			"obj-2::obj-11::obj-112::obj-92" : [ "FreqMode[2]", "FreqMode", 0 ],
+			"obj-2::obj-35::obj-16" : [ "horizontal[4]", "horizontal", 0 ],
+			"obj-2::obj-19::obj-41" : [ "pictctrl[33]", "pictctrl[1]", 0 ],
+			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
+			"obj-2::obj-35::obj-17" : [ "vertical[4]", "vertical", 0 ],
+			"obj-2::obj-35::obj-41" : [ "pictctrl[213]", "pictctrl[1]", 0 ],
+			"obj-2::obj-11::obj-112::obj-119" : [ "speed[11]", "speed", 0 ],
+			"obj-2::obj-11::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
 			"obj-2::obj-11::obj-81" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
 			"obj-2::obj-35::obj-2" : [ "range[27]", "range", 0 ],
-			"obj-2::obj-35::obj-47" : [ "pictctrl[212]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-12" : [ "textbutton", "textbutton", 0 ],
-			"obj-2::obj-11::obj-112::obj-120" : [ "range[3]", "range", 0 ],
-			"obj-2::obj-35::obj-41" : [ "pictctrl[213]", "pictctrl[1]", 0 ],
-			"obj-2::obj-11::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-19::obj-41" : [ "pictctrl[33]", "pictctrl[1]", 0 ],
-			"obj-2::obj-11::obj-64" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-2::obj-11::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
-			"obj-2::obj-35::obj-54" : [ "umenu[3]", "umenu", 0 ],
-			"obj-2::obj-11::obj-60" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-16" : [ "horizontal[4]", "horizontal", 0 ],
-			"obj-2::obj-11::obj-28" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
+			"obj-2::obj-11::obj-112::obj-89" : [ "FreqMode[1]", "FreqMode", 0 ],
 			"obj-2::obj-11::obj-112::obj-94" : [ "textbutton[1]", "textbutton", 0 ],
-			"obj-2::obj-11::obj-112::obj-119" : [ "speed[11]", "speed", 0 ],
-			"obj-2::obj-35::obj-17" : [ "vertical[4]", "vertical", 0 ],
-			"obj-2::obj-35::obj-94" : [ "umenu[1]", "umenu", 0 ],
+			"obj-2::obj-11::obj-64" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
 			"obj-2::obj-19::obj-16" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-2::obj-35::obj-51" : [ "pictctrl[211]", "pictctrl[1]", 0 ],
+			"obj-2::obj-11::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-2::obj-35::obj-94" : [ "umenu[1]", "umenu", 0 ],
+			"obj-2::obj-35::obj-53" : [ "pictctrl[214]", "pictctrl[1]", 0 ],
+			"obj-2::obj-11::obj-112::obj-121" : [ "speed[12]", "speed", 0 ],
+			"obj-2::obj-11::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-11::obj-60" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}

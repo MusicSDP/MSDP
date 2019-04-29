@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -169,7 +169,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -350,7 +350,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 379.0, 346.5, 116.0, 65.0 ],
-									"presentation_linecount" : 4,
 									"text" : "Use CLICKR to enable and disable modulation input.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -409,7 +408,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 585.0, 346.5, 227.0, 65.0 ],
-									"presentation_linecount" : 4,
 									"text" : "Here we are using the Vizzie Wandr module to automatically generate random values in the range of 0. -1. to control the \"selector\" parameter. ",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -427,7 +425,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 370.0, 505.5, 396.0, 40.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Decrease the \"breakpoint\" value to have the video freeze more, or increase the \"breakpoint\" value to have the video freeze less. "
 								}
 
@@ -483,7 +480,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 29.0, 350.5, 161.0, 83.0 ],
-									"presentation_linecount" : 5,
 									"text" : "An integer 1 or 0 in the left inlet enables or disables the module. A disabled module passes video through."
 								}
 
@@ -500,12 +496,12 @@
 									"patching_rect" : [ 198.0, 382.0, 20.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_shortname" : "toggle",
+											"parameter_type" : 3,
 											"parameter_longname" : "toggle",
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "toggle",
-											"parameter_type" : 3
+											"parameter_initial" : [ 1 ]
 										}
 
 									}
@@ -546,7 +542,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 69.0, 643.0, 65.0 ],
-									"presentation_linecount" : 4,
 									"text" : "A Vizzie module/abstraction to freeze video input and output the last frame. The \"selector\" and \"breakpoint\" values work in conjunction to trigger when the video freezes. If the \"selector\" value is greater than the \"breakpoint\" value, the video will freeze and the last frame will be output. As soon as the \"selector\" value is less than the \"breakpoint\" value, the video will resume playing from its current location. ",
 									"textcolor" : [ 0.200000002980232, 0.200000002980232, 0.200000002980232, 1.0 ],
 									"varname" : "autohelp_top_digest"
@@ -675,47 +670,47 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-9::obj-28" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-66" : [ "pictctrl[32]", "pictctrl[1]", 0 ],
-			"obj-2::obj-13::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-2::obj-1::obj-43" : [ "pictctrl[367]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
-			"obj-2::obj-9::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-89" : [ "FreqMode[2]", "FreqMode", 0 ],
-			"obj-2::obj-9::obj-112::obj-92" : [ "FreqMode[3]", "FreqMode", 0 ],
-			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
-			"obj-2::obj-35::obj-30" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-2::obj-1::obj-65" : [ "speed[10]", "speed", 0 ],
-			"obj-2::obj-13::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-2::obj-9::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
-			"obj-2::obj-9::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-13::obj-16" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-2::obj-9::obj-83" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
 			"obj-2::obj-1::obj-48" : [ "FreqMode[26]", "FreqMode", 0 ],
 			"obj-2::obj-9::obj-112::obj-94" : [ "textbutton[2]", "textbutton", 0 ],
-			"obj-2::obj-4::obj-11" : [ "pictctrl[25]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-17" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-2::obj-4::obj-66" : [ "pictctrl[32]", "pictctrl[1]", 0 ],
 			"obj-2::obj-13::obj-12" : [ "textbutton", "textbutton", 0 ],
-			"obj-2::obj-1::obj-50" : [ "pictctrl[368]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-22" : [ "range[3]", "range", 0 ],
-			"obj-2::obj-9::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
-			"obj-2::obj-9::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-4::obj-4" : [ "pictctrl[33]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-17" : [ "live.text[2]", "live.text", 0 ],
-			"obj-2::obj-35::obj-3" : [ "range[4]", "range", 0 ],
-			"obj-2::obj-1::obj-44" : [ "textbutton[23]", "textbutton[1]", 0 ],
-			"obj-2::obj-9::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-51" : [ "breakpoint", "breakpoint", 0 ],
-			"obj-2::obj-9::obj-112::obj-120" : [ "range[6]", "range", 0 ],
-			"obj-2::obj-9::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
-			"obj-2::obj-1::obj-53" : [ "pictctrl[364]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-81" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-47" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-2::obj-4::obj-12" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
+			"obj-2::obj-13::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"obj-2::obj-1::obj-49" : [ "pictctrl[369]", "pictctrl[1]", 0 ],
-			"obj-2::obj-1::obj-64" : [ "step size", "step size", 0 ],
+			"obj-2::obj-9::obj-112::obj-120" : [ "range[6]", "range", 0 ],
 			"obj-2::obj-13::obj-41" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-28" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-11" : [ "pictctrl[25]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-112::obj-79" : [ "slider[4]", "slider[2]", 0 ],
+			"obj-2::obj-9::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-2::obj-13::obj-16" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-2::obj-1::obj-43" : [ "pictctrl[367]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-112::obj-121" : [ "speed[3]", "speed", 0 ],
 			"obj-2::obj-9::obj-64" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-22" : [ "range[3]", "range", 0 ],
+			"obj-2::obj-9::obj-112::obj-89" : [ "FreqMode[2]", "FreqMode", 0 ],
+			"obj-2::obj-4::obj-4" : [ "pictctrl[33]", "pictctrl[1]", 0 ],
+			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
+			"obj-2::obj-1::obj-65" : [ "speed[10]", "speed", 0 ],
+			"obj-2::obj-9::obj-112::obj-16" : [ "rslider[3]", "rslider[2]", 0 ],
+			"obj-2::obj-9::obj-83" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-12" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-2::obj-1::obj-50" : [ "pictctrl[368]", "pictctrl[1]", 0 ],
+			"obj-2::obj-1::obj-64" : [ "step size", "step size", 0 ],
+			"obj-2::obj-9::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-2::obj-9::obj-112::obj-92" : [ "FreqMode[3]", "FreqMode", 0 ],
+			"obj-2::obj-35::obj-47" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-3" : [ "range[4]", "range", 0 ],
+			"obj-2::obj-4::obj-17" : [ "live.text[2]", "live.text", 0 ],
+			"obj-2::obj-35::obj-17" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-2::obj-13::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-2::obj-1::obj-53" : [ "pictctrl[364]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-51" : [ "breakpoint", "breakpoint", 0 ],
+			"obj-2::obj-9::obj-112::obj-119" : [ "speed[2]", "speed", 0 ],
+			"obj-2::obj-35::obj-30" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-1::obj-44" : [ "textbutton[23]", "textbutton[1]", 0 ],
+			"obj-2::obj-9::obj-81" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}

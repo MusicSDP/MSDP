@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -169,7 +169,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -350,7 +350,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 267.0, 398.0, 326.0, 36.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Defaults for an unaltered image are offsets set to 0.00 and hue, saturation and luminance set to 1.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -366,7 +365,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 267.0, 308.0, 317.0, 50.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Hue shifts the relative colors of the entire image. Saturation increases or decreases the color intensity.\nLightness changes the overall exposure.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -382,7 +380,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 267.0, 360.0, 309.0, 36.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Use offsets in combination with the primary controls to create a wide variety of coloration effects.",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 								}
@@ -426,7 +423,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 45.0, 471.0, 221.199996999999996, 208.399993999999992 ],
+									"patching_rect" : [ 45.0, 471.0, 230.0, 208.0 ],
 									"prototypename" : "pixl",
 									"varname" : "viewr",
 									"viewvisibility" : 1
@@ -551,37 +548,37 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-9::obj-28" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-21" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-2::obj-9::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-2::obj-9::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-44" : [ "loffset[2]", "L offset", 0 ],
-			"obj-2::obj-9::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-35::obj-127" : [ "saturation[3]", "saturation", 0 ],
-			"obj-2::obj-35::obj-15" : [ "hoffset", "H offset", 0 ],
-			"obj-2::obj-35::obj-34" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-9::obj-83" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-148" : [ "pictctrl[43]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-32" : [ "soffset[1]", "S offset", 0 ],
 			"obj-2::obj-35::obj-142" : [ "lightness", "lightness", 0 ],
 			"obj-2::obj-9::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-2::obj-9::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-35::obj-6" : [ "range[4]", "range", 0 ],
-			"obj-2::obj-9::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
-			"obj-2::obj-35::obj-119" : [ "hue[1]", "hue", 0 ],
-			"obj-2::obj-35::obj-32" : [ "soffset[1]", "S offset", 0 ],
-			"obj-2::obj-19::obj-37" : [ "umenu[3]", "umenu", 0 ],
-			"obj-2::obj-9::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-35::obj-104" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-81" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-24" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-2::obj-35::obj-147" : [ "pictctrl[44]", "pictctrl[1]", 0 ],
-			"obj-2::obj-9::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-35::obj-21" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"obj-2::obj-9::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-2::obj-35::obj-147" : [ "pictctrl[44]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-28" : [ "pictctrl[18]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-60" : [ "pictctrl[21]", "pictctrl[1]", 0 ],
+			"obj-2::obj-19::obj-37" : [ "umenu[3]", "umenu", 0 ],
+			"obj-2::obj-9::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-2::obj-35::obj-44" : [ "loffset[2]", "L offset", 0 ],
 			"obj-2::obj-9::obj-64" : [ "pictctrl[23]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-83" : [ "pictctrl[19]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-15" : [ "hoffset", "H offset", 0 ],
+			"obj-2::obj-35::obj-104" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-127" : [ "saturation[3]", "saturation", 0 ],
+			"obj-2::obj-9::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-9::obj-40" : [ "pictctrl[22]", "pictctrl[1]", 0 ],
+			"obj-2::obj-19::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-2::obj-9::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-2::obj-9::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-2::obj-9::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-2::obj-35::obj-24" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-148" : [ "pictctrl[43]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-6" : [ "range[4]", "range", 0 ],
+			"obj-2::obj-9::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-2::obj-9::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-35::obj-34" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-2::obj-9::obj-89" : [ "moviename", "moviename", 0 ],
+			"obj-2::obj-9::obj-81" : [ "pictctrl[20]", "pictctrl[1]", 0 ],
+			"obj-2::obj-35::obj-119" : [ "hue[1]", "hue", 0 ],
 			"parameterbanks" : 			{
 
 			}

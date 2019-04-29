@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -145,6 +145,28 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"annotation" : "## View or monitor a video input ##",
+									"bgmode" : 1,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-4",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "vz.viewr.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 45.0, 428.0, 230.0, 208.0 ],
+									"prototypename" : "pixl",
+									"varname" : "viewr",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"annotation" : "## Create a dutone image ##",
 									"bgmode" : 1,
 									"border" : 0,
@@ -159,7 +181,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 45.0, 337.0, 228.0, 130.0 ],
+									"patching_rect" : [ 45.0, 284.0, 228.0, 130.0 ],
 									"prototypename" : "pixl",
 									"varname" : "2toner[1]",
 									"viewvisibility" : 1
@@ -177,7 +199,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 279.0, 390.0, 238.0, 40.0 ],
+									"patching_rect" : [ 279.0, 337.0, 238.0, 40.0 ],
 									"text" : "Click and drag to set the two colors that make up the duotone"
 								}
 
@@ -191,32 +213,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 339.0, 447.0, 298.0, 65.0 ],
+									"patching_rect" : [ 339.0, 394.0, 298.0, 65.0 ],
 									"text" : "Internally, 2TONR converts the incoming image to greyscale and then remaps the color along a gradient between the left-hand color (black) and the right-hand color (white).",
 									"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"annotation" : "## VIZZIE video projector interface ##",
-									"bgmode" : 1,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-19",
-									"lockeddragscroll" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "vz.projectr.maxpat",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 45.0, 522.0, 168.0, 108.0 ],
-									"prototypename" : "pixl",
-									"varname" : "projectr",
-									"viewvisibility" : 1
 								}
 
 							}
@@ -236,7 +235,7 @@
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 45.0, 124.0, 348.0, 158.0 ],
+									"patching_rect" : [ 45.0, 101.0, 348.0, 158.0 ],
 									"prototypename" : "pixl",
 									"varname" : "playr",
 									"viewvisibility" : 1
@@ -253,7 +252,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 273.0, 292.5, 156.0, 25.0 ],
+									"patching_rect" : [ 440.0, 101.0, 156.0, 25.0 ],
 									"text" : "Turn the module off/on"
 								}
 
@@ -267,15 +266,15 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 251.0, 294.5, 20.0, 20.0 ],
+									"patching_rect" : [ 418.0, 103.0, 20.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_initial" : [ 1 ],
+											"parameter_shortname" : "toggle",
 											"parameter_type" : 3,
 											"parameter_longname" : "toggle",
 											"parameter_initial_enable" : 1,
-											"parameter_invisible" : 1,
-											"parameter_initial" : [ 1 ],
-											"parameter_shortname" : "toggle"
+											"parameter_invisible" : 1
 										}
 
 									}
@@ -309,7 +308,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 273.0, 332.0, 332.0, 25.0 ],
+									"patching_rect" : [ 273.0, 279.0, 332.0, 25.0 ],
 									"text" : "Mouse over the dots to see what a data inlet controls"
 								}
 
@@ -355,7 +354,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -537,14 +536,14 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"midpoints" : [ 260.5, 325.25, 54.5, 325.25 ],
+									"midpoints" : [ 427.5, 270.25, 54.5, 270.25 ],
 									"source" : [ "obj-14", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-19", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-2", 0 ]
 								}
 
@@ -604,40 +603,37 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
-			"obj-2::obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
-			"obj-2::obj-2::obj-58" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-2::obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-41" : [ "pictctrl[27]", "pictctrl[1]", 0 ],
-			"obj-2::obj-19::obj-16" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-2::obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
-			"obj-2::obj-2::obj-49" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
 			"obj-2::obj-2::obj-3" : [ "range[1]", "range", 0 ],
-			"obj-2::obj-2::obj-62" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
 			"obj-2::obj-10::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
 			"obj-2::obj-2::obj-54" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
-			"obj-2::obj-19::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-89" : [ "moviename", "moviename", 0 ],
-			"obj-2::obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
-			"obj-2::obj-2::obj-73" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
-			"obj-2::obj-2::obj-64" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-45" : [ "slider", "slider", 0 ],
-			"obj-2::obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
-			"obj-2::obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
 			"obj-2::obj-2::obj-53" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-2::obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-2::obj-2::obj-12" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-2::obj-2::obj-28" : [ "swatch", "swatch", 0 ],
-			"obj-2::obj-19::obj-12" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-2::obj-10::obj-89" : [ "moviename", "moviename", 0 ],
 			"obj-2::obj-2::obj-27" : [ "swatch[1]", "swatch[1]", 0 ],
+			"obj-2::obj-10::obj-112::obj-92" : [ "FreqMode[13]", "FreqMode", 0 ],
+			"obj-2::obj-14" : [ "toggle", "toggle", 0 ],
 			"obj-2::obj-10::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-2::obj-10::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-12" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-112::obj-119" : [ "speed[1]", "speed", 0 ],
+			"obj-2::obj-10::obj-112::obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
+			"obj-2::obj-10::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-62" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-112::obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-2::obj-2::obj-58" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-2::obj-10::obj-112::obj-121" : [ "speed", "speed", 0 ],
+			"obj-2::obj-10::obj-51" : [ "moviepath", "moviepath", 0 ],
 			"obj-2::obj-10::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-49" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
+			"obj-2::obj-4::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
+			"obj-2::obj-2::obj-45" : [ "slider", "slider", 0 ],
+			"obj-2::obj-10::obj-112::obj-79" : [ "slider[3]", "slider[2]", 0 ],
+			"obj-2::obj-10::obj-112::obj-89" : [ "FreqMode[12]", "FreqMode", 0 ],
+			"obj-2::obj-10::obj-112::obj-120" : [ "range", "range", 0 ],
+			"obj-2::obj-10::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-64" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-2::obj-2::obj-28" : [ "swatch", "swatch", 0 ],
+			"obj-2::obj-2::obj-73" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -645,7 +641,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "vz.2tonr.maxhelp.maxsnap",
+				"name" : "vz.2tonr.maxhelp[1].maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../../Users/gtaylor/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
@@ -712,18 +708,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "vz.projectr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-context.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "vz.2tonr.maxpat",
 				"bootpath" : "C74:/packages/vizzie/patchers",
 				"type" : "JSON",
@@ -731,6 +715,30 @@
 			}
 , 			{
 				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.viewr.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snapshot_UI.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "windowresize.js",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-context.maxpat",
 				"bootpath" : "C74:/packages/vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -753,6 +761,8 @@
 						"FreqMode[13]" : 0.0,
 						"live.toggle" : 1.0,
 						"live.toggle[1]" : 1.0,
+						"pictctrl[10]" : 1.0,
+						"pictctrl[11]" : 1.0,
 						"pictctrl[1]" : 1.0,
 						"pictctrl[279]" : 1.0,
 						"pictctrl[27]" : 1.0,
@@ -772,18 +782,23 @@
 						"slider" : 1.0,
 						"speed" : 1.0,
 						"speed[1]" : 1.0,
+						"umenu[3]" : 7.0,
 						"blob" : 						{
-							"moviename" : [ "chickens.mp4" ],
-							"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
+							"moviename" : [ "blading.mov" ],
+							"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 							"range" : [ 0 ],
 							"range[1]" : [ 1 ],
 							"rslider[2]" : [ 0.0, 1.0 ],
-							"slider[3]" : [ 0.717353007590475 ],
+							"slider[3]" : [ 0.493646408839779 ],
 							"swatch" : [ 0.722623513945451, 0.849082628885905, 0.0, 1.0, 0.191489361702128, 1.0, 0.424541314442953 ],
 							"swatch[1]" : [ 0.487575686569755, 0.349082628885905, 1.0, 1.0, 0.702127659574468, 1.0, 0.674541314442952 ],
 							"textbutton" : [ 1 ],
 							"textbutton[1]" : [ 0 ],
-							"toggle" : [ 1 ]
+							"textbutton[3]" : [ -1 ],
+							"textbutton[4]" : [ 0 ],
+							"textbutton[5]" : [ 0 ],
+							"toggle" : [ 1 ],
+							"textbutton[2]" : [ 1 ]
 						}
 
 					}
@@ -798,7 +813,7 @@
 						"filetype" : "C74Snapshot",
 						"version" : 2,
 						"minorversion" : 0,
-						"name" : "vz.2tonr.maxhelp",
+						"name" : "vz.2tonr.maxhelp[1]",
 						"origin" : "vz.2tonr.maxhelp",
 						"type" : "patcher",
 						"subtype" : "Undefined",
@@ -810,6 +825,8 @@
 									"FreqMode[13]" : 0.0,
 									"live.toggle" : 1.0,
 									"live.toggle[1]" : 1.0,
+									"pictctrl[10]" : 1.0,
+									"pictctrl[11]" : 1.0,
 									"pictctrl[1]" : 1.0,
 									"pictctrl[279]" : 1.0,
 									"pictctrl[27]" : 1.0,
@@ -829,18 +846,23 @@
 									"slider" : 1.0,
 									"speed" : 1.0,
 									"speed[1]" : 1.0,
+									"umenu[3]" : 7.0,
 									"blob" : 									{
-										"moviename" : [ "chickens.mp4" ],
-										"moviepath" : [ "C74:/media/jitter/chickens.mp4" ],
+										"moviename" : [ "blading.mov" ],
+										"moviepath" : [ "C74:/media/jitter/blading.mov" ],
 										"range" : [ 0 ],
 										"range[1]" : [ 1 ],
 										"rslider[2]" : [ 0.0, 1.0 ],
-										"slider[3]" : [ 0.717353007590475 ],
+										"slider[3]" : [ 0.493646408839779 ],
 										"swatch" : [ 0.722623513945451, 0.849082628885905, 0.0, 1.0, 0.191489361702128, 1.0, 0.424541314442953 ],
 										"swatch[1]" : [ 0.487575686569755, 0.349082628885905, 1.0, 1.0, 0.702127659574468, 1.0, 0.674541314442952 ],
 										"textbutton" : [ 1 ],
 										"textbutton[1]" : [ 0 ],
-										"toggle" : [ 1 ]
+										"textbutton[3]" : [ -1 ],
+										"textbutton[4]" : [ 0 ],
+										"textbutton[5]" : [ 0 ],
+										"toggle" : [ 1 ],
+										"textbutton[2]" : [ 1 ]
 									}
 
 								}
@@ -850,11 +872,11 @@
 						}
 ,
 						"fileref" : 						{
-							"name" : "vz.2tonr.maxhelp",
-							"filename" : "vz.2tonr.maxhelp.maxsnap",
+							"name" : "vz.2tonr.maxhelp[1]",
+							"filename" : "vz.2tonr.maxhelp[1].maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "531e5c0999d315fa1fb20d9e231e6945"
+							"snapshotfileid" : "145696226f00a04142a5042c7e5f4c1e"
 						}
 
 					}
