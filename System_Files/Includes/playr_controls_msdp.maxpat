@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 115.0, 81.0, 1475.0, 921.0 ],
+		"rect" : [ 210.0, 206.0, 1475.0, 921.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -154,7 +154,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 421.0, 174.3582763671875, 69.0, 99.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 55.5, 5.0, 63.0, 82.792236328125 ],
@@ -216,7 +216,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 395.5, 700.056701999999973, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.266448974609375, 60.792236328125, 189.0, 27.0 ],
+					"presentation_rect" : [ 112.266448974609375, 60.792236328125, 242.0, 27.0 ],
 					"size" : 100.0,
 					"thickness" : 80.0,
 					"varname" : "slider[2]"
@@ -314,16 +314,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 158.666656494140625, 636.05670166015625, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.266448974609375, 18.792236328125, 189.149993896484375, 27.0 ],
+					"presentation_rect" : [ 112.266448974609375, 18.792236328125, 242.149993896484375, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "slider[2]",
 							"parameter_type" : 3,
 							"parameter_longname" : "slider[3]",
-							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1,
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ]
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -349,14 +349,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 521.0, 519.056701999999973, 120.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.266448974609375, 18.792236328125, 189.0, 27.0 ],
+					"presentation_rect" : [ 112.266448974609375, 18.792236328125, 242.0, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_initial" : [ 0.0, 1.0 ],
 							"parameter_shortname" : "rslider[2]",
 							"parameter_type" : 3,
-							"parameter_longname" : "rslider[2]",
-							"parameter_invisible" : 1,
-							"parameter_initial" : [ 0.0, 1.0 ]
+							"parameter_longname" : "rslider[2]"
 						}
 
 					}
@@ -388,12 +388,12 @@
 					"presentation_rect" : [ 2.266448974609375, 5.0, 51.233551025390625, 82.792236328125 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "textbutton",
 							"parameter_type" : 3,
 							"parameter_longname" : "textbutton",
-							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1,
-							"parameter_initial" : [ 0 ]
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -1138,6 +1138,7 @@
  ],
 		"parameters" : 		{
 			"obj-94" : [ "textbutton", "textbutton", 0 ],
+			"obj-2::obj-15" : [ "live.dial", "live.dial", 0 ],
 			"obj-79" : [ "slider[3]", "slider[2]", 0 ],
 			"obj-16" : [ "rslider[2]", "rslider[2]", 0 ],
 			"parameterbanks" : 			{
