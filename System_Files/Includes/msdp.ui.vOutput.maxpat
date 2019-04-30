@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -263,7 +263,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 502.0, 258.0, 128.0, 128.0 ],
+					"patching_rect" : [ 257.0, 228.0, 77.0, 46.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 1.0, 62.0, 23.0 ],
 					"proportion" : 0.5,
