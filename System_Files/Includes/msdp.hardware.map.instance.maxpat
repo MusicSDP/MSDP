@@ -57,7 +57,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 904.8968505859375, 40.0, 30.0, 30.0 ]
 				}
 
@@ -202,8 +202,8 @@
 					"numinlets" : 9,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 960.0, 121.0, 144.0, 22.0 ],
-					"text" : "pak s 0. 0. 0. 0. 0. 0. 0. 0."
+					"patching_rect" : [ 960.0, 121.0, 141.0, 22.0 ],
+					"text" : "pak s 0. 0. 0. 0. 0. 0. 0. 0"
 				}
 
 			}

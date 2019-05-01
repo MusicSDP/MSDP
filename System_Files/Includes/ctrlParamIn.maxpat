@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 423.0, 76.0, 55.0, 22.0 ],
+					"text" : "zl.ecils 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
 					"index" : 9,
@@ -79,9 +91,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 8,
-					"outlettype" : [ "float", "float", "float", "float", "float", "float", "float", "float" ],
-					"patching_rect" : [ 177.449951171875, 246.67657470703125, 154.0, 22.0 ],
-					"text" : "unpack 0. 0. 0. 0. 0. 0. 0. 0."
+					"outlettype" : [ "float", "float", "float", "float", "float", "float", "float", "int" ],
+					"patching_rect" : [ 177.449951171875, 246.67657470703125, 151.0, 22.0 ],
+					"text" : "unpack 0. 0. 0. 0. 0. 0. 0. 0"
 				}
 
 			}
