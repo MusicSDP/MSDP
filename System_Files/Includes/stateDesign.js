@@ -62,7 +62,9 @@ Max.addHandler("getRedirect", () => { getRedirect() })
 Max.addHandler("crash", () => { crash() }) // use to intentionally crash the script
 
 // begin function definitions
-
+const compressTest = () => {
+  Max.post(zlib.deflateSync(Buffer.from(JSON.stringify(state))).toString('base64'))
+}
 const stateRecover = async _ => {
   try {
     state = await Max.getDict('msdpState')
@@ -419,7 +421,7 @@ const exporter = (type, v1, v2) => { // system, project, backup, analytics
       state.project.lastUpdated = new Date()
       Max.outlet('sendTo MSDP_State_Information_Out')
       Max.outlet('sendGate 1')
-      Max.outlet(JSON.stringify(state, null, 4))
+      Max.outlet(zlib.deflateSync(Buffer.from(JSON.stringify(state))).toString('base64'))
       Max.outlet('sendGate 0')
       return
     }
