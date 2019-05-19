@@ -22,7 +22,7 @@ let debug = false
 let log = (output) => { if (debug) Max.post(output) }
 let remoteVersion = null
 let defaultSystem = {
-  "uName": null, "os": "Windows", "autoUpdate": 0, "vidFPS": 2, "recFPS": 1,
+  "uName": null, "os": "Windows", "autoUpdate": 0, "vidFPS": 2, "recFPS": 1, "gitMedia": 0,
   "appState": { "major": null, "minor": null, "revision": null, "state": null },
   "io": { "driver": null, "in": null, "out": null, "sampleRate": null, "ioVector": null, "sigVector": null },
   "defaultSettings": { "dac": 1, "limiter": 1, "volume": 127, "fullScreen": 1, "metroTog": 1, "bpm": 120, "showBoards": 1, "initEvent": 0, "keyboardMIDI": false, "keyOctave": 4, "recType": 0, "vWidth": 320, "vHeight": 320, "vChan": 1 }
