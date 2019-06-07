@@ -1,0 +1,103 @@
+<jittershader name="default">
+	<description> Default shader </description>
+	
+	
+		<param name="C" type="float" default="0.5">
+		<description>Ambient Multiplier</description>
+	</param>
+	<param name="ni" type="float" default="0.5">
+		<description>Diffuse Multiplier</description>
+	</param>
+	
+	
+	<language name="glsl" version="1.0">
+		<bind param="C" program="fp" />
+		<bind param="ni" program="fp" />	
+		<program name="vp" type="vertex">
+<![CDATA[
+
+
+
+varying vec3 normal;
+varying vec3 vpos;
+
+
+void main (void)
+{
+    // vertex normal 
+	normal = normalize(gl_NormalMatrix * gl_Normal);
+	
+	// vertex position (in eye space)
+	vpos = vec3(gl_ModelViewMatrix * gl_Vertex);
+	
+	gl_Position = ftransform();
+	gl_FrontColor = gl_Color;
+	gl_BackColor = gl_Color;	
+	
+	
+}
+]]>		
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+varying vec3 normal;
+varying vec3 vpos;
+
+// gaussian coefficient
+uniform float C;
+
+// index of refraction
+uniform float ni;
+
+
+void main()
+{	
+		// the material propertise are embedded in the shader (for now)
+	vec4 mat_ambient = vec4(1.0, 1.0, 1.0, 1.0);
+	vec4 mat_diffuse = gl_Color;//vec4(1.0, 1.0, 1.0, 1.0);
+	vec4 mat_specular= vec4(1.0, 1.0, 1.0, 1.0);
+
+	// normalize interpolated normal
+	vec3 N = normalize(normal);
+
+	// light vector
+	vec3 L = normalize(gl_LightSource[0].position.xyz - vpos);
+	
+	// vertex-to-eye space (view vector)
+	vec3 V = normalize(-vpos);
+	
+	// half-vector
+	vec3 H = normalize(vec3(gl_LightSource[0].halfVector));
+	
+	
+	float NdotH = max(0.0, dot(N, H));
+	float VdotH = dot(V, H);
+	float NdotV = dot(N, V);
+	float NdotL = dot(N, L);
+	
+	// D term (gaussian)
+	float alpha = acos(NdotH);
+	float D = C * exp(- alpha * alpha * C);
+	
+	// Geometric factor (G)
+	float G1 = 2.0 * NdotH * NdotV / VdotH;
+	float G2 = 2.0 * NdotH * NdotL / VdotH;
+	float G = min(1.0, min(G1, G2));
+	
+	// Fresnel Refraction (F)
+	float k = pow(1.0 - NdotV, 5.0);
+	float F = 1.0 - k + ni * k;
+	
+	// ambient
+	vec4 ambient = mat_ambient * gl_LightSource[0].ambient;
+	
+	// diffuse color
+	vec4 kd  = mat_diffuse * gl_LightSource[0].diffuse;
+
+    gl_FragColor  = ambient + kd * (F * D * G) / NdotV;
+} 
+]]>
+		</program>
+	</language>
+</jittershader>

@@ -1,30 +1,27 @@
-# The Music and Sound Design Platform (Music\_SDP)
+# The Music and Sound Design Platform (MSDP)
 
-Music\_SDP (also referred to as MSDP) is a free and open-source platform for the performance and creation of live electronic and electroacoustic music, built in **Max 8**. Our project's goal is to provide powerful and meaningful tools for live audio generation and manipulation using a modular structure that can be expanded to fit the needs of any type of musical performance. Music\_SDP is available as an application for both Windows and MacOS, and can be downloaded [here.](http://www.musicsdp.com/download-music-sdp/) The git repository includes all of the source code to open the program in [Max 8](http://www.cycling74.com) and this README will explain how to setup and explore the software.
+MSDP (also referred to as Music\_SDP) is a free and open-source platform for the performance and creation of live electronic music, video, and multimedia work, built in **Max 8**. Our project's goal is to provide powerful and meaningful tools for live audio and video generation and manipulation using a modular structure that can be expanded to fit the needs of any type of performance. MSDP is available as an application for both Windows and MacOS, and can be downloaded [here.](http://www.musicsdp.com/download-music-sdp/) The git repository includes all of the source code to open the program in [Max 8](http://www.cycling74.com) and this README will explain how to setup and explore the software.
 
 ## Quickstart
 
 
-In order to run the Music\_SDP source code, you must have the latest 64-bit version of **Max 7** installed, and you should install the included custom fonts to ensure UI compatibility. You'll also want to make a modification to the **Max 7** preferences window, disabling "Restore Windows on Launch."
+In order to run the MSDP source code, you must have the latest version of **Max 8** installed, and you should install the included custom fonts to ensure UI compatibility. You'll also want to make a modification to the **Max 8** preferences window, disabling "Restore Windows on Launch."
 
-1. Install the latest version of [Max 8 64-bit.](www.cycling74.com) 
-  * In Windows, there is a separate download for the 64-bit version of **Max 8**. 
+1. Install the latest version of [Max 8.](www.cycling74.com) 
   
-  * **Max 8** for MacOS includes the option to switch between 32-bit mode and 64-bit mode. Right click on the **Max 8** application file and select _Get Info._ With the information panel open, look for the _Open in 32-bit mode_ option and make sure that it is de-selected.
-  
-2. Clone (or download and uncompress the zip of) the Music\_SDP source code. 
+2. Clone (or download and uncompress the zip of) the MSDP source code. 
 
-3. In the root Music\_SDP folder, look for the included _fonts_ folder. This contains all of the open-source google font files used by the MSDP user interface. Install all of the fonts before attempting to run Music\_SDP.
+3. In the root MSDP folder, look for the included _fonts_ folder. This contains all of the open-source google font files used by the MSDP user interface. Install all of the fonts before attempting to run MSDP.
 
-4. Before opening Music\_SDP for the first time, you'll need to make one modification to your **Max 8** preferences. Open Max, navigate to the Preferences window, then ensure that _Restore Windows on Launch_ is deselected. Close the preferences window to save this state, then close out of **Max 8**.
+4. Before opening MSDP for the first time, you'll need to make one modification to your **Max 8** preferences. Open Max, navigate to the Preferences window, then ensure that _Restore Windows on Launch_ is deselected. Close the preferences window to save this state, then close out of **Max 8**.
 
-5. Back in the root MSDP directory, double click the _\_Music\_SDP.maxpat_ file to open Max and launch MSDP.
+5. Back in the root MSDP directory, double click the  _\_MSDP\_Launcher.maxpat_ file to open Max and launch MSDP.
 
-## Exploring Music\_SDP
+## Exploring MSDP
 
-### Music\_SDP's Two Modes
+### MSDP's Two Modes
 
-Music\_SDP's source code can be used into two modes: _App Mode_ and _Developer Mode_. 
+MSDP's source code can be used into two modes: _App Mode_ and _Developer Mode_. 
 
 **App Mode** functions identically to the application release. The code is locked down, requiring additional steps to unlock, the MSDP menu bar replaces the default Max menus, and several additional patches are opened. App mode is perfect for users that want to run the software to create and perform, or who want to test out their own modifications in an environment identical to the application build.
 
@@ -32,19 +29,19 @@ In **Developer Mode**, the additional patch locks are removed, the default Max m
 
 The source code always opens in Developer Mode, but, as will be discussed below, it is easy to switch to App Mode at any point.
 
-### Opening Music\_SDP
+### Opening MSDP
 
-To run the Music\_SDP source code, navigate to the root folder of the MSDP directory and open the "_Music\_SDP.maxpat" file found within. Opening this initial patch will add all of the subfolders to the Max search path before launching the main system-critical patch. These modifications are temporary, and all subfolders will be removed from the search path when Max is closed. For this reason, always begin any work session in the MSDP code by launching this initialization patch.
+To run the MSDP source code, navigate to the root folder of the MSDP directory and open the "\_MSDP\_Launcher.maxpat" file found within. Opening this initial patch will add all of the subfolders to the Max search path before launching the main system-critical patch. These modifications are temporary, and all subfolders will be removed from the search path when Max is closed. For this reason, always begin any work session in the MSDP code by launching this initialization patch.
 
 ### The Developer Mode Launch Screen
 
-After launching "_Music\_SDP.maxpat", a second window will appear to replace the initial patch. This second patch, titled "The Music and Sound Design Platform" acts as a launching point for both use of the program and for the exploration of the patches.
+After launching "\_MSDP\_Launcher.maxpat", a second window will appear to replace the initial patch. This second patch, titled "The Music and Sound Design Platform" acts as a launching point for both use of the program and for the exploration of the patches.
 
-As mentioned above, Music\_SDP opens in Developer Mode when running the source code, and the initial patch (this will be referred to as the Launch Screen) includes a set of options to facilitate your work in the program. This patch is critical to using MSDP in both modes, and should remain open at all times. It can be hidden by the user by simply minimizing the patch, or in Application mode by using the shortcut "Shift + F" (this shortcut will toggle the fullscreen state, and it can be pressed again to bring this patch back into view).
+As mentioned above, MSDP opens in Developer Mode when running the source code, and the initial patch (this will be referred to as the Launch Screen) includes a set of options to facilitate your work in the program. This patch is critical to using MSDP in both modes, and should remain open at all times. It can be hidden by the user by simply minimizing the patch, or in Application mode by using the shortcut "Shift + F" (this shortcut will toggle the fullscreen state, and it can be pressed again to bring this patch back into view).
 
 The Launch Screen consists of several options and access points for the user, and each will be briefly introduced below:
 
-* Launch and Run Music\_SDP: This large button at the top of the launch screen activates App Mode and opens up the _Project Loader_ and _System Board_ patches. Pressing this button allows the software to be run identically to the application build.
+* Launch and Run MSDP: This large button at the top of the launch screen activates App Mode and opens up the _Project Loader_ and _System Board_ patches. Pressing this button allows the software to be run identically to the application build.
 
 * App Mode / Developer Mode Toggle: This toggle allows the user to easily switch between the two modes without launching the additional windows. This is conventient for quickly testing portions of the program without having to load any of the additional built-in functions.
 
@@ -63,9 +60,9 @@ The Launch Screen consists of several options and access points for the user, an
 
 ### Choosing a Template
 
-Several templates have been developed to assist in the creation of different types of Music\_SDP modules. These templates include all of the code required to integrate new modules into the larger MSDP structure, and include instructions, along with demonstration code, to explain how to use them. These templates can be accessed from the umenu included in the Developer Mode launch Screen. Template options include:
+Several templates have been developed to assist in the creation of different types of MSDP modules. These templates include all of the code required to integrate new modules into the larger MSDP structure, and include instructions, along with demonstration code, to explain how to use them. These templates can be accessed from the umenu included in the Developer Mode launch Screen. Template options include:
 
-* _Master\_Template_: This contains the code required to start any kind of Music\_SDP module. This may be a good starting point if you're not sure what kind of module you'll end up making, but it contains the most code and can be overwhelming to start off.
+* _Master\_Template_: This contains the code required to start any kind of MSDP module. This may be a good starting point if you're not sure what kind of module you'll end up making, but it contains the most code and can be overwhelming to start off.
 
 * _File\_Effect\_Template_: This contains the code necessary to create a module that utilizes audio files. Includes demonstration code that explains how to properly load audio files into objects to make it compatible with the Audio File Manager.
 
@@ -73,24 +70,24 @@ Several templates have been developed to assist in the creation of different typ
 
 * _MIDI\_Effect\_Template_: This contains the code necessary to create a module that utilizes MIDI files. Includes demonstration code that explains how to properly load MIDI files into object to make it compatible with the MIDI Manager.
 
-* _Synthesizer\_Template_: This contains the code necessary to create a synthesis module. Includes demonstration code that explains standard synthesizer practices within Music\_SDP.
+* _Synthesizer\_Template_: This contains the code necessary to create a synthesis module. Includes demonstration code that explains standard synthesizer practices within MSDP.
 
-Once you've selected and opened the template that you plan to use, make sure to immediately save the file with a new name so as to avoid overwriting the template file. To include it in the module list on your local install, make sure that you save the module file in the "Music\_SDP/3rd Part Modules" directory in your Documents folder.
+Once you've selected and opened the template that you plan to use, make sure to immediately save the file with a new name so as to avoid overwriting the template file. To include it in the module list on your local install, make sure that you save the module file in the "MSDP 2/3rd Part Modules" directory in your Documents folder.
 
-Several videos have been created and uploaded to the Music\_SDP YouTube page that explains the Module creation process in detail. Those videos can be found [here](https://www.youtube.com/watch?v=bXkEqNV7kVM&list=PLCxsLbQ_PvEPSJ1yM2-jJZTIbbHX9bcMd).
+Several videos have been created and uploaded to the MSDP YouTube page that explains the Module creation process in detail. Those videos can be found [here](https://www.youtube.com/watch?v=bXkEqNV7kVM&list=PLCxsLbQ_PvEPSJ1yM2-jJZTIbbHX9bcMd).
 
 Starting a new module from a completely blank patch is not recommended. There are many systems included in the templates that streamline the process of integrating custom modules.
 
 ### Testing and Using Your Module
 
-To test or to use your custom module in MSDP Pedal Boards, add the main patch to the "Music\_SDP/3rd Party Modules" folder, and add any additional required files to the "Music\_SDP/3rd Party Includes" folder. Both of these folders should be in your computer's Documents directory and are created automatically when MSDP is run for the first time. These directories are added to the Max search path on program launch, and anything in the "3rd Party Modules" folder will be included in the Pedal Board's module list on your local install. Once all of the required files are added to these directories, you should be able to load modules onto Pedal Boards alongside those that are part of the official list. 
+To test or to use your custom module in MSDP Pedal Boards, add the main patch to the "MSDP 2/3rd Party Modules" folder, and add any additional required files to the "MSDP 2/3rd Party Includes" folder. Both of these folders should be in your computer's Documents directory and are created automatically when MSDP is run for the first time. These directories are added to the Max search path on program launch, and anything in the "3rd Party Modules" folder will be included in the Pedal Board's module list on your local install. Once all of the required files are added to these directories, you should be able to load modules onto Pedal Boards alongside those that are part of the official list. 
 
 Ensure that all of your patches have uniquely identifiable file names to avoid conflicts with patches in the official build or with other custom modules that may be installed. No restart of the code should be required to test changes, although modules will need to be re-loaded in Pedal Boards for changes to take effect.
 
 
 ### The Module Integration Checklist
 
-There are several steps required to ensure that your custom module integrates properly with the rest of Music\_SDPs modules and communication systems. Below is the official checklist that you should refer to while developing your module:
+There are several steps required to ensure that your custom module integrates properly with the rest of MSDPs modules and communication systems. Below is the official checklist that you should refer to while developing your module:
 
 * **Connect everything properly:** 
 
@@ -148,13 +145,17 @@ By downloading and using Music_SDP, you agree to our [privacy policy](http://mus
 
 ### Current Contributors
 
-**Hugh Lobel** - Creator, Lead Developer, Web Architect
+**Hugh Lobel** - Creator, Lead Developer, Web Architect.
 
-**Michael Mnn** - Contributes to system design, QA, and module creation
+**Dirk Leas** - Code consulting and contributions.
 
-**Dean Berlinerblau** - Contributes to graphic design and QA.
+**Michelle Cutler** - Graphic Design, QA, and Social Media.
 
 ### Past Contributors
+
+**Michael Mnn** - Contributes to system design, QA, and module creation.
+
+**Dean Berlinerblau** - Contributes to graphic design and QA.
 
 **Jonathan Chandler Spoon** - Contributed to graphic design and QA.
 

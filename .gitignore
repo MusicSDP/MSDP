@@ -1,0 +1,7 @@
+
+System_Files/Includes/.cache/
+
+System_Files/Includes/dist/
+.vs/
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
