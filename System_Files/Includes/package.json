@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "adm-zip": "^0.4.13",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "file-api": "^0.10.4",
     "internet-available": "^1.0.0",
     "max-api": "^1.0.1",
